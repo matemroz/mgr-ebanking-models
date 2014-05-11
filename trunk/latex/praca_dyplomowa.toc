@@ -1,0 +1,37 @@
+\select@language {polish}
+\contentsline {chapter}{\numberline {1}Wst\IeC {\k e}p}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Cel pracy}{4}{section.1.1}
+\contentsline {section}{\numberline {1.2}Za\IeC {\l }o\IeC {\.z}enia dla pracy}{4}{section.1.2}
+\contentsline {chapter}{\numberline {2}Charakterystyka architektury korporacyjnej}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Wst\IeC {\k e}p}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Czym jest architektura korporacyjna?}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}Definicje g\IeC {\l }\IeC {\'o}wnych poj\IeC {\k e}\IeC {\'c} zwi\IeC {\k a}zanych z architektur\IeC {\k a} korporacyjn\IeC {\k a}}{5}{section.2.3}
+\contentsline {section}{\numberline {2.4}Korzy\IeC {\'s}ci z wdro\IeC {\.z}enia architektury korporacyjnej}{5}{section.2.4}
+\contentsline {section}{\numberline {2.5}Podej\IeC {\'s}cie do budowy architektury korporacyjnej}{5}{section.2.5}
+\contentsline {section}{\numberline {2.6}SOA}{5}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Czym jest SOA?}{5}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Historia SOA}{6}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}Budowa SOA}{6}{subsection.2.6.3}
+\contentsline {subsection}{\numberline {2.6.4}Podstawowe zasady SOA}{8}{subsection.2.6.4}
+\contentsline {section}{\numberline {2.7}Adaptacja SOA w architekturze korporacyjnej}{10}{section.2.7}
+\contentsline {chapter}{\numberline {3}Metodyki projektowania system\IeC {\'o}w informatycznych w architekturze korporacyjnej}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Wst\IeC {\k e}p}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}Metodyki projektowania architkektury korporacyjnej}{11}{section.3.2}
+\contentsline {chapter}{\numberline {4}Przegl\IeC {\k a}d j\IeC {\k e}zyk\IeC {\'o}w do projektowania architektury korporacyjnej}{12}{chapter.4}
+\contentsline {section}{\numberline {4.1}SoaML}{12}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Czym jest SoaML?}{12}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}G\IeC {\l }\IeC {\'o}wne elementy notacji}{12}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Modelowanie z wykorzystaniem SoaML}{12}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}ArchiMate}{12}{section.4.2}
+\contentsline {section}{\numberline {4.3}Inne j\IeC {\k e}zyki}{12}{section.4.3}
+\contentsline {chapter}{\numberline {5}Opracowanie metody projektowania system\IeC {\'o}w informatycznych o architekturze SOA}{13}{chapter.5}
+\contentsline {chapter}{\numberline {6}Weryfikacja koncepcji na przyk\IeC {\l }adzie systemu bankowego}{14}{chapter.6}
+\contentsline {section}{\numberline {6.1}Projektowanie systemu bankowego w oparciu o utworzon\IeC {\k a} koncepcj\IeC {\k e}}{14}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Opis og\IeC {\'o}lny}{14}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Analiza systemu}{14}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Implementacja}{14}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}Proces wdro\IeC {\.z}enia}{14}{subsection.6.1.4}
+\contentsline {subsection}{\numberline {6.1.5}Testy}{14}{subsection.6.1.5}
+\contentsline {section}{\numberline {6.2}Cel systemu w odniesieniu do zaprojektowanej koncepcji}{14}{section.6.2}
+\contentsline {chapter}{\numberline {7}Podsumowanie i wnioski}{15}{chapter.7}
+\contentsline {chapter}{Bibliografia}{16}{chapter*.2}

@@ -1,0 +1,36 @@
+\BOOKMARK [0][-]{chapter.1}{Wstep}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Cel pracy}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Za\233ozenia dla pracy}{chapter.1}% 3
+\BOOKMARK [0][-]{chapter.2}{Charakterystyka architektury korporacyjnej}{}% 4
+\BOOKMARK [1][-]{section.2.1}{Wstep}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.2}{Czym jest architektura korporacyjna?}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.3}{Definicje g\233\363wnych pojec zwiazanych z architektura korporacyjna}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.4}{Korzysci z wdrozenia architektury korporacyjnej}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.5}{Podejscie do budowy architektury korporacyjnej}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.6}{SOA}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.6.1}{Czym jest SOA?}{section.2.6}% 11
+\BOOKMARK [2][-]{subsection.2.6.2}{Historia SOA}{section.2.6}% 12
+\BOOKMARK [2][-]{subsection.2.6.3}{Budowa SOA}{section.2.6}% 13
+\BOOKMARK [2][-]{subsection.2.6.4}{Podstawowe zasady SOA}{section.2.6}% 14
+\BOOKMARK [1][-]{section.2.7}{Adaptacja SOA w architekturze korporacyjnej}{chapter.2}% 15
+\BOOKMARK [0][-]{chapter.3}{Metodyki projektowania system\363w informatycznych w architekturze korporacyjnej}{}% 16
+\BOOKMARK [1][-]{section.3.1}{Wstep}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.2}{Metodyki projektowania architkektury korporacyjnej}{chapter.3}% 18
+\BOOKMARK [0][-]{chapter.4}{Przeglad jezyk\363w do projektowania architektury korporacyjnej}{}% 19
+\BOOKMARK [1][-]{section.4.1}{SoaML}{chapter.4}% 20
+\BOOKMARK [2][-]{subsection.4.1.1}{Czym jest SoaML?}{section.4.1}% 21
+\BOOKMARK [2][-]{subsection.4.1.2}{G\233\363wne elementy notacji}{section.4.1}% 22
+\BOOKMARK [2][-]{subsection.4.1.3}{Modelowanie z wykorzystaniem SoaML}{section.4.1}% 23
+\BOOKMARK [1][-]{section.4.2}{ArchiMate}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.3}{Inne jezyki}{chapter.4}% 25
+\BOOKMARK [0][-]{chapter.5}{Opracowanie metody projektowania system\363w informatycznych o architekturze SOA}{}% 26
+\BOOKMARK [0][-]{chapter.6}{Weryfikacja koncepcji na przyk\233adzie systemu bankowego}{}% 27
+\BOOKMARK [1][-]{section.6.1}{Projektowanie systemu bankowego w oparciu o utworzona koncepcje}{chapter.6}% 28
+\BOOKMARK [2][-]{subsection.6.1.1}{Opis og\363lny}{section.6.1}% 29
+\BOOKMARK [2][-]{subsection.6.1.2}{Analiza systemu}{section.6.1}% 30
+\BOOKMARK [2][-]{subsection.6.1.3}{Implementacja}{section.6.1}% 31
+\BOOKMARK [2][-]{subsection.6.1.4}{Proces wdrozenia}{section.6.1}% 32
+\BOOKMARK [2][-]{subsection.6.1.5}{Testy}{section.6.1}% 33
+\BOOKMARK [1][-]{section.6.2}{Cel systemu w odniesieniu do zaprojektowanej koncepcji}{chapter.6}% 34
+\BOOKMARK [0][-]{chapter.7}{Podsumowanie i wnioski}{}% 35
+\BOOKMARK [0][-]{chapter*.2}{Bibliografia}{}% 36
