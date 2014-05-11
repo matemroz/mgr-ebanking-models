@@ -1,0 +1,67 @@
+\documentclass[a4paper,12pt,twoside,openany]{report}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage[pdftex]{graphicx}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[polish]{babel}
+\usepackage{subfigure}
+\usepackage{amsfonts}
+\usepackage{verbatim}
+\usepackage{indentfirst}
+\usepackage{longtable}
+\usepackage{supertabular}
+\usepackage[pdftex]{hyperref}
+
+\newcommand{\ImgPath}{./img}
+\newcommand{\TODO}{\textbf{TODO}}
+\newcommand{\tech}{\texttt}
+
+% na oprawe (1.0cm - 0.7cm)*2 = 0.6cm
+% na oprawe (1.1cm - 0.7cm)*2 = 0.8cm
+%  oddsidemargin lewy margines na nieparzystych stronach
+% evensidemargin lewy margines na parzystych stronach
+\def\oprawa{1.05cm}
+\addtolength{\oddsidemargin}{\oprawa}
+\addtolength{\evensidemargin}{-\oprawa}
+
+% table span multirows
+\usepackage{multirow}
+\usepackage{enumitem}	% enumitem.pdf
+\setlist{listparindent=\parindent, parsep=\parskip} % potrzebuje enumitem
+
+%%%%%%%%%%%%%%% Dodatkowe Pakiety %%%%%%%%%%%%%%%%%
+\usepackage{prmag}   % definiuje komendy opieku,nrindeksu, rodzaj pracy, ...
+
+
+%%%%%%%%%%%%%%% Strona Tytułowa %%%%%%%%%%%%%%%%%
+\title{Projektowanie architektury korporacyjnej z zastosowaniem języka SoaML}
+
+\author{Mateusz Mróz}
+\nrindeksu{221192}
+\zdjecie{\includegraphics[width=4cm]{\ImgPath/zdjecie_legitymacja.jpg}}
+
+\opiekun{dr inż. Włodzimierz Dąbrowski}
+\terminwykonania{01.06.2014} % data złożenia - pokazana na stronie tytułowej
+\datawydaniatematu{24 marca 2014}
+\rokakademicki{2013/2014}
+\zakres{\input{zakres.tex}}
+
+\begin{document}
+\maketitle
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\tableofcontents
+ \input{Wstep.tex}
+\begin{thebibliography}{99}
+\addcontentsline{toc}{chapter}{Bibliografia}
+\bibitem{EfektyZasSys}{Autor nieznany , \url{http://mfiles.pl/pl/index.php/Efekty_wdra\%C5\%BCania_informatycznych_system\%C3\%B3w_zarz\%C4\%85dzania.}}
+\bibitem{SOAManifestoOrg}{Autor nieznany , \url{http://www.soa-manifesto.org/.}}
+\bibitem{SOAawidptas}{Bean J., \emph{and Web Services Interface Design: Principles, Techniques, and Standard}, Morgan Kaufmann Publishers, 2010.}
+\bibitem{SOAwJBBC}{Binildas A. Christudas, Malhar Balai, Caselli Vincenzo, \emph{Service Oriented Architecture with Java: Using SOA and Web Services to Build Powerful Java Applications}, Packt Publishing, 2008.}
+\bibitem{PlatIntGor}{Górski Tomasz, \emph{Platformy integracyjne. Zagadnienia wybrane}, Wydawnictwo naukowe PWN, 2012.}
+\bibitem{SOAsdj102009}{Wasiukiewicz Radosław, \emph{SOA, czyli Service Oriented Architecture}, Software Developer Journal, 10/2009.}
+
+
+\end{thebibliography}
+\end{document}
