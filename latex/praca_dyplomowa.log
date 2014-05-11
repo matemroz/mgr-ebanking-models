@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.1.30)  11 MAY 2014 01:48
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.1.30)  11 MAY 2014 17:18
 entering extended mode
 **praca_dyplomowa.tex
 
-("C:\Documents and Settings\Administrator\My Documents\Studia\mgr2\text\latex\p
-raca_dyplomowa.tex"
+("C:\Documents and Settings\Administrator\My Documents\Studia\mgr2\trunk\mgr-eb
+anking-models\latex\praca_dyplomowa.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -567,12 +567,12 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box31
 \enitdp@description=\count111
 )
-("C:\Documents and Settings\Administrator\My Documents\Studia\mgr2\text\latex\p
-rmag.sty"
+("C:\Documents and Settings\Administrator\My Documents\Studia\mgr2\trunk\mgr-eb
+anking-models\latex\prmag.sty"
 Package `prmag' (ISEP PW Thesis) ver. 0.2 (Jan 2011)
 )
-("C:\Documents and Settings\Administrator\My Documents\Studia\mgr2\text\latex\p
-raca_dyplomowa.aux")
+("C:\Documents and Settings\Administrator\My Documents\Studia\mgr2\trunk\mgr-eb
+anking-models\latex\praca_dyplomowa.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
 LaTeX Font Info:    ... okay on input line 50.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
@@ -618,16 +618,18 @@ LaTeX Info: Redefining \ref on input line 50.
 LaTeX Info: Redefining \pageref on input line 50.
 LaTeX Info: Redefining \nameref on input line 50.
 
-("C:\Documents and Settings\Administrator\My Documents\Studia\mgr2\text\latex\p
-raca_dyplomowa.out")
-("C:\Documents and Settings\Administrator\My Documents\Studia\mgr2\text\latex\p
-raca_dyplomowa.out")
+("C:\Documents and Settings\Administrator\My Documents\Studia\mgr2\trunk\mgr-eb
+anking-models\latex\praca_dyplomowa.out")
+("C:\Documents and Settings\Administrator\My Documents\Studia\mgr2\trunk\mgr-eb
+anking-models\latex\praca_dyplomowa.out")
 \@outlinefile=\write3
 LaTeX Font Info:    Try loading font information for OML+plm on input line 51.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\polski\omlplm.fd"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\polski\omlplm.fd"
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    Try loading font information for OMS+plsy on input line 51.
+
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\polski\omsplsy.fd"
 File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
@@ -654,7 +656,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 51.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-<./img/zdjecie_legitymacja.jpg, id=147, 99.4917pt x 125.7498pt>
+<./img/zdjecie_legitymacja.jpg, id=159, 99.4917pt x 125.7498pt>
 File: ./img/zdjecie_legitymacja.jpg Graphic file (type jpg)
 
 <use ./img/zdjecie_legitymacja.jpg>
@@ -664,27 +666,27 @@ Package pdftex.def Info: ./img/zdjecie_legitymacja.jpg used on input line 51.
 
 {C:/Documents and Settings/All Users/Application Data/MiKTeX/2.9/pdftex/config/
 pdftex.map} <C:/Documents and Settings/Administrator/My Documents/Studia/mgr2/t
-ext/latex/img/zdjecie_legitymacja.jpg>]
+runk/mgr-ebanking-models/latex/img/zdjecie_legitymacja.jpg>]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 51.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
- [2] [3
+
+[2] [3
 
 ] [4] [5]
-("C:\Documents and Settings\Administrator\My Documents\Studia\mgr2\text\latex\p
-raca_dyplomowa.toc"pdfTeX warning (ext4): destination with the same identifier 
-(name{page.1}) has been already used, duplicate ignored
+("C:\Documents and Settings\Administrator\My Documents\Studia\mgr2\trunk\mgr-eb
+anking-models\latex\praca_dyplomowa.toc"pdfTeX warning (ext4): destination with
+ the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.27 ...cznych o architekturze SOA}{13}{chapter.5}
+l.28 ...umberline {4.2}ArchiMate}{13}{section.4.2}
                                                    [1
 
 ]
-Overfull \hbox (0.19185pt too wide) in paragraph at lines 29--29
+Overfull \hbox (0.19185pt too wide) in paragraph at lines 32--32
  [][] [][]\OT4/cmr/m/n/12 Projektowanie sys-temu ban-ko-wego w opar-ciu o utwo-
 rzon¡ kon- 
  []
@@ -692,9 +694,9 @@ rzon¡ kon-
 )
 \tf@toc=\write4
 
-("C:\Documents and Settings\Administrator\My Documents\Studia\mgr2\text\latex\W
-step.tex"pdfTeX warning (ext4): destination with the same identifier (name{page
-.2}) has been already used, duplicate ignored
+("C:\Documents and Settings\Administrator\My Documents\Studia\mgr2\trunk\mgr-eb
+anking-models\latex\Wstep.tex"pdfTeX warning (ext4): destination with the same 
+identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1 \chapter
@@ -730,7 +732,7 @@ l.32 O
       rganizacja W3C (World Wide Web Consortium) podjÄ™Å‚a prÃ³bÄ™ zdefiniow...
 [5
 
-] [6] <img/soa_arch.png, id=248, 715.92468pt x 535.2497pt>
+] [6] <img/soa_arch.png, id=265, 715.92468pt x 535.2497pt>
 File: img/soa_arch.png Graphic file (type png)
 
 <use img/soa_arch.png>
@@ -744,8 +746,8 @@ Overfull \hbox (8.33858pt too wide) in paragraph at lines 52--53
 
 LaTeX Warning: Citation `AnRTeqq' on page 7 undefined on input line 53.
 
-[7 <C:/Documents and Settings/Administrator/My Documents/Studia/mgr2/text/latex
-/img/soa_arch.png>] [8] [9]
+[7 <C:/Documents and Settings/Administrator/My Documents/Studia/mgr2/trunk/mgr-
+ebanking-models/latex/img/soa_arch.png>] [8] [9]
 Overfull \hbox (8.38614pt too wide) in paragraph at lines 79--80
 \OT4/cmr/m/n/12 wa-nia szcze-gó-ªów kon-fi-gu-ra-cyj-nych oraz im-ple-men-ta-cy
 j-nych da-nej usªugi. 
@@ -753,33 +755,28 @@ j-nych da-nej usªugi.
 
 [10]
 Rozdzia\l  3.
-
-Overfull \hbox (17.55971pt too wide) in paragraph at lines 86--86
-[]\OT4/cmr/bx/n/17.28 Metodyki pro-jek-to-wa-nia ar-chit-kek-tury kor-
- []
-
 [11
 
-]
+] [12] [13]
 Rozdzia\l  4.
-[12
+[14
 
 ]
 Rozdzia\l  5.
-[13
+[15
 
 ]
 Rozdzia\l  6.
 
-Overfull \hbox (12.08572pt too wide) in paragraph at lines 99--99
+Overfull \hbox (12.08572pt too wide) in paragraph at lines 137--137
 []\OT4/cmr/bx/n/17.28 Projektowanie sys-temu ban-ko-wego w opar-
  []
 
-[14
+[16
 
 ]
 Rozdzia\l  7.
-) [15
+) [17
 
 ]
 LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 58.
@@ -787,28 +784,33 @@ LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 58.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\polski\ot4cmtt.fd"
 File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 66.
- [16
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+[]\OT4/cmr/m/n/12 Fowler Mar-tin, []$\OT4/cmtt/m/n/12 http : / / www . martinfo
+wler . com / articles /$
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 69.
+[18
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 66.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 69.
 
-("C:\Documents and Settings\Administrator\My Documents\Studia\mgr2\text\latex\p
-raca_dyplomowa.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 66.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 66.
+("C:\Documents and Settings\Administrator\My Documents\Studia\mgr2\trunk\mgr-eb
+anking-models\latex\praca_dyplomowa.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 69.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 69.
 Package rerunfilecheck Info: File `praca_dyplomowa.out' has not changed.
-(rerunfilecheck)             Checksum: A59C7F1C3B367E970D9B19E01A6B1813;2753.
+(rerunfilecheck)             Checksum: D8CEC7765D3D5FB984CEAECFBAAD45D2;2925.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 6614 strings out of 494045
- 95749 string characters out of 3148309
- 185531 words of memory out of 3000000
- 9727 multiletter control sequences out of 15000+200000
+ 6628 strings out of 494045
+ 96293 string characters out of 3148309
+ 185627 words of memory out of 3000000
+ 9733 multiletter control sequences out of 15000+200000
  15036 words of font info for 44 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  29i,12n,28p,1418b,434s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -820,9 +822,9 @@ m Files/MiKTeX 2.9/fonts/type1/public/pl/plbxti10.pfb><C:/Program Files/MiKTeX
 2.9/fonts/type1/public/pl/plr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/pl/plti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plti12.pf
 b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/pltt12.pfb>
-Output written on praca_dyplomowa.pdf (21 pages, 557342 bytes).
+Output written on praca_dyplomowa.pdf (23 pages, 567142 bytes).
 PDF statistics:
- 337 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
- 299 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 374 PDF objects out of 1000 (max. 8388607)
+ 68 named destinations out of 1000 (max. 500000)
+ 323 words of extra memory for PDF output out of 10000 (max. 10000000)
 
