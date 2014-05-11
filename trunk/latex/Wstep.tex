@@ -74,18 +74,56 @@ Systemy SOA mogą być bardzo różnorodne. SOA nie narzuca konkretnych technolo
 \item{abstrakcyjność - zasada abstrakcji (ang. abstraction) zakłada, że kontrakty usług mogą zawierać jedynie niezbędne informacje i mogą udostępniać jedynie te informacje, które są w nich zdefiniowane. Zasada ta podkreśla potrzebę ukrycia przez usługi tak wielu informacji jak to tylo możliwe. [SOAterlprD]}
 \item{autonomiczność usług - autonomia usługi (ang. service autonomy) jest kolejnym paradygmatem projektowania systemów typu SOA. Termin ten odwołuje się do usług o podwyższonej niezależności od środowisk wykonawczych. [SOAsrvautoWCSS] Usługa powinna mieć możliwość podmiany środowiska wykonawczego z lekkiego prototypowego (ang. lightweight prototype) do pełnowymiarowego (ang. full-blown), w którym są już uruchomione inne usługi odwołujące do niej. Zgodnie z zasadą autonomii każda z usług może być wdrażana, wersjonowana i zarządzana niezależnie od innych. [SOAinfoq10]}
 \item{wykrywalność usług - zasada wykrywalności usług (ang. services discoverability) polega na tym, że usługi powinny być opisywane za pomocą meta danych w takich sposób, aby były efektywnie wyszukiwane, przetwarzane i interpretowane zarówno w czasie projektowania jak i wykonywania. [SOAinfoq10, SOAsrvautoWCSS]}
-\item{spójność i ziarnistość usług - interfejsy usług w systemach SOA powinny być tak zaprojektowane, aby wiązały tylko określony zbiór wymagań biznesowych. [SOAsdj102009] Należy zadbać o optymalną ziarnistość interfejsów dla obsługiwanych typów i rozmiarów danych (ziarnistość danych wejściowych i wyjściowych), wartości biznesowej oraz funkcjonalności (domyślna i parametryzowana ziarnistość funkcjnonalności). [SOAdefgranaaImp]}
-\item{bezstanowość usług - zasada bezstanowości usług (ang. Services statelessness) odwołuje się do minimalizacji użycia zasobów i ograniczania się do przechowywania i przetwarzania tylko absolutnie niezbędnych informacji.  [SOAsrvautoWCSS ] Usługa nie może być w stanie przetrzymywać informacji o wcześniejszych żądaniach klienta. Każda z informacji powinna być odizolowana od innych. Skuteczne stosowanie zasady bezstanowości może znacząco zwiększyć wydajność rozwiązania oraz zmniejszyć współbieżne działanie usług. [SOAsdj102009]}
+\item{spójność i ziarnistość usług - interfejsy usług w systemach SOA powinny być tak zaprojektowane, aby wiązały tylko określony zbiór wymagań biznesowych. \cite{SOAsdj102009} Należy zadbać o optymalną ziarnistość interfejsów dla obsługiwanych typów i rozmiarów danych (ziarnistość danych wejściowych i wyjściowych), wartości biznesowej oraz funkcjonalności (domyślna i parametryzowana ziarnistość funkcjnonalności). [SOAdefgranaaImp]}
+\item{bezstanowość usług - zasada bezstanowości usług (ang. Services statelessness) odwołuje się do minimalizacji użycia zasobów i ograniczania się do przechowywania i przetwarzania tylko absolutnie niezbędnych informacji.  [SOAsrvautoWCSS ] Usługa nie może być w stanie przetrzymywać informacji o wcześniejszych żądaniach klienta. Każda z informacji powinna być odizolowana od innych. Skuteczne stosowanie zasady bezstanowości może znacząco zwiększyć wydajność rozwiązania oraz zmniejszyć współbieżne działanie usług. \cite{SOAsdj102009}}
 \item{enkapsulacja - enkapsulacja (ang. Encapsulation) stanowi jedną z podstawowych zasad poprawnego projektowania systemów typu SOA. Zapewnienie odpowiedniej hermetyzacji dla usług sprowadza się do ukrywania szczegółów konfiguracyjnych oraz implementacyjnych danej usługi.}
 \end{itemize}
 
 \section{Adaptacja SOA w architekturze korporacyjnej}
 
-\chapter{Metodyki projektowania systemów informatycznych w architekturze korporacyjnej}
+\chapter{Metodyki projektowania rozwiązań w architekturze usługowej}
 \section{Wstęp}
-\section{Metodyki projektowania architkektury korporacyjnej}
+\section{RUP4SOA}
+\subsection{Czym jest RUP?}
+RUP (ang. \textit{Rational Unified Process}) stanowi proces  wytwarzania oprogramowania oparty na iteracjach. Metodyka ta została zdefiniowana przez grupę Rational Software (przejętą przez firmę IBM w roku 2003). 
 
-\chapter{Przegląd języków do projektowania architektury korporacyjnej}
+RUP zapewnia zdyscyplinowane podejście do przydzielania zadań i obowiązków w ramach rozwoju organizacji. Celem podstawowym tej metodyki jest dostarczenie wysokiej jakości oprogramowania spełniającego potrzeby użytkowników końcowych w zgodzie z harmonogramem i ramami budżetowymi.
+\cite{RUPIntRat} Stanowi przede wszystkim bardzo duży zbiór praktyk, który może być dostosowywany i rozszerzany w celu jak najlepszego dopasowania się do danej organizacji. Charaktertystyczne dla metody jest rozwój sterowany przypadkami użycia (ang. \textit{Use Case Driven Development}).\cite{RUPMartFow}
+
+W RUP można wyróżnić poszczególne fazy:
+\begin{itemize}
+\item{faza początkowa (ang. \textit{inception}) – wstępne określenie wymagań, ryzyka, kosztu, harmonogramu, a także architektury systemu,}
+\item{faza opracowania (ang. \textit{elaboration}) – ustalenie wymagań (większości przypadków użycia), architektury systemu oraz planu całego procesu wytwarzania systemu,}
+\item{faza konstrukcji (ang. \textit{construction}) – tworzenie systemu (kolejnych komponentów), w trakcie następuje oddanie pierwszej (i być może dalszych) wersji użytkownikowi,}
+\item{faza przekazania (ang. \textit{transiation}) – system jest przekazywany użytkownikowi, wdrażany, szkoleni są pracownicy obsługi systemu, następuje walidacja i końcowe sprawdzenie jakości.}\cite{RUPIntRat}
+\end{itemize}
+\subsection{Wykorzystanie RUP w projektowaniu SOA}
+RUP4SOA stanowi modyfikację metodyki RUP i dołączono do niej zadania i produkty potrzebne przy projektowaniu rozwiązań w architekturze usługowej. W odróżnieniu od klasycznego RUP, metodyka RUP4SOA opiera się na wyróżnieniu trzech dyscyplin związanych z analizą i projektowaniem:
+\begin{itemize}
+\item{analiza i projektowanie architektury SOA - przygotowanie architektury SOA zgodnie z wymaganiami,}
+\item{analiza i projektowanie kontraktów w architekturze SOA - analizie poddane są procesy integracyjne, związane z dostarczaniem usług i realizacją kontraktów między organizacjami,}
+\item{analiza i projektowanie logiki usług SOA - identyfikacja usług w systemach informatycznych w jednostkach, w których wdrażana będzie architektura SOA}
+\end{itemize}
+Reszta dyscyplin jest analogiczna do metodyki RUP. \cite{PlatIntGor}
+
+W RUP4SOA można wyróżnić poszczególne dyscypliny:
+\begin{itemize}
+\item {modelowanie biznesowe,}
+\item {specyfikacja wymagań,}
+\item {analiza i projektowanie architektury SOA,}
+\item {analiza i projektowanie kontraktow SOA,}
+\item {analiza i projektowanie logiki usług,}
+\item {implementacja,}
+\item {testowanie,}
+\item {wdrożenie,}
+\item {zarządzanie zmianą i konfiguracją,}
+\item {zarządzanie projektem,}
+\item {środowisko.}
+\end{itemize}
+
+\section{SOMA}
+
+\chapter{Przegląd języków do projektowania systemów informatycznych o architekturze SOA}
 \section{SoaML}
 \subsection{Czym jest SoaML?}
 \subsection{Główne elementy notacji}
