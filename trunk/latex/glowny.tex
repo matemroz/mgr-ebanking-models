@@ -98,15 +98,13 @@ W RUP można wyróżnić poszczególne fazy:
 \item{faza przekazania (ang. \textit{transiation}) – system jest przekazywany użytkownikowi, wdrażany, szkoleni są pracownicy obsługi systemu, następuje walidacja i końcowe sprawdzenie jakości.}\cite{RUPIntRat}
 \end{itemize}
 \subsection{Wykorzystanie RUP w projektowaniu SOA}
-RUP4SOA stanowi modyfikację metodyki RUP i dołączono do niej zadania i produkty potrzebne przy projektowaniu rozwiązań w architekturze usługowej. W odróżnieniu od klasycznego RUP, metodyka RUP4SOA opiera się na wyróżnieniu trzech dyscyplin związanych z analizą i projektowaniem:
+RUP4SOA stanowi modyfikację metodyki RUP i dołączono do niej zadania i produkty potrzebne przy projektowaniu rozwiązań w architekturze usługowej. RUP4SOA stanowi komercyjny plug-in dla framework'a RUP. Rozszerza standardowy pakiet o zbiór dodatkowych artefaktów i właściwości. W odróżnieniu od klasycznego RUP, metodyka ta opiera się na wyróżnieniu trzech dyscyplin związanych z analizą i projektowaniem:
 \begin{itemize}
 \item{analiza i projektowanie architektury SOA - przygotowanie architektury SOA zgodnie z wymaganiami,}
 \item{analiza i projektowanie kontraktów w architekturze SOA - analizie poddane są procesy integracyjne, związane z dostarczaniem usług i realizacją kontraktów między organizacjami,}
 \item{analiza i projektowanie logiki usług SOA - identyfikacja usług w systemach informatycznych w jednostkach, w których wdrażana będzie architektura SOA}
 \end{itemize}
-Reszta dyscyplin jest analogiczna do metodyki RUP. \cite{PlatIntGor}
-
-W RUP4SOA można wyróżnić poszczególne dyscypliny:
+Reszta dyscyplin jest analogiczna do metodyki RUP. \cite{PlatIntGor} W RUP4SOA można wyróżnić poszczególne fazy:
 \begin{itemize}
 \item {modelowanie biznesowe,}
 \item {specyfikacja wymagań,}
@@ -120,6 +118,21 @@ W RUP4SOA można wyróżnić poszczególne dyscypliny:
 \item {zarządzanie projektem,}
 \item {środowisko.}
 \end{itemize}
+
+W fazie analizy i projektowania przygotowywana jest architektura SOA zgodnie z postawionymi wymaganiami i modelem biznesowym. Istotne jest, aby opracowywana architektura była projektowana z zamysłem o jak najprostszej realizacji i późniejszym wdrożeniu. Kolejną dyscyplinę stanowi analiza i projektowanie kontraktów w architekturze usługowej. Ta faza opiera się na analizie procesów integracyjnych związanych z dostarczaniem usług i wymianą kontraktów między organizacjami. Następny element metodyki RUP4SOA stanowi analiza i projektowanie logiki usług SOA, który powiązany jest z identyfikacją usług informatycznych w organizacjach. 
+
+Po fazach analizy i projektowania następują kolejno implementacja oraz testy. W następnym etapie utworzony produkt zostaje wdrożony na przygotowane środowisko. Równolegle trwają również prace związane z zarządzaniem projektem, konfiguracją oraz zmianami. \cite{PlatIntGor}
+
+Podstwowym produktem wytworzonym przez Architekta oprogramowania w przypadku RUP4SOA jest model usług. Do podstawowych zadań Architekta oprogramowania zalicza się realizację fazy "identyfikacji usług".
+
+Projektant w RUP4SOA odpowiada za przygotowanie projektu usługi, a jego odpowiedzialność jest związana z produktami: komunikat, usługa, kanał usługi, bramka usługi, współpraca usługi, partycja usługi, specyfikacja usługi oraz komponent usługi. 
+
+\subsection{Zalety i wady RUP4SOA}
+RUP4SOA jest jedną z najpopularniejszych metodyk stosowanych do projektowania architektury usługowej. Największy nacisk kładzie na fazy związane z analizą i projektowaniem systemu informatycznego - rozszerzonym o elementy związane z usługami sieciowymi. Fakt ten może powodować większą zgodność między wyobrażnieniami klienta, a rzeczywistym produktem w formie systemu. 
+
+Jedną z jej największych zalet jest również opieranie się na metodyce RUP, która wykorzystuje doświadczenia i praktyki przyjęte przez organizacje na przestrzeni wielu lat. \cite{JonSimRUPSoa}
+
+Metodyka ta nie specyfikuje wielu elementów istotnych do budowy rozwiązań integracyjnych. Skupia się na projektowaniu pojedynczego systemu, który może być jedynie włączony do platformy integracyjnej. \cite{PlatIntGor}
 
 \section{SOMA}
 
