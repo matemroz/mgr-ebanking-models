@@ -63,6 +63,40 @@ Rejestr SOA (ang. SOA registry) stanowi centralny punkt informacyjny na temat sp
 	
 Istotnym elementem w systemach typu SOA jest repozytorium (ang. SOA repository). Stanowi on centralny „magazyn” dla elementów składowych usług takich jak: kod źródłowy, zestawy instalacyjne, specyfikacja itp. Repozytorium usług jest tworzone i wykorzystywane głównie na etapie projektowania usług. [SOAidntech]
 
+\subsection{Usługa sieciowa w SOA}
+Usługa sieciowa w SOA (ang. \textit{Web Service}) stanowi usługę świadczoną przez sieć – na przykład Internet. Składnik oprogramowania niezależny od platformy sprzętowej oraz implementacji. Może być zdefiniowany za pomocą języka opisu usług – na przykład bazującym na XML WSDL (ang. Web Service Definition Language), publikowana i wyszukiwana w rejestrze (np. UDDI) oraz wywoływana zdalnie przez opisujący ją interfejs. 
+Z reguły Web Service opiera się na konstrukcji uwzględniającej trzy typy komponentów (rys. [WSArchFunc]) : klienta usługi (ang. service requestor), dostawcę usługi (ang. service provider) oraz rejestr usług (service registry) lub broker usług (ang. service broker).  Transport danych w przypadku Web Service z reguły opiera się na HTTP lub HTTPS z wykorzystaniem SOAP. [IBMWebServiceInfo]
+Każdy z komponentów jest odpowiedzialny za pełnienie swojej roli:
+\begin{itemize}
+\item{dostawca usługi tworzy i wdraża Web Service. Publikuje również dostępność opisanego za pomocą WSDL Web Service’u w rejestrze usług (lub brokerze usług),}
+\item{rejestr usług lub broker usług odpowiada za rejestrację i kategoryzację opublikowanych usłgu. Dostarcza również możliwość ich wyszukiwania,} 
+\item{klienci usług używają rejestru usług (lub brokera usług) do wykrycia Web Service’u opisanego za pomocą WSDL, a następnie wykonują zapytanie do dostawcy usługi. Dostawca usługi udziela odpowiedzi klientowi.}
+\end{itemize}
+
+\begin{figure}[h!tbp]
+\begin{centering}
+\includegraphics[width=11cm]{img/web_service.png}
+\caption[Usługa sieciowa w SOA (Web Service).]{Usługa sieciowa w SOA (Web Service). \cite{AnRTeqq}}\label{soa_arch}
+\end{centering}
+\end{figure}
+
+\subsection{Warstwy architektury SOA}
+W SOA można wyszczególnić dziewięć warstw architektury. Każda z nich składa się z modelu fizycznego oraz logicznego. Model fizyczny opisuje sposób realizacji logiki za pomocą dostępnych technologii oraz produktów, natomiast logiczny zawiera wszystkie architektoniczne bloki, warunki logiczne, decyzje oraz inne - stanowi model konceptualny z dobranym poziomem abstrakcji.
+
+Poszczególne warstwy w SOA to:
+\begin{itemize}
+\item{Warstwa aplikacji - w jej skład wchodzą wszystkie aplikacje działające w środowisku IT i mające na celu wspieranie działania przedsiębiorstwa. Do przykładów można zaliczyć: aplikacje Java Enterprise lub .NET, systemy transakcyjne, bazy danych oraz systemy ERP i CRM.}
+\item{Warstwa komponentów - obejmuje składniki oprogramowania realizujące konkretne operacje usług Odpowiada za fizyczną implementację usługi oraz jej opis dostarczając elementy zgodne z SCA (ang. \textit{Service Component Architecture}) oraz specyfikacją SDO (ang. \textit{Service Data Objects}).}
+\item{Warstwa usług - stanowi zbiór wszystkich usług zdefiniowanych za pomocą kontraktu pomiędzy dostawcą, a odbiorcą o sposobie dostarczenia usługi.}
+\item{Warstwa procesów biznesowych - w tej fazie tworzona jest kompozycja wielu usług realizujących konkretne biznesowe przypadku użycia. Proces biznesowy składa się z przepływów realizujących dany cel biznesowy organizacji i zagregowanych usług.}
+\item{Warstwa prezentacji - stanowi często wspólny interfejs dostępu do usług. Odpowiada za dostarczanie funkcji biznesowych dla klientów końcowych.}
+\item{Warstwa integracji - kluczowy element architektury SOA. Jej podstawową funkcją jest zlecenie klientom usług i dostarczanie ich przez dostawców. Przepływ operacji jaki jest wykonywany w tej warstwie to: odbiór zlecenia od klienta, dostarczenie go do dystrybutora, a następnie dostarczenie do klienta.}
+\item{Warstwa jakościowa - obejmuje monitorowanie procesów biznesowych odnoszących się do podstawowych wskaźników wydajności danej organizacji. Pełni obserwację pozostałych warstw i informuje o zdarzeniach niezgodnych z zakładanymi.}
+\item{Warstwa Business Intelligence - stanowi podstawę do budowania rozwiązań Business Intelligence umożliwiających modelowanie danych analitycznych i eksploracje. W tej warstwie włączane są kluczowe zagadnienia związane z obiegiem informacji w przedsiębiorstwach.}
+\item{Warstwa zarządzania - odnosi się do zarządzania wszystkimi elementami cyklu życiu SOA oraz wszystkich warstw architektury (ze szczególnym naciskiem na warstwę jakościową). Wykorzystuje kluczowe wskaźniki wydajności lub efektywności (KPI) do egzekwowania wymagań jakościowych i funkcjonalnych wyspecyfikowanych przez przedsiębiorstwo.}
+\end{itemize}
+\cite{PlatIntGor}
+
 \subsection{Podstawowe zasady SOA}
 Systemy SOA mogą być bardzo różnorodne. SOA nie narzuca konkretnych technologii, a jej realizacja może odbywać się na wiele sposobów. Komunikacja mędzy komponentami w SOA może wykorzystywać różne kanały komunikacji: WS, HTTP, HTTPS, LDAP, FTP, IMAP, JMS, RMI. Budowa systemu SOA może wykorzystywać szynę integracyjną ESB lub broker (można również łączyć wiele szyn ESB ze sobą lub łączyć broker’y z ESB). Mimo tej dużej dowolności istnieje zestaw zasad, na których powinien opierać się każdy system SOA.
 \begin{itemize}
@@ -78,6 +112,20 @@ Systemy SOA mogą być bardzo różnorodne. SOA nie narzuca konkretnych technolo
 \item{bezstanowość usług - zasada bezstanowości usług (ang. Services statelessness) odwołuje się do minimalizacji użycia zasobów i ograniczania się do przechowywania i przetwarzania tylko absolutnie niezbędnych informacji.  [SOAsrvautoWCSS ] Usługa nie może być w stanie przetrzymywać informacji o wcześniejszych żądaniach klienta. Każda z informacji powinna być odizolowana od innych. Skuteczne stosowanie zasady bezstanowości może znacząco zwiększyć wydajność rozwiązania oraz zmniejszyć współbieżne działanie usług. \cite{SOAsdj102009}}
 \item{enkapsulacja - enkapsulacja (ang. Encapsulation) stanowi jedną z podstawowych zasad poprawnego projektowania systemów typu SOA. Zapewnienie odpowiedniej hermetyzacji dla usług sprowadza się do ukrywania szczegółów konfiguracyjnych oraz implementacyjnych danej usługi.}
 \end{itemize}
+
+\subsection{Korporacyjna szyna usług - ESB}
+ESB (ang. \textit{Enterprise Service Bus}) stanowi abstrakcyjną warstwę wymiany komunikatów. W systemie informatycznym wprowadza znaczną elastyczność, ponieważ pozwala na dynamiczne przyłączanie i odłączanie usług.\cite{PlatIntGor}
+
+Głównym celem korporacyjnej szyny usług jest dostarczanie pewnego rodzaju wirtualizacji dla korporacyjnych zasobów pozwalając na rozwijanie logiki biznesowej niezależnie od infrastruktury lub sieci oraz bez potrzeby pisania dodatkowego kodu. Zasoby w ESB są modelowane jako usługi, które oferują jedną lub więcej operacji biznesowych.\cite{IBMRBSoaPat}
+
+Dobra praktyka projektowania architektury systemu zapewnia, że wszystkie połączenia między aplikacjami będą realizowane z wykorzystaniem szyny.\cite{PlatIntGor} Pełne sprostanie różnorodności wzorców integracji jakie oferuje SOA wymaga utrzymywania przez ESB trzech głównych paradygmatów integracji aplikacji korporacyjnych:
+\begin{itemize}
+\item{Architektura zorientowana na usługi - rozproszone aplikacje zbudowane są z ziarnistych usług wieleokrotnego użytku z dobrze zdefiniowanymi, opublikowanymi i zgodnymi ze standardami interfejsami.}
+\item{Architektura zorientowana na komunikaty (ang. \textit{message-driven architecture}) - aplikacje wysyłają komunikaty między sobą.}
+\item{Architektura zorientowana na zdarzenia (ang. \textit{event-driven architecture}) - aplikacje generują i konsumują usługi niezależnie od pozostałych.} \cite{IBMRBSoaPat}
+\end{itemize}
+
+Stosowanie szyny integracyjnej wiąże się z wieloma zaletami. Przede wszystkim powoduje zmniejszenie kosztów dzięki szybkiemu i elastycznemu rozwiązaniu integracji eliminującym połączenia typu \textit{point-to-point}. ESB umożliwia również rozwój obecnych środowisk bez wpływu na obecne co pozwala na łatwe rozszerzanie systemu o nowe funkcjonalności.\cite{IBMRBSoaPat}
 
 \section{Adaptacja SOA w architekturze korporacyjnej}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.5.10)  14 MAY 2014 17:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.5.10)  14 MAY 2014 21:10
 entering extended mode
 **praca_dyplomowa.tex
 (C:\Users\IBM_ADMIN\Documents\Studia\MGR2\trunk\latex\praca_dyplomowa.tex
@@ -575,7 +575,11 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 )
 (C:\Users\IBM_ADMIN\Documents\Studia\MGR2\trunk\latex\prmag.sty
 Package `prmag' (ISEP PW Thesis) ver. 0.2 (Jan 2011)
-) (C:\Users\IBM_ADMIN\Documents\Studia\MGR2\trunk\latex\praca_dyplomowa.aux)
+) (C:\Users\IBM_ADMIN\Documents\Studia\MGR2\trunk\latex\praca_dyplomowa.aux
+
+LaTeX Warning: Label `soa_arch' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
 LaTeX Font Info:    ... okay on input line 50.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
@@ -592,8 +596,7 @@ LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 50.
 LaTeX Font Info:    ... okay on input line 50.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
 LaTeX Font Info:    ... okay on input line 50.
-
-("C:\Program Files\MiKTeX\tex\context\base\supp-pdf.mkii"
+ ("C:\Program Files\MiKTeX\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count112
 \scratchdimen=\dimen137
@@ -657,7 +660,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 51.
 ("C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<./img/zdjecie_legitymacja.jpg, id=163, 99.4917pt x 125.7498pt>
+<./img/zdjecie_legitymacja.jpg, id=175, 99.4917pt x 125.7498pt>
 File: ./img/zdjecie_legitymacja.jpg Graphic file (type jpg)
 
 <use ./img/zdjecie_legitymacja.jpg>
@@ -682,11 +685,11 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 lready used, duplicate ignored
 <to be read again> 
                    \relax 
-l.28 ...ykorzystaniem SoaML}{14}{subsection.4.1.3}
+l.27 ...cznych o architekturze SOA}{17}{chapter.4}
                                                    [1
 
 ]
-Overfull \hbox (0.19185pt too wide) in paragraph at lines 33--33
+Overfull \hbox (0.19185pt too wide) in paragraph at lines 36--36
  [][] [][]\OT4/cmr/m/n/12 Projektowanie sys-temu ban-ko-wego w opar-ciu o utwo-
 rzon¡ kon- 
  []
@@ -731,7 +734,7 @@ l.32 O
       rganizacja W3C (World Wide Web Consortium) podjÄ™Å‚a prÃ³bÄ™ zdefiniow...
 [5
 
-] [6] <img/soa_arch.png, id=270, 715.92468pt x 535.2497pt>
+] [6] <img/soa_arch.png, id=285, 715.92468pt x 535.2497pt>
 File: img/soa_arch.png Graphic file (type png)
 
 <use img/soa_arch.png>
@@ -746,36 +749,76 @@ Overfull \hbox (8.33858pt too wide) in paragraph at lines 52--53
 LaTeX Warning: Citation `AnRTeqq' on page 7 undefined on input line 53.
 
 [7 <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex/img/soa_arch.png>]
-[8] [9]
-Overfull \hbox (8.38614pt too wide) in paragraph at lines 79--80
+<img/web_service.png, id=291, 539.76656pt x 219.82124pt>
+File: img/web_service.png Graphic file (type png)
+
+<use img/web_service.png>
+Package pdftex.def Info: img/web_service.png used on input line 78.
+(pdftex.def)             Requested size: 312.9803pt x 127.46286pt.
+
+
+LaTeX Warning: Citation `AnRTeqq' on page 8 undefined on input line 79.
+
+[8]
+Overfull \hbox (1.82162pt too wide) in paragraph at lines 92--93
+[]\OT4/cmr/m/n/12 Warstwa pre-zen-ta-cji - sta-nowi cz¦-sto wspólny in-ter-fejs
+ do-st¦pu do usªug.
+ []
+
+[9 <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex/img/web_service.png>]
+Overfull \hbox (0.70984pt too wide) in paragraph at lines 95--96
+\OT4/cmr/m/n/12 wi¡-za« Bu-si-ness In-tel-li-gence umo»-li-wia-j¡-cych mo-de-lo
+-wa-nie da-nych ana-
+ []
+
+[10] [11]
+Overfull \hbox (8.38614pt too wide) in paragraph at lines 113--114
 \OT4/cmr/m/n/12 wa-nia szcze-gó-ªów kon-fi-gu-ra-cyj-nych oraz im-ple-men-ta-cy
 j-nych da-nej usªugi. 
  []
 
-[10]
-Rozdzia\l  3.
-[11
 
-] [12] [13]
-Rozdzia\l  4.
+Overfull \hbox (6.85213pt too wide) in paragraph at lines 117--118
+\OT4/cmr/m/n/12 stycz-no±¢, po-nie-wa» po-zwala na dy-na-miczne przy-ª¡-cza-nie
+ i odª¡-cza-nie usªug.[[]] 
+ []
+
+
+Overfull \hbox (7.70073pt too wide) in paragraph at lines 121--123
+\OT4/cmr/m/n/12 kie po-ª¡-cze-nia mi¦-dzy apli-ka-cjami b¦d¡ re-ali-zo-wane z w
+y-ko-rzy-sta-niem szyny.[[]]
+ []
+
+[12]
+Overfull \hbox (8.67781pt too wide) in paragraph at lines 128--129
+[]\OT4/cmr/m/n/12 Stosowanie szyny in-te-gra-cyj-nej wi¡»e si¦ z wie-loma za-le
+-tami. Przede wszyst-
+ []
+
+[13]
+Rozdzia\l  3.
 [14
+
+] [15] [16]
+Rozdzia\l  4.
+[17
 
 ]
 Rozdzia\l  5.
-[15
+[18
 
 ]
 Rozdzia\l  6.
 
-Overfull \hbox (12.08572pt too wide) in paragraph at lines 150--150
+Overfull \hbox (12.08572pt too wide) in paragraph at lines 198--198
 []\OT4/cmr/bx/n/17.28 Projektowanie sys-temu ban-ko-wego w opar-
  []
 
-[16
+[19
 
 ]
 Rozdzia\l  7.
-) [17
+) [20
 
 ]
 LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 58.
@@ -783,25 +826,25 @@ LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 58.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\polski\ot4cmtt.fd"
 File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
 []\OT4/cmr/m/n/12 Fowler Mar-tin, []$\OT4/cmtt/m/n/12 http : / / www . martinfo
 wler . com / articles /$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 []\OT4/cmr/m/n/12 Johnson Si-mon, \OT4/cmr/m/it/12 To-oling plat-forms and RE-S
 T-ful ram-blings
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 []$\OT4/cmtt/m/n/12 https : / / www . ibm . com / developerworks / community / 
 blogs /$
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
-[18
+[21
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
@@ -809,20 +852,23 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 70.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 70.
 Package rerunfilecheck Info: File `praca_dyplomowa.out' has not changed.
-(rerunfilecheck)             Checksum: 677AC99A26FABC31585143BAE3902302;3001.
+(rerunfilecheck)             Checksum: CBF4D79C097FC40A006A3A34C853149B;3247.
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 70.
  ) 
 Here is how much of TeX's memory you used:
- 6799 strings out of 493921
- 98002 string characters out of 3148874
- 186583 words of memory out of 3000000
- 9900 multiletter control sequences out of 15000+200000
+ 6817 strings out of 493921
+ 98282 string characters out of 3148874
+ 186663 words of memory out of 3000000
+ 9909 multiletter control sequences out of 15000+200000
  15036 words of font info for 44 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,12n,28p,1419b,438s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,12n,28p,1419b,442s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/pl/pltt.enc}{C:/Program Files/MiKTeX
 /fonts/enc/dvips/pl/plit.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/pl/plrm.e
 nc}<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Progr
@@ -831,9 +877,9 @@ am Files/MiKTeX/fonts/type1/public/pl/plbx12.pfb><C:/Program Files/MiKTeX/fonts
 r12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/pl/plti10.pfb><C:/Program F
 iles/MiKTeX/fonts/type1/public/pl/plti12.pfb><C:/Program Files/MiKTeX/fonts/typ
 e1/public/pl/pltt12.pfb>
-Output written on praca_dyplomowa.pdf (23 pages, 572308 bytes).
+Output written on praca_dyplomowa.pdf (26 pages, 590317 bytes).
 PDF statistics:
- 385 PDF objects out of 1000 (max. 8388607)
- 70 named destinations out of 1000 (max. 500000)
- 331 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 424 PDF objects out of 1000 (max. 8388607)
+ 78 named destinations out of 1000 (max. 500000)
+ 360 words of extra memory for PDF output out of 10000 (max. 10000000)
 
