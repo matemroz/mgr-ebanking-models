@@ -1,5 +1,5 @@
 \chapter{Wstęp}
-W ostatnich latach zarysowuje się coraz większa potrzeba wdrażania systemów informatycznych w celu usprawniania funkcjonowania firm. Występuje wiele ich rodzajów: CRM (ang. Customer Relationship Managment) - wspomagające zarządzanie relacjami z klientami, ERP (ang. Enterprise Resource Planning) – wspomagające zarządzanie i planowanie zasobami firmy czy też BPM (ang. Business Process Managment) – wspomagające zarządzanie procesami biznesowymi. Wprowadzanie systemów informatycznych do firm może wywoływać różnorodne efekty: techniczne (związane z zastosowaniem techniki komputerowej: zwiększenie szybkości przetwarzania informacji, wzrost dokładności przetwarzania, wzrost szczegółowości informacji, poprawa bezpieczeństwa poufnych informacji) ekonomiczne (związane pośrednio ze wzrostem efektywności i szybkości podejmowania decyzji), organizacyjne (przede wszystkim związane są z usprawnieniami struktury organizacyjnej i procesów zachodzących w przedsiębiorstwie: podniesienie sprawności obiegu dokumentów, eliminacja zbędnej pracy administracyjnej, poprawa koordynacji zadań, eliminacja błędów), socjopsychologiczne (związane przede wszystkim z rozszerzeniem zakresu komunikacji pomiędzy pracownikami, usprawnieniem systemu ocen pracowniczych, polepszeniem kultury organizacyjnej). \cite{EfektyZasSys}
+W ostatnich latach zarysowuje się coraz większa potrzeba wdrażania systemów informatycznych w celu usprawniania funkcjonowania firm. Występuje wiele ich rodzajów: CRM (ang. \emph{Customer Relationship Managment}) - wspomagające zarządzanie relacjami z klientami, ERP (ang. Enterprise Resource Planning) – wspomagające zarządzanie i planowanie zasobami firmy czy też BPM (ang. \emph{Business Process Managment}) – wspomagające zarządzanie procesami biznesowymi. Wprowadzanie systemów informatycznych do firm może wywoływać różnorodne efekty: techniczne (związane z zastosowaniem techniki komputerowej: zwiększenie szybkości przetwarzania informacji, wzrost dokładności przetwarzania, wzrost szczegółowości informacji, poprawa bezpieczeństwa poufnych informacji) ekonomiczne (związane pośrednio ze wzrostem efektywności i szybkości podejmowania decyzji), organizacyjne (przede wszystkim związane są z usprawnieniami struktury organizacyjnej i procesów zachodzących w przedsiębiorstwie: podniesienie sprawności obiegu dokumentów, eliminacja zbędnej pracy administracyjnej, poprawa koordynacji zadań, eliminacja błędów), socjopsychologiczne (związane przede wszystkim z rozszerzeniem zakresu komunikacji pomiędzy pracownikami, usprawnieniem systemu ocen pracowniczych, polepszeniem kultury organizacyjnej). \cite{EfektyZasSys}
 
 Utworzenie systemu informatycznego dla dużych firm i instytucji nie stanowi zadania trywialnego. Banki, uczelnie lub urzędy charakteryzują się często stosunkowo złożoną strukturą organizacyjną oraz panują w nich skomplikowane procesy wewnętrzne. Powstaje wówczas problem z formalnym opisem danej jednostki – niezbędnym do utworzenia sprawnie działającego, spełniającego wymagania klienckie systemu informatycznego. Bardzo istotnym elementem jest wówczas stosowanie odpowiedniej metodyki, która pozwoli na usystematyzowane podejście do projektowania tego rodzaju systemów. 
 
@@ -20,9 +20,16 @@ Oprócz założenia głównego dla pracy – utworzenie własnej metodyki projek
 \end{itemize}
 
 \chapter{Charakterystyka architektury korporacyjnej}
+
 \section{Wstęp}
+Żyjemy w coraz szybciej zmieniającym się świecie. Stan ten powoduje, że współczesne organizacje muszą charakteryzować się coraz większą elastycznością. Jednocześnie ich poziom złożoności jak również skala działania znacznie rosną.\cite{SobArchKorpDobrPr}
+
+Do innych problemów zalicza się również niejednorodność procesów biznesowych w poszczególnych jednostkach. Może wywoływać to trudności w stosowaniu wspólnych procedur postępowania w ramach całego przedsiębiorstwa. Rozwój i utrzymywanie zbyt wielu platform, gdy systemy tworzone były w różnych technologiach może prowadzić również do trudności we współdziałaniu tychże systemów.
+
+W rozdziale zostanie zdefiniowany termin "architektura korporacyjna" oraz wyjaśnione najważniejsze elementy z nim związane. Podjęta będzie również tematyka "architektury zorientowanej na usługi" oraz to jak ją zaadaptować do architektury korporacyjnej. 
+
 \section{Definicje głównych pojęć związanych z architekturą korporacyjną}
-W rozważaniach nad architekturą korporacyjną (ang. \textit{Enterprise Architecture} bardzo często stosuje się definicję architektruy odwołującą się do standardu IEEE 1471-2000 \textit{Recommended Practice for Architectura Description of Software Intensive Systems}, który określa ją jako fundamentalną organizację systemu zawierającą pryncypia projektowania i ewolucji tych elementów. Termin "system" jest przy tym rozumiany bardzo szeroko - w szczególności może to być organizacja rozpatrywana zgodnie z paradygmatem systemowym. 
+W rozważaniach nad architekturą korporacyjną (ang. \textit{Enterprise Architecture} często stosowana jest definicja odwołująca się do standardu IEEE 1471-2000 \textit{Recommended Practice for Architectura Description of Software Intensive Systems}, który określa ją jako organizację systemu zawierającą pryncypia związane z projektowaniech i ewolucją tych elementów. Określenie "system" jest w tym wypadku rozumiane bardzo szeroko. Przede wszystkim może to być organizacja rozpatrywana zgodnie z paradygmatem systemowym. 
 
 W 2011 r. została przygotowana nowa wersja wspomnianego standardu (ISO/IEC/IEEE 42010:2011, \textit{Systems and software engineering - Architecture description}, która wprowadza następującą definicję architektury: podstawowe koncepcje lub właściwości systemu określone w jego środowisku, zawarte w jego elementach i relacjach, oraz pryncypia jego projektowania i rozwoju. Twórcy standardu uzupełniają tą definicję o następujące komentarze: 
 \begin{itemize}
@@ -283,9 +290,13 @@ Jedną z jej największych zalet jest również opieranie się na metodyce RUP, 
 Metodyka ta nie specyfikuje wielu elementów istotnych do budowy rozwiązań integracyjnych. Skupia się na projektowaniu pojedynczego systemu, który może być jedynie włączony do platformy integracyjnej. \cite{PlatIntGor}
 
 \section{SOMA}
-SOMA (ang. \textit{Servie-Oriented Modeling and Architecture} stanowi kolejną metodykę projektowania systemów w architekturze usługowej. \cite{PlatIntGor} Metoda cyklu rozwoju oprogramowania definiująca kluczowe techniki i opisująca poszczególne role w projekcie SOA oraz struktury podziału pracy (WBS - ang. \textit{Work Breakdown Structure}). WBS obejmuje zadania związane z wejściowymi i wyjściowymi produktami pracy, z normatywnymi wskazówkami do szczegółowej analizy, projektowaniem, implementacją i wdrażaniem usług oraz komponentów potrzebnych do budowy wydajnego, reużywalnego środowiska. \cite{SOMAArsIBMJour}
+\subsection{Czym jest SOMA?}
+SOMA (ang. \textit{Servie-Oriented Modeling and Architecture} stanowi kolejną metodykę projektowania systemów w architekturze usługowej. \cite{PlatIntGor} Metoda cyklu rozwoju oprogramowania definiująca kluczowe techniki i opisująca poszczególne role w projekcie SOA oraz struktury podziału pracy (WBS - ang. \textit{Work Breakdown Structure}). WBS obejmuje zadania związane z wejściowymi i wyjściowymi produktami pracy, z normatywnymi wskazówkami do szczegółowej analizy, projektowaniem, implementacją i wdrażaniem usług oraz komponentów potrzebnych do budowy wydajnego, reużywalnego środowiska.
 
-Metodyka SOMA opiera się na siedmiu podstawowych fazach:
+SOMA została utworzona i jest rozwijana przez firmę IBM. W swoim podejściu metodyka wykorzystuje wiele elementów z Worldwide Project Management Method (jedna z metodyk zarządzania projektami). \cite{SOMAArsIBMJour}
+
+\subsection{Fazy metodyki SOMA}
+SOMA bazuje na siedmiu podstawowych fazach:
 \begin{itemize}
 \item{modelowanie biznesowe (ang. \textit{business modeling and transformation}),}
 \item{zarządzanie rozwiązaniem (ang. \textit{solution management}),}
@@ -296,17 +307,79 @@ Metodyka SOMA opiera się na siedmiu podstawowych fazach:
 \item{monitorowanie i zarządzanie (ang. \textit{monitoring and management}).}
 \end{itemize}
 
+Poszczególne fazy nie następują po sobie w sposób liniowy. SOMA opiera się na iteracyjnym, przyrostowym podejściu do realizacji rozwiązań SOA. Powoduje to łagodzenie ryzyk projektowych oraz wynika z cyklu życia usług w modelu SOA. Zadania związane z budową rozwiązań informatycznych realizowane są w niej w podobny sposób bez względu na zakres. 
 
+Można również mówić o fraktalnej charakterystyce metodyki. Każda kolejna  iteracja (ang. \textit{successive iteration} jest powiązana z pojęciem ewolucji usług. Opiera się nie tylko na ryzykach dotyczących implementacji, ale również na zależnościach związanych ze zbiorem usług, gdy usługi zmieniają się w trakcie cyklu życia systemu. W SOMA przypisywanie priorytetów w Modelu usług odbywa się z wykorzystaniem diagramów zależności usług (ang. \textit{service-dependency diagram}. Na podstawie ryzyk związanych z architekturą rozwiązania wyłaniany jest podzbiór usług przewidywany do implementacji w kolejnej iteracji.
+
+\begin{figure}[h!tbp]
+\begin{centering}
+\includegraphics[width=14cm]{img/soma_fractal_lifecycle.png}
+\caption[Fraktalne podejście do budowy systemów - fazy metodyki SOMA.]{Fraktalne podejście do budowy systemów - fazy metodyki SOMA. \cite{SOMAArsIBMJour}}\label{soma_fractal_lifecycle}
+\end{centering}
+\end{figure}
+
+Charakterystyczną cechą dla SOMA jest również pojęcie przypadku usługowego (ang. \textit{service case}), który identyfikuje "reużywalny" (ang. \textit{reuse}) zbiór operacji usługi. Ważne jest, aby zidentyfikować taki zestaw usług, który łącznie pozwala na spełnienie celów biznesowych. \cite{PlatIntGor}
+
+W fazie modelowania biznesowego i transformacji funkcjonowanie organizacji jest modelowane, symulowane i optymalizowane. Na tym etapie wyszczególnia się również główny obszar przekształcenia danej jednostki - podstawowy dla kolejnych projektów opierających się na pozostałych fazach SOMA. Modelowanie biznesowe i transformacja jest opcjonalnym elementem metodyki, ale ściśle zalecanym. 
+
+Realizacje SOA mają hybrydową naturę i z reguły obejmują wiele typów rozwiązań. W fazie zarządzania rozwiązaniem inicjowany jest projekt oraz wybierany odpowiedni scenariusz realizacji. Występuję kilka możliwych scenariuszy: wytwarzania oprogramowania (ang. \textit{custom development}), integracji pakietów aplikacji (ang. \textit{package application integration}). W tym etapie tworzona jest również konfiguracja metodyki dostosowana do potrzeb danego projektu. Ponadto zdefiniowaniu podlegają: zadania, role, produkty pracy oraz poradniki.\cite{SOMAArsIBMJour}
+
+Faza identyfikacji związana jest z identyfikacją trzech elementarnych dla SOA konstrukcji: usług, komponentów oraz usług.\cite{PlatIntGor} Do zadań tego etapu należy: dekompozycja obszarów biznesowych (Domain Decomposition), modelowanie usług w kontekście celów biznesowych (Goal-Service Modeling) oraz analiza istniejących zasobów IT (Existing Assets Analysis).\cite{SOMAibmRosSuda} Do produktów końcowych tej fazy zalicza się listę kandydujących usług do realizacji oraz powiązań między nimi. \cite{PlatIntGor}
+
+Podczas specyfikacji usług projektowane jest rozwiązanie. Powstaje projekt podstawowy oraz niektóre elementy projektu szczegółowego. Analizowane są zasoby IT pod kątem zależności ze zidentyfikowanymi usługami w poprzedniej fazie, przepływami oraz zdarzeniami. Metodologia dostarcza gotowe szablony, wzorce oraz techniki wykorzystywane w celu określenia usług, przepływów i komponentów. 
+
+W skład fazy specyfikacji wchodzą następujące elementy:
+\begin{itemize}
+\item{Identyfikacja zależności między usługami - w oparciu o szczegółowy przegląd danej usługi możliwe jest odkrycie jej zależności z innymi usługami lub aplikacjami. Mogą okazać się one niezbędne do dostarczenia niektórych funkcjonalności.}
+\item{Test papierka lakmusowego (ang. \textit{service litmus test} - powiązany z podejmowaniem decyzji dotyczących ekspozycji.}
+\item{Identyfikacja kompozycji usług i przepływów - przegląd procesów biznesowych oraz obszarów funkcjonalnych umożliwia ustalenie kompozycji usług z innych usług i ich przepływów dostarczających pożądaną funkcjonalność biznesową.}
+\item{Identyfikacja wymagań niefukncjonalnych - wymagania definiujące oczekiwany poziom usług.}
+\item{Definicja specyfikacji komunikatów - obejmuje identyfikację i specyfikację formatu oraz zawartości komunikatów wejściowych i wyjściowych dla usług.}
+\item{Dokumentacja decyzji dotyczących zarządzania stanem.}
+\end{itemize}
+
+Faza realizacji związana jest ze sprawdzaniem stabilności i realizowalności zaprojektowanego rozwiązania poprzez budowę prototypów. Zadanie to powinno mieć miejsce we wczesnym etapie projektu, aby zminimalizować niepowiedzenia i wyeliminować niepotrzebne ryzyka. Faza ta stanowi pewnego rodzaju formę technicznego studium wykonywalności. Każdy poziom rozwiązania wiąże się również z wybieranym podejściem lub sposobem realizacji prac.
+
+W skład fazy realizacji wchodzą następujące czynności:
+\begin{itemize}
+\item{iteracyjna alokacja usług do komponentów,}
+\item{przypisanie komponentów w warstwach znajdujących się w architekturze aplikacji,}
+\item{identyfikacja i oszacowanie ograniczeń technologicznych, które mogą wpływać na realizowalność zadań.}
+\end{itemize}
+
+W fazach implementacji i wdrożenia oraz monitorowania i zarządzania są konstruowane, generowane i łączone usługi, komponenty funkcjonalne i techniczne oraz przepływy. Konstruowane są również poszczególne elementy opakowujące oraz odpowiednie mechanizmy dla istniejących komponentów. Wykonywane są również testy: integracyjne, jednostkowe, komponentów, przepływów oraz systemu dla usług. \cite{PlatIntGor, SOMAArsIBMJour}
+
+\subsection{Produkty SOMA}
+Stosowanie SOMA przynosi rezultaty między innymi w postaci utworzonych modelów - usług i informacji. 
+
+Model usług zawiera zbiór informacji dotyczących aktualnie zidentyfikowanych usług w organizacji, które będą wykorzystane do realizacji założonych celów biznesowych oraz procesów. W modelu tym znajdują się również dane opisujące kwestie: biznesowe, funkcjonalne, niefunkcjonalne oraz dotyczące technicznej realizacji. Wyszczególnione są również informacje o hierarchii złożoności, ekspozycji, zależności między usługami oraz wymagania związane z poziomem jakości. 
+
+Model informacji odpowiada za kontekst biznesowy. Zawiera elementy takie jak: model koncepcyjny, decyzje dotyczące realizacji oraz relacje i ekspozycję encji.
+
+Oprócz wymienionych modeli metodyka SOMA dostarcza również elementy: kontekst biznesowy, definicję procesów, identyfikację procesów, katalog reguł biznesowych oraz listę zdarzeń biznesowych.
+
+\subsection{Zalety i wady SOMA}
+Stosowanie metodyki SOMA może przynosić szereg korzyści. 
+
+Model usług stanowiący końcowy rezultat etapu modelowania pozwala na łatwe i szybkie opracowanie projektu technicznego, implementację nowych usług oraz udostępnienie usług na podstawie już istniejących. 
+
+Ponadto SOMA pozwala zdefiniowanie i zaprojektowanie poszczególnych serwisów technicznych na poziomie biznesowym, tak aby zwiększyć elastyczność organizacji do zmiennych biznesowych oraz zredukować koszty wdrażania nowych usług.
+
+//TODO: DODAĆ WADY
 
 \chapter{Przegląd języków do projektowania systemów informatycznych o architekturze SOA}
 \section{SoaML}
+
 \subsection{Czym jest SoaML?}
+
+
 \subsection{Główne elementy notacji}
 \subsection{Modelowanie z wykorzystaniem SoaML}
 \section{ArchiMate}
 \section{Inne języki}
 
 \chapter{Opracowanie metody projektowania systemów informatycznych o architekturze SOA}
+Kontrola złożoności systemu.
 
 \chapter{Weryfikacja koncepcji na przykładzie systemu bankowego}
 \section{Projektowanie systemu bankowego w oparciu o utworzoną koncepcję}
