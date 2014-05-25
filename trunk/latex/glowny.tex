@@ -1,17 +1,19 @@
 \chapter{Wstęp}
-W ostatnich latach zarysowuje się coraz większa potrzeba wdrażania systemów informatycznych w celu usprawniania funkcjonowania firm. Występuje wiele ich rodzajów: CRM (ang. \emph{Customer Relationship Managment}) - wspomagające zarządzanie relacjami z klientami, ERP (ang. Enterprise Resource Planning) – wspomagające zarządzanie i planowanie zasobami firmy czy też BPM (ang. \emph{Business Process Managment}) – wspomagające zarządzanie procesami biznesowymi. Wprowadzanie systemów informatycznych do firm może wywoływać różnorodne efekty: techniczne (związane z zastosowaniem techniki komputerowej: zwiększenie szybkości przetwarzania informacji, wzrost dokładności przetwarzania, wzrost szczegółowości informacji, poprawa bezpieczeństwa poufnych informacji) ekonomiczne (związane pośrednio ze wzrostem efektywności i szybkości podejmowania decyzji), organizacyjne (przede wszystkim związane są z usprawnieniami struktury organizacyjnej i procesów zachodzących w przedsiębiorstwie: podniesienie sprawności obiegu dokumentów, eliminacja zbędnej pracy administracyjnej, poprawa koordynacji zadań, eliminacja błędów), socjopsychologiczne (związane przede wszystkim z rozszerzeniem zakresu komunikacji pomiędzy pracownikami, usprawnieniem systemu ocen pracowniczych, polepszeniem kultury organizacyjnej). \cite{EfektyZasSys}
+W ostatnich latach zarysowuje się coraz większa potrzeba wdrażania systemów informatycznych. Ta tendencja związana  jest przede wszystkim z usprawnianiem procesów biznesowych, ze wzrostem wydajności pracy, identyfikacją oraz minimalizacją błędów lub nieefektywnych działań w firmach. Występuje wiele ich rodzajów: CRM (ang. \emph{Customer Relationship Managment}) - wspomagające zarządzanie relacjami z klientami, ERP (ang. \emph{Enterprise Resource Planning}) – wspomagające zarządzanie i planowanie zasobami firmy czy też BPM (ang. \emph{Business Process Managment}) – wspomagające zarządzanie procesami biznesowymi. 
 
-Utworzenie systemu informatycznego dla dużych firm i instytucji nie stanowi zadania trywialnego. Banki, uczelnie lub urzędy charakteryzują się często stosunkowo złożoną strukturą organizacyjną oraz panują w nich skomplikowane procesy wewnętrzne. Powstaje wówczas problem z formalnym opisem danej jednostki – niezbędnym do utworzenia sprawnie działającego, spełniającego wymagania klienckie systemu informatycznego. Bardzo istotnym elementem jest wówczas stosowanie odpowiedniej metodyki, która pozwoli na usystematyzowane podejście do projektowania tego rodzaju systemów. 
+Wprowadzanie systemów informatycznych do organizacji może wywoływać różnorodne efekty: techniczne (związane z zastosowaniem techniki komputerowej - zwiększenie szybkości i dokładności przetwarzania, wzrost szczegółowości oraz poprawa bezpieczeństwa dla informacji), ekonomiczne (związane pośrednio ze wzrostem efektywności i szybkości podejmowania decyzji), organizacyjne (przede wszystkim związane są z usprawnieniami struktury organizacyjnej i procesów zachodzących w przedsiębiorstwie - podniesienie sprawności obiegu dokumentów, eliminacja zbędnej pracy administracyjnej, poprawa koordynacji zadań oraz eliminacja błędów), socjopsychologiczne (związane z rozszerzeniem zakresu komunikacji pomiędzy pracownikami, usprawnieniem systemu ocen pracowniczych oraz polepszeniem kultury organizacyjnej). \cite{EfektyZasSys}
+
+Utworzenie systemu informatycznego dla dużych firm i instytucji nie stanowi zadania trywialnego. Banki, uczelnie lub urzędy charakteryzują się często stosunkowo złożoną strukturą organizacyjną oraz panują w nich skomplikowane procesy wewnętrzne. Powstaje wówczas problem z formalnym opisem danej jednostki – niezbędnym do utworzenia funkcjonalnego, spełniającego wymagania klienckie systemu informatycznego. Bardzo istotnym elementem jest wówczas stosowanie odpowiedniej metodyki, która pozwoli na usystematyzowane podejście do projektowania tego rodzaju systemów. 
 
 \section{Cel pracy}
-Podstawowym celem pracy jest opracowanie nowej metodyki projektowania systemów o architekturze korporacyjnej, która będzie opierała się na wykorzystaniu języka SoaML. Dotychczas utworzono już podobne metodyki, jednakże żadna nie była w stanie w pełni sprostać wszystkim wymaganiom stawianym przez problematykę projektowania systemów o architekturze korporacyjnej. 
+Podstawowym celem pracy jest utworzenie metodyki projektowania architektury korporacyjnej opierającej się na wykorzystaniu języka SoaML. Dotychczas utworzono już podobne metodyki, jednakże żadna nie była w stanie w pełni sprostać wszystkim wymaganiom stawianym przez problematykę architektury korporacyjnej.
 
-Projekt metodyki będzie się opierał na wybraniu najmocniejszych stron oraz pominięciu wad istniejących metodyk. Autor pracy podejmie również próbę wdrożenia innowacyjnych elementów do zaprojektowanej metodyki, które będą miały na celu usprawnienie procesu projektowania architektury korporacyjnej.
+Projekt metodyki powstanie w oparciu o wybranie najmocniejszych stron oraz pominięciu wad istniejących metodyk. Podjęta zostanie również próba wdrożenia innowacyjnych elementów, które będą miały na celu usprawnienie procesu projektowania architektury korporacyjnej.
 
 Zaprojektowana metodyka zostanie również poddana weryfikacji i testom przy tworzeniu niewielkiego systemu bankowego.
 
-\section{Założenia dla pracy}
-Oprócz założenia głównego dla pracy – utworzenie własnej metodyki projektowania architektury korporacyjnej z zastosowaniem SoaML- postawiono kilka innych, które powinna realizować:
+\section{Pozostałe założenia dla pracy}
+Oprócz założenia głównego dla pracy (utworzenie metodyki projektowania architektury korporacyjnej) postawiono kilka innych, które powinna realizować:
 \begin{itemize}
 \item{zdefiniowanie architektury korporacyjnej oraz wyjaśnienie terminów z nią powiązanych,}
 \item{omówienie obecnych metodyk wykorzystywanych do projektowania architektury korporacyjnej,}
@@ -22,51 +24,47 @@ Oprócz założenia głównego dla pracy – utworzenie własnej metodyki projek
 \chapter{Charakterystyka architektury korporacyjnej}
 
 \section{Wstęp}
-Żyjemy w coraz szybciej zmieniającym się świecie. Stan ten powoduje, że współczesne organizacje muszą charakteryzować się coraz większą elastycznością. Jednocześnie ich poziom złożoności jak również skala działania znacznie rosną.\cite{SobArchKorpDobrPr}
+Żyjemy w coraz szybciej zmieniającym się świecie. Stan ten powoduje, że współczesne organizacje muszą charakteryzować się coraz większą elastycznością. Jednocześnie ich poziom złożoności, jak również skala działania znacznie rosną.\cite{SobArchKorpDobrPr}
 
 Do innych problemów zalicza się również niejednorodność procesów biznesowych w poszczególnych jednostkach. Może wywoływać to trudności w stosowaniu wspólnych procedur postępowania w ramach całego przedsiębiorstwa. Rozwój i utrzymywanie zbyt wielu platform, gdy systemy tworzone były w różnych technologiach może prowadzić również do trudności we współdziałaniu tychże systemów.
 
-W rozdziale zostanie zdefiniowany termin "architektura korporacyjna" oraz wyjaśnione najważniejsze elementy z nim związane. Podjęta będzie również tematyka "architektury zorientowanej na usługi" oraz to jak ją zaadaptować do architektury korporacyjnej. 
+W rozdziale zostanie zdefiniowany termin \quotedblbase architektura korporacyjna\textquotedblright oraz wyjaśnione najważniejsze elementy z nim związane. Podjęta będzie również tematyka \quotedblbase architektury zorientowanej na usługi\textquotedblright oraz to jak ją zaadaptować do architektury korporacyjnej. 
 
 \section{Definicje głównych pojęć związanych z architekturą korporacyjną}
-W rozważaniach nad architekturą korporacyjną (ang. \textit{Enterprise Architecture} często stosowana jest definicja odwołująca się do standardu IEEE 1471-2000 \textit{Recommended Practice for Architectura Description of Software Intensive Systems}, który określa ją jako organizację systemu zawierającą pryncypia związane z projektowaniech i ewolucją tych elementów. Określenie "system" jest w tym wypadku rozumiane bardzo szeroko. Przede wszystkim może to być organizacja rozpatrywana zgodnie z paradygmatem systemowym. 
+Projektując architekturę korporacyjną (ang. \textit{Enterprise Architecture} należy dobrze rozumieć terminy z nią powiązane. W sekcji tej zostanie dokonany przegląd głównych pojęć odnoszących się do architektury korporacyjnej oraz podjęta próba ich zdefiniowania.
 
-W 2011 r. została przygotowana nowa wersja wspomnianego standardu (ISO/IEC/IEEE 42010:2011, \textit{Systems and software engineering - Architecture description}, która wprowadza następującą definicję architektury: podstawowe koncepcje lub właściwości systemu określone w jego środowisku, zawarte w jego elementach i relacjach, oraz pryncypia jego projektowania i rozwoju. Twórcy standardu uzupełniają tą definicję o następujące komentarze: 
+Słowo \quotedblbase architektura\textquotedblright w ujęciu do oprogramowania stanowi zbiór podstawowych decyzji związanych z oprogramowaniem lub rozwiązaniem programistycznym - zaprojektowanym z reguły tak, aby sprostać wszelkim atrybutom jakościowym (wymaganiom architektonicznym) danego projektu. Architektura tego typu zawiera z reguły główne komponenty, atrybuty oraz współdziałania (zachowanie i interakcje) umożliwiające spełnianie atrybutów jakościowych. Architektura może być wyrażona na więcej niż jednym poziomie abstrakcji, gdzie liczba poziomów zależy od rozmiaru i złożoności projektu.} Termin ten posiada również powszechnie akceptowany opis w standardzie IEEE, który określa ją jako \quotedblbase podstawowe koncepcje lub właściwości systemu w jego  środowisku zawarte w jego elementach, relacjach oraz zasadach projektowania i rozwoju\textquotedblright (IEEE 42010). \cite{SOAWzorceArch}
+
+Twórcy standardu uzupełniają tą definicję o następujące komentarze: 
 \begin{itemize}
-\item{Nazwa "architektura" nawiązuje do zestawu podstawowych (a nie wszystkich) właściwości systemu (rozpatrywanego jako całość), które określają jego formę i funkcje oraz związane z nim wartości, koszt i ryzyko.}
-\item{Architektura systemu odróżniana jest od jego opisu; architektura może więc istnieć w umyśle ludzkim, ale nie musi być udokumentowana. Zgodnie z hasłem "mapa nie jest terytorium" opis architektury nie jest architekturą. Opis architekruty jest próbą wyrażenia pewnej koncepcji systemu, tak aby móc podzilić się nią z innymi. Czyli architektura jest pewnym abstraktem , opis zaś jest próbą uchwycenia tego abstraktu.
-W definicji wprowadzono dwa rozłączne podejścia do architektury - tj.:
-- rozumienie jej jako pewnej koncepcji systemu, która istnieje w ludzkim umyśle;
-- rozumienie jej jako percepcji właściwości systemu.}
-\item{Architektura rozumiana jest zawsze w pewnym kontekście, a nie jako byt samodzielny. Aby zrozumieć podstawowe własciwości systemu (jego architekturę), należy się odnieść do jego otoczenia, środowiska i jego interesariuszy.}
+\item{Nazwa \quotedblbase architektura\textquotedblright nawiązuje do zestawu podstawowych (a nie wszystkich) właściwości systemu (rozpatrywanego jako całość), które określają jego formę i funkcje oraz związane z nim wartości, koszt i ryzyko.}
+\item{Architektura systemu odróżniana jest od jego opisu i nie musi być udokumentowana. Opis architektury stanowi próbę wyrażenia pewnej koncepcji systemu, tak aby móc podzielić się nią z innymi. Architektura jest pewnym abstraktem, natomiast opis jest próbą uchwycenia tego abstraktu.
+W definicji wprowadzono również dwa rozłączne podejścia do architektury - rozumienie jej jako pewnej koncepcji systemu, która istnieje w ludzkim  umyśle oraz jako percepcji właściwości systemu.}
+\item{Architektura opisywana jest zawsze w pewnym kontekście. Zrozumienie podstawowych właściwości systemu systemu, wiąże się z odniesieniem do jego otoczenia, środowiska i interesariuszy.}
 \end{itemize}
 
-Drugim kluczowym terminem jest pojęcie "korporacja" (ang. \textit{Enterprise}. W literaturze poświęconej architekturze korporacyjnej przyjmowane są różne definicje tego pojęcia:
-
+Kolejnym kluczowym terminem jest \quotedblbase korporacja\textquotedblright (ang. \textit{enterprise}. Pojęcie korporacja rozpatrywane jest najczęściej w kontekście całej jednostki organizacyjnej. Przyjmowane są różne jego różne definicje:
 \begin{itemize}
-\item{zbiór aktywności w określonej dziedzinie z aktorami, których łączy wspólny cel;}
-\item{zorganizowany zbiór zasobów, które uczestniczą w wykonywaniu określonych procesów;}
-\item{system istniejący w celu realizacji jednej lub wielu misji w określonym środowsiku;}
-\item{zbiór organizacji posiadających wspólny zbiór celów i/lub wspólne raportowanie finansowe.}
+\item{Zbiór aktywności w określonej dziedzinie z aktorami, których łączy wspólny cel.}
+\item{Zorganizowany zbiór zasobów, które uczestniczą w wykonywaniu określonych procesów.}
+\item{System istniejący w celu realizacji jednej lub wielu misji w określonym środowsiku.}
+\item{Zbiór organizacji posiadających wspólny zbiór celów lub wspólne raportowanie finansowe.}
 \end{itemize}
 
-Etymologicznie wyraz "korporacja" pochodzi od łacińskiego \textit{corporation} oznaczającego związek, połączenie części. Nie istnieje obowiązująca definicja dla korporacji jako organizacji gospodarczej. M. Kucharski wskazał jednak kilka cech stanowiących wyznacznik korporacji: jest to organizacja duża (zatrudniająca co najmniej 250 osób), silnie oddziałująca na otoczenie zewnętrzne, posiadająca wyrazistą kulture organizacyjną, tworzącą synergię różnych typów w oparciu o posiadane zasoby, mająca złożoną strukturę wewnętrzną, działającą na podstawie strategii długookresowych, zarządzana przez grupę specjalistów (kadrę zarządzającą). 
+Wyraz korporacja wywodzi się z łacińskiego słowa \quotedblbase corporation\textquotedblright oznaczającego związek, połączenie części. Nie istnieje obowiązująca definicja dla tego terminu, jako organizacji gospodarczej. 
 
-W przypadku organizacji gospodarczych korporacją może być przedsiębiortstwo lub jego część (np. zakład), holding lub jego część (np. spółki zależne), koncern lub jego część (np. jego oddział funkcjonujący w Polsce).
+Według jednej z definicji jest to duża organizacja, zarządzana przez grupę specjalistów (kadrę zarządzającą), silnie oddziałująca na otoczenie zewnętrzne, posiadająca wyrazistą kulturę organizacyjną. Ma złożoną strukturę wewnętrzną, działającą na podstawie strategii długookresowych.
 
-W przypadku jednostek administracji rządowej konrporacją może być: cała administracja rządowa (wszystkie jej jednostki), resort lub jego fragment, ministerstwo lub jego fragment (np. jeden departament), urząd wojewódzki lub jego fragment, w administracji samorządowej zaś: urząd miasta, urząd miasta wraz z jednostkami podległymi, starostwo, starostwo wraz z jednostkami podległymi, urząd marszałkowski.
+W przypadku organizacji gospodarczych za korporacją może być uznawane przedsiębiorstwo lub jego część (np. zakład). W przypadku jednostek administracji rządowej korporację może stanowić cała administracja rządowa (wszystkie jej jednostki), resort lub jego fragment.
 
-Obecnie uważa się również, że korporację - w rozumieniu architektury korporacyjnej - może stanowić tzw. rozszerzone przedsiębiorstwo (\textit{Extended Enterprise}). Ta kategoria przedsiębiorstwa definiowana jest jako zbiór jednostek prawnych, które są związane zintegrowanym łańcuchem wartości dodanej, dzięki czemu następuje zwiększenie wartości dostarczonej dla klientów.
+Współcześnie uważa się, że korporacją - w rozumieniu architektury korporacyjnej - może być również tak zwane rozszerzone przedsiębiorstwo (\quotedblbase extended enterprise\textquotedblright). Ta kategoria przedsiębiorstwa definiowana jest jako zbiór jednostek prawnych, które są związane zintegrowanym łańcuchem wartości dodanej, dzięki czemu następuje zwiększenie wartości dostarczonej dla klientów.\cite{SobArchKorpDobrPr} 
 
-A. Wegmann zauważa, że korporację można rozpatrywać jako system, którego elementy są stanowione przez zasoby tejże korporacji. Wskazuje on ponadto, że korporację należy rozpatrywać jako system złożony (\textit{Complex System}), m. in. ze względu na fakt, iż jednym z jego elementów są ludzi. 
+\section{Wprowadzenie do architektury korporacyjnej}
+Architekturze korporacyjnej przypisuje się kilka znaczeń: atrybutowe, rzeczowe oraz czynnościowe.
 
-Pojęcie "korporacja" rozpatrywane jest najczęściej w kontekście całej jednostki organizacyjnej. 
-\section{Czym jest architektura korporacyjna?}
-Architektura koporacyjna może mieć znaczenie atrybutowe, rzeczowe oraz czynnościowe.
+W znaczeniu atrybutowym uważana jest za zbiór właściwości danej organizacji (oraz relacji między nimi) koniecznych do zapewnienia realizacji jej celów. Architektura korporacyjna stanowi nieodłączną właściwość każdej organizacji. Jej jakość może być rozpatrywana w odniesieniu do efektywności realizacji istniejących celów strategicznych analizowanej organizacji.
 
-Architektura korporacyjna w ujęciu atrybutowym może być rozumiana jako zbiór właściwości określonej organizacji (i relacji między nimi) niezbędnych do zapewnienia realizacji jej misji. Architektura korporacyjna jest więc immanentnym atrybutem każdej organizacji, przy czym architektura jednej organizacji może być lepsza, a drugiej gorsza. Jakość architektury korporacyjnej może być rozpatrywana w kontekście efektywności realizacji istniejących celów strategicznych analizowanej organizacji. Architektura korporacyjna przy tym podejściu może, ale nie musi być udokumentowana.
-
-Architekturę korporacyjną w ujęciu rzeczowym można zdefiniować jako formalną reprezentację właściwości organizacji. Takie ujęcie prezentuje dokument \textit{A Practical Guide To Federal Enterprise Architectre}. Architektura korporacyjna zdefiniowana jest w nim jako misja organizacji, informacje i zasoby techniczne niezbędne do realizacji tej misji oraz proces przejścia mający na celu implementację nowych rozwiązań technicznych w odpowiedzi na zmiany strategiczne w organizacji. Architektura korporacyjna zawiera architekturę odniesienia (\textit{Baseline Architecture}, nazywaną w literaturze "jak jest" (\textit{As-is}) i dotyczącą zarówno części biznesowej, jak i technicznej, architekturę docelową (\textit{Target Architecutre}, nazywaną w literaturze "jak będzie" (\textit{To-be}), oraz plan przejścia (obejmujący stany pośrednie), opisujący strategię organizacji w zakresie transformacji jej architektury odniesienia do architektury docelowej. 
+W znaczeniu rzeczowym architektura korporacyjna definiowana jest jako formalna reprezentacja właściwości danej organizacji. W ujęciu tym uważa się ją również za misję całej organizacji - informacje i zasoby techniczne niezbędne do realizacji zakładanych celów oraz proces przejścia związany z wdrażaniem nowych rozwiązań technicznych w nawiązaniu do zmian strategicznych w organizacji. Architektura korporacyjna zawiera architekturę odniesienia (\textit{Baseline Architecture}, nazywaną w literaturze "jak jest" (\textit{As-is}) i dotyczącą zarówno części biznesowej, jak i technicznej, architekturę docelową (\textit{Target Architecutre}, nazywaną w literaturze "jak będzie" (\textit{To-be}), oraz plan przejścia (obejmujący stany pośrednie), opisujący strategię organizacji w zakresie transformacji jej architektury odniesienia do architektury docelowej. 
 
 Podejście prezentowane w \textit{A Practical Guide to Federal Enterprise Architecture} uwzględnia aspekt transformacji organizacji w obszarze objętym architekturą korporacyjną, który jest immanentną cechą złożonych systemów adaptacyjnych. 
 
