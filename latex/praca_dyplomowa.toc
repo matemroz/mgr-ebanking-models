@@ -1,11 +1,11 @@
 \select@language {polish}
 \contentsline {chapter}{\numberline {1}Wst\IeC {\k e}p}{3}{chapter.1}
 \contentsline {section}{\numberline {1.1}Cel pracy}{4}{section.1.1}
-\contentsline {section}{\numberline {1.2}Za\IeC {\l }o\IeC {\.z}enia dla pracy}{4}{section.1.2}
+\contentsline {section}{\numberline {1.2}Pozosta\IeC {\l }e za\IeC {\l }o\IeC {\.z}enia dla pracy}{4}{section.1.2}
 \contentsline {chapter}{\numberline {2}Charakterystyka architektury korporacyjnej}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Wst\IeC {\k e}p}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}Definicje g\IeC {\l }\IeC {\'o}wnych poj\IeC {\k e}\IeC {\'c} zwi\IeC {\k a}zanych z architektur\IeC {\k a} korporacyjn\IeC {\k a}}{5}{section.2.2}
-\contentsline {section}{\numberline {2.3}Czym jest architektura korporacyjna?}{7}{section.2.3}
+\contentsline {section}{\numberline {2.3}Wprowadzenie do architektury korporacyjnej}{7}{section.2.3}
 \contentsline {section}{\numberline {2.4}Korzy\IeC {\'s}ci z wdro\IeC {\.z}enia architektury korporacyjnej}{11}{section.2.4}
 \contentsline {section}{\numberline {2.5}Podej\IeC {\'s}cie do budowy architektury korporacyjnej}{12}{section.2.5}
 \contentsline {section}{\numberline {2.6}SOA}{12}{section.2.6}
@@ -13,7 +13,7 @@
 \contentsline {subsection}{\numberline {2.6.2}Historia SOA}{13}{subsection.2.6.2}
 \contentsline {subsection}{\numberline {2.6.3}Budowa SOA}{13}{subsection.2.6.3}
 \contentsline {subsection}{\numberline {2.6.4}Us\IeC {\l }uga sieciowa w SOA}{15}{subsection.2.6.4}
-\contentsline {subsection}{\numberline {2.6.5}Warstwy architektury SOA}{16}{subsection.2.6.5}
+\contentsline {subsection}{\numberline {2.6.5}Warstwy architektury SOA}{15}{subsection.2.6.5}
 \contentsline {subsection}{\numberline {2.6.6}Podstawowe zasady SOA}{17}{subsection.2.6.6}
 \contentsline {subsection}{\numberline {2.6.7}Korporacyjna szyna us\IeC {\l }ug - ESB}{19}{subsection.2.6.7}
 \contentsline {section}{\numberline {2.7}Adaptacja SOA w architekturze korporacyjnej}{20}{section.2.7}
