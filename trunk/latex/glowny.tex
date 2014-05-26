@@ -33,7 +33,7 @@ W rozdziale zostanie zdefiniowany termin \quotedblbase architektura korporacyjna
 \section{Definicje głównych pojęć związanych z architekturą korporacyjną}
 Projektując architekturę korporacyjną (ang. \textit{Enterprise Architecture} należy dobrze rozumieć terminy z nią powiązane. W sekcji tej zostanie dokonany przegląd głównych pojęć odnoszących się do architektury korporacyjnej oraz podjęta próba ich zdefiniowania.
 
-Słowo \quotedblbase architektura\textquotedblright w ujęciu do oprogramowania stanowi zbiór podstawowych decyzji związanych z oprogramowaniem lub rozwiązaniem programistycznym - zaprojektowanym z reguły tak, aby sprostać wszelkim atrybutom jakościowym (wymaganiom architektonicznym) danego projektu. Architektura tego typu zawiera z reguły główne komponenty, atrybuty oraz współdziałania (zachowanie i interakcje) umożliwiające spełnianie atrybutów jakościowych. Architektura może być wyrażona na więcej niż jednym poziomie abstrakcji, gdzie liczba poziomów zależy od rozmiaru i złożoności projektu.} Termin ten posiada również powszechnie akceptowany opis w standardzie IEEE, który określa ją jako \quotedblbase podstawowe koncepcje lub właściwości systemu w jego  środowisku zawarte w jego elementach, relacjach oraz zasadach projektowania i rozwoju\textquotedblright (IEEE 42010). \cite{SOAWzorceArch}
+Słowo \quotedblbase architektura\textquotedblright w ujęciu do oprogramowania stanowi zbiór podstawowych decyzji związanych z oprogramowaniem lub rozwiązaniem programistycznym - zaprojektowanym z reguły tak, aby sprostać wszelkim atrybutom jakościowym (wymaganiom architektonicznym) danego projektu. Architektura tego typu zawiera z reguły główne komponenty, atrybuty oraz współdziałania (zachowanie i interakcje) umożliwiające spełnianie atrybutów jakościowych. Architektura może być wyrażona na więcej niż jednym poziomie abstrakcji, gdzie liczba poziomów zależy od rozmiaru i złożoności projektu. Termin ten posiada również powszechnie akceptowany opis w standardzie IEEE, który określa ją jako \quotedblbase podstawowe koncepcje lub właściwości systemu w jego  środowisku zawarte w jego elementach, relacjach oraz zasadach projektowania i rozwoju\textquotedblright (IEEE 42010). \cite{SOAWzorceArch}
 
 Twórcy standardu uzupełniają tą definicję o następujące komentarze: 
 \begin{itemize}
@@ -60,72 +60,91 @@ W przypadku organizacji gospodarczych za korporacją może być uznawane przedsi
 Współcześnie uważa się, że korporacją - w rozumieniu architektury korporacyjnej - może być również tak zwane rozszerzone przedsiębiorstwo (\quotedblbase extended enterprise\textquotedblright). Ta kategoria przedsiębiorstwa definiowana jest jako zbiór jednostek prawnych, które są związane zintegrowanym łańcuchem wartości dodanej, dzięki czemu następuje zwiększenie wartości dostarczonej dla klientów.\cite{SobArchKorpDobrPr} 
 
 \section{Wprowadzenie do architektury korporacyjnej}
+Architektura korporacyjna (ang. \emph{enterprise architecture}) jest spojrzeniem na całość organizacji. Stanowi opis struktury i funkcji komponentów takich jak: zasoby danych, strategia, procesy biznesowe, jednostki organizacyjne, systemy informatyczne oraz infrastruktura teleinformatyczna. Opisuje stan obecny i docelowy oraz proces przejścia między tymi stanami w organizacji.\cite{ArchKorpSob}
+
+Mimo, że architektura korporacyjna jest kojarzona głównie z technologią informatyczną, to przede wszystkim nawiązuje do metod optymalizacji procesów, wskazując architekturę biznesową, metody zarządzania efektywnością oraz organizacyjne uporządkowanie procesów\cite{ArchKorpSzymSup}
+
 Architekturze korporacyjnej przypisuje się kilka znaczeń: atrybutowe, rzeczowe oraz czynnościowe.
 
-W znaczeniu atrybutowym uważana jest za zbiór właściwości danej organizacji (oraz relacji między nimi) koniecznych do zapewnienia realizacji jej celów. Architektura korporacyjna stanowi nieodłączną właściwość każdej organizacji. Jej jakość może być rozpatrywana w odniesieniu do efektywności realizacji istniejących celów strategicznych analizowanej organizacji.
+W ujęciu atrybutowym uważana jest za zbiór właściwości danej organizacji (oraz relacji między nimi) koniecznych do zapewnienia realizacji jej celów. Architektura korporacyjna stanowi nieodłączną właściwość każdej organizacji. Jej jakość może być rozpatrywana w odniesieniu do efektywności realizacji istniejących celów strategicznych analizowanej organizacji.\cite{ArchKorpSob}
 
-W znaczeniu rzeczowym architektura korporacyjna definiowana jest jako formalna reprezentacja właściwości danej organizacji. W ujęciu tym uważa się ją również za misję całej organizacji - informacje i zasoby techniczne niezbędne do realizacji zakładanych celów oraz proces przejścia związany z wdrażaniem nowych rozwiązań technicznych w nawiązaniu do zmian strategicznych w organizacji. Architektura korporacyjna zawiera architekturę odniesienia (\textit{Baseline Architecture}, nazywaną w literaturze "jak jest" (\textit{As-is}) i dotyczącą zarówno części biznesowej, jak i technicznej, architekturę docelową (\textit{Target Architecutre}, nazywaną w literaturze "jak będzie" (\textit{To-be}), oraz plan przejścia (obejmujący stany pośrednie), opisujący strategię organizacji w zakresie transformacji jej architektury odniesienia do architektury docelowej. 
+W ujęciu rzeczowym architektura korporacyjna definiowana jest jako formalna reprezentacja właściwości danej organizacji. W znaczeniu tym rozpatruje się ją również jako misję całej organizacji - informacje i zasoby techniczne niezbędne do realizacji zakładanych celów oraz proces przejścia związany z wdrażaniem nowych rozwiązań technicznych w nawiązaniu do zmian strategicznych w organizacji.\cite{ArchKorpSob}
 
-Podejście prezentowane w \textit{A Practical Guide to Federal Enterprise Architecture} uwzględnia aspekt transformacji organizacji w obszarze objętym architekturą korporacyjną, który jest immanentną cechą złożonych systemów adaptacyjnych. 
+Spojrzenie czynnościowe zakłada definicję architektury korporacyjnej jako zadań i umiejętności zarządzania tym, co jest opisane w definicji atrybutowej.\cite{ArchKorpSzymSup}
 
-E. Yu, M. Strohmaier i X. Deng uważają, że architektura korporacyjna to pełny opis kluczowych elementów konstytuujących organizację (i związków między nimi) - począwszy od strategii, procesów biznesowych, aż po systemy informacyjne i rozwiązania techniczne.
-
-M. Lankhorst wskazuje, że architektura korporacyjna zapewnia całościowy (holistyczny) obraz organizacji, a przez to realizuje systemowe ujęcie organizacji. 
+Podejście prezentowane w \emph{A Practical Guide to Federal Enterprise Architecture} uwzględnia aspekt transformacji organizacji w obszarze objętym architekturą korporacyjną, który jest immanentną cechą złożonych systemów adaptacyjnych.\cite{ArchKorpSob} 
 
 A. Goikoetxea definiuje architekturę korporacyjną (EA) jako ośmioelemntową strukturę, składającą się z następujących zbiorów:
 
 \begin{center}
-EA: {R, B, A, D, S, T, C, M},
+\begin{equation}EA: \{R, B, A, D, S, T, C, M\},\end{equation}
 \end{center}
 
 gdzie:
 \begin{itemize}
-\item{R = (r1, r2,..., rn) - zbiór zawierający wszystkie wymagania systemowe - funkcjonalne i niefunkcjonalne; wszystkie procesy, działania, reguły biznesowe muszą być związane ze zbiorem R,;}
-\item{B = (b1, b2,..., bp) - zbiór procesów biznesowych realizowanych w ramach organizacji; metadane nt. wejść i wyjść dla każdego procesu przechowywane są w zbiorze C;}
-\item{A = (a1, a2,..., aq) - zbiór aplikacji biznesowych, funkcjonujących w ramach organizacji, które udostępniają usługi służące do implementacji procesów biznesowych; metadane nt. relacji między tymi systemami przechowywane są w zbiorze C;}
-\item{D = (d1, d2,..., dg) - zbiór danych, które konstytuują zasoby informacyjne organizacji; metadane nt. organizacji tych danych, więzów integralności, reguł zarządzania przechowywane są w zbiorze C;}
-\item{S = (s1, s2,..., sk) - zbiór systemów oprogramowania funkcjonujących w ramach organizacji umożliwiających realizację usług biznesowych przez aplikacje biznesowe; metadane nt. wejść i wyjść poszczególnych aplikacji, interfejsy oraz standardy wytwarzania tych systemów przechowywane są w zbiorze C;}
-\item{T - (t1, t2,..., tw) - zbiór komponentów techninczych organizacji - zarówno programowych (są to np. systemy operacyjne), jak i sprzętowych - niezbędnych do funkcjonowania systemów oprogramowania ze zbioru A;}
-\item{C = (c1, c2,..., ch) - zbiór ograniczeń, które występują podczas tworzenia architektury korporacyjnej (takich jak np. standardy dotyczące oprogramowania i rozwiązań sprzętowych), reguł biznesowych oraz metadanych ze zbiorów R, B, A, D, S, T;}
-\item{M = (m1, m2,..., mi) - zbiór miar, które charakteryzują architekturę korporacyjną. Używane są podczas tworzenia i utrzymywania architektury korporacyjnej w organizacji (dotyczące wymagań ilościowych (w tym kosztów), wyników badań nt. efektywności działania organizacji),}
+\item{$R = (r_{1}, r_{2},..., r_{n})$ - zbiór zawierający wszystkie wymagania systemowe - funkcjonalne i niefunkcjonalne, procesy, działania oraz reguły biznesowe.}
+\item{$B = (b_{1}, b_{2},..., b_{p})$ - zbiór procesów biznesowych realizowanych w ramach organizacji. Metadane na temat wejść i wyjść dla każdego procesu zawarte są w zbiorze $C$.}
+\item{$A = (a_{1}, a_{2},..., a_{q})$ - zbiór aplikacji biznesowych, funkcjonujących w ramach organizacji, które udostępniają usługi służące do implementacji procesów biznesowych. Metadane na temat relacji między tymi systemami przechowywane są w zbiorze $C$.}
+\item{$D = (d_{1}, d_{2},..., d_{g})$ - zbiór danych, które konstytuują zasoby informacyjne organizacji. Metadane na temat organizacji tych danych, więzów integralności, reguł zarządzania przechowywane są w zbiorze $C$.}
+\item{$S = (s_{1}, s_{2},..., s_{k})$ - zbiór systemów oprogramowania funkcjonujących w ramach organizacji umożliwiających realizację usług biznesowych przez aplikacje biznesowe. Metadane na temat wejść i wyjść poszczególnych aplikacji, interfejsy oraz standardy wytwarzania tych systemów przechowywane są w zbiorze $C$.}
+\item{$T - (t_{1}, t_{2},..., t_{w})$ - zbiór komponentów technicznych organizacji - zarówno programowych (na przykład systemy operacyjne), jak i sprzętowych - niezbędnych do funkcjonowania systemów oprogramowania ze zbioru $A$.}
+\item{$C = (c_{1}, c_{2},..., c_{h})$ - zbiór ograniczeń, które występują podczas tworzenia architektury korporacyjnej (takich jak np. standardy dotyczące oprogramowania i rozwiązań sprzętowych), reguł biznesowych oraz metadanych ze zbiorów $R$, $B$, $A$, $D$, $S$, $T$;}
+\item{$M = (m_{1}, m_{2},..., m_{i})$ - zbiór miar, które charakteryzują architekturę korporacyjną. Używane są podczas tworzenia i utrzymywania architektury korporacyjnej w organizacji (dotyczące wymagań ilościowych: kosztów oraz wyników badań na temat efektywności działania organizacji).}
 \end{itemize}
 
-Inne rozumienie terminu "architektura korporacyjna" wprowadzane jest przez J. Ross, P. Weilla i D. Robertsona. Zdaniem tych autorów architektura koproracyjna jest to "uporządkowanie procesów biznesowych i infrastruktury informatycznej według logiki, która odzwierciedla wymogi dotyczące integracji i standaryzacji zawarte w modelu operacyjnym", przy czym sam model operacyjny jest to "pewien poziom koniecznej integracji i standaryzacji procesów, polegających na dostarczaniu klientowi produktów i usług".
-
-The Open Group w swoim opracowaniu dotyczącym TOGAF (\textit{The Open Group Architecture Framework}) wskazuje, że architektura korporacyjna składa się z pięciu elementów. Są to:
-- Pryncypia architektury korporacyjnej (\textit{Enterprise Architecture Principles} - zbiór trwałych zasad opartych na strategii rozwoju organizacji, które stanowią reprezentacje całościowych potrzeb organizacji w zakresie tworzenia rozwiązań informatycznych.
-- Domeny architektoniczne:
+The Open Group w swoim opracowaniu dotyczącym TOGAF (\emph{The Open Group Architecture Framework}) wskazuje, że architektura korporacyjna składa się z następujących elementów:
 \begin{itemize}
-\item{Architektura biznesowa (\textit{Business Architecture}) - opisuje strategię biznesową i sposoby zarządzania organizacją, jej strukturą organizacyjną oraz główne procesy biznesowe, a także relacje pomiędzy tymi elementami.},
+\item{Pryncypia architektury korporacyjnej (\textit{Enterprise Architecture Principles} - zbiór trwałych zasad opartych na strategii rozwoju organizacji, które stanowią reprezentacje całościowych potrzeb organizacji w zakresie tworzenia rozwiązań informatycznych.}
+\item{Domeny architektoniczne:
+\begin{itemize}
+\item{Architektura biznesowa (\textit{Business Architecture}) - opisuje strategię biznesową i sposoby zarządzania organizacją, jej strukturą organizacyjną oraz główne procesy biznesowe, a także relacje pomiędzy tymi elementami.}
 \item{Architektura danych (\textit{Data Architecture}) - opisuje główne typy i źródła danych niezbędnych do funkcjonowania organizacji.}
 \item{Architektura aplikacji (\textit{Applications Architecture}) - opisuje poszczególne aplikacje, ich rozlokowanie, wzajemne współdziałanie oraz relacje między tymi aplikacjami, a głównymi procesami biznesowymi organizacji.}
 \item{Architektura techniczna (\textit{Technology Architecture}) - opisuje komponenty infrastruktury technicznej, która stanowi podstawę funkcjonowania aplikacji (obejmuje ona m. in. systemy operacyjne, systemy zarządzania, bazami danych, serwery aplikacyjne, sprzęt komputerowy oraz infrastrukturę komunikacyjną).}
 \end{itemize}
+}
+\end{itemize}
 
+W ostatnim czasie coraz bardziej popularnym terminem jest \quotedblbase architektura korporacyjna IT\textquotedblright. Wykazuje ona pewne różnice w porównaniu do \quotedblbase zwykłej architektury korporacyjnej\textquotedblright. 
 
-Architektura korporacyjna IT (\textit{Enterprise IT Architecture}) jest coraz częściej spotykanym terminem. Obejmuje ona architektury: danych, aplikacji, techniczną oraz dodatkowo część architektury biznesowej - w szczególności dotyczy to architektury procesów biznesowych oraz katalogu usług biznesowych. Główną różnicą pomiędzy architekturą korporacyjną a architekturą korporacyjną IT jest inne umocowanie zespołu odpowiedzialnego za te prace oraz tzw. sponsora prac architektonicznych. O ile w przypadku pełnej architektury korporacyjnej najbardziej rekomendowanym miejscem na alokację zespołu architektonicznego jest umiejscowienie go pod zarządem, o tyle w przypadku architektury koroporacyjnej zespół ten może być umieszczony wewnątrz działu IT. Analogicznie - sponsorem prac architektonicznych dla pełnej architektury korporacyjnej powinna być osoba z poziomu zarządu/kierownictwa organizacji, natomiast w przypadku architektury korporacyjnej IT może to być osoba odpowiedzialna za dział IT. 
+Jednym z elementów, które różnicują te dwa pojęcia jest cel opracowania architektury. Zwykła architektura korporacyjna nakierowana jest na zwiększenie efektywności działania w kontekście całej organizacji. Architektura korporacyjna IT kładzie zaś nacisk na zwiększenie efektywności działania IT w kontekście biznesowych potrzeb organizacji. 
 
-Rysunek 8. przedstawia umiejscowienie w organizacji architektury korporacyjnej IT oraz jej relacje z innymi obszarami funkcjonalnymi w ramach działu IT. Stanowi on uzupełnienie powszechnie występującej organizacji działu IT, tj. strategii rozwoju - dostarczania rozwiązań - utrzymywania rozwiązania. Dzięki architekturze korporacyjnej IT możliwe jest przełożenie strategii IT na portfel spójnych projektów IT. Dzięki zastosowaniu architektury korporacyjnej IT dział IT w organizacji może przesunąć się z "centrum kosztów" na "jednostkę podnosząca efektywność organizacji" lub wręcz "uczestnika kształtowania nowych modeli biznesowych".
+Architektura korporacyjna stanowi szersze pojęcie pod względem zakresu opracowania architektury. Pojęcie to obejmuje organizację jako całość, natomiast architektura korporacyjna IT skupia się jedynie na obszarze IT danej jednostki. 
 
-Podsumowując dyskusje terminologiczne, należy się jeszcze odnieść do dwóch pojęć, tj. architektury rozwiązania (\textit{Solution Architecture} oraz architektury systemu informatycznego (\textit{IT System Architecture}). 
+Istotnym elementem, o którym należy wspomnieć prowadząc rozważania na temat architektury korporacyjnej jest pojęcie \quotedblbase ładu architektonicznego (ang. \emph{enterprise architecture governance})\textquotedblright. Stanowi on przede wszystkim mechanizm dostarczający struktury, za pomocą której jest ustanawiany zbiór celów tworzenia architektury korporacyjnej oraz środków, poprzez które możliwe osiąganie jest ich osiąganie i monitorowanie wydajności realizacji. 
 
-Architektura rozwiązania opisuje fragment organizacji (zarówno na poziomie bizneoswych, jak i IT) realizujących wybrane procesy informacyjne z wykorzystaniem technologii informatycznych. Natomiast architektura systemu informatycznego opisuje architekturę oprogramoania (\textit{Software Architecture} osadzonego na pewnej konfiguracji sprzętowej, umożliwiającej elementom oprogramowania tego systemu efektywną realizację poszczegónych zadań oraz wzajemną komunikację. 
+Jego podstawowym celem w odniesieniu do systemów informatycznych jest zapewnienie zgodności podejmowanych decyzji z zakresu IT z opracowaną architekturą korporacyjną. 
+
+Dobrze wprowadzony ład architektoniczny zapewni niezbędną dla organizacji elastyczność architektury korporacyjnej.
 
 \section{Korzyści z wdrożenia architektury korporacyjnej}
-Budowy architektury korporacyjnej nie należy rozpatrywać jako działania jedynie z obszaru informatyki, ale jako przedsięwzięcie z pogranicza zarządzania, jak i informatyki. Ponadto opracowanie architektury korporacyjnej nie powinno być rozpatrywane jako cel sam w sobie, lecz jako stan pośredni postrzegany jako narzędzie pomocnicze do wykonania określonych działań wewnątrz organizacji. Dopiero takie podejście do opracowania architektury korporacyjnej zapewnia m.in.:
+Budowy architektury korporacyjnej nie powinno rozpatrywać się jedynie jako działania z obszaru informatyki, ale jako całościowe przedsięwzięcie z pogranicza zarządzania, jak i informatyki. Opracowanie architektury korporacyjnej nie należy rozpatrywać jako cel sam w sobie, ale jako stan pośredni postrzegany jako narzędzie pomocnicze do wykonania określonych działań wewnątrz organizacji. Takie podejście może przynieść organizacji szereg korzyści
 \begin{itemize}
-\item{lepsze dopasowanie (\textit{Alignement}) rozwoju systemów informatycznych do strategii rozwoju organizacji,}
-\item{poprawę alokacji zasobów przeznaczonych na rozwój rozwiązań informatycznych,}
-\item{utworzenie efektywnego języka komunikacji między różnymi grupami pracowników organizacji (w tym w szczególności między osobami zarządzającymi, a informatykami),}
+\item{lepsze dopasowanie realizowanych rozwiązań informatycznych do potrzeb strategicznych danej organizacji,}
+\item{zapewnienie większej interoperacyjności systemów informatycznych,}
+\item{wykorzystywanie tych samych komponentów może spowodować znaczne obniżenie kosztów działań w zakresie wprowadzania architektury korporacyjnej,}
 \item{możliwość szybszego podejmowania spójnych decyzji w zakresie tworzenia systemów informatycznych,}
 \item{efektywniejsze koordynowanie z perspektywy dziań długoterminowych modyfikacji i rozbudowy poszczególnych systemów informatycznych,}
-\item{wielokrotne wykorzystanie już wdrożonych komponentów programowych,}
-\item{zapewnienie efektywnego przepływu informacji między poszczególnymi systemami informatycznymi.}
+\item{ułatwienie zarządzania finansami przeznaczonymi na cele IT,}
+\item{ułatwienie wdrożenia SOA,}
+\item{automatyzacja, optymalizacja i przejrzystość procesów biznesowych - zdefiniowana architektura korporacyjna pozwala zidentyfikować wszystkie procesy, gdzie możliwa jest automatyzacja, wyeliminować dublujące się czynności pomiędzy procesami.}
+\item{ograniczenie ryzyka operacyjnego - wdrażając architekturą korporacyjną można znacznie zmniejszyć ryzyko operacyjne, zarówno poprzez automatyzację procesów, jak i lepszą kontrolę operacji.}
 
-K. Niemann zwraca uwagę, że nie każda organizacja musi stosować sformalizowane podejście do zarządzania architekturą korporacyjną. Bardzo dużo zależy od złożoności organizacji (rozpatrywanej w ujęciu systemowym) oraz od zmienności organizacji (wynikającej m.in. z niestabilności otoczenia). Ogólnie rzecz biorąc, im organizacja jest bardziej złożona i im bardziej podlega zmianom, tym większa jest potrzeba posiadania architektury korporacyjnej.
+Nie każda organizacja musi stosować sformalizowane podejście do zarządzania architekturą korporacyjną. Dużo zależy od złożoności organizacji - rozpatrywanej w ujęciu systemowym. Istotna jest również zmienność organizacji wynikająca na przykład ze zmienności otoczenia Im organizacja jest bardziej złożona i im bardziej podlega zmianom, tym stosowanie architektury korporacyjnej jest bardziej uzasadnione.\cite{ArchKorpSob}
 \end{itemize}
 
 \section{Podejście do budowy architektury korporacyjnej}
+Budowa architektury korporacyjnej nie stanowi zadania trywialnego. Bardzo istotnym czynnikiem wpływającym na sukces jej wdrożenia do danej organizacji jest odpowiednie projektowanie i podejmowanie odpowiednich decyzji architektonicznych. 
+
+Projektując architekturę korporacyjną należy rozważyć dwa główne problemy. Pierwszy dotyczy celu jej opracowywania. Przede wszystkim czy architektura korporacyjna ma mieć zastosowanie jako narzędzie wspierające określone przedsięwzięcie transformacyjne, czy też być na stałe wbudowana w ramy organizacji. Drugi problem związany jest z określeniem zakresu prac nad architekturą korporacyjną. Należy określić poszczególne wymiary: horyzont czasowy, zakres geograficzny organizacji oraz poziom szczegółowości w poszczególnych domenach. 
+
+Opracowując architekturę korporacyjną można skorzystać z jednej dwóch ścieżek:
+\begin{itemize}
+\item{wychodząca od architektury dla stanu bazowego - polega na opracowaniu najpierw architektury dla stanu bazowego (\quotedblbase jak jest\textquotedblright) bezpośrednio w czterech domenach architektonicznych: aplikacji, danych, biznesowej i technicznej. W kolejnym kroku analizowane są luki we wszystkich wymienionych domenach oraz przygotowany jest plan przejścia (ang. \emph{roadmap}) pomiędzy stanem bazowym i docelowym. Do zalet tego podejścia można zaliczyć prostotę od strony zarządczej (można zidentyfikować i dobrze opisać poszczególne etapy prac). Wadę stanowi natomiast ryzyko zbyt dużego skupienia się na architekturze bazowej i wykonania analiz na zbyt dużym poziomie szczegółowości.}
+\item{wychodząca od architektury biznesowej - opiera się na wykonaniu czterech kroków. W trzech pierwszych dla stanu bazowego \quotedblbase jak jest\textquotedblright, jak i dla stanu docelowego \quotedblbase jak będzie\textquotedblright opracowywane są kolejno architektury: biznesowa, danych i aplikacji oraz techniczna. W każdym z wymienionych kroków jest dokonywana również analiza luk. Mając opracowane architektury dla poszczególnych domen przygotowywana jest zbiorcza analiza luk oraz plan przejścia (ang. \emph{roadmap}) pomiędzy stanem bazowym i docelowym. Zaletą tej ścieżki jest dostarczenie na najwcześniejszym etapie kluczowego elementu architektury korporacynej - architektury biznesowej. Stanowi to dobrą podstawę dla opracowywania kolejnych architektur. Do wad podejścia zaliczyć można ryzyko z częstym występowaniem niskiego poziomu części biznesowej organizacji.}
+\end{itemize}
+\cite{ArchKorpSob}
+
 \section{SOA}
 \subsection{Czym jest SOA?}
 Trudno o jednoznaczną definicję SOA (ang. Service Oriented Architecture – architektura zorientowana na usługi). Definicja SOA jest subiektywna, zależna od punktu widzenia. Z perspektywy biznesowej (odbiorcy usług) rozumieć ją można jako zestaw usług wspierających realizację procesów biznesowych. Odnosząc się do SOA z perspektywy IT widzimy ją jako infrastrukturę potrzebną do dostarczenia tych usług.
@@ -150,7 +169,7 @@ Systemy opierające się na SOA składają się z zestawu aplikacji biznesowych 
 
 \begin{figure}[h!tbp]
 \begin{centering}
-\includegraphics[width=14cm]{img/soa_arch.png}
+\includegraphics[width=15cm]{img/soa_arch.png}
 \caption[Przykładowa architektura SOA.]{Przykładowa architektura SOA. \cite{AnRTeqq}}\label{soa_arch}
 \end{centering}
 \end{figure}
