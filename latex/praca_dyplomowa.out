@@ -28,12 +28,12 @@
 \BOOKMARK [2][-]{subsection.3.3.3}{Produkty SOMA}{section.3.3}% 28
 \BOOKMARK [2][-]{subsection.3.3.4}{Zalety i wady SOMA}{section.3.3}% 29
 \BOOKMARK [0][-]{chapter.4}{Przeglad jezyk\363w do projektowania system\363w informatycznych o architekturze SOA}{}% 30
-\BOOKMARK [1][-]{section.4.1}{SoaML}{chapter.4}% 31
-\BOOKMARK [2][-]{subsection.4.1.1}{Czym jest SoaML?}{section.4.1}% 32
-\BOOKMARK [2][-]{subsection.4.1.2}{G\233\363wne elementy notacji}{section.4.1}% 33
-\BOOKMARK [2][-]{subsection.4.1.3}{Modelowanie z wykorzystaniem SoaML}{section.4.1}% 34
-\BOOKMARK [1][-]{section.4.2}{ArchiMate}{chapter.4}% 35
-\BOOKMARK [1][-]{section.4.3}{Inne jezyki}{chapter.4}% 36
+\BOOKMARK [1][-]{section.4.1}{Wstep}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.2}{SoaML}{chapter.4}% 32
+\BOOKMARK [2][-]{subsection.4.2.1}{Czym jest SoaML?}{section.4.2}% 33
+\BOOKMARK [2][-]{subsection.4.2.2}{Modelowanie z wykorzystaniem SoaML}{section.4.2}% 34
+\BOOKMARK [1][-]{section.4.3}{ArchiMate}{chapter.4}% 35
+\BOOKMARK [1][-]{section.4.4}{Inne jezyki}{chapter.4}% 36
 \BOOKMARK [0][-]{chapter.5}{Opracowanie metody projektowania system\363w informatycznych o architekturze SOA}{}% 37
 \BOOKMARK [0][-]{chapter.6}{Weryfikacja koncepcji na przyk\233adzie systemu bankowego}{}% 38
 \BOOKMARK [1][-]{section.6.1}{Projektowanie systemu bankowego w oparciu o utworzona koncepcje}{chapter.6}% 39

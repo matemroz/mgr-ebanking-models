@@ -105,6 +105,13 @@ The Open Group w swoim opracowaniu dotyczącym TOGAF (\emph{The Open Group Archi
 }
 \end{itemize}
 
+\begin{figure}[h!tbp]
+\begin{centering}
+\includegraphics[width=8cm]{img/ea.png}
+\caption[Umiejscowienie architektury w korporacji.]{Umiejscowienie architektury w korporacji. \cite{SOMAArsIBMJour}}\label{ea_arch}
+\end{centering}
+\end{figure}
+
 W ostatnim czasie coraz bardziej popularnym terminem jest \quotedblbase architektura korporacyjna IT\textquotedblright. Wykazuje ona pewne różnice w porównaniu do \quotedblbase zwykłej architektury korporacyjnej\textquotedblright. 
 
 Jednym z elementów, które różnicują te dwa pojęcia jest cel opracowania architektury. Zwykła architektura korporacyjna nakierowana jest na zwiększenie efektywności działania w kontekście całej organizacji. Architektura korporacyjna IT kładzie zaś nacisk na zwiększenie efektywności działania IT w kontekście biznesowych potrzeb organizacji. 
@@ -142,8 +149,7 @@ Opracowując architekturę korporacyjną można skorzystać z jednej dwóch ści
 \begin{itemize}
 \item{wychodząca od architektury dla stanu bazowego - polega na opracowaniu najpierw architektury dla stanu bazowego (\quotedblbase jak jest\textquotedblright) bezpośrednio w czterech domenach architektonicznych: aplikacji, danych, biznesowej i technicznej. W kolejnym kroku analizowane są luki we wszystkich wymienionych domenach oraz przygotowany jest plan przejścia (ang. \emph{roadmap}) pomiędzy stanem bazowym i docelowym. Do zalet tego podejścia można zaliczyć prostotę od strony zarządczej (można zidentyfikować i dobrze opisać poszczególne etapy prac). Wadę stanowi natomiast ryzyko zbyt dużego skupienia się na architekturze bazowej i wykonania analiz na zbyt dużym poziomie szczegółowości.}
 \item{wychodząca od architektury biznesowej - opiera się na wykonaniu czterech kroków. W trzech pierwszych dla stanu bazowego \quotedblbase jak jest\textquotedblright, jak i dla stanu docelowego \quotedblbase jak będzie\textquotedblright opracowywane są kolejno architektury: biznesowa, danych i aplikacji oraz techniczna. W każdym z wymienionych kroków jest dokonywana również analiza luk. Mając opracowane architektury dla poszczególnych domen przygotowywana jest zbiorcza analiza luk oraz plan przejścia (ang. \emph{roadmap}) pomiędzy stanem bazowym i docelowym. Zaletą tej ścieżki jest dostarczenie na najwcześniejszym etapie kluczowego elementu architektury korporacynej - architektury biznesowej. Stanowi to dobrą podstawę dla opracowywania kolejnych architektur. Do wad podejścia zaliczyć można ryzyko z częstym występowaniem niskiego poziomu części biznesowej organizacji.}
-\end{itemize}
-\cite{ArchKorpSob}
+\end{itemize} \cite{ArchKorpSob}
 
 \section{SOA}
 \subsection{Czym jest SOA?}
@@ -248,12 +254,17 @@ Dobra praktyka projektowania architektury systemu zapewnia, że wszystkie połą
 Stosowanie szyny integracyjnej wiąże się z wieloma zaletami. Przede wszystkim powoduje zmniejszenie kosztów dzięki szybkiemu i elastycznemu rozwiązaniu integracji eliminującym połączenia typu \textit{point-to-point}. ESB umożliwia również rozwój obecnych środowisk bez wpływu na obecne co pozwala na łatwe rozszerzanie systemu o nowe funkcjonalności.\cite{IBMRBSoaPat}
 
 \section{Adaptacja SOA w architekturze korporacyjnej}
-Tworzona architektura koroporacyjna powinna dążyć do możliwe jak największego zapewnienia interoperacyjności tworzonych rozwiązań informatycznych i łatwą ich integrację. 
+Termin \emph{Enterprise SOA} jest bardzo popularny w ostatnich czasach. Wywodzi się z bardzo szerokiego zakresu. Posiada duże możliwości do łączenia elementów technologii z biznesem, jak i specyfikowania operacji poszczególnej usługi oferowanej pomiędzy systemami. Stanowi to również jedną z największych zalet SOA.\cite{EntSOACoryCanSoaML}
+
+Architektura korporacyjna powinna dążyć do zapewnienia możliwie jak największej interoperacyjności tworzonych rozwiązań informatycznych i jak najłatwiejszej ich integracji. Problemem jest jednak zacieranie się świata biznesu i IT w kontekście architektury korporacyjnej.
+
+W rozwiązaniu tych problemów pomaga SOA, która opiera się na koncepcji usług, kontraktów, procesów oraz orkiestracji (ang. \emph{orchestration}). Wszystkie z wymienionych elementów są powiązane z domeną biznesową. Pozwalają na kompleksowe opisywanie krytycznych dla biznesu funkcjonalności. 
+
+Problem ze względu na swój zakres oraz ilość elementów branych pod uwagę do jego rozwiązania jest stosunkowo złożony. Konieczne jest dlatego oparcie się na odpowiedniej metodyce. W pracy zostanie przedstawione jak zaadaptować SOA w architekturze korporacyjnej z wykorzystaniem SoaML z wykorzystaniem opracowanej optymalnej metodyki.
 
 \chapter{Metodyki projektowania rozwiązań w architekturze usługowej}
 
 \section{Wstęp}
-
 
 \section{RUP4SOA}
 \subsection{Czym jest RUP?}
@@ -385,13 +396,63 @@ Ponadto SOMA pozwala zdefiniowanie i zaprojektowanie poszczególnych serwisów t
 //TODO: DODAĆ WADY
 
 \chapter{Przegląd języków do projektowania systemów informatycznych o architekturze SOA}
+
+\section{Wstęp}
+
 \section{SoaML}
-
 \subsection{Czym jest SoaML?}
+SoaML (\emph{The Service oriented architecture Modeling Language}) stanowi język wyspecyfikowany przez OMG (\emph{Object Managment Group}) w 2009 roku, który definiuje profil UML i metamodel dla projektowania usług w architekturze zorientowanej usługowo. Podstawowym celem SoaML jest modelowanie i projektowanie usług, tak aby wspierać dewelopment oparty na podejściu sterowanym modelami z perspektywy biznesowej i IT.
 
+SoaML definiuje trzy różne podejścia dla specyfikowania usług: 
+\begin{itemize}
+\item{Proste interfejsy (ang. \emph{Simple interfaces}) - prosty interfejs, który opiera się na jednokierunkowej interakcji dostarczanej przez uczestnika interakcji jako interfejs UML. Uczestnik otrzymuje operacje na swój port i może dostarczyć rezultaty dla wywołującego zapytanie. Ten rodzaj jednokierunkowej interakcji może być stosowany dla anonimowych inicjatorów interakcji. Uczestnik interakcji nie ma informacji o inicjatorze anio  porządku usług. Jednokierunkowe usługi są najczęściej określane jako \quotedblbase RPC style Web Services\textquotedblright. Prosty interfejs wykorzystywany jako port usługi może opcjonalnie stanowić element \emph{ServiceInterface}.} \cite{SOAMLOMG}
 
-\subsection{Główne elementy notacji}
+\begin{figure}[h!tbp]
+\begin{centering}
+\includegraphics[width=10cm]{img/simple_interface_based_approach.png}
+\caption[Specyfikacja usługi \emph{Ship Status} wykorzystując podejście \quotedblbase prostego interfejsu\textquotedblright. Zawiera prosty interfejs dostawcy usługi, jego operacje, typy wiadomości i odpowiedni port uczestnika interakcji.]{Specyfikacja usługi \emph{Ship Status} wykorzystując podejście \quotedblbase prostego interfejsu\textquotedblright. Zawiera prosty interfejs dostawcy usługi, jego operacje, typy wiadomości i odpowiedni port uczestnika interakcji.\cite{SoaMLErvBase}}\label{simple_interface_based_approach}
+\end{centering}
+\end{figure}
+
+\item{Interfejsy usług (ang. \emph{Service interfaces}) - podejście bazujące na interfejsach usług skupia się na dwu i większej ilości interakcji między usługami. 
+\begin{figure}[h!tbp]
+\begin{centering}
+\includegraphics[width=10cm]{img/service_interface_based_approach.png}
+\caption[Specyfikacja usługi \emph{ShipStatusService} wykorzystując podejście oparte na interfejsach usług.]{Specyfikacja usługi \emph{ShipStatusService} wykorzystując podejście oparte na interfejsach usług.\cite{SoaMLErvBase}}\label{service_interface_based_approach}
+\end{centering}
+\end{figure}} 
+
+\item{Kontrakty usług(ang. \emph{contract interfaces}).
+\begin{figure}[h!tbp]
+\begin{centering}
+\includegraphics[width=10cm]{img/service_contract_based_approach.png}
+\caption[Specyfikacja usługi \emph{Ship Status} wykorzystując podejście oparte na \quotedblbase kontrakcie usługi\textquotedblright. ]{Specyfikacja usługi \emph{Ship Status} wykorzystując podejście oparte na \quotedblbase kontrakcie usługi\textquotedblright.\cite{SoaMLErvBase}}\label{service_contract_based_approach}
+\end{centering}
+\end{figure}
+}
+\end{itemize}
+
+Wszystkie podejścia charakteryzują się wykorzystywaniem różnych elementów UML. Podstawowa różnica pomiędzy podejściem bazującym na kontrakcie i interfejsie polega na zdefiniowaniu interakcji pomiędzy uczestnikami niezależnie od nich w \emph{ServiceContract}. Element ten określa obowiązki wszystkich uczestników interakcji lub indywidualnie dla każdego z uczestników i zapytań. 
+
 \subsection{Modelowanie z wykorzystaniem SoaML}
+SoaML wspiera modelowanie wymagań dla SOA w oparciu o specyfikowanie usług systemowych, indywidualnych usług dla interfejsów oraz specyfikację implementacji usług. Metamodel SoaML\cite{soaml_metamodel} rozszerza metamodel UML dla bezpośredniego modelowania usług w rozproszonych środowiskach. \cite{SoaMLErvBase}
+
+\begin{figure}[h!tbp]
+\begin{centering}
+\includegraphics[width=11cm]{img/soaml_metamodel.png}
+\caption[Podstawowe rozszerzenia UML zdefiniowane jako stereotypy dla SoaML.]{Podstawowe rozszerzenia UML zdefiniowane jako stereotypy dla SoaML. \cite{SoaMLErvBase}}\label{soaml_metamodel}
+\end{centering}
+\end{figure}
+
+SoaML charakteryzuje się dodatkowymi abstrakcjami\cite{PlatIntGor} i rozszerza UML w sześciu głównych obszarach: 
+\begin{itemize}
+\item{Uczestnicy realizujący kontrakty (ang. \emph{Participants}) - na diagramach SoaML oznaczeni są stereotypem \emph{<<Paricipant>>}.}
+\item{Interfejsy usług (ang. \emph{Service interfaces}) - wykorzystywane do opisywania operacji dostarczanych i wymaganych do pełnej funkcjonalności usługi. Interfejs usługi może być wykorzystywany jako protokół dla portu usługi lub odpytywany port. Oznaczone są stereotypami \emph{<<ServiceInterface>>}.}
+\item{Kontrakty usług (ang. \emph{Service contracts} - wykorzystywane do opisywania wzorców interakcji między encjami usług. Umowa o świadczenie usług jest używana do modelowania porozumienia między dwiema lub większą ilością stron. Każda z usług z kontraktu posiada interfejs, który reprezentuje ją jako dostawcę bądź konsumenta. Oznaczone są stereotypami \emph{ServiceContract}}
+\item{Usługi architektur (ang. \emph{Services architecture}) - wyższy element widoku prezentujący zbiór elementów SOA. Oznaczany stereotypem <<ServicesArchitecture>>}
+\item{dane usług (ang. \emph{Service data}) - wykorzystywane do opisywania komunikatów dla usług i ich załączników. Element \quotedblbase Typ wiadomości\textquotedblright} (ang. \emph{Message Type}) jest używany do specyfikowania informacji wymienianych pomiędzy konsumentami usług i dostawcami. Określa rodzaj komunikatu. Oznaczany jest na diagramach jako stereotyp \emph{<<MessageType>>}. Załączniki są oznaczane jako stereotyp \emph{<<Attachment>>.}
+\item{Funkcjonalność (ang. \emph{Capabilities}) - kolejny zdefiniowany element SoaML. Na diagramach klas określa funkcjonalność lub zasoby jakie oferują uczestnicy architektury. Przedstawiany jest w postaci komponentu ze stereotypem \emph{capabilities}.\cite{SoaMLErvBase}}
+\end{itemize} 
 \section{ArchiMate}
 \section{Inne języki}
 
