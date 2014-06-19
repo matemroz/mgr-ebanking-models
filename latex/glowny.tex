@@ -148,8 +148,8 @@ Projektując architekturę korporacyjną należy rozważyć dwa główne problem
 Opracowując architekturę korporacyjną można skorzystać z jednej dwóch ścieżek:
 \begin{itemize}
 \item{wychodząca od architektury dla stanu bazowego - polega na opracowaniu najpierw architektury dla stanu bazowego (\quotedblbase jak jest\textquotedblright) bezpośrednio w czterech domenach architektonicznych: aplikacji, danych, biznesowej i technicznej. W kolejnym kroku analizowane są luki we wszystkich wymienionych domenach oraz przygotowany jest plan przejścia (ang. \emph{roadmap}) pomiędzy stanem bazowym i docelowym. Do zalet tego podejścia można zaliczyć prostotę od strony zarządczej (można zidentyfikować i dobrze opisać poszczególne etapy prac). Wadę stanowi natomiast ryzyko zbyt dużego skupienia się na architekturze bazowej i wykonania analiz na zbyt dużym poziomie szczegółowości.}
-\item{wychodząca od architektury biznesowej - opiera się na wykonaniu czterech kroków. W trzech pierwszych dla stanu bazowego \quotedblbase jak jest\textquotedblright, jak i dla stanu docelowego \quotedblbase jak będzie\textquotedblright opracowywane są kolejno architektury: biznesowa, danych i aplikacji oraz techniczna. W każdym z wymienionych kroków jest dokonywana również analiza luk. Mając opracowane architektury dla poszczególnych domen przygotowywana jest zbiorcza analiza luk oraz plan przejścia (ang. \emph{roadmap}) pomiędzy stanem bazowym i docelowym. Zaletą tej ścieżki jest dostarczenie na najwcześniejszym etapie kluczowego elementu architektury korporacynej - architektury biznesowej. Stanowi to dobrą podstawę dla opracowywania kolejnych architektur. Do wad podejścia zaliczyć można ryzyko z częstym występowaniem niskiego poziomu części biznesowej organizacji.}
-\end{itemize} \cite{ArchKorpSob}
+\item{wychodząca od architektury biznesowej - opiera się na wykonaniu czterech kroków. W trzech pierwszych dla stanu bazowego \quotedblbase jak jest\textquotedblright, jak i dla stanu docelowego \quotedblbase jak będzie\textquotedblright opracowywane są kolejno architektury: biznesowa, danych i aplikacji oraz techniczna. W każdym z wymienionych kroków jest dokonywana również analiza luk. Mając opracowane architektury dla poszczególnych domen przygotowywana jest zbiorcza analiza luk oraz plan przejścia (ang. \emph{roadmap}) pomiędzy stanem bazowym i docelowym. Zaletą tej ścieżki jest dostarczenie na najwcześniejszym etapie kluczowego elementu architektury korporacynej - architektury biznesowej. Stanowi to dobrą podstawę dla opracowywania kolejnych architektur. Do wad podejścia zaliczyć można ryzyko z częstym występowaniem niskiego poziomu części biznesowej organizacji.\cite{ArchKorpSob}}
+\end{itemize}
 
 \section{SOA}
 \subsection{Czym jest SOA?}
@@ -398,6 +398,16 @@ Ponadto SOMA pozwala zdefiniowanie i zaprojektowanie poszczególnych serwisów t
 \chapter{Przegląd języków do projektowania systemów informatycznych o architekturze SOA}
 
 \section{Wstęp}
+Modele tworzone w ramach architektury korporacyjnej możemy traktować na kilka sposobów:
+\begin{itemize}
+\item{medium komunikacyjne między interesariuszami, którzy reprezentują zarówno dział informatyki, jak i inne jednostki organizacji;}
+\item{forma ukazania i dokumentowania pewnych decyzji - zarówno na poziomie technicznym w ramach architektury infrastruktury technicznej (na przykład w zakresie dotyczącym serwerów oraz sieci komputerowych), jak i biznesowym w ramach architektury biznesowej (odnośnie przebiegu procesów biznesowych).}
+\item{abstrakcja organizacji, opisująca strukturę i działanie poszczególnych elementów składowych (zarówno na płaszczyźnie technicznej, jak i biznesowej). Taki opis pozwala na planowanie rozwoju organizacji, wspomaga jej transformację.}
+\end{itemize}
+
+Opracowana architektura powinna być zrozumiała dla odbiorcy, tak aby na jej podstawie można było podjąć określone decyzje związane z funkcjonowaniem organizacji lub wdrożeniem określonych rozwiązań informatycznych. Należy wziąć również pod uwagę fakt, że potencjalnymi osobami często mogą być różne osoby - analityk systemowy, projektant systemów, czy też osobą odpowiedzialną za komórkę informatyczną w danej organizacji).\cite{ArchKorpSob}
+
+W niniejszym rozdziale zostaną omówione języki wykorzystywane do modelowania architektury korporacyjnej. Przy wykorzystaniu SoaML lub ArchiMate można w pełni zamodelować architekturę korporacyjną. Inne jęzki jak: BPEL, BPMN, czy UML, mogą wspierać proces projektowania jedynie w poszczególnych domenach.
 
 \section{SoaML}
 \subsection{Czym jest SoaML?}
@@ -409,23 +419,23 @@ SoaML definiuje trzy różne podejścia dla specyfikowania usług:
 
 \begin{figure}[h!tbp]
 \begin{centering}
-\includegraphics[width=10cm]{img/simple_interface_based_approach.png}
+\includegraphics[width=11cm]{img/simple_interface_based_approach.png}
 \caption[Specyfikacja usługi \emph{Ship Status} wykorzystując podejście \quotedblbase prostego interfejsu\textquotedblright. Zawiera prosty interfejs dostawcy usługi, jego operacje, typy wiadomości i odpowiedni port uczestnika interakcji.]{Specyfikacja usługi \emph{Ship Status} wykorzystując podejście \quotedblbase prostego interfejsu\textquotedblright. Zawiera prosty interfejs dostawcy usługi, jego operacje, typy wiadomości i odpowiedni port uczestnika interakcji.\cite{SoaMLErvBase}}\label{simple_interface_based_approach}
 \end{centering}
 \end{figure}
 
-\item{Interfejsy usług (ang. \emph{Service interfaces}) - podejście bazujące na interfejsach usług skupia się na dwu i większej ilości interakcji między usługami. 
+\item{Interfejsy usług (ang. \emph{Service interfaces}) - podejście bazujące na interfejsach usług skupia się na dwu i większej ilości interakcji między usługami, wymagając jednocześnie wyspecyfikowania zbioru powiązanych ze sobą interfejsów w ramach specyfikacji jednej usługi. \\TODO: Nie wiadomo czy dobrze przetłumaczone. Podejście to opiera się na komponentach i zezwala na połączenia między nimi z wykorzystaniem portów. Porty powinny specyfikować pożądane i dostarczane interfejsy. 
 \begin{figure}[h!tbp]
 \begin{centering}
-\includegraphics[width=10cm]{img/service_interface_based_approach.png}
+\includegraphics[width=11cm]{img/service_interface_based_approach.png}
 \caption[Specyfikacja usługi \emph{ShipStatusService} wykorzystując podejście oparte na interfejsach usług.]{Specyfikacja usługi \emph{ShipStatusService} wykorzystując podejście oparte na interfejsach usług.\cite{SoaMLErvBase}}\label{service_interface_based_approach}
 \end{centering}
 \end{figure}} 
 
-\item{Kontrakty usług(ang. \emph{contract interfaces}).
+\item{Kontrakty usług(ang. \emph{contract interfaces}) - podejście w oparciu o kontrakty usług definiuje specyfikacje usług, które definiują role każdego uczestnika usługi (takich jak dostawców i klientów) oraz jakie interfejsy powinni implementować do realizacji ich ról w usłudze. Te interfejsy z kolei są typami portów uczestników, które zobowiązują ich do realizacji ról w danym kontrakcie usługi. Podejście to rozszerza elementy współpracy (ang. \emph{Collaboration}) UML do modelowania części strukturalnej interakcji usług. 
 \begin{figure}[h!tbp]
 \begin{centering}
-\includegraphics[width=10cm]{img/service_contract_based_approach.png}
+\includegraphics[width=11cm]{img/service_contract_based_approach.png}
 \caption[Specyfikacja usługi \emph{Ship Status} wykorzystując podejście oparte na \quotedblbase kontrakcie usługi\textquotedblright. ]{Specyfikacja usługi \emph{Ship Status} wykorzystując podejście oparte na \quotedblbase kontrakcie usługi\textquotedblright.\cite{SoaMLErvBase}}\label{service_contract_based_approach}
 \end{centering}
 \end{figure}
@@ -453,8 +463,124 @@ SoaML charakteryzuje się dodatkowymi abstrakcjami\cite{PlatIntGor} i rozszerza 
 \item{dane usług (ang. \emph{Service data}) - wykorzystywane do opisywania komunikatów dla usług i ich załączników. Element \quotedblbase Typ wiadomości\textquotedblright} (ang. \emph{Message Type}) jest używany do specyfikowania informacji wymienianych pomiędzy konsumentami usług i dostawcami. Określa rodzaj komunikatu. Oznaczany jest na diagramach jako stereotyp \emph{<<MessageType>>}. Załączniki są oznaczane jako stereotyp \emph{<<Attachment>>.}
 \item{Funkcjonalność (ang. \emph{Capabilities}) - kolejny zdefiniowany element SoaML. Na diagramach klas określa funkcjonalność lub zasoby jakie oferują uczestnicy architektury. Przedstawiany jest w postaci komponentu ze stereotypem \emph{capabilities}.\cite{SoaMLErvBase}}
 \end{itemize} 
+
 \section{ArchiMate}
+
+\subsection{Czym jest ArchiMate?}
+ArchiMate stanowi otwarty i niezależny język modelowania dla architektur korporacyjnych. Zapewnia instrumenty, aby umożliwić architektom przedsiębiorstwa opis, analizę i wizualizację relacji między domenami biznesu w jednoznaczny sposób. Pozwala ponadto na opisywanie procesów biznesowych, struktur organizacyjnych, przepływów informacji, systemów informatycznych oraz technicznej infrastruktury.
+
+ArchiMate to techniczny standard The Open Group.Jest wspierany przez różne narzędzia informatyczne do modelowania architektury korporacyjnej jak na przykład: Enterprise Architect, BizzDesign Architect, Archi, ARIS lub Microsoft Visio.\cite{OpenGrArch} 
+
+ArchiMate bazuje na dwóch podstawowych założeniach:
+\begin{itemize}
+\item{podejściu warstwowym - związane z warstwą biznesową, aplikacji, danych i techniczną;}
+\item{podejściu zorientowanym na usługi - usługi zewnętrzne są udostępniane przez warstwę niższą i wykorzystywane przez warstwę wyższą (na przykład warstwa aplikacji udostępnia usługi wykorzystywane w ramach warstwy biznesowej). ArchiMate wprowadza ponadto pojęcie usług wewnętrznych, które są wykorzystywane w ramach określonej warstwy.}
+\end{itemize}
+
+Komunikacja pomiędzy warstwami: biznesową, aplikacyjną i technologiczną stanowi jedną z największych zalet ArchiMate (rys. \ref{archimate_concepts}).
+
+W warstwie biznesowej (ang. \emph{Business layer}) zawarte są usługi świadczone klientom zewnętrznym oraz produkty. Są one realizowane przez przez procesy biznesowe i związanych z nimi aktorów biznesowych.
+
+Warstwa aplikacji (ang. \emph{Application layer}) wspiera warstwę biznesową poprzez usługi aplikacyjne, które są realizowane przez poszczególne komponenty aplikacyjne.
+
+Warstwa technologiczna (ang. \emph{Technology layer}) odzwierciedla usługi infrastrukturalne (na przykład usługi komunikacyjne), niezbędne do działania aplikacji.
+
+Od wersji 2.0 możliwości języka ArchiMate zostały rozbudowane poprzez zdefiniowanie części centralnej oraz rozszerzeń związanych z motywacją, implementacją i konfiguracją.\cite{ArchKorpSob}
+
+\begin{figure}[h!tbp]
+\begin{centering}
+\includegraphics[width=14cm]{img/archimate_concepts.png}
+\caption[Koncpecja ArchiMate z wyraźnym podziałem na warswy: biznesową, aplikacji i technologiczną.]{Koncpecja ArchiMate z wyraźnym podziałem na warswy: biznesową, aplikacji i technologiczną. \cite{ArchWhatIs}}\label{archimate_concepts}
+\end{centering}
+\end{figure}
+
+\subsection{Modelowanie z wykorzystaniem ArchiMate}
+Jednym z najbardziej popularnych podejść do modelowania architektury korporacyjnej z wykorzystaniem ArchiMate jest oparcie się na metodzie \emph{top-down}. 
+
+W początkowym etapie powinno zdefiniować się warstwę biznesową. Zalecane jest dlatego utworzenie najpierw \emph{Business Model Canvas}. Stanowi on szablon dla dokumentowania nowych lub istniejących modeli biznesowych. W efekcie zostaje utworzony diagram złożony z bloków opisujących różne istotne elementy organizacji. Stanowi on szkic strategii, który ma zostać wdrożony w ramach struktur, procesów i organizacji. Składają się na niego takie elementy jak: segmenty klientów, propozycje wartości, kanały, relacje z klientami, strumienie przychodów, kluczowe zasoby, działania, partnerzy oraz struktura kosztów. 
+
+Następnie powinno zidentyfikować się przepływy pomiędzy różnymi encjami \emph{Business Model Canvas} oraz dokonać mapowania ogólnego modelu biznesu jako usług powiązanych. W ArchiMate, na najwyższym poziomie, organizacja i odpowiadający jej model biznesowy może być reprezentowany jak pojedyncza usługa biznesowa (ang. \emph{Business Service}). Segmenty klientów i kluczowi partnerzy mogą być reprezentowani jako encje aktorów biznesowych (ang. \emph{Business actors}). Każdy z nich powinien mieć przypisaną co najmniej jedną rolę biznesową (ang. \emph{Business role}) i być połączonym z usługą organizacji przez biznesowe relacje interfejsu (ang. \emph{Business interface relationships}) (rys. \ref{remap_overall_business}). 
+\begin{figure}[h!tbp]
+\begin{centering}
+\includegraphics[width=14cm]{img/remap_overall_business.png}
+\caption[Relacje biznesowe aktorów i usługi w organizacji.]{Relacje biznesowe aktorów i usługi w organizacji. \cite{TopDownArchimate}}\label{remap_overall_business}
+\end{centering}
+\end{figure}
+
+W kolejnym kroku rozwijane są szczegóły ogólnego modelu biznesowego. Następuje przejście z \emph{Business Model Canvas} na \emph{Enterprise Canvas}. \ref{enterprise_canvas_map}
+
+\begin{figure}[h!tbp]
+\begin{centering}
+\includegraphics[width=12cm]{img/enterprise_canvas_map.png}
+\caption[Mapowanie \emph{Business Model Canvas} na \emph{Enterprise Canvas}.]{Mapowanie \emph{Business Model Canvas} na \emph{Enterprise Canvas}. \cite{TopDownArchimate}}\label{enterprise_canvas_map}
+\end{centering}
+\end{figure}
+
+\begin{itemize}
+\item{The Value Proposition (EC: value-proposition) is represented by one or more Product entities, with related Value entities.}
+\item{We have already mapped the Key Partner and Customer Segment entities as Business Actor / Business Role / Business Interface entities.}
+\item{All of the Enterprise Canvas cells are mapped to Business Function entities with appropriate names (default: same names as in Enterprise Canvas); these also represent in part the Key Activities cell of the Business Model Canvas.}
+\item{All of the Enterprise Canvas interface cells (customer-relations, customer-channels, value-return; supplier-relations, supplier-channels, value-outlay) also include Business Interaction entities (which may optionally replace the respective Business Function entity), each linked to a Business Interface entity, representing the channels and other interfaces to the overall service.}
+\item{Each of the six channels (Business Interface entities) links to one or more Business Object entities, which in turn link to the Business Interface of a Customer Segment or Key Partner; each Business Object may optionally be linked to a Meaning entity.}
+\item{Each Business Object entity attached to a customer-channel Business Interface should also be linked to one or more Product entities; the same may optionally apply to Business Object entities attached to the supplier-channel Business Interface.}
+\item{The Business Object entities associated with a supplier-channel and value-outlay, or customer-channel and value-return, should be linked by a Contract entity, representing the required relationship between the respective Enterprise Canvas main-channel and back-channel (e.g. Business Model Canvas linkage between Value Proposition, Customer Channel. Customer Segment and Revenue Stream).}
+\end{itemize}
+
 \section{Inne języki}
+
+\subsection{BPMN}
+BPMN (ang. \textit{Business Process Modeling Notation}) stanowi standard modelowania procesów biznesowych opracowany przez Business Process Management Initiative (BPMI), a następnie rozwijany przez Object Management Group (OMG). 
+
+Nie jest to język, który pozwoli na pełne zamodelowanie SOA lub architektury korporacyjnej. Można go wykorzystać jednak do modelowania fragmentu dotyczącego procesów biznesowych.
+
+Definiuje diagramy nazywane diagramami procesu biznesowego - zaprojektowane tak, żeby z jednej strony były łatwe do zrozumienia, a z drugiej pozwalały na modelowanie również złożonych procesów. Składa się ze skończonego i jednoznacznie zdefiniowanego zbioru elementów graficznych. Pozwalają na budowanie zarówno modeli procesów zrozumiałe przez analityków biznesowych, jak również przez kadrę zarządzającą.
+
+Elementarne typy obiektów BPMN stanowią: 
+\begin{itemize}
+\item{obiekty przepływu (ang. \emph{Flow objects}) - stanowią je elementy odnoszące się do zdarzeń, czynności lub obiektów decyzyjnych}, 
+\item{obiekty łączące (ang. \emph{Connecting objects})} - do tej grupy zaliczyć można sekwnecje elementów, komunikaty, 
+\item{tory przepływu (ang. \emph{Swimlanes})},
+\item{artefakty (ang. \emph{Artifact})}.
+\end{itemize}
+
+BPMN może być wykorzystywany do modelowania:
+\begin{itemize}
+\item{procesów interakcji (globalnych) - wykorzystywane do reprezentacji interakcji między dwoma lub większą ilością obiektów biznesowych,}
+\item{abstrakcyjnych procesów (publicznych) - reprezentują interakcje między procesami prywatnymi a uczestnikami zewnętrznymi, albo dwoma procesami prywatnymi,}
+\item{prywatnych procesów biznesowych - procesy wewnętrzne, specyficzne dla konkretnej interakcji.}
+\end{itemize}
+
+\subsection{BPEL}
+BPEL (Business Process Execution Language) stanowi język pozwalający na definiowanie i wykonywanie procesów biznesowych. Został opracowany przez konsorcjum OASIS.
+
+Podobnie jak BPMN pozwala na modelowanie jedynie fragmentu architektury korporacyjnej związanej z procesami biznesowymi. Jest postrzegany jako procesowe rozszerzenie standardów zdefiniowanych dla usług sieciowych, które pozwalają na współpracę między aplikacjami w środowiskach heterogenicznych. Opiera się na takich standardach jak SOAP, WSDL oraz Universal Description, Discovery and Integraton (UDDI). 
+
+W BPEL można opisywać procesy na dwa sposoby - abstrakcyjny lub wykonywalny.
+
+Proces abstrakcyjny jest określony tylko częściowo. Musi być otwarcie zadeklarowany jako abstrakcyjny i nie powinien być wykonywalny. Ponadto  udostępnia dwa mechanizmy umożliwiające ukrycie jego szczegółów: nieprzezroczyste (ang. \emph{opague tokens}) oraz pominięcie (ang. \emph{omission}).
+
+Z kolei proces wykonywalny w pełni specyfikuje opis, który można umieścić w środowisku wykonawczym. Musi być w pełni zdefiniowany wyłącznie na podstawie usług sieciowych oraz danych przedstawionych w języku XML. Konstrukcje procesu wykonywalnego powinny być dostępne dla procesu abstrakcyjnego. 
+
+Istnieją również rozszerzenia języka BPEL. Jednym z nich jest BPEL4WS, który nie uwzględnia człowieka w procesie biznesowym. Przeciwieństwo stanowi zaś BPEL4People, w którym człowiek stanowi część procesu biznesowego. Innym przykładem jest jeszcze BPELJ, który umożliwia zastąpienie usług sieciowych małymi aplikacjami napisanymi na podstawie języka Java.\cite{PlatIntGor}
+
+\subsection{UML}
+UML (Unified Modeling Language) jest jednym z najpowszechniejszych graficznych języków wykorzystywanych do modelowania architektury korporacyjnej. Został stworzony w 1994 roku i rozwijany jest w ramach OMG (Object Management Group). 
+
+Przy wykorzystaniu elementów języka UML można wizualizować, specyfikować oraz budować systemy informatyczne. Stosowanie UML pozwala w graficzny sposób odwzorować zarówno behawioralne jak i strukturalne spojrzenia na system.
+
+Modelowanie systemów z wykorzystaniem UML umożliwia jednoczesne dokumentowanie całości systemu w zrozumiały dla całego zespołu sposób.\cite{PlatIntGor} UML służy głównie do modelowania systemów informatycznych, w tym również uwzględniających aspekty architektoniczne. 
+
+UML znajduje coraz częściej zastosowanie w inżynierii systemów, do  modelowania procesów biznesowych lub reprezentacji struktur organizacyjnych. W tym celu bardzo często wykorzystywane są możliwości jego rozszerzenia - na przykład za pomocą profili. Istotą ich stosowania jest fakt, że dodajemy możliwość używania konkretnych znaczeń w stosunku do istniejących elementów modelu.
+
+
+\subsection{IDEF}
+Języki IDEF (Integrated DEFinition Methods) stanowią rodzinę języków wykorzystywaną do analizy biznesowej i modelowania. Pierwotnie wiązane były głównie z wojskowością.  Obecnie IDEF ma bardzo szerokie zastosowania i występuje w wielu odmianach.
+
+IDEF0 są wykorzystywane do modelowania funkcji. Pozwalają na modelowanie decyzji, działań i czynności. Zarówno na poziomie systemu informatycznego, jak i całej organizacji. Celem opracowania IDEF0 było utworzenie języka pozwalającego na ułatwienie analizy systemów i organizacji, a także poprawienie komunikacji pomiędzy analitykami biznesowymi i ich klientami. 
+
+IDEF3 pozwala na modelowanie procesów biznesowych. Przystosowany jest również do prezentowania behawioralnych aspektów planowanych lub działających systemów. 
+
+IDEFIX został utworzony z kolei z przeznaczeniem modelowania danych. Dostarcza semantycznych konstrukcji, które pozwalają na modelowanie konceptualnych schematów dla struktur danych używanych na poziomie całej organizacji.
 
 \chapter{Opracowanie metody projektowania systemów informatycznych o architekturze SOA}
 Kontrola złożoności systemu.
