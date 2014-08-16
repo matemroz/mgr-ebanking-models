@@ -1,9 +1,9 @@
 \chapter{Wstęp}
 W ostatnich latach zarysowuje się coraz większa potrzeba wdrażania systemów informatycznych. Ta tendencja związana  jest przede wszystkim z usprawnianiem procesów biznesowych, ze wzrostem wydajności pracy, identyfikacją oraz minimalizacją błędów lub nieefektywnych działań w firmach. Występuje wiele ich rodzajów: CRM (ang. \emph{Customer Relationship Managment}) - wspomagające zarządzanie relacjami z klientami, ERP (ang. \emph{Enterprise Resource Planning}) – wspomagające zarządzanie i planowanie zasobami firmy czy też BPM (ang. \emph{Business Process Managment}) – wspomagające zarządzanie procesami biznesowymi. 
 
-Wprowadzanie systemów informatycznych do organizacji może wywoływać różnorodne efekty: techniczne (związane z zastosowaniem techniki komputerowej - zwiększenie szybkości i dokładności przetwarzania, wzrost szczegółowości oraz poprawa bezpieczeństwa dla informacji), ekonomiczne (związane pośrednio ze wzrostem efektywności i szybkości podejmowania decyzji), organizacyjne (przede wszystkim związane są z usprawnieniami struktury organizacyjnej i procesów zachodzących w przedsiębiorstwie - podniesienie sprawności obiegu dokumentów, eliminacja zbędnej pracy administracyjnej, poprawa koordynacji zadań oraz eliminacja błędów), socjopsychologiczne (związane z rozszerzeniem zakresu komunikacji pomiędzy pracownikami, usprawnieniem systemu ocen pracowniczych oraz polepszeniem kultury organizacyjnej). \cite{EfektyZasSys}
+Wprowadzanie systemów informatycznych do organizacji może wywoływać różnorodne efekty: techniczne (bezpośrednio związane z zastosowaniem techniki komputerowej - zwiększenie szybkości i dokładności przetwarzania danych, wzrost szczegółowości oraz poprawa bezpieczeństwa dla informacji), ekonomiczne (związane pośrednio ze wzrostem efektywności i szybkości podejmowania decyzji), organizacyjne (związane przede wszystkim z usprawnieniami struktury organizacyjnej i procesów zachodzących w przedsiębiorstwie - podniesienie sprawności obiegu dokumentów, eliminacja zbędnej pracy administracyjnej, poprawa koordynacji zadań oraz eliminacja błędów), socjopsychologiczne (związane z rozszerzeniem zakresu komunikacji pomiędzy pracownikami, usprawnieniem systemu ocen pracowniczych oraz polepszeniem kultury organizacyjnej). \cite{EfektyZasSys}
 
-Utworzenie systemu informatycznego dla dużych firm i instytucji nie stanowi zadania trywialnego. Banki, uczelnie lub urzędy charakteryzują się często stosunkowo złożoną strukturą organizacyjną oraz panują w nich skomplikowane procesy wewnętrzne. Powstaje wówczas problem z formalnym opisem danej jednostki – niezbędnym do utworzenia funkcjonalnego, spełniającego wymagania klienckie systemu informatycznego. Bardzo istotnym elementem jest wówczas stosowanie odpowiedniej metodyki, która pozwoli na usystematyzowane podejście do projektowania tego rodzaju systemów. 
+Utworzenie systemu informatycznego dla dużych firm i instytucji nie stanowi trywialnego zadania. Banki, uczelnie lub urzędy charakteryzują się często stosunkowo złożoną strukturą organizacyjną oraz panują w nich skomplikowane procesy wewnętrzne. Powstaje wówczas problem z formalnym opisem danej jednostki – niezbędnym do utworzenia funkcjonalnego systemu informatycznego. Bardzo istotnym elementem jest wówczas stosowanie odpowiedniej metodyki, która pozwoli na uporządkowane podejście do projektowania tego rodzaju systemów. 
 
 \section{Cel pracy}
 Podstawowym celem pracy jest utworzenie metodyki projektowania architektury korporacyjnej opierającej się na wykorzystaniu języka SoaML. Dotychczas utworzono już podobne metodyki, jednakże żadna nie była w stanie w pełni sprostać wszystkim wymaganiom stawianym przez problematykę architektury korporacyjnej.
@@ -24,16 +24,16 @@ Oprócz założenia głównego dla pracy (utworzenie metodyki projektowania arch
 \chapter{Charakterystyka architektury korporacyjnej}
 
 \section{Wstęp}
-Żyjemy w coraz szybciej zmieniającym się świecie. Stan ten powoduje, że współczesne organizacje muszą charakteryzować się coraz większą elastycznością. Jednocześnie ich poziom złożoności, jak również skala działania znacznie rosną.\cite{SobArchKorpDobrPr}
+Żyjemy w coraz szybciej zmieniającym się świecie. Dynamika ta powoduje, że współczesne organizacje muszą charakteryzować się coraz większą elastycznością. Jednocześnie poziom złożoności panujących w nich procesów biznesowych jak również ich skala działania znacznie rosną.\cite{SobArchKorpDobrPr}
 
 Do innych problemów zalicza się również niejednorodność procesów biznesowych w poszczególnych jednostkach. Może wywoływać to trudności w stosowaniu wspólnych procedur postępowania w ramach całego przedsiębiorstwa. Rozwój i utrzymywanie zbyt wielu platform, gdy systemy tworzone były w różnych technologiach może prowadzić również do trudności we współdziałaniu tychże systemów.
 
 W rozdziale zostanie zdefiniowany termin \quotedblbase architektura korporacyjna\textquotedblright oraz wyjaśnione najważniejsze elementy z nim związane. Podjęta będzie również tematyka \quotedblbase architektury zorientowanej na usługi\textquotedblright oraz to jak ją zaadaptować do architektury korporacyjnej. 
 
 \section{Definicje głównych pojęć związanych z architekturą korporacyjną}
-Projektując architekturę korporacyjną (ang. \textit{Enterprise Architecture} należy dobrze rozumieć terminy z nią powiązane. W sekcji tej zostanie dokonany przegląd głównych pojęć odnoszących się do architektury korporacyjnej oraz podjęta próba ich zdefiniowania.
+Projektując architekturę korporacyjną (ang. \textit{Enterprise Architecture} niezbędna jest doskonała znajomość terminów z nią powiązanych. W sekcji tej zostanie dokonany przegląd głównych pojęć odnoszących się do architektury korporacyjnej oraz podjęta próba ich zdefiniowania.
 
-Słowo \quotedblbase architektura\textquotedblright w ujęciu do oprogramowania stanowi zbiór podstawowych decyzji związanych z oprogramowaniem lub rozwiązaniem programistycznym - zaprojektowanym z reguły tak, aby sprostać wszelkim atrybutom jakościowym (wymaganiom architektonicznym) danego projektu. Architektura tego typu zawiera z reguły główne komponenty, atrybuty oraz współdziałania (zachowanie i interakcje) umożliwiające spełnianie atrybutów jakościowych. Architektura może być wyrażona na więcej niż jednym poziomie abstrakcji, gdzie liczba poziomów zależy od rozmiaru i złożoności projektu. Termin ten posiada również powszechnie akceptowany opis w standardzie IEEE, który określa ją jako \quotedblbase podstawowe koncepcje lub właściwości systemu w jego  środowisku zawarte w jego elementach, relacjach oraz zasadach projektowania i rozwoju\textquotedblright (IEEE 42010). \cite{SOAWzorceArch}
+Słowo \quotedblbase architektura\textquotedblright w ujęciu do oprogramowania stanowi zbiór podstawowych decyzji związanych z oprogramowaniem lub rozwiązaniem programistycznym - zaprojektowanym z reguły tak, aby sprostać wszelkim atrybutom jakościowym (wymaganiom architektonicznym) danego projektu. Architektura tego typu zawiera z reguły główne komponenty, atrybuty oraz zdefiniowane współdziałania (zachowania i interakcje) umożliwiające spełnianie atrybutów jakościowych. Architektura może być wyrażona na więcej niż jednym poziomie abstrakcji, gdzie liczba poziomów zależy od rozmiaru i złożoności projektu. Termin ten posiada również powszechnie akceptowany opis w standardzie IEEE, który określa ją jako \quotedblbase zbiór podstawowych koncepcji lub właściwości systemu w danym środowisku zawarte w jego elementach, relacjach oraz zasadach projektowania i rozwoju\textquotedblright (IEEE 42010). \cite{SOAWzorceArch}
 
 Twórcy standardu uzupełniają tą definicję o następujące komentarze: 
 \begin{itemize}
@@ -43,11 +43,11 @@ W definicji wprowadzono również dwa rozłączne podejścia do architektury - r
 \item{Architektura opisywana jest zawsze w pewnym kontekście. Zrozumienie podstawowych właściwości systemu systemu, wiąże się z odniesieniem do jego otoczenia, środowiska i interesariuszy.}
 \end{itemize}
 
-Kolejnym kluczowym terminem jest \quotedblbase korporacja\textquotedblright (ang. \textit{enterprise}. Pojęcie korporacja rozpatrywane jest najczęściej w kontekście całej jednostki organizacyjnej. Przyjmowane są różne jego różne definicje:
+Kolejnym kluczowym terminem jest \quotedblbase korporacja\textquotedblright (ang. \textit{Enterprise}). Pojęcie korporacja rozpatrywane jest najczęściej w kontekście całej jednostki organizacyjnej. Przyjmowane są różne jego różne definicje:
 \begin{itemize}
 \item{Zbiór aktywności w określonej dziedzinie z aktorami, których łączy wspólny cel.}
 \item{Zorganizowany zbiór zasobów, które uczestniczą w wykonywaniu określonych procesów.}
-\item{System istniejący w celu realizacji jednej lub wielu misji w określonym środowsiku.}
+\item{System istniejący w celu realizacji jednej lub wielu misji w określonym środowisku.}
 \item{Zbiór organizacji posiadających wspólny zbiór celów lub wspólne raportowanie finansowe.}
 \end{itemize}
 
@@ -477,7 +477,7 @@ ArchiMate bazuje na dwóch podstawowych założeniach:
 \item{podejściu zorientowanym na usługi - usługi zewnętrzne są udostępniane przez warstwę niższą i wykorzystywane przez warstwę wyższą (na przykład warstwa aplikacji udostępnia usługi wykorzystywane w ramach warstwy biznesowej). ArchiMate wprowadza ponadto pojęcie usług wewnętrznych, które są wykorzystywane w ramach określonej warstwy.}
 \end{itemize}
 
-Komunikacja pomiędzy warstwami: biznesową, aplikacyjną i technologiczną stanowi jedną z największych zalet ArchiMate (rys. \ref{archimate_concepts}).
+Komunikacja pomiędzy warstwami: biznesową, aplikacyjną i technologiczną stanowi jedną z największych zalet ArchiMate.
 
 W warstwie biznesowej (ang. \emph{Business layer}) zawarte są usługi świadczone klientom zewnętrznym oraz produkty. Są one realizowane przez przez procesy biznesowe i związanych z nimi aktorów biznesowych.
 
@@ -487,34 +487,15 @@ Warstwa technologiczna (ang. \emph{Technology layer}) odzwierciedla usługi infr
 
 Od wersji 2.0 możliwości języka ArchiMate zostały rozbudowane poprzez zdefiniowanie części centralnej oraz rozszerzeń związanych z motywacją, implementacją i konfiguracją.\cite{ArchKorpSob}
 
-\begin{figure}[h!tbp]
-\begin{centering}
-\includegraphics[width=14cm]{img/archimate_concepts.png}
-\caption[Koncpecja ArchiMate z wyraźnym podziałem na warswy: biznesową, aplikacji i technologiczną.]{Koncpecja ArchiMate z wyraźnym podziałem na warswy: biznesową, aplikacji i technologiczną. \cite{ArchWhatIs}}\label{archimate_concepts}
-\end{centering}
-\end{figure}
 
 \subsection{Modelowanie z wykorzystaniem ArchiMate}
 Jednym z najbardziej popularnych podejść do modelowania architektury korporacyjnej z wykorzystaniem ArchiMate jest oparcie się na metodzie \emph{top-down}. 
 
 W początkowym etapie powinno zdefiniować się warstwę biznesową. Zalecane jest dlatego utworzenie najpierw \emph{Business Model Canvas}. Stanowi on szablon dla dokumentowania nowych lub istniejących modeli biznesowych. W efekcie zostaje utworzony diagram złożony z bloków opisujących różne istotne elementy organizacji. Stanowi on szkic strategii, który ma zostać wdrożony w ramach struktur, procesów i organizacji. Składają się na niego takie elementy jak: segmenty klientów, propozycje wartości, kanały, relacje z klientami, strumienie przychodów, kluczowe zasoby, działania, partnerzy oraz struktura kosztów. 
 
-Następnie powinno zidentyfikować się przepływy pomiędzy różnymi encjami \emph{Business Model Canvas} oraz dokonać mapowania ogólnego modelu biznesu jako usług powiązanych. W ArchiMate, na najwyższym poziomie, organizacja i odpowiadający jej model biznesowy może być reprezentowany jak pojedyncza usługa biznesowa (ang. \emph{Business Service}). Segmenty klientów i kluczowi partnerzy mogą być reprezentowani jako encje aktorów biznesowych (ang. \emph{Business actors}). Każdy z nich powinien mieć przypisaną co najmniej jedną rolę biznesową (ang. \emph{Business role}) i być połączonym z usługą organizacji przez biznesowe relacje interfejsu (ang. \emph{Business interface relationships}) (rys. \ref{remap_overall_business}). 
-\begin{figure}[h!tbp]
-\begin{centering}
-\includegraphics[width=14cm]{img/remap_overall_business.png}
-\caption[Relacje biznesowe aktorów i usługi w organizacji.]{Relacje biznesowe aktorów i usługi w organizacji. \cite{TopDownArchimate}}\label{remap_overall_business}
-\end{centering}
-\end{figure}
+Następnie powinno zidentyfikować się przepływy pomiędzy różnymi encjami \emph{Business Model Canvas} oraz dokonać mapowania ogólnego modelu biznesu jako usług powiązanych. W ArchiMate, na najwyższym poziomie, organizacja i odpowiadający jej model biznesowy może być reprezentowany jak pojedyncza usługa biznesowa (ang. \emph{Business Service}). Segmenty klientów i kluczowi partnerzy mogą być reprezentowani jako encje aktorów biznesowych (ang. \emph{Business actors}). Każdy z nich powinien mieć przypisaną co najmniej jedną rolę biznesową (ang. \emph{Business role}) i być połączonym z usługą organizacji przez biznesowe relacje interfejsu (ang. \emph{Business interface relationships}).
 
-W kolejnym kroku rozwijane są szczegóły ogólnego modelu biznesowego. Następuje przejście z \emph{Business Model Canvas} na \emph{Enterprise Canvas}. \ref{enterprise_canvas_map}
-
-\begin{figure}[h!tbp]
-\begin{centering}
-\includegraphics[width=12cm]{img/enterprise_canvas_map.png}
-\caption[Mapowanie \emph{Business Model Canvas} na \emph{Enterprise Canvas}.]{Mapowanie \emph{Business Model Canvas} na \emph{Enterprise Canvas}. \cite{TopDownArchimate}}\label{enterprise_canvas_map}
-\end{centering}
-\end{figure}
+W kolejnym kroku rozwijane są szczegóły ogólnego modelu biznesowego. Następuje przejście z \emph{Business Model Canvas} na \emph{Enterprise Canvas}. 
 
 \begin{itemize}
 \item{The Value Proposition (EC: value-proposition) is represented by one or more Product entities, with related Value entities.}
