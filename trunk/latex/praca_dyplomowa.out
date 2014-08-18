@@ -27,27 +27,30 @@
 \BOOKMARK [2][-]{subsection.3.3.2}{Fazy metodyki SOMA}{section.3.3}% 27
 \BOOKMARK [2][-]{subsection.3.3.3}{Produkty SOMA}{section.3.3}% 28
 \BOOKMARK [2][-]{subsection.3.3.4}{Zalety i wady SOMA}{section.3.3}% 29
-\BOOKMARK [0][-]{chapter.4}{Przeglad jezyk\363w do projektowania system\363w informatycznych o architekturze SOA}{}% 30
-\BOOKMARK [1][-]{section.4.1}{Wstep}{chapter.4}% 31
-\BOOKMARK [1][-]{section.4.2}{SoaML}{chapter.4}% 32
-\BOOKMARK [2][-]{subsection.4.2.1}{Czym jest SoaML?}{section.4.2}% 33
-\BOOKMARK [2][-]{subsection.4.2.2}{Modelowanie z wykorzystaniem SoaML}{section.4.2}% 34
-\BOOKMARK [1][-]{section.4.3}{ArchiMate}{chapter.4}% 35
-\BOOKMARK [2][-]{subsection.4.3.1}{Czym jest ArchiMate?}{section.4.3}% 36
-\BOOKMARK [2][-]{subsection.4.3.2}{Modelowanie z wykorzystaniem ArchiMate}{section.4.3}% 37
-\BOOKMARK [1][-]{section.4.4}{Inne jezyki}{chapter.4}% 38
-\BOOKMARK [2][-]{subsection.4.4.1}{BPMN}{section.4.4}% 39
-\BOOKMARK [2][-]{subsection.4.4.2}{BPEL}{section.4.4}% 40
-\BOOKMARK [2][-]{subsection.4.4.3}{UML}{section.4.4}% 41
-\BOOKMARK [2][-]{subsection.4.4.4}{IDEF}{section.4.4}% 42
-\BOOKMARK [0][-]{chapter.5}{Opracowanie metody projektowania system\363w informatycznych o architekturze SOA}{}% 43
-\BOOKMARK [0][-]{chapter.6}{Weryfikacja koncepcji na przyk\233adzie systemu bankowego}{}% 44
-\BOOKMARK [1][-]{section.6.1}{Projektowanie systemu bankowego w oparciu o utworzona koncepcje}{chapter.6}% 45
-\BOOKMARK [2][-]{subsection.6.1.1}{Opis og\363lny}{section.6.1}% 46
-\BOOKMARK [2][-]{subsection.6.1.2}{Analiza systemu}{section.6.1}% 47
-\BOOKMARK [2][-]{subsection.6.1.3}{Implementacja}{section.6.1}% 48
-\BOOKMARK [2][-]{subsection.6.1.4}{Proces wdrozenia}{section.6.1}% 49
-\BOOKMARK [2][-]{subsection.6.1.5}{Testy}{section.6.1}% 50
-\BOOKMARK [1][-]{section.6.2}{Cel systemu w odniesieniu do zaprojektowanej koncepcji}{chapter.6}% 51
-\BOOKMARK [0][-]{chapter.7}{Podsumowanie i wnioski}{}% 52
-\BOOKMARK [0][-]{chapter*.2}{Bibliografia}{}% 53
+\BOOKMARK [1][-]{section.3.4}{Metoda Papazoglou}{chapter.3}% 30
+\BOOKMARK [2][-]{subsection.3.4.1}{Service-Oriented Design and Development Methodology by Papazoglou}{section.3.4}% 31
+\BOOKMARK [2][-]{subsection.3.4.2}{Fazy metodyki}{section.3.4}% 32
+\BOOKMARK [0][-]{chapter.4}{Przeglad jezyk\363w do projektowania system\363w informatycznych o architekturze SOA}{}% 33
+\BOOKMARK [1][-]{section.4.1}{Wstep}{chapter.4}% 34
+\BOOKMARK [1][-]{section.4.2}{SoaML}{chapter.4}% 35
+\BOOKMARK [2][-]{subsection.4.2.1}{Czym jest SoaML?}{section.4.2}% 36
+\BOOKMARK [2][-]{subsection.4.2.2}{Modelowanie z wykorzystaniem SoaML}{section.4.2}% 37
+\BOOKMARK [1][-]{section.4.3}{ArchiMate}{chapter.4}% 38
+\BOOKMARK [2][-]{subsection.4.3.1}{Czym jest ArchiMate?}{section.4.3}% 39
+\BOOKMARK [2][-]{subsection.4.3.2}{Modelowanie z wykorzystaniem ArchiMate}{section.4.3}% 40
+\BOOKMARK [1][-]{section.4.4}{Inne jezyki}{chapter.4}% 41
+\BOOKMARK [2][-]{subsection.4.4.1}{BPMN}{section.4.4}% 42
+\BOOKMARK [2][-]{subsection.4.4.2}{BPEL}{section.4.4}% 43
+\BOOKMARK [2][-]{subsection.4.4.3}{UML}{section.4.4}% 44
+\BOOKMARK [2][-]{subsection.4.4.4}{IDEF}{section.4.4}% 45
+\BOOKMARK [0][-]{chapter.5}{Opracowanie metody projektowania system\363w informatycznych o architekturze SOA}{}% 46
+\BOOKMARK [0][-]{chapter.6}{Weryfikacja koncepcji na przyk\233adzie systemu bankowego}{}% 47
+\BOOKMARK [1][-]{section.6.1}{Projektowanie systemu bankowego w oparciu o utworzona koncepcje}{chapter.6}% 48
+\BOOKMARK [2][-]{subsection.6.1.1}{Opis og\363lny}{section.6.1}% 49
+\BOOKMARK [2][-]{subsection.6.1.2}{Analiza systemu}{section.6.1}% 50
+\BOOKMARK [2][-]{subsection.6.1.3}{Implementacja}{section.6.1}% 51
+\BOOKMARK [2][-]{subsection.6.1.4}{Proces wdrozenia}{section.6.1}% 52
+\BOOKMARK [2][-]{subsection.6.1.5}{Testy}{section.6.1}% 53
+\BOOKMARK [1][-]{section.6.2}{Cel systemu w odniesieniu do zaprojektowanej koncepcji}{chapter.6}% 54
+\BOOKMARK [0][-]{chapter.7}{Podsumowanie i wnioski}{}% 55
+\BOOKMARK [0][-]{chapter*.2}{Bibliografia}{}% 56

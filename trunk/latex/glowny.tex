@@ -35,27 +35,26 @@ Projektując architekturę korporacyjną (ang. \textit{Enterprise Architecture} 
 
 Słowo \quotedblbase architektura\textquotedblright w ujęciu do oprogramowania stanowi zbiór podstawowych decyzji związanych z oprogramowaniem lub rozwiązaniem programistycznym - zaprojektowanym z reguły tak, aby sprostać wszelkim atrybutom jakościowym (wymaganiom architektonicznym) danego projektu. Architektura tego typu zawiera z reguły główne komponenty, atrybuty oraz zdefiniowane współdziałania (zachowania i interakcje) umożliwiające spełnianie atrybutów jakościowych. Architektura może być wyrażona na więcej niż jednym poziomie abstrakcji, gdzie liczba poziomów zależy od rozmiaru i złożoności projektu. Termin ten posiada również powszechnie akceptowany opis w standardzie IEEE, który określa ją jako \quotedblbase zbiór podstawowych koncepcji lub właściwości systemu w danym środowisku zawarte w jego elementach, relacjach oraz zasadach projektowania i rozwoju\textquotedblright (IEEE 42010). \cite{SOAWzorceArch}
 
-Twórcy standardu uzupełniają tą definicję o następujące komentarze: 
+Twórcy standardu uzupełniają powyższą definicję o następujące komentarze: 
 \begin{itemize}
 \item{Nazwa \quotedblbase architektura\textquotedblright nawiązuje do zestawu podstawowych (a nie wszystkich) właściwości systemu (rozpatrywanego jako całość), które określają jego formę i funkcje oraz związane z nim wartości, koszt i ryzyko.}
-\item{Architektura systemu odróżniana jest od jego opisu i nie musi być udokumentowana. Opis architektury stanowi próbę wyrażenia pewnej koncepcji systemu, tak aby móc podzielić się nią z innymi. Architektura jest pewnym abstraktem, natomiast opis jest próbą uchwycenia tego abstraktu.
-W definicji wprowadzono również dwa rozłączne podejścia do architektury - rozumienie jej jako pewnej koncepcji systemu, która istnieje w ludzkim  umyśle oraz jako percepcji właściwości systemu.}
+\item{Architektura systemu odróżniana jest od jego opisu i nie musi być udokumentowana. Opis architektury stanowi próbę wyrażenia pewnej koncepcji systemu, tak aby móc podzielić się nią z innymi. Architektura jest pewnym abstraktem, natomiast opis jest próbą uchwycenia tego abstraktu.W definicji wprowadzono również dwa rozłączne podejścia do architektury - rozumienie jej jako pewnej koncepcji systemu, która istnieje w ludzkim  umyśle oraz jako percepcji właściwości systemu.}
 \item{Architektura opisywana jest zawsze w pewnym kontekście. Zrozumienie podstawowych właściwości systemu systemu, wiąże się z odniesieniem do jego otoczenia, środowiska i interesariuszy.}
 \end{itemize}
 
 Kolejnym kluczowym terminem jest \quotedblbase korporacja\textquotedblright (ang. \textit{Enterprise}). Pojęcie korporacja rozpatrywane jest najczęściej w kontekście całej jednostki organizacyjnej. Przyjmowane są różne jego różne definicje:
 \begin{itemize}
-\item{Zbiór aktywności w określonej dziedzinie z aktorami, których łączy wspólny cel.}
+\item{Zbiór aktywności z aktorami w określonej dziedzinie, których łączy wspólny cel.}
 \item{Zorganizowany zbiór zasobów, które uczestniczą w wykonywaniu określonych procesów.}
 \item{System istniejący w celu realizacji jednej lub wielu misji w określonym środowisku.}
 \item{Zbiór organizacji posiadających wspólny zbiór celów lub wspólne raportowanie finansowe.}
 \end{itemize}
 
-Wyraz korporacja wywodzi się z łacińskiego słowa \quotedblbase corporation\textquotedblright oznaczającego związek, połączenie części. Nie istnieje obowiązująca definicja dla tego terminu, jako organizacji gospodarczej. 
+Wyraz korporacja wywodzi się z łacińskiego słowa \quotedblbase corporation\textquotedblright oznaczającego związek lub połączenie części. Nie istnieje obowiązująca definicja dla tego terminu jako organizacji gospodarczej. 
 
-Według jednej z definicji jest to duża organizacja, zarządzana przez grupę specjalistów (kadrę zarządzającą), silnie oddziałująca na otoczenie zewnętrzne, posiadająca wyrazistą kulturę organizacyjną. Ma złożoną strukturę wewnętrzną, działającą na podstawie strategii długookresowych.
+Według jednej z definicji jest to duża organizacja zarządzana przez grupę specjalistów (kadrę zarządzającą), silnie oddziałująca na otoczenie zewnętrzne, posiadająca wyrazistą kulturę organizacyjną. Ma złożoną strukturę wewnętrzną, działającą na podstawie strategii długookresowych.
 
-W przypadku organizacji gospodarczych za korporacją może być uznawane przedsiębiorstwo lub jego część (np. zakład). W przypadku jednostek administracji rządowej korporację może stanowić cała administracja rządowa (wszystkie jej jednostki), resort lub jego fragment.
+W przypadku organizacji gospodarczych za korporację może być uznawane przedsiębiorstwo lub jego część (np. zakład). W przypadku jednostek administracji rządowej korporację może stanowić cała administracja rządowa (wszystkie jej jednostki), resort lub jeden z jego fragmentów.
 
 Współcześnie uważa się, że korporacją - w rozumieniu architektury korporacyjnej - może być również tak zwane rozszerzone przedsiębiorstwo (\quotedblbase extended enterprise\textquotedblright). Ta kategoria przedsiębiorstwa definiowana jest jako zbiór jednostek prawnych, które są związane zintegrowanym łańcuchem wartości dodanej, dzięki czemu następuje zwiększenie wartości dostarczonej dla klientów.\cite{SobArchKorpDobrPr} 
 
@@ -112,7 +111,7 @@ The Open Group w swoim opracowaniu dotyczącym TOGAF (\emph{The Open Group Archi
 \end{centering}
 \end{figure}
 
-W ostatnim czasie coraz bardziej popularnym terminem jest \quotedblbase architektura korporacyjna IT\textquotedblright. Wykazuje ona pewne różnice w porównaniu do \quotedblbase zwykłej architektury korporacyjnej\textquotedblright. 
+W ostatnim czasie coraz bardziej popularnym terminem staje się \quotedblbase architektura korporacyjna IT\textquotedblright. Wykazuje ona pewne różnice w porównaniu do \quotedblbase zwykłej architektury korporacyjnej\textquotedblright. 
 
 Jednym z elementów, które różnicują te dwa pojęcia jest cel opracowania architektury. Zwykła architektura korporacyjna nakierowana jest na zwiększenie efektywności działania w kontekście całej organizacji. Architektura korporacyjna IT kładzie zaś nacisk na zwiększenie efektywności działania IT w kontekście biznesowych potrzeb organizacji. 
 
@@ -391,9 +390,64 @@ Stosowanie metodyki SOMA może przynosić szereg korzyści.
 
 Model usług stanowiący końcowy rezultat etapu modelowania pozwala na łatwe i szybkie opracowanie projektu technicznego, implementację nowych usług oraz udostępnienie usług na podstawie już istniejących. 
 
-Ponadto SOMA pozwala zdefiniowanie i zaprojektowanie poszczególnych serwisów technicznych na poziomie biznesowym, tak aby zwiększyć elastyczność organizacji do zmiennych biznesowych oraz zredukować koszty wdrażania nowych usług.
+Ponadto SOMA zakłada wysoki stopień skalowalności systemów tworzonych zgodnie z jej regułami. Zapewnia elastyczność organizacji w związku ze zmianami biznesowymi oraz umożliwia redukcję kosztów wdrażania nowych usług.
 
-//TODO: DODAĆ WADY
+Model usług powstały z zastosowania SOMA jest niezależny od platformy. Można wytwarzać go za pomocą wielu dostępnych na rynku narzędzi: \emph{IBM Rational Software Architect}, \emph{Enterprise Architect}, \emph{ARIS} czy \emph{ModelioSoft}.
+
+Do wad SOMA można zaliczyć fakt, że mimo szczegółowego opisu projektu technicznego usług biznesowych nadal elementy dotyczące ich wdrożenia są przedstawiane tylko szczątkowo.
+
+SOMA doskonale wspiera identyfikację usług zgodnie z zasadą \emph{top-down} w modelach procesów biznesowych i innych artefaktach analizy biznesowej. Specyfikacja usług również jest odpowiednio zdefiniowana. Jednakże definicja przejścia pomiędzy tymi dwiema fazami jest niejednoznaczna i często w projektach powstają z tego z tego powodu różne nieścisłości (jak na przykład duplikaty usług)\cite{MicMetZIMM}. 
+
+
+\section{Metoda Papazoglou}
+\subsection{Service-Oriented Design and Development Methodology by Papazoglou}
+\emph{Service-Oriented Design and Development by Papazoglou} również stanowi metodę projektowania architektury systemów informatycznych zorientowanych na usługi. 
+Metoda opiera się na kilku podstawowych założeniach.
+\begin{itemize}
+\item{Zarządzanie całym cyklem życia usługi włączając: identyfikację, projektowanie, wdrożenie, wykrycie, stosowanie oraz utrzymywanie.}
+\item{Na etapie projektowania ustanowienie platformy i modelu programowania uwzględniającego połączenia, wdrażanie i zarządzanie usługami w obrębie określonego środowiska wykonawczego.}
+\item{Stosowanie najlepszych praktyk i narzędzie dla rozwiązań architektury, które są powtarzalne, przewidywalne oraz uwzględniają częste zmiany biznesowe.}
+\item{Dostarczanie wysokiej jakości wykonywalnych rozwiązań zorientowanych na uslugi, które przestrzegają wymagań \emph{Qos} (\emph{Quality of Service})}.
+\end{itemize}
+
+Fundamentem dla powyższych założeń jest to, że cele biznesowe i wymagania zawsze powinny prowadzić do niższego poziomu abstrakcji - kolejno: projektowania, implementacji, testowania oraz transformacji procesów biznesowych w kompozytowe aplikacje. W ten sposób wymagania biznesowe mogą 
+być śledzone przez cały cykl życia - od celów biznesowych przez projektowanie oprogramowania oraz zasobów kodu, aż do kompozytowych aplikacji.
+
+\subsection{Fazy metodyki}
+Metodyka utworzona przez Papazoglou składa się z elementów (rys. ) bazujących na innych metodykach takich jak: \emph{Rational Unified Process}, \emph{Component-based development} oraz modelowania procesów biznesowych zaproponowanego przez Paula Harmona w 2003 roku\cite{PapaZog}. 
+
+\begin{figure}[h!tbp]
+\begin{centering}
+\includegraphics[width=8cm]{img/papazoglou_metoda_fazy.png}
+\caption[Fazy metodyki zaproponowej przez Papazoglou.]{Fazy metodyki zaproponowej przez Papazoglou.\cite{PapaZog}}\label{papazoglou_method_phases}
+\end{centering}
+\end{figure} 
+
+Podstawowym celem metodyki jest jak najlepsza integracja usług oraz osiągnięcie jak najwyższego poziomu ich interoperacyjności. Poszczególne fazy, które wchodzą w składy metodyki są wymienione poniżej.
+\begin{itemize}
+\item{Faza planowania (ang. \emph{Planning phase}) - określa prawdopodobieństwo wykonalności, naturę i zakres rozwiązań usługowych w kontekście danej organizacji.  Istotne jest, żeby technologia usługowa pasowała jak najlepiej do obecnego charakteru organizacji. Kluczowe w tej fazie jest dlatego bardzo dobre poznanie obecnego środowiska biznesowego. Czynności związane z fazą planowania obejmują analizę potrzeb biznesowych jako mierzalne cele,  przegląd obecnie wykorzystywanych technologii, ustalenie koncepcji wymagań dotyczących nowego środowiska i mapowanie tych wymagań na nowe lub dostępne implementacje.}
+
+\item{Faza analizy (ang. \emph{Analysis phase}) - w trakcie tej fazy wcześniej zebrane wymagania poddawane są analizie. Postawione uprzednio cele biznesowe podlegają przeglądowi. Analitycy biznesowi tworzą kompletny model procesów typu \emph{as-is} umożliwiając tym samym zapoznanie się z obecnie dostępnymi usługami i procesami biznesowymi. Po udostępnieniu tego modelu organizacja projektuje, symuluje i analizuje potencjalne zmiany do obecnego stanu systemu. Określa również wskaźnik rentowności \emph{ROI} (\emph{Return On Investment}) wynikający ze zmian w panujących procesach biznesowych. Produktem tej fazy jest model procesów biznesowych typu \emph{to-be}, które będą realizowane przez rozwiązania SOA. Przyjmuje się, że w skład fazy wchodzą następujące czynności: identyfikacja procesów (ang. \emph{Process identification}, określanie zakresu procesów (ang. \emph{Process scoping}), analiza luk biznesowych (ang. \emph{Business gap analysis}), analiza realizacji procesów (ang. \emph{Process realization analysis}).}
+
+\item{Faza projektowania (ang. \emph{Design phase}).}
+Projektowanie systemu zorientowanego usługowo wymaga od projektantów dostarczenia modeli i dobrze zdefiniowanych interfejsów dla wszystkich ważnych komponentów usług. Projektowanie usług bazuje na podejściu wykonywania równolegle dwóch ścieżek: jedna do produkcji usług (ewentualnie z wcześniej utworzonych elementów), natomiast druga związana jest z asemblacją usług reużywalnych (wielokrotnego użytku). Projektowanie usług, podobnie jak analiza usług posiada swoje własne specjalne charakterystki i techniki.
+
+Service analysis is logically succeeded by service design, during which conceptual processes and services are transformed into a set of related, platform-agnostic interfaces. Designing a service-oriented application requires developers to model and define well-documented interfaces for all major service components prior to constructing the services themselves. Service design is based on a twin- track development approach that provides two production lines: one to produce services (possibly out of pre-existing components), and another to assemble (compose) services out of reusable service constellations. This calls for a business process model that forces developers to determine how services combine and interact jointly to produce higher level services. Service design, just like service analysis, has its own 
+special characteristics and  techniques, which we shall describe in this section. We shall first start by describing a broad set of service design concerns. 
+
+Analiza usługa jest logicznie zastąpił podczas projektowania usług, procesów i usług, które są przekształcane w koncepcyjne zestaw powiązanych interfejsów platformy-agnostykiem. Projektowanie aplikacji zorientowanej na usługi wymaga deweloperów do modelowania i definiowania dobrze udokumentowanych interfejsów dla wszystkich głównych komponentów usług poprzedzających budowę samych usług. Projektowanie usługa opiera się na koncepcji rozwoju twin- toru, która zapewnia dwie linie produkcyjne: jedna do produkcji usług (ewentualnie z wcześniej istniejących elementów), a drugi do montażu (komponować) usługi z konstelacji usług wielokrotnego użytku. Wymaga modelu procesów biznesowych, który zmusza deweloperów do określenia, jak i interakcji usług łączą wspólnie produkować usługi wyższego poziomu. Projektowanie serwis, podobnie jak analizy usług, ma swój własny
+szczególne cechy i techniki, które opiszemy w tym rozdziale. Powinien najpierw zacząć od opisania szerokiego zestawu kwestii projektowania usług.
+
+
+\item{Faza specyfikacji usług (ang. \emph{Service specyfing phase})).}
+\item{Faza konstrukcji usług (ang. \emph{Service construction phase}).}
+\item{Faza testowania usług (ang. \emph{Testing phase}).} 
+\item{Faza dostarczania usług (ang. \emph{Provisioning phase}).}
+\item{Faza wdrażania usług (ang. \emph{Deployment phase}).}
+\item{Faza wykonania. (ang. \emph{Execution phase})}
+\item{Faza monitorowania usług (ang. \emph{Monitoring phase}).}
+\end{itemize}
+
 
 \chapter{Przegląd języków do projektowania systemów informatycznych o architekturze SOA}
 
@@ -415,7 +469,7 @@ SoaML (\emph{The Service oriented architecture Modeling Language}) stanowi języ
 
 SoaML definiuje trzy różne podejścia dla specyfikowania usług: 
 \begin{itemize}
-\item{Proste interfejsy (ang. \emph{Simple interfaces}) - prosty interfejs, który opiera się na jednokierunkowej interakcji dostarczanej przez uczestnika interakcji jako interfejs UML. Uczestnik otrzymuje operacje na swój port i może dostarczyć rezultaty dla wywołującego zapytanie. Ten rodzaj jednokierunkowej interakcji może być stosowany dla anonimowych inicjatorów interakcji. Uczestnik interakcji nie ma informacji o inicjatorze anio  porządku usług. Jednokierunkowe usługi są najczęściej określane jako \quotedblbase RPC style Web Services\textquotedblright. Prosty interfejs wykorzystywany jako port usługi może opcjonalnie stanowić element \emph{ServiceInterface}.} \cite{SOAMLOMG}
+\item{Proste interfejsy (ang. \emph{Simple interfaces}) - prosty interfejs, który opiera się na jednokierunkowej interakcji dostarczanej przez uczestnika interakcji jako interfejs UML. Uczestnik otrzymuje operacje na swój port i może dostarczyć rezultaty dla wywołującego zapytanie. Ten rodzaj jednokierunkowej interakcji może być stosowany dla anonimowych inicjatorów interakcji. Uczestnik interakcji nie ma informacji o inicjatorze ani o  porządku usług. Jednokierunkowe usługi są najczęściej określane jako \quotedblbase RPC style Web Services\textquotedblright. Prosty interfejs wykorzystywany jako port usługi może opcjonalnie stanowić element \emph{ServiceInterface}.} \cite{SOAMLOMG}
 
 \begin{figure}[h!tbp]
 \begin{centering}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.7.7)  16 AUG 2014 14:22
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.7.7)  17 AUG 2014 13:19
 entering extended mode
 **praca_dyplomowa.tex
 (C:\Users\IBM_ADMIN\Documents\Studia\Mgr\trunk\latex\praca_dyplomowa.tex
@@ -660,7 +660,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 51.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<./img/zdjecie_legitymacja.jpg, id=215, 99.4917pt x 125.7498pt>
+<./img/zdjecie_legitymacja.jpg, id=227, 99.4917pt x 125.7498pt>
 File: ./img/zdjecie_legitymacja.jpg Graphic file (type jpg)
 
 <use ./img/zdjecie_legitymacja.jpg>
@@ -689,7 +689,7 @@ l.30 ...}Zalety i wady SOMA}{28}{subsection.3.3.4}
                                                    [1
 
 ]
-Overfull \hbox (0.19185pt too wide) in paragraph at lines 46--46
+Overfull \hbox (0.19185pt too wide) in paragraph at lines 49--49
  [][] [][]\OT4/cmr/m/n/12 Projektowanie sys-temu ban-ko-wego w opar-ciu o utwo-
 rzon¡ kon- 
  []
@@ -743,122 +743,122 @@ Overfull \hbox (6.16255pt too wide) in paragraph at lines 40--41
  []
 
 
-Overfull \hbox (23.46098pt too wide) in paragraph at lines 54--55
+Overfull \hbox (23.46098pt too wide) in paragraph at lines 53--54
 []\OT4/cmr/m/n/12 Wyraz kor-po-ra-cja wy-wo-dzi si¦ z ªa-ci«-skiego sªowa ÿcor-
 po-ra-tion"oznaczaj¡cego
  []
 
 [6]
-Overfull \hbox (5.8077pt too wide) in paragraph at lines 56--57
+Overfull \hbox (5.8077pt too wide) in paragraph at lines 55--56
 \OT4/cmr/m/n/12 spe-cja-li-stów (ka-dr¦ za-rz¡-dza-j¡c¡), sil-nie od-dzia-ªu-j¡
 ca na oto-cze-nie ze-wn¦trzne,
  []
 
 
-Overfull \hbox (13.96317pt too wide) in paragraph at lines 56--57
+Overfull \hbox (13.96317pt too wide) in paragraph at lines 55--56
 \OT4/cmr/m/n/12 po-sia-da-j¡ca wy-ra-zi-st¡ kul-tur¦ or-ga-ni-za-cyjn¡. Ma zªo-
 »on¡ struk-tur¦ we-wn¦trzn¡,
  []
 
 [7]
-Overfull \hbox (0.12859pt too wide) in paragraph at lines 73--74
+Overfull \hbox (0.12859pt too wide) in paragraph at lines 72--73
 []\OT4/cmr/m/n/12 Spojrzenie czyn-no-±ciowe za-kªada de-fi-ni-cj¦ ar-chi-tek-tu
 ry kor-po-ra-cyj-nej jako
  []
 
 
-Overfull \hbox (15.24023pt too wide) in paragraph at lines 73--74
+Overfull \hbox (15.24023pt too wide) in paragraph at lines 72--73
 \OT4/cmr/m/n/12 za-da« i umie-j¦t-no-±ci za-rz¡-dza-nia tym, co jest opi-sane w
  de-fi-ni-cji atrybutowej.[[]] 
  []
 
 [8]
-Overfull \hbox (6.18442pt too wide) in paragraph at lines 95--97
+Overfull \hbox (6.18442pt too wide) in paragraph at lines 94--96
 \OT4/cmr/m/it/12 Group Ar-chi-tec-ture Fra-me-work\OT4/cmr/m/n/12 ) wska-zuje, 
 »e ar-chi-tek-tura kor-po-ra-cyjna skªada
  []
 
-<img/ea.png, id=351, 456.95718pt x 533.74406pt>
+<img/ea.png, id=367, 456.95718pt x 533.74406pt>
 File: img/ea.png Graphic file (type png)
  <use img/ea.png>
-Package pdftex.def Info: img/ea.png used on input line 110.
+Package pdftex.def Info: img/ea.png used on input line 109.
 (pdftex.def)             Requested size: 227.62204pt x 265.86963pt.
  [9] [10 <C:/Users/IBM_ADMIN/Documents/Studia/Mgr/trunk/latex/img/ea.png (PNG c
 opy)>]
-Overfull \hbox (0.55289pt too wide) in paragraph at lines 132--133
+Overfull \hbox (0.55289pt too wide) in paragraph at lines 131--132
 []\OT4/cmr/m/n/12 wykorzystywanie tych sa-mych kom-po-nen-tów mo»e spo-wo-do-wa
 ¢ znaczne
  []
 
 
-Overfull \hbox (0.16122pt too wide) in paragraph at lines 137--138
+Overfull \hbox (0.16122pt too wide) in paragraph at lines 136--137
 \OT4/cmr/m/n/12 zde-fi-nio-wana ar-chi-tek-tura kor-po-ra-cyjna po-zwala zi-den
 -ty-fi-ko-wa¢ wszyst-
  []
 
 
-Overfull \hbox (4.86118pt too wide) in paragraph at lines 140--141
+Overfull \hbox (4.86118pt too wide) in paragraph at lines 139--140
 \OT4/cmr/m/n/12 tym sto-so-wa-nie ar-chi-tek-tury kor-po-ra-cyj-nej jest bar-dz
 iej uzasadnione.[[]] 
  []
 
-[11] [12] [13] <img/soa_arch.png, id=390, 715.92468pt x 535.2497pt>
+[11] [12] [13] <img/soa_arch.png, id=406, 715.92468pt x 535.2497pt>
 File: img/soa_arch.png Graphic file (type png)
 
 <use img/soa_arch.png>
-Package pdftex.def Info: img/soa_arch.png used on input line 178.
+Package pdftex.def Info: img/soa_arch.png used on input line 177.
 (pdftex.def)             Requested size: 426.79134pt x 319.08598pt.
 
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 178--179
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 177--178
  [][] 
  []
 
 
-LaTeX Warning: Citation `AnRTeqq' on page 14 undefined on input line 179.
+LaTeX Warning: Citation `AnRTeqq' on page 14 undefined on input line 178.
 
 [14] [15 <C:/Users/IBM_ADMIN/Documents/Studia/Mgr/trunk/latex/img/soa_arch.png>
-] <img/web_service.png, id=401, 539.76656pt x 219.82124pt>
+] <img/web_service.png, id=417, 539.76656pt x 219.82124pt>
 File: img/web_service.png Graphic file (type png)
 
 <use img/web_service.png>
-Package pdftex.def Info: img/web_service.png used on input line 204.
+Package pdftex.def Info: img/web_service.png used on input line 203.
 (pdftex.def)             Requested size: 312.9803pt x 127.46286pt.
 
 
-LaTeX Warning: Citation `AnRTeqq' on page 16 undefined on input line 205.
+LaTeX Warning: Citation `AnRTeqq' on page 16 undefined on input line 204.
 
 [16]
-Overfull \hbox (1.82162pt too wide) in paragraph at lines 218--219
+Overfull \hbox (1.82162pt too wide) in paragraph at lines 217--218
 []\OT4/cmr/m/n/12 Warstwa pre-zen-ta-cji - sta-nowi cz¦-sto wspólny in-ter-fejs
  do-st¦pu do usªug.
  []
 
 [17 <C:/Users/IBM_ADMIN/Documents/Studia/Mgr/trunk/latex/img/web_service.png>]
-Overfull \hbox (0.70984pt too wide) in paragraph at lines 221--222
+Overfull \hbox (0.70984pt too wide) in paragraph at lines 220--221
 \OT4/cmr/m/n/12 wi¡-za« Bu-si-ness In-tel-li-gence umo»-li-wia-j¡-cych mo-de-lo
 -wa-nie da-nych ana-
  []
 
 [18] [19]
-Overfull \hbox (8.38614pt too wide) in paragraph at lines 239--240
+Overfull \hbox (8.38614pt too wide) in paragraph at lines 238--239
 \OT4/cmr/m/n/12 wa-nia szcze-gó-ªów kon-fi-gu-ra-cyj-nych oraz im-ple-men-ta-cy
 j-nych da-nej usªugi. 
  []
 
 
-Overfull \hbox (12.72707pt too wide) in paragraph at lines 243--244
+Overfull \hbox (12.72707pt too wide) in paragraph at lines 242--243
 \OT4/cmr/m/n/12 stycz-no±¢, po-nie-wa» po-zwala na dy-na-miczne przy-ª¡-cza-nie
  i odª¡-cza-nie usªug.[[]] 
  []
 
 
-Overfull \hbox (13.57567pt too wide) in paragraph at lines 247--249
+Overfull \hbox (13.57567pt too wide) in paragraph at lines 246--248
 \OT4/cmr/m/n/12 kie po-ª¡-cze-nia mi¦-dzy apli-ka-cjami b¦d¡ re-ali-zo-wane z w
 y-ko-rzy-sta-niem szyny.[[]]
  []
 
 [20]
-Overfull \hbox (8.67781pt too wide) in paragraph at lines 254--255
+Overfull \hbox (8.67781pt too wide) in paragraph at lines 253--254
 []\OT4/cmr/m/n/12 Stosowanie szyny in-te-gra-cyj-nej wi¡»e si¦ z wie-loma za-le
 -tami. Przede wszyst-
  []
@@ -871,101 +871,115 @@ Rozdzia\l  3.
 Underfull \vbox (badness 4229) has occurred while \output is active []
 
  [24]
-<img/soma_fractal_lifecycle.png, id=463, 704.6325pt x 551.81157pt>
+<img/soma_fractal_lifecycle.png, id=479, 704.6325pt x 551.81157pt>
 File: img/soma_fractal_lifecycle.png Graphic file (type png)
 
 <use img/soma_fractal_lifecycle.png>
-Package pdftex.def Info: img/soma_fractal_lifecycle.png used on input line 344.
+Package pdftex.def Info: img/soma_fractal_lifecycle.png used on input line 343.
 
 (pdftex.def)             Requested size: 398.33858pt x 311.94252pt.
 
-Overfull \hbox (8.33858pt too wide) in paragraph at lines 344--345
+Overfull \hbox (8.33858pt too wide) in paragraph at lines 343--344
  [][] 
  []
 
 [25] [26 <C:/Users/IBM_ADMIN/Documents/Studia/Mgr/trunk/latex/img/soma_fractal_
 lifecycle.png>]
-Overfull \hbox (2.96397pt too wide) in paragraph at lines 364--365
+Overfull \hbox (2.96397pt too wide) in paragraph at lines 363--364
 []\OT4/cmr/m/n/12 Identyfikacja wy-ma-ga« nie-fukn-cjo-nal-nych - wy-ma-ga-nia 
 de-fi-niu-j¡ce ocze-
  []
 
 [27] [28] [29]
+Overfull \hbox (18.24388pt too wide) in paragraph at lines 417--418
+\OT4/cmr/m/n/12 zu-j¡-cych na in-nych me-to-dy-kach ta-kich jak: \OT4/cmr/m/it/
+12 Ra-tio-nal Uni-fied Pro-cess\OT4/cmr/m/n/12 , \OT4/cmr/m/it/12 Component-
+ []
+
+<img/papazoglou_metoda_fazy.png, id=517, 462.97969pt x 459.21562pt>
+File: img/papazoglou_metoda_fazy.png Graphic file (type png)
+
+<use img/papazoglou_metoda_fazy.png>
+Package pdftex.def Info: img/papazoglou_metoda_fazy.png used on input line 421.
+
+(pdftex.def)             Requested size: 227.62204pt x 225.77438pt.
+ [30 <C:/Users/IBM_ADMIN/Documents/Studia/Mgr/trunk/latex/img/papazoglou_metoda
+_fazy.png>] [31] [32]
 Rozdzia\l  4.
-[30
+[33
 
 ]
-<img/simple_interface_based_approach.png, id=504, 447.92343pt x 198.7425pt>
+<img/simple_interface_based_approach.png, id=540, 447.92343pt x 198.7425pt>
 File: img/simple_interface_based_approach.png Graphic file (type png)
 
 <use img/simple_interface_based_approach.png>
 Package pdftex.def Info: img/simple_interface_based_approach.png used on input 
-line 422.
+line 476.
 (pdftex.def)             Requested size: 312.9803pt x 138.87315pt.
 
-<img/service_interface_based_approach.png, id=507, 638.385pt x 446.41782pt>
+<img/service_interface_based_approach.png, id=543, 638.385pt x 446.41782pt>
 File: img/service_interface_based_approach.png Graphic file (type png)
 
 <use img/service_interface_based_approach.png>
 Package pdftex.def Info: img/service_interface_based_approach.png used on input
- line 430.
+ line 484.
 (pdftex.def)             Requested size: 312.9803pt x 218.86244pt.
 
-<img/service_contract_based_approach.png, id=510, 642.14906pt x 438.8897pt>
+<img/service_contract_based_approach.png, id=546, 642.14906pt x 438.8897pt>
 File: img/service_contract_based_approach.png Graphic file (type png)
 
 <use img/service_contract_based_approach.png>
 Package pdftex.def Info: img/service_contract_based_approach.png used on input 
-line 438.
+line 492.
 (pdftex.def)             Requested size: 312.9803pt x 213.91936pt.
- [31] [32 <C:/Users/IBM_ADMIN/Documents/Studia/Mgr/trunk/latex/img/simple_inter
+ [34] [35 <C:/Users/IBM_ADMIN/Documents/Studia/Mgr/trunk/latex/img/simple_inter
 face_based_approach.png> <C:/Users/IBM_ADMIN/Documents/Studia/Mgr/trunk/latex/i
 mg/service_interface_based_approach.png>]
-Overfull \hbox (4.06537pt too wide) in paragraph at lines 445--446
+Overfull \hbox (4.06537pt too wide) in paragraph at lines 499--500
 \OT4/cmr/m/n/12 men-tów UML. Pod-sta-wowa ró»-nica po-mi¦-dzy po-dej-±ciem ba-z
 u-j¡-cym na kontr-
  []
 
 
-LaTeX Warning: Citation `soaml_metamodel' on page 33 undefined on input line 44
-8.
+LaTeX Warning: Citation `soaml_metamodel' on page 36 undefined on input line 50
+2.
 
-<img/soaml_metamodel.png, id=527, 386.19281pt x 524.71031pt>
+<img/soaml_metamodel.png, id=562, 386.19281pt x 524.71031pt>
 File: img/soaml_metamodel.png Graphic file (type png)
 
 <use img/soaml_metamodel.png>
-Package pdftex.def Info: img/soaml_metamodel.png used on input line 452.
+Package pdftex.def Info: img/soaml_metamodel.png used on input line 506.
 (pdftex.def)             Requested size: 312.9803pt x 425.2372pt.
- [33 <C:/Users/IBM_ADMIN/Documents/Studia/Mgr/trunk/latex/img/service_contract_
-based_approach.png>] [34 <C:/Users/IBM_ADMIN/Documents/Studia/Mgr/trunk/latex/i
-mg/soaml_metamodel.png>] [35] [36]
-Overfull \hbox (8.41254pt too wide) in paragraph at lines 504--505
+ [36 <C:/Users/IBM_ADMIN/Documents/Studia/Mgr/trunk/latex/img/service_contract_
+based_approach.png>] [37 <C:/Users/IBM_ADMIN/Documents/Studia/Mgr/trunk/latex/i
+mg/soaml_metamodel.png>] [38] [39]
+Overfull \hbox (8.41254pt too wide) in paragraph at lines 558--559
 []\OT4/cmr/m/n/12 All of the En-ter-prise Ca-nvas in-ter-face cells (customer-r
 elations, customer-
  []
 
 
-Overfull \hbox (11.78055pt too wide) in paragraph at lines 504--505
+Overfull \hbox (11.78055pt too wide) in paragraph at lines 558--559
 \OT4/cmr/m/n/12 channels, value-return; supplier-relations, supplier-channels, 
 value-outlay)
  []
 
-[37] [38] [39] [40]
+[40] [41] [42] [43]
 Rozdzia\l  5.
-[41
+[44
 
 ]
 Rozdzia\l  6.
 
-Overfull \hbox (12.08572pt too wide) in paragraph at lines 570--570
+Overfull \hbox (12.08572pt too wide) in paragraph at lines 624--624
 []\OT4/cmr/bx/n/17.28 Projektowanie sys-temu ban-ko-wego w opar-
  []
 
-[42
+[45
 
 ]
 Rozdzia\l  7.
-) [43
+) [46
 
 ]
 LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 59.
@@ -990,7 +1004,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--70
  . com / 2011 / 07 / 26 /$
  []
 
-[44
+[47
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 70--71
@@ -1005,31 +1019,31 @@ blogs /$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 []\OT4/cmr/m/n/12 Sobczak An-drzej, \OT4/cmr/m/it/12 Ko-deks do-brych prak-tyk 
 ar-chi-tek-tów
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 \OT4/cmr/m/it/12 kor-po-ra-cyj-nych\OT4/cmr/m/n/12 , []$\OT4/cmtt/m/n/12 http :
  / / architekturakorporacyjna . pl /$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 []\OT4/cmr/m/n/12 The Open Group, []$\OT4/cmtt/m/n/12 http : / / www . opengrou
 p . org / subjectareas /$
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 83.
-[45]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 83.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
+[48]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
  (C:\Users\IBM_ADMIN\Documents\Studia\Mgr\trunk\latex\praca_dyplomowa.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 83.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 83.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
 Package rerunfilecheck Info: File `praca_dyplomowa.out' has not changed.
-(rerunfilecheck)             Checksum: CEC4680276CBD93986AA7D42E26868F3;3922.
+(rerunfilecheck)             Checksum: FAAEA4ECF7B520E7C7363F3D28507F0A;4175.
 
 
 LaTeX Warning: There were undefined references.
@@ -1037,16 +1051,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 83.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
  ) 
 Here is how much of TeX's memory you used:
- 6934 strings out of 493921
- 101642 string characters out of 3144865
- 188848 words of memory out of 3000000
- 9966 multiletter control sequences out of 15000+200000
+ 6954 strings out of 493921
+ 102004 string characters out of 3144865
+ 188981 words of memory out of 3000000
+ 9976 multiletter control sequences out of 15000+200000
  15036 words of font info for 44 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,12n,28p,1026b,446s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,12n,28p,1118b,446s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/pl/pltt.enc}{C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/enc/dvips/pl/plmi.enc}{C:/Program Files (x86)/MiKTeX
  2.9/fonts/enc/dvips/pl/plrm.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/d
@@ -1061,9 +1075,9 @@ e1/public/pl/plr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/pl
 C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/pl/plti10.pfb><C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/public/pl/plti12.pfb><C:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/public/pl/pltt12.pfb>
-Output written on praca_dyplomowa.pdf (50 pages, 1126248 bytes).
+Output written on praca_dyplomowa.pdf (53 pages, 1171222 bytes).
 PDF statistics:
- 682 PDF objects out of 1000 (max. 8388607)
- 132 named destinations out of 1000 (max. 500000)
- 470 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 719 PDF objects out of 1000 (max. 8388607)
+ 141 named destinations out of 1000 (max. 500000)
+ 499 words of extra memory for PDF output out of 10000 (max. 10000000)
 
