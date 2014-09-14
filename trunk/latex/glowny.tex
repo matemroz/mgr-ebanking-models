@@ -8,7 +8,7 @@ Utworzenie systemu informatycznego dla dużych firm i instytucji nie stanowi try
 \section{Cel pracy}
 Podstawowym celem pracy jest utworzenie metodyki projektowania architektury korporacyjnej opierającej się na wykorzystaniu języka SoaML. Dotychczas utworzono już podobne metodyki, jednakże żadna nie była w stanie w pełni sprostać wszystkim wymaganiom stawianym przez problematykę architektury korporacyjnej.
 
-Projekt metodyki powstanie w oparciu o wybranie najmocniejszych stron oraz pominięciu wad istniejących metodyk. Podjęta zostanie również próba wdrożenia innowacyjnych elementów, które będą miały na celu usprawnienie procesu projektowania architektury korporacyjnej.
+Projekt metodyki powstanie w oparciu o wybranie najmocniejszych stron oraz pominięcie wad istniejących metodyk. Podjęta zostanie również próba wdrożenia innowacyjnych elementów, które będą miały na celu usprawnienie procesu projektowania architektury korporacyjnej.
 
 Zaprojektowana metodyka zostanie również poddana weryfikacji i testom przy tworzeniu niewielkiego systemu bankowego.
 
@@ -31,7 +31,7 @@ Do innych problemów zalicza się również niejednorodność procesów biznesow
 W rozdziale zostanie zdefiniowany termin \quotedblbase architektura korporacyjna\textquotedblright oraz wyjaśnione najważniejsze elementy z nim związane. Podjęta będzie również tematyka \quotedblbase architektury zorientowanej na usługi\textquotedblright oraz to jak ją zaadaptować do architektury korporacyjnej. 
 
 \section{Definicje głównych pojęć związanych z architekturą korporacyjną}
-Projektując architekturę korporacyjną (ang. \textit{Enterprise Architecture} niezbędna jest doskonała znajomość terminów z nią powiązanych. W sekcji tej zostanie dokonany przegląd głównych pojęć odnoszących się do architektury korporacyjnej oraz podjęta próba ich zdefiniowania.
+Projektując architekturę korporacyjną (ang. \textit{Enterprise Architecture}) niezbędna jest doskonała znajomość terminów z nią powiązanych. W sekcji tej zostanie dokonany przegląd głównych pojęć odnoszących się do architektury korporacyjnej oraz podjęta próba ich zdefiniowania.
 
 Słowo \quotedblbase architektura\textquotedblright w ujęciu do oprogramowania stanowi zbiór podstawowych decyzji związanych z oprogramowaniem lub rozwiązaniem programistycznym - zaprojektowanym z reguły tak, aby sprostać wszelkim atrybutom jakościowym (wymaganiom architektonicznym) danego projektu. Architektura tego typu zawiera z reguły główne komponenty, atrybuty oraz zdefiniowane współdziałania (zachowania i interakcje) umożliwiające spełnianie atrybutów jakościowych. Architektura może być wyrażona na więcej niż jednym poziomie abstrakcji, gdzie liczba poziomów zależy od rozmiaru i złożoności projektu. Termin ten posiada również powszechnie akceptowany opis w standardzie IEEE, który określa ją jako \quotedblbase zbiór podstawowych koncepcji lub właściwości systemu w danym środowisku zawarte w jego elementach, relacjach oraz zasadach projektowania i rozwoju\textquotedblright (IEEE 42010). \cite{SOAWzorceArch}
 
@@ -154,7 +154,7 @@ Opracowując architekturę korporacyjną można skorzystać z jednej dwóch ści
 \subsection{Czym jest SOA?}
 Trudno o jednoznaczną definicję SOA (ang. Service Oriented Architecture – architektura zorientowana na usługi). Definicja SOA jest subiektywna, zależna od punktu widzenia. Z perspektywy biznesowej (odbiorcy usług) rozumieć ją można jako zestaw usług wspierających realizację procesów biznesowych. Odnosząc się do SOA z perspektywy IT widzimy ją jako infrastrukturę potrzebną do dostarczenia tych usług.
 	
-Organizacja W3C (World Wide Web Consortium) podjęła próbę zdefiniowania SOA. Według niej SOA to zbiór komponentów, które mogą być wywoływane, i których interfejsy mogą być publikowane i wykrywane (ang. A set of components which can be invoked, and whose interface descriptions can be published and discovered).
+Organizacja W3C (World Wide Web Consortium) podjęła próbę zdefiniowania SOA. Według niej SOA to zbiór komponentów, które mogą być wywoływane, i których interfejsy mogą być publikowane i wykrywane (ang. \emph{A set of components which can be invoked, and whose interface descriptions can be published and discovered}).
 
 Z kolei firma IBM definiuje SOA jako podejście do budowania systemów rozproszonych dostarczających funkcjonalność aplikacji w postaci usług, które mogą być udostępniane aplikacjom zewnętrznym lub innym usługom. \cite{PlatIntGor}
 
@@ -162,29 +162,35 @@ Istnieje również manifest SOA, który głosi, że orientacja na usługi kszta�
 
 SOA sama w sobie nie jest jednakże żadną konkretną architekturą. Nie można jej traktować jako produkt lub tylko zbiór określonych rozwiązań technologicznych. SOA to przede wszystkim sposób myślenia – strategia, której naturalna realizacja jest reprezentowana przez usługi. \cite{SOAsdj102009,SOAwJBBC} SOA stanowi pewnego rodzaju paradygmat, który prowadzi do określonej architektury. \cite{SOAsdj102009} SOA reprezentuje przesunięcie w inżynierii oprogramowania i podnosi poziom abstrakcji, grupując wspólne działanie procesów biznesowych i wystawiając to jako usługę. \cite{CompSOAMet}
 	
-Mianem usługi w SOA określa się zbiór funkcjonalności pewnej aplikacji, który jest udostępniany jako interfejs. \cite{SOAawidptas} Organizacja OASIS definiuje usługę w SOA jako mechanizm udostępniający jedną lub więcej funkcji, do których dostęp jest zapewniany przez zalecany interfejs i wykonywany zgodnie z ograniczeniami i politykami określanymi przez opis usługi (ang. A mechanism to enable access to one or more capabilities, where the access is provided using a prescribed interface and is exercised consistent with constraints and policies as specified by the service description). Operacje, zdefiniowane w interfejsie dostarczają funkcji biznesowych operując na obiektach biznesowych. Ponadto owe usługi są dostępne poprzez sieć.[JSOAcookkb] 
+Mianem usługi w SOA określa się zbiór funkcjonalności pewnej aplikacji, który jest udostępniany jako interfejs. \cite{SOAawidptas} Organizacja OASIS definiuje usługę w SOA jako mechanizm udostępniający jedną lub więcej funkcji, do których dostęp jest zapewniany przez zalecany interfejs i wykonywany zgodnie z ograniczeniami i politykami określanymi przez opis usługi (ang. \emph{A mechanism to enable access to one or more capabilities, where the access is provided using a prescribed interface and is exercised consistent with constraints and policies as specified by the service description}). Operacje, zdefiniowane w interfejsie dostarczają funkcji biznesowych operując na obiektach biznesowych. Ponadto owe usługi są dostępne poprzez sieć.
 
 \subsection{Historia SOA}
-Określenia „SOA” lub „Architektura zorientowana na usługi” zostały po raz pierwszy wykorzystane w pracy naukowej analityka z firmy Garnter Yefim V. Natis w dniu 12 kwietnia 1996 roku. 
+Przez ostatnie dekady tworzenie oprogramowania opierało się na kilku różnorodnych metodach. Jednym z ich podstawowych celów było radzenie sobie z coraz bardziej złożonym procesem wytwarzania oprogramowania. W ramach walki ze złożonością opracowano gruboziarniste konstrukcje takie jak funkcje, klasy i komponenty. Można myśleć o tych nich jak o \quotedblbase czarnych skrzynkach\textquotedblright (ang. \emph{Black boxes}). 
+
+Te \quotedblbase czarne skrzynki\textquotedblright ukrywają swoje implementacje poprzez dostarczanie kontrolowanego dostępu do ich funkcjonalności poprzez interfejs. W pewnym momencie dostrzeżono, że ilość czarnych skrzynek jest zbyt duża. Problem ten rozwiązano grupując poszczególne \quotedblbase czarne skrzynki\textquotedblright w komponeenty.\cite{SteveMichSOA} 
+
+Określenia \quotedblbase SOA\textquotedblright lub \quotedblbase Architektura zorientowana na usługi\textquotedblright zostały po raz pierwszy wykorzystane w pracy naukowej analityka z firmy Garnter Yefim V. Natis w dniu 12 kwietnia 1996 roku. Wcześniej w 1994 roku Alexander Pasik stworzył istotne podstawy do zdefiniowania SOA. 
+
+Przełomowym momentem w historii powstawania SOA było utworzenie usług typu \emph{Web Service} przez firmę Microsoft w 2000 roku.\cite{JosSOAHist}
 
 \subsection{Budowa SOA}
-SOA wprowadza nowe podejście do budowy i zarządzania infrastrukturą informatyczną. Adaptacja SOA wiąże się z reguły ze zmianami w wielu obszarach funkcjonowania firmy. Ściśle wiąże się z panującymi w niej procesami biznesowymi i wymaga odpowiedniego dostosowania.[SOAPAIesdasb] 
+SOA wprowadza nowe podejście do budowy i zarządzania infrastrukturą informatyczną. Adaptacja SOA wiąże się z reguły ze zmianami w wielu obszarach funkcjonowania firmy. Ściśle wiąże się z panującymi w niej procesami biznesowymi i wymaga odpowiedniego dostosowania.\cite{SOAPAIesdasb}
 
-Systemy opierające się na SOA składają się z zestawu aplikacji biznesowych pogrupowanych w niezależne komponenty, które komunikują się ze sobą wymieniając usługi. [SOAwJBBC, SOAidntech]. 
+Systemy opierające się na SOA składają się z zestawu aplikacji biznesowych (rys. \ref{PRZArchSOA}) pogrupowanych w niezależne komponenty, które komunikują się ze sobą wymieniając usługi. \cite{SOAwJBBC, SOAidntech}. 
 
 \begin{figure}[h!tbp]
 \begin{centering}
 \includegraphics[width=15cm]{img/soa_arch.png}
-\caption[Przykładowa architektura SOA.]{Przykładowa architektura SOA. \cite{AnRTeqq}}\label{soa_arch}
+\caption[Przykładowa architektura SOA.]{Przykładowa architektura SOA.}\label{PRZArchSOA}
 \end{centering}
 \end{figure}
-Rys. [PRZArchSOA] Przykładowa budowa systemu SOA.
+
 Komponenty te można traktować jako tzw. „czarne skrzynki”. Klient korzystający z usługi otrzymuje jedynie interfejs. Implementacja udostępnionych metod nie jest dla niego istotna.
-Rozwiązania stosowane w SOA pomagają zapanować nad złożonością systemu. Podstawowa budowa SOA opiera się z reguły na szynie ESB (ang. Enterprsie Service Bus) integrującej poszczególne usługi. ESB jest efektywnym środkiem komunikacji w SOA. Pomaga uwolnić się od sieci powiązań „każdy z każdym”. [SOAidntech] Odpowiada za przesyłanie komunikatów do odpowiednich komponentów. Rozbudowa systemu polega na dołączaniu nowych usług do szyny integracyjnej. 
+Rozwiązania stosowane w SOA pomagają zapanować nad złożonością systemu. Podstawowa budowa SOA opiera się z reguły na szynie ESB (ang. Enterprsie Service Bus) integrującej poszczególne usługi. ESB jest efektywnym środkiem komunikacji w SOA. Pomaga uwolnić się od sieci powiązań „każdy z każdym”. \cite{SOAidntech} Odpowiada za przesyłanie komunikatów do odpowiednich komponentów. Rozbudowa systemu polega na dołączaniu nowych usług do szyny integracyjnej. 
 	
 Komunikaty zanim zostaną wysłane do punktu docelowego często poddawane są transformacjom i odpowiedniemu dostosowaniu za pomocą mediacji (ang. mediations) na ESB. Przetworzony komunikat odpowiada formie jakiej oczekuje dostawca usługi.
 	
-Rejestr SOA (ang. SOA registry) stanowi centralny punkt informacyjny na temat sposobu dostępu, definicji, reguł, bezpieczeństwa i innych danych wymaganych do wykorzystania usług udostępnionych w danym środowisku SOA. Zawiera informacje gdzie poszczególne komponenty SOA są umieszczone. Na jego podstawie ESB potrafi prawidłowo przekierowywać żądanie usługi i ewentualną odpowiedź, a aplikacje i usługi korzystające z usług składowych potrafią skonstruować jej prawidłowe wywołanie. [SOAidntech, SOAfddum]
+Rejestr SOA (ang. SOA registry) stanowi centralny punkt informacyjny na temat sposobu dostępu, definicji, reguł, bezpieczeństwa i innych danych wymaganych do wykorzystania usług udostępnionych w danym środowisku SOA. Zawiera informacje gdzie poszczególne komponenty SOA są umieszczone. Na jego podstawie ESB potrafi prawidłowo przekierowywać żądanie usługi i ewentualną odpowiedź, a aplikacje i usługi korzystające z usług składowych potrafią skonstruować jej prawidłowe wywołanie.\cite{SOAidntech, SOAfddum}
 	
 Istotnym elementem w systemach typu SOA jest repozytorium (ang. SOA repository). Stanowi on centralny „magazyn” dla elementów składowych usług takich jak: kod źródłowy, zestawy instalacyjne, specyfikacja itp. Repozytorium usług jest tworzone i wykorzystywane głównie na etapie projektowania usług. [SOAidntech]
 
@@ -261,194 +267,6 @@ W rozwiązaniu tych problemów pomaga SOA, która opiera się na koncepcji usłu
 
 Problem ze względu na swój zakres oraz ilość elementów branych pod uwagę do jego rozwiązania jest stosunkowo złożony. Konieczne jest dlatego oparcie się na odpowiedniej metodyce. W pracy zostanie przedstawione jak zaadaptować SOA w architekturze korporacyjnej z wykorzystaniem SoaML z wykorzystaniem opracowanej optymalnej metodyki.
 
-\chapter{Metodyki projektowania rozwiązań w architekturze usługowej}
-
-\section{Wstęp}
-
-\section{RUP4SOA}
-\subsection{Czym jest RUP?}
-RUP (ang. \textit{Rational Unified Process}) stanowi proces  wytwarzania oprogramowania oparty na iteracjach. Metodyka ta została zdefiniowana przez grupę Rational Software (przejętą przez firmę IBM w roku 2003). 
-
-RUP zapewnia zdyscyplinowane podejście do przydzielania zadań i obowiązków w ramach rozwoju organizacji. Celem podstawowym tej metodyki jest dostarczenie wysokiej jakości oprogramowania spełniającego potrzeby użytkowników końcowych w zgodzie z harmonogramem i ramami budżetowymi.
-\cite{RUPIntRat} Stanowi przede wszystkim bardzo duży zbiór praktyk, który może być dostosowywany i rozszerzany w celu jak najlepszego dopasowania się do danej organizacji. Charaktertystyczne dla metody jest rozwój sterowany przypadkami użycia (ang. \textit{Use Case Driven Development}).\cite{RUPMartFow}
-
-W RUP można wyróżnić poszczególne fazy:
-\begin{itemize}
-\item{faza początkowa (ang. \textit{inception}) – wstępne określenie wymagań, ryzyka, kosztu, harmonogramu, a także architektury systemu,}
-\item{faza opracowania (ang. \textit{elaboration}) – ustalenie wymagań (większości przypadków użycia), architektury systemu oraz planu całego procesu wytwarzania systemu,}
-\item{faza konstrukcji (ang. \textit{construction}) – tworzenie systemu (kolejnych komponentów), w trakcie następuje oddanie pierwszej (i być może dalszych) wersji użytkownikowi,}
-\item{faza przekazania (ang. \textit{transiation}) – system jest przekazywany użytkownikowi, wdrażany, szkoleni są pracownicy obsługi systemu, następuje walidacja i końcowe sprawdzenie jakości.}\cite{RUPIntRat}
-\end{itemize}
-\subsection{Wykorzystanie RUP w projektowaniu SOA}
-RUP4SOA stanowi modyfikację metodyki RUP i dołączono do niej zadania i produkty potrzebne przy projektowaniu rozwiązań w architekturze usługowej. RUP4SOA stanowi komercyjny plug-in dla framework'a RUP. Rozszerza standardowy pakiet o zbiór dodatkowych artefaktów i właściwości. W odróżnieniu od klasycznego RUP, metodyka ta opiera się na wyróżnieniu trzech dyscyplin związanych z analizą i projektowaniem:
-\begin{itemize}
-\item{analiza i projektowanie architektury SOA - przygotowanie architektury SOA zgodnie z wymaganiami,}
-\item{analiza i projektowanie kontraktów w architekturze SOA - analizie poddane są procesy integracyjne, związane z dostarczaniem usług i realizacją kontraktów między organizacjami,}
-\item{analiza i projektowanie logiki usług SOA - identyfikacja usług w systemach informatycznych w jednostkach, w których wdrażana będzie architektura SOA}
-\end{itemize}
-Reszta dyscyplin jest analogiczna do metodyki RUP. \cite{PlatIntGor} W RUP4SOA można wyróżnić poszczególne fazy:
-\begin{itemize}
-\item {modelowanie biznesowe,}
-\item {specyfikacja wymagań,}
-\item {analiza i projektowanie architektury SOA,}
-\item {analiza i projektowanie kontraktow SOA,}
-\item {analiza i projektowanie logiki usług,}
-\item {implementacja,}
-\item {testowanie,}
-\item {wdrożenie,}
-\item {zarządzanie zmianą i konfiguracją,}
-\item {zarządzanie projektem,}
-\item {środowisko.}
-\end{itemize}
-
-W fazie analizy i projektowania przygotowywana jest architektura SOA zgodnie z postawionymi wymaganiami i modelem biznesowym. Istotne jest, aby opracowywana architektura była projektowana z zamysłem o jak najprostszej realizacji i późniejszym wdrożeniu. Kolejną dyscyplinę stanowi analiza i projektowanie kontraktów w architekturze usługowej. Ta faza opiera się na analizie procesów integracyjnych związanych z dostarczaniem usług i wymianą kontraktów między organizacjami. Następny element metodyki RUP4SOA stanowi analiza i projektowanie logiki usług SOA, który powiązany jest z identyfikacją usług informatycznych w organizacjach. 
-
-Po fazach analizy i projektowania następują kolejno implementacja oraz testy. W następnym etapie utworzony produkt zostaje wdrożony na przygotowane środowisko. Równolegle trwają również prace związane z zarządzaniem projektem, konfiguracją oraz zmianami. \cite{PlatIntGor}
-
-Podstwowym produktem wytworzonym przez Architekta oprogramowania w przypadku RUP4SOA jest model usług. Do podstawowych zadań Architekta oprogramowania zalicza się realizację fazy "identyfikacji usług".
-
-Projektant w RUP4SOA odpowiada za przygotowanie projektu usługi, a jego odpowiedzialność jest związana z produktami: komunikat, usługa, kanał usługi, bramka usługi, współpraca usługi, partycja usługi, specyfikacja usługi oraz komponent usługi. 
-
-\subsection{Zalety i wady RUP4SOA}
-RUP4SOA jest jedną z najpopularniejszych metodyk stosowanych do projektowania architektury usługowej. Największy nacisk kładzie na fazy związane z analizą i projektowaniem systemu informatycznego - rozszerzonym o elementy związane z usługami sieciowymi. Fakt ten może powodować większą zgodność między wyobrażnieniami klienta, a rzeczywistym produktem w formie systemu. 
-
-Jedną z jej największych zalet jest również opieranie się na metodyce RUP, która wykorzystuje doświadczenia i praktyki przyjęte przez organizacje na przestrzeni wielu lat. \cite{JonSimRUPSoa}
-
-Metodyka ta nie specyfikuje wielu elementów istotnych do budowy rozwiązań integracyjnych. Skupia się na projektowaniu pojedynczego systemu, który może być jedynie włączony do platformy integracyjnej. \cite{PlatIntGor}
-
-\section{SOMA}
-\subsection{Czym jest SOMA?}
-SOMA (ang. \textit{Servie-Oriented Modeling and Architecture} stanowi kolejną metodykę projektowania systemów w architekturze usługowej. \cite{PlatIntGor} Metoda cyklu rozwoju oprogramowania definiująca kluczowe techniki i opisująca poszczególne role w projekcie SOA oraz struktury podziału pracy (WBS - ang. \textit{Work Breakdown Structure}). WBS obejmuje zadania związane z wejściowymi i wyjściowymi produktami pracy, z normatywnymi wskazówkami do szczegółowej analizy, projektowaniem, implementacją i wdrażaniem usług oraz komponentów potrzebnych do budowy wydajnego, reużywalnego środowiska.
-
-SOMA została utworzona i jest rozwijana przez firmę IBM. W swoim podejściu metodyka wykorzystuje wiele elementów z Worldwide Project Management Method (jedna z metodyk zarządzania projektami). \cite{SOMAArsIBMJour}
-
-\subsection{Fazy metodyki SOMA}
-SOMA bazuje na siedmiu podstawowych fazach:
-\begin{itemize}
-\item{modelowanie biznesowe (ang. \textit{business modeling and transformation}),}
-\item{zarządzanie rozwiązaniem (ang. \textit{solution management}),}
-\item{identyfikacja (ang. \textit{identification}),}
-\item{specyfikacja (ang. \textit{specification}),}
-\item{realizacja (ang. \textit{realization}),}
-\item{implementacja (ang. \textit{implementation}),}
-\item{monitorowanie i zarządzanie (ang. \textit{monitoring and management}).}
-\end{itemize}
-
-Poszczególne fazy nie następują po sobie w sposób liniowy. SOMA opiera się na iteracyjnym, przyrostowym podejściu do realizacji rozwiązań SOA. Powoduje to łagodzenie ryzyk projektowych oraz wynika z cyklu życia usług w modelu SOA. Zadania związane z budową rozwiązań informatycznych realizowane są w niej w podobny sposób bez względu na zakres. 
-
-Można również mówić o fraktalnej charakterystyce metodyki. Każda kolejna  iteracja (ang. \textit{successive iteration} jest powiązana z pojęciem ewolucji usług. Opiera się nie tylko na ryzykach dotyczących implementacji, ale również na zależnościach związanych ze zbiorem usług, gdy usługi zmieniają się w trakcie cyklu życia systemu. W SOMA przypisywanie priorytetów w Modelu usług odbywa się z wykorzystaniem diagramów zależności usług (ang. \textit{service-dependency diagram}. Na podstawie ryzyk związanych z architekturą rozwiązania wyłaniany jest podzbiór usług przewidywany do implementacji w kolejnej iteracji.
-
-\begin{figure}[h!tbp]
-\begin{centering}
-\includegraphics[width=14cm]{img/soma_fractal_lifecycle.png}
-\caption[Fraktalne podejście do budowy systemów - fazy metodyki SOMA.]{Fraktalne podejście do budowy systemów - fazy metodyki SOMA. \cite{SOMAArsIBMJour}}\label{soma_fractal_lifecycle}
-\end{centering}
-\end{figure}
-
-Charakterystyczną cechą dla SOMA jest również pojęcie przypadku usługowego (ang. \textit{service case}), który identyfikuje "reużywalny" (ang. \textit{reuse}) zbiór operacji usługi. Ważne jest, aby zidentyfikować taki zestaw usług, który łącznie pozwala na spełnienie celów biznesowych. \cite{PlatIntGor}
-
-W fazie modelowania biznesowego i transformacji funkcjonowanie organizacji jest modelowane, symulowane i optymalizowane. Na tym etapie wyszczególnia się również główny obszar przekształcenia danej jednostki - podstawowy dla kolejnych projektów opierających się na pozostałych fazach SOMA. Modelowanie biznesowe i transformacja jest opcjonalnym elementem metodyki, ale ściśle zalecanym. 
-
-Realizacje SOA mają hybrydową naturę i z reguły obejmują wiele typów rozwiązań. W fazie zarządzania rozwiązaniem inicjowany jest projekt oraz wybierany odpowiedni scenariusz realizacji. Występuję kilka możliwych scenariuszy: wytwarzania oprogramowania (ang. \textit{custom development}), integracji pakietów aplikacji (ang. \textit{package application integration}). W tym etapie tworzona jest również konfiguracja metodyki dostosowana do potrzeb danego projektu. Ponadto zdefiniowaniu podlegają: zadania, role, produkty pracy oraz poradniki.\cite{SOMAArsIBMJour}
-
-Faza identyfikacji związana jest z identyfikacją trzech elementarnych dla SOA konstrukcji: usług, komponentów oraz usług.\cite{PlatIntGor} Do zadań tego etapu należy: dekompozycja obszarów biznesowych (Domain Decomposition), modelowanie usług w kontekście celów biznesowych (Goal-Service Modeling) oraz analiza istniejących zasobów IT (Existing Assets Analysis).\cite{SOMAibmRosSuda} Do produktów końcowych tej fazy zalicza się listę kandydujących usług do realizacji oraz powiązań między nimi. \cite{PlatIntGor}
-
-Podczas specyfikacji usług projektowane jest rozwiązanie. Powstaje projekt podstawowy oraz niektóre elementy projektu szczegółowego. Analizowane są zasoby IT pod kątem zależności ze zidentyfikowanymi usługami w poprzedniej fazie, przepływami oraz zdarzeniami. Metodologia dostarcza gotowe szablony, wzorce oraz techniki wykorzystywane w celu określenia usług, przepływów i komponentów. 
-
-W skład fazy specyfikacji wchodzą następujące elementy:
-\begin{itemize}
-\item{Identyfikacja zależności między usługami - w oparciu o szczegółowy przegląd danej usługi możliwe jest odkrycie jej zależności z innymi usługami lub aplikacjami. Mogą okazać się one niezbędne do dostarczenia niektórych funkcjonalności.}
-\item{Test papierka lakmusowego (ang. \textit{service litmus test} - powiązany z podejmowaniem decyzji dotyczących ekspozycji.}
-\item{Identyfikacja kompozycji usług i przepływów - przegląd procesów biznesowych oraz obszarów funkcjonalnych umożliwia ustalenie kompozycji usług z innych usług i ich przepływów dostarczających pożądaną funkcjonalność biznesową.}
-\item{Identyfikacja wymagań niefukncjonalnych - wymagania definiujące oczekiwany poziom usług.}
-\item{Definicja specyfikacji komunikatów - obejmuje identyfikację i specyfikację formatu oraz zawartości komunikatów wejściowych i wyjściowych dla usług.}
-\item{Dokumentacja decyzji dotyczących zarządzania stanem.}
-\end{itemize}
-
-Faza realizacji związana jest ze sprawdzaniem stabilności i realizowalności zaprojektowanego rozwiązania poprzez budowę prototypów. Zadanie to powinno mieć miejsce we wczesnym etapie projektu, aby zminimalizować niepowiedzenia i wyeliminować niepotrzebne ryzyka. Faza ta stanowi pewnego rodzaju formę technicznego studium wykonywalności. Każdy poziom rozwiązania wiąże się również z wybieranym podejściem lub sposobem realizacji prac.
-
-W skład fazy realizacji wchodzą następujące czynności:
-\begin{itemize}
-\item{iteracyjna alokacja usług do komponentów,}
-\item{przypisanie komponentów w warstwach znajdujących się w architekturze aplikacji,}
-\item{identyfikacja i oszacowanie ograniczeń technologicznych, które mogą wpływać na realizowalność zadań.}
-\end{itemize}
-
-W fazach implementacji i wdrożenia oraz monitorowania i zarządzania są konstruowane, generowane i łączone usługi, komponenty funkcjonalne i techniczne oraz przepływy. Konstruowane są również poszczególne elementy opakowujące oraz odpowiednie mechanizmy dla istniejących komponentów. Wykonywane są również testy: integracyjne, jednostkowe, komponentów, przepływów oraz systemu dla usług. \cite{PlatIntGor, SOMAArsIBMJour}
-
-\subsection{Produkty SOMA}
-Stosowanie SOMA przynosi rezultaty między innymi w postaci utworzonych modelów - usług i informacji. 
-
-Model usług zawiera zbiór informacji dotyczących aktualnie zidentyfikowanych usług w organizacji, które będą wykorzystane do realizacji założonych celów biznesowych oraz procesów. W modelu tym znajdują się również dane opisujące kwestie: biznesowe, funkcjonalne, niefunkcjonalne oraz dotyczące technicznej realizacji. Wyszczególnione są również informacje o hierarchii złożoności, ekspozycji, zależności między usługami oraz wymagania związane z poziomem jakości. 
-
-Model informacji odpowiada za kontekst biznesowy. Zawiera elementy takie jak: model koncepcyjny, decyzje dotyczące realizacji oraz relacje i ekspozycję encji.
-
-Oprócz wymienionych modeli metodyka SOMA dostarcza również elementy: kontekst biznesowy, definicję procesów, identyfikację procesów, katalog reguł biznesowych oraz listę zdarzeń biznesowych.
-
-\subsection{Zalety i wady SOMA}
-Stosowanie metodyki SOMA może przynosić szereg korzyści. 
-
-Model usług stanowiący końcowy rezultat etapu modelowania pozwala na łatwe i szybkie opracowanie projektu technicznego, implementację nowych usług oraz udostępnienie usług na podstawie już istniejących. 
-
-Ponadto SOMA zakłada wysoki stopień skalowalności systemów tworzonych zgodnie z jej regułami. Zapewnia elastyczność organizacji w związku ze zmianami biznesowymi oraz umożliwia redukcję kosztów wdrażania nowych usług.
-
-Model usług powstały z zastosowania SOMA jest niezależny od platformy. Można wytwarzać go za pomocą wielu dostępnych na rynku narzędzi: \emph{IBM Rational Software Architect}, \emph{Enterprise Architect}, \emph{ARIS} czy \emph{ModelioSoft}.
-
-Do wad SOMA można zaliczyć fakt, że mimo szczegółowego opisu projektu technicznego usług biznesowych nadal elementy dotyczące ich wdrożenia są przedstawiane tylko szczątkowo.
-
-SOMA doskonale wspiera identyfikację usług zgodnie z zasadą \emph{top-down} w modelach procesów biznesowych i innych artefaktach analizy biznesowej. Specyfikacja usług również jest odpowiednio zdefiniowana. Jednakże definicja przejścia pomiędzy tymi dwiema fazami jest niejednoznaczna i często w projektach powstają z tego z tego powodu różne nieścisłości (jak na przykład duplikaty usług)\cite{MicMetZIMM}. 
-
-
-\section{Metoda Papazoglou}
-\subsection{Service-Oriented Design and Development Methodology by Papazoglou}
-\emph{Service-Oriented Design and Development by Papazoglou} również stanowi metodę projektowania architektury systemów informatycznych zorientowanych na usługi. 
-Metoda opiera się na kilku podstawowych założeniach.
-\begin{itemize}
-\item{Zarządzanie całym cyklem życia usługi włączając: identyfikację, projektowanie, wdrożenie, wykrycie, stosowanie oraz utrzymywanie.}
-\item{Na etapie projektowania ustanowienie platformy i modelu programowania uwzględniającego połączenia, wdrażanie i zarządzanie usługami w obrębie określonego środowiska wykonawczego.}
-\item{Stosowanie najlepszych praktyk i narzędzie dla rozwiązań architektury, które są powtarzalne, przewidywalne oraz uwzględniają częste zmiany biznesowe.}
-\item{Dostarczanie wysokiej jakości wykonywalnych rozwiązań zorientowanych na uslugi, które przestrzegają wymagań \emph{Qos} (\emph{Quality of Service})}.
-\end{itemize}
-
-Fundamentem dla powyższych założeń jest to, że cele biznesowe i wymagania zawsze powinny prowadzić do niższego poziomu abstrakcji - kolejno: projektowania, implementacji, testowania oraz transformacji procesów biznesowych w kompozytowe aplikacje. W ten sposób wymagania biznesowe mogą 
-być śledzone przez cały cykl życia - od celów biznesowych przez projektowanie oprogramowania oraz zasobów kodu, aż do kompozytowych aplikacji.
-
-\subsection{Fazy metodyki}
-Metodyka utworzona przez Papazoglou składa się z elementów (rys. ) bazujących na innych metodykach takich jak: \emph{Rational Unified Process}, \emph{Component-based development} oraz modelowania procesów biznesowych zaproponowanego przez Paula Harmona w 2003 roku\cite{PapaZog}. 
-
-\begin{figure}[h!tbp]
-\begin{centering}
-\includegraphics[width=8cm]{img/papazoglou_metoda_fazy.png}
-\caption[Fazy metodyki zaproponowej przez Papazoglou.]{Fazy metodyki zaproponowej przez Papazoglou.\cite{PapaZog}}\label{papazoglou_method_phases}
-\end{centering}
-\end{figure} 
-
-Podstawowym celem metodyki jest jak najlepsza integracja usług oraz osiągnięcie jak najwyższego poziomu ich interoperacyjności. Poszczególne fazy, które wchodzą w składy metodyki są wymienione poniżej.
-\begin{itemize}
-\item{Faza planowania (ang. \emph{Planning phase}) - określa prawdopodobieństwo wykonalności, naturę i zakres rozwiązań usługowych w kontekście danej organizacji.  Istotne jest, żeby technologia usługowa pasowała jak najlepiej do obecnego charakteru organizacji. Kluczowe w tej fazie jest dlatego bardzo dobre poznanie obecnego środowiska biznesowego. Czynności związane z fazą planowania obejmują analizę potrzeb biznesowych jako mierzalne cele,  przegląd obecnie wykorzystywanych technologii, ustalenie koncepcji wymagań dotyczących nowego środowiska i mapowanie tych wymagań na nowe lub dostępne implementacje.}
-
-\item{Faza analizy (ang. \emph{Analysis phase}) - w trakcie tej fazy wcześniej zebrane wymagania poddawane są analizie. Postawione uprzednio cele biznesowe podlegają przeglądowi. Analitycy biznesowi tworzą kompletny model procesów typu \emph{as-is} umożliwiając tym samym zapoznanie się z obecnie dostępnymi usługami i procesami biznesowymi. Po udostępnieniu tego modelu organizacja projektuje, symuluje i analizuje potencjalne zmiany do obecnego stanu systemu. Określa również wskaźnik rentowności \emph{ROI} (\emph{Return On Investment}) wynikający ze zmian w panujących procesach biznesowych. Produktem tej fazy jest model procesów biznesowych typu \emph{to-be}, które będą realizowane przez rozwiązania SOA. Przyjmuje się, że w skład fazy wchodzą następujące czynności: identyfikacja procesów (ang. \emph{Process identification}, określanie zakresu procesów (ang. \emph{Process scoping}), analiza luk biznesowych (ang. \emph{Business gap analysis}), analiza realizacji procesów (ang. \emph{Process realization analysis}).}
-
-\item{Faza projektowania (ang. \emph{Design phase}).}
-Projektowanie systemu zorientowanego usługowo wymaga od projektantów dostarczenia modeli i dobrze zdefiniowanych interfejsów dla wszystkich ważnych komponentów usług. Projektowanie usług bazuje na podejściu wykonywania równolegle dwóch ścieżek: jedna do produkcji usług (ewentualnie z wcześniej utworzonych elementów), natomiast druga związana jest z asemblacją usług reużywalnych (wielokrotnego użytku). Projektowanie usług, podobnie jak analiza usług posiada swoje własne specjalne charakterystki i techniki.
-
-Service analysis is logically succeeded by service design, during which conceptual processes and services are transformed into a set of related, platform-agnostic interfaces. Designing a service-oriented application requires developers to model and define well-documented interfaces for all major service components prior to constructing the services themselves. Service design is based on a twin- track development approach that provides two production lines: one to produce services (possibly out of pre-existing components), and another to assemble (compose) services out of reusable service constellations. This calls for a business process model that forces developers to determine how services combine and interact jointly to produce higher level services. Service design, just like service analysis, has its own 
-special characteristics and  techniques, which we shall describe in this section. We shall first start by describing a broad set of service design concerns. 
-
-Analiza usługa jest logicznie zastąpił podczas projektowania usług, procesów i usług, które są przekształcane w koncepcyjne zestaw powiązanych interfejsów platformy-agnostykiem. Projektowanie aplikacji zorientowanej na usługi wymaga deweloperów do modelowania i definiowania dobrze udokumentowanych interfejsów dla wszystkich głównych komponentów usług poprzedzających budowę samych usług. Projektowanie usługa opiera się na koncepcji rozwoju twin- toru, która zapewnia dwie linie produkcyjne: jedna do produkcji usług (ewentualnie z wcześniej istniejących elementów), a drugi do montażu (komponować) usługi z konstelacji usług wielokrotnego użytku. Wymaga modelu procesów biznesowych, który zmusza deweloperów do określenia, jak i interakcji usług łączą wspólnie produkować usługi wyższego poziomu. Projektowanie serwis, podobnie jak analizy usług, ma swój własny
-szczególne cechy i techniki, które opiszemy w tym rozdziale. Powinien najpierw zacząć od opisania szerokiego zestawu kwestii projektowania usług.
-
-
-\item{Faza specyfikacji usług (ang. \emph{Service specyfing phase})).}
-\item{Faza konstrukcji usług (ang. \emph{Service construction phase}).}
-\item{Faza testowania usług (ang. \emph{Testing phase}).} 
-\item{Faza dostarczania usług (ang. \emph{Provisioning phase}).}
-\item{Faza wdrażania usług (ang. \emph{Deployment phase}).}
-\item{Faza wykonania. (ang. \emph{Execution phase})}
-\item{Faza monitorowania usług (ang. \emph{Monitoring phase}).}
-\end{itemize}
-
-
 \chapter{Przegląd języków do projektowania systemów informatycznych o architekturze SOA}
 
 \section{Wstęp}
@@ -518,8 +336,8 @@ SoaML charakteryzuje się dodatkowymi abstrakcjami\cite{PlatIntGor} i rozszerza 
 \item{Funkcjonalność (ang. \emph{Capabilities}) - kolejny zdefiniowany element SoaML. Na diagramach klas określa funkcjonalność lub zasoby jakie oferują uczestnicy architektury. Przedstawiany jest w postaci komponentu ze stereotypem \emph{capabilities}.\cite{SoaMLErvBase}}
 \end{itemize} 
 
-\section{ArchiMate}
 
+\section{ArchiMate}
 \subsection{Czym jest ArchiMate?}
 ArchiMate stanowi otwarty i niezależny język modelowania dla architektur korporacyjnych. Zapewnia instrumenty, aby umożliwić architektom przedsiębiorstwa opis, analizę i wizualizację relacji między domenami biznesu w jednoznaczny sposób. Pozwala ponadto na opisywanie procesów biznesowych, struktur organizacyjnych, przepływów informacji, systemów informatycznych oraz technicznej infrastruktury.
 
@@ -617,10 +435,242 @@ IDEF3 pozwala na modelowanie procesów biznesowych. Przystosowany jest również
 
 IDEFIX został utworzony z kolei z przeznaczeniem modelowania danych. Dostarcza semantycznych konstrukcji, które pozwalają na modelowanie konceptualnych schematów dla struktur danych używanych na poziomie całej organizacji.
 
+\chapter{Metodyki projektowania rozwiązań w architekturze usługowej}
+
+\section{Wstęp}
+
+\section{RUP4SOA}
+\subsection{Czym jest RUP?}
+RUP (ang. \textit{Rational Unified Process}) stanowi proces  wytwarzania oprogramowania oparty na iteracjach. Metodyka ta została zdefiniowana przez grupę Rational Software (przejętą przez firmę IBM w roku 2003). 
+
+RUP zapewnia zdyscyplinowane podejście do przydzielania zadań i obowiązków w ramach rozwoju organizacji. Celem podstawowym tej metodyki jest dostarczenie wysokiej jakości oprogramowania spełniającego potrzeby użytkowników końcowych w zgodzie z harmonogramem i ramami budżetowymi.
+\cite{RUPIntRat} Stanowi przede wszystkim bardzo duży zbiór praktyk, który może być dostosowywany i rozszerzany w celu jak najlepszego dopasowania się do danej organizacji. Charaktertystyczne dla metody jest rozwój sterowany przypadkami użycia (ang. \textit{Use Case Driven Development}).\cite{RUPMartFow}
+
+W RUP można wyróżnić poszczególne fazy:
+\begin{itemize}
+\item{faza początkowa (ang. \textit{inception}) – wstępne określenie wymagań, ryzyka, kosztu, harmonogramu, a także architektury systemu,}
+\item{faza opracowania (ang. \textit{elaboration}) – ustalenie wymagań (większości przypadków użycia), architektury systemu oraz planu całego procesu wytwarzania systemu,}
+\item{faza konstrukcji (ang. \textit{construction}) – tworzenie systemu (kolejnych komponentów), w trakcie następuje oddanie pierwszej (i być może dalszych) wersji użytkownikowi,}
+\item{faza przekazania (ang. \textit{transiation}) – system jest przekazywany użytkownikowi, wdrażany, szkoleni są pracownicy obsługi systemu, następuje walidacja i końcowe sprawdzenie jakości.}\cite{RUPIntRat}
+\end{itemize}
+\subsection{Wykorzystanie RUP w projektowaniu SOA}
+RUP4SOA stanowi modyfikację metodyki RUP i dołączono do niej zadania i produkty potrzebne przy projektowaniu rozwiązań w architekturze usługowej. RUP4SOA stanowi komercyjny plug-in dla framework'a RUP. Rozszerza standardowy pakiet o zbiór dodatkowych artefaktów i właściwości. W odróżnieniu od klasycznego RUP, metodyka ta opiera się na wyróżnieniu trzech dyscyplin związanych z analizą i projektowaniem:
+\begin{itemize}
+\item{analiza i projektowanie architektury SOA - przygotowanie architektury SOA zgodnie z wymaganiami,}
+\item{analiza i projektowanie kontraktów w architekturze SOA - analizie poddane są procesy integracyjne, związane z dostarczaniem usług i realizacją kontraktów między organizacjami,}
+\item{analiza i projektowanie logiki usług SOA - identyfikacja usług w systemach informatycznych w jednostkach, w których wdrażana będzie architektura SOA}
+\end{itemize}
+Reszta dyscyplin jest analogiczna do metodyki RUP. \cite{PlatIntGor} W RUP4SOA można wyróżnić poszczególne fazy:
+\begin{itemize}
+\item {modelowanie biznesowe,}
+\item {specyfikacja wymagań,}
+\item {analiza i projektowanie architektury SOA,}
+\item {analiza i projektowanie kontraktow SOA,}
+\item {analiza i projektowanie logiki usług,}
+\item {implementacja,}
+\item {testowanie,}
+\item {wdrożenie,}
+\item {zarządzanie zmianą i konfiguracją,}
+\item {zarządzanie projektem,}
+\item {środowisko.}
+\end{itemize}
+
+W fazie analizy i projektowania przygotowywana jest architektura SOA zgodnie z postawionymi wymaganiami i modelem biznesowym. Istotne jest, aby opracowywana architektura była projektowana z zamysłem o jak najprostszej realizacji i późniejszym wdrożeniu. Kolejną dyscyplinę stanowi analiza i projektowanie kontraktów w architekturze usługowej. Ta faza opiera się na analizie procesów integracyjnych związanych z dostarczaniem usług i wymianą kontraktów między organizacjami. Następny element metodyki RUP4SOA stanowi analiza i projektowanie logiki usług SOA, który powiązany jest z identyfikacją usług informatycznych w organizacjach. 
+
+Po fazach analizy i projektowania następują kolejno implementacja oraz testy. W następnym etapie utworzony produkt zostaje wdrożony na przygotowane środowisko. Równolegle trwają również prace związane z zarządzaniem projektem, konfiguracją oraz zmianami. \cite{PlatIntGor}
+
+Podstwowym produktem wytworzonym przez Architekta oprogramowania w przypadku RUP4SOA jest model usług. Do podstawowych zadań Architekta oprogramowania zalicza się realizację fazy \quotedblbase identyfikacji usług\textquotedblright.
+
+Projektant w RUP4SOA odpowiada za przygotowanie projektu usługi, a jego odpowiedzialność jest związana z produktami: komunikat, usługa, kanał usługi, bramka usługi, współpraca usługi, partycja usługi, specyfikacja usługi oraz komponent usługi. 
+
+\subsection{Zalety i wady RUP4SOA}
+RUP4SOA jest jedną z najpopularniejszych metodyk stosowanych do projektowania architektury usługowej. Największy nacisk kładzie na fazy związane z analizą i projektowaniem systemu informatycznego - rozszerzonym o elementy związane z usługami sieciowymi. Fakt ten może powodować większą zgodność między wyobrażnieniami klienta, a rzeczywistym produktem w formie systemu. 
+
+Jedną z jej największych zalet jest również opieranie się na metodyce RUP, która wykorzystuje doświadczenia i praktyki przyjęte przez organizacje na przestrzeni wielu lat. \cite{JonSimRUPSoa}
+
+Metodyka ta nie specyfikuje wielu elementów istotnych do budowy rozwiązań integracyjnych. Skupia się na projektowaniu pojedynczego systemu, który może być jedynie włączony do platformy integracyjnej. \cite{PlatIntGor}
+
+\section{SOMA}
+\subsection{Czym jest SOMA?}
+SOMA (ang. \textit{Servie-Oriented Modeling and Architecture} stanowi kolejną metodykę projektowania systemów w architekturze usługowej. \cite{PlatIntGor} Metoda cyklu rozwoju oprogramowania definiująca kluczowe techniki i opisująca poszczególne role w projekcie SOA oraz struktury podziału pracy (WBS - ang. \textit{Work Breakdown Structure}). WBS obejmuje zadania związane z wejściowymi i wyjściowymi produktami pracy, z normatywnymi wskazówkami do szczegółowej analizy, projektowaniem, implementacją i wdrażaniem usług oraz komponentów potrzebnych do budowy wydajnego, reużywalnego środowiska.
+
+SOMA została utworzona i jest rozwijana przez firmę IBM. W swoim podejściu metodyka wykorzystuje wiele elementów z Worldwide Project Management Method (jedna z metodyk zarządzania projektami). \cite{SOMAArsIBMJour}
+
+\subsection{Fazy metodyki SOMA}
+SOMA bazuje na siedmiu podstawowych fazach:
+\begin{itemize}
+\item{modelowanie biznesowe (ang. \textit{business modeling and transformation}),}
+\item{zarządzanie rozwiązaniem (ang. \textit{solution management}),}
+\item{identyfikacja (ang. \textit{identification}),}
+\item{specyfikacja (ang. \textit{specification}),}
+\item{realizacja (ang. \textit{realization}),}
+\item{implementacja (ang. \textit{implementation}),}
+\item{monitorowanie i zarządzanie (ang. \textit{monitoring and management}).}
+\end{itemize}
+
+Poszczególne fazy nie następują po sobie w sposób liniowy. SOMA opiera się na iteracyjnym, przyrostowym podejściu do realizacji rozwiązań SOA. Powoduje to łagodzenie ryzyk projektowych oraz wynika z cyklu życia usług w modelu SOA. Zadania związane z budową rozwiązań informatycznych realizowane są w niej w podobny sposób bez względu na zakres. 
+
+Można również mówić o fraktalnej charakterystyce metodyki. Każda kolejna  iteracja (ang. \textit{successive iteration} jest powiązana z pojęciem ewolucji usług. Opiera się nie tylko na ryzykach dotyczących implementacji, ale również na zależnościach związanych ze zbiorem usług, gdy usługi zmieniają się w trakcie cyklu życia systemu. W SOMA przypisywanie priorytetów w Modelu usług odbywa się z wykorzystaniem diagramów zależności usług (ang. \textit{service-dependency diagram}. Na podstawie ryzyk związanych z architekturą rozwiązania wyłaniany jest podzbiór usług przewidywany do implementacji w kolejnej iteracji.
+
+\begin{figure}[h!tbp]
+\begin{centering}
+\includegraphics[width=14cm]{img/soma_fractal_lifecycle.png}
+\caption[Fraktalne podejście do budowy systemów - fazy metodyki SOMA.]{Fraktalne podejście do budowy systemów - fazy metodyki SOMA. \cite{SOMAArsIBMJour}}\label{soma_fractal_lifecycle}
+\end{centering}
+\end{figure}
+
+Charakterystyczną cechą dla SOMA jest również pojęcie przypadku usługowego (ang. \textit{service case}), który identyfikuje \quotedblbase reużywalny\textquotedblright (ang. \textit{reuse}) zbiór operacji usługi. Ważne jest, aby zidentyfikować taki zestaw usług, który łącznie pozwala na spełnienie celów biznesowych. \cite{PlatIntGor}
+
+W fazie modelowania biznesowego i transformacji funkcjonowanie organizacji jest modelowane, symulowane i optymalizowane. Na tym etapie wyszczególnia się również główny obszar przekształcenia danej jednostki - podstawowy dla kolejnych projektów opierających się na pozostałych fazach SOMA. Modelowanie biznesowe i transformacja jest opcjonalnym elementem metodyki, ale ściśle zalecanym. 
+
+Realizacje SOA mają hybrydową naturę i z reguły obejmują wiele typów rozwiązań. W fazie zarządzania rozwiązaniem inicjowany jest projekt oraz wybierany odpowiedni scenariusz realizacji. Występuję kilka możliwych scenariuszy: wytwarzania oprogramowania (ang. \textit{custom development}), integracji pakietów aplikacji (ang. \textit{package application integration}). W tym etapie tworzona jest również konfiguracja metodyki dostosowana do potrzeb danego projektu. Ponadto zdefiniowaniu podlegają: zadania, role, produkty pracy oraz poradniki.\cite{SOMAArsIBMJour}
+
+Faza identyfikacji związana jest z identyfikacją trzech elementarnych dla SOA konstrukcji: usług, komponentów oraz usług.\cite{PlatIntGor} Do zadań tego etapu należy: dekompozycja obszarów biznesowych (Domain Decomposition), modelowanie usług w kontekście celów biznesowych (Goal-Service Modeling) oraz analiza istniejących zasobów IT (Existing Assets Analysis).\cite{SOMAibmRosSuda} Do produktów końcowych tej fazy zalicza się listę kandydujących usług do realizacji oraz powiązań między nimi. \cite{PlatIntGor}
+
+Podczas specyfikacji usług projektowane jest rozwiązanie. Powstaje projekt podstawowy oraz niektóre elementy projektu szczegółowego. Analizowane są zasoby IT pod kątem zależności ze zidentyfikowanymi usługami w poprzedniej fazie, przepływami oraz zdarzeniami. Metodologia dostarcza gotowe szablony, wzorce oraz techniki wykorzystywane w celu określenia usług, przepływów i komponentów. 
+
+W skład fazy specyfikacji wchodzą następujące elementy:
+\begin{itemize}
+\item{Identyfikacja zależności między usługami - w oparciu o szczegółowy przegląd danej usługi możliwe jest odkrycie jej zależności z innymi usługami lub aplikacjami. Mogą okazać się one niezbędne do dostarczenia niektórych funkcjonalności.}
+\item{Test papierka lakmusowego (ang. \textit{service litmus test} - powiązany z podejmowaniem decyzji dotyczących ekspozycji.}
+\item{Identyfikacja kompozycji usług i przepływów - przegląd procesów biznesowych oraz obszarów funkcjonalnych umożliwia ustalenie kompozycji usług z innych usług i ich przepływów dostarczających pożądaną funkcjonalność biznesową.}
+\item{Identyfikacja wymagań niefukncjonalnych - wymagania definiujące oczekiwany poziom usług.}
+\item{Definicja specyfikacji komunikatów - obejmuje identyfikację i specyfikację formatu oraz zawartości komunikatów wejściowych i wyjściowych dla usług.}
+\item{Dokumentacja decyzji dotyczących zarządzania stanem.}
+\end{itemize}
+
+Faza realizacji związana jest ze sprawdzaniem stabilności i realizowalności zaprojektowanego rozwiązania poprzez budowę prototypów. Zadanie to powinno mieć miejsce we wczesnym etapie projektu, aby zminimalizować niepowiedzenia i wyeliminować niepotrzebne ryzyka. Faza ta stanowi pewnego rodzaju formę technicznego studium wykonywalności. Każdy poziom rozwiązania wiąże się również z wybieranym podejściem lub sposobem realizacji prac.
+
+W skład fazy realizacji wchodzą następujące czynności:
+\begin{itemize}
+\item{iteracyjna alokacja usług do komponentów,}
+\item{przypisanie komponentów w warstwach znajdujących się w architekturze aplikacji,}
+\item{identyfikacja i oszacowanie ograniczeń technologicznych, które mogą wpływać na realizowalność zadań.}
+\end{itemize}
+
+W fazach implementacji i wdrożenia oraz monitorowania i zarządzania są konstruowane, generowane i łączone usługi, komponenty funkcjonalne i techniczne oraz przepływy. Konstruowane są również poszczególne elementy opakowujące oraz odpowiednie mechanizmy dla istniejących komponentów. Wykonywane są również testy: integracyjne, jednostkowe, komponentów, przepływów oraz systemu dla usług. \cite{PlatIntGor, SOMAArsIBMJour}
+
+\subsection{Produkty SOMA}
+Stosowanie SOMA przynosi rezultaty między innymi w postaci utworzonych modelów - usług i informacji. 
+
+Model usług zawiera zbiór informacji dotyczących aktualnie zidentyfikowanych usług w organizacji, które będą wykorzystane do realizacji założonych celów biznesowych oraz procesów. W modelu tym znajdują się również dane opisujące kwestie: biznesowe, funkcjonalne, niefunkcjonalne oraz dotyczące technicznej realizacji. Wyszczególnione są również informacje o hierarchii złożoności, ekspozycji, zależności między usługami oraz wymagania związane z poziomem jakości. 
+
+Model informacji odpowiada za kontekst biznesowy. Zawiera elementy takie jak: model koncepcyjny, decyzje dotyczące realizacji oraz relacje i ekspozycję encji.
+
+Oprócz wymienionych modeli metodyka SOMA dostarcza również elementy: kontekst biznesowy, definicję procesów, identyfikację procesów, katalog reguł biznesowych oraz listę zdarzeń biznesowych.
+
+\subsection{Zalety i wady SOMA}
+Stosowanie metodyki SOMA może przynosić szereg korzyści. 
+
+Model usług stanowiący końcowy rezultat etapu modelowania pozwala na łatwe i szybkie opracowanie projektu technicznego, implementację nowych usług oraz udostępnienie usług na podstawie już istniejących. 
+
+Ponadto SOMA zakłada wysoki stopień skalowalności systemów tworzonych zgodnie z jej regułami. Zapewnia elastyczność organizacji w związku ze zmianami biznesowymi oraz umożliwia redukcję kosztów wdrażania nowych usług.
+
+Model usług powstały z zastosowania SOMA jest niezależny od platformy. Można wytwarzać go za pomocą wielu dostępnych na rynku narzędzi: \emph{IBM Rational Software Architect}, \emph{Enterprise Architect}, \emph{ARIS} czy \emph{ModelioSoft}.
+
+Do wad SOMA można zaliczyć fakt, że mimo szczegółowego opisu projektu technicznego usług biznesowych nadal elementy dotyczące ich wdrożenia są przedstawiane tylko szczątkowo.
+
+SOMA doskonale wspiera identyfikację usług zgodnie z zasadą \emph{top-down} w modelach procesów biznesowych i innych artefaktach analizy biznesowej. Specyfikacja usług również jest odpowiednio zdefiniowana. Jednakże definicja przejścia pomiędzy tymi dwiema fazami jest niejednoznaczna i często w projektach powstają z tego z tego powodu różne nieścisłości (jak na przykład duplikaty usług)\cite{MicMetZIMM}. 
+
+
+\section{Metoda Papazoglou}
+\subsection{Service-Oriented Design and Development Methodology by Papazoglou}
+\emph{Service-Oriented Design and Development by Papazoglou} również stanowi metodę projektowania architektury systemów informatycznych zorientowanych na usługi. Metoda opiera się ponadto na kilku podstawowych założeniach jak poniżej.
+\begin{itemize}
+\item{Zarządzanie całym cyklem życia usługi włączając: identyfikację, projektowanie, wdrożenie, wykrycie, stosowanie oraz utrzymywanie.}
+\item{Na etapie projektowania ustanowienie platformy i modelu programowania uwzględniającego połączenia, wdrażanie i zarządzanie usługami w obrębie określonego środowiska wykonawczego.}
+\item{Stosowanie najlepszych praktyk i narzędzie dla rozwiązań architektury, które są powtarzalne, przewidywalne oraz uwzględniają częste zmiany biznesowe.}
+\item{Dostarczanie wysokiej jakości wykonywalnych rozwiązań zorientowanych na usługi, które przestrzegają wymagań \emph{Qos} (\emph{Quality of Service})}.
+\end{itemize}
+
+Fundamentem dla powyższych założeń jest to, że cele biznesowe i wymagania zawsze powinny prowadzić do niższego poziomu abstrakcji - kolejno: projektowania, implementacji, testowania oraz transformacji procesów biznesowych w kompozytowe aplikacje. W ten sposób wymagania biznesowe mogą 
+być śledzone przez cały cykl życia - od celów biznesowych przez projektowanie oprogramowania oraz zasobów kodu, aż do kompozytowych aplikacji.
+
+\subsection{Fazy metodyki}
+Metodyka utworzona przez Papazoglou składa się z elementów (rys. ) bazujących na innych metodykach takich jak: \emph{Rational Unified Process}, \emph{Component-based development} oraz modelowania procesów biznesowych zaproponowanego przez Paula Harmona w 2003 roku\cite{PapaZog}. 
+
+\begin{figure}[h!tbp]
+\begin{centering}
+\includegraphics[width=8cm]{img/papazoglou_metoda_fazy.png}
+\caption[Fazy metodyki zaproponowej przez Papazoglou.]{Fazy metodyki zaproponowej przez Papazoglou.\cite{PapaZog}}\label{papazoglou_method_phases}
+\end{centering}
+\end{figure} 
+
+Podstawowym celem metodyki jest jak najlepsza integracja usług oraz osiągnięcie jak najwyższego poziomu ich interoperacyjności. Poszczególne fazy, które wchodzą w składy metodyki są wymienione poniżej.
+\begin{itemize}
+\item{Faza planowania (ang. \emph{Planning phase}) - określa prawdopodobieństwo wykonalności, naturę i zakres rozwiązań usługowych w kontekście danej organizacji.  Istotne jest, żeby technologia usługowa pasowała jak najlepiej do obecnego charakteru organizacji. Kluczowe w tej fazie jest dlatego bardzo dobre poznanie obecnego środowiska biznesowego. Czynności związane z fazą planowania obejmują analizę potrzeb biznesowych jako mierzalne cele,  przegląd obecnie wykorzystywanych technologii, ustalenie koncepcji wymagań dotyczących nowego środowiska i mapowanie tych wymagań na nowe lub dostępne implementacje.}
+
+\item{Faza analizy (ang. \emph{Analysis phase}) - w trakcie tej fazy wcześniej zebrane wymagania poddawane są analizie. Postawione uprzednio cele biznesowe podlegają przeglądowi. Analitycy biznesowi tworzą kompletny model procesów typu \emph{as-is} umożliwiając tym samym zapoznanie się z obecnie dostępnymi usługami i procesami biznesowymi. Po udostępnieniu tego modelu organizacja projektuje, symuluje i analizuje potencjalne zmiany do obecnego stanu systemu. Określa również wskaźnik rentowności \emph{ROI} (\emph{Return On Investment}) wynikający ze zmian w panujących procesach biznesowych. Produktem tej fazy jest model procesów biznesowych typu \emph{to-be}, które będą realizowane przez rozwiązania SOA. Przyjmuje się, że w skład fazy wchodzą następujące czynności: identyfikacja procesów (ang. \emph{Process identification}, określanie zakresu procesów (ang. \emph{Process scoping}), analiza luk biznesowych (ang. \emph{Business gap analysis}), analiza realizacji procesów (ang. \emph{Process realization analysis}).}
+
+\item{Faza projektowania (ang. \emph{Design phase}).
+Projektowanie systemu zorientowanego usługowo wymaga od projektantów dostarczenia modeli i dobrze zdefiniowanych interfejsów dla wszystkich ważnych komponentów usług. Projektowanie usług bazuje na podejściu wykonywania równolegle dwóch ścieżek: jedna do produkcji usług (ewentualnie z wcześniej utworzonych elementów), natomiast druga związana jest z asemblacją usług reużywalnych (wielokrotnego użytku). Projektowanie usług, podobnie jak analiza usług posiada swoje własne specjalne charakterystki i techniki. Faza projektowania rozpoczyna się od rozważenie kilku istotnych problemów: zarządzania usługami i ziarnistostością komponentów (ang. \emph{Managing Service and Component Granularity}, projektowanie reużywalności usług (ang. \emph{Designing for service reuse}) i ich kompozytowości (ang. \emph{Designing for service composability}).}
+
+\item{Faza specyfikacji usług (ang. \emph{Service specyfing phase}) - składa się z trzech równie istotnych elementów: specyfikacji strukturalnej (ang. \emph{Structural specification}), specyfikacji zachowań (ang. \emph{Behavioural specification}) oraz specyfikacji polityk (ang. \emph{Policy specification}). Podczas tej fazy, interfejsy usług, które zostały wyszczególnione w fazie analizy są definiowane na podstawie kryteriów powiązań (ang. \emph{coupling}) i spójności (ang. \emph{cohesion}).}
+
+\item{Faza specyfikacji procesów biznesowych (ang. \emph{Specifying business processes}) - dzieli się na 3 mniejsze etapy: opisywanie struktury procesów biznesowych (ang. \emph{Designing the business process structure}), opisywanie ról biznesowych (ang. \emph{Describing business roles}) oraz rozważanie zagadnień niefunkcjonalnych związanych z procesami biznesowymi (ang. \emph{Non-functional business process concerns}).}
+
+\item{Faza konstrukcji usług (ang. \emph{Service construction phase}) - obejmuje definicję opisów interfejsów oraz definicję opisów implementacji. Tworzone są usługi typu \emph{Web Service} lub przekształcane istniejące.}
+
+\item{Faza testowania usług (ang. \emph{Testing phase}) - testowanie usługi jest ogólnie scharakteryzowane jako walidacja mająca na celu sprawdzenie, że postawione wymagania zostały spełnione, a osiągnięte rezultaty są na akceptowalnym poziomie (zgodnie z obowiązującymi standardami założonymi w trakcie analizy, projektowania i implementacji).} 
+
+\item{Faza wdrażania usług (ang. \emph{Deployment phase}) - polega na publikacji interfejsu oraz definicji implementacji tej usługi. Jej zasięg obejmuje inne procesy, aplikacje oraz organizacje.}
+
+\item{Faza wykonania. (ang. \emph{Execution phase}) - w jej zakres wchodzi upewnienie się czy wszyscy wyznaczeni uczestnicy są w stanie wykonywać daną usługę. W tej fazie \emph{Web service'y} są już w pełni wdrożone i funkcjonalne. Podczas tego etapu usługobiorca może wynaleźć definicję usługi oraz wywołać wszystkie stowarzyszone z nią operacje.}
+
+\item{Faza monitorowania usług (ang. \emph{Monitoring phase}) - monitorowanie poziomu usług jest zdyscyplinowaną metodologią
+ustalenia dopuszczalnych poziomów usług, które dotyczą celów biznesowych, procesów i kosztów. W fazie tej następuje wykonanie pomiarów, monitorowanie, raportowanie i poprawianie jakości usług i aplikacji dostarczanych przez rozwiązania zorientowane usługowo.\cite{PapaZog}}
+\end{itemize}
+
+\subsection{Zalety i wady metody Papazoglou}
+Do zalet metody Papazoglou można zaliczyć przede wszystkim pokrywanie pełnego cyklu wytwarzania usług (ang. \emph{lifecycle coverage}). Metoda Papazoglou doskonale wspiera rozwijanie usług już istniejących dzięki opieraniu fazy analizy na strategii \emph{meet in the middle} oraz swojemu przyrostowemu charakterowi. 
+
+Metoda jest jednakże ciągle w fazie rozwoju i testów. Nie była wdrażana produkcyjnie. \cite{RamErvSOA}
+
+
+\section{Metoda Thomasa Erl'a}
+
+\subsection{Opis metody}
+Metoda Thomasa Erl'a stanowi pierwszą metodologię SOA, która w pełni zasługiwała na komercyjne stosowanie. Stanowi przewodnik jak krok po kroku przejść dwie podstawowe fazy - analizy i projektowania. Opiera się na metodzie \emph{top-down}.
+
+Analiza zorientowana usługowo według Thomasa Erl'a powinna być rozważana w trzech etapach: definicji wymagań biznesowych (ang. \emph{define business requirements}), identyfikacji w istniejących systemach elementów możliwych do automatyzacji (ang. \emph{identify  existing 
+automation systems})oraz przygotowania modelu usług kandydujących (ang. \emph{model candidate services}). 
+
+W pierwszej fazie analizy rozpatrywane są cele i zadania organizacji oraz rozważane potencjalne zmiany do obecnych aplikacji (sprawdzane są możliwości ich przekształcenia niezbędne do budowy systemu w oparciu o SOA). Analitycy biznesowi przygotowują model procesów biznesowych \emph{as-is} przeznaczony do wglądu przez wszystkie podmioty biorące udział w wytwarzaniu usługi. 
+
+W kolejnym etapie identyfikowane są elementy procesów organizacji, które mogą zostać poddane automatyzacji. Rozpatrywany jest również utworzony wcześniej model \emph{as-is} pod kątem utworzenia nowych lub modyfikacji istniejących procesów biznesowych. Efektem tego etapu jest przygotowanie modelu procesów biznesowych \emph{to-be}, który będzie implementowany.
+
+Ostatnią fazę analizy stanowi podproces modelowania usług, w którym są identyfikowani oraz uwzględniani na modelach \quotedblbase usług kandydujących\textquotedblright (ang. \emph{service candidates}). \cite{CompSOAMet}
+
+Utworzone modele \quotedblbase usług kandydujących\textquotedblright są wykorzystywane w następnym etapie - projektu zorientowanego usługowo (ang. \emph{Service oriented design}). \quotedblbase Usługi kandydujące\textquotedblright są wówczas szczegółowo specyfikowane i później realizowane jak \emph{Web service'y}.
+
+
+\subsection{Zalety i wady}
+Metodologia projektowania SOA zaproponowana przez Thomasa Erl'a może być używana jedynie w połączeniu z innymi metodologiami. Dostarcza opisy dotyczące zorientowanych usługowo faz analizy i projektu, ale nie precyzuje tak istotnych elementów jak rozpoczęcie projektu SOA oraz jak przeprowadzić analizę biznesową organizacji. Ponadto metoda Thomasa Erl'a nie specyfikuje wystarczająco wykorzystania elementów obecnego systemu. Ponadto role podmiotów biorących udział w działaniu systemu nie są spójnie określone.
+
+Do pozytywnych cech metody można zaliczyć fakt, że wspiera najpopularniejsze standardy i technologie takie jak: BPM, WSDL, WS-BPEL oraz WS-*. Metoda jest również łatwa do zaadaptowania ze względu na dość prosty algorytm stosowania. Metoda Thomasa Erl'a opiera się również na manifeście Agile, który wspiera \quotedblbase zwinne tworzenie oprogramowania\textquotedblright. \cite{OffCompSOAM, RamErvSOA}
+
 \chapter{Opracowanie metody projektowania systemów informatycznych o architekturze SOA}
-Kontrola złożoności systemu.
+\section{Wstęp}
+W poprzednim rozdziale został dokonany przegląd istniejących metodyk projektowania systemów informatycznych o architekturze SOA.
+
+Stopień złożoności biznesowej niektórych organizacji jest naprawdę wysoki. Bez stosowania odpowiedniej metodyki nie jest możliwe utworzenie sprawnie funkcjonującego systemu informatycznego. Występuje ich już wiele jednakże każda wykazuje pewne niedociągnięcia.
+
+Większość metodyk łączy opis sposobu przejścia od stanu początkowego do końcowego.  Każda z nich stanowi hierarchicznie uporządkowany zbiór elementów takich jak: fazy, aktywności, zadania oraz kroki. Opierają się również na wykorzystywaniu różnorodnych technik oraz proponowanych języków modelowania i notacji\cite{OffCompSOAM}.
+
+W rozdziale tym zostanie podjęta próba zdefiniowania nowej metodyki, a następnie porównanie jej z obecnie dostępnymi.
+
+
+\section{Metodyka MatSOA}
+MatSOA stanowi autorską metodykę projektowania architektury korporacyjnej. Obecne metodyki posiadają zarówno wiele wad jak i zalet. Różnią się podziałami na etapy, wykorzystywanymi technologiami oraz zakresem stosowalności. MatSOA stanowi połączenie najlepszych cech z już istniejących wzorców. Wprowadza również pewne własne elementy usprawniające projektowanie architektury korporacyjnej. 
+
+Cechą charakterzstzcynA MatSOA jest fakt, że do specyfikacji usług wykorzystuje język SoaML stanowiący rozszerzenie dla UML.
+
+W celu dokładnego opisania metodyki zostaną przedstawione jej poszczególne fazy oraz związane z nią notacje modelowania. Będą opisane również możliwe narzędzia, które wspierają proces projektowania w oparciu o MatSOA.
+
 
 \chapter{Weryfikacja koncepcji na przykładzie systemu bankowego}
+
+
 \section{Projektowanie systemu bankowego w oparciu o utworzoną koncepcję}
 \subsection{Opis ogólny}
 \subsection{Analiza systemu}
