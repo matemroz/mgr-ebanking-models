@@ -1,5 +1,5 @@
 \chapter{Wstęp}
-W ostatnich latach zarysowuje się coraz większa potrzeba wdrażania systemów informatycznych. Ta tendencja związana  jest przede wszystkim z usprawnianiem procesów biznesowych, ze wzrostem wydajności pracy, identyfikacją oraz minimalizacją błędów lub nieefektywnych działań w firmach. Występuje wiele ich rodzajów: CRM (ang. \emph{Customer Relationship Managment}) - wspomagające zarządzanie relacjami z klientami, ERP (ang. \emph{Enterprise Resource Planning}) – wspomagające zarządzanie i planowanie zasobami firmy czy też BPM (ang. \emph{Business Process Managment}) – wspomagające zarządzanie procesami biznesowymi. 
+W ostatnich latach zarysowuje się coraz większa potrzeba wdrażania systemów informatycznych. Ta tendencja związana  jest przede wszystkim z usprawnianiem procesów biznesowych, ze wzrostem wydajności pracy, identyfikacją oraz minimalizacją błędów lub nieefektywnych działań w firmach. Występuje wiele ich rodzajów: CRM (ang. \emph{Customer Relationship Management}) - wspomagające zarządzanie relacjami z klientami, ERP (ang. \emph{Enterprise Resource Planning}) – wspomagające zarządzanie i planowanie zasobami firmy czy też BPM (ang. \emph{Business Process Managment}) – wspomagające zarządzanie procesami biznesowymi. 
 
 Wprowadzanie systemów informatycznych do organizacji może wywoływać różnorodne efekty: techniczne (bezpośrednio związane z zastosowaniem techniki komputerowej - zwiększenie szybkości i dokładności przetwarzania danych, wzrost szczegółowości oraz poprawa bezpieczeństwa dla informacji), ekonomiczne (związane pośrednio ze wzrostem efektywności i szybkości podejmowania decyzji), organizacyjne (związane przede wszystkim z usprawnieniami struktury organizacyjnej i procesów zachodzących w przedsiębiorstwie - podniesienie sprawności obiegu dokumentów, eliminacja zbędnej pracy administracyjnej, poprawa koordynacji zadań oraz eliminacja błędów), socjopsychologiczne (związane z rozszerzeniem zakresu komunikacji pomiędzy pracownikami, usprawnieniem systemu ocen pracowniczych oraz polepszeniem kultury organizacyjnej). \cite{EfektyZasSys}
 
@@ -16,8 +16,8 @@ Zaprojektowana metodyka zostanie również poddana weryfikacji i testom przy two
 Oprócz założenia głównego dla pracy (utworzenie metodyki projektowania architektury korporacyjnej) postawiono kilka innych, które powinna realizować:
 \begin{itemize}
 \item{zdefiniowanie architektury korporacyjnej oraz wyjaśnienie terminów z nią powiązanych,}
-\item{omówienie obecnych metodyk wykorzystywanych do projektowania architektury korporacyjnej,}
 \item{omówienie języków wykorzystywanych do projektowania architektury korporacyjnej,}
+\item{omówienie obecnych metodyk wykorzystywanych do projektowania architektury korporacyjnej,}
 \item{weryfikacja koncepcji autorskiej metody przy wdrożeniu przykładowego systemu bankowego.}
 \end{itemize}
 
@@ -59,9 +59,9 @@ W przypadku organizacji gospodarczych za korporację może być uznawane przedsi
 Współcześnie uważa się, że korporacją - w rozumieniu architektury korporacyjnej - może być również tak zwane rozszerzone przedsiębiorstwo (\quotedblbase extended enterprise\textquotedblright). Ta kategoria przedsiębiorstwa definiowana jest jako zbiór jednostek prawnych, które są związane zintegrowanym łańcuchem wartości dodanej, dzięki czemu następuje zwiększenie wartości dostarczonej dla klientów.\cite{SobArchKorpDobrPr} 
 
 \section{Wprowadzenie do architektury korporacyjnej}
-Architektura korporacyjna (ang. \emph{enterprise architecture}) jest spojrzeniem na całość organizacji. Stanowi opis struktury i funkcji komponentów takich jak: zasoby danych, strategia, procesy biznesowe, jednostki organizacyjne, systemy informatyczne oraz infrastruktura teleinformatyczna. Opisuje stan obecny i docelowy oraz proces przejścia między tymi stanami w organizacji.\cite{ArchKorpSob}
+Architektura korporacyjna (ang. \emph{Enterprise architecture}) jest spojrzeniem na całość organizacji. Stanowi opis struktury i funkcji komponentów takich jak: zasoby danych, strategia, procesy biznesowe, jednostki organizacyjne, systemy informatyczne oraz infrastruktura teleinformatyczna. Opisuje stan obecny i docelowy oraz proces przejścia między tymi stanami w organizacji.\cite{ArchKorpSob}
 
-Mimo, że architektura korporacyjna jest kojarzona głównie z technologią informatyczną, to przede wszystkim nawiązuje do metod optymalizacji procesów, wskazując architekturę biznesową, metody zarządzania efektywnością oraz organizacyjne uporządkowanie procesów\cite{ArchKorpSzymSup}
+Mimo, że architektura korporacyjna jest kojarzona głównie z technologią informatyczną, to nawiązuje przede wszystkim do metod optymalizacji procesów. Wskazuje architekturę biznesową, metody zarządzania efektywnością oraz organizacyjne uporządkowanie procesów.\cite{ArchKorpSzymSup}
 
 Architekturze korporacyjnej przypisuje się kilka znaczeń: atrybutowe, rzeczowe oraz czynnościowe.
 
@@ -91,15 +91,15 @@ gdzie:
 \item{$M = (m_{1}, m_{2},..., m_{i})$ - zbiór miar, które charakteryzują architekturę korporacyjną. Używane są podczas tworzenia i utrzymywania architektury korporacyjnej w organizacji (dotyczące wymagań ilościowych: kosztów oraz wyników badań na temat efektywności działania organizacji).}
 \end{itemize}
 
-The Open Group w swoim opracowaniu dotyczącym TOGAF (\emph{The Open Group Architecture Framework}) wskazuje, że architektura korporacyjna składa się z następujących elementów:
+The Open Group w swoim opracowaniu dotyczącym TOGAF (\emph{The Open Group Architecture Framework}) wskazuje, że architektura korporacyjna składa się z następujących elementów.
 \begin{itemize}
-\item{Pryncypia architektury korporacyjnej (\textit{Enterprise Architecture Principles} - zbiór trwałych zasad opartych na strategii rozwoju organizacji, które stanowią reprezentacje całościowych potrzeb organizacji w zakresie tworzenia rozwiązań informatycznych.}
+\item{Pryncypia architektury korporacyjnej (\emph{Enterprise Architecture Principles}) - zbiór trwałych zasad opartych na strategii rozwoju organizacji, które stanowią reprezentacje całościowych potrzeb organizacji w zakresie tworzenia rozwiązań informatycznych.}
 \item{Domeny architektoniczne:
 \begin{itemize}
-\item{Architektura biznesowa (\textit{Business Architecture}) - opisuje strategię biznesową i sposoby zarządzania organizacją, jej strukturą organizacyjną oraz główne procesy biznesowe, a także relacje pomiędzy tymi elementami.}
-\item{Architektura danych (\textit{Data Architecture}) - opisuje główne typy i źródła danych niezbędnych do funkcjonowania organizacji.}
-\item{Architektura aplikacji (\textit{Applications Architecture}) - opisuje poszczególne aplikacje, ich rozlokowanie, wzajemne współdziałanie oraz relacje między tymi aplikacjami, a głównymi procesami biznesowymi organizacji.}
-\item{Architektura techniczna (\textit{Technology Architecture}) - opisuje komponenty infrastruktury technicznej, która stanowi podstawę funkcjonowania aplikacji (obejmuje ona m. in. systemy operacyjne, systemy zarządzania, bazami danych, serwery aplikacyjne, sprzęt komputerowy oraz infrastrukturę komunikacyjną).}
+\item{Architektura biznesowa (ang. \emph{Business Architecture}) - opisuje strategię biznesową i sposoby zarządzania organizacją, jej strukturą organizacyjną oraz główne procesy biznesowe, a także relacje pomiędzy tymi elementami.}
+\item{Architektura danych (ang. \emph{Data Architecture}) - opisuje główne typy i źródła danych niezbędnych do funkcjonowania organizacji.}
+\item{Architektura aplikacji ((ang. \emph{Applications Architecture}) - opisuje poszczególne aplikacje, ich rozlokowanie, wzajemne współdziałanie oraz relacje między tymi aplikacjami, a głównymi procesami biznesowymi organizacji.}
+\item{Architektura techniczna ((ang. \emph{Technology Architecture}) - opisuje komponenty infrastruktury technicznej, która stanowi podstawę funkcjonowania aplikacji (obejmuje ona m. in. systemy operacyjne, systemy zarządzania, bazami danych, serwery aplikacyjne, sprzęt komputerowy oraz infrastrukturę komunikacyjną).}
 \end{itemize}
 }
 \end{itemize}
@@ -117,14 +117,14 @@ Jednym z elementów, które różnicują te dwa pojęcia jest cel opracowania ar
 
 Architektura korporacyjna stanowi szersze pojęcie pod względem zakresu opracowania architektury. Pojęcie to obejmuje organizację jako całość, natomiast architektura korporacyjna IT skupia się jedynie na obszarze IT danej jednostki. 
 
-Istotnym elementem, o którym należy wspomnieć prowadząc rozważania na temat architektury korporacyjnej jest pojęcie \quotedblbase ładu architektonicznego (ang. \emph{enterprise architecture governance})\textquotedblright. Stanowi on przede wszystkim mechanizm dostarczający struktury, za pomocą której jest ustanawiany zbiór celów tworzenia architektury korporacyjnej oraz środków, poprzez które możliwe osiąganie jest ich osiąganie i monitorowanie wydajności realizacji. 
+Istotnym elementem, o którym należy wspomnieć prowadząc rozważania na temat architektury korporacyjnej jest pojęcie \quotedblbase ładu architektonicznego \textquotedblright (ang. \emph{Enterprise architecture governance}). Stanowi on przede wszystkim mechanizm dostarczający struktury, za pomocą której jest ustanawiany zbiór celów tworzenia architektury korporacyjnej oraz środków, poprzez które możliwe osiąganie jest ich osiąganie i monitorowanie wydajności realizacji. 
 
 Jego podstawowym celem w odniesieniu do systemów informatycznych jest zapewnienie zgodności podejmowanych decyzji z zakresu IT z opracowaną architekturą korporacyjną. 
 
 Dobrze wprowadzony ład architektoniczny zapewni niezbędną dla organizacji elastyczność architektury korporacyjnej.
 
 \section{Korzyści z wdrożenia architektury korporacyjnej}
-Budowy architektury korporacyjnej nie powinno rozpatrywać się jedynie jako działania z obszaru informatyki, ale jako całościowe przedsięwzięcie z pogranicza zarządzania, jak i informatyki. Opracowanie architektury korporacyjnej nie należy rozpatrywać jako cel sam w sobie, ale jako stan pośredni postrzegany jako narzędzie pomocnicze do wykonania określonych działań wewnątrz organizacji. Takie podejście może przynieść organizacji szereg korzyści
+Budowy architektury korporacyjnej nie powinno rozpatrywać się jedynie jako działania z obszaru informatyki, ale jako całościowego przedsięwzięcia z pogranicza zarządzania, jak i informatyki. Opracowanie architektury korporacyjnej nie należy rozważać jako cel sam w sobie, ale jako stan pośredni postrzegany jako narzędzie pomocnicze do wykonania określonych działań wewnątrz organizacji. Takie podejście może przynieść organizacji szereg korzyści
 \begin{itemize}
 \item{lepsze dopasowanie realizowanych rozwiązań informatycznych do potrzeb strategicznych danej organizacji,}
 \item{zapewnienie większej interoperacyjności systemów informatycznych,}
@@ -152,7 +152,7 @@ Opracowując architekturę korporacyjną można skorzystać z jednej dwóch ści
 
 \section{SOA}
 \subsection{Czym jest SOA?}
-Trudno o jednoznaczną definicję SOA (ang. Service Oriented Architecture – architektura zorientowana na usługi). Definicja SOA jest subiektywna, zależna od punktu widzenia. Z perspektywy biznesowej (odbiorcy usług) rozumieć ją można jako zestaw usług wspierających realizację procesów biznesowych. Odnosząc się do SOA z perspektywy IT widzimy ją jako infrastrukturę potrzebną do dostarczenia tych usług.
+Trudno o jednoznaczną definicję SOA (ang. \emph{Service Oriented Architecture} – architektura zorientowana na usługi). Definicja SOA jest subiektywna, zależna od punktu widzenia. Z perspektywy biznesowej (odbiorcy usług) rozumieć ją można jako zestaw usług wspierających realizację procesów biznesowych. Odnosząc się do SOA z perspektywy IT widzimy ją jako infrastrukturę potrzebną do dostarczenia tych usług.
 	
 Organizacja W3C (World Wide Web Consortium) podjęła próbę zdefiniowania SOA. Według niej SOA to zbiór komponentów, które mogą być wywoływane, i których interfejsy mogą być publikowane i wykrywane (ang. \emph{A set of components which can be invoked, and whose interface descriptions can be published and discovered}).
 
@@ -169,14 +169,14 @@ Przez ostatnie dekady tworzenie oprogramowania opierało się na kilku różnoro
 
 Te \quotedblbase czarne skrzynki\textquotedblright ukrywają swoje implementacje poprzez dostarczanie kontrolowanego dostępu do ich funkcjonalności poprzez interfejs. W pewnym momencie dostrzeżono, że ilość czarnych skrzynek jest zbyt duża. Problem ten rozwiązano grupując poszczególne \quotedblbase czarne skrzynki\textquotedblright w komponeenty.\cite{SteveMichSOA} 
 
-Określenia \quotedblbase SOA\textquotedblright lub \quotedblbase Architektura zorientowana na usługi\textquotedblright zostały po raz pierwszy wykorzystane w pracy naukowej analityka z firmy Garnter Yefim V. Natis w dniu 12 kwietnia 1996 roku. Wcześniej w 1994 roku Alexander Pasik stworzył istotne podstawy do zdefiniowania SOA. 
+Określenia \quotedblbase SOA\textquotedblright  lub \quotedblbase Architektura zorientowana na usługi\textquotedblright zostały po raz pierwszy wykorzystane w pracy naukowej analityka z firmy Garnter Yefim V. Natis w dniu 12 kwietnia 1996 roku. Wcześniej w 1994 roku Alexander Pasik stworzył istotne podstawy do zdefiniowania SOA. 
 
 Przełomowym momentem w historii powstawania SOA było utworzenie usług typu \emph{Web Service} przez firmę Microsoft w 2000 roku.\cite{JosSOAHist}
 
 \subsection{Budowa SOA}
-SOA wprowadza nowe podejście do budowy i zarządzania infrastrukturą informatyczną. Adaptacja SOA wiąże się z reguły ze zmianami w wielu obszarach funkcjonowania firmy. Ściśle wiąże się z panującymi w niej procesami biznesowymi i wymaga odpowiedniego dostosowania.\cite{SOAPAIesdasb}
+SOA wprowadza nowe podejście do budowy i zarządzania infrastrukturą informatyczną. Adaptacja SOA wiąże się z reguły ze zmianami w wielu obszarach funkcjonowania firmy. Ściśle wiąże się z panującymi w niej procesami biznesowymi i wymaga odpowiedniego dostosowania.
 
-Systemy opierające się na SOA składają się z zestawu aplikacji biznesowych (rys. \ref{PRZArchSOA}) pogrupowanych w niezależne komponenty, które komunikują się ze sobą wymieniając usługi. \cite{SOAwJBBC, SOAidntech}. 
+Systemy opierające się na SOA składają się z zestawu aplikacji biznesowych (rys. \ref{PRZArchSOA}) pogrupowanych w niezależne komponenty, które komunikują się ze sobą wymieniając usługi. \cite{SOAwJBBC}. 
 
 \begin{figure}[h!tbp]
 \begin{centering}
@@ -186,28 +186,29 @@ Systemy opierające się na SOA składają się z zestawu aplikacji biznesowych 
 \end{figure}
 
 Komponenty te można traktować jako tzw. „czarne skrzynki”. Klient korzystający z usługi otrzymuje jedynie interfejs. Implementacja udostępnionych metod nie jest dla niego istotna.
-Rozwiązania stosowane w SOA pomagają zapanować nad złożonością systemu. Podstawowa budowa SOA opiera się z reguły na szynie ESB (ang. Enterprsie Service Bus) integrującej poszczególne usługi. ESB jest efektywnym środkiem komunikacji w SOA. Pomaga uwolnić się od sieci powiązań „każdy z każdym”. \cite{SOAidntech} Odpowiada za przesyłanie komunikatów do odpowiednich komponentów. Rozbudowa systemu polega na dołączaniu nowych usług do szyny integracyjnej. 
+Rozwiązania stosowane w SOA pomagają zapanować nad złożonością systemu. Podstawowa budowa SOA opiera się z reguły na szynie ESB (ang. Enterprsie Service Bus) integrującej poszczególne usługi. ESB jest efektywnym środkiem komunikacji w SOA. Pomaga uwolnić się od sieci powiązań „każdy z każdym”. Odpowiada za przesyłanie komunikatów do odpowiednich komponentów. Rozbudowa systemu polega na dołączaniu nowych usług do szyny integracyjnej. 
 	
-Komunikaty zanim zostaną wysłane do punktu docelowego często poddawane są transformacjom i odpowiedniemu dostosowaniu za pomocą mediacji (ang. mediations) na ESB. Przetworzony komunikat odpowiada formie jakiej oczekuje dostawca usługi.
+Komunikaty zanim zostaną wysłane do punktu docelowego często poddawane są transformacjom i odpowiedniemu dostosowaniu za pomocą mediacji (ang. \emph{Mediations}) na ESB. Przetworzony komunikat odpowiada formie jakiej oczekuje dostawca usługi.
 	
-Rejestr SOA (ang. SOA registry) stanowi centralny punkt informacyjny na temat sposobu dostępu, definicji, reguł, bezpieczeństwa i innych danych wymaganych do wykorzystania usług udostępnionych w danym środowisku SOA. Zawiera informacje gdzie poszczególne komponenty SOA są umieszczone. Na jego podstawie ESB potrafi prawidłowo przekierowywać żądanie usługi i ewentualną odpowiedź, a aplikacje i usługi korzystające z usług składowych potrafią skonstruować jej prawidłowe wywołanie.\cite{SOAidntech, SOAfddum}
+Rejestr SOA (ang. \emph{SOA registry}) stanowi centralny punkt informacyjny na temat sposobu dostępu, definicji, reguł, bezpieczeństwa i innych danych wymaganych do wykorzystania usług udostępnionych w danym środowisku SOA. Zawiera informacje gdzie poszczególne komponenty SOA są umieszczone. Na jego podstawie ESB potrafi prawidłowo przekierowywać żądanie usługi i ewentualną odpowiedź, a aplikacje i usługi korzystające z usług składowych potrafią skonstruować jej prawidłowe wywołanie.
 	
-Istotnym elementem w systemach typu SOA jest repozytorium (ang. SOA repository). Stanowi on centralny „magazyn” dla elementów składowych usług takich jak: kod źródłowy, zestawy instalacyjne, specyfikacja itp. Repozytorium usług jest tworzone i wykorzystywane głównie na etapie projektowania usług. [SOAidntech]
+Istotnym elementem w systemach typu SOA jest repozytorium (ang.\emph{SOA repository}). Stanowi ono centralny „magazyn” dla elementów składowych usług takich jak: kod źródłowy, zestawy instalacyjne, specyfikacja itp. Repozytorium usług jest tworzone i wykorzystywane głównie na etapie projektowania usług.
 
 \subsection{Usługa sieciowa w SOA}
 Usługa sieciowa w SOA (ang. \textit{Web Service}) stanowi usługę świadczoną przez sieć – na przykład Internet. Składnik oprogramowania niezależny od platformy sprzętowej oraz implementacji. Może być zdefiniowany za pomocą języka opisu usług – na przykład bazującym na XML WSDL (ang. Web Service Definition Language), publikowana i wyszukiwana w rejestrze (np. UDDI) oraz wywoływana zdalnie przez opisujący ją interfejs. 
-Z reguły Web Service opiera się na konstrukcji uwzględniającej trzy typy komponentów (rys. [WSArchFunc]) : klienta usługi (ang. service requestor), dostawcę usługi (ang. service provider) oraz rejestr usług (service registry) lub broker usług (ang. service broker).  Transport danych w przypadku Web Service z reguły opiera się na HTTP lub HTTPS z wykorzystaniem SOAP. [IBMWebServiceInfo]
+Z reguły Web Service opiera się na konstrukcji uwzględniającej trzy typy komponentów (rys. \ref{WSArchFunc}) : klienta usługi (ang. service requestor), dostawcę usługi (ang. service provider) oraz rejestr usług (service registry) lub broker usług (ang. service broker).  Transport danych w przypadku Web Service z reguły opiera się na HTTP lub HTTPS z wykorzystaniem SOAP.
+
 Każdy z komponentów jest odpowiedzialny za pełnienie swojej roli:
 \begin{itemize}
 \item{dostawca usługi tworzy i wdraża Web Service. Publikuje również dostępność opisanego za pomocą WSDL Web Service’u w rejestrze usług (lub brokerze usług),}
-\item{rejestr usług lub broker usług odpowiada za rejestrację i kategoryzację opublikowanych usłgu. Dostarcza również możliwość ich wyszukiwania,} 
+\item{rejestr usług lub broker usług odpowiada za rejestrację i kategoryzację opublikowanych usług. Dostarcza również możliwość ich wyszukiwania,} 
 \item{klienci usług używają rejestru usług (lub brokera usług) do wykrycia Web Service’u opisanego za pomocą WSDL, a następnie wykonują zapytanie do dostawcy usługi. Dostawca usługi udziela odpowiedzi klientowi.}
 \end{itemize}
 
 \begin{figure}[h!tbp]
 \begin{centering}
 \includegraphics[width=11cm]{img/web_service.png}
-\caption[Usługa sieciowa w SOA (Web Service).]{Usługa sieciowa w SOA (Web Service). \cite{AnRTeqq}}\label{soa_arch}
+\caption[Usługa sieciowa w SOA (Web Service).]{Usługa sieciowa w SOA (Web Service). \cite{AnRTeqq}}\label{WSArchFunc}
 \end{centering}
 \end{figure}
 
@@ -224,19 +225,18 @@ Poszczególne warstwy w SOA to:
 \item{Warstwa integracji - kluczowy element architektury SOA. Jej podstawową funkcją jest zlecenie klientom usług i dostarczanie ich przez dostawców. Przepływ operacji jaki jest wykonywany w tej warstwie to: odbiór zlecenia od klienta, dostarczenie go do dystrybutora, a następnie dostarczenie do klienta.}
 \item{Warstwa jakościowa - obejmuje monitorowanie procesów biznesowych odnoszących się do podstawowych wskaźników wydajności danej organizacji. Pełni obserwację pozostałych warstw i informuje o zdarzeniach niezgodnych z zakładanymi.}
 \item{Warstwa Business Intelligence - stanowi podstawę do budowania rozwiązań Business Intelligence umożliwiających modelowanie danych analitycznych i eksploracje. W tej warstwie włączane są kluczowe zagadnienia związane z obiegiem informacji w przedsiębiorstwach.}
-\item{Warstwa zarządzania - odnosi się do zarządzania wszystkimi elementami cyklu życiu SOA oraz wszystkich warstw architektury (ze szczególnym naciskiem na warstwę jakościową). Wykorzystuje kluczowe wskaźniki wydajności lub efektywności (KPI) do egzekwowania wymagań jakościowych i funkcjonalnych wyspecyfikowanych przez przedsiębiorstwo.}
+\item{Warstwa zarządzania - odnosi się do zarządzania wszystkimi elementami cyklu życiu SOA oraz wszystkich warstw architektury (ze szczególnym naciskiem na warstwę jakościową). Wykorzystuje kluczowe wskaźniki wydajności lub efektywności (KPI) do egzekwowania wymagań jakościowych i funkcjonalnych wyspecyfikowanych przez przedsiębiorstwo.\cite{PlatIntGor}}
 \end{itemize}
-\cite{PlatIntGor}
 
 \subsection{Podstawowe zasady SOA}
-Systemy SOA mogą być bardzo różnorodne. SOA nie narzuca konkretnych technologii, a jej realizacja może odbywać się na wiele sposobów. Komunikacja mędzy komponentami w SOA może wykorzystywać różne kanały komunikacji: WS, HTTP, HTTPS, LDAP, FTP, IMAP, JMS, RMI. Budowa systemu SOA może wykorzystywać szynę integracyjną ESB lub broker (można również łączyć wiele szyn ESB ze sobą lub łączyć broker’y z ESB). Mimo tej dużej dowolności istnieje zestaw zasad, na których powinien opierać się każdy system SOA.
+Systemy SOA mogą być bardzo różnorodne. SOA nie narzuca konkretnych technologii, a jej realizacja może odbywać się na wiele sposobów. Komunikacja między komponentami w SOA może wykorzystywać różne kanały komunikacji: WS, HTTP, HTTPS, LDAP, FTP, IMAP, JMS, RMI. Budowa systemu SOA może wykorzystywać szynę integracyjną ESB lub broker (można również łączyć wiele szyn ESB ze sobą lub łączyć broker’y z ESB). Mimo tej dużej dowolności istnieje zestaw zasad, na których powinien opierać się każdy system SOA.
 \begin{itemize}
-\item{luźne powiązania - powiązania odnoszą się do połączeń lub relacji między poszczególnymi elementami. [SOAterlprD] Termin „luźne powiązania” (ang. Loose Coupling) stanowi jeden z fundamentów SOA. [SOAsdj102009] Odwołuje się do sposobu w jaki komponenty SOA współpracują ze sobą.  Zasada „luźnych powiązań” promuje niezależną konstrukcję i ewolucję usług. Każdy z komponentów może pracować autonomicznie wykonując określone czynności. Pracując razem, wymieniają między sobą komunikaty i mogą realizować to co jest zwykle możliwe przez duże, monolityczne aplikacje. „Luźne powiązania” pozwalają również na łatwą dekompozycję komponentów i wykorzystywanie ich do innych celów. [SOAterlprD, SOAidntech]}
-\item{interoperacyjność - interoperacyjność (ang. interoperability) opiera się na współpracy pomiędzy systemami. Zapewnienie interoperacyjności jest kolejną bardzo istotną zasadą, o której należy pamiętać tworząc systemy SOA. W miarę rozwoju poszczególnych systemów (np. poprzez dodawanie nowych komponentów) problem integracji staje się coraz trudniejszy do rozwiązania. Należy już na etapie projektowania ograniczać do minimum oraz wybierać odpowiednie protokoły, które dany system będzie obsługiwał. [SOAsdj102009]}
-\item{composability - zasada composability jest związana z zachowaniem odpowiednich relacji między komponentami. Systemy, które podążają za ta zasadą cechują się możliwością łączenia swoich komponentów w różne kombinacje w celu spełnienia postawionych wymagań. Umiejętność efektywnego komponowania usług z już istniejących jest kluczowym wymogiem dla osiągnięcia niektórych z najbardziej podstawowych celów przy tworzeniu systemów opierających się na architekturze zorientowanej na usługi. [SOAterlprD]}
-\item{reużywalność - każda tworzona usługa powinna zachowywać zasadę reużywalności (ang. reusability).  Opiera się ona na takim projektowaniu usług, aby była możliwość wielokrotnego jej wykorzystania do tworzenia kolejnych usług. [SOAsdj102009]}
-\item{kontraktowość usług - każda usługa powinna mieć zdefiniowany kontrakt (ang. service contract), który zawierany jest każdorazowo pomiędzy usługą, a jej konsumentem. Wyrażane są przez nie cele i możliwości danej uslugi. [SOAterlprD] W kontraktach znajdują się również opisy informacji oferowanych  i oczekiwanych przez usługi. [SOAinfoq10]}
-\item{abstrakcyjność - zasada abstrakcji (ang. abstraction) zakłada, że kontrakty usług mogą zawierać jedynie niezbędne informacje i mogą udostępniać jedynie te informacje, które są w nich zdefiniowane. Zasada ta podkreśla potrzebę ukrycia przez usługi tak wielu informacji jak to tylo możliwe. [SOAterlprD]}
+\item{luźne powiązania - powiązania odnoszą się do połączeń lub relacji między poszczególnymi elementami. Termin „luźne powiązania” (ang. \emph{Loose Coupling}) stanowi jeden z fundamentów SOA.\cite{SOAsdj102009} Odwołuje się do sposobu w jaki komponenty SOA współpracują ze sobą.  Zasada „luźnych powiązań” promuje niezależną konstrukcję i ewolucję usług. Każdy z komponentów może pracować autonomicznie wykonując określone czynności. Pracując razem, wymieniają między sobą komunikaty i mogą realizować to co jest zwykle możliwe przez duże, monolityczne aplikacje. „Luźne powiązania” pozwalają również na łatwą dekompozycję komponentów i wykorzystywanie ich do innych celów.}
+\item{interoperacyjność (ang. \emph{Interoperability}) - opiera się na współpracy pomiędzy systemami. Zapewnienie interoperacyjności jest kolejną bardzo istotną zasadą, o której należy pamiętać tworząc systemy SOA. W miarę rozwoju poszczególnych systemów (np. poprzez dodawanie nowych komponentów) problem integracji staje się coraz trudniejszy do rozwiązania. Należy już na etapie projektowania ograniczać do minimum oraz wybierać odpowiednie protokoły, które dany system będzie obsługiwał. \cite{SOAsdj102009}}
+\item{kompozycyjność - zasada kompozycyjności (ang. \emph{composability}) jest związana z zachowaniem odpowiednich relacji między komponentami. Systemy, które podążają za ta zasadą cechują się możliwością łączenia swoich komponentów w różne kombinacje w celu spełnienia postawionych wymagań. Umiejętność efektywnego komponowania usług z już istniejących jest kluczowym wymogiem dla osiągnięcia niektórych z podstawowych celów przy tworzeniu systemów opierających się na architekturze zorientowanej na usługi.}
+\item{reużywalność - każda tworzona usługa powinna zachowywać zasadę reużywalności (ang. Reusability).  Opiera się ona na takim projektowaniu usług, aby była możliwość wielokrotnego jej wykorzystania do tworzenia kolejnych usług. \cite{SOAsdj102009}}
+\item{kontraktowość usług - każda usługa powinna mieć zdefiniowany kontrakt (ang. \emph{Service contract}), który zawierany jest każdorazowo pomiędzy usługą, a jej konsumentem. Wyrażane są przez nie cele i możliwości danej usługi. W kontraktach znajdują się również opisy informacji oferowanych  i oczekiwanych przez usługi. [SOAinfoq10]}
+\item{abstrakcyjność - zasada abstrakcji (ang. \emph{abstraction}) zakłada, że kontrakty usług mogą zawierać jedynie niezbędne informacje i mogą udostępniać jedynie te informacje, które są w nich zdefiniowane. Zasada ta podkreśla potrzebę ukrycia przez usługi tak wielu informacji jak to tylo możliwe. [SOAterlprD]}
 \item{autonomiczność usług - autonomia usługi (ang. service autonomy) jest kolejnym paradygmatem projektowania systemów typu SOA. Termin ten odwołuje się do usług o podwyższonej niezależności od środowisk wykonawczych. [SOAsrvautoWCSS] Usługa powinna mieć możliwość podmiany środowiska wykonawczego z lekkiego prototypowego (ang. lightweight prototype) do pełnowymiarowego (ang. full-blown), w którym są już uruchomione inne usługi odwołujące do niej. Zgodnie z zasadą autonomii każda z usług może być wdrażana, wersjonowana i zarządzana niezależnie od innych. [SOAinfoq10]}
 \item{wykrywalność usług - zasada wykrywalności usług (ang. services discoverability) polega na tym, że usługi powinny być opisywane za pomocą meta danych w takich sposób, aby były efektywnie wyszukiwane, przetwarzane i interpretowane zarówno w czasie projektowania jak i wykonywania. [SOAinfoq10, SOAsrvautoWCSS]}
 \item{spójność i ziarnistość usług - interfejsy usług w systemach SOA powinny być tak zaprojektowane, aby wiązały tylko określony zbiór wymagań biznesowych. \cite{SOAsdj102009} Należy zadbać o optymalną ziarnistość interfejsów dla obsługiwanych typów i rozmiarów danych (ziarnistość danych wejściowych i wyjściowych), wartości biznesowej oraz funkcjonalności (domyślna i parametryzowana ziarnistość funkcjnonalności). [SOAdefgranaaImp]}
@@ -296,7 +296,7 @@ SoaML definiuje trzy różne podejścia dla specyfikowania usług:
 \end{centering}
 \end{figure}
 
-\item{Interfejsy usług (ang. \emph{Service interfaces}) - podejście bazujące na interfejsach usług skupia się na dwu i większej ilości interakcji między usługami, wymagając jednocześnie wyspecyfikowania zbioru powiązanych ze sobą interfejsów w ramach specyfikacji jednej usługi. \\TODO: Nie wiadomo czy dobrze przetłumaczone. Podejście to opiera się na komponentach i zezwala na połączenia między nimi z wykorzystaniem portów. Porty powinny specyfikować pożądane i dostarczane interfejsy. 
+\item{Interfejsy usług (ang. \emph{Service interfaces}) - podejście bazujące na interfejsach usług skupia się na dwu i większej ilości interakcji między usługami, wymagając jednocześnie wyspecyfikowania zbioru powiązanych ze sobą interfejsów w ramach specyfikacji jednej usługi. Opiera się na komponentach i zezwala na połączenia między nimi z wykorzystaniem portów. Porty powinny specyfikować pożądane i dostarczane interfejsy. 
 \begin{figure}[h!tbp]
 \begin{centering}
 \includegraphics[width=11cm]{img/service_interface_based_approach.png}
@@ -304,7 +304,7 @@ SoaML definiuje trzy różne podejścia dla specyfikowania usług:
 \end{centering}
 \end{figure}} 
 
-\item{Kontrakty usług(ang. \emph{contract interfaces}) - podejście w oparciu o kontrakty usług definiuje specyfikacje usług, które definiują role każdego uczestnika usługi (takich jak dostawców i klientów) oraz jakie interfejsy powinni implementować do realizacji ich ról w usłudze. Te interfejsy z kolei są typami portów uczestników, które zobowiązują ich do realizacji ról w danym kontrakcie usługi. Podejście to rozszerza elementy współpracy (ang. \emph{Collaboration}) UML do modelowania części strukturalnej interakcji usług. 
+\item{Kontrakty usług (ang. \emph{contract interfaces}) - podejście w oparciu o kontrakty usług definiuje specyfikacje usług, które definiują role każdego uczestnika usługi (takich jak dostawców i klientów) oraz jakie interfejsy powinni implementować do realizacji ich ról w usłudze. Te interfejsy z kolei są typami portów uczestników, które zobowiązują ich do realizacji ról w danym kontrakcie usługi. Podejście to rozszerza elementy współpracy (ang. \emph{Collaboration}) UML do modelowania części strukturalnej interakcji usług. 
 \begin{figure}[h!tbp]
 \begin{centering}
 \includegraphics[width=11cm]{img/service_contract_based_approach.png}
@@ -314,7 +314,7 @@ SoaML definiuje trzy różne podejścia dla specyfikowania usług:
 }
 \end{itemize}
 
-Wszystkie podejścia charakteryzują się wykorzystywaniem różnych elementów UML. Podstawowa różnica pomiędzy podejściem bazującym na kontrakcie i interfejsie polega na zdefiniowaniu interakcji pomiędzy uczestnikami niezależnie od nich w \emph{ServiceContract}. Element ten określa obowiązki wszystkich uczestników interakcji lub indywidualnie dla każdego z uczestników i zapytań. 
+Wszystkie podejścia charakteryzują się wykorzystywaniem różnych elementów UML. Podstawowa różnica pomiędzy podejściem bazującym na kontrakcie i interfejsie polega na zdefiniowaniu interakcji pomiędzy uczestnikami niezależnie od nich w \emph{ServiceContract}). Element ten określa obowiązki wszystkich uczestników interakcji lub indywidualnie dla każdego z uczestników i zapytań. 
 
 \subsection{Modelowanie z wykorzystaniem SoaML}
 SoaML wspiera modelowanie wymagań dla SOA w oparciu o specyfikowanie usług systemowych, indywidualnych usług dla interfejsów oraz specyfikację implementacji usług. Metamodel SoaML\cite{soaml_metamodel} rozszerza metamodel UML dla bezpośredniego modelowania usług w rozproszonych środowiskach. \cite{SoaMLErvBase}
@@ -330,9 +330,9 @@ SoaML charakteryzuje się dodatkowymi abstrakcjami\cite{PlatIntGor} i rozszerza 
 \begin{itemize}
 \item{Uczestnicy realizujący kontrakty (ang. \emph{Participants}) - na diagramach SoaML oznaczeni są stereotypem \emph{<<Paricipant>>}.}
 \item{Interfejsy usług (ang. \emph{Service interfaces}) - wykorzystywane do opisywania operacji dostarczanych i wymaganych do pełnej funkcjonalności usługi. Interfejs usługi może być wykorzystywany jako protokół dla portu usługi lub odpytywany port. Oznaczone są stereotypami \emph{<<ServiceInterface>>}.}
-\item{Kontrakty usług (ang. \emph{Service contracts} - wykorzystywane do opisywania wzorców interakcji między encjami usług. Umowa o świadczenie usług jest używana do modelowania porozumienia między dwiema lub większą ilością stron. Każda z usług z kontraktu posiada interfejs, który reprezentuje ją jako dostawcę bądź konsumenta. Oznaczone są stereotypami \emph{ServiceContract}}
+\item{Kontrakty usług (ang. \emph{Service contracts}) - wykorzystywane do opisywania wzorców interakcji między encjami usług. Umowa o świadczenie usług jest używana do modelowania porozumienia między dwiema lub większą ilością stron. Każda z usług z kontraktu posiada interfejs, który reprezentuje ją jako dostawcę bądź konsumenta. Oznaczone są stereotypami \emph{ServiceContract}}
 \item{Usługi architektur (ang. \emph{Services architecture}) - wyższy element widoku prezentujący zbiór elementów SOA. Oznaczany stereotypem <<ServicesArchitecture>>}
-\item{dane usług (ang. \emph{Service data}) - wykorzystywane do opisywania komunikatów dla usług i ich załączników. Element \quotedblbase Typ wiadomości\textquotedblright} (ang. \emph{Message Type}) jest używany do specyfikowania informacji wymienianych pomiędzy konsumentami usług i dostawcami. Określa rodzaj komunikatu. Oznaczany jest na diagramach jako stereotyp \emph{<<MessageType>>}. Załączniki są oznaczane jako stereotyp \emph{<<Attachment>>.}
+\item{Dane usług (ang. \emph{Service data}) - wykorzystywane do opisywania komunikatów dla usług i ich załączników. Element \quotedblbase Typ wiadomości\textquotedblright} (ang. \emph{Message Type}) jest używany do specyfikowania informacji wymienianych pomiędzy konsumentami usług i dostawcami. Określa rodzaj komunikatu. Oznaczany jest na diagramach jako stereotyp \emph{<<MessageType>>}. Załączniki są oznaczane jako stereotyp \emph{<<Attachment>>.}
 \item{Funkcjonalność (ang. \emph{Capabilities}) - kolejny zdefiniowany element SoaML. Na diagramach klas określa funkcjonalność lub zasoby jakie oferują uczestnicy architektury. Przedstawiany jest w postaci komponentu ze stereotypem \emph{capabilities}.\cite{SoaMLErvBase}}
 \end{itemize} 
 
@@ -341,7 +341,7 @@ SoaML charakteryzuje się dodatkowymi abstrakcjami\cite{PlatIntGor} i rozszerza 
 \subsection{Czym jest ArchiMate?}
 ArchiMate stanowi otwarty i niezależny język modelowania dla architektur korporacyjnych. Zapewnia instrumenty, aby umożliwić architektom przedsiębiorstwa opis, analizę i wizualizację relacji między domenami biznesu w jednoznaczny sposób. Pozwala ponadto na opisywanie procesów biznesowych, struktur organizacyjnych, przepływów informacji, systemów informatycznych oraz technicznej infrastruktury.
 
-ArchiMate to techniczny standard The Open Group.Jest wspierany przez różne narzędzia informatyczne do modelowania architektury korporacyjnej jak na przykład: Enterprise Architect, BizzDesign Architect, Archi, ARIS lub Microsoft Visio.\cite{OpenGrArch} 
+ArchiMate to techniczny standard The Open Group. Jest wspierany przez różne narzędzia informatyczne do modelowania architektury korporacyjnej jak na przykład: Enterprise Architect, BizzDesign Architect, ARIS lub Microsoft Visio.\cite{OpenGrArch} 
 
 ArchiMate bazuje na dwóch podstawowych założeniach:
 \begin{itemize}
@@ -663,10 +663,52 @@ W rozdziale tym zostanie podjęta próba zdefiniowania nowej metodyki, a następ
 \section{Metodyka MatSOA}
 MatSOA stanowi autorską metodykę projektowania architektury korporacyjnej. Obecne metodyki posiadają zarówno wiele wad jak i zalet. Różnią się podziałami na etapy, wykorzystywanymi technologiami oraz zakresem stosowalności. MatSOA stanowi połączenie najlepszych cech z już istniejących wzorców. Wprowadza również pewne własne elementy usprawniające projektowanie architektury korporacyjnej. 
 
-Cechą charakterzstzcynA MatSOA jest fakt, że do specyfikacji usług wykorzystuje język SoaML stanowiący rozszerzenie dla UML.
+Cechą charakterystyczną dla MatSOA jest fakt, że do specyfikacji usług wykorzystuje język SoaML stanowiący rozszerzenie dla UML. 
 
 W celu dokładnego opisania metodyki zostaną przedstawione jej poszczególne fazy oraz związane z nią notacje modelowania. Będą opisane również możliwe narzędzia, które wspierają proces projektowania w oparciu o MatSOA.
 
+\subsection{Fazy metodyki}
+Metodyka MatSOA składa się z sześciu głównych faz, których sekwencja została przedstawiona na rys. \ref{soam_lifecycle}. 
+
+Faza analizy ma równoległy przebieg. Jednocześnie w trakcie analizy organizacji oraz wykrywania usług zachodzi analiza obecnych systemów. Obydwa podejścia analizy - \emph{top-down} oraz \emph{bottom-up} - są następnie konsolidowane. W kolejnym etapie projektowane są usługi, które z kolei są wykorzystywane do przygotowania procesów biznesowych.
+
+\begin{figure}[h!tbp]
+\begin{centering}
+\includegraphics[width=12cm]{img/SOAM.png}
+\caption[Fazy metodyki MatSOA.]{Fazy metodyki MatSOA.}\label{soam_lifecycle}
+\end{centering}
+\end{figure}
+
+W tej sekcji pracy zostaną omówione poszczególne fazy metodyki MatSOA.
+
+
+\subsection*{Analiza organizacji}
+W celu identyfikacji wymagań organizacji są brane pod uwagę takie elementy jak: strategie biznesowe, procesy biznesowe oraz domeny funkcjonalne. Wszystkie aktywności włączone w tę fazę są rozpatrywane przez analityka biznesowego. 
+
+W pierwszym opcjonalnym kroku analizy organizacji w metodzie MatSOA tworzony jest BMM \emph{Business motivation model}. Stanowi on część opisu organzacji. Umożliwia uchwycenie i przedstawienie w prosty sposób planów biznesowych. Do podstawowych celów BMM zalicza się:
+\begin{itemize}
+\item{identyfikację czynników, które motywują powstanie planu,}
+\item{identyfikację oraz definicję elementów oraz planu,}
+\item{określenie, jak wymienione elementy są ze sobą powiązane.}
+\end{itemize}
+
+Grupa OMG jako pierwsza poddała BMM formalnej specyfikacji w 2005 roku. Utworzyła również schemat, na którm można opierać się przy tworzeniu BMM (rys. \ref{BMM_schem})\cite{AnaWesHal}.
+
+\begin{figure}[h!tbp]
+\begin{centering}
+\includegraphics[width=12cm]{img/BMM.png}
+\caption[Schemat ogólny BMM utworzony przez organizację OMG.]{Schemat ogólny BMM utworzony przez organizację OMG.\cite{BMMOmg}}\label{BMM_schem}
+\end{centering}
+\end{figure}
+
+
+W kolejnej fazie analizy organizacji na podstawie BMM są identyfikowane procesy biznesowe. 
+
+\subsection*{Analiza obecnych systemów}
+\subsection*{Wykrywanie usług}
+\subsection*{Konsolidacja}
+\subsection*{Projektowanie usług}
+\subsection*{Przygotowanie procesów}
 
 \chapter{Weryfikacja koncepcji na przykładzie systemu bankowego}
 
