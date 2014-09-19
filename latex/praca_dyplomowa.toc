@@ -61,4 +61,4 @@
 \contentsline {subsection}{\numberline {6.1.5}Testy}{52}{subsection.6.1.5}
 \contentsline {section}{\numberline {6.2}Cel systemu w odniesieniu do zaprojektowanej koncepcji}{52}{section.6.2}
 \contentsline {chapter}{\numberline {7}Podsumowanie i wnioski}{53}{chapter.7}
-\contentsline {chapter}{Bibliografia}{54}{chapter*.9}
+\contentsline {chapter}{Bibliografia}{54}{chapter*.8}
