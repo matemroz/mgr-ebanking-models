@@ -15,7 +15,7 @@
 \contentsline {subsection}{\numberline {2.6.4}Us\IeC {\l }uga sieciowa w SOA}{17}{subsection.2.6.4}
 \contentsline {subsection}{\numberline {2.6.5}Warstwy architektury SOA}{18}{subsection.2.6.5}
 \contentsline {subsection}{\numberline {2.6.6}Podstawowe zasady SOA}{19}{subsection.2.6.6}
-\contentsline {subsection}{\numberline {2.6.7}Korporacyjna szyna us\IeC {\l }ug - ESB}{21}{subsection.2.6.7}
+\contentsline {subsection}{\numberline {2.6.7}Korporacyjna szyna us\IeC {\l }ug - ESB}{22}{subsection.2.6.7}
 \contentsline {section}{\numberline {2.7}Adaptacja SOA w architekturze korporacyjnej}{22}{section.2.7}
 \contentsline {chapter}{\numberline {3}Przegl\IeC {\k a}d j\IeC {\k e}zyk\IeC {\'o}w do projektowania system\IeC {\'o}w informatycznych o architekturze SOA}{24}{chapter.3}
 \contentsline {section}{\numberline {3.1}Wst\IeC {\k e}p}{24}{section.3.1}
@@ -30,7 +30,7 @@
 \contentsline {subsection}{\numberline {3.4.2}BPEL}{32}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}UML}{33}{subsection.3.4.3}
 \contentsline {subsection}{\numberline {3.4.4}IDEF}{34}{subsection.3.4.4}
-\contentsline {chapter}{\numberline {4}Metodyki projektowania rozwi\IeC {\k a}za\IeC {\'n} w architekturze us\IeC {\l }ugowej}{35}{chapter.4}
+\contentsline {chapter}{\numberline {4}Metody projektowania rozwi\IeC {\k a}za\IeC {\'n} w architekturze us\IeC {\l }ugowej}{35}{chapter.4}
 \contentsline {section}{\numberline {4.1}Wst\IeC {\k e}p}{35}{section.4.1}
 \contentsline {section}{\numberline {4.2}RUP4SOA}{35}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Czym jest RUP?}{35}{subsection.4.2.1}
@@ -38,27 +38,27 @@
 \contentsline {subsection}{\numberline {4.2.3}Zalety i wady RUP4SOA}{37}{subsection.4.2.3}
 \contentsline {section}{\numberline {4.3}SOMA}{38}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Czym jest SOMA?}{38}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Fazy metodyki SOMA}{38}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.2}Fazy metody SOMA}{38}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Produkty SOMA}{41}{subsection.4.3.3}
 \contentsline {subsection}{\numberline {4.3.4}Zalety i wady SOMA}{41}{subsection.4.3.4}
 \contentsline {section}{\numberline {4.4}Metoda Papazoglou}{42}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Service-Oriented Design and Development Methodology by Papazoglou}{42}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Fazy metodyki}{43}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.2}Fazy metody}{43}{subsection.4.4.2}
 \contentsline {subsection}{\numberline {4.4.3}Zalety i wady metody Papazoglou}{45}{subsection.4.4.3}
 \contentsline {section}{\numberline {4.5}Metoda Thomasa Erl'a}{46}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}Opis metody}{46}{subsection.4.5.1}
 \contentsline {subsection}{\numberline {4.5.2}Zalety i wady}{46}{subsection.4.5.2}
 \contentsline {chapter}{\numberline {5}Opracowanie metody projektowania system\IeC {\'o}w informatycznych o architekturze SOA}{48}{chapter.5}
 \contentsline {section}{\numberline {5.1}Wst\IeC {\k e}p}{48}{section.5.1}
-\contentsline {section}{\numberline {5.2}Metodyka MatSOA}{48}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Fazy metodyki}{49}{subsection.5.2.1}
-\contentsline {chapter}{\numberline {6}Weryfikacja koncepcji na przyk\IeC {\l }adzie systemu bankowego}{52}{chapter.6}
-\contentsline {section}{\numberline {6.1}Projektowanie systemu bankowego w oparciu o utworzon\IeC {\k a} koncepcj\IeC {\k e}}{52}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Opis og\IeC {\'o}lny}{52}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Analiza systemu}{52}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Implementacja}{52}{subsection.6.1.3}
-\contentsline {subsection}{\numberline {6.1.4}Proces wdro\IeC {\.z}enia}{52}{subsection.6.1.4}
-\contentsline {subsection}{\numberline {6.1.5}Testy}{52}{subsection.6.1.5}
-\contentsline {section}{\numberline {6.2}Cel systemu w odniesieniu do zaprojektowanej koncepcji}{52}{section.6.2}
-\contentsline {chapter}{\numberline {7}Podsumowanie i wnioski}{53}{chapter.7}
-\contentsline {chapter}{Bibliografia}{54}{chapter*.8}
+\contentsline {section}{\numberline {5.2}Metoda MatSOA}{48}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Fazy metody}{49}{subsection.5.2.1}
+\contentsline {chapter}{\numberline {6}Weryfikacja koncepcji na przyk\IeC {\l }adzie systemu bankowego}{54}{chapter.6}
+\contentsline {section}{\numberline {6.1}Projektowanie systemu bankowego w oparciu o utworzon\IeC {\k a} koncepcj\IeC {\k e}}{54}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Opis og\IeC {\'o}lny}{54}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Analiza systemu}{54}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Implementacja}{54}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}Proces wdro\IeC {\.z}enia}{54}{subsection.6.1.4}
+\contentsline {subsection}{\numberline {6.1.5}Testy}{54}{subsection.6.1.5}
+\contentsline {section}{\numberline {6.2}Cel systemu w odniesieniu do zaprojektowanej koncepcji}{54}{section.6.2}
+\contentsline {chapter}{\numberline {7}Podsumowanie i wnioski}{55}{chapter.7}
+\contentsline {chapter}{Bibliografia}{56}{chapter*.8}
