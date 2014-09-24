@@ -369,15 +369,6 @@ Następnie powinno zidentyfikować się przepływy pomiędzy różnymi encjami \
 
 W kolejnym kroku rozwijane są szczegóły ogólnego modelu biznesowego. Następuje przejście z \emph{Business Model Canvas} na \emph{Enterprise Canvas}. 
 
-\begin{itemize}
-\item{The Value Proposition (EC: value-proposition) is represented by one or more Product entities, with related Value entities.}
-\item{We have already mapped the Key Partner and Customer Segment entities as Business Actor / Business Role / Business Interface entities.}
-\item{All of the Enterprise Canvas cells are mapped to Business Function entities with appropriate names (default: same names as in Enterprise Canvas); these also represent in part the Key Activities cell of the Business Model Canvas.}
-\item{All of the Enterprise Canvas interface cells (customer-relations, customer-channels, value-return; supplier-relations, supplier-channels, value-outlay) also include Business Interaction entities (which may optionally replace the respective Business Function entity), each linked to a Business Interface entity, representing the channels and other interfaces to the overall service.}
-\item{Each of the six channels (Business Interface entities) links to one or more Business Object entities, which in turn link to the Business Interface of a Customer Segment or Key Partner; each Business Object may optionally be linked to a Meaning entity.}
-\item{Each Business Object entity attached to a customer-channel Business Interface should also be linked to one or more Product entities; the same may optionally apply to Business Object entities attached to the supplier-channel Business Interface.}
-\item{The Business Object entities associated with a supplier-channel and value-outlay, or customer-channel and value-return, should be linked by a Contract entity, representing the required relationship between the respective Enterprise Canvas main-channel and back-channel (e.g. Business Model Canvas linkage between Value Proposition, Customer Channel. Customer Segment and Revenue Stream).}
-\end{itemize}
 
 \section{Inne języki}
 
@@ -704,18 +695,18 @@ Do podstawowych elementów BMM zalicza się: stan końcowy (ang. \emph{Ends}) - 
 
 W kolejnej fazie analizy organizacji na podstawie BMM są identyfikowane procesy biznesowe niezbędne do wspierania jej strategii działania. 
 
-Następnie na podstawie ustalonych kryteriów (np. częstość zmian w procesach, obecny poziom możliwej integracji z istniejącymi systemami oraz stopień, w którym procesy mogą być z góry określane i wydzielane) wyszczególniany jest inny typ lub części procesów biznesowych, które powinny być wspierane przez SOA.
+Następnie na podstawie ustalonych kryteriów (np. częstość zmian w procesach, obecny poziom możliwej integracji z istniejącymi systemami oraz stopień, w którym procesy mogą być z góry określane i wydzielane) wyszczególniany jest inny typ lub części procesów biznesowych, które powinny być wspierane przez systemy SOA.
 
 Procesy biznesowe definiuje się jako ustrukturyzowany i zmierzony ciąg czynności, który jest zaprojektowany do osiągnięcia określonego wyniku. \cite{PlatIntGor} Każda z czynności poddawana jest klasyfikacji zgodnie z tym czy może być wykonywana automatycznie (\emph{Business service}), czy wymaga interakcji między użytkownikiem, a systemem (\emph{User interaction}) oraz czy jej działanie ma charakter wyłącznie ręczny (\emph{Manual}).
 
 MatSOA zakłada identyfikowanie mierzalnych, udokumentowanych i powtarzalnych procesów. Modele procesów biznesowych powinny być budowane na różnych poziomach szczegółowości i mieć budowę hierarchiczną. Modele wysokiego poziomu powinny określać przepływ pracy pomiędzy działami firmy, a w dalszej kolejności być dekomponowane na procesy, w których wykonawcami są pojedyncze osoby. 
 
-Zalecaną notację modelowania stanowi BPMN (\emph{Business Process Modelling` Notation}). Przepływ danych powinien być określony na tyle ile to możliwe na poziomie modelu procesu.
+Zalecaną notację modelowania stanowi BPMN (\emph{Business Process Modelling Notation}). Przepływ danych powinien być określony na tyle ile to możliwe na poziomie modelu procesu. Każdy obiekt danych wykorzystywany w procesie powinien być uwzględniany na tworzonym modelu danych.
 
-Równolegle do modelowania procesów biznesowych powstaje warstwowy model domen funkcjonalnych (ang. {FD - Functional Domains}). Proponowaną notacją dla FD są diagramy przypadków użycia UML. Każda aktywność modelu procesu biznesowego jest przypisywana do domeny funkcjonalnej. Modelowanie procesów biznesowych i FD powinno być wykonywane iteracyjnie. Połączenia aktywności procesów i domen funkcjonalnych pomagają zapewnić reużywalność poszczególnych usług. 
+Równolegle do modelowania procesów biznesowych powstaje warstwowy model domen funkcjonalnych (ang. {FD - Functional Domains}). Proponowaną notacją dla FD są diagramy przypadków użycia UML. Każda aktywność modelu procesu biznesowego jest przypisywana do domeny funkcjonalnej. Modelowanie procesów biznesowych i FD powinno być wykonywane iteracyjnie. Połączenia aktywności procesów i domen funkcjonalnych pomaga później w zapewnieniu reużywalności usług.
 
 \subsection*{Wykrywanie usług}
-Na podstawie przeanalizowanych procesów biznesowych i domen funkcjonalnych mogą zostać wykryte operacje usług, które wspierają poszczególne aktywności procesu. Istotną rolę w tej fazie odgrywa FD. Dla każdego FD wszystkie przypisane aktywności analizowane są jako klasy. Dla usług zadań operacje usług, które wspierają dane aktywności są modelowane w modelu usługi. Dla zadań użytkownika interfejs użytkownika jest przypisywany in
+Na podstawie przeanalizowanych procesów biznesowych i domen funkcjonalnych mogą zostać wykryte operacje usług, które wspierają poszczególne aktywności procesów. Istotną rolę w tej fazie odgrywa FD. Dla każdego FD wszystkie przypisane aktywności analizowane są zgodnie z ich rodzajem. Dla zadań usługowych, operacje usługi wspierające poszczególne aktywności są uwzględniane na modelu usługi. Dla zadań użytkownika specyfikowany jest interfejs użytkownika.
 
 \subsection*{Analiza obecnych systemów i zasobów}
 Analiza istniejących systemów oraz zasobów stanowi bardzo istotny etap metody MatSOA. Umiejętne przeprowadzenie tej fazy może znacznie zredukować koszty wprowadzania nowych funkcjonalności. Na tym etapie identyfikowane są elementy takie jak: istniejące aplikacje, standardy branżowe, modele oraz pozostałe zasoby niezbędne do realizacji usług. 
