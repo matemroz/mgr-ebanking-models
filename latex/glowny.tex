@@ -675,7 +675,7 @@ W tej sekcji pracy zostaną omówione poszczególne fazy metody MatSOA.
 \subsection*{Analiza organizacji}
 W celu identyfikacji wymagań organizacji należy rozpatrzyć poszczególne aspekty z nią związane: strategie biznesowe, procesy biznesowe oraz domeny funkcjonalne. W wypadku MatSOA analiza organizacji ma przebieg kilku etapowy. Powinna być w pełni przeprowadzana przez analityka biznesowego.
 
-W pierwszym kroku analizy organizacji w przypadku metody MatSOA tworzony jest BMM  (\emph{Business Motivation Model}). Stanowi on część opisu organizacji. Umożliwia uchwycenie i przedstawienie w prosty sposób planów biznesowych. Do podstawowych celów BMM zalicza się:
+W pierwszym kroku analizy organizacji w przypadku metody MatSOA tworzony jest motywacyjny model biznesoy (BMM, \emph{Business Motivation Model}). Stanowi on część opisu organizacji. Umożliwia uchwycenie i przedstawienie w prosty sposób planów biznesowych. Do podstawowych celów BMM zalicza się:
 \begin{itemize}
 \item{identyfikację czynników, które powodują konieczność utworzenia planu,}
 \item{identyfikację oraz definicję elementów niezbędnych do wykorzystania w układanym planie,}
@@ -686,12 +686,14 @@ BMM został stworzony przez BRG (\emph{Business Rules Group}), a następnie w 20
 
 \begin{figure}[h!tbp]
 \begin{centering}
-\includegraphics[width=12cm, height=11cm]{img/BMM.png}
+\includegraphics[width=12cm, height=11cm]{img/BMM_PL.png}
 \caption[Schemat ogólny BMM utworzony przez organizację OMG.]{Schemat ogólny BMM utworzony przez organizację OMG. \cite{BMMOmg}}\label{BMM_schem}
 \end{centering}
 \end{figure}
 
-Do podstawowych elementów BMM zalicza się: stan końcowy (ang. \emph{Ends}) - coś co dana organizacja chce osiągnąć, wizję (ang. \emph{Vision}) - ogólne przedstawienie pożądanych osiągnięć, cele (ang. \emph{Goals}) - wynikają z utworzonej wcześniej wizji, zadania (ang. \emph{Objectives}) - wynikają z celów postawionych przez organizację, misję (ang. \emph{Mission}), strategie (ang. \emph{Strategies}) i taktyki (ang. \emph{Tactics}). \cite{AnaWesHal}
+Motywacyjny model biznesu stanowi element integrujący względem innych modeli (np. modeli procesów biznesowych, modeli reguł biznesowych) i nie jest uwarunkowany (zależna) metodycznie od innych standardów. BMM stanowi pewnego rodzaju ramę koncepcyjną pozwalającą stworzyć repozytorium modeli wspólnie odwzorowujących model biznesowy danej organizacji. W BMM istotną rolę odgrywa wspólny słownik pojęć biznesowych zapewniający spójność semantyczną tworzonych modeli.
+
+Do podstawowych elementów BMM zalicza się: stan oczekiwany (ang. \emph{Ends}) - coś co dana organizacja chce osiągnąć, wizję (ang. \emph{Vision}) - ogólne przedstawienie pożądanych osiągnięć, cele (ang. \emph{Goals}) - wynikają z utworzonej wcześniej wizji, zadania (ang. \emph{Objectives}) - wynikają z celów postawionych przez organizację, misję (ang. \emph{Mission}), strategie (ang. \emph{Strategies}) i taktyki (ang. \emph{Tactics}). \cite{AnaWesHal}
 
 W kolejnej fazie analizy organizacji na podstawie BMM są identyfikowane procesy biznesowe niezbędne do wspierania jej strategii działania. 
 
@@ -723,18 +725,42 @@ Konsolidacja operacji usług jest także wykonywana przez FD oraz prowadzona prz
 
 
 \subsection*{Projektowanie usług}
-Po ustaleniu modelu operacji usług, poszczególne usługi mogą zostać zaprojektowane. Zazwyczaj usługa zawiera kilka operacji, dlatego operacje usług muszą być odpowiednio pogrupowane. W tym celu architekt oprogramowania używa zasad specyficznych dla każdej klasy usług. Każda operacja klasy "interakcji z użytkownikiem" jest zazwyczaj reprezentowana przez pojedynczą usługę. Operacje zarządzania danymi są grupowane na podstawie podmiotów biznesowych.  Następnie tylko operacje wywodzące się z tego samego FD są rozpatrywana przy grupowaniu. Kiedy usługi są zaprojektowane, pryncypia które nie mogą być zagwarantowane podczas wcześniejszych kroków muszą być wprowadzane. Dla każdej usługi architekt oprogramowania musi rozważyć czy zaliczyć go do bezstanowych (ang.\emph{Stateless}), czy usługi są "luźno połączone" (ang. \emph{Loosely coupled}) oraz czy istnieja operacje typu \emph{rollback} do wprowadzania mechanizmów transakcyjnych. Do manipulowania usługami, architekt oprogramowania może wykorzystywać takie operacje jak  unifikacja (ang. \emph{Unification}), intersekcja (ang. \emph{intersection}), dekompozycja (ang. \emph{Decomposition}), podzbioru (ang. \emph{Subset}) oraz substrakcji (ang. \emph{Substraction}). 
+Po ustaleniu modelu operacji usług, poszczególne usługi mogą zostać zaprojektowane. Zazwyczaj usługa zawiera kilka operacji, dlatego operacje usług muszą być odpowiednio pogrupowane. W tym celu architekt oprogramowania używa zasad specyficznych dla każdej klasy usług. Każda operacja klasy "interakcji z użytkownikiem" jest zazwyczaj reprezentowana przez pojedynczą usługę. Operacje zarządzania danymi są grupowane na podstawie podmiotów biznesowych.  Następnie tylko operacje wywodzące się z tego samego FD są rozpatrywana przy grupowaniu. 
+
+Kiedy usługi są zaprojektowane, pryncypia które nie mogą być zagwarantowane podczas wcześniejszych kroków muszą być wprowadzane. Dla każdej usługi architekt oprogramowania musi rozważyć czy zaliczyć go do bezstanowych (ang.\emph{Stateless}), czy usługi są "luźno połączone" (ang. \emph{Loosely coupled}) oraz czy istnieja operacje typu \emph{rollback} do wprowadzania mechanizmów transakcyjnych. Do manipulowania usługami, architekt oprogramowania może wykorzystywać takie operacje jak  unifikacja (ang. \emph{Unification}), intersekcja (ang. \emph{intersection}), dekompozycja (ang. \emph{Decomposition}), podzbioru (ang. \emph{Subset}) oraz substrakcji (ang. \emph{Substraction}). 
 Jeśli usługi powstaną zbyt rozbudowane należy podzielić je i wcześniejsze kroki wykonać ponownie. Ostatecznie usługi są wdrożone i przetestowane. 
 
 \subsection*{Choreografia procesów}
 Po tym jak usługi zostaną zdefiniowane procesy muszą być przygotowane do działania przez programistów. Operacje usług, powinny być przypisane do każdej aktywności wspieranej przez usługę. Na tym etapie także mechanizmy przechwytywania wyjątków powinny być również uwzględnione na modelach procesów. Przepływ danych musi być zweryfikowany dla zapewnienia wykonywalności. Jeśli konieczne mediacje danych powinny zostać również zbudowane.
+
 Ostatecznie wykorzystywane są narzędzia do przetłumaczenia języka modelowania BPMN na WS-BPEL. Interfejsy użytkowników, które były zaprojektowane wcześniej powinny być również wdrożone do specyfikacji procesów. Zazwyczaj te kroki są silnie zależne od infrastruktury pośredniczącej (ang. \emph{Middleware architecture}).
 
 \chapter{Weryfikacja koncepcji na przykładzie systemu bankowego}
-
+\section{Wstęp}
+Systemy bankowe często charakteryzują się dużą złożonością i panuje w nich wiele różnorodnych procesów biznesowych. Odpowiednio zaprojektowany system jest więc niezbędny we współczesnej bankowości.
+ 
+W rozdziale metoda MatSOA zostanie poddana weryfikacji pod względem przydatności do tworzenia tego typu systemów. Systemy bankowe to dziedzina bardzo szeroka dlatego zostanie przedstawiony projekt w oparciu o wszystkie fazy autorskiej metody tylko niewielkiej części systemu. 
 
 \section{Projektowanie systemu bankowego w oparciu o utworzoną koncepcję}
-\subsection{Opis ogólny}
+W pracy zostanie przedstawiona wymyślona przez autora organizacja, dzięki której będzie szansa na zaprezentowanie pełni możliwości metody MatSOA.
+
+\subsection{Opis sytuacji biznesowej}
+FrostRes stanowi niewielki bank krajowy. Ze względu na krótki pobyt na rynku pełni tylko podstawową liczbę usług związanych przede wszystkim z utrzymywaniem kont klientów i wykonywaniem przelewów krajowych. 
+ 
+Bank posiada obecnie system informatyczny, jednakże nie jest on wystarczający na znaczną ilość klientów, która stale się zwiększa. Wymaga także modernizacji związanej z wprowadzonymi ustawami rządowymi. 
+
+W obecnej chwili system umożliwia zarządzanie kontami klientów (otwarcie i zamknięcie konta, pobranie historii działań wykonywanych na koncie) oraz obsługę transakcji finansowych (przelewy krajowe, wpłata i wypłata pieniędzy, pobranie historii płatności). 
+
+Zarząd banku prognozuje wykonanie szeregu zmian w istniejącym systemie. Ze względu na fakt, że organizacja dopiero się rozwija i ma ograniczone finanse zdecydowano się jak na razie na wprowadzenie tylko jednej nowej usługi - przelewów międzynarodowych Wymogiem jest, aby kraje uczestniczące w przelewach należały do organizacji SEPA oraz posiadały tą samą walutę. Oprócz tego ustalono, że system po modernizacji ma być w pełni zgodny z pryncypiami SOA. 
+
+Inna istotna zmiana związana jest z nową ustawą wprowadzoną przez rząd, która wprowadziła konieczność weryfikacji każdego przelewu powyżej 10000 złotych przez usługę udostępnioną przez Narodowy Bank Polski. W związku z tym konieczna będzie integracja oraz odpowiednie przyłączenie usługi weryfikacji ze strony Narodowego Banku Polskiego. W systemie wykorzystywane są dane o wysokim stopniu poufności dlatego wszelkie integracje z systemami zewnętrznymi muszą ścisło podlegać standardom bezpieczeństwa wymiany komunikatów w architekturze usługowej.
+
+Ze względu na fakt, że w przyszłości planowane są kolejne modernizacje oraz rozszerzenia, system musi wykazywać się dużą skalowalnością. Istotne jest również, aby tworzony system posiadał optymalną ziarnistość oraz reużywalość usług. 
+
+
+\subsection{Business Motivation Model}
+Tworzenie systemu dla FrostRes zostało rozpoczęte od przygotowania motywacyjnego modelu biznesu. 
+
 \subsection{Analiza systemu}
 \subsection{Implementacja}
 \subsection{Proces wdrożenia}
