@@ -577,7 +577,7 @@ Fundamentem dla powyższych założeń jest to, że cele biznesowe i wymagania z
 być śledzone przez cały cykl życia - od celów biznesowych przez projektowanie oprogramowania oraz zasobów kodu, aż do kompozytowych aplikacji.
 
 \subsection{Fazy metody}
-Metoda utworzona przez Papazoglou składa się z elementów (rys. ) bazujących na innych metodach takich jak: \emph{Rational Unified Process}, \emph{Component-based development} oraz modelowania procesów biznesowych zaproponowanego przez Paula Harmona w 2003 roku \cite{PapaZog}. 
+Metoda utworzona przez Papazoglou składa się z elementów (rys. \ref{papazoglou_method_phases}) bazujących na innych metodach takich jak: \emph{Rational Unified Process}, \emph{Component-based development} oraz modelowania procesów biznesowych zaproponowanego przez Paula Harmona w 2003 roku \cite{PapaZog}. 
 
 \begin{figure}[h!tbp]
 \begin{centering}
@@ -691,7 +691,7 @@ BMM został stworzony przez BRG (\emph{Business Rules Group}), a następnie w 20
 \end{centering}
 \end{figure}
 
-Motywacyjny model biznesu stanowi element integrujący względem innych modeli (np. modeli procesów biznesowych, modeli reguł biznesowych) i nie jest uwarunkowany (zależna) metodycznie od innych standardów. BMM stanowi pewnego rodzaju ramę koncepcyjną pozwalającą stworzyć repozytorium modeli wspólnie odwzorowujących model biznesowy danej organizacji. W BMM istotną rolę odgrywa wspólny słownik pojęć biznesowych zapewniający spójność semantyczną tworzonych modeli.
+Motywacyjny model biznesu stanowi element integrujący względem innych modeli (np. modeli procesów biznesowych, modeli reguł biznesowych) i nie jest uwarunkowany (zależny) metodycznie od innych standardów. BMM stanowi pewnego rodzaju ramę koncepcyjną pozwalającą stworzyć repozytorium modeli wspólnie odwzorowujących model biznesowy danej organizacji. W BMM istotną rolę odgrywa wspólny słownik pojęć biznesowych zapewniający spójność semantyczną tworzonych modeli.
 
 Do podstawowych elementów BMM zalicza się: stan oczekiwany (ang. \emph{Ends}) - coś co dana organizacja chce osiągnąć, wizję (ang. \emph{Vision}) - ogólne przedstawienie pożądanych osiągnięć, cele (ang. \emph{Goals}) - wynikają z utworzonej wcześniej wizji, zadania (ang. \emph{Objectives}) - wynikają z celów postawionych przez organizację, misję (ang. \emph{Mission}), strategie (ang. \emph{Strategies}) i taktyki (ang. \emph{Tactics}). \cite{AnaWesHal}
 
@@ -710,7 +710,7 @@ Równolegle do modelowania procesów biznesowych powstaje warstwowy model domen 
 \subsection*{Wykrywanie operacji usług}
 Na podstawie przeanalizowanych procesów biznesowych i domen funkcjonalnych mogą zostać wykryte operacje usług, które wspierają poszczególne aktywności procesów. Wykorzystywane jest do osiągnięcia tego celu FD. Dla każdego FD wszystkie przypisane aktywności analizowane są zgodnie z ich rodzajem. Dla zadań usługowych, operacje usługi wspierające poszczególne aktywności są uwzględniane w modelu usługi. Dla zadań użytkownika specyfikowany jest z kolei interfejs użytkownika. Każda indywidualna operacja usługi i interfejs użytkownika jest przypisywany do domeny funkcjonalnej - z reguły powiązanej z aktywnością, z której się wywodzi.
 
-Od tego momentu wykryte operacje usług i interfejsu użytkownika tylko wspierają poszczególne aktywności procesów biznesowych. Reużywalne usługi mogą także występować na wyższym poziomie technicznym. Dlatego operacje usług i przypadki użycia interfejsu użytkownika są modelowane. Są to przypadki użycia widziane z perspektywy operacji lub interfjesu użytkownika (na przykład operacje typu "pobierzKlientów" lub "zatwierdzZamówienie"). Przypadki użycia są następnie przypisywane do wcześniej określonych FD i poddawane klasyfikacji (np. "logika biznesowa", "zarządzanie danymi"). Jako notacja modelowania wykorzystywany jest diagram przypadków użycia UML. Poszczególne przypadki użycia są następnie porządkowane zgodnie z FD i klasami. Jeśli występują podobne lub identyczne przypadki użycia, operacja usługi może być zdefiniowana do wspierania ich. Podczas implementacji docelowej usługi lub interfejsu użytkownika, operacje usługi pochodzące od przypadków użycia mogą zostać nazwane. 
+Od tego momentu wykryte operacje usług i interfejsu użytkownika tylko wspierają poszczególne aktywności procesów biznesowych. Reużywalne usługi mogą także występować na wyższym poziomie technicznym. Dlatego operacje usług i przypadki użycia interfejsu użytkownika są modelowane. Są to przypadki użycia widziane z perspektywy operacji lub interfjesu użytkownika (na przykład operacje typu "pobierzKlientów" lub "zatwierdźZamówienie"). Przypadki użycia są następnie przypisywane do wcześniej określonych FD i poddawane klasyfikacji (np. "logika biznesowa", "zarządzanie danymi"). Jako notacja modelowania wykorzystywany jest diagram przypadków użycia UML. Poszczególne przypadki użycia są następnie porządkowane zgodnie z FD i klasami. Jeśli występują podobne lub identyczne przypadki użycia, operacja usługi może być zdefiniowana do wspierania ich. Podczas implementacji docelowej usługi lub interfejsu użytkownika, operacje usługi pochodzące od przypadków użycia mogą zostać nazwane. 
 
 \subsection*{Analiza obecnych systemów i zasobów}
 Analiza istniejących systemów oraz zasobów stanowi bardzo istotny etap metody MatSOA. Umiejętne przeprowadzenie tej fazy może znacznie zredukować koszty wprowadzania nowych funkcjonalności. Na tym etapie identyfikowane są elementy takie jak: istniejące aplikacje, standardy branżowe, modele oraz pozostałe zasoby niezbędne do realizacji usług. 
@@ -753,16 +753,31 @@ W obecnej chwili system umożliwia zarządzanie kontami klientów (otwarcie i za
 
 Zarząd banku prognozuje wykonanie szeregu zmian w istniejącym systemie. Ze względu na fakt, że organizacja dopiero się rozwija i ma ograniczone finanse zdecydowano się jak na razie na wprowadzenie tylko jednej nowej usługi - przelewów międzynarodowych Wymogiem jest, aby kraje uczestniczące w przelewach należały do organizacji SEPA oraz posiadały tą samą walutę. Oprócz tego ustalono, że system po modernizacji ma być w pełni zgodny z pryncypiami SOA. 
 
-Inna istotna zmiana związana jest z nową ustawą wprowadzoną przez rząd, która wprowadziła konieczność weryfikacji każdego przelewu powyżej 10000 złotych przez usługę udostępnioną przez Narodowy Bank Polski. W związku z tym konieczna będzie integracja oraz odpowiednie przyłączenie usługi weryfikacji ze strony Narodowego Banku Polskiego. W systemie wykorzystywane są dane o wysokim stopniu poufności dlatego wszelkie integracje z systemami zewnętrznymi muszą ścisło podlegać standardom bezpieczeństwa wymiany komunikatów w architekturze usługowej.
+Inna istotna zmiana związana jest z nową ustawą wprowadzoną przez rząd, która wprowadziła konieczność weryfikacji każdego przelewu powyżej 10000 złotych przez usługę udostępnioną przez Narodowy Bank Polski. W związku z tym konieczna będzie integracja z usługą weryfikacji przelewów ze strony Narodowego Banku Polskiego. W systemie wykorzystywane są dane o wysokim stopniu poufności dlatego wszelkie integracje z systemami zewnętrznymi muszą ścisło podlegać standardom bezpieczeństwa wymiany komunikatów w architekturze usługowej.
 
-Ze względu na fakt, że w przyszłości planowane są kolejne modernizacje oraz rozszerzenia, system musi wykazywać się dużą skalowalnością. Istotne jest również, aby tworzony system posiadał optymalną ziarnistość oraz reużywalość usług. 
+Ze względu na fakt, że w przyszłości planowane są kolejne modernizacje oraz rozszerzenia, system musi wykazywać się dużą skalowalnością. Istotne jest również, żeby tworzony system posiadał optymalną ziarnistość oraz zapewniał reużywalność usług. 
 
 
-\subsection{Business Motivation Model}
-Tworzenie systemu dla FrostRes zostało rozpoczęte od przygotowania motywacyjnego modelu biznesu. 
+\subsection{Analiza organizacji}
+\subsubsection{Przygotowanie Business Motivation Model (BMM)}
+Budowa systemu dla FrostRes została rozpoczęta od przygotowania motywacyjnego modelu biznesu. Tworzenie BMM jest krokiem opcjonalnym metody MatSOA jednakże stanowi doskonały start do analizy organizacji i jej biznesu. W zależności od stopnia złożoności sytuacji biznesowej może charakteryzować się różnym poziomem szczegółowości. Modernizacja Banku FrostRes nie jest zbytnio złożona, dlatego tworzony dla niej BMM będzie zawierał tylko najbardziej podstawowe elementy.
 
-\subsection{Analiza systemu}
-\subsection{Implementacja}
+Przygotowanie BMM przedstawionego na rys. \ref{BMM_frostres} rozpoczęto od rozważenia środków (element \emph{<<Means>>}). Następnie określono misję (element \emph{<<Mission>>}), ustalono strategie (elementy \emph{<<Strategy>>}) oraz ułożono odpowiednie taktyki (elementy \emph{<<Tactic>>}) wdrażania biznesu. Na podstawie analizy powyższych elementów wyodrębniono proces biznesowy, który będzie realizował \quotedblbase Obsługę przelewu międzynarodowego\textquotedblright (element \emph{<<Business Process>>}). 
+
+W BMM opisano również stan oczekiwany (element \emph{<<End>>}) przez bank FrostRes. Dekompozycję rozpoczęto tym razem od określenia wizji (element \emph{<<Vision>>}) powiązanej bezpośrednio z utworzonym wcześniej opisem misji. Następnie przedstawiono cele główne (element \emph{<<goal>>}) oraz cząstkowe (element \emph{<<Objective>>}).
+
+Proces biznesowy \quotedblbase Obsługa przelewu międzynarodowego\textquotedblrigh jest podobny do procesu występującego już we FrostRes \quotedblbase Obsługa przelewu krajowego\textquotedblrigh. Zasadnicza różnica polega na możliwości automatycznej wymiany waluty na zgodną z krajem, do którego wysyłany jest przelew.
+
+\begin{figure}[h!tbp]
+\begin{centering}
+\includegraphics[width=16cm, height=17cm]{img/bmm_model_frostres.png}
+\caption[Model BMM dla modernizacji banku FrostRes]{Model BMM dla modernizacji banku FrostRes.}\label{BMM_frostres}
+\end{centering}
+\end{figure}
+
+\subsection{Wykrywanie usług}
+
+
 \subsection{Proces wdrożenia}
 \subsection{Testy}
 \section{Cel systemu w odniesieniu do zaprojektowanej koncepcji}
