@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.7.7)  15 OCT 2014 01:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.7.7)  2 DEC 2014 21:01
 entering extended mode
 **praca_dyplomowa.tex
 (C:\Users\IBM_ADMIN\Documents\Studia\Mgr\trunk\latex\praca_dyplomowa.tex
@@ -445,6 +445,23 @@ Package: supertabular 2004/02/20 v4.1e the supertabular environment
 \ST@dimen=\dimen130
 \ST@pbox=\box30
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
@@ -576,22 +593,22 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 (C:\Users\IBM_ADMIN\Documents\Studia\Mgr\trunk\latex\prmag.sty
 Package `prmag' (ISEP PW Thesis) ver. 0.2 (Jan 2011)
 ) (C:\Users\IBM_ADMIN\Documents\Studia\Mgr\trunk\latex\praca_dyplomowa.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -608,7 +625,7 @@ LaTeX Font Info:    ... okay on input line 50.
 \everyMPtoPDFconversion=\toks25
 )
 \AtBeginShipoutBox=\box33
-Package hyperref Info: Link coloring OFF on input line 50.
+Package hyperref Info: Link coloring OFF on input line 51.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -617,42 +634,42 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count118
 )
-LaTeX Info: Redefining \ref on input line 50.
-LaTeX Info: Redefining \pageref on input line 50.
-LaTeX Info: Redefining \nameref on input line 50.
+LaTeX Info: Redefining \ref on input line 51.
+LaTeX Info: Redefining \pageref on input line 51.
+LaTeX Info: Redefining \nameref on input line 51.
 
 (C:\Users\IBM_ADMIN\Documents\Studia\Mgr\trunk\latex\praca_dyplomowa.out)
 (C:\Users\IBM_ADMIN\Documents\Studia\Mgr\trunk\latex\praca_dyplomowa.out)
 \@outlinefile=\write3
-LaTeX Font Info:    Try loading font information for OML+plm on input line 51.
+LaTeX Font Info:    Try loading font information for OML+plm on input line 52.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\polski\omlplm.fd"
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Try loading font information for OMS+plsy on input line 51.
+LaTeX Font Info:    Try loading font information for OMS+plsy on input line 52.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\polski\omsplsy.fd"
 File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Try loading font information for OMX+plex on input line 51.
+LaTeX Font Info:    Try loading font information for OMX+plex on input line 52.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\polski\omxplex.fd"
 File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <12> on input line 51.
+(Font)              <12> on input line 52.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <8> on input line 51.
+(Font)              <8> on input line 52.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <6> on input line 51.
-LaTeX Font Info:    Try loading font information for U+msa on input line 51.
+(Font)              <6> on input line 52.
+LaTeX Font Info:    Try loading font information for U+msa on input line 52.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 51.
+LaTeX Font Info:    Try loading font information for U+msb on input line 52.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -661,18 +678,18 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: ./img/zdjecie_legitymacja.jpg Graphic file (type jpg)
 
 <use ./img/zdjecie_legitymacja.jpg>
-Package pdftex.def Info: ./img/zdjecie_legitymacja.jpg used on input line 51.
+Package pdftex.def Info: ./img/zdjecie_legitymacja.jpg used on input line 52.
 (pdftex.def)             Requested size: 113.81102pt x 143.85704pt.
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/IBM_ADMIN/Docume
 nts/Studia/Mgr/trunk/latex/img/zdjecie_legitymacja.jpg>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 51.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 52.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 52.
 
 [2] [3
 
@@ -694,14 +711,14 @@ rzon¡ kon-
 
 Overfull \hbox (14.85841pt too wide) in paragraph at lines 60--60
  [][] [][]\OT4/cmr/m/n/12 Przygotowanie Bu-si-ness Mo-ti-va-tion Mo-del (BMM)[]
- []  
+ [][]  
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.65 ... {7}Podsumowanie i wnioski}{59}{chapter.7}
+l.65 ... {7}Podsumowanie i wnioski}{62}{chapter.7}
                                                    [2])
 \tf@toc=\write4
 
@@ -968,13 +985,13 @@ Overfull \hbox (8.07706pt too wide) in paragraph at lines 598--599
 u-ral-nej (ang. \OT4/cmr/m/it/12 Struc-
  []
 
-[43]
-Overfull \hbox (0.61816pt too wide) in paragraph at lines 623--624
+[43] [44]
+Overfull \hbox (0.61816pt too wide) in paragraph at lines 624--625
 \OT4/cmr/m/n/12 za-sªu-gi-waªa na ko-mer-cyjne sto-so-wa-nie. Sta-nowi prze-wod
 -nik jak krok po kroku
  []
 
-[44] [45] [46]
+[45] [46]
 Rozdzia\l  5.
 [47
 
@@ -982,22 +999,22 @@ Rozdzia\l  5.
 File: img/MetMatSOA.png Graphic file (type png)
 
 <use img/MetMatSOA.png>
-Package pdftex.def Info: img/MetMatSOA.png used on input line 667.
+Package pdftex.def Info: img/MetMatSOA.png used on input line 668.
 (pdftex.def)             Requested size: 398.34827pt x 256.0818pt.
 
-Overfull \hbox (8.34827pt too wide) in paragraph at lines 667--668
+Overfull \hbox (8.34827pt too wide) in paragraph at lines 668--669
  [][] 
  []
 
 [48] <img/BMM_PL.png, id=697, 722.7pt x 536.0025pt>
 File: img/BMM_PL.png Graphic file (type png)
  <use img/BMM_PL.png>
-Package pdftex.def Info: img/BMM_PL.png used on input line 689.
+Package pdftex.def Info: img/BMM_PL.png used on input line 690.
 (pdftex.def)             Requested size: 341.43344pt x 312.97542pt.
 
 [49 <C:/Users/IBM_ADMIN/Documents/Studia/Mgr/trunk/latex/img/MetMatSOA.png>]
 [50 <C:/Users/IBM_ADMIN/Documents/Studia/Mgr/trunk/latex/img/BMM_PL.png>]
-Overfull \hbox (0.2897pt too wide) in paragraph at lines 713--714
+Overfull \hbox (0.2897pt too wide) in paragraph at lines 714--715
 \OT4/cmr/m/n/12 wspie-raj¡ po-szcze-gólne ak-tyw-no-±ci pro-ce-sów biz-ne-so-wy
 ch. Reu-»y-walne usªugi
  []
@@ -1005,148 +1022,150 @@ ch. Reu-»y-walne usªugi
 [51] [52] [53] [54]
 Rozdzia\l  6.
 
-Overfull \hbox (12.08572pt too wide) in paragraph at lines 744--744
+Overfull \hbox (12.08572pt too wide) in paragraph at lines 745--745
 []\OT4/cmr/bx/n/17.28 Projektowanie sys-temu ban-ko-wego w opar-
  []
 
 [55
 
-] [56]
-! Undefined control sequence.
-l.769 ...zelewu miÄ™dzynarodowego\textquotedblrigh
-                                                   jest podobny do procesu w...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.769 ...Å‚uga przelewu krajowego\textquotedblrigh
-                                                  . Zasadnicza rÃ³Å¼nica pol...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<img/bmm_model_frostres.png, id=746, 670.75594pt x 453.19313pt>
+] [56] <img/bmm_model_frostres.png, id=746, 670.75594pt x 453.19313pt>
 File: img/bmm_model_frostres.png Graphic file (type png)
 
 <use img/bmm_model_frostres.png>
-Package pdftex.def Info: img/bmm_model_frostres.png used on input line 773.
-(pdftex.def)             Requested size: 455.23802pt x 483.69478pt.
+Package pdftex.def Info: img/bmm_model_frostres.png used on input line 772.
+(pdftex.def)             Requested size: 455.23802pt x 341.43608pt.
 
-Overfull \hbox (65.23802pt too wide) in paragraph at lines 773--774
+Overfull \hbox (65.23802pt too wide) in paragraph at lines 772--773
  [][] 
  []
 
-[57] [58 <C:/Users/IBM_ADMIN/Documents/Studia/Mgr/trunk/latex/img/bmm_model_fro
-stres.png>]
+
+<img/proces_operacja_przeleu_miedzynarodowego.png, id=748, 753.5653pt x 396.732
+2pt>
+File: img/proces_operacja_przeleu_miedzynarodowego.png Graphic file (type png)
+ <use img/proces_operacja_przeleu_miedzynarodowego.png>
+Package pdftex.def Info: img/proces_operacja_przeleu_miedzynarodowego.png used 
+on input line 781.
+(pdftex.def)             Requested size: 241.84723pt x 569.11461pt.
+
+
+LaTeX Warning: Float too large for page by 3.94792pt on input line 784.
+
+[57 <C:/Users/IBM_ADMIN/Documents/Studia/Mgr/trunk/latex/img/bmm_model_frostres
+.png>] [58 <C:/Users/IBM_ADMIN/Documents/Studia/Mgr/trunk/latex/img/proces_oper
+acja_przeleu_miedzynarodowego.png>]
+<img/bank_fd.png, id=758, 551.05875pt x 371.3875pt>
+File: img/bank_fd.png Graphic file (type png)
+ <use img/bank_fd.png>
+Package pdftex.def Info: img/bank_fd.png used on input line 832.
+(pdftex.def)             Requested size: 284.53415pt x 227.62842pt.
+
+[59] [60 <C:/Users/IBM_ADMIN/Documents/Studia/Mgr/trunk/latex/img/bank_fd.png (
+PNG copy)>] [61]
 Rozdzia\l  7.
-) [59
+) [62
 
 ]
-LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 59.
+LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 60.
 
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\polski\ot4cmtt.fd"
 File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-Underfull \hbox (badness 5403) in paragraph at lines 59--60
+Underfull \hbox (badness 5403) in paragraph at lines 60--61
 []\OT4/cmr/m/n/12 Autor nie-znany, []$\OT4/cmtt/m/n/12 http : / / www . archima
 te . nl / en / about _ archimate /$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 []\OT4/cmr/m/n/12 Fowler Mar-tin, []$\OT4/cmtt/m/n/12 http : / / www . martinfo
 wler . com / articles /$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
 []\OT4/cmr/m/n/12 Graves Tom, []$\OT4/cmtt/m/n/12 http : / / weblog . tetradian
  . com / 2011 / 07 / 26 /$
  []
 
-[60
+[63
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
 []\OT4/cmr/m/n/12 Johnson Si-mon, \OT4/cmr/m/it/12 To-oling plat-forms and RE-S
 T-ful ram-blings
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
 []$\OT4/cmtt/m/n/12 https : / / www . ibm . com / developerworks / community / 
 blogs /$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 []\OT4/cmr/m/n/12 Sobczak An-drzej, \OT4/cmr/m/it/12 Ko-deks do-brych prak-tyk 
 ar-chi-tek-tów
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 \OT4/cmr/m/it/12 kor-po-ra-cyj-nych\OT4/cmr/m/n/12 , []$\OT4/cmtt/m/n/12 http :
  / / architekturakorporacyjna . pl /$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 []\OT4/cmr/m/n/12 Stevens Mi-chael, \OT4/cmr/m/it/12 Se-rvice Orien-ted Ar-chi-
 tec-ture In-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 \OT4/cmr/m/it/12 tro-duc-tion\OT4/cmr/m/n/12 , []$\OT4/cmtt/m/n/12 http : / / a
 rchitekturakorporacyjna . pl /$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 $\OT4/cmtt/m/n/12 kodeks-[]dobrych-[]praktyk-[]architektow-[]korporacyjnych / 1
 683/$[]\OT4/cmr/m/n/12 ,
  []
 
-[61]
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+[64]
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 []\OT4/cmr/m/n/12 The Open Group, []$\OT4/cmtt/m/n/12 http : / / www . opengrou
 p . org / subjectareas /$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 []\OT4/cmr/m/n/12 Wesoªowska Ha-lina, []$\OT4/cmtt/m/n/12 http : / / analizait 
 . pl / 2013 /$
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 90.
-[62]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 90.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 91.
+[65]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 91.
  (C:\Users\IBM_ADMIN\Documents\Studia\Mgr\trunk\latex\praca_dyplomowa.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 90.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 90.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 91.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 91.
 Package rerunfilecheck Info: File `praca_dyplomowa.out' has not changed.
 (rerunfilecheck)             Checksum: 7F8AB045ECD6EA0A7500A9980F8C73BE;4822.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 90.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 91.
  ) 
 Here is how much of TeX's memory you used:
- 7029 strings out of 493921
- 103051 string characters out of 3144865
- 190370 words of memory out of 3000000
- 10010 multiletter control sequences out of 15000+200000
+ 7479 strings out of 493921
+ 108443 string characters out of 3144865
+ 200002 words of memory out of 3000000
+ 10446 multiletter control sequences out of 15000+200000
  15036 words of font info for 44 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,12n,28p,1118b,446s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,12n,35p,1218b,447s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/pl/pltt.enc}{C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/enc/dvips/pl/plmi.enc}{C:/Program Files (x86)/MiKTeX
  2.9/fonts/enc/dvips/pl/plrm.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/d
@@ -1161,9 +1180,9 @@ e1/public/pl/plr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/pl
 C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/pl/plti10.pfb><C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/public/pl/plti12.pfb><C:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/public/pl/pltt12.pfb>
-Output written on praca_dyplomowa.pdf (67 pages, 1383727 bytes).
+Output written on praca_dyplomowa.pdf (70 pages, 1444263 bytes).
 PDF statistics:
- 874 PDF objects out of 1000 (max. 8388607)
- 179 named destinations out of 1000 (max. 500000)
- 586 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 893 PDF objects out of 1000 (max. 8388607)
+ 184 named destinations out of 1000 (max. 500000)
+ 596 words of extra memory for PDF output out of 10000 (max. 10000000)
 

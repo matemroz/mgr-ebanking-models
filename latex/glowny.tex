@@ -618,6 +618,7 @@ Metoda jest jednakże ciągle w fazie rozwoju i testów. Nie była wdrażana pro
 
 
 \section{Metoda Thomasa Erl'a}
+TODO: A Comparison of SOA Methodologies Analysis And Design Phases 
 
 \subsection{Opis metody}
 Metoda Thomasa Erl'a stanowi pierwszą metodologię SOA, która w pełni zasługiwała na komercyjne stosowanie. Stanowi przewodnik jak krok po kroku przejść dwie podstawowe fazy - analizy i projektowania. Opiera się na metodzie \emph{top-down}.
@@ -710,7 +711,7 @@ Równolegle do modelowania procesów biznesowych powstaje warstwowy model domen 
 \subsection*{Wykrywanie operacji usług}
 Na podstawie przeanalizowanych procesów biznesowych i domen funkcjonalnych mogą zostać wykryte operacje usług, które wspierają poszczególne aktywności procesów. Wykorzystywane jest do osiągnięcia tego celu FD. Dla każdego FD wszystkie przypisane aktywności analizowane są zgodnie z ich rodzajem. Dla zadań usługowych, operacje usługi wspierające poszczególne aktywności są uwzględniane w modelu usługi. Dla zadań użytkownika specyfikowany jest z kolei interfejs użytkownika. Każda indywidualna operacja usługi i interfejs użytkownika jest przypisywany do domeny funkcjonalnej - z reguły powiązanej z aktywnością, z której się wywodzi.
 
-Od tego momentu wykryte operacje usług i interfejsu użytkownika tylko wspierają poszczególne aktywności procesów biznesowych. Reużywalne usługi mogą także występować na wyższym poziomie technicznym. Dlatego operacje usług i przypadki użycia interfejsu użytkownika są modelowane. Są to przypadki użycia widziane z perspektywy operacji lub interfjesu użytkownika (na przykład operacje typu "pobierzKlientów" lub "zatwierdźZamówienie"). Przypadki użycia są następnie przypisywane do wcześniej określonych FD i poddawane klasyfikacji (np. "logika biznesowa", "zarządzanie danymi"). Jako notacja modelowania wykorzystywany jest diagram przypadków użycia UML. Poszczególne przypadki użycia są następnie porządkowane zgodnie z FD i klasami. Jeśli występują podobne lub identyczne przypadki użycia, operacja usługi może być zdefiniowana do wspierania ich. Podczas implementacji docelowej usługi lub interfejsu użytkownika, operacje usługi pochodzące od przypadków użycia mogą zostać nazwane. 
+Od tego momentu wykryte operacje usług i interfejsu użytkownika tylko wspierają poszczególne aktywności procesów biznesowych. Reużywalne usługi mogą także występować na wyższym poziomie technicznym. Dlatego operacje usług i przypadki użycia interfejsu użytkownika są modelowane. Są to przypadki użycia widziane z perspektywy operacji lub interfejsu użytkownika (na przykład operacje typu \quotedblbase pobierzKlientów\textquotedblright lub \quotedblbase zatwierdźZamówienie\textquotedblright). Przypadki użycia są następnie przypisywane do wcześniej określonych FD i poddawane klasyfikacji (np. \quotedblbase logika biznesowa\textquotedblright, \quotedblbase zarządzanie danymi\textquotedblright). Jako notacja modelowania wykorzystywany jest diagram przypadków użycia UML. Poszczególne przypadki użycia są następnie porządkowane zgodnie z FD i klasami. Jeśli występują podobne lub identyczne przypadki użycia, operacja usługi może być zdefiniowana do wspierania ich. Podczas implementacji docelowej usługi lub interfejsu użytkownika, operacje usługi pochodzące od przypadków użycia mogą zostać nazwane. 
 
 \subsection*{Analiza obecnych systemów i zasobów}
 Analiza istniejących systemów oraz zasobów stanowi bardzo istotny etap metody MatSOA. Umiejętne przeprowadzenie tej fazy może znacznie zredukować koszty wprowadzania nowych funkcjonalności. Na tym etapie identyfikowane są elementy takie jak: istniejące aplikacje, standardy branżowe, modele oraz pozostałe zasoby niezbędne do realizacji usług. 
@@ -721,13 +722,13 @@ Takie opakowane elementy są następnie modelowane jako usługi wraz z odpowiada
 \subsection*{Konsolidacja}
 Po analizie wymagań (\emph{top-down}) i identyfikacji istniejących systemów (\emph{bottom-up}) konieczna jest konsolidacja. Faza ta wykonywana jest przez architekta oprogramowania i przeprowadzana na typach obiektów danych i operacjach usług. Dla obiektów danych wszelkie redundancje powinny zostać wykryte i usunięte (na przykład występują dwa obiekty \emph{Adres} i różnią się jedynie polem kraj). Redukcji takowej można dokonać w oparciu o FD jeśli domeny funkcjonalne zostały powiązane z obiektami danych. Scalając typy obiektów danych należy kierować się zasadą, że obiekty już istniejące mają pierwszeństwo (tylko w wypadku, gdy występuje zbyt duża rozbieżność pomiędzy wymaganiem, a obecnym stanem można rozważyć zmianę istniejącego obiektu). W przypadku, gdy obiekty nie mogą zostać scalone należy utworzyć \emph{mediatora}.
 
-Konsolidacja operacji usług jest także wykonywana przez FD oraz prowadzona przez klasy. Operacje, które są podobne powinny zostać połączone (np. "pobierzDaneKlienta" oraz "pobierzAdresKlienta"). Tym samym zapewniania jest reużywalność. Podobnie jak w przypadku obiektów danych, operacje wywodzące się z systemów już istniejących mają pierwszeństwo. Zmiana w obecnym systemie może zostać rozważona jeśli rozbieżność pomiędzy wymaganiami i aktualnym system jest zbyt wielka. Kiedy operacje są scalane, dane wejściowe i wyjściowe są dodawane do każdej operacji w oparciu o skonsolidowany model danych.
+Konsolidacja operacji usług jest także wykonywana przez FD oraz prowadzona przez klasy. Operacje, które są podobne powinny zostać połączone (np. \quotedblbase pobierzDaneKlienta\textquotedblright oraz \quotedblbase pobierzAdresKlienta\textquotedblright). Tym samym zapewniania jest reużywalność. Podobnie jak w przypadku obiektów danych, operacje wywodzące się z systemów już istniejących mają pierwszeństwo. Zmiana w obecnym systemie może zostać rozważona jeśli rozbieżność pomiędzy wymaganiami i aktualnym system jest zbyt wielka. Kiedy operacje są scalane, dane wejściowe i wyjściowe są dodawane do każdej operacji w oparciu o skonsolidowany model danych.
 
 
 \subsection*{Projektowanie usług}
 Po ustaleniu modelu operacji usług, poszczególne usługi mogą zostać zaprojektowane. Zazwyczaj usługa zawiera kilka operacji, dlatego operacje usług muszą być odpowiednio pogrupowane. W tym celu architekt oprogramowania używa zasad specyficznych dla każdej klasy usług. Każda operacja klasy "interakcji z użytkownikiem" jest zazwyczaj reprezentowana przez pojedynczą usługę. Operacje zarządzania danymi są grupowane na podstawie podmiotów biznesowych.  Następnie tylko operacje wywodzące się z tego samego FD są rozpatrywana przy grupowaniu. 
 
-Kiedy usługi są zaprojektowane, pryncypia które nie mogą być zagwarantowane podczas wcześniejszych kroków muszą być wprowadzane. Dla każdej usługi architekt oprogramowania musi rozważyć czy zaliczyć go do bezstanowych (ang.\emph{Stateless}), czy usługi są "luźno połączone" (ang. \emph{Loosely coupled}) oraz czy istnieja operacje typu \emph{rollback} do wprowadzania mechanizmów transakcyjnych. Do manipulowania usługami, architekt oprogramowania może wykorzystywać takie operacje jak  unifikacja (ang. \emph{Unification}), intersekcja (ang. \emph{intersection}), dekompozycja (ang. \emph{Decomposition}), podzbioru (ang. \emph{Subset}) oraz substrakcji (ang. \emph{Substraction}). 
+Kiedy usługi są zaprojektowane, pryncypia które nie mogą być zagwarantowane podczas wcześniejszych kroków muszą być wprowadzane. Dla każdej usługi architekt oprogramowania musi rozważyć czy zaliczyć go do bezstanowych (ang.\emph{Stateless}), czy usługi są \quotedblbase luźno połączone\textquotedblright (ang. \emph{Loosely coupled}) oraz czy istnieja operacje typu \emph{rollback} do wprowadzania mechanizmów transakcyjnych. Do manipulowania usługami, architekt oprogramowania może wykorzystywać takie operacje jak  unifikacja (ang. \emph{Unification}), intersekcja (ang. \emph{intersection}), dekompozycja (ang. \emph{Decomposition}), podzbioru (ang. \emph{Subset}) oraz substrakcji (ang. \emph{Substraction}). 
 Jeśli usługi powstaną zbyt rozbudowane należy podzielić je i wcześniejsze kroki wykonać ponownie. Ostatecznie usługi są wdrożone i przetestowane. 
 
 \subsection*{Choreografia procesów}
@@ -766,16 +767,95 @@ Przygotowanie BMM przedstawionego na rys. \ref{BMM_frostres} rozpoczęto od rozw
 
 W BMM opisano również stan oczekiwany (element \emph{<<End>>}) przez bank FrostRes. Dekompozycję rozpoczęto tym razem od określenia wizji (element \emph{<<Vision>>}) powiązanej bezpośrednio z utworzonym wcześniej opisem misji. Następnie przedstawiono cele główne (element \emph{<<goal>>}) oraz cząstkowe (element \emph{<<Objective>>}).
 
-Proces biznesowy \quotedblbase Obsługa przelewu międzynarodowego\textquotedblrigh jest podobny do procesu występującego już we FrostRes \quotedblbase Obsługa przelewu krajowego\textquotedblrigh. Zasadnicza różnica polega na możliwości automatycznej wymiany waluty na zgodną z krajem, do którego wysyłany jest przelew.
-
 \begin{figure}[h!tbp]
 \begin{centering}
-\includegraphics[width=16cm, height=17cm]{img/bmm_model_frostres.png}
+\includegraphics[width=16cm, height=12cm]{img/bmm_model_frostres.png}
 \caption[Model BMM dla modernizacji banku FrostRes]{Model BMM dla modernizacji banku FrostRes.}\label{BMM_frostres}
 \end{centering}
 \end{figure}
 
+W następnym kroku wykryty proces \emph{Obsługa przelewu międzynarodowego} (rys. \ref{proces_operacja_przeleu_miedzynarodowego} opisano z wykorzystaniem języka BPMN. 
+
+\begin{figure}[h!tbp]
+\begin{centering}
+\includegraphics[width=8.5cm,height=20cm]{img/proces_operacja_przeleu_miedzynarodowego.png}
+\caption[Proces obsługi przelewu międzynarodowego - diagram BPMN.]{Proces obsługi przelewu międzynarodowego - diagram BPMN.}\label{proces_operacja_przeleu_miedzynarodowego}
+\end{centering}
+\end{figure}
+
+
+Poniżej został opisany przebieg procesu.
+
+\begin{flushleft}
+1. Klient tworzy zlecenie przelewu międzynarodowego.\\
+2. Klient wysyła zlecenie przelewu międzynarodowego.\\
+3. SZOB rejestruje zlecenie przelewu międzynarodowego.\\
+4. SZOB weryfikuje zlecenie przelewu międzynarodowego.\\
+\textit{{[}dane przelewu są poprawne; przelew międzynarodowy na kwotę wyższą niż 10000 złotych{]}}\\
+\hspace{1ex}5.1 NBP weryfikuje możliwość wykonania przelewu.\\
+\hspace{1ex}{[}pozytywna weryfikacja przelewu{]}\\
+\hspace{2ex}6.1.1 SZOB przewalutowuje przelew międzynarodowy.\\
+\hspace{2ex}7.1.1 SZOB wykonuje zlecenie przelewu międzynarodowego.\\
+\hspace{2ex}8.1.1 SR rejestruje kwotę przelewu międzynarodowego w systemie rozliczeń.\\
+\hspace{2ex}9.1.1 System wyświetla potwierdzenie wykonania przelewu klientowi.\\
+\hspace{2ex}\textit{{[}dane przelewu są poprawne; przelew na kwotę niższą niż 10000 złotych{]}}\\
+\hspace{1ex}5.2. SZOB przewalutowuje przelew międzynarodowy.\\
+\hspace{1ex}6.2. SZOB wykonuje zlecenie przelewu międzynarodowego.\\
+\hspace{1ex}7.2. SR rejestruje kwotę przelewu międzynarodowego w systemie rozliczeń.\\
+\hspace{1ex}8.2. System wyświetla potwierdzenie wykonania przelewu klientowi.\\
+\textit{{[}dane przelewu nie są poprawne{]}}\\
+\hspace{1ex}5.3. System wyświetla informację o niepozytywnej weryfikacji danych przelewu.\\
+\hspace{1ex}6.3. Zakończenie obsługi przelewu międzynarodowego.\\
+\textit{{[}dane przelewu są poprawne; przelew międzynarodowy na kwotę wyższą niż 10000 złotych{]}}\\
+\hspace{1ex}5.4. NBP Weryfikuje możliwość wykonania przelewu.\\
+\hspace{1ex}\textit{{[}niepozytywna weryfikacja przelewu{]}}\\
+\hspace{2ex}6.5.1 System wyświetla informację o niepozytywnej weryfikacji danych przelewu.\\
+\hspace{2ex}6.5.2 Zakończenie obsługi przelewu międzynarodowego.\\ 
+\end{flushleft}
+
+\begin{flushleft}
+Po utworzeniu i opisaniu procesu biznesowego można przystąpić do jego dekompozycji. \\
+\hspace{1ex}1. Utworzenie zlecenia przelewu międzynarodowego.\\
+\hspace{1ex}2. Wysłanie zlecenia przelewu do banku.\\
+\hspace{1ex}3. Rejestracja zlecenia przelewu.\\
+\hspace{1ex}4. Weryfikacja zlecenia przelewu międzynarodowego.\\
+\hspace{1ex}5. Weryfikacja możliwości wykonania przelewu międzynarodowego.\\
+\hspace{1ex}6. Przewalutowanie przelewu międzynarodowego.\\
+\hspace{1ex}7. Wykonanie przelewu międzynarodowego.\\
+\hspace{1ex}8. Rejestracja kwoty przelewu międzynarodowego w systemie rozliczeń.\\
+\end{flushleft}
+
+W zaproponowanej metodzie MatSOA kolejnym proponowanym etapem jest wyodrębnienie obszarów funkcjonalnych (ang. \emph{Functional domains}). W przypadku tworzonego systemu dla banku FrostRes można wyodrębnić kilka domen funkcjonalnych: marketing, kontrola przepływów finansowych, zarządzanie operacjami bankowymi oraz zarządzanie rozliczeniami. 
+
+\begin{figure}[h!tbp]
+\begin{centering}
+\includegraphics[width=10cm, height=8cm]{img/bank_fd.png}
+\caption[Model domeny funkcjonalnej dla banku FrostRes]{Model domeny funkcjonalnej dla banku FrostRes.}\label{FD_frostres}
+\end{centering}
+\end{figure}
+
 \subsection{Wykrywanie usług}
+W kolejnym etapie analizy wykonywane jest wykrywanie usług. W metodzie MatSOA można dokonać tego z wykorzystaniem domen funkcjonalnych oraz poddanego dekompozycji procesu biznesowego. Każdy element procesu biznesowego jest wówczas przypisywany do odpowiadającego mu obszaru funkcjonalnego. W przypadku banku FrostRes opisywane grupowanie można wykonać w następujący sposób:
+
+Zarządzanie operacjami bankowymi:
+\begin{itemize}
+\item{Utworzenie zlecenia przelewu międzynarodowego.}
+\item{Wysłanie zlecenia przelewu do banku.}
+\item{Przewalutowanie przelewu międzynarodowego.}
+\item{Wykonanie przelewu międzynarodowego.}
+\end{itemize}
+
+Zarządzanie rozliczeniami:
+\begin{itemize}
+\item{Rejestracja kwoty przelewu międzynarodowego w systemie rozliczeń.}
+\item{Rejestracja zlecenia przelewu.}
+\end{itemize}
+
+Kontrolowanie przepływów finansowych.
+\begin{itemize}
+\item{Weryfikacja zlecenia przelewu międzynarodowego.}
+\item{Weryfikacja możliwości wykonania przelewu międzynarodowego.}
+\end{itemize}
 
 
 \subsection{Proces wdrożenia}
