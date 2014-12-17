@@ -58,9 +58,9 @@
 \contentsline {subsection}{\numberline {6.2.1}Opis sytuacji biznesowej}{55}{subsection.6.2.1}
 \contentsline {subsection}{\numberline {6.2.2}Analiza organizacji}{56}{subsection.6.2.2}
 \contentsline {subsubsection}{\numberline {6.2.2.1}Przygotowanie Business Motivation Model (BMM)}{56}{subsubsection.6.2.2.1}
-\contentsline {subsection}{\numberline {6.2.3}Wykrywanie us\IeC {\l }ug}{57}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}Proces wdro\IeC {\.z}enia}{57}{subsection.6.2.4}
-\contentsline {subsection}{\numberline {6.2.5}Testy}{57}{subsection.6.2.5}
-\contentsline {section}{\numberline {6.3}Cel systemu w odniesieniu do zaprojektowanej koncepcji}{57}{section.6.3}
-\contentsline {chapter}{\numberline {7}Podsumowanie i wnioski}{59}{chapter.7}
-\contentsline {chapter}{Bibliografia}{60}{chapter*.8}
+\contentsline {subsection}{\numberline {6.2.3}Wykrywanie us\IeC {\l }ug}{60}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Proces wdro\IeC {\.z}enia}{61}{subsection.6.2.4}
+\contentsline {subsection}{\numberline {6.2.5}Testy}{61}{subsection.6.2.5}
+\contentsline {section}{\numberline {6.3}Cel systemu w odniesieniu do zaprojektowanej koncepcji}{61}{section.6.3}
+\contentsline {chapter}{\numberline {7}Podsumowanie i wnioski}{62}{chapter.7}
+\contentsline {chapter}{Bibliografia}{63}{chapter*.8}
