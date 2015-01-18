@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webservices xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/javaee_web_services_1_2.xsd" version="1.2">
+	<webservice-description>
+		<webservice-description-name>KontrolaPrzeplywowFinansowychService</webservice-description-name>
+		<port-component>
+			<port-component-name>KontrolaPrzeplywowFinansowych</port-component-name>
+			<wsdl-service xmlns:pfx="http://Main/ServicesIdentification/KontrolaPrzeplywowFinansowych/">
+			pfx:KontrolaPrzeplywowFinansowychService</wsdl-service>
+			<wsdl-port xmlns:pfx="http://Main/ServicesIdentification/KontrolaPrzeplywowFinansowych/">
+			pfx:KontrolaPrzeplywowFinansowychServicePort</wsdl-port>
+			<enable-mtom>false</enable-mtom>
+			<service-endpoint-interface>pw.ee.mgr.ebanking.weryfikator.KontrolaPrzeplywowFinansowych</service-endpoint-interface>
+			<service-impl-bean>
+				<servlet-link>
+				pw.ee.mgr.ebanking.weryfikator.KontrolaPrzeplywowFinansowychWSImpl</servlet-link>
+			</service-impl-bean>
+		</port-component>
+	</webservice-description>
+</webservices>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://Main/ServicesSpecification/" xmlns:xsd_1="http://Main/ServicesSpecification/">
+  <xsd:complexType name="WynikWeryfikacjiMozliwosciWykonaniaPrzelewuMiedzynarodowego">
+    <xsd:sequence>
+      <xsd:element name="opis" type="xsd:string"/>
+      <xsd:element name="czyMozliwyPrzelewMiedzynarodowy" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

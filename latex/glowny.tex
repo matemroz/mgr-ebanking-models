@@ -644,11 +644,11 @@ Do pozytywnych cech metody można zaliczyć fakt, że wspiera najpopularniejsze 
 \section{Wstęp}
 W poprzednim rozdziale został dokonany przegląd istniejących metod projektowania systemów informatycznych o architekturze SOA.
 
-Stopień złożoności biznesowej niektórych organizacji jest naprawdę wysoki. Bez stosowania odpowiedniej metody nie jest możliwe utworzenie sprawnie funkcjonującego systemu informatycznego. Występuje ich już wiele jednakże każda wykazuje pewne niedociągnięcia.
+Stopień złożoności biznesowej niektórych organizacji jest naprawdę wysoki. Bez zastosowania odpowiedniej metody utworzenie sprawnie funkcjonującego systemu informatycznego nie stanowi trywialnego zadania. Występuje wiele metod o różnej charakterystyce jednakże każda wykazuje pewne niedociągnięcia.
 
-Większość metod łączy opis sposobu przejścia od stanu początkowego do końcowego.  Każda z nich stanowi hierarchicznie uporządkowany zbiór elementów takich jak: fazy, aktywności, zadania oraz kroki. Opierają się również na wykorzystywaniu różnorodnych technik oraz proponowanych języków modelowania i notacji \cite{OffCompSOAM}.
+Większość metod łączy opis sposobu przejścia od stanu początkowego (wyniknięcie potrzeby posiadania systemu informatycznego) do końcowego (utworzenie systemu informatycznego zgodnego z wymaganiami zebranymi w trakcie analizy).  Każda z nich stanowi hierarchicznie uporządkowany zbiór elementów takich jak: fazy, aktywności, zadania oraz kroki. Opierają się również na wykorzystywaniu różnorodnych technik oraz zalecanych języków modelowania i notacji \cite{OffCompSOAM}.
 
-W rozdziale tym zostanie podjęta próba zdefiniowania nowej metody, a następnie porównanie jej z obecnie dostępnymi.
+W rozdziale tym zostanie podjęta próba zdefiniowania nowej metody projektowania systemów informatycznych o architekturze SOA oraz porównanie jej charakterystyki z obecnie dostępnymi.
 
 
 \section{Metoda MatSOA}
@@ -661,11 +661,11 @@ W celu dokładnego opisania metody zostaną przedstawione jej poszczególne fazy
 \subsection{Fazy metody}
 Metoda MatSOA składa się z sześciu głównych faz, których sekwencja została przedstawiona na rys. \ref{soam_lifecycle}. Wszystkie fazy zawierają szereg aktywności, z których każda ma przypisaną rolę wykonania oraz określone artefakty wejściowe i wyjściowe.
 
-Faza analizy ma równoległy przebieg. Jednocześnie w trakcie analizy organizacji oraz wykrywania usług zachodzi analiza obecnych systemów. Produkty wyjściowe powstałe w wyniku dwóch podejść analizy - \emph{top-down} oraz \emph{bottom-up} - są następnie konsolidowane. W kolejnym etapie projektowane są usługi, które z kolei są wykorzystywane do przygotowania procesów biznesowych.
+Faza analizy organizacji oraz wykrywania usług ma równoległy przebieg do analizy obecnych systemów. Produkty wyjściowe powstałe w wyniku dwóch podejść analizy - \emph{top-down} oraz \emph{bottom-up} - są następnie konsolidowane. W kolejnym etapie projektowane są usługi, które z kolei są wykorzystywane do przygotowania procesów biznesowych.
 
 \begin{figure}[h!tbp]
 \begin{centering}
-\includegraphics[width=14cm, height=9cm]{img/MetMatSOA.png}
+\includegraphics[width=14cm, height=7cm]{img/MetMatSOA.png}
 \caption[Fazy metody MatSOA.]{Fazy metody MatSOA.}\label{soam_lifecycle}
 \end{centering}
 \end{figure}
@@ -674,9 +674,9 @@ Faza analizy ma równoległy przebieg. Jednocześnie w trakcie analizy organizac
 W tej sekcji pracy zostaną omówione poszczególne fazy metody MatSOA.
 
 \subsection*{Analiza organizacji}
-W celu identyfikacji wymagań organizacji należy rozpatrzyć poszczególne aspekty z nią związane: strategie biznesowe, procesy biznesowe oraz domeny funkcjonalne. W wypadku MatSOA analiza organizacji ma przebieg kilku etapowy. Powinna być w pełni przeprowadzana przez analityka biznesowego.
+W celu identyfikacji wymagań organizacji należy rozpatrzyć poszczególne aspekty z nią związane: strategie biznesowe, procesy biznesowe oraz domeny funkcjonalne. W wypadku MatSOA analiza organizacji ma przebieg kilku etapowy oraz powinna być przeprowadzana przez analityka biznesowego.
 
-W pierwszym kroku analizy organizacji w przypadku metody MatSOA tworzony jest motywacyjny model biznesoy (BMM, \emph{Business Motivation Model}). Stanowi on część opisu organizacji. Umożliwia uchwycenie i przedstawienie w prosty sposób planów biznesowych. Do podstawowych celów BMM zalicza się:
+W pierwszym kroku analizy organizacji w przypadku metody MatSOA tworzony jest motywacyjny model biznesoy (BMM - \emph{Business Motivation Model}). Stanowi on część opisu organizacji. Umożliwia między innymi uchwycenie i przedstawienie w prosty sposób planów biznesowych. Do podstawowych celów BMM zalicza się ponadto:
 \begin{itemize}
 \item{identyfikację czynników, które powodują konieczność utworzenia planu,}
 \item{identyfikację oraz definicję elementów niezbędnych do wykorzystania w układanym planie,}
@@ -700,13 +700,13 @@ W kolejnej fazie analizy organizacji na podstawie BMM są identyfikowane procesy
 
 Następnie na podstawie ustalonych kryteriów (np. częstość zmian w procesach, obecny poziom możliwej integracji z istniejącymi systemami oraz stopień, w którym procesy mogą być z góry określane i wydzielane) wyszczególniany jest inny typ lub części procesów biznesowych, które powinny być wspierane przez systemy SOA.
 
-Procesy biznesowe definiuje się jako ustrukturyzowany i zmierzony ciąg czynności, który jest zaprojektowany do osiągnięcia określonego wyniku. \cite{PlatIntGor} Każda z czynności poddawana jest klasyfikacji zgodnie z tym czy może być wykonywana automatycznie (\emph{Business service}), czy wymaga interakcji między użytkownikiem, a systemem (\emph{User interaction}) oraz czy jej działanie ma charakter wyłącznie ręczny (\emph{Manual}).
+Procesy biznesowe definiuje się jako ustrukturyzowany i zmierzony ciąg czynności, który jest zaprojektowany do osiągnięcia określonego wyniku\cite{PlatIntGor}. Każda z czynności poddawana jest klasyfikacji zgodnie z tym czy może być wykonywana automatycznie (\emph{Business service}), czy wymaga interakcji między użytkownikiem, a systemem (\emph{User interaction}) oraz czy jej działanie ma charakter wyłącznie ręczny (\emph{Manual}).
 
 MatSOA zakłada identyfikowanie mierzalnych, udokumentowanych i powtarzalnych procesów. Modele procesów biznesowych powinny być budowane na różnych poziomach szczegółowości i mieć budowę hierarchiczną. Modele wysokiego poziomu powinny określać przepływ pracy pomiędzy działami firmy, a w dalszej kolejności być dekomponowane na procesy, w których wykonawcami są pojedyncze osoby. 
 
 Zalecaną notację modelowania stanowi BPMN (\emph{Business Process Modelling Notation}). Przepływ danych powinien być określony na tyle ile to możliwe na poziomie modelu procesu. Każdy obiekt danych wykorzystywany w procesie powinien być uwzględniany na tworzonym modelu danych.
 
-Równolegle do modelowania procesów biznesowych powstaje warstwowy model domen funkcjonalnych (ang. {FD - Functional Domains}). Proponowaną notacją dla FD są diagramy przypadków użycia UML. Każda aktywność modelu procesu biznesowego jest przypisywana do domeny funkcjonalnej. Modelowanie procesów biznesowych i FD powinno być wykonywane iteracyjnie. Połączenia aktywności procesów i domen funkcjonalnych pomaga później w zapewnieniu reużywalności usług.
+Równolegle do modelowania procesów biznesowych powstaje warstwowy model domen funkcjonalnych (ang. \emph{FD - Functional Domains}). Proponowaną notacją dla FD są diagramy przypadków użycia UML. Każda aktywność modelu procesu biznesowego jest przypisywana do domeny funkcjonalnej. Modelowanie procesów biznesowych i FD powinno być wykonywane iteracyjnie. Połączenia aktywności procesów i domen funkcjonalnych pomaga później w zapewnieniu reużywalności usług.
 
 \subsection*{Wykrywanie operacji usług}
 Na podstawie przeanalizowanych procesów biznesowych i domen funkcjonalnych mogą zostać wykryte operacje usług, które wspierają poszczególne aktywności procesów. Wykorzystywane jest do osiągnięcia tego celu FD. Dla każdego FD wszystkie przypisane aktywności analizowane są zgodnie z ich rodzajem. Dla zadań usługowych, operacje wspierające poszczególne aktywności są uwzględniane w modelu usługi. Dla zadań użytkownika specyfikowany jest z kolei interfejs użytkownika. Każda indywidualna operacja usługi i interfejs użytkownika jest przypisywany do domeny funkcjonalnej - z reguły powiązanej z aktywnością, z której się wywodzi.
@@ -728,13 +728,16 @@ Konsolidacja operacji usług jest także wykonywana przez FD oraz prowadzona prz
 \subsection*{Projektowanie usług}
 Po ustaleniu modelu operacji usług, poszczególne usługi mogą zostać zaprojektowane. Zazwyczaj usługa zawiera kilka operacji, dlatego powinny być odpowiednio pogrupowane. W tym celu architekt oprogramowania używa zasad specyficznych dla każdej klasy usług. Każda operacja klasy "interakcji z użytkownikiem" jest zazwyczaj reprezentowana przez pojedynczą usługę. Operacje zarządzania danymi są grupowane na podstawie podmiotów biznesowych.  Następnie tylko operacje wywodzące się z tego samego FD są rozpatrywana przy grupowaniu. 
 
-Kiedy usługi są zaprojektowane, pryncypia które nie mogą być zagwarantowane podczas wcześniejszych kroków muszą być wprowadzane. Dla każdej usługi architekt oprogramowania musi rozważyć czy zaliczyć go do bezstanowych (ang.\emph{Stateless}), czy usługi są \quotedblbase luźno połączone\textquotedblright (ang. \emph{Loosely coupled}) oraz czy istnieja operacje typu \emph{rollback} do wprowadzania mechanizmów transakcyjnych. Do manipulowania usługami, architekt oprogramowania może wykorzystywać takie operacje jak  unifikacja (ang. \emph{Unification}), intersekcja (ang. \emph{intersection}), dekompozycja (ang. \emph{Decomposition}), podzbioru (ang. \emph{Subset}) oraz substrakcji (ang. \emph{Substraction}). 
+Kiedy usługi są zaprojektowane, pryncypia które nie mogą być zagwarantowane podczas wcześniejszych kroków muszą być wprowadzane. Dla każdej usługi architekt oprogramowania musi rozważyć czy zaliczyć go do bezstanowych (ang. \emph{Stateless}), czy usługi są \quotedblbase luźno połączone\textquotedblright (ang. \emph{Loosely coupled}) oraz czy istnieja operacje typu \emph{rollback} do wprowadzania mechanizmów transakcyjnych. Do manipulowania usługami, architekt oprogramowania może wykorzystywać takie operacje jak  unifikacja (ang. \emph{Unification}), intersekcja (ang. \emph{Intersection}), dekompozycja (ang. \emph{Decomposition}), podzbioru (ang. \emph{Subset}) oraz substrakcji (ang. \emph{Substraction}). 
 Jeśli usługi powstaną zbyt rozbudowane należy podzielić je i wcześniejsze kroki wykonać ponownie. Ostatecznie usługi są wdrożone i przetestowane. 
 
 \subsection*{Choreografia procesów}
 Po tym jak usługi zostaną zdefiniowane procesy muszą być przygotowane do działania przez programistów. Operacje usług, powinny być przypisane do każdej aktywności wspieranej przez usługę. Na tym etapie także mechanizmy przechwytywania wyjątków powinny być również uwzględnione na modelach procesów. Przepływ danych musi być zweryfikowany dla zapewnienia wykonywalności. Jeśli konieczne mediacje danych powinny zostać również zbudowane.
 
 Ostatecznie wykorzystywane są narzędzia do przetłumaczenia języka modelowania BPMN na WS-BPEL. Interfejsy użytkowników, które były zaprojektowane wcześniej powinny być również wdrożone do specyfikacji procesów. Zazwyczaj te kroki są silnie zależne od infrastruktury pośredniczącej (ang. \emph{Middleware architecture}).
+
+\subsection{Końcowy produkt}
+Celem zastosowanie metody MatSOA jest doprowadzenie do utworzenia systemu informatycznego opierającego swoje działanie na kooperacji usług. System utworzony zgodnie z paradygmatami MatSOA powinien charakteryzować się stosunkowo wysokim poziomem rozbudowy oraz wysokim poziomem ziarnistości.
 
 \chapter{Weryfikacja koncepcji na przykładzie systemu bankowego}
 \section{Wstęp}
@@ -750,13 +753,13 @@ FrostRes stanowi niewielki bank krajowy. Ze względu na krótki pobyt na rynku p
  
 Bank posiada obecnie system informatyczny, jednakże nie jest on wystarczający na znaczną ilość klientów, która stale się zwiększa. Wymaga także modernizacji związanej z wprowadzonymi ustawami rządowymi. 
 
-W obecnej chwili system umożliwia zarządzanie kontami klientów (otwarcie i zamknięcie konta, pobranie historii działań wykonywanych na koncie) oraz obsługę transakcji finansowych (przelewy krajowe, wpłata i wypłata pieniędzy, pobranie historii płatności). 
+W obecnej chwili system umożliwia zarządzanie kontami klientów (otwarcie i zamknięcie konta, pobranie informacji o koncie, pobranie historii operacji wykonywanych na koncie) oraz obsługę transakcji finansowych (przelewy krajowe oraz wpłata i wypłata pieniędzy). 
 
-Zarząd banku prognozuje wykonanie szeregu zmian w istniejącym systemie. Ze względu na fakt, że organizacja dopiero się rozwija i ma ograniczone finanse zdecydowano się jak na razie na wprowadzenie tylko jednej nowej usługi - przelewów międzynarodowych Wymogiem jest, aby kraje uczestniczące w przelewach należały do organizacji SEPA oraz posiadały tą samą walutę. Oprócz tego ustalono, że system po modernizacji ma być w pełni zgodny z pryncypiami SOA. 
+Zarząd banku prognozuje wykonanie szeregu zmian w istniejącym systemie. Ze względu na fakt, że organizacja dopiero się rozwija i ma ograniczone finanse zdecydowano się jak na razie na wprowadzenie tylko jednej nowej usługi - przelewów międzynarodowych. Podstawowym wymogiem jest, żeby kraje uczestniczące w transakcjach przelewów posiadały rachunki walutowe typu IBAN. Oprócz tego ustalono, że system po modernizacji ma być w pełni zgodny z pryncypiami SOA. 
 
 Inna istotna zmiana związana jest z nową ustawą wprowadzoną przez rząd, która wprowadziła konieczność weryfikacji każdego przelewu powyżej 10000 złotych przez usługę udostępnioną przez Narodowy Bank Polski. W związku z tym konieczna będzie integracja z usługą weryfikacji przelewów ze strony Narodowego Banku Polskiego. W systemie wykorzystywane są dane o wysokim stopniu poufności dlatego wszelkie integracje z systemami zewnętrznymi muszą ścisło podlegać standardom bezpieczeństwa wymiany komunikatów w architekturze usługowej.
 
-Ze względu na fakt, że w przyszłości planowane są kolejne modernizacje oraz rozszerzenia, system musi wykazywać się dużą skalowalnością. Istotne jest również, żeby tworzony system posiadał optymalną ziarnistość oraz zapewniał reużywalność usług. 
+Ze względu na fakt, że w przyszłości planowane są kolejne modernizacje oraz rozszerzenia, system musi charakteryzować się stosunkowo dużą skalowalnością. Istotne jest również, żeby tworzony system posiadał optymalną ziarnistość oraz zapewniał reużywalność usług. 
 
 
 \subsection{Analiza organizacji}

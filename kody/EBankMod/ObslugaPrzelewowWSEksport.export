@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scdl:export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Binding="http://Main/ServicesIdentification/ObslugaPrzelewow//Binding" xmlns:jaxws="http://www.ibm.com/xmlns/prod/websphere/scdl/jaxws/6.0.0" xmlns:ns1="http://Main/ServicesIdentification/ObslugaPrzelewow/" xmlns:scdl="http://www.ibm.com/xmlns/prod/websphere/scdl/6.0.0" xmlns:wsdl="http://www.ibm.com/xmlns/prod/websphere/scdl/wsdl/6.0.0" displayName="ObslugaPrzelewowWSEksport" name="ObslugaPrzelewowWSEksport" target="PrzelewMiedzynarodowyProces">
+  <interfaces>
+    <interface xsi:type="wsdl:WSDLPortType" preferredInteractionStyle="sync" portType="ns1:ObslugaPrzelewow"/>
+  </interfaces>
+  <esbBinding xsi:type="jaxws:JaxWsExportBinding" port="Binding:ObslugaPrzelewowWSEksport_ObslugaPrzelewowHttpPort" service="Binding:ObslugaPrzelewow_eksport1_ObslugaPrzelewowHttpService"/>
+</scdl:export>

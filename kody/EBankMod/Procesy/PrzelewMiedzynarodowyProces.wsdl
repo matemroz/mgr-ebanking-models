@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions name="PrzelewMiedzynarodowyProces" targetNamespace="http://pw.ee.mgr.ebanking/PrzelewMiedzynarodowyProcesInterface" xmlns:bons0="http://ebanking.mgr.ee.pw.edu.pl/PrzelewMiedzynarodowyProcesInterface" xmlns:tns="http://pw.ee.mgr.ebanking/PrzelewMiedzynarodowyProcesInterface" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://pw.ee.mgr.ebanking/PrzelewMiedzynarodowyProcesInterface" xmlns:bons0="http://pw.ee.mgr.ebanking/PrzelewMiedzynarodowyProcesInterface">
+      <xsd:element name="operacja1">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="input1" nillable="true" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="operacja1Response">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="output1" nillable="true" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="żądanie_operacji1">
+    <wsdl:part element="tns:operacja1" name="parametry_operacji1"/>
+  </wsdl:message>
+  <wsdl:message name="odpowiedź_operacji1">
+    <wsdl:part element="tns:operacja1Response" name="wynik_operacji1"/>
+  </wsdl:message>
+  <wsdl:portType name="PrzelewMiedzynarodowyProces">
+    <wsdl:operation name="operacja1">
+      <wsdl:input message="tns:żądanie_operacji1" name="żądanie_operacji1"/>
+      <wsdl:output message="tns:odpowiedź_operacji1" name="odpowiedź_operacji1"/>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

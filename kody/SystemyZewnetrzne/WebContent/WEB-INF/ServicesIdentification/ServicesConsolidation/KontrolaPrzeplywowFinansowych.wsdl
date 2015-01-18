@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="KontrolaPrzeplywowFinansowych" targetNamespace="http://Main/ServicesIdentification/KontrolaPrzeplywowFinansowych/" xmlns:tns="http://Main/ServicesIdentification/KontrolaPrzeplywowFinansowych/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://Main/ServicesIdentification/KontrolaPrzeplywowFinansowych/" xmlns:xsd_1="http://Main/ServicesSpecification/">
+      <xsd:import namespace="http://Main/ServicesSpecification/" schemaLocation="../../ServicesSpecification/DataModel/WynikWeryfikacjiZleceniaPrzelewu.xsd"/>
+      <xsd:import namespace="http://Main/ServicesSpecification/" schemaLocation="../../ServicesSpecification/DataModel/WynikWeryfikacjiMozliwosciWykonaniaPrzelewuMiedzynarodowego.xsd"/>
+      <xsd:import namespace="http://Main/ServicesSpecification/" schemaLocation="../../ServicesSpecification/DataModel/ZleceniePrzelewuMiedzynarodowego.xsd"/>
+      <xsd:element name="inicjujWykonaniePrzelewu">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="zlecenie" type="xsd_1:ZleceniePrzelewuMiedzynarodowego"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="weryfikacjaMozliwosciWykonaniaPrzelewuMiedzynarodowegoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="weryfikacjaMozliwosciWykonaniaPrzelewuMiedzynarodowego" type="xsd_1:WynikWeryfikacjiMozliwosciWykonaniaPrzelewuMiedzynarodowego"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="weryfikacjaMozliwosciWykonaniaPrzelewuMiedzynarodowego">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="zlecenie" type="xsd_1:ZleceniePrzelewuMiedzynarodowego"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="weryfikujZleceniePrzelewuMiedzynarodowegoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="wynikWeryfikacjiZleceniaPrzelewu" type="xsd_1:WynikWeryfikacjiZleceniaPrzelewu"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="weryfikujZleceniePrzelewuMiedzynarodowego">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="zlecenie" type="xsd_1:ZleceniePrzelewuMiedzynarodowego"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="inicjujWykonaniePrzelewuRequest">
+    <wsdl:part element="tns:inicjujWykonaniePrzelewu" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="weryfikacjaMozliwosciWykonaniaPrzelewuMiedzynarodowegoRequest">
+    <wsdl:part element="tns:weryfikacjaMozliwosciWykonaniaPrzelewuMiedzynarodowego" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="weryfikacjaMozliwosciWykonaniaPrzelewuMiedzynarodowegoResponse">
+    <wsdl:part element="tns:weryfikacjaMozliwosciWykonaniaPrzelewuMiedzynarodowegoResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="weryfikujZleceniePrzelewuMiedzynarodowegoRequest">
+    <wsdl:part element="tns:weryfikujZleceniePrzelewuMiedzynarodowego" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="weryfikujZleceniePrzelewuMiedzynarodowegoResponse">
+    <wsdl:part element="tns:weryfikujZleceniePrzelewuMiedzynarodowegoResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:portType name="KontrolaPrzeplywowFinansowych">
+    <wsdl:operation name="inicjujWykonaniePrzelewu">
+      <wsdl:input message="tns:inicjujWykonaniePrzelewuRequest"/>
+    </wsdl:operation>
+    <wsdl:operation name="weryfikacjaMozliwosciWykonaniaPrzelewuMiedzynarodowego">
+      <wsdl:input message="tns:weryfikacjaMozliwosciWykonaniaPrzelewuMiedzynarodowegoRequest"/>
+      <wsdl:output message="tns:weryfikacjaMozliwosciWykonaniaPrzelewuMiedzynarodowegoResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="weryfikujZleceniePrzelewuMiedzynarodowego">
+      <wsdl:input message="tns:weryfikujZleceniePrzelewuMiedzynarodowegoRequest"/>
+      <wsdl:output message="tns:weryfikujZleceniePrzelewuMiedzynarodowegoResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="KontrolaPrzeplywowFinansowychBinding"
+  	type="tns:KontrolaPrzeplywowFinansowych">
+  	<soap:binding style="document"
+  		transport="http://schemas.xmlsoap.org/soap/http" />
+  	<wsdl:operation name="inicjujWykonaniePrzelewu">
+  		<soap:operation
+  			soapAction="http://Main/ServicesIdentification/KontrolaPrzeplywowFinansowych/inicjujWykonaniePrzelewu" />
+  		<wsdl:input>
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  	</wsdl:operation>
+  	<wsdl:operation
+  		name="weryfikacjaMozliwosciWykonaniaPrzelewuMiedzynarodowego">
+  		<soap:operation
+  			soapAction="http://Main/ServicesIdentification/KontrolaPrzeplywowFinansowych/weryfikacjaMozliwosciWykonaniaPrzelewuMiedzynarodowego" />
+  		<wsdl:input>
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  		<wsdl:output>
+  			<soap:body use="literal" />
+  		</wsdl:output>
+  	</wsdl:operation>
+  	<wsdl:operation
+  		name="weryfikujZleceniePrzelewuMiedzynarodowego">
+  		<soap:operation
+  			soapAction="http://Main/ServicesIdentification/KontrolaPrzeplywowFinansowych/weryfikujZleceniePrzelewuMiedzynarodowego" />
+  		<wsdl:input>
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  		<wsdl:output>
+  			<soap:body use="literal" />
+  		</wsdl:output>
+  	</wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="KontrolaPrzeplywowFinansowychService">
+  	<wsdl:port name="KontrolaPrzeplywowFinansowychServicePort" binding="tns:KontrolaPrzeplywowFinansowychBinding">
+  		<soap:address location="http://localhost:9084/weryfikator/services/KontrolaPrzeplywowFinansowychWS" />
+  	</wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

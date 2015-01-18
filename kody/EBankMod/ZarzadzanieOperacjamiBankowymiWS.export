@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scdl:export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Binding="http://pw.ee.mgr.ebanking/ServicesIdentification/ZarzadzanieOperacjamiBankowymi//Binding" xmlns:ZarzadzanieOperacjamiBankowymi="http://Main/ServicesIdentification/ZarzadzanieOperacjamiBankowymi/" xmlns:jaxws="http://www.ibm.com/xmlns/prod/websphere/scdl/jaxws/6.0.0" xmlns:ns1="http://pw.ee.mgr.ebanking/ServicesIdentification/ZarzadzanieOperacjamiBankowymi/" xmlns:scdl="http://www.ibm.com/xmlns/prod/websphere/scdl/6.0.0" xmlns:wsdl="http://www.ibm.com/xmlns/prod/websphere/scdl/wsdl/6.0.0" displayName="ZarzadzanieOperacjamiBankowymiWS" name="ZarzadzanieOperacjamiBankowymiWS" target="PrzelewMiedzynarodowyProces">
+  <interfaces>
+    <interface xsi:type="wsdl:WSDLPortType" preferredInteractionStyle="sync" portType="ZarzadzanieOperacjamiBankowymi:ZarzadzanieOperacjamiBankowymi"/>
+  </interfaces>
+  <esbBinding xsi:type="jaxws:JaxWsExportBinding" port="Binding:ZarzadzanieOperacjamiBankowymiWS_ZarzadzanieOperacjamiBankowymiHttpPort" service="Binding:ZarzadzanieOperacjamiBankowymi_eksport1_ZarzadzanieOperacjamiBankowymiHttpService"/>
+</scdl:export>

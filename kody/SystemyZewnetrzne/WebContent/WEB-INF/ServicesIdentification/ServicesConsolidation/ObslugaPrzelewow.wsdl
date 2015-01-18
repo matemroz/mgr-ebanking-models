@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="ObslugaPrzelewow" targetNamespace="http://Main/ServicesIdentification/ObslugaPrzelewow/" xmlns:tns="http://Main/ServicesIdentification/ObslugaPrzelewow/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://Main/ServicesIdentification/ObslugaPrzelewow/" xmlns:xsd_1="http://Main/ServicesSpecification/">
+      <xsd:import namespace="http://Main/ServicesSpecification/" schemaLocation="../../ServicesSpecification/DataModel/ZleceniePrzelewuMiedzynarodowego.xsd"/>
+      <xsd:import namespace="http://Main/ServicesSpecification/" schemaLocation="../../ServicesSpecification/DataModel/ZleceniePrzelewuKrajowego.xsd"/>
+      <xsd:import namespace="http://Main/ServicesSpecification/" schemaLocation="../../ServicesSpecification/DataModel/StatusZleceniaPrzelewu.xsd"/>
+      <xsd:element name="inicjujZleceniePrzelewuKrajowego">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="statusZlecenia" type="xsd_1:StatusZleceniaPrzelewu"/>
+            <xsd:element name="zleceniePrzelewuKrajowego" type="xsd_1:ZleceniePrzelewuKrajowego"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="inicjujZleceniePrzelewuMiedzynarodowego">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="zlecenie" type="xsd_1:ZleceniePrzelewuMiedzynarodowego"/>
+            <xsd:element name="statusZlecenia" type="xsd_1:StatusZleceniaPrzelewu"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="notyfikacjaOZakonczeniuProcesowaniaPrzelewuMiedzynarodowegoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="powodzenie" type="xsd:boolean"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="notyfikacjaOZakonczeniuProcesowaniaPrzelewuMiedzynarodowego">
+        <xsd:complexType>
+          <xsd:sequence/>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="inicjujZleceniePrzelewuKrajowegoRequest">
+    <wsdl:part element="tns:inicjujZleceniePrzelewuKrajowego" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="inicjujZleceniePrzelewuMiedzynarodowegoRequest">
+    <wsdl:part element="tns:inicjujZleceniePrzelewuMiedzynarodowego" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="notyfikacjaOZakonczeniuProcesowaniaPrzelewuMiedzynarodowegoRequest">
+    <wsdl:part element="tns:notyfikacjaOZakonczeniuProcesowaniaPrzelewuMiedzynarodowego" name="notyfikacjaOZakonczeniuProcesowaniaPrzelewuMiedzynarodowegoParameters"/>
+  </wsdl:message>
+  <wsdl:message name="notyfikacjaOZakonczeniuProcesowaniaPrzelewuMiedzynarodowegoResponse">
+    <wsdl:part element="tns:notyfikacjaOZakonczeniuProcesowaniaPrzelewuMiedzynarodowegoResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:portType name="ObslugaPrzelewow">
+    <wsdl:operation name="inicjujZleceniePrzelewuKrajowego">
+      <wsdl:input message="tns:inicjujZleceniePrzelewuKrajowegoRequest"/>
+    </wsdl:operation>
+    <wsdl:operation name="inicjujZleceniePrzelewuMiedzynarodowego">
+      <wsdl:input message="tns:inicjujZleceniePrzelewuMiedzynarodowegoRequest"/>
+    </wsdl:operation>
+    <wsdl:operation name="notyfikacjaOZakonczeniuProcesowaniaPrzelewuMiedzynarodowego">
+      <wsdl:input message="tns:notyfikacjaOZakonczeniuProcesowaniaPrzelewuMiedzynarodowegoRequest"/>
+      <wsdl:output message="tns:notyfikacjaOZakonczeniuProcesowaniaPrzelewuMiedzynarodowegoResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ObslugaPrzelewowBinding"
+  	type="tns:ObslugaPrzelewow">
+  	<soap:binding style="document"
+  		transport="http://schemas.xmlsoap.org/soap/http" />
+  	<wsdl:operation name="inicjujZleceniePrzelewuKrajowego">
+  		<soap:operation
+  			soapAction="http://Main/ServicesIdentification/ObslugaPrzelewow/inicjujZleceniePrzelewuKrajowego" />
+  		<wsdl:input>
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  	</wsdl:operation>
+  	<wsdl:operation name="inicjujZleceniePrzelewuMiedzynarodowego">
+  		<soap:operation
+  			soapAction="http://Main/ServicesIdentification/ObslugaPrzelewow/inicjujZleceniePrzelewuMiedzynarodowego" />
+  		<wsdl:input>
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  	</wsdl:operation>
+  	<wsdl:operation
+  		name="notyfikacjaOZakonczeniuProcesowaniaPrzelewuMiedzynarodowego">
+  		<soap:operation
+  			soapAction="http://Main/ServicesIdentification/ObslugaPrzelewow/notyfikacjaOZakonczeniuProcesowaniaPrzelewuMiedzynarodowego" />
+  		<wsdl:input>
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  		<wsdl:output>
+  			<soap:body use="literal" />
+  		</wsdl:output>
+  	</wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ObslugaPrzelewowService">
+  	<wsdl:port name="ObslugaPrzelewowServicePort" binding="tns:ObslugaPrzelewowBinding">
+  		<soap:address location="http://localhost:9084/obslugaPrzelewow/services/ObslugaPrzelewowWS" />
+  	</wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

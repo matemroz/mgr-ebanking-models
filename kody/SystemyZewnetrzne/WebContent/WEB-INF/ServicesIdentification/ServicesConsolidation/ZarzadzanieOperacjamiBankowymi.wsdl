@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="ZarzadzanieOperacjamiBankowymi" targetNamespace="http://Main/ServicesIdentification/ZarzadzanieOperacjamiBankowymi/" xmlns:tns="http://Main/ServicesIdentification/ZarzadzanieOperacjamiBankowymi/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://Main/ServicesIdentification/ZarzadzanieOperacjamiBankowymi/" xmlns:xsd_1="http://Main/ServicesSpecification/">
+      <xsd:import namespace="http://Main/ServicesSpecification/" schemaLocation="../../ServicesSpecification/DataModel/StatusZleceniaPrzelewu.xsd"/>
+      <xsd:import namespace="http://Main/ServicesSpecification/" schemaLocation="../../ServicesSpecification/DataModel/ZleceniePrzelewuMiedzynarodowego.xsd"/>
+      <xsd:element name="inicjujPrzewalutowywaniePrzelewuMiedzynarodowego">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="zlecenie" type="xsd_1:ZleceniePrzelewuMiedzynarodowego"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="inicjujWykonaniePrzelewu">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="statusZlecenia" type="xsd_1:StatusZleceniaPrzelewu"/>
+            <xsd:element name="zlecenie" type="xsd_1:ZleceniePrzelewuMiedzynarodowego"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="inicjujZakonczenieProcesowaniaPrzelewuMiedzynarodowego">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="status" type="xsd_1:StatusZleceniaPrzelewu"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="wplacPieniadzeNaKonto">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="nrKonta" type="xsd:string"/>
+            <xsd:element name="kwota" type="xsd:double"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="wyplacPieniadzeZKonta">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="kwota" type="xsd:double"/>
+            <xsd:element name="nrKonta" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="inicjujPrzewalutowywaniePrzelewuMiedzynarodowegoRequest">
+    <wsdl:part element="tns:inicjujPrzewalutowywaniePrzelewuMiedzynarodowego" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="inicjujWykonaniePrzelewuRequest">
+    <wsdl:part element="tns:inicjujWykonaniePrzelewu" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="inicjujZakonczenieProcesowaniaPrzelewuMiedzynarodowegoRequest">
+    <wsdl:part element="tns:inicjujZakonczenieProcesowaniaPrzelewuMiedzynarodowego" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="wplacPieniadzeNaKontoRequest">
+    <wsdl:part element="tns:wplacPieniadzeNaKonto" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="wyplacPieniadzeZKontaRequest">
+    <wsdl:part element="tns:wyplacPieniadzeZKonta" name="parameters"/>
+  </wsdl:message>
+  <wsdl:portType name="ZarzadzanieOperacjamiBankowymi">
+    <wsdl:operation name="inicjujPrzewalutowywaniePrzelewuMiedzynarodowego">
+      <wsdl:input message="tns:inicjujPrzewalutowywaniePrzelewuMiedzynarodowegoRequest"/>
+    </wsdl:operation>
+    <wsdl:operation name="inicjujWykonaniePrzelewu">
+      <wsdl:input message="tns:inicjujWykonaniePrzelewuRequest"/>
+    </wsdl:operation>
+    <wsdl:operation name="inicjujZakonczenieProcesowaniaPrzelewuMiedzynarodowego">
+      <wsdl:input message="tns:inicjujZakonczenieProcesowaniaPrzelewuMiedzynarodowegoRequest"/>
+    </wsdl:operation>
+    <wsdl:operation name="wplacPieniadzeNaKonto">
+      <wsdl:input message="tns:wplacPieniadzeNaKontoRequest"/>
+    </wsdl:operation>
+    <wsdl:operation name="wyplacPieniadzeZKonta">
+      <wsdl:input message="tns:wyplacPieniadzeZKontaRequest"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ZarzadzanieOperacjamiBankowymiBinding"
+  	type="tns:ZarzadzanieOperacjamiBankowymi">
+  	<soap:binding style="document"
+  		transport="http://schemas.xmlsoap.org/soap/http" />
+  	<wsdl:operation
+  		name="inicjujPrzewalutowywaniePrzelewuMiedzynarodowego">
+  		<soap:operation
+  			soapAction="http://Main/ServicesIdentification/ZarzadzanieOperacjamiBankowymi/inicjujPrzewalutowywaniePrzelewuMiedzynarodowego" />
+  		<wsdl:input>
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  	</wsdl:operation>
+  	<wsdl:operation name="inicjujWykonaniePrzelewu">
+  		<soap:operation
+  			soapAction="http://Main/ServicesIdentification/ZarzadzanieOperacjamiBankowymi/inicjujWykonaniePrzelewu" />
+  		<wsdl:input>
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  	</wsdl:operation>
+  	<wsdl:operation
+  		name="inicjujZakonczenieProcesowaniaPrzelewuMiedzynarodowego">
+  		<soap:operation
+  			soapAction="http://Main/ServicesIdentification/ZarzadzanieOperacjamiBankowymi/inicjujZakonczenieProcesowaniaPrzelewuMiedzynarodowego" />
+  		<wsdl:input>
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  	</wsdl:operation>
+  	<wsdl:operation name="wplacPieniadzeNaKonto">
+  		<soap:operation
+  			soapAction="http://Main/ServicesIdentification/ZarzadzanieOperacjamiBankowymi/wplacPieniadzeNaKonto" />
+  		<wsdl:input>
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  	</wsdl:operation>
+  	<wsdl:operation name="wyplacPieniadzeZKonta">
+  		<soap:operation
+  			soapAction="http://Main/ServicesIdentification/ZarzadzanieOperacjamiBankowymi/wyplacPieniadzeZKonta" />
+  		<wsdl:input>
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  	</wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ZarzadzanieOperacjamiBankowymiService">
+  	<wsdl:port name="ZarzadzanieOperacjamiBankowymiServicePort" binding="tns:ZarzadzanieOperacjamiBankowymiBinding">
+  		<soap:address location="http://localhost:9084/zarzadzanieoperacjami/services/ZarzadzanieOperacjamiBankowymiWS" />
+  	</wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

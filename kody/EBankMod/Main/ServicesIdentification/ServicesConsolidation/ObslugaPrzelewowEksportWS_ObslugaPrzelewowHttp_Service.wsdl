@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions name="ObslugaPrzelewow_eksport1_ObslugaPrzelewowHttp_Service" targetNamespace="http://pw.ee.mgr.ebanking/ServicesIdentification/ObslugaPrzelewow/Binding" xmlns:Port_0="http://pw.ee.mgr.ebanking/ServicesIdentification/ObslugaPrzelewow" xmlns:bons0="http://Main/ServicesIdentification/ObslugaPrzelewow/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:this="http://pw.ee.mgr.ebanking/ServicesIdentification/ObslugaPrzelewow/Binding" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import location="ObslugaPrzelewow.wsdl" namespace="http://Main/ServicesIdentification/ObslugaPrzelewow/"/>
+    <wsdl:binding name="ObslugaPrzelewow_eksport1_ObslugaPrzelewowHttpBinding" type="bons0:ObslugaPrzelewow">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="inicjujZleceniePrzelewuMiedzynarodowego">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ObslugaPrzelewow_eksport1_ObslugaPrzelewowHttpService">
+    <wsdl:port binding="this:ObslugaPrzelewow_eksport1_ObslugaPrzelewowHttpBinding" name="ObslugaPrzelewowEksportWS_ObslugaPrzelewowHttpPort">
+      <soap:address location="http://localhost:9080/EBankModWeb/sca/ObslugaPrzelewowEksportWS"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

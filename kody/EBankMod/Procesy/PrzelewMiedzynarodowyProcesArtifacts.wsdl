@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions name="PrzelewMiedzynarodowyProces" targetNamespace="http://ebanking.mgr.ee.pw.edu.pl/PrzelewMiedzynarodowyProcesArtifacts" xmlns:ns="http://pw.ee.mgr.ebanking/ServicesIdentification/ZarzadzanieRozliczeniami/" xmlns:ns0="http://Main/ServicesIdentification/ObslugaPrzelewow/" xmlns:ns1="http://Main/ServicesIdentification/ZarzadzanieRozliczeniami/" xmlns:ns3="http://Main/ServicesIdentification/KontrolaPrzeplywowFinansowych/" xmlns:ns4="http://Main/ServicesIdentification/ZarzadzanieOperacjamiBankowymi/" xmlns:plnk="http://schemas.xmlsoap.org/ws/2004/03/partner-link/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+    <plnk:partnerLinkType name="KontrolaPrzeplywowFinansowychPartnerPLT">
+    <plnk:role name="Reference">
+      <plnk:portType name="ns3:KontrolaPrzeplywowFinansowych"/>
+    </plnk:role>
+  </plnk:partnerLinkType>
+    <plnk:partnerLinkType name="ZarzadzanieOperacjamiBankowymiPartnerPLT">
+    <plnk:role name="Reference">
+      <plnk:portType name="ns4:ZarzadzanieOperacjamiBankowymi"/>
+    </plnk:role>
+  </plnk:partnerLinkType>
+    <plnk:partnerLinkType name="ZarzadzanieRozliczeniamiPartnerPLT">
+    <plnk:role name="Reference">
+      <plnk:portType name="ns1:ZarzadzanieRozliczeniami"/>
+    </plnk:role>
+  </plnk:partnerLinkType>
+    <plnk:partnerLinkType name="ObslugaPrzelewowIPartnerPLT">
+    <plnk:role name="Interface">
+      <plnk:portType name="ns0:ObslugaPrzelewow"/>
+    </plnk:role>
+  </plnk:partnerLinkType>
+    <plnk:partnerLinkType name="ObslugaPrzelewowPLT">
+    <plnk:role name="Interface">
+      <plnk:portType name="ns0:ObslugaPrzelewow"/>
+    </plnk:role>
+  </plnk:partnerLinkType>
+    <plnk:partnerLinkType name="KontrolaPrzeplywowFinansowychPLT">
+    <plnk:role name="Interface">
+      <plnk:portType name="ns3:KontrolaPrzeplywowFinansowych"/>
+    </plnk:role>
+  </plnk:partnerLinkType>
+    <plnk:partnerLinkType name="ZarzadzanieRozliczeniamiPLT">
+    <plnk:role name="Interface">
+      <plnk:portType name="ns1:ZarzadzanieRozliczeniami"/>
+    </plnk:role>
+  </plnk:partnerLinkType>
+    <plnk:partnerLinkType name="ZarzadzanieOperacjamiBankowymiPLT">
+    <plnk:role name="Interface">
+      <plnk:portType name="ns4:ZarzadzanieOperacjamiBankowymi"/>
+    </plnk:role>
+  </plnk:partnerLinkType>
+    <wsdl:import location="../Main/ServicesIdentification/ServicesConsolidation/KontrolaPrzeplywowFinansowych.wsdl" namespace="http://Main/ServicesIdentification/KontrolaPrzeplywowFinansowych/"/>
+    <wsdl:import location="../Main/ServicesIdentification/ServicesConsolidation/ZarzadzanieOperacjamiBankowymi.wsdl" namespace="http://Main/ServicesIdentification/ZarzadzanieOperacjamiBankowymi/"/>
+    <wsdl:import location="../Main/ServicesIdentification/ServicesConsolidation/ZarzadzanieRozliczeniami.wsdl" namespace="http://Main/ServicesIdentification/ZarzadzanieRozliczeniami/"/>
+    <wsdl:import location="../Main/ServicesIdentification/ServicesConsolidation/ObslugaPrzelewow.wsdl" namespace="http://Main/ServicesIdentification/ObslugaPrzelewow/"/>
+</wsdl:definitions>

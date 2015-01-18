@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scdl:import xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ZarzadzanieRozliczeniami="http://pw.ee.mgr.ebanking/ServicesIdentification/ZarzadzanieRozliczeniami/" xmlns:configuration_6.1.0="http://www.ibm.com/xmlns/prod/websphere/j2ca/configuration/6.1.0" xmlns:http="http://www.ibm.com/xmlns/prod/websphere/scdl/http/6.1.0" xmlns:jaxws="http://www.ibm.com/xmlns/prod/websphere/scdl/jaxws/6.0.0" xmlns:ns1="http://Main/ServicesIdentification/ZarzadzanieRozliczeniami/" xmlns:ns2="http://Main/ServicesIdentification/ObslugaPrzelewow/" xmlns:scdl="http://www.ibm.com/xmlns/prod/websphere/scdl/6.0.0" xmlns:wsdl="http://www.ibm.com/xmlns/prod/websphere/scdl/wsdl/6.0.0" displayName="ZarzadzanieRozliczeniamiSCAImport" name="ZarzadzanieRozliczeniamiSCAImport">
+  <interfaces>
+    <interface xsi:type="wsdl:WSDLPortType" preferredInteractionStyle="sync" portType="ns1:ZarzadzanieRozliczeniami">
+      <scdl:interfaceQualifier xsi:type="scdl:JoinTransaction" value="false"/>
+    </interface>
+  </interfaces>
+  <esbBinding xsi:type="jaxws:JaxWsImportBinding" endpoint="http://localhost:9084/SystemyZewnetrzne/ZarzadzanieRozliczeniamiService" port="ns1:ZarzadzanieRozliczeniamiServicePort" service="ns1:ZarzadzanieRozliczeniamiService"/>
+</scdl:import>

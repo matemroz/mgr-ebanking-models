@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema targetNamespace="http://Main/ServicesSpecification/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:complexType name="WynikWeryfikacjiZleceniaPrzelewu">
+    <xsd:sequence>
+      <xsd:element name="opis" type="xsd:string"/>
+      <xsd:element name="wynik" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
