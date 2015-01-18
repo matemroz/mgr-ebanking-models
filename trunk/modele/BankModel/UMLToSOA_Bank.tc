@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?><TransformationConfiguration forwardTransformation="com.ibm.xtools.transform.uml2.soa.UmlToSoaTransform" version="8.0.0">
+<!--xtools2_universal_type_manager-->
+<Property id="/resource/BankModel/Main.emx#_0ulskI5tEeSOz9579BExmAResourceTableDefaultFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringZarzadzanieKontamiKlientow"/>
+<Property id="/resource/BankModel/Main.emx#_0ulskI5tEeSOz9579BExmAResourceTableDefaultFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesIdentification/ServicesConsolidation"/>
+<Property id="/resource/BankModel/Main.emx#_0ulskI5tEeSOz9579BExmAResourceTableFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringZarzadzanieKontamiKlientow"/>
+<Property id="/resource/BankModel/Main.emx#_0ulskI5tEeSOz9579BExmAResourceTableFileDefaultNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesIdentification/ZarzadzanieKontamiKlientow/"/>
+<Property id="/resource/BankModel/Main.emx#_0ulskI5tEeSOz9579BExmAResourceTableFileExtension" value="@45,=@com.ibm.xtools.transform.core.metatype.stringwsdl"/>
+<Property id="/resource/BankModel/Main.emx#_0ulskI5tEeSOz9579BExmAResourceTableFileNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesIdentification/ZarzadzanieKontamiKlientow/"/>
+<Property id="/resource/BankModel/Main.emx#_0ulskI5tEeSOz9579BExmAResourceTableFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesIdentification/ServicesConsolidation"/>
+<Property id="/resource/BankModel/Main.emx#_0ulskI5tEeSOz9579BExmAResourceTableQName" value="@45,=@com.ibm.xtools.transform.core.metatype.stringMain::Services Identification::Services Consolidation::ZarzadzanieKontamiKlientow"/>
+<Property id="/resource/BankModel/Main.emx#_6OMuEInGEeSGNJPsBvqCTAResourceTableDefaultFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringZleceniePrzelewu"/>
+<Property id="/resource/BankModel/Main.emx#_6OMuEInGEeSGNJPsBvqCTAResourceTableDefaultFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesSpecification/DataModel"/>
+<Property id="/resource/BankModel/Main.emx#_6OMuEInGEeSGNJPsBvqCTAResourceTableFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringZleceniePrzelewu"/>
+<Property id="/resource/BankModel/Main.emx#_6OMuEInGEeSGNJPsBvqCTAResourceTableFileDefaultNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesSpecification/"/>
+<Property id="/resource/BankModel/Main.emx#_6OMuEInGEeSGNJPsBvqCTAResourceTableFileExtension" value="@45,=@com.ibm.xtools.transform.core.metatype.stringxsd"/>
+<Property id="/resource/BankModel/Main.emx#_6OMuEInGEeSGNJPsBvqCTAResourceTableFileNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesSpecification/"/>
+<Property id="/resource/BankModel/Main.emx#_6OMuEInGEeSGNJPsBvqCTAResourceTableFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesSpecification/DataModel"/>
+<Property id="/resource/BankModel/Main.emx#_6OMuEInGEeSGNJPsBvqCTAResourceTableQName" value="@45,=@com.ibm.xtools.transform.core.metatype.stringMain::Services Specification::Data Model::ZleceniePrzelewu"/>
+<Property id="/resource/BankModel/Main.emx#_C-xy4InHEeSGNJPsBvqCTAResourceTableDefaultFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringStatusZleceniaPrzelewu"/>
+<Property id="/resource/BankModel/Main.emx#_C-xy4InHEeSGNJPsBvqCTAResourceTableDefaultFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesSpecification/DataModel"/>
+<Property id="/resource/BankModel/Main.emx#_C-xy4InHEeSGNJPsBvqCTAResourceTableFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringStatusZleceniaPrzelewu"/>
+<Property id="/resource/BankModel/Main.emx#_C-xy4InHEeSGNJPsBvqCTAResourceTableFileDefaultNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesSpecification/"/>
+<Property id="/resource/BankModel/Main.emx#_C-xy4InHEeSGNJPsBvqCTAResourceTableFileExtension" value="@45,=@com.ibm.xtools.transform.core.metatype.stringxsd"/>
+<Property id="/resource/BankModel/Main.emx#_C-xy4InHEeSGNJPsBvqCTAResourceTableFileNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesSpecification/"/>
+<Property id="/resource/BankModel/Main.emx#_C-xy4InHEeSGNJPsBvqCTAResourceTableFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesSpecification/DataModel"/>
+<Property id="/resource/BankModel/Main.emx#_C-xy4InHEeSGNJPsBvqCTAResourceTableQName" value="@45,=@com.ibm.xtools.transform.core.metatype.stringMain::Services Specification::Data Model::StatusZleceniaPrzelewu"/>
+<Property id="/resource/BankModel/Main.emx#_CnTQoI3xEeSOz9579BExmAResourceTableDefaultFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringZarzadzanieOperacjamiBankowymi"/>
+<Property id="/resource/BankModel/Main.emx#_CnTQoI3xEeSOz9579BExmAResourceTableDefaultFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesIdentification/ServicesConsolidation"/>
+<Property id="/resource/BankModel/Main.emx#_CnTQoI3xEeSOz9579BExmAResourceTableFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringZarzadzanieOperacjamiBankowymi"/>
+<Property id="/resource/BankModel/Main.emx#_CnTQoI3xEeSOz9579BExmAResourceTableFileDefaultNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesIdentification/ZarzadzanieOperacjamiBankowymi/"/>
+<Property id="/resource/BankModel/Main.emx#_CnTQoI3xEeSOz9579BExmAResourceTableFileExtension" value="@45,=@com.ibm.xtools.transform.core.metatype.stringwsdl"/>
+<Property id="/resource/BankModel/Main.emx#_CnTQoI3xEeSOz9579BExmAResourceTableFileNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesIdentification/ZarzadzanieOperacjamiBankowymi/"/>
+<Property id="/resource/BankModel/Main.emx#_CnTQoI3xEeSOz9579BExmAResourceTableFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesIdentification/ServicesConsolidation"/>
+<Property id="/resource/BankModel/Main.emx#_CnTQoI3xEeSOz9579BExmAResourceTableQName" value="@45,=@com.ibm.xtools.transform.core.metatype.stringMain::Services Identification::Services Consolidation::ZarzadzanieOperacjamiBankowymi"/>
+<Property id="/resource/BankModel/Main.emx#_FJbskInHEeSGNJPsBvqCTAResourceTableDefaultFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringKlient"/>
+<Property id="/resource/BankModel/Main.emx#_FJbskInHEeSGNJPsBvqCTAResourceTableDefaultFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesSpecification/DataModel"/>
+<Property id="/resource/BankModel/Main.emx#_FJbskInHEeSGNJPsBvqCTAResourceTableFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringKlient"/>
+<Property id="/resource/BankModel/Main.emx#_FJbskInHEeSGNJPsBvqCTAResourceTableFileDefaultNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesSpecification/"/>
+<Property id="/resource/BankModel/Main.emx#_FJbskInHEeSGNJPsBvqCTAResourceTableFileExtension" value="@45,=@com.ibm.xtools.transform.core.metatype.stringxsd"/>
+<Property id="/resource/BankModel/Main.emx#_FJbskInHEeSGNJPsBvqCTAResourceTableFileNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesSpecification/"/>
+<Property id="/resource/BankModel/Main.emx#_FJbskInHEeSGNJPsBvqCTAResourceTableFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesSpecification/DataModel"/>
+<Property id="/resource/BankModel/Main.emx#_FJbskInHEeSGNJPsBvqCTAResourceTableQName" value="@45,=@com.ibm.xtools.transform.core.metatype.stringMain::Services Specification::Data Model::Klient"/>
+<Property id="/resource/BankModel/Main.emx#_GBRSwIkzEeSw8qsw3QF_ZQResourceTableDefaultFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringDataModel"/>
+<Property id="/resource/BankModel/Main.emx#_GBRSwIkzEeSw8qsw3QF_ZQResourceTableDefaultFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesSpecification/DataModel"/>
+<Property id="/resource/BankModel/Main.emx#_GBRSwIkzEeSw8qsw3QF_ZQResourceTableFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringDataModel"/>
+<Property id="/resource/BankModel/Main.emx#_GBRSwIkzEeSw8qsw3QF_ZQResourceTableFileDefaultNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesSpecification/"/>
+<Property id="/resource/BankModel/Main.emx#_GBRSwIkzEeSw8qsw3QF_ZQResourceTableFileExtension" value="@45,=@com.ibm.xtools.transform.core.metatype.stringxsd"/>
+<Property id="/resource/BankModel/Main.emx#_GBRSwIkzEeSw8qsw3QF_ZQResourceTableFileNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesSpecification/"/>
+<Property id="/resource/BankModel/Main.emx#_GBRSwIkzEeSw8qsw3QF_ZQResourceTableFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesSpecification/DataModel"/>
+<Property id="/resource/BankModel/Main.emx#_GBRSwIkzEeSw8qsw3QF_ZQResourceTableQName" value="@45,=@com.ibm.xtools.transform.core.metatype.stringMain::Services Specification::Data Model"/>
+<Property id="/resource/BankModel/Main.emx#_KRPiMJP_EeSNzcWBLCAbKgResourceTableDefaultFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringWynikWeryfikacjiMozliwosciWykonaniaPrzelewuMiedzynarodowego"/>
+<Property id="/resource/BankModel/Main.emx#_KRPiMJP_EeSNzcWBLCAbKgResourceTableDefaultFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesSpecification/DataModel"/>
+<Property id="/resource/BankModel/Main.emx#_KRPiMJP_EeSNzcWBLCAbKgResourceTableFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringWynikWeryfikacjiMozliwosciWykonaniaPrzelewuMiedzynarodowego"/>
+<Property id="/resource/BankModel/Main.emx#_KRPiMJP_EeSNzcWBLCAbKgResourceTableFileDefaultNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesSpecification/"/>
+<Property id="/resource/BankModel/Main.emx#_KRPiMJP_EeSNzcWBLCAbKgResourceTableFileExtension" value="@45,=@com.ibm.xtools.transform.core.metatype.stringxsd"/>
+<Property id="/resource/BankModel/Main.emx#_KRPiMJP_EeSNzcWBLCAbKgResourceTableFileNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesSpecification/"/>
+<Property id="/resource/BankModel/Main.emx#_KRPiMJP_EeSNzcWBLCAbKgResourceTableFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesSpecification/DataModel"/>
+<Property id="/resource/BankModel/Main.emx#_KRPiMJP_EeSNzcWBLCAbKgResourceTableQName" value="@45,=@com.ibm.xtools.transform.core.metatype.stringMain::Services Specification::Data Model::WynikWeryfikacjiMozliwosciWykonaniaPrzelewuMiedzynarodowego"/>
+<Property id="/resource/BankModel/Main.emx#_LgCXsHJtEeS4vvjQvammjwResourceTableDefaultFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringUserInterfaceInitial"/>
+<Property id="/resource/BankModel/Main.emx#_LgCXsHJtEeS4vvjQvammjwResourceTableDefaultFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringUserInterfaceModel/UserInterfaceInitial"/>
+<Property id="/resource/BankModel/Main.emx#_LgCXsHJtEeS4vvjQvammjwResourceTableFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringUserInterfaceInitial"/>
+<Property id="/resource/BankModel/Main.emx#_LgCXsHJtEeS4vvjQvammjwResourceTableFileDefaultNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/UserInterfaceModel/"/>
+<Property id="/resource/BankModel/Main.emx#_LgCXsHJtEeS4vvjQvammjwResourceTableFileExtension" value="@45,=@com.ibm.xtools.transform.core.metatype.stringwsdl"/>
+<Property id="/resource/BankModel/Main.emx#_LgCXsHJtEeS4vvjQvammjwResourceTableFileNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/UserInterfaceModel/"/>
+<Property id="/resource/BankModel/Main.emx#_LgCXsHJtEeS4vvjQvammjwResourceTableFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringUserInterfaceModel/UserInterfaceInitial"/>
+<Property id="/resource/BankModel/Main.emx#_LgCXsHJtEeS4vvjQvammjwResourceTableQName" value="@45,=@com.ibm.xtools.transform.core.metatype.stringMain::User Interface Model::User Interface Initial"/>
+<Property id="/resource/BankModel/Main.emx#_TSNzcJP_EeSNzcWBLCAbKgResourceTableDefaultFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringWynikWeryfikacjiZleceniaPrzelewu"/>
+<Property id="/resource/BankModel/Main.emx#_TSNzcJP_EeSNzcWBLCAbKgResourceTableDefaultFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesSpecification/DataModel"/>
+<Property id="/resource/BankModel/Main.emx#_TSNzcJP_EeSNzcWBLCAbKgResourceTableFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringWynikWeryfikacjiZleceniaPrzelewu"/>
+<Property id="/resource/BankModel/Main.emx#_TSNzcJP_EeSNzcWBLCAbKgResourceTableFileDefaultNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesSpecification/"/>
+<Property id="/resource/BankModel/Main.emx#_TSNzcJP_EeSNzcWBLCAbKgResourceTableFileExtension" value="@45,=@com.ibm.xtools.transform.core.metatype.stringxsd"/>
+<Property id="/resource/BankModel/Main.emx#_TSNzcJP_EeSNzcWBLCAbKgResourceTableFileNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesSpecification/"/>
+<Property id="/resource/BankModel/Main.emx#_TSNzcJP_EeSNzcWBLCAbKgResourceTableFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesSpecification/DataModel"/>
+<Property id="/resource/BankModel/Main.emx#_TSNzcJP_EeSNzcWBLCAbKgResourceTableQName" value="@45,=@com.ibm.xtools.transform.core.metatype.stringMain::Services Specification::Data Model::WynikWeryfikacjiZleceniaPrzelewu"/>
+<Property id="/resource/BankModel/Main.emx#_XUhuYI6FEeSOz9579BExmAResourceTableDefaultFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringWeryfikator"/>
+<Property id="/resource/BankModel/Main.emx#_XUhuYI6FEeSOz9579BExmAResourceTableDefaultFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesRealization/Participants"/>
+<Property id="/resource/BankModel/Main.emx#_XUhuYI6FEeSOz9579BExmAResourceTableFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringWeryfikator"/>
+<Property id="/resource/BankModel/Main.emx#_XUhuYI6FEeSOz9579BExmAResourceTableFileDefaultNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesRealization/Weryfikator/"/>
+<Property id="/resource/BankModel/Main.emx#_XUhuYI6FEeSOz9579BExmAResourceTableFileExtension" value="@45,=@com.ibm.xtools.transform.core.metatype.stringwsdl"/>
+<Property id="/resource/BankModel/Main.emx#_XUhuYI6FEeSOz9579BExmAResourceTableFileNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesRealization/Weryfikator/"/>
+<Property id="/resource/BankModel/Main.emx#_XUhuYI6FEeSOz9579BExmAResourceTableFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesRealization/Participants"/>
+<Property id="/resource/BankModel/Main.emx#_XUhuYI6FEeSOz9579BExmAResourceTableQName" value="@45,=@com.ibm.xtools.transform.core.metatype.stringMain::Services Realization::Participants::Weryfikator"/>
+<Property id="/resource/BankModel/Main.emx#_ZtudAGl7EeSjgIzEAam4BQResourceTableDefaultFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringIGlowny"/>
+<Property id="/resource/BankModel/Main.emx#_ZtudAGl7EeSjgIzEAam4BQResourceTableDefaultFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringUserInterfaceModel/UserInterfaceInitial"/>
+<Property id="/resource/BankModel/Main.emx#_ZtudAGl7EeSjgIzEAam4BQResourceTableFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringIGlowny"/>
+<Property id="/resource/BankModel/Main.emx#_ZtudAGl7EeSjgIzEAam4BQResourceTableFileDefaultNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/UserInterfaceModel/IGlowny/"/>
+<Property id="/resource/BankModel/Main.emx#_ZtudAGl7EeSjgIzEAam4BQResourceTableFileExtension" value="@45,=@com.ibm.xtools.transform.core.metatype.stringwsdl"/>
+<Property id="/resource/BankModel/Main.emx#_ZtudAGl7EeSjgIzEAam4BQResourceTableFileNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/UserInterfaceModel/IGlowny/"/>
+<Property id="/resource/BankModel/Main.emx#_ZtudAGl7EeSjgIzEAam4BQResourceTableFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringUserInterfaceModel/UserInterfaceInitial"/>
+<Property id="/resource/BankModel/Main.emx#_ZtudAGl7EeSjgIzEAam4BQResourceTableQName" value="@45,=@com.ibm.xtools.transform.core.metatype.stringMain::User Interface Model::User Interface Initial::IGlowny"/>
+<Property id="/resource/BankModel/Main.emx#_aCX_wHJtEeS4vvjQvammjwResourceTableDefaultFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringUserInterfaceRefactored"/>
+<Property id="/resource/BankModel/Main.emx#_aCX_wHJtEeS4vvjQvammjwResourceTableDefaultFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringUserInterfaceModel/UserInterfaceRefactored"/>
+<Property id="/resource/BankModel/Main.emx#_aCX_wHJtEeS4vvjQvammjwResourceTableFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringUserInterfaceRefactored"/>
+<Property id="/resource/BankModel/Main.emx#_aCX_wHJtEeS4vvjQvammjwResourceTableFileDefaultNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/UserInterfaceModel/"/>
+<Property id="/resource/BankModel/Main.emx#_aCX_wHJtEeS4vvjQvammjwResourceTableFileExtension" value="@45,=@com.ibm.xtools.transform.core.metatype.stringwsdl"/>
+<Property id="/resource/BankModel/Main.emx#_aCX_wHJtEeS4vvjQvammjwResourceTableFileNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/UserInterfaceModel/"/>
+<Property id="/resource/BankModel/Main.emx#_aCX_wHJtEeS4vvjQvammjwResourceTableFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringUserInterfaceModel/UserInterfaceRefactored"/>
+<Property id="/resource/BankModel/Main.emx#_aCX_wHJtEeS4vvjQvammjwResourceTableQName" value="@45,=@com.ibm.xtools.transform.core.metatype.stringMain::User Interface Model::User Interface Refactored"/>
+<Property id="/resource/BankModel/Main.emx#_aft4AI6FEeSOz9579BExmAResourceTableDefaultFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringZarzadcaRozliczen"/>
+<Property id="/resource/BankModel/Main.emx#_aft4AI6FEeSOz9579BExmAResourceTableDefaultFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesRealization/Participants"/>
+<Property id="/resource/BankModel/Main.emx#_aft4AI6FEeSOz9579BExmAResourceTableFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringZarzadcaRozliczen"/>
+<Property id="/resource/BankModel/Main.emx#_aft4AI6FEeSOz9579BExmAResourceTableFileDefaultNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesRealization/ZarzadcaRozliczen/"/>
+<Property id="/resource/BankModel/Main.emx#_aft4AI6FEeSOz9579BExmAResourceTableFileExtension" value="@45,=@com.ibm.xtools.transform.core.metatype.stringwsdl"/>
+<Property id="/resource/BankModel/Main.emx#_aft4AI6FEeSOz9579BExmAResourceTableFileNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesRealization/ZarzadcaRozliczen/"/>
+<Property id="/resource/BankModel/Main.emx#_aft4AI6FEeSOz9579BExmAResourceTableFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesRealization/Participants"/>
+<Property id="/resource/BankModel/Main.emx#_aft4AI6FEeSOz9579BExmAResourceTableQName" value="@45,=@com.ibm.xtools.transform.core.metatype.stringMain::Services Realization::Participants::ZarzadcaRozliczen"/>
+<Property id="/resource/BankModel/Main.emx#_cFp9sGl7EeSjgIzEAam4BQResourceTableDefaultFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringIPrzelewMiedzynarodowyUI"/>
+<Property id="/resource/BankModel/Main.emx#_cFp9sGl7EeSjgIzEAam4BQResourceTableDefaultFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringUserInterfaceModel/UserInterfaceInitial"/>
+<Property id="/resource/BankModel/Main.emx#_cFp9sGl7EeSjgIzEAam4BQResourceTableFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringIPrzelewMiedzynarodowyUI"/>
+<Property id="/resource/BankModel/Main.emx#_cFp9sGl7EeSjgIzEAam4BQResourceTableFileDefaultNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/UserInterfaceModel/IPrzelewMiedzynarodowyUI/"/>
+<Property id="/resource/BankModel/Main.emx#_cFp9sGl7EeSjgIzEAam4BQResourceTableFileExtension" value="@45,=@com.ibm.xtools.transform.core.metatype.stringwsdl"/>
+<Property id="/resource/BankModel/Main.emx#_cFp9sGl7EeSjgIzEAam4BQResourceTableFileNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/UserInterfaceModel/IPrzelewMiedzynarodowyUI/"/>
+<Property id="/resource/BankModel/Main.emx#_cFp9sGl7EeSjgIzEAam4BQResourceTableFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringUserInterfaceModel/UserInterfaceInitial"/>
+<Property id="/resource/BankModel/Main.emx#_cFp9sGl7EeSjgIzEAam4BQResourceTableQName" value="@45,=@com.ibm.xtools.transform.core.metatype.stringMain::User Interface Model::User Interface Initial::IPrzelewMiedzynarodowyUI"/>
+<Property id="/resource/BankModel/Main.emx#_dc6M8HJtEeS4vvjQvammjwResourceTableDefaultFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringIGlowny"/>
+<Property id="/resource/BankModel/Main.emx#_dc6M8HJtEeS4vvjQvammjwResourceTableDefaultFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringUserInterfaceModel/UserInterfaceRefactored"/>
+<Property id="/resource/BankModel/Main.emx#_dc6M8HJtEeS4vvjQvammjwResourceTableFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringIGlowny"/>
+<Property id="/resource/BankModel/Main.emx#_dc6M8HJtEeS4vvjQvammjwResourceTableFileDefaultNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/UserInterfaceModel/IGlowny/"/>
+<Property id="/resource/BankModel/Main.emx#_dc6M8HJtEeS4vvjQvammjwResourceTableFileExtension" value="@45,=@com.ibm.xtools.transform.core.metatype.stringwsdl"/>
+<Property id="/resource/BankModel/Main.emx#_dc6M8HJtEeS4vvjQvammjwResourceTableFileNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/UserInterfaceModel/IGlowny/"/>
+<Property id="/resource/BankModel/Main.emx#_dc6M8HJtEeS4vvjQvammjwResourceTableFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringUserInterfaceModel/UserInterfaceRefactored"/>
+<Property id="/resource/BankModel/Main.emx#_dc6M8HJtEeS4vvjQvammjwResourceTableQName" value="@45,=@com.ibm.xtools.transform.core.metatype.stringMain::User Interface Model::User Interface Refactored::IGlowny"/>
+<Property id="/resource/BankModel/Main.emx#_dc7bEHJtEeS4vvjQvammjwResourceTableDefaultFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringIPrzelewMiedzynarodowyUI"/>
+<Property id="/resource/BankModel/Main.emx#_dc7bEHJtEeS4vvjQvammjwResourceTableDefaultFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringUserInterfaceModel/UserInterfaceRefactored"/>
+<Property id="/resource/BankModel/Main.emx#_dc7bEHJtEeS4vvjQvammjwResourceTableFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringIPrzelewMiedzynarodowyUI"/>
+<Property id="/resource/BankModel/Main.emx#_dc7bEHJtEeS4vvjQvammjwResourceTableFileDefaultNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/UserInterfaceModel/IPrzelewMiedzynarodowyUI/"/>
+<Property id="/resource/BankModel/Main.emx#_dc7bEHJtEeS4vvjQvammjwResourceTableFileExtension" value="@45,=@com.ibm.xtools.transform.core.metatype.stringwsdl"/>
+<Property id="/resource/BankModel/Main.emx#_dc7bEHJtEeS4vvjQvammjwResourceTableFileNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/UserInterfaceModel/IPrzelewMiedzynarodowyUI/"/>
+<Property id="/resource/BankModel/Main.emx#_dc7bEHJtEeS4vvjQvammjwResourceTableFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringUserInterfaceModel/UserInterfaceRefactored"/>
+<Property id="/resource/BankModel/Main.emx#_dc7bEHJtEeS4vvjQvammjwResourceTableQName" value="@45,=@com.ibm.xtools.transform.core.metatype.stringMain::User Interface Model::User Interface Refactored::IPrzelewMiedzynarodowyUI"/>
+<Property id="/resource/BankModel/Main.emx#_e7xgII4jEeSOz9579BExmAResourceTableDefaultFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringZarzadzanieRozliczeniami"/>
+<Property id="/resource/BankModel/Main.emx#_e7xgII4jEeSOz9579BExmAResourceTableDefaultFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesIdentification/ServicesConsolidation"/>
+<Property id="/resource/BankModel/Main.emx#_e7xgII4jEeSOz9579BExmAResourceTableFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringZarzadzanieRozliczeniami"/>
+<Property id="/resource/BankModel/Main.emx#_e7xgII4jEeSOz9579BExmAResourceTableFileDefaultNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesIdentification/ZarzadzanieRozliczeniami/"/>
+<Property id="/resource/BankModel/Main.emx#_e7xgII4jEeSOz9579BExmAResourceTableFileExtension" value="@45,=@com.ibm.xtools.transform.core.metatype.stringwsdl"/>
+<Property id="/resource/BankModel/Main.emx#_e7xgII4jEeSOz9579BExmAResourceTableFileNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesIdentification/ZarzadzanieRozliczeniami/"/>
+<Property id="/resource/BankModel/Main.emx#_e7xgII4jEeSOz9579BExmAResourceTableFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesIdentification/ServicesConsolidation"/>
+<Property id="/resource/BankModel/Main.emx#_e7xgII4jEeSOz9579BExmAResourceTableQName" value="@45,=@com.ibm.xtools.transform.core.metatype.stringMain::Services Identification::Services Consolidation::ZarzadzanieRozliczeniami"/>
+<Property id="/resource/BankModel/Main.emx#_hVOosHJ1EeS4vvjQvammjwResourceTableDefaultFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesConsolidation"/>
+<Property id="/resource/BankModel/Main.emx#_hVOosHJ1EeS4vvjQvammjwResourceTableDefaultFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesIdentification/ServicesConsolidation"/>
+<Property id="/resource/BankModel/Main.emx#_hVOosHJ1EeS4vvjQvammjwResourceTableFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesConsolidation"/>
+<Property id="/resource/BankModel/Main.emx#_hVOosHJ1EeS4vvjQvammjwResourceTableFileDefaultNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesIdentification/"/>
+<Property id="/resource/BankModel/Main.emx#_hVOosHJ1EeS4vvjQvammjwResourceTableFileExtension" value="@45,=@com.ibm.xtools.transform.core.metatype.stringwsdl"/>
+<Property id="/resource/BankModel/Main.emx#_hVOosHJ1EeS4vvjQvammjwResourceTableFileNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesIdentification/"/>
+<Property id="/resource/BankModel/Main.emx#_hVOosHJ1EeS4vvjQvammjwResourceTableFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesIdentification/ServicesConsolidation"/>
+<Property id="/resource/BankModel/Main.emx#_hVOosHJ1EeS4vvjQvammjwResourceTableQName" value="@45,=@com.ibm.xtools.transform.core.metatype.stringMain::Services Identification::Services Consolidation"/>
+<Property id="/resource/BankModel/Main.emx#_nAT_4I6HEeSOz9579BExmAResourceTableDefaultFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringZarzadcaOperacjiBankowych"/>
+<Property id="/resource/BankModel/Main.emx#_nAT_4I6HEeSOz9579BExmAResourceTableDefaultFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesRealization/Participants"/>
+<Property id="/resource/BankModel/Main.emx#_nAT_4I6HEeSOz9579BExmAResourceTableFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringZarzadcaOperacjiBankowych"/>
+<Property id="/resource/BankModel/Main.emx#_nAT_4I6HEeSOz9579BExmAResourceTableFileDefaultNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesRealization/ZarzadcaOperacjiBankowych/"/>
+<Property id="/resource/BankModel/Main.emx#_nAT_4I6HEeSOz9579BExmAResourceTableFileExtension" value="@45,=@com.ibm.xtools.transform.core.metatype.stringwsdl"/>
+<Property id="/resource/BankModel/Main.emx#_nAT_4I6HEeSOz9579BExmAResourceTableFileNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesRealization/ZarzadcaOperacjiBankowych/"/>
+<Property id="/resource/BankModel/Main.emx#_nAT_4I6HEeSOz9579BExmAResourceTableFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesRealization/Participants"/>
+<Property id="/resource/BankModel/Main.emx#_nAT_4I6HEeSOz9579BExmAResourceTableQName" value="@45,=@com.ibm.xtools.transform.core.metatype.stringMain::Services Realization::Participants::ZarzadcaOperacjiBankowych"/>
+<Property id="/resource/BankModel/Main.emx#_ouf20I7FEeSjoYKQFt7WjwResourceTableDefaultFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringObslugaPrzelewow"/>
+<Property id="/resource/BankModel/Main.emx#_ouf20I7FEeSjoYKQFt7WjwResourceTableDefaultFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesIdentification/ServicesConsolidation"/>
+<Property id="/resource/BankModel/Main.emx#_ouf20I7FEeSjoYKQFt7WjwResourceTableFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringObslugaPrzelewow"/>
+<Property id="/resource/BankModel/Main.emx#_ouf20I7FEeSjoYKQFt7WjwResourceTableFileDefaultNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesIdentification/ObslugaPrzelewow/"/>
+<Property id="/resource/BankModel/Main.emx#_ouf20I7FEeSjoYKQFt7WjwResourceTableFileExtension" value="@45,=@com.ibm.xtools.transform.core.metatype.stringwsdl"/>
+<Property id="/resource/BankModel/Main.emx#_ouf20I7FEeSjoYKQFt7WjwResourceTableFileNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesIdentification/ObslugaPrzelewow/"/>
+<Property id="/resource/BankModel/Main.emx#_ouf20I7FEeSjoYKQFt7WjwResourceTableFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesIdentification/ServicesConsolidation"/>
+<Property id="/resource/BankModel/Main.emx#_ouf20I7FEeSjoYKQFt7WjwResourceTableQName" value="@45,=@com.ibm.xtools.transform.core.metatype.stringMain::Services Identification::Services Consolidation::ObslugaPrzelewow"/>
+<Property id="/resource/BankModel/Main.emx#_rM4D8InGEeSGNJPsBvqCTAResourceTableDefaultFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringZleceniePrzelewuMiedzynarodowego"/>
+<Property id="/resource/BankModel/Main.emx#_rM4D8InGEeSGNJPsBvqCTAResourceTableDefaultFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesSpecification/DataModel"/>
+<Property id="/resource/BankModel/Main.emx#_rM4D8InGEeSGNJPsBvqCTAResourceTableFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringZleceniePrzelewuMiedzynarodowego"/>
+<Property id="/resource/BankModel/Main.emx#_rM4D8InGEeSGNJPsBvqCTAResourceTableFileDefaultNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesSpecification/"/>
+<Property id="/resource/BankModel/Main.emx#_rM4D8InGEeSGNJPsBvqCTAResourceTableFileExtension" value="@45,=@com.ibm.xtools.transform.core.metatype.stringxsd"/>
+<Property id="/resource/BankModel/Main.emx#_rM4D8InGEeSGNJPsBvqCTAResourceTableFileNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesSpecification/"/>
+<Property id="/resource/BankModel/Main.emx#_rM4D8InGEeSGNJPsBvqCTAResourceTableFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesSpecification/DataModel"/>
+<Property id="/resource/BankModel/Main.emx#_rM4D8InGEeSGNJPsBvqCTAResourceTableQName" value="@45,=@com.ibm.xtools.transform.core.metatype.stringMain::Services Specification::Data Model::ZleceniePrzelewuMiedzynarodowego"/>
+<Property id="/resource/BankModel/Main.emx#_xYmooI3zEeSOz9579BExmAResourceTableDefaultFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringKontrolaPrzeplywowFinansowych"/>
+<Property id="/resource/BankModel/Main.emx#_xYmooI3zEeSOz9579BExmAResourceTableDefaultFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesIdentification/ServicesConsolidation"/>
+<Property id="/resource/BankModel/Main.emx#_xYmooI3zEeSOz9579BExmAResourceTableFile" value="@45,=@com.ibm.xtools.transform.core.metatype.stringKontrolaPrzeplywowFinansowych"/>
+<Property id="/resource/BankModel/Main.emx#_xYmooI3zEeSOz9579BExmAResourceTableFileDefaultNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesIdentification/KontrolaPrzeplywowFinansowych/"/>
+<Property id="/resource/BankModel/Main.emx#_xYmooI3zEeSOz9579BExmAResourceTableFileExtension" value="@45,=@com.ibm.xtools.transform.core.metatype.stringwsdl"/>
+<Property id="/resource/BankModel/Main.emx#_xYmooI3zEeSOz9579BExmAResourceTableFileNamespace" value="@45,=@com.ibm.xtools.transform.core.metatype.stringhttp://Main/ServicesIdentification/KontrolaPrzeplywowFinansowych/"/>
+<Property id="/resource/BankModel/Main.emx#_xYmooI3zEeSOz9579BExmAResourceTableFolder" value="@45,=@com.ibm.xtools.transform.core.metatype.stringServicesIdentification/ServicesConsolidation"/>
+<Property id="/resource/BankModel/Main.emx#_xYmooI3zEeSOz9579BExmAResourceTableQName" value="@45,=@com.ibm.xtools.transform.core.metatype.stringMain::Services Identification::Services Consolidation::KontrolaPrzeplywowFinansowych"/>
+<Property id="AuroSaveRule" value="@46,=@com.ibm.xtools.transform.core.metatype.booleantrue"/>
+<Property id="AuroValidateRule" value="@46,=@com.ibm.xtools.transform.core.metatype.booleantrue"/>
+<Property id="CONTEXT_SOURCE" value="@49,4@com.ibm.xtools.transform.core.metatype.CollectionMainjava.util.ArrayList,118&lt;ELEM_START&gt;@47,4@com.ibm.xtools.uml.transform.core.metatype.uml2Mainplatform:/resource/BankModel/Main.emx#_lbc_sIRnEeSLXu0hjwwPDA"/>
+<Property id="CONTEXT_TARGET_CONTAINER" value="@46,=@com.ibm.xtools.transform.core.metatype.project/BankGen8"/>
+<Property id="DCMP" value="@43,10@com.ibm.xtools.transform.core.metatype.DCMPConceptual1"/>
+<Property id="EnableOutputCustomization" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="EnableReverseTransformation" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="EnableXSDSort" value="@46,=@com.ibm.xtools.transform.core.metatype.booleantrue"/>
+<Property id="FORWARD_TRANSFORMATION_EXTENSIONS_STATUS" value="@42,0@com.ibm.xtools.transform.core.metatype.Mapjava.util.HashMap&lt;ELEM_START&gt;"/>
+<Property id="Main::Services Identification::Services Consolidation::KontrolaPrzeplywowFinansowych" value="@45,=@com.ibm.xtools.transform.core.metatype.stringWRAPPED-DOCUMENT-LITERAL"/>
+<Property id="Main::Services Identification::Services Consolidation::ObslugaPrzelewow" value="@45,=@com.ibm.xtools.transform.core.metatype.stringWRAPPED-DOCUMENT-LITERAL"/>
+<Property id="Main::Services Identification::Services Consolidation::ZarzadzanieKontamiKlientow" value="@45,=@com.ibm.xtools.transform.core.metatype.stringWRAPPED-DOCUMENT-LITERAL"/>
+<Property id="Main::Services Identification::Services Consolidation::ZarzadzanieOperacjamiBankowymi" value="@45,=@com.ibm.xtools.transform.core.metatype.stringWRAPPED-DOCUMENT-LITERAL"/>
+<Property id="Main::Services Identification::Services Consolidation::ZarzadzanieRozliczeniami" value="@45,=@com.ibm.xtools.transform.core.metatype.stringWRAPPED-DOCUMENT-LITERAL"/>
+<Property id="Main::User Interface Model::User Interface Initial::IGlowny" value="@45,=@com.ibm.xtools.transform.core.metatype.stringWRAPPED-DOCUMENT-LITERAL"/>
+<Property id="Main::User Interface Model::User Interface Initial::IPrzelewMiedzynarodowyUI" value="@45,=@com.ibm.xtools.transform.core.metatype.stringWRAPPED-DOCUMENT-LITERAL"/>
+<Property id="Main::User Interface Model::User Interface Refactored::IGlowny" value="@45,=@com.ibm.xtools.transform.core.metatype.stringWRAPPED-DOCUMENT-LITERAL"/>
+<Property id="Main::User Interface Model::User Interface Refactored::IPrzelewMiedzynarodowyUI" value="@45,=@com.ibm.xtools.transform.core.metatype.stringWRAPPED-DOCUMENT-LITERAL"/>
+<Property id="OpenReportDialog" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="PARENT_CONFIG_URIS" value="@49,0@com.ibm.xtools.transform.core.metatype.Collectionjava.util.ArrayList&lt;ELEM_START&gt;"/>
+<Property id="PopulateAllProperty" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="RsaVersion" value="@45,=@com.ibm.xtools.transform.core.metatype.string7.5.0.0"/>
+<Property id="ShowWarningsInReportDialog" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="com.ibm.xtools.transform.merge.option" value="@45,=@com.ibm.xtools.transform.core.metatype.stringAlways_Overwrite"/>
+<Property id="convertNestedClassImplicitly" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="convertRichToPlainText" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="followJavaConventions" value="@46,=@com.ibm.xtools.transform.core.metatype.booleantrue"/>
+<Property id="generateComplexTypeForEmptyRequest" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="generateFolderForSchema" value="@46,=@com.ibm.xtools.transform.core.metatype.booleantrue"/>
+<Property id="generateWSDLBindings" value="@46,=@com.ibm.xtools.transform.core.metatype.booleantrue"/>
+<Property id="logTrace" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="procesWothoutStereotype" value="@46,=@com.ibm.xtools.transform.core.metatype.booleantrue"/>
+<Property id="processDataTypesStyle" value="@45,=@com.ibm.xtools.transform.core.metatype.choice2"/>
+<Property id="replaceUML" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="reverseNsFirstSegment" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="selectedExtension" value="@45,=@com.ibm.xtools.transform.core.metatype.stringSCDL"/>
+<Property id="silentlyAddRule" value="@46,=@com.ibm.xtools.transform.core.metatype.booleantrue"/>
+<Property id="targetContainerWorkspace" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="useWidStyle" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="wsdl_transport_property" value="@45,=@com.ibm.xtools.transform.core.metatype.stringHTTP"/>
+</TransformationConfiguration>
