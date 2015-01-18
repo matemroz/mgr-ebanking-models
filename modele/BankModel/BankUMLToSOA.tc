@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><TransformationConfiguration forwardTransformation="com.ibm.xtools.transform.uml2.soa.UmlToSoaTransform" version="8.0.0">
+<!--xtools2_universal_type_manager-->
+<Property id="AuroSaveRule" value="@46,=@com.ibm.xtools.transform.core.metatype.booleantrue"/>
+<Property id="AuroValidateRule" value="@46,=@com.ibm.xtools.transform.core.metatype.booleantrue"/>
+<Property id="CONTEXT_SOURCE" value="@49,4@com.ibm.xtools.transform.core.metatype.CollectionMainjava.util.ArrayList,118&lt;ELEM_START&gt;@47,4@com.ibm.xtools.uml.transform.core.metatype.uml2Mainplatform:/resource/BankModel/Main.emx#_lbc_sIRnEeSLXu0hjwwPDA"/>
+<Property id="DCMP" value="@43,10@com.ibm.xtools.transform.core.metatype.DCMPConceptual1"/>
+<Property id="EnableOutputCustomization" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="EnableReverseTransformation" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="EnableXSDSort" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="FORWARD_TRANSFORMATION_EXTENSIONS_STATUS" value="@42,0@com.ibm.xtools.transform.core.metatype.Mapjava.util.HashMap&lt;ELEM_START&gt;"/>
+<Property id="Main::Services Identification::Services Consolidation::KontrolaPrzeplywowFinansowych" value="@45,=@com.ibm.xtools.transform.core.metatype.stringWRAPPED-DOCUMENT-LITERAL"/>
+<Property id="Main::Services Identification::Services Consolidation::ObslugaPrzelewow" value="@45,=@com.ibm.xtools.transform.core.metatype.stringWRAPPED-DOCUMENT-LITERAL"/>
+<Property id="Main::Services Identification::Services Consolidation::ZarzadzanieKontamiKlientow" value="@45,=@com.ibm.xtools.transform.core.metatype.stringWRAPPED-DOCUMENT-LITERAL"/>
+<Property id="Main::Services Identification::Services Consolidation::ZarzadzanieOperacjamiBankowymi" value="@45,=@com.ibm.xtools.transform.core.metatype.stringWRAPPED-DOCUMENT-LITERAL"/>
+<Property id="Main::Services Identification::Services Consolidation::ZarzadzanieRozliczeniami" value="@45,=@com.ibm.xtools.transform.core.metatype.stringWRAPPED-DOCUMENT-LITERAL"/>
+<Property id="Main::User Interface Model::User Interface Initial::IGlowny" value="@45,=@com.ibm.xtools.transform.core.metatype.stringWRAPPED-DOCUMENT-LITERAL"/>
+<Property id="Main::User Interface Model::User Interface Initial::IPrzelewMiedzynarodowyUI" value="@45,=@com.ibm.xtools.transform.core.metatype.stringWRAPPED-DOCUMENT-LITERAL"/>
+<Property id="Main::User Interface Model::User Interface Refactored::IGlowny" value="@45,=@com.ibm.xtools.transform.core.metatype.stringWRAPPED-DOCUMENT-LITERAL"/>
+<Property id="Main::User Interface Model::User Interface Refactored::IPrzelewMiedzynarodowyUI" value="@45,=@com.ibm.xtools.transform.core.metatype.stringWRAPPED-DOCUMENT-LITERAL"/>
+<Property id="OpenReportDialog" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="PARENT_CONFIG_URIS" value="@49,0@com.ibm.xtools.transform.core.metatype.Collectionjava.util.ArrayList&lt;ELEM_START&gt;"/>
+<Property id="PopulateAllProperty" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="RsaVersion" value="@45,=@com.ibm.xtools.transform.core.metatype.string7.5.0.0"/>
+<Property id="ShowWarningsInReportDialog" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="com.ibm.xtools.transform.merge.option" value="@45,=@com.ibm.xtools.transform.core.metatype.stringVisual_Merge"/>
+<Property id="convertNestedClassImplicitly" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="convertRichToPlainText" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="followJavaConventions" value="@46,=@com.ibm.xtools.transform.core.metatype.booleantrue"/>
+<Property id="generateComplexTypeForEmptyRequest" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="generateFolderForSchema" value="@46,=@com.ibm.xtools.transform.core.metatype.booleantrue"/>
+<Property id="generateWSDLBindings" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="logTrace" value="@46,=@com.ibm.xtools.transform.core.metatype.booleantrue"/>
+<Property id="procesWothoutStereotype" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="processDataTypesStyle" value="@45,=@com.ibm.xtools.transform.core.metatype.choice0"/>
+<Property id="replaceUML" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="reverseNsFirstSegment" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="selectedExtension" value="@45,=@com.ibm.xtools.transform.core.metatype.stringSCDL"/>
+<Property id="silentlyAddRule" value="@46,=@com.ibm.xtools.transform.core.metatype.booleantrue"/>
+<Property id="targetContainerWorkspace" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="useWidStyle" value="@46,=@com.ibm.xtools.transform.core.metatype.booleantrue"/>
+<Property id="wsdl_transport_property" value="@45,=@com.ibm.xtools.transform.core.metatype.stringHTTP"/>
+</TransformationConfiguration>
