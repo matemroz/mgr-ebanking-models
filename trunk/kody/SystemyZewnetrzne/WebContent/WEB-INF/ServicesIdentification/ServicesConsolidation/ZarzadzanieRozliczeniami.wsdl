@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="ZarzadzanieRozliczeniami" targetNamespace="http://Main/ServicesIdentification/ZarzadzanieRozliczeniami/" xmlns:tns="http://Main/ServicesIdentification/ZarzadzanieRozliczeniami/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://Main/ServicesIdentification/ZarzadzanieRozliczeniami/" xmlns:xsd_1="http://Main/ServicesSpecification/">
+      <xsd:import namespace="http://Main/ServicesSpecification/" schemaLocation="../../ServicesSpecification/DataModel/ZleceniePrzelewuMiedzynarodowego.xsd"/>
+      <xsd:element name="inicjujRejestracjeKwotyPrzelewuMiedzynarodowegoWSystemieRozliczen">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="zlecenie" type="xsd_1:ZleceniePrzelewuMiedzynarodowego"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="zlecRejestracjeKwotyPrzelewuMiedzynarodowegoWSystemieRozliczen">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="zlecenie" type="xsd_1:ZleceniePrzelewuMiedzynarodowego"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="inicjujRejestracjeKwotyPrzelewuMiedzynarodowegoWSystemieRozliczenRequest">
+    <wsdl:part element="tns:inicjujRejestracjeKwotyPrzelewuMiedzynarodowegoWSystemieRozliczen" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="zlecRejestracjeKwotyPrzelewuMiedzynarodowegoWSystemieRozliczenRequest">
+    <wsdl:part element="tns:zlecRejestracjeKwotyPrzelewuMiedzynarodowegoWSystemieRozliczen" name="parameters"/>
+  </wsdl:message>
+  <wsdl:portType name="ZarzadzanieRozliczeniami">
+    <wsdl:operation name="inicjujRejestracjeKwotyPrzelewuMiedzynarodowegoWSystemieRozliczen">
+      <wsdl:input message="tns:inicjujRejestracjeKwotyPrzelewuMiedzynarodowegoWSystemieRozliczenRequest"/>
+    </wsdl:operation>
+    <wsdl:operation name="zlecRejestracjeKwotyPrzelewuMiedzynarodowegoWSystemieRozliczen">
+      <wsdl:input message="tns:zlecRejestracjeKwotyPrzelewuMiedzynarodowegoWSystemieRozliczenRequest"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ZarzadzanieRozliczeniamiBinding"
+  	type="tns:ZarzadzanieRozliczeniami">
+  	<soap:binding style="document"
+  		transport="http://schemas.xmlsoap.org/soap/http" />
+  	<wsdl:operation
+  		name="inicjujRejestracjeKwotyPrzelewuMiedzynarodowegoWSystemieRozliczen">
+  		<soap:operation
+  			soapAction="http://Main/ServicesIdentification/ZarzadzanieRozliczeniami/inicjujRejestracjeKwotyPrzelewuMiedzynarodowegoWSystemieRozliczen" />
+  		<wsdl:input>
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  	</wsdl:operation>
+  	<wsdl:operation
+  		name="zlecRejestracjeKwotyPrzelewuMiedzynarodowegoWSystemieRozliczen">
+  		<soap:operation
+  			soapAction="http://Main/ServicesIdentification/ZarzadzanieRozliczeniami/zlecRejestracjeKwotyPrzelewuMiedzynarodowegoWSystemieRozliczen" />
+  		<wsdl:input>
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  	</wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ZarzadzanieRozliczeniamiService">
+  	<wsdl:port name="ZarzadzanieRozliczeniamiServicePort" binding="tns:ZarzadzanieRozliczeniamiBinding">
+  		<soap:address location="http://localhost:9084/rozliczenia/services/zarzadzanieRozliczeniamiWS" />
+  	</wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

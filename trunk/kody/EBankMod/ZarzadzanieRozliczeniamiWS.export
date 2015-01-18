@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scdl:export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Binding="http://pw.ee.mgr.ebanking/ServicesIdentification/ZarzadzanieRozliczeniami//Binding" xmlns:ZarzadzanieRozliczeniami="http://Main/ServicesIdentification/ZarzadzanieRozliczeniami/" xmlns:jaxws="http://www.ibm.com/xmlns/prod/websphere/scdl/jaxws/6.0.0" xmlns:ns1="http://pw.ee.mgr.ebanking/ServicesIdentification/ZarzadzanieRozliczeniami/" xmlns:scdl="http://www.ibm.com/xmlns/prod/websphere/scdl/6.0.0" xmlns:wsdl="http://www.ibm.com/xmlns/prod/websphere/scdl/wsdl/6.0.0" displayName="ZarzadzanieRozliczeniamiWS" name="ZarzadzanieRozliczeniamiWS" target="PrzelewMiedzynarodowyProces">
+  <interfaces>
+    <interface xsi:type="wsdl:WSDLPortType" preferredInteractionStyle="sync" portType="ZarzadzanieRozliczeniami:ZarzadzanieRozliczeniami"/>
+  </interfaces>
+  <esbBinding xsi:type="jaxws:JaxWsExportBinding" port="Binding:ZarzadzanieRozliczeniamiWS_ZarzadzanieRozliczeniamiHttpPort" service="Binding:ZarzadzanieRozliczeniami_eksport1_ZarzadzanieRozliczeniamiHttpService"/>
+</scdl:export>

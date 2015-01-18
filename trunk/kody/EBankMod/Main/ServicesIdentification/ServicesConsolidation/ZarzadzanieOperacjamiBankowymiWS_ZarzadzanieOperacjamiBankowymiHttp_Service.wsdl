@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions name="ZarzadzanieOperacjamiBankowymi_eksport1_ZarzadzanieOperacjamiBankowymiHttp_Service" targetNamespace="http://pw.ee.mgr.ebanking/ServicesIdentification/ZarzadzanieOperacjamiBankowymi//Binding" xmlns:Port_0="http://pw.ee.mgr.ebanking/ServicesIdentification/ZarzadzanieOperacjamiBankowymi/" xmlns:bons0="http://Main/ServicesIdentification/ZarzadzanieOperacjamiBankowymi/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:this="http://pw.ee.mgr.ebanking/ServicesIdentification/ZarzadzanieOperacjamiBankowymi//Binding" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import location="ZarzadzanieOperacjamiBankowymi.wsdl" namespace="http://Main/ServicesIdentification/ZarzadzanieOperacjamiBankowymi/"/>
+    <wsdl:binding name="ZarzadzanieOperacjamiBankowymi_eksport1_ZarzadzanieOperacjamiBankowymiHttpBinding" type="bons0:ZarzadzanieOperacjamiBankowymi">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="inicjujPrzewalutowywaniePrzelewuMiedzynarodowego">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="inicjujWykonaniePrzelewu">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="inicjujZakonczenieProcesowaniaPrzelewuMiedzynarodowego">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="wplacPieniadzeNaKonto">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="wyplacPieniadzeZKonta">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ZarzadzanieOperacjamiBankowymi_eksport1_ZarzadzanieOperacjamiBankowymiHttpService">
+    <wsdl:port binding="this:ZarzadzanieOperacjamiBankowymi_eksport1_ZarzadzanieOperacjamiBankowymiHttpBinding" name="ZarzadzanieOperacjamiBankowymiWS_ZarzadzanieOperacjamiBankowymiHttpPort">
+      <soap:address location="http://localhost:9080/EBankModWeb/sca/ZarzadzanieOperacjamiBankowymiWS"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

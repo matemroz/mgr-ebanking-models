@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scdl:component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:KontrolaPrzeplywowFinansowych="http://pw.ee.mgr.ebanking/ServicesIdentification/KontrolaPrzeplywowFinansowych/" xmlns:ObslugaPrzelewow="http://pw.ee.mgr.ebanking/ServicesIdentification/ObslugaPrzelewow/" xmlns:ObslugaPrzelewow_1="http://pw.ee.mgr.ebanking/ServicesIdentification/ObslugaPrzelewow" xmlns:ZarzadzanieOperacjamiBankowymi="http://pw.ee.mgr.ebanking/ServicesIdentification/ZarzadzanieOperacjamiBankowymi/" xmlns:ZarzadzanieRozliczeniami="http://pw.ee.mgr.ebanking/ServicesIdentification/ZarzadzanieRozliczeniami/" xmlns:ns1="http://ebanking.mgr.ee.pw.edu.pl/PrzelewMiedzynarodowyProcesInterface" xmlns:ns2="http://Main/ServicesIdentification/ObslugaPrzelewow/" xmlns:ns3="http://Main/ServicesIdentification/KontrolaPrzeplywowFinansowych/" xmlns:ns4="http://Main/ServicesIdentification/ZarzadzanieOperacjamiBankowymi/" xmlns:ns5="http://Main/ServicesIdentification/ZarzadzanieRozliczeniami/" xmlns:ns6="http://predic8.com/wsdl/IDService/1/" xmlns:process="http://www.ibm.com/xmlns/prod/websphere/scdl/business-process/6.0.0" xmlns:scdl="http://www.ibm.com/xmlns/prod/websphere/scdl/6.0.0" xmlns:wsdl="http://www.ibm.com/xmlns/prod/websphere/scdl/wsdl/6.0.0" displayName="PrzelewMiedzynarodowyProces" name="PrzelewMiedzynarodowyProces">
+  <interfaces>
+    <interface xsi:type="wsdl:WSDLPortType" preferredInteractionStyle="async" portType="ns2:ObslugaPrzelewow">
+      <scdl:interfaceQualifier xsi:type="scdl:JoinTransaction" value="false"/>
+    </interface>
+    <interface xsi:type="wsdl:WSDLPortType" preferredInteractionStyle="async" portType="ns3:KontrolaPrzeplywowFinansowych">
+      <scdl:interfaceQualifier xsi:type="scdl:JoinTransaction" value="false"/>
+    </interface>
+    <interface xsi:type="wsdl:WSDLPortType" preferredInteractionStyle="async" portType="ns5:ZarzadzanieRozliczeniami">
+      <scdl:interfaceQualifier xsi:type="scdl:JoinTransaction" value="false"/>
+    </interface>
+    <interface xsi:type="wsdl:WSDLPortType" preferredInteractionStyle="async" portType="ns4:ZarzadzanieOperacjamiBankowymi">
+      <scdl:interfaceQualifier xsi:type="scdl:JoinTransaction" value="false"/>
+    </interface>
+  </interfaces>
+  <references>
+    <reference name="KontrolaPrzeplywowFinansowychPartner">
+      <interface xsi:type="wsdl:WSDLPortType" portType="ns3:KontrolaPrzeplywowFinansowych"/>
+      <scdl:referenceQualifier xsi:type="scdl:DeliverAsyncAt" value="commit"/>
+      <scdl:referenceQualifier xsi:type="scdl:SuspendTransaction" value="false"/>
+      <scdl:referenceQualifier xsi:type="scdl:Reliability"/>
+      <wire target="WeryfikatorSCAImport"/>
+    </reference>
+    <reference name="ZarzadzanieOperacjamiBankowymiPartner">
+      <interface xsi:type="wsdl:WSDLPortType" portType="ns4:ZarzadzanieOperacjamiBankowymi"/>
+      <scdl:referenceQualifier xsi:type="scdl:DeliverAsyncAt" value="commit"/>
+      <scdl:referenceQualifier xsi:type="scdl:SuspendTransaction" value="false"/>
+      <scdl:referenceQualifier xsi:type="scdl:Reliability"/>
+      <wire target="ZarzadcaOperacjiBankowychSCAImport"/>
+    </reference>
+    <reference name="ZarzadzanieRozliczeniamiPartner">
+      <interface xsi:type="wsdl:WSDLPortType" portType="ns5:ZarzadzanieRozliczeniami"/>
+      <scdl:referenceQualifier xsi:type="scdl:DeliverAsyncAt" value="commit"/>
+      <scdl:referenceQualifier xsi:type="scdl:SuspendTransaction" value="false"/>
+      <scdl:referenceQualifier xsi:type="scdl:Reliability"/>
+      <wire target="ZarzadzanieRozliczeniamiSCAImport"/>
+    </reference>
+    <reference name="PartnerObslugaPrzelewow">
+      <interface xsi:type="wsdl:WSDLPortType" portType="ns2:ObslugaPrzelewow"/>
+      <scdl:referenceQualifier xsi:type="scdl:SuspendTransaction" value="false"/>
+      <scdl:referenceQualifier xsi:type="scdl:Reliability"/>
+      <scdl:referenceQualifier xsi:type="scdl:DeliverAsyncAt" value="commit"/>
+      <wire target="ObslugaPrzelewowSCAImport"/>
+    </reference>
+  </references>
+  <implementation xsi:type="process:ProcessImplementation">
+    <scdl:implementationQualifier xsi:type="scdl:Transaction" value="global"/>
+    <process bpel="/Procesy/PrzelewMiedzynarodowyProces.bpel"/>
+  </implementation>
+</scdl:component>

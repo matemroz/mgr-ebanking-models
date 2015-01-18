@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?><bpws:process xmlns:bpws="http://schemas.xmlsoap.org/ws/2004/03/business-process/" xmlns:ns="http://ebanking.mgr.ee.pw.edu.pl/PrzelewMiedzynarodowyProcesArtifacts" xmlns:ns0="http://ebanking.mgr.ee.pw.edu.pl/PrzelewMiedzynarodowyProcesInterface" xmlns:ns1="http://Main/ServicesIdentification/ObslugaPrzelewow/" xmlns:ns10="http://pw.ee.mgr.ebanking/ObslugaPrzelewow" xmlns:ns11="http://pw.ee.mgr.ebanking/ServicesIdentification/KontrolaPrzeplywowFinansowych/" xmlns:ns12="http://pw.ee.mgr.ebanking/ServicesIdentification/ObslugaPrzelewow/" xmlns:ns13="http://pw.ee.mgr.ebanking/ServicesIdentification/ZarzadzanieOperacjamiBankowymi/" xmlns:ns14="http://pw.ee.mgr.ebanking/ServicesIdentification/ZarzadzanieRozliczeniami/" xmlns:ns15="http://pw.ee.mgr.ebanking/ServicesIdentification/ObslugaPrzelewow" xmlns:ns2="http://Main/ServicesSpecification/" xmlns:ns3="http://Main/ServicesIdentification/KontrolaPrzeplywowFinansowych/" xmlns:ns4="http://Main/ServicesIdentification/ZarzadzanieOperacjamiBankowymi/" xmlns:ns5="http://ebanking.mgr.ee.pw.edu.pl/KontrolaPrzeplywowFinansowychInterface" xmlns:ns6="http://ebanking.mgr.ee.pw.edu.pl/ObslugaPrzelewowInterface" xmlns:ns7="http://Main/ServicesIdentification/ZarzadzanieRozliczeniami/" xmlns:ns8="http://predic8.com/wsdl/IDService/1/" xmlns:ns9="http://pw.ee.mgr.ebanking" xmlns:wpc="http://www.ibm.com/xmlns/prod/websphere/business-process/6.0.0/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.ibm.com/xmlns/prod/websphere/business-process/expression-lang/java/6.0.0/" name="PrzelewMiedzynarodowyProces" suppressJoinFailure="yes" targetNamespace="http://pw.ee.mgr.ebanking" wpc:autoDelete="no" wpc:continueOnError="no" wpc:displayName="PrzelewMiedzynarodowyProces" wpc:executionMode="longRunning" wpc:id="1" wpc:validFrom="2014-12-15T10:08:09" wpc:version="IBM_7.0.100">
+  <bpws:import importType="http://schemas.xmlsoap.org/wsdl/" location="PrzelewMiedzynarodowyProces.wsdl" namespace="http://ebanking.mgr.ee.pw.edu.pl/PrzelewMiedzynarodowyProcesInterface"/>
+  <bpws:import importType="http://schemas.xmlsoap.org/wsdl/" location="PrzelewMiedzynarodowyProcesArtifacts.wsdl" namespace="http://ebanking.mgr.ee.pw.edu.pl/PrzelewMiedzynarodowyProcesArtifacts"/>
+  <bpws:import importType="http://schemas.xmlsoap.org/wsdl/" location="../Main/ServicesIdentification/ServicesConsolidation/ObslugaPrzelewow.wsdl" namespace="http://Main/ServicesIdentification/ObslugaPrzelewow/"/>
+  <bpws:import importType="http://www.w3.org/2001/XMLSchema" location="../xsd-includes/http.pw.ee.mgr.ebanking.xsd" namespace="http://pw.ee.mgr.ebanking"/>
+  <bpws:import importType="http://schemas.xmlsoap.org/wsdl/" location="../Main/ServicesIdentification/ServicesConsolidation/KontrolaPrzeplywowFinansowych.wsdl" namespace="http://Main/ServicesIdentification/KontrolaPrzeplywowFinansowych/"/>
+  <bpws:import importType="http://schemas.xmlsoap.org/wsdl/" location="../Main/ServicesIdentification/ServicesConsolidation/ZarzadzanieOperacjamiBankowymi.wsdl" namespace="http://Main/ServicesIdentification/ZarzadzanieOperacjamiBankowymi/"/>
+  <bpws:import importType="http://www.w3.org/2001/XMLSchema" location="../xsd-includes/http.Main.ServicesSpecification.xsd" namespace="http://Main/ServicesSpecification/"/>
+  <bpws:import importType="http://schemas.xmlsoap.org/wsdl/" location="../Main/ServicesIdentification/ServicesConsolidation/ZarzadzanieRozliczeniami.wsdl" namespace="http://Main/ServicesIdentification/ZarzadzanieRozliczeniami/"/>
+  <bpws:import importType="http://schemas.xmlsoap.org/wsdl/" location="PrzelewMiedzynarodowyProces.wsdl" namespace="http://ebanking.mgr.ee.pw.edu.pl/PrzelewMiedzynarodowyProcesInterface"/>
+  <bpws:import importType="http://schemas.xmlsoap.org/wsdl/" location="../Main/ServicesIdentification/ServicesConsolidation/ObslugaPrzelewow.wsdl" namespace="http://Main/ServicesIdentification/ObslugaPrzelewow/"/>
+  <bpws:import importType="http://schemas.xmlsoap.org/wsdl/" location="../Main/ServicesIdentification/ServicesConsolidation/KontrolaPrzeplywowFinansowych.wsdl" namespace="http://Main/ServicesIdentification/KontrolaPrzeplywowFinansowych/"/>
+  <bpws:import importType="http://schemas.xmlsoap.org/wsdl/" location="../Main/ServicesIdentification/ServicesConsolidation/ZarzadzanieRozliczeniami.wsdl" namespace="http://Main/ServicesIdentification/ZarzadzanieRozliczeniami/"/>
+  <bpws:import importType="http://schemas.xmlsoap.org/wsdl/" location="../Main/ServicesIdentification/ServicesConsolidation/ZarzadzanieOperacjamiBankowymi.wsdl" namespace="http://Main/ServicesIdentification/ZarzadzanieOperacjamiBankowymi/"/>
+  <bpws:import importType="http://schemas.xmlsoap.org/wsdl/" location="../Main/ServicesIdentification/ServicesConsolidation/pogoda.wsdl" namespace="http://predic8.com/wsdl/IDService/1/"/>
+  <bpws:import importType="http://www.w3.org/2001/XMLSchema" location="../xsd-includes/http.pw.ee.mgr.ebanking.ObslugaPrzelewow.xsd" namespace="http://pw.ee.mgr.ebanking/ObslugaPrzelewow"/>
+  <bpws:import importType="http://www.w3.org/2001/XMLSchema" location="../Main/ServicesSpecification/DataModel/StatusZleceniaPrzelewu.xsd" namespace="http://Main/ServicesSpecification/"/>
+  <bpws:import importType="http://www.w3.org/2001/XMLSchema" location="../Main/ServicesSpecification/DataModel/WynikWeryfikacjiZleceniaPrzelewu.xsd" namespace="http://Main/ServicesSpecification/"/>
+  <bpws:import importType="http://www.w3.org/2001/XMLSchema" location="../Main/ServicesSpecification/DataModel/WynikWeryfikacjiMozliwosciWykonaniaPrzelewuMiedzynarodowego.xsd" namespace="http://Main/ServicesSpecification/"/>
+  <bpws:import importType="http://www.w3.org/2001/XMLSchema" location="../Main/ServicesSpecification/DataModel/ZleceniePrzelewuMiedzynarodowego.xsd" namespace="http://Main/ServicesSpecification/"/>
+  <bpws:partnerLinks>
+    <bpws:partnerLink name="KontrolaPrzeplywowFinansowychPartner" partnerLinkType="ns:KontrolaPrzeplywowFinansowychPartnerPLT" partnerRole="Reference" wpc:id="55"/>
+    <bpws:partnerLink name="ZarzadzanieOperacjamiBankowymiPartner" partnerLinkType="ns:ZarzadzanieOperacjamiBankowymiPartnerPLT" partnerRole="Reference" wpc:id="56"/>
+    <bpws:partnerLink name="ZarzadzanieRozliczeniamiPartner" partnerLinkType="ns:ZarzadzanieRozliczeniamiPartnerPLT" partnerRole="Reference" wpc:id="57"/>
+    <bpws:partnerLink myRole="Interface" name="ObslugaPrzelewowIPartner" partnerLinkType="ns:ObslugaPrzelewowIPartnerPLT" wpc:id="59"/>
+    <bpws:partnerLink name="PartnerObslugaPrzelewow" partnerLinkType="ns:ObslugaPrzelewowPLT" partnerRole="Interface" wpc:id="60"/>
+    <bpws:partnerLink myRole="Interface" name="KontrolaPrzeplywowFinansowych" partnerLinkType="ns:KontrolaPrzeplywowFinansowychPLT" wpc:id="64"/>
+    <bpws:partnerLink myRole="Interface" name="ZarzadzanieRozliczeniami" partnerLinkType="ns:ZarzadzanieRozliczeniamiPLT" wpc:id="65"/>
+    <bpws:partnerLink myRole="Interface" name="ZarzadzanieOperacjamiBankowymi" partnerLinkType="ns:ZarzadzanieOperacjamiBankowymiPLT" wpc:id="66"/>
+  </bpws:partnerLinks>
+  <bpws:variables>
+    <bpws:variable name="zlecenie" type="ns2:ZleceniePrzelewuMiedzynarodowego" wpc:id="38"/>
+    <bpws:variable name="statusZlecenia" type="ns2:StatusZleceniaPrzelewu" wpc:id="47"/>
+    <bpws:variable name="powodzenieOperacjiPrzelewu" type="xsd:boolean" wpc:id="50"/>
+    <bpws:variable name="weryfikacjaMozliwosciWykonaniaPrzelewuMiedzynarodowego" type="ns2:WynikWeryfikacjiMozliwosciWykonaniaPrzelewuMiedzynarodowego" wpc:id="62"/>
+    <bpws:variable name="wynikWeryfikacjiZleceniaPrzelewu" type="ns2:WynikWeryfikacjiZleceniaPrzelewu" wpc:id="63"/>
+  </bpws:variables>
+  <bpws:scope name="Zasięg" wpc:displayName="Zasięg" wpc:id="29">
+    <bpws:sequence name="HiddenSequence" wpc:id="1073741898">
+      <bpws:sequence name="obszar1" wpc:id="1073741854">
+        <bpws:receive createInstance="yes" name="Odbierz" operation="inicjujZleceniePrzelewuMiedzynarodowego" partnerLink="ObslugaPrzelewowIPartner" portType="ns1:ObslugaPrzelewow" wpc:displayName="InicjujZleceniePrzelewuMiedzynarodowego" wpc:id="4" wpc:transactionalBehavior="commitAfter">
+          <wpc:output>
+            <wpc:parameter name="zlecenie" variable="zlecenie"/>
+          </wpc:output>
+        </bpws:receive>
+        <bpws:assign name="Przypisz" wpc:displayName="Status: Inicjalizacja przelewu" wpc:id="76">
+          <bpws:copy>
+            <bpws:from><![CDATA[ZAINICJOWANO]]></bpws:from>
+            <bpws:to variable="statusZlecenia">
+              <bpws:query queryLanguage="http://www.w3.org/TR/1999/REC-xpath-19991116"><![CDATA[status]]></bpws:query>
+            </bpws:to>
+          </bpws:copy>
+        </bpws:assign>
+        <bpws:invoke name="Wywołaj" operation="weryfikujZleceniePrzelewuMiedzynarodowego" partnerLink="KontrolaPrzeplywowFinansowychPartner" portType="ns3:KontrolaPrzeplywowFinansowych" wpc:continueOnError="inherit" wpc:displayName="WeryfikacjaZleceniaPrzelewuMiedzynarodowego" wpc:id="10">
+          <wpc:input>
+            <wpc:parameter name="zlecenie" variable="zlecenie"/>
+          </wpc:input>
+          <wpc:output>
+            <wpc:parameter name="wynikWeryfikacjiZleceniaPrzelewu" variable="wynikWeryfikacjiZleceniaPrzelewu"/>
+          </wpc:output>
+        </bpws:invoke>
+        <bpws:switch name="Wybór" wpc:displayName="Czy dane przelewu są poprawne?" wpc:id="11">
+          <bpws:case wpc:displayName="TAK" wpc:id="12">
+            <bpws:condition expressionLanguage="http://www.w3.org/TR/1999/REC-xpath-19991116"><![CDATA[$wynikWeryfikacjiZleceniaPrzelewu/wynik='POPRAWNY']]></bpws:condition>
+            <bpws:scope name="Zasięg1" wpc:displayName="Zasięg1" wpc:id="85">
+              <bpws:sequence name="HiddenSequence4" wpc:id="1073741910">
+                <bpws:switch name="Wybór1" wpc:displayName="Czy przelew na kwotę wyższą niż 10000?" wpc:id="15">
+                  <bpws:case wpc:displayName="TAK" wpc:id="16">
+                    <bpws:condition expressionLanguage="http://www.w3.org/TR/1999/REC-xpath-19991116"><![CDATA[$zlecenie/kwota>'10000']]></bpws:condition>
+                    <bpws:sequence name="obszar2" wpc:id="1073741843">
+                      <bpws:invoke name="WeryfikacjaMozliwosciWykonaniaZleceniaPrzelewuMiedzynarodowego" operation="weryfikacjaMozliwosciWykonaniaPrzelewuMiedzynarodowego" partnerLink="KontrolaPrzeplywowFinansowychPartner" portType="ns3:KontrolaPrzeplywowFinansowych" wpc:continueOnError="inherit" wpc:displayName="WeryfikacjaMozliwosciWykonaniaZleceniaPrzelewuMiedzynarodowego" wpc:id="14">
+                        <wpc:input>
+                          <wpc:parameter name="zlecenie" variable="zlecenie"/>
+                        </wpc:input>
+                        <wpc:output>
+                          <wpc:parameter name="weryfikacjaMozliwosciWykonaniaPrzelewuMiedzynarodowego" variable="weryfikacjaMozliwosciWykonaniaPrzelewuMiedzynarodowego"/>
+                        </wpc:output>
+                      </bpws:invoke>
+                      <bpws:switch name="Wybór2" wpc:displayName="Czy weryfikacja pozytywna?" wpc:id="17">
+                        <bpws:case wpc:displayName="NIE" wpc:id="18">
+                          <bpws:condition expressionLanguage="http://www.w3.org/TR/1999/REC-xpath-19991116"><![CDATA[$weryfikacjaMozliwosciWykonaniaPrzelewuMiedzynarodowego/czyMozliwyPrzelewMiedzynarodowy='NIE']]></bpws:condition>
+                          <bpws:sequence name="HiddenSequence2" wpc:id="1073741903">
+                            <bpws:assign name="Przypisz2" wpc:displayName="Status: Brak mozliwosci wykonania przelwu" wpc:id="80">
+                              <bpws:copy>
+                                <bpws:from><![CDATA[BRAK_MOZLIWOSCI_WYKONANIA_PRZELEWU_NBP]]></bpws:from>
+                                <bpws:to variable="statusZlecenia">
+                                  <bpws:query queryLanguage="http://www.w3.org/TR/1999/REC-xpath-19991116"><![CDATA[status]]></bpws:query>
+                                </bpws:to>
+                              </bpws:copy>
+                            </bpws:assign>
+                            <bpws:reply name="Odpowiedz1" operation="inicjujZleceniePrzelewuMiedzynarodowego" partnerLink="ObslugaPrzelewowIPartner" portType="ns1:ObslugaPrzelewow" wpc:displayName="Odpowiedz" wpc:id="87">
+                              <wpc:exitCondition executeAt="exit" expressionLanguage="http://www.ibm.com/xmlns/prod/websphere/business-process/expression-lang/built-in/6.0.0/">
+                                <wpc:true/>
+                              </wpc:exitCondition>
+                              <wpc:input>
+                                <wpc:parameter name="statusZleceniaPrzelewu" variable="statusZlecenia"/>
+                              </wpc:input>
+                            </bpws:reply>
+                            <bpws:terminate name="PrzerwijPoNegatywnejWeryfikacjiMozliwosciWykonaniaPrzelewu" wpc:displayName="Weryfikacja możliwości przelewu nie jest pozytywna" wpc:id="20"/>
+                          </bpws:sequence>
+                        </bpws:case>
+                      </bpws:switch>
+                    </bpws:sequence>
+                  </bpws:case>
+                </bpws:switch>
+                <bpws:invoke name="PrzewalutowaniePrzelewuMiedzynarodowego" operation="inicjujPrzewalutowywaniePrzelewuMiedzynarodowego" partnerLink="ZarzadzanieOperacjamiBankowymiPartner" portType="ns4:ZarzadzanieOperacjamiBankowymi" wpc:continueOnError="inherit" wpc:displayName="PrzewalutowaniePrzelewuMiedzynarodowego" wpc:id="21">
+                  <wpc:input>
+                    <wpc:parameter name="zlecenie" variable="zlecenie"/>
+                  </wpc:input>
+                </bpws:invoke>
+                <bpws:assign name="Przypisz3" wpc:displayName="Status: przewalutowanie" wpc:id="81">
+                  <bpws:copy>
+                    <bpws:from><![CDATA[PRZEWALUTOWANO_PRZELEW]]></bpws:from>
+                    <bpws:to variable="statusZlecenia">
+                      <bpws:query queryLanguage="http://www.w3.org/TR/1999/REC-xpath-19991116"><![CDATA[status]]></bpws:query>
+                    </bpws:to>
+                  </bpws:copy>
+                </bpws:assign>
+                <bpws:invoke name="WykonaniePrzelewuMiedzynarodowego" operation="inicjujWykonaniePrzelewu" partnerLink="ZarzadzanieOperacjamiBankowymiPartner" portType="ns4:ZarzadzanieOperacjamiBankowymi" wpc:continueOnError="inherit" wpc:displayName="WykonaniePrzelewuMiedzynarodowego" wpc:id="22">
+                  <wpc:input>
+                    <wpc:parameter name="statusZlecenia" variable="statusZlecenia"/>
+                    <wpc:parameter name="zlecenie" variable="zlecenie"/>
+                  </wpc:input>
+                </bpws:invoke>
+                <bpws:assign name="Przypisz4" wpc:displayName="Status: wykonanie przelewu międzynarodowego" wpc:id="82">
+                  <bpws:copy>
+                    <bpws:from><![CDATA[WYKONANO_PRZELEW]]></bpws:from>
+                    <bpws:to variable="statusZlecenia">
+                      <bpws:query queryLanguage="http://www.w3.org/TR/1999/REC-xpath-19991116"><![CDATA[status]]></bpws:query>
+                    </bpws:to>
+                  </bpws:copy>
+                </bpws:assign>
+                <bpws:invoke name="RejestracjaKwotyPrzelewuMiedzynarodowegoWSystemieRozliczen" operation="inicjujRejestracjeKwotyPrzelewuMiedzynarodowegoWSystemieRozliczen" partnerLink="ZarzadzanieRozliczeniamiPartner" portType="ns7:ZarzadzanieRozliczeniami" wpc:continueOnError="inherit" wpc:displayName="RejestracjaKwotyPrzelewuMiedzynarodowegoWSystemieRozliczen" wpc:id="23">
+                  <wpc:input>
+                    <wpc:parameter name="zlecenie" variable="zlecenie"/>
+                  </wpc:input>
+                </bpws:invoke>
+                <bpws:invoke name="RejestracjaZakonczeniaProcesowaniaPrzelewuMiedzynarodowego" operation="inicjujZakonczenieProcesowaniaPrzelewuMiedzynarodowego" partnerLink="ZarzadzanieOperacjamiBankowymiPartner" portType="ns4:ZarzadzanieOperacjamiBankowymi" wpc:continueOnError="inherit" wpc:displayName="RejestracjaZakonczeniaProcesowaniaPrzelewuMiedzynarodowego" wpc:id="24">
+                  <wpc:input>
+                    <wpc:parameter name="status" variable="statusZlecenia"/>
+                  </wpc:input>
+                </bpws:invoke>
+                <bpws:assign name="Przypisz5" wpc:displayName="Status: sukces wykonania przelewu" wpc:id="83">
+                  <bpws:copy>
+                    <bpws:from><![CDATA[PROCES_PRZELEWU_MIEDZYNARODOWEGO_ZAKONCZONY_SUKCESEM]]></bpws:from>
+                    <bpws:to variable="statusZlecenia">
+                      <bpws:query queryLanguage="http://www.w3.org/TR/1999/REC-xpath-19991116"><![CDATA[status]]></bpws:query>
+                    </bpws:to>
+                  </bpws:copy>
+                </bpws:assign>
+              </bpws:sequence>
+            </bpws:scope>
+          </bpws:case>
+          <bpws:otherwise wpc:id="44">
+            <bpws:sequence name="HiddenSequence1" wpc:id="1073741901">
+              <bpws:assign name="Przypisz1" wpc:displayName="Status: Niepoprawne dane przelewu" wpc:id="78">
+                <bpws:copy>
+                  <bpws:from><![CDATA[NIEPOPRAWNE_DANE_PRZELEWU]]></bpws:from>
+                  <bpws:to variable="statusZlecenia">
+                    <bpws:query queryLanguage="http://www.w3.org/TR/1999/REC-xpath-19991116"><![CDATA[status]]></bpws:query>
+                  </bpws:to>
+                </bpws:copy>
+              </bpws:assign>
+              <bpws:reply name="Odpowiedz2" operation="inicjujZleceniePrzelewuMiedzynarodowego" partnerLink="ObslugaPrzelewowIPartner" portType="ns1:ObslugaPrzelewow" wpc:displayName="Odpowiedz" wpc:id="88">
+                <wpc:exitCondition executeAt="exit" expressionLanguage="http://www.ibm.com/xmlns/prod/websphere/business-process/expression-lang/built-in/6.0.0/">
+                  <wpc:true/>
+                </wpc:exitCondition>
+                <wpc:input>
+                  <wpc:parameter name="statusZleceniaPrzelewu" variable="statusZlecenia"/>
+                </wpc:input>
+              </bpws:reply>
+              <bpws:terminate name="Przerwij" wpc:displayName="Dane przelewu są niepoprawne" wpc:id="13"/>
+            </bpws:sequence>
+          </bpws:otherwise>
+        </bpws:switch>
+      </bpws:sequence>
+      <bpws:reply name="Odpowiedz" operation="inicjujZleceniePrzelewuMiedzynarodowego" partnerLink="ObslugaPrzelewowIPartner" portType="ns1:ObslugaPrzelewow" wpc:displayName="Odpowiedz" wpc:id="75">
+        <wpc:exitCondition executeAt="exit" expressionLanguage="http://www.ibm.com/xmlns/prod/websphere/business-process/expression-lang/built-in/6.0.0/">
+          <wpc:true/>
+        </wpc:exitCondition>
+        <wpc:input>
+          <wpc:parameter name="statusZleceniaPrzelewu" variable="statusZlecenia"/>
+        </wpc:input>
+      </bpws:reply>
+    </bpws:sequence>
+  </bpws:scope>
+</bpws:process>

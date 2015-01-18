@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mfc:interfaceMediationFlow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:KontrolaPrzeplywowFinansowychInterface="http://ebanking.mgr.ee.pw.edu.pl/KontrolaPrzeplywowFinansowychInterface" xmlns:ZarzadzanieOperacjamiBankowymiInterface="http://ebanking.mgr.ee.pw.edu.pl/ZarzadzanieOperacjamiBankowymiInterface" xmlns:mfc="http://www.ibm.com/xmlns/prod/websphere/wbiserver/mfc/6.0.0" xmlns:wsdl="http://www.ibm.com/xmlns/prod/websphere/scdl/wsdl/6.0.0" name="Odwzorowanie_obiektu_PrzelewMiedzynarodowyProces_na_obiekt_WeryfikatorSCAImport" targetNamespace="http://EBankingModule/Odwzorowanie_obiektu_PrzelewMiedzynarodowyProces_na_obiekt_WeryfikatorSCAImport">
+  <interfaces>
+    <interface xsi:type="wsdl:WSDLPortType" portType="ZarzadzanieOperacjamiBankowymiInterface:ZarzadzanieOperacjamiBankowymi"/>
+  </interfaces>
+  <references>
+    <reference name="Partner ()1">
+      <interface xsi:type="wsdl:WSDLPortType" portType="KontrolaPrzeplywowFinansowychInterface:KontrolaPrzeplywowFinansowych"/>
+    </reference>
+  </references>
+  <operationFlow medflow="Odwzorowanie_obiektu_PrzelewMiedzynarodowyProces_na_obiekt_WeryfikatorSCAImport.medflow"/>
+</mfc:interfaceMediationFlow>

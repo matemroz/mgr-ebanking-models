@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://Main/ServicesSpecification/" xmlns:xsd_1="http://Main/ServicesSpecification/">
+  <xsd:complexType name="ZleceniePrzelewuMiedzynarodowego">
+    <xsd:sequence>
+      <xsd:element name="waluta" type="xsd:string"/>
+      <xsd:element name="przelicznik" type="xsd:string"/>
+      <xsd:element name="kodKraju" type="xsd:string"/>
+      <xsd:element name="nrRachNadawcy" type="xsd:string"/>
+      <xsd:element name="nrRachOdbiorcy" type="xsd:string"/>
+      <xsd:element name="tytul" type="xsd:string"/>
+      <xsd:element name="opis" type="xsd:string"/>
+      <xsd:element name="kwota" type="xsd:anyType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

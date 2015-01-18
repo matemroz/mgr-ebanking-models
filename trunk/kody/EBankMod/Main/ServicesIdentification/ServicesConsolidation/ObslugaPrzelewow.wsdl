@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions name="ObslugaPrzelewow" targetNamespace="http://Main/ServicesIdentification/ObslugaPrzelewow/" xmlns:bons0="http://pw.ee.mgr.ebanking/ServicesIdentification/ObslugaPrzelewow" xmlns:bons2="http://Main/ServicesSpecification/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://Main/ServicesIdentification/ObslugaPrzelewow/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://Main/ServicesIdentification/ObslugaPrzelewow/" xmlns:bons0="http://Main/ServicesIdentification/ObslugaPrzelewow/">
+            <xsd:import namespace="http://Main/ServicesSpecification/" schemaLocation="../../ServicesSpecification/DataModel/ZleceniePrzelewuMiedzynarodowego.xsd"/>
+            <xsd:import namespace="http://Main/ServicesSpecification/" schemaLocation="../../ServicesSpecification/DataModel/StatusZleceniaPrzelewu.xsd"/>
+      <xsd:element name="inicjujZleceniePrzelewuMiedzynarodowego">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="zlecenie" type="bons2:ZleceniePrzelewuMiedzynarodowego"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+            <xsd:element name="inicjujZleceniePrzelewuMiedzynarodowegoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="statusZleceniaPrzelewu" nillable="true" type="bons2:StatusZleceniaPrzelewu"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+        </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="inicjujZleceniePrzelewuMiedzynarodowegoRequest">
+    <wsdl:part element="tns:inicjujZleceniePrzelewuMiedzynarodowego" name="parameters"/>
+  </wsdl:message>
+    <wsdl:message name="inicjujZleceniePrzelewuMiedzynarodowegoResponseMsg">
+    <wsdl:part element="tns:inicjujZleceniePrzelewuMiedzynarodowegoResponse" name="inicjujZleceniePrzelewuMiedzynarodowegoResult"/>
+  </wsdl:message>
+    <wsdl:portType name="ObslugaPrzelewow">
+        <wsdl:operation name="inicjujZleceniePrzelewuMiedzynarodowego">
+      <wsdl:input message="tns:inicjujZleceniePrzelewuMiedzynarodowegoRequest"/>
+            <wsdl:output message="tns:inicjujZleceniePrzelewuMiedzynarodowegoResponseMsg" name="inicjujZleceniePrzelewuMiedzynarodowegoResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="ObslugaPrzelewowBinding" type="tns:ObslugaPrzelewow">
+
+    	<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    	<wsdl:operation name="inicjujZleceniePrzelewuMiedzynarodowego">
+
+    		<soap:operation soapAction="http://pw.ee.mgr.ebanking/ServicesIdentification/ObslugaPrzelewow/inicjujZleceniePrzelewuMiedzynarodowego"/>
+    		<wsdl:input>
+
+    			<soap:body use="literal"/>
+    		</wsdl:input>
+    	</wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="ObslugaPrzelewowService">
+  	<wsdl:port binding="tns:ObslugaPrzelewowBinding" name="ObslugaPrzelewowServicePort">
+  		<soap:address location="http://localhost:9084/obslugaPrzelewow/services/ObslugaPrzelewowWS"/>
+  	</wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
