@@ -29,17 +29,17 @@
 \gdef\@miasto{Warszawa}
 \gdef\@uczelnia{POLITECHNIKA WARSZAWSKA}
 \gdef\@wydzial{WYDZIAŁ ELEKTRYCZNY}
-\gdef\@instytut{Instytut Sterowania i Elektroniki Przemysłowej }
+\gdef\@instytut{INSTYTUT STEROWANIA I ELEKTRONIKI PRZEMYSŁOWEJ}
 \gdef\@zaklad{}
 \gdef\@rodzajpracy{MAGISTERSKA}
-\gdef\@kierunekstudiow{INFORMATYKA}
-\gdef\@specjalnosc{INŻYNIERIA OPROGRAMOWANIA}
+\gdef\@kierunekstudiow{Informatyka}
+\gdef\@specjalnosc{Inżynieria oprogramowania}
 \gdef\@opiekun{BRAK POLECENIA {\tt \(\backslash\)opiekun} !}
 \gdef\@zdjecie{BRAK POLECENIA {\tt \(\backslash\)zdjecie} !}
 \gdef\@terminwykonania{BRAK POLECENIA {\tt \(\backslash\)terminwykonania} !}
 \gdef\@datawydaniatematu{BRAK POLECENIA {\tt \(\backslash\)datawydaniatematu} !}
 
-\def\maketitle{\par
+\def\maketitle{
   \ps@empty
  \begingroup
  \def\thefootnote{\fnsymbol{footnote}}
@@ -71,40 +71,39 @@
 
 \def\@maketitle{\newpage
  \begin{center}
-\hphantom.\vskip-2cm
-  {\bf \@uczelnia \\
- \@wydzial} \\
+  {\bf \@uczelnia} \\
+ \@wydzial \\
  \@instytut
 % \medskip\par\vspace{\stretch{1}} \@zaklad
- \bigskip\par
- \vspace{\stretch{3}}
- {\large\bf PRACA DYPLOMOWA \@rodzajpracy}
-    \\dyscyplina naukowa: \@kierunekstudiow
-    %\\specjalność: \@specjalnosc %
-    \bigskip\par
- \vspace{\stretch{1}}
+ \medskip\par
+ {\bf PRACA DYPLOMOWA \@rodzajpracy} \\
+    {\bf na kierunku \@kierunekstudiow} \\
+    {\bf specjalność: \@specjalnosc} 
+    \medskip\par
 {\lineskip .5em
-\raggedleft\begin{tabular}[t]{l}%
+\raggedright\begin{tabular}[t]{l}%
   \@zdjecie \\
   \@author   \\
-  Nr imm.: \@nrindeksu \\
+  {\bf Nr albumu.: \@nrindeksu} \\
   Rok akad.: \@rokakademicki\\
  \@miasto, \@datawydaniatematu
  \end{tabular}
  \par
  }
- \par
- \vskip 2ex
- \vspace{\stretch{1}}
- \begin{center}
-  Temat pracy dyplomowej:
- \end{center}
+\vskip 1.0em
  {\large\bf \@title \par}
  \end{center}
+\begin{enumerate}
+ \item Charakterystyka architektury korporacyjnej
+ \item Przegląd języków do projektowania systemów informatycznych o architekturze SOA
+  \item Przegląd metodyk projektowania architektury korporacyjnej
+ \item Opracowanie metody projektowania systemów informatycznych o architekturze SOA
+ \item Weryfikacja koncepcji na przykładzie systemu bankowego
+ \item Podsumowanie i wnioski
+\end{enumerate}
+\vspace{\stretch{1}}
 
-\vspace{\stretch{5}}
-
-\vskip 2.0em
+\vskip 0.5em
 
 \noindent
 \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
@@ -112,11 +111,11 @@
 	    \bf Kierujący pracą:
     \end{tabular} &
     \begin{tabular}[t]{c}
-	    \bf Kierownik Zakładu\\
+	    \bf Kierownik Zakładu Sterowania ISEP\\
     \end{tabular}
 \end{tabular*}
 
-\vskip 2.0em
+\vskip 0.5em
 
 \noindent
 \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
@@ -124,22 +123,20 @@
 	    \emph{Dr inż. Włodzimierz Dąbrowski}
     \end{tabular} &
     \begin{tabular}[t]{c}
-	    \emph{Prof. dr hab. inż. Lech} \\
-	    \emph{Grzesiak}
+	    \emph{Dr hab. Inż. Bartłomiej } \\
+	    \emph{Beliczyński, Prof. PW} 
     \end{tabular}
 \end{tabular*}
 
-\vskip 4.0em
+\vskip 0.5em
 
-\noindent Termin wykonania: 10.10.2014
+\noindent Termin wykonania: 25.01.2015
 
-\vskip 2.0em
+\vskip 0.5em
 
 \begin{center}
-\footnotesize \emph{Praca wykonana i obroniona pozostanie własnością Instytutu Sterowania i Elektroniki Przemysłowej i nie będzie zwrócona Wykonawcy.}
+\small{\footnotesize \emph{Praca wykonana i obroniona pozostanie własnością Instytutu Sterowania i Elektroniki Przemysłowej i nie będzie zwrócona Wykonawcy.}}
 \end{center}
-
- \vskip 2.5em
 
  \vspace{\stretch{1}}
  %
