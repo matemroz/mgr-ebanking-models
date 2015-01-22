@@ -13,6 +13,7 @@
 \usepackage{supertabular}
 \usepackage{xcolor}
 \usepackage[pdftex]{hyperref}
+\usepackage{geometry}
 
 \newcommand{\ImgPath}{./img}
 \newcommand{\TODO}{\textbf{TODO}}
@@ -22,7 +23,7 @@
 % na oprawe (1.1cm - 0.7cm)*2 = 0.8cm
 %  oddsidemargin lewy margines na nieparzystych stronach
 % evensidemargin lewy margines na parzystych stronach
-\def\oprawa{1.05cm}
+\def\oprawa{1.06cm}
 \addtolength{\oddsidemargin}{\oprawa}
 \addtolength{\evensidemargin}{-\oprawa}
 
@@ -41,8 +42,6 @@
 \author{Mateusz Mróz}
 \nrindeksu{221192}
 \zdjecie{\includegraphics[width=4cm]{\ImgPath/zdjecie_legitymacja.jpg}}
-
-\zakres{\input{zakres.tex}}
 
 \opiekun{dr inż. Włodzimierz Dąbrowski}
 \terminwykonania{31.01.2015} % data złożenia - pokazana na stronie tytułowej
