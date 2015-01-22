@@ -6,62 +6,62 @@
 \contentsline {section}{\numberline {2.1}Wst\IeC {\k e}p}{6}{section.2.1}
 \contentsline {section}{\numberline {2.2}Definicje g\IeC {\l }\IeC {\'o}wnych poj\IeC {\k e}\IeC {\'c} zwi\IeC {\k a}zanych z architektur\IeC {\k a} korporacyjn\IeC {\k a}}{6}{section.2.2}
 \contentsline {section}{\numberline {2.3}Wprowadzenie do architektury korporacyjnej}{8}{section.2.3}
-\contentsline {section}{\numberline {2.4}Korzy\IeC {\'s}ci z wdro\IeC {\.z}enia architektury korporacyjnej}{12}{section.2.4}
-\contentsline {section}{\numberline {2.5}Podej\IeC {\'s}cie do budowy architektury korporacyjnej}{13}{section.2.5}
-\contentsline {section}{\numberline {2.6}SOA}{14}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Czym jest SOA?}{14}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Historia SOA}{15}{subsection.2.6.2}
+\contentsline {section}{\numberline {2.4}Korzy\IeC {\'s}ci z wdro\IeC {\.z}enia architektury korporacyjnej}{11}{section.2.4}
+\contentsline {section}{\numberline {2.5}Podej\IeC {\'s}cie do budowy architektury korporacyjnej}{12}{section.2.5}
+\contentsline {section}{\numberline {2.6}SOA}{13}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Czym jest SOA?}{13}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Historia SOA}{14}{subsection.2.6.2}
 \contentsline {subsection}{\numberline {2.6.3}Budowa SOA}{15}{subsection.2.6.3}
 \contentsline {subsection}{\numberline {2.6.4}Us\IeC {\l }uga sieciowa w SOA}{17}{subsection.2.6.4}
 \contentsline {subsection}{\numberline {2.6.5}Warstwy architektury SOA}{18}{subsection.2.6.5}
 \contentsline {subsection}{\numberline {2.6.6}Podstawowe zasady SOA}{19}{subsection.2.6.6}
-\contentsline {subsection}{\numberline {2.6.7}Korporacyjna szyna us\IeC {\l }ug - ESB}{22}{subsection.2.6.7}
+\contentsline {subsection}{\numberline {2.6.7}Korporacyjna szyna us\IeC {\l }ug - ESB}{21}{subsection.2.6.7}
 \contentsline {section}{\numberline {2.7}Adaptacja SOA w architekturze korporacyjnej}{22}{section.2.7}
-\contentsline {chapter}{\numberline {3}Przegl\IeC {\k a}d j\IeC {\k e}zyk\IeC {\'o}w do projektowania system\IeC {\'o}w informatycznych o architekturze SOA}{24}{chapter.3}
-\contentsline {section}{\numberline {3.1}Wst\IeC {\k e}p}{24}{section.3.1}
-\contentsline {section}{\numberline {3.2}SoaML}{25}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Czym jest SoaML?}{25}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Modelowanie z wykorzystaniem SoaML}{27}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}ArchiMate}{29}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Czym jest ArchiMate?}{29}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Modelowanie z wykorzystaniem ArchiMate}{30}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Inne j\IeC {\k e}zyki}{31}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}BPMN}{31}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}BPEL}{32}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}UML}{32}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}IDEF}{33}{subsection.3.4.4}
-\contentsline {chapter}{\numberline {4}Metody projektowania rozwi\IeC {\k a}za\IeC {\'n} w architekturze us\IeC {\l }ugowej}{34}{chapter.4}
-\contentsline {section}{\numberline {4.1}Wst\IeC {\k e}p}{34}{section.4.1}
-\contentsline {section}{\numberline {4.2}RUP4SOA}{34}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Czym jest RUP?}{34}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Wykorzystanie RUP w projektowaniu SOA}{35}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Zalety i wady RUP4SOA}{36}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}SOMA}{37}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Czym jest SOMA?}{37}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Fazy metody SOMA}{37}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Produkty SOMA}{40}{subsection.4.3.3}
+\contentsline {chapter}{\numberline {3}Przegl\IeC {\k a}d j\IeC {\k e}zyk\IeC {\'o}w do projektowania system\IeC {\'o}w informatycznych o architekturze SOA}{23}{chapter.3}
+\contentsline {section}{\numberline {3.1}Wst\IeC {\k e}p}{23}{section.3.1}
+\contentsline {section}{\numberline {3.2}SoaML}{24}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Czym jest SoaML?}{24}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Modelowanie z wykorzystaniem SoaML}{26}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}ArchiMate}{28}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Czym jest ArchiMate?}{28}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Modelowanie z wykorzystaniem ArchiMate}{29}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Inne j\IeC {\k e}zyki}{30}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}BPMN}{30}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}BPEL}{31}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}UML}{31}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}IDEF}{32}{subsection.3.4.4}
+\contentsline {chapter}{\numberline {4}Metody projektowania rozwi\IeC {\k a}za\IeC {\'n} w architekturze us\IeC {\l }ugowej}{33}{chapter.4}
+\contentsline {section}{\numberline {4.1}Wst\IeC {\k e}p}{33}{section.4.1}
+\contentsline {section}{\numberline {4.2}RUP4SOA}{33}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Czym jest RUP?}{33}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Wykorzystanie RUP w projektowaniu SOA}{34}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Zalety i wady RUP4SOA}{35}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}SOMA}{36}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Czym jest SOMA?}{36}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Fazy metody SOMA}{36}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Produkty SOMA}{39}{subsection.4.3.3}
 \contentsline {subsection}{\numberline {4.3.4}Zalety i wady SOMA}{40}{subsection.4.3.4}
-\contentsline {section}{\numberline {4.4}Metoda Papazoglou}{41}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Service-Oriented Design and Development Methodology by Papazoglou}{41}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Fazy metody}{42}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Zalety i wady metody Papazoglou}{44}{subsection.4.4.3}
-\contentsline {section}{\numberline {4.5}Metoda Thomasa Erl'a}{45}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Opis metody}{45}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Zalety i wady}{45}{subsection.4.5.2}
-\contentsline {chapter}{\numberline {5}Opracowanie metody projektowania system\IeC {\'o}w informatycznych o architekturze SOA}{47}{chapter.5}
-\contentsline {section}{\numberline {5.1}Wst\IeC {\k e}p}{47}{section.5.1}
-\contentsline {section}{\numberline {5.2}Metoda MatSOA}{48}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Fazy metody}{48}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Ko\IeC {\'n}cowy produkt}{54}{subsection.5.2.2}
-\contentsline {chapter}{\numberline {6}Weryfikacja koncepcji na przyk\IeC {\l }adzie systemu bankowego}{55}{chapter.6}
-\contentsline {section}{\numberline {6.1}Wst\IeC {\k e}p}{55}{section.6.1}
-\contentsline {section}{\numberline {6.2}Projektowanie systemu bankowego w oparciu o utworzon\IeC {\k a} koncepcj\IeC {\k e}}{55}{section.6.2}
+\contentsline {section}{\numberline {4.4}Metoda Papazoglou}{40}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Service-Oriented Design and Development Methodology by Papazoglou}{40}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Fazy metody}{41}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Zalety i wady metody Papazoglou}{43}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}Metoda Thomasa Erl'a}{43}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Opis metody}{44}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Zalety i wady}{44}{subsection.4.5.2}
+\contentsline {chapter}{\numberline {5}Opracowanie metody projektowania system\IeC {\'o}w informatycznych o architekturze SOA}{46}{chapter.5}
+\contentsline {section}{\numberline {5.1}Wst\IeC {\k e}p}{46}{section.5.1}
+\contentsline {section}{\numberline {5.2}Metoda MatSOA}{47}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Fazy metody}{47}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Ko\IeC {\'n}cowy produkt}{53}{subsection.5.2.2}
+\contentsline {chapter}{\numberline {6}Weryfikacja koncepcji na przyk\IeC {\l }adzie systemu bankowego}{54}{chapter.6}
+\contentsline {section}{\numberline {6.1}Wst\IeC {\k e}p}{54}{section.6.1}
+\contentsline {section}{\numberline {6.2}Projektowanie systemu bankowego w oparciu o utworzon\IeC {\k a} koncepcj\IeC {\k e}}{54}{section.6.2}
 \contentsline {subsection}{\numberline {6.2.1}Opis sytuacji biznesowej}{55}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Analiza organizacji}{56}{subsection.6.2.2}
-\contentsline {subsubsection}{\numberline {6.2.2.1}Przygotowanie Business Motivation Model (BMM)}{56}{subsubsection.6.2.2.1}
-\contentsline {subsection}{\numberline {6.2.3}Wykrywanie us\IeC {\l }ug}{60}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}Proces wdro\IeC {\.z}enia}{61}{subsection.6.2.4}
-\contentsline {subsection}{\numberline {6.2.5}Testy}{61}{subsection.6.2.5}
-\contentsline {section}{\numberline {6.3}Cel systemu w odniesieniu do zaprojektowanej koncepcji}{61}{section.6.3}
-\contentsline {chapter}{\numberline {7}Podsumowanie i wnioski}{62}{chapter.7}
-\contentsline {chapter}{Bibliografia}{63}{chapter*.8}
+\contentsline {subsection}{\numberline {6.2.2}Analiza organizacji}{55}{subsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.2.1}Przygotowanie Business Motivation Model (BMM)}{55}{subsubsection.6.2.2.1}
+\contentsline {subsection}{\numberline {6.2.3}Wykrywanie us\IeC {\l }ug}{59}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Proces wdro\IeC {\.z}enia}{60}{subsection.6.2.4}
+\contentsline {subsection}{\numberline {6.2.5}Testy}{60}{subsection.6.2.5}
+\contentsline {section}{\numberline {6.3}Cel systemu w odniesieniu do zaprojektowanej koncepcji}{60}{section.6.3}
+\contentsline {chapter}{\numberline {7}Podsumowanie i wnioski}{61}{chapter.7}
+\contentsline {chapter}{Bibliografia}{62}{chapter*.8}

@@ -644,7 +644,7 @@ Do pozytywnych cech metody można zaliczyć fakt, że wspiera najpopularniejsze 
 \section{Wstęp}
 W poprzednim rozdziale został dokonany przegląd istniejących metod projektowania systemów informatycznych o architekturze SOA.
 
-Stopień złożoności biznesowej niektórych organizacji jest naprawdę wysoki. Bez zastosowania odpowiedniej metody utworzenie sprawnie funkcjonującego systemu informatycznego nie stanowi trywialnego zadania. Występuje wiele metod o różnej charakterystyce jednakże każda wykazuje pewne niedociągnięcia.
+Stopień złożoności biznesowej niektórych organizacji jest naprawdę wysoki. Bez zastosowania odpowiedniej metody utworzenie sprawnie funkcjonującego systemu informatycznego nie stanowi trywialnego zadania. Występuje wiele metod o różnej charakterystyce jednakże niemal każda wykazuje pewne niedociągnięcia.
 
 Większość metod łączy opis sposobu przejścia od stanu początkowego (wyniknięcie potrzeby posiadania systemu informatycznego) do końcowego (utworzenie systemu informatycznego zgodnego z wymaganiami zebranymi w trakcie analizy).  Każda z nich stanowi hierarchicznie uporządkowany zbiór elementów takich jak: fazy, aktywności, zadania oraz kroki. Opierają się również na wykorzystywaniu różnorodnych technik oraz zalecanych języków modelowania i notacji \cite{OffCompSOAM}.
 
@@ -652,9 +652,9 @@ W rozdziale tym zostanie podjęta próba zdefiniowania nowej metody projektowani
 
 
 \section{Metoda MatSOA}
-MatSOA stanowi autorską metodę projektowania architektury korporacyjnej. Obecne metody posiadają zarówno wiele wad jak i zalet. Różnią się podziałami na etapy, wykorzystywanymi technologiami oraz zakresem stosowalności. MatSOA stanowi połączenie najlepszych cech z już istniejących wzorców. Wprowadza również pewne własne elementy usprawniające projektowanie architektury korporacyjnej. 
+MatSOA stanowi autorską metodę projektowania architektury korporacyjnej. Obecne metody posiadają zarówno wiele wad jak i zalet. Różnią się podziałami na etapy, wykorzystywanymi technologiami oraz zakresem stosowalności. MatSOA stanowi połączenie najlepszych cech z już istniejących wzorców. Wprowadza także pewne własne elementy usprawniające projektowanie architektury korporacyjnej. 
 
-Cechą charakterystyczną dla MatSOA jest fakt, że do specyfikacji usług wykorzystuje język SoaML stanowiący rozszerzenie dla UML. 
+MatSOA w odróżnieniu od wielu występujących metod uwzględnia również analizę obecnych systemów (ang. \emph{legacy systems}). Cechę charakterystyczną dla MatSOA stanowi fakt, że do specyfikacji usług wykorzystuje język SoaML stanowiący rozszerzenie dla UML. 
 
 W celu dokładnego opisania metody zostaną przedstawione jej poszczególne fazy oraz związane z nią notacje modelowania. Będą opisane również możliwe narzędzia, które wspierają proces projektowania w oparciu o MatSOA.
 
@@ -743,28 +743,32 @@ Celem zastosowanie metody MatSOA jest doprowadzenie do utworzenia systemu inform
 \section{Wstęp}
 Systemy bankowe często charakteryzują się dużą złożonością i panuje w nich wiele różnorodnych procesów biznesowych. Odpowiednio zaprojektowany system jest więc niezbędny we współczesnej bankowości.
  
-W rozdziale metoda MatSOA zostanie poddana weryfikacji pod względem przydatności do tworzenia tego typu systemów. Systemy bankowe to dziedzina bardzo szeroka dlatego zostanie przedstawiony projekt w oparciu o wszystkie fazy autorskiej metody tylko niewielkiej części systemu. 
+W niniejszym rozdziale metoda MatSOA zostanie poddana weryfikacji pod względem przydatności do tworzenia tego typu systemów. Systemy bankowe to dziedzina bardzo szeroka dlatego zostanie przedstawiony projekt tylko niewielkiej części wyobrażonego systemu. Niemniej jednak na tym przykładzie zostaną zaprezentowane wszystkie fazy autorskiej metody.
+
+W oparciu o zasady \emph{Model Driven Development (MDD)} zostanie również przedstawiony proces implementacji zgodnie z utworzonymi modelami. Wdrożenie systemu wymaga również istotnych rozważeń związanych z konfiguracjami środowiska, na którym będzie funkcjonować. 
+
+Na zakończenie rozdziału zostaną opisane również testy jakim zostanie poddany system po utworzeniu.
 
 \section{Projektowanie systemu bankowego w oparciu o utworzoną koncepcję}
-W pracy zostanie przedstawiona wymyślona przez autora organizacja, dzięki której będzie szansa na zaprezentowanie pełni możliwości metody MatSOA.
+Przykład wykorzystany w pracy będzie oparty na wymyślonej przez autora organizacji. Zostaną przedstawione i poddane rozważaniom jednakże wybrane modele mające na celu jak najlepszą prezentację poszczególnych faz metody MatSOA.
 
 \subsection{Opis sytuacji biznesowej}
-FrostRes stanowi niewielki bank krajowy. Ze względu na krótki pobyt na rynku pełni tylko podstawową liczbę usług związanych przede wszystkim z utrzymywaniem kont klientów i wykonywaniem przelewów krajowych. 
+FrostRes stanowi niewielki bank krajowy. Ze względu na krótki pobyt na rynku pełni tylko podstawową liczbę usług związanych przede wszystkim z utrzymywaniem kont klientów i wykonywaniem podstawowych operacji finansowych. 
  
-Bank posiada obecnie system informatyczny, jednakże nie jest on wystarczający na znaczną ilość klientów, która stale się zwiększa. Wymaga także modernizacji związanej z wprowadzonymi ustawami rządowymi. 
+Bank posiada obecnie system informatyczny, jednakże nie jest on wystarczający na znaczną ilość klientów, która stale się zwiększa. Wymaga także modernizacji związanej z wprowadzonymi ustawami rządowymi.  
 
 W obecnej chwili system umożliwia zarządzanie kontami klientów (otwarcie i zamknięcie konta, pobranie informacji o koncie, pobranie historii operacji wykonywanych na koncie) oraz obsługę transakcji finansowych (przelewy krajowe oraz wpłata i wypłata pieniędzy). 
 
-Zarząd banku prognozuje wykonanie szeregu zmian w istniejącym systemie. Ze względu na fakt, że organizacja dopiero się rozwija i ma ograniczone finanse zdecydowano się jak na razie na wprowadzenie tylko jednej nowej usługi - przelewów międzynarodowych. Podstawowym wymogiem jest, żeby kraje uczestniczące w transakcjach przelewów posiadały rachunki walutowe typu IBAN. Oprócz tego ustalono, że system po modernizacji ma być w pełni zgodny z pryncypiami SOA. 
+Zarząd banku prognozuje wykonanie szeregu zmian w istniejącym systemie. Ze względu na fakt, że organizacja dopiero się rozwija i ma ograniczony budżet zdecydowano się jak na razie na wprowadzenie tylko jednej nowej usługi - przelewów międzynarodowych. Podstawowe wymaganie stanowi fakt, żeby kraje uczestniczące w transakcjach przelewów posiadały rachunki walutowe spełniające normy IBAN (International Bank Account Number). Oprócz tego ustalono, że system po modernizacji ma być w pełni zgodny z pryncypiami SOA. 
 
 Inna istotna zmiana związana jest z nową ustawą wprowadzoną przez rząd, która wprowadziła konieczność weryfikacji każdego przelewu powyżej 10000 złotych przez usługę udostępnioną przez Narodowy Bank Polski. W związku z tym konieczna będzie integracja z usługą weryfikacji przelewów ze strony Narodowego Banku Polskiego. W systemie wykorzystywane są dane o wysokim stopniu poufności dlatego wszelkie integracje z systemami zewnętrznymi muszą ścisło podlegać standardom bezpieczeństwa wymiany komunikatów w architekturze usługowej.
 
-Ze względu na fakt, że w przyszłości planowane są kolejne modernizacje oraz rozszerzenia, system musi charakteryzować się stosunkowo dużą skalowalnością. Istotne jest również, żeby tworzony system posiadał optymalną ziarnistość oraz zapewniał reużywalność usług. 
+Ze względu na fakt, że w przyszłości planowane są kolejne modernizacje oraz rozszerzenia, system musi wykazywać się stosunkowo dużą skalowalnością. Istotne jest również, żeby stworzony system charakteryzował się wysokim poziomem ziarnistości oraz zapewniał jak największą reużywalność usług. 
 
 
 \subsection{Analiza organizacji}
 \subsubsection{Przygotowanie Business Motivation Model (BMM)}
-Budowa systemu dla FrostRes została rozpoczęta od przygotowania motywacyjnego modelu biznesu. Tworzenie BMM jest krokiem opcjonalnym metody MatSOA jednakże stanowi doskonały start do analizy organizacji i jej biznesu. W zależności od stopnia złożoności sytuacji biznesowej może charakteryzować się różnym poziomem szczegółowości. Modernizacja Banku FrostRes nie jest zbytnio złożona, dlatego tworzony dla niej BMM będzie zawierał tylko najbardziej podstawowe elementy.
+Budowa systemu dla FrostRes została rozpoczęta od przygotowania motywacyjnego modelu biznesu. Tworzenie BMM jest krokiem opcjonalnym metody MatSOA jednakże stanowi doskonały start do analizy organizacji. W zależności od stopnia złożoności sytuacji biznesowej może wykazywać się różnym poziomem szczegółowości. Modernizacja banku FrostRes nie stanowi zbyt złożonego problemu biznesowego, dlatego tworzony BMM będzie zawierał tylko najbardziej podstawowe elementy.
 
 Przygotowanie BMM przedstawionego na rys. \ref{BMM_frostres} rozpoczęto od rozważenia środków (element \emph{<<Means>>}). Następnie określono misję (element \emph{<<Mission>>}), ustalono strategie (elementy \emph{<<Strategy>>}) oraz ułożono odpowiednie taktyki (elementy \emph{<<Tactic>>}) wdrażania biznesu. Na podstawie analizy powyższych elementów wyodrębniono proces biznesowy, który będzie realizował \quotedblbase Obsługę przelewu międzynarodowego\textquotedblright (element \emph{<<Business Process>>}). 
 
@@ -777,17 +781,14 @@ W BMM opisano również stan oczekiwany (element \emph{<<End>>}) przez bank Fros
 \end{centering}
 \end{figure}
 
-W następnym kroku wykryty proces \emph{Obsługa przelewu międzynarodowego} (rys. \ref{proces_operacja_przeleu_miedzynarodowego} opisano z wykorzystaniem języka BPMN. 
+W następnym kroku wykryty wcześniej proces \emph{Obsługa przelewu międzynarodowego} (rys. \ref{proces_operacja_przeleu_miedzynarodowego} opisano z wykorzystaniem języka BPMN. Opiera się na usługach poddanych pewnego rodzaju \emph{choreografii}. Ma on charakter jedynie poglądowy. Na tym etapie nie jest zdefiniowany jeszcze przepływ danych pomiędzy poszczególnymi aktywnościami procesu. Tworzenie uproszczonej formy modelu procesu w początkowej fazie cyklu życia projektu SOA ma na celu jak najwcześniejsze wykrycie istotnych problemów związanych z logiką przebiegu wywoływania usług pomiędzy poszczególnymi podmiotami. Pozwala to także na ewentualne dostosowanie uczestnikom integracji wystawianych interfejsów. Poniżej został opisany przebieg procesu wraz z przepływem pomiędzy uczestniczącymi rolami.
 
 \begin{figure}[h!tbp]
 \begin{centering}
-\includegraphics[width=8.5cm,height=20cm]{img/proces_operacja_przeleu_miedzynarodowego.png}
+\includegraphics[width=12.5cm,height=20cm]{img/proces_operacja_przeleu_miedzynarodowego.png}
 \caption[Proces obsługi przelewu międzynarodowego - diagram BPMN.]{Proces obsługi przelewu międzynarodowego - diagram BPMN.}\label{proces_operacja_przeleu_miedzynarodowego}
 \end{centering}
 \end{figure}
-
-
-Poniżej został opisany przebieg procesu.
 
 \begin{flushleft}
 1. Klient tworzy zlecenie przelewu międzynarodowego.\\
