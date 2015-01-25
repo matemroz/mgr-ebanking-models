@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.5.10)  21 JAN 2015 22:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.5.10)  25 JAN 2015 02:01
 entering extended mode
 **praca_dyplomowa.tex
 (C:\Users\IBM_ADMIN\Documents\Studia\MGR2\trunk\latex\praca_dyplomowa.tex
@@ -756,7 +756,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 52.
 ("C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<./img/zdjecie_legitymacja.jpg, id=267, 99.4917pt x 125.7498pt>
+<./img/zdjecie_legitymacja.jpg, id=275, 99.4917pt x 125.7498pt>
 File: ./img/zdjecie_legitymacja.jpg Graphic file (type jpg)
 
 <use ./img/zdjecie_legitymacja.jpg>
@@ -793,7 +793,7 @@ l.31 ...mberline {3.4.3}UML}{31}{subsection.3.4.3}
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.66 ... {7}Podsumowanie i wnioski}{61}{chapter.7}
+l.67 ...aprojektowanej koncepcji}{61}{section.6.3}
                                                    [2])
 \tf@toc=\write4
 
@@ -830,7 +830,7 @@ it/12 En-ter-prise Ar-chi-tec-ture\OT4/cmr/m/n/12 ) nie-zb¦dna
 
 [6
 
-] [7] [8] [9] <img/ea.png, id=424, 456.95718pt x 533.74406pt>
+] [7] [8] [9] <img/ea.png, id=434, 456.95718pt x 533.74406pt>
 File: img/ea.png Graphic file (type png)
 
 <use img/ea.png>
@@ -843,7 +843,7 @@ Overfull \hbox (11.26964pt too wide) in paragraph at lines 137--138
 -tur¡ kor-po-ra-cyjn¡ mo»na
  []
 
-[12] [13] [14] <img/soa_arch.png, id=468, 715.92468pt x 535.2497pt>
+[12] [13] [14] <img/soa_arch.png, id=478, 715.92468pt x 535.2497pt>
 File: img/soa_arch.png Graphic file (type png)
 
 <use img/soa_arch.png>
@@ -855,7 +855,7 @@ Overfull \hbox (8.53766pt too wide) in paragraph at lines 183--184
  []
 
 [15] [16 <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex/img/soa_arch.png
->] <img/web_service.png, id=481, 539.76656pt x 219.82124pt>
+>] <img/web_service.png, id=491, 539.76656pt x 219.82124pt>
 File: img/web_service.png Graphic file (type png)
 
 <use img/web_service.png>
@@ -889,7 +889,7 @@ zy re-pre-zen-tuj¡ za-równo
 [23
 
 ]
-<img/simple_interface_based_approach.png, id=528, 447.92343pt x 198.7425pt>
+<img/simple_interface_based_approach.png, id=538, 447.92343pt x 198.7425pt>
 File: img/simple_interface_based_approach.png Graphic file (type png)
 
 <use img/simple_interface_based_approach.png>
@@ -897,7 +897,7 @@ Package pdftex.def Info: img/simple_interface_based_approach.png used on input
 line 294.
 (pdftex.def)             Requested size: 312.9803pt x 138.87315pt.
 
-<img/service_interface_based_approach.png, id=531, 638.385pt x 446.41782pt>
+<img/service_interface_based_approach.png, id=541, 638.385pt x 446.41782pt>
 File: img/service_interface_based_approach.png Graphic file (type png)
 
 <use img/service_interface_based_approach.png>
@@ -905,7 +905,7 @@ Package pdftex.def Info: img/service_interface_based_approach.png used on input
  line 302.
 (pdftex.def)             Requested size: 312.9803pt x 218.86244pt.
 
-<img/service_contract_based_approach.png, id=534, 642.14906pt x 438.8897pt>
+<img/service_contract_based_approach.png, id=544, 642.14906pt x 438.8897pt>
 File: img/service_contract_based_approach.png Graphic file (type png)
 
 <use img/service_contract_based_approach.png>
@@ -919,7 +919,7 @@ rface_based_approach.png> <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex
 LaTeX Warning: Citation `soaml_metamodel' on page 26 undefined on input line 32
 0.
 
-<img/soaml_metamodel.png, id=550, 386.19281pt x 524.71031pt>
+<img/soaml_metamodel.png, id=560, 386.19281pt x 524.71031pt>
 File: img/soaml_metamodel.png Graphic file (type png)
 
 <use img/soaml_metamodel.png>
@@ -942,7 +942,7 @@ k-tu-rze usªu-go-wej. RUP4SOA
 Underfull \vbox (badness 7704) has occurred while \output is active []
 
  [35]
-<img/soma_fractal_lifecycle.png, id=616, 704.6325pt x 551.81157pt>
+<img/soma_fractal_lifecycle.png, id=626, 704.6325pt x 551.81157pt>
 File: img/soma_fractal_lifecycle.png Graphic file (type png)
 
 <use img/soma_fractal_lifecycle.png>
@@ -956,7 +956,7 @@ Overfull \hbox (7.51537pt too wide) in paragraph at lines 580--581
  biz-ne-so-wych za-pro-po-no-wa-nego przez Paula
  []
 
-<img/papazoglou_metoda_fazy.png, id=654, 462.97969pt x 459.21562pt>
+<img/papazoglou_metoda_fazy.png, id=664, 462.97969pt x 459.21562pt>
 File: img/papazoglou_metoda_fazy.png Graphic file (type png)
 
 <use img/papazoglou_metoda_fazy.png>
@@ -972,65 +972,82 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [46
 
 ]
-<img/MetMatSOA.png, id=692, 743.02594pt x 304.88907pt>
-File: img/MetMatSOA.png Graphic file (type png)
- <use img/MetMatSOA.png>
-Package pdftex.def Info: img/MetMatSOA.png used on input line 668.
-(pdftex.def)             Requested size: 398.34827pt x 199.17577pt.
+<img/MetMatSOA_v2.png, id=702, 605.26125pt x 228.855pt>
+File: img/MetMatSOA_v2.png Graphic file (type png)
 
-Overfull \hbox (8.45726pt too wide) in paragraph at lines 677--678
+<use img/MetMatSOA_v2.png>
+Package pdftex.def Info: img/MetMatSOA_v2.png used on input line 667.
+(pdftex.def)             Requested size: 398.33768pt x 199.17557pt.
+
+Overfull \hbox (8.45726pt too wide) in paragraph at lines 676--677
 []\OT4/cmr/m/n/12 W celu iden-ty-fi-ka-cji wy-ma-ga« or-ga-ni-za-cji na-le»y ro
 z-pa-trzy¢ po-szcze-gólne aspekty
  []
 
-[47] <img/BMM_PL.png, id=701, 722.7pt x 536.0025pt>
+[47 <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex/img/MetMatSOA_v2.png>
+] <img/BMM_PL.png, id=710, 722.7pt x 536.0025pt>
 File: img/BMM_PL.png Graphic file (type png)
  <use img/BMM_PL.png>
 Package pdftex.def Info: img/BMM_PL.png used on input line 690.
 (pdftex.def)             Requested size: 341.43344pt x 312.97542pt.
-
-[48 <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex/img/MetMatSOA.png>]
+ [48]
 [49 <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex/img/BMM_PL.png>]
-[50] [51] [52] [53]
-Rozdzia\l  6.
-[54
+[50] <img/service_candidates.png, id=734, 348.55219pt x 203.25937pt>
+File: img/service_candidates.png Graphic file (type png)
 
-] [55] <img/bmm_model_frostres.png, id=747, 670.75594pt x 453.19313pt>
+<use img/service_candidates.png>
+Package pdftex.def Info: img/service_candidates.png used on input line 733.
+(pdftex.def)             Requested size: 284.5435pt x 170.72119pt.
+ [51 <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex/img/service_candidat
+es.png>]
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <10.95> on input line 743.
+ [52]
+Overfull \hbox (5.52109pt too wide) in paragraph at lines 770--771
+[]\OT4/cmr/m/n/12 Operacje wy-wo-dz¡ce si¦ z sys-te-mów ju» ist-nie-j¡-cych maj
+¡ pierw-sze«-stwo. Istotne
+ []
+
+[53] [54]
+Rozdzia\l  6.
+[55
+
+] [56] <img/bmm_model_frostres.png, id=769, 670.75594pt x 453.19313pt>
 File: img/bmm_model_frostres.png Graphic file (type png)
 
 <use img/bmm_model_frostres.png>
-Package pdftex.def Info: img/bmm_model_frostres.png used on input line 779.
+Package pdftex.def Info: img/bmm_model_frostres.png used on input line 827.
 (pdftex.def)             Requested size: 455.23802pt x 341.43608pt.
 
-Overfull \hbox (36.98434pt too wide) in paragraph at lines 779--780
+Overfull \hbox (36.98434pt too wide) in paragraph at lines 827--828
  [][] 
  []
 
-[56 <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex/img/bmm_model_frostre
+[57 <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex/img/bmm_model_frostre
 s.png>]
-<img/proces_operacja_przeleu_miedzynarodowego.png, id=756, 396.7322pt x 753.565
+<img/proces_operacja_przeleu_miedzynarodowego.png, id=777, 396.7322pt x 753.565
 3pt>
 File: img/proces_operacja_przeleu_miedzynarodowego.png Graphic file (type png)
  <use img/proces_operacja_przeleu_miedzynarodowego.png>
 Package pdftex.def Info: img/proces_operacja_przeleu_miedzynarodowego.png used 
-on input line 788.
+on input line 836.
 (pdftex.def)             Requested size: 355.66939pt x 569.04758pt.
 
 
-LaTeX Warning: Float too large for page by 4.3507pt on input line 791.
+LaTeX Warning: Float too large for page by 4.3507pt on input line 839.
 
-[57] [58 <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex/img/proces_opera
+[58] [59 <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex/img/proces_opera
 cja_przeleu_miedzynarodowego.png>]
-<img/bank_fd.png, id=765, 551.05875pt x 371.3875pt>
+<img/bank_fd.png, id=786, 551.05875pt x 371.3875pt>
 File: img/bank_fd.png Graphic file (type png)
  <use img/bank_fd.png>
-Package pdftex.def Info: img/bank_fd.png used on input line 836.
-(pdftex.def)             Requested size: 284.53415pt x 227.62842pt.
+Package pdftex.def Info: img/bank_fd.png used on input line 884.
+(pdftex.def)             Requested size: 341.44267pt x 256.08197pt.
 
-[59 <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex/img/bank_fd.png (PNG 
-copy)>] [60]
+[60 <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex/img/bank_fd.png (PNG 
+copy)>] [61]
 Rozdzia\l  7.
-) [61
+) [62
 
 ]
 LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 60.
@@ -1073,7 +1090,7 @@ $\OT4/cmtt/m/n/12 / / www . ibm . com / developerworks / community / blogs / jo
 hnston / entry /$
  []
 
-[62
+[63
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 80--81
@@ -1099,7 +1116,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--82
 rchitekturakorporacyjna . pl /$
  []
 
-[63]
+[64]
 Underfull \hbox (badness 10000) in paragraph at lines 86--87
 []\OT4/cmr/m/n/12 The Open Group, []$\OT4/cmtt/m/n/12 http : / / www . opengrou
 p . org / subjectareas /$
@@ -1112,41 +1129,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--89
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 91.
-[64]
+[65]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 91.
  (C:\Users\IBM_ADMIN\Documents\Studia\MGR2\trunk\latex\praca_dyplomowa.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 91.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 91.
 Package rerunfilecheck Info: File `praca_dyplomowa.out' has not changed.
-(rerunfilecheck)             Checksum: 1055138BF856DE58407C00B8DEE7F16D;4892.
+(rerunfilecheck)             Checksum: FA143BCDC8400F83654801A3FEACEDC2;5032.
 
 LaTeX Warning: There were undefined references.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 91.
  ) 
 Here is how much of TeX's memory you used:
- 7930 strings out of 493921
- 113793 string characters out of 3148874
- 212102 words of memory out of 3000000
- 10885 multiletter control sequences out of 15000+200000
- 15532 words of font info for 45 fonts, out of 3000000 for 9000
+ 7954 strings out of 493921
+ 114235 string characters out of 3148874
+ 212245 words of memory out of 3000000
+ 10901 multiletter control sequences out of 15000+200000
+ 17108 words of font info for 50 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,12n,35p,1218b,447s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,12n,35p,1118b,447s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/pl/pltt.enc}{C:/Program Files/MiKTeX
-/fonts/enc/dvips/pl/plmi.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/pl/plrm.e
+/fonts/enc/dvips/pl/plrm.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/pl/plmi.e
 nc}{C:/Program Files/MiKTeX/fonts/enc/dvips/pl/plms.enc}{C:/Program Files/MiKTe
 X/fonts/enc/dvips/pl/plit.enc}<C:/Program Files/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/pl/plbx12.pfb><C:
-/Program Files/MiKTeX/fonts/type1/public/pl/plbxti10.pfb><C:/Program Files/MiKT
-eX/fonts/type1/public/pl/plmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public
-/pl/plmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/pl/plr12.pfb><C:/Prog
-ram Files/MiKTeX/fonts/type1/public/pl/plr8.pfb><C:/Program Files/MiKTeX/fonts/
-type1/public/pl/plsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/pl/plti1
-0.pfb><C:/Program Files/MiKTeX/fonts/type1/public/pl/plti12.pfb><C:/Program Fil
-es/MiKTeX/fonts/type1/public/pl/pltt12.pfb>
-Output written on praca_dyplomowa.pdf (69 pages, 1456492 bytes).
+nts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/pl/plbx10.pfb><C:
+/Program Files/MiKTeX/fonts/type1/public/pl/plbx12.pfb><C:/Program Files/MiKTeX
+/fonts/type1/public/pl/plbxti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public
+/pl/plmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/pl/plmi8.pfb><C:/Pro
+gram Files/MiKTeX/fonts/type1/public/pl/plr10.pfb><C:/Program Files/MiKTeX/font
+s/type1/public/pl/plr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/pl/plr8
+.pfb><C:/Program Files/MiKTeX/fonts/type1/public/pl/plsy10.pfb><C:/Program File
+s/MiKTeX/fonts/type1/public/pl/plti10.pfb><C:/Program Files/MiKTeX/fonts/type1/
+public/pl/plti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/pl/pltt12.pfb>
+
+Output written on praca_dyplomowa.pdf (70 pages, 1481338 bytes).
 PDF statistics:
- 898 PDF objects out of 1000 (max. 8388607)
- 190 named destinations out of 1000 (max. 500000)
- 604 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 926 PDF objects out of 1000 (max. 8388607)
+ 195 named destinations out of 1000 (max. 500000)
+ 625 words of extra memory for PDF output out of 10000 (max. 10000000)
 
