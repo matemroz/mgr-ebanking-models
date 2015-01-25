@@ -644,7 +644,7 @@ Do pozytywnych cech metody można zaliczyć fakt, że wspiera najpopularniejsze 
 \section{Wstęp}
 W poprzednim rozdziale został dokonany przegląd istniejących metod projektowania systemów informatycznych o architekturze SOA.
 
-Stopień złożoności biznesowej niektórych organizacji jest naprawdę wysoki. Bez zastosowania odpowiedniej metody utworzenie sprawnie funkcjonującego systemu informatycznego nie stanowi trywialnego zadania. Występuje wiele metod o różnej charakterystyce jednakże niemal każda wykazuje pewne niedociągnięcia.
+Stopień złożoności biznesowej niektórych organizacji jest naprawdę wysoki. Bez zastosowania odpowiedniej, usystematyzowanej metody utworzenie sprawnie funkcjonującego systemu informatycznego stanowi istotny problem. Występuje wiele metod o różnej charakterystyce jednakże niemal każda wykazuje pewne niedociągnięcia.
 
 Większość metod łączy opis sposobu przejścia od stanu początkowego (wyniknięcie potrzeby posiadania systemu informatycznego) do końcowego (utworzenie systemu informatycznego zgodnego z wymaganiami zebranymi w trakcie analizy).  Każda z nich stanowi hierarchicznie uporządkowany zbiór elementów takich jak: fazy, aktywności, zadania oraz kroki. Opierają się również na wykorzystywaniu różnorodnych technik oraz zalecanych języków modelowania i notacji \cite{OffCompSOAM}.
 
@@ -658,14 +658,13 @@ MatSOA w odróżnieniu od wielu występujących metod uwzględnia również anal
 
 W celu dokładnego opisania metody zostaną przedstawione jej poszczególne fazy oraz związane z nią notacje modelowania. Będą opisane również możliwe narzędzia, które wspierają proces projektowania w oparciu o MatSOA.
 
-\subsection{Fazy metody}
 Metoda MatSOA składa się z sześciu głównych faz, których sekwencja została przedstawiona na rys. \ref{soam_lifecycle}. Wszystkie fazy zawierają szereg aktywności, z których każda ma przypisaną rolę wykonania oraz określone artefakty wejściowe i wyjściowe.
 
 Faza analizy organizacji oraz wykrywania usług ma równoległy przebieg do analizy obecnych systemów. Produkty wyjściowe powstałe w wyniku dwóch podejść analizy - \emph{top-down} oraz \emph{bottom-up} - są następnie konsolidowane. W kolejnym etapie projektowane są usługi, które z kolei są wykorzystywane do przygotowania procesów biznesowych.
 
 \begin{figure}[h!tbp]
 \begin{centering}
-\includegraphics[width=14cm, height=7cm]{img/MetMatSOA.png}
+\includegraphics[width=14cm, height=7cm]{img/MetMatSOA_v2.png}
 \caption[Fazy metody MatSOA.]{Fazy metody MatSOA.}\label{soam_lifecycle}
 \end{centering}
 \end{figure}
@@ -673,10 +672,11 @@ Faza analizy organizacji oraz wykrywania usług ma równoległy przebieg do anal
 
 W tej sekcji pracy zostaną omówione poszczególne fazy metody MatSOA.
 
-\subsection*{Analiza organizacji}
+\subsection{Analiza}
 W celu identyfikacji wymagań organizacji należy rozpatrzyć poszczególne aspekty z nią związane: strategie biznesowe, procesy biznesowe oraz domeny funkcjonalne. W wypadku MatSOA analiza organizacji ma przebieg kilku etapowy oraz powinna być przeprowadzana przez analityka biznesowego.
 
-W pierwszym kroku analizy organizacji w przypadku metody MatSOA tworzony jest motywacyjny model biznesoy (BMM - \emph{Business Motivation Model}). Stanowi on część opisu organizacji. Umożliwia między innymi uchwycenie i przedstawienie w prosty sposób planów biznesowych. Do podstawowych celów BMM zalicza się ponadto:
+\subsection*{BMM - Motywacyjny Model Biznesowy}
+W pierwszym kroku analizy organizacji w przypadku metody MatSOA tworzony jest motywacyjny model biznesowy (BMM - \emph{Business Motivation Model}). Stanowi on część opisu organizacji. Umożliwia między innymi uchwycenie i przedstawienie w prosty sposób planów biznesowych. Do podstawowych celów BMM zalicza się ponadto:
 \begin{itemize}
 \item{identyfikację czynników, które powodują konieczność utworzenia planu,}
 \item{identyfikację oraz definicję elementów niezbędnych do wykorzystania w układanym planie,}
@@ -694,36 +694,84 @@ BMM został stworzony przez BRG (\emph{Business Rules Group}), a następnie w 20
 
 Motywacyjny model biznesu stanowi element integrujący względem innych modeli (np. modeli procesów biznesowych, modeli reguł biznesowych) i nie jest uwarunkowany (zależny) metodycznie od innych standardów. BMM stanowi pewnego rodzaju ramę koncepcyjną pozwalającą stworzyć repozytorium modeli wspólnie odwzorowujących model biznesowy danej organizacji. W BMM istotną rolę odgrywa wspólny słownik pojęć biznesowych zapewniający spójność semantyczną tworzonych modeli.
 
-Do podstawowych elementów BMM zalicza się: stan oczekiwany (ang. \emph{Ends}) - coś co dana organizacja chce osiągnąć, wizję (ang. \emph{Vision}) - ogólne przedstawienie pożądanych osiągnięć, cele (ang. \emph{Goals}) - wynikają z utworzonej wcześniej wizji, zadania (ang. \emph{Objectives}) - wynikają z celów postawionych przez organizację, misję (ang. \emph{Mission}), strategie (ang. \emph{Strategies}) i taktyki (ang. \emph{Tactics}). \cite{AnaWesHal}
+Do podstawowych elementów BMM zalicza się: stan oczekiwany (ang. \emph{Ends}) - coś co dana organizacja chce osiągnąć, wizję (ang. \emph{Vision}) - ogólne przedstawienie pożądanych osiągnięć, cele (ang. \emph{Goals}) - wynikają z utworzonej wcześniej wizji, zadania (ang. \emph{Objectives}) - wynikają z celów postawionych przez organizację, misję (ang. \emph{Mission}), strategie (ang. \emph{Strategies}) i taktyki (ang. \emph{Tactics}) \cite{AnaWesHal}. 
 
-W kolejnej fazie analizy organizacji na podstawie BMM są identyfikowane procesy biznesowe niezbędne do wspierania jej strategii działania. 
-
-Następnie na podstawie ustalonych kryteriów (np. częstość zmian w procesach, obecny poziom możliwej integracji z istniejącymi systemami oraz stopień, w którym procesy mogą być z góry określane i wydzielane) wyszczególniany jest inny typ lub części procesów biznesowych, które powinny być wspierane przez systemy SOA.
+W kolejnej fazie analizy organizacji na podstawie BMM są identyfikowane procesy biznesowe niezbędne do wspierania jej strategii działania. Ustalane są również kryteria (np. częstość zmian w procesach, obecny poziom możliwej integracji z istniejącymi systemami oraz stopień, w którym procesy mogą być z góry określane i wydzielane) na podstawie, których wyszczególniany jest inny typ lub części procesów biznesowych, które powinny być wspierane przez systemy SOA.
 
 Procesy biznesowe definiuje się jako ustrukturyzowany i zmierzony ciąg czynności, który jest zaprojektowany do osiągnięcia określonego wyniku\cite{PlatIntGor}. Każda z czynności poddawana jest klasyfikacji zgodnie z tym czy może być wykonywana automatycznie (\emph{Business service}), czy wymaga interakcji między użytkownikiem, a systemem (\emph{User interaction}) oraz czy jej działanie ma charakter wyłącznie ręczny (\emph{Manual}).
 
-MatSOA zakłada identyfikowanie mierzalnych, udokumentowanych i powtarzalnych procesów. Modele procesów biznesowych powinny być budowane na różnych poziomach szczegółowości i mieć budowę hierarchiczną. Modele wysokiego poziomu powinny określać przepływ pracy pomiędzy działami firmy, a w dalszej kolejności być dekomponowane na procesy, w których wykonawcami są pojedyncze osoby. 
+MatSOA zakłada identyfikowanie mierzalnych, udokumentowanych i powtarzalnych procesów. Modele procesów biznesowych powinny być budowane na różnych poziomach szczegółowości i mieć budowę hierarchiczną. Modele wysokiego poziomu powinny określać przepływ pomiędzy poszczególnymi podmiotami (rolami), a w dalszej kolejności być dekomponowane na procesy, w których wykonawcami są pojedyncze osoby. 
 
-Zalecaną notację modelowania stanowi BPMN (\emph{Business Process Modelling Notation}). Przepływ danych powinien być określony na tyle ile to możliwe na poziomie modelu procesu. Każdy obiekt danych wykorzystywany w procesie powinien być uwzględniany na tworzonym modelu danych.
+Zalecaną notację modelowania stanowi BPMN (\emph{Business Process Modelling Notation}). Określenie przepływu danych w procesie nie jest wymagane na tym etapie. Wykonywanie uproszczonych modeli procesów biznesowych, w których uwzględnione są jedynie aktywności ma na celu przede wszystkim utworzenie zarysu jak będzie wyglądała integracja z poszczególnymi systemami.
 
 Równolegle do modelowania procesów biznesowych powstaje warstwowy model domen funkcjonalnych (ang. \emph{FD - Functional Domains}). Proponowaną notacją dla FD są diagramy przypadków użycia UML. Każda aktywność modelu procesu biznesowego jest przypisywana do domeny funkcjonalnej. Modelowanie procesów biznesowych i FD powinno być wykonywane iteracyjnie. Połączenia aktywności procesów i domen funkcjonalnych pomaga później w zapewnieniu reużywalności usług.
 
-\subsection*{Wykrywanie operacji usług}
-Na podstawie przeanalizowanych procesów biznesowych i domen funkcjonalnych mogą zostać wykryte operacje usług, które wspierają poszczególne aktywności procesów. Wykorzystywane jest do osiągnięcia tego celu FD. Dla każdego FD wszystkie przypisane aktywności analizowane są zgodnie z ich rodzajem. Dla zadań usługowych, operacje wspierające poszczególne aktywności są uwzględniane w modelu usługi. Dla zadań użytkownika specyfikowany jest z kolei interfejs użytkownika. Każda indywidualna operacja usługi i interfejs użytkownika jest przypisywany do domeny funkcjonalnej - z reguły powiązanej z aktywnością, z której się wywodzi.
+\subsection*{Wymagania funkcjonalne}
+Po zidentyfikowaniu wymagań od klienta należy przeprowadzić ich analizę. Wykryte wymagania są na tym etapie uszczegóławiane oraz określane są ich priorytety oraz ryzyka. Odrzucane są również wymagania sprzeczne lub nieprawidłowe.
 
-Od tego momentu wykryte operacje usług i interfejsu użytkownika tylko wspierają poszczególne aktywności procesów biznesowych. Reużywalne usługi mogą także występować na wyższym poziomie technicznym. Dlatego operacje usług i przypadki użycia interfejsu użytkownika są modelowane. Są to przypadki użycia widziane z perspektywy operacji lub interfejsu użytkownika (na przykład operacje typu \quotedblbase pobierzKlientów\textquotedblright lub \quotedblbase zatwierdźZamówienie\textquotedblright). Przypadki użycia są następnie przypisywane do wcześniej określonych FD i poddawane klasyfikacji (np. \quotedblbase logika biznesowa\textquotedblright, \quotedblbase zarządzanie danymi\textquotedblright). Jako notacja modelowania wykorzystywany jest diagram przypadków użycia UML. Poszczególne przypadki użycia są następnie porządkowane zgodnie z FD i klasami. Jeśli występują podobne lub identyczne przypadki użycia, operacja usługi może być zdefiniowana do wspierania ich. Podczas implementacji docelowej usługi lub interfejsu użytkownika, operacje usługi pochodzące od przypadków użycia mogą zostać nazwane. 
+Analiza wymagań funkcjonalnych pozwala na zidentyfikowanie i opisanie pożądanego zachowania systemu. W przypadku rozbudowy systemów identyfikowane są nowe funkcjonalności, o które system ma zostać rozszerzony.
+
+Analiza wymagań funkcjonalnych przedstawiana jest za pomocą diagramów przypadków użycia.
+
+\subsection*{Wymagania niefunkcjonalne}
+W metodzie MatSOA na wymagania funkcjonalne składa się opis atrybutów jakościowych jakim ma podlegać tworzony system oraz model domeny. Zdarza się, że w niektórych metodach do wymagań niefunkcjonalnych zaliczana jest także analiza dotychczasowych systemów. W MatSOA ten etap jest zawarty w późniejszej fazie. 
+
+Model domeny przedstawia podmioty wchodzące w skład, w której działa dana organizacja lub przedsiębiorstwo. Przedstawia również relacje pomiędzy danymi podmiotami. Modelowana jest za pomocą diagramu klas UML.
+
+Do atrybutów jakościowych w przypadku MatSOA zalicza się przede wszystkim spełnianie podstawowych pryncypiów SOA. Są to przede wszystkim: luźne powiązania, autonomiczność, enkapsulacja oraz reużywalność usług.
+
+\subsection{Identyfikacja usług}
+Identyfikacja usług stanowi kolejny etap metody MatSOA. W jej efekcie otrzymywany jest model kandydatów usług wykorzystywany w kolejnych fazach metody. 
+Faza ta powinna się rozpoczynać od wykrycia kandydatów usług (ang. \emph{Service Candidates}). 
+
+Owi kandydaci usług stanowią pewnego rodzaju propozycje dotyczące usług.  W późniejszym etapie poddawane są specyfikacji pod warunkiem, że odpowiednia usługa nie występuje w dotychczasowym systemie.
+
+Modele kandydatów usług są tworzone na podstawie wcześniej ustalonych wymagań funkcjonalnych w sposób zorientowany na usługi. Artefakty modelowane w fazie analizy wymagań są odpowiednio transformowane do kandydatów usług. Stanowi to wstępny etap do przygotowania modeli docelowych usług (rys. \ref{MatSOAServicesIdent}). 
+
+\begin{figure}[h!tbp]
+\begin{centering}
+\includegraphics[width=10cm, height=6cm]{img/service_candidates.png}
+\caption[Identyfikacja usług - metoda MatSOA.]{Identyfikacja usług - metoda MatSOA.}\label{MatSOAServicesIdent}
+\end{centering}
+\end{figure}
+
+Do modelowania kandydatów usług wykorzystywany jest element języka SoaML - Capability. Każdy element Capability zawiera operacje oraz można wykazywać zależności pomiędzy nimi za pomocą Usage Dependency. W tabeli (\ref{tabela_service_candidates_soaml}) zostały zawarte mapowania kandydatów usług na poszczególne elementy języka SoaML.
+
+\begin{table}[!htbp]
+\begin{center}
+\begin{small}
+\begin{supertabular}{|p{6cm}|p{7cm}|}\hline
+\textbf{Element kandydata usługi} & \textbf{Element w języku SoaML}\\\hline
+Kandydat usługi &	Capability (klasa UML ze stereotypem  \quotedblbase Capability\textquotedblright)  \\\hline
+Operacja kandydata usługi &	Operacja wewnątrz elementu Capability \\\hline
+Zależność kandydata usługi &	Usage Dependency - zależność pomiędzy poszczególnymi Capability \\\hline
+\end{supertabular}
+\end{small}
+\end{center}
+ \caption{Mapowanie kandydatów usług na elementy języka SoaML.}
+ \label{tabela_service_candidates_soaml}
+\end{table}
+
+Wykrywanie usług może mieć iteracyjny charakter. Już na tym etapie powinno się uwzględniać wymagania niefunkcjonalne związane z atrybutami jakościowymi. Należy przejrzeć czy wykryte operacje nie są wewnętrzne. Musimy również rozważyć szanse na reużywalność poszczególnych kandydatów usług. 
+
 
 \subsection*{Analiza obecnych systemów i zasobów}
-Analiza istniejących systemów oraz zasobów stanowi bardzo istotny etap metody MatSOA. Umiejętne przeprowadzenie tej fazy może znacznie zredukować koszty wprowadzania nowych funkcjonalności. Na tym etapie identyfikowane są elementy takie jak: istniejące aplikacje, standardy branżowe, modele oraz pozostałe zasoby niezbędne do realizacji usług. 
+Analiza istniejących systemów (ang. \emph{Legacy systems}) oraz zasobów stanowi bardzo istotny etap metody MatSOA. Umiejętne przeprowadzenie tej fazy często może znacznie zredukować koszty wprowadzania nowych funkcjonalności w systemach organizacji. Na tym etapie identyfikowane są elementy takie jak: istniejące aplikacje, standardy branżowe, modele oraz pozostałe zasoby niezbędne do realizacji usług. 
 
-W założeniu metody MatSOA analityk systemowy powinien zidentyfikować istotne systemy. Następnie te rozpoznane systemy są analizowane pod kątem funkcjonalności oraz czy możliwe jest wykorzystanie ich poprzez opakowującą je usługę. Sposobów na używanie istniejących zasobów jest wiele: API, dostępne bazy danych, komponenty oprogramowania, które mogą być opakowane oraz wywołanie komendy z wiersza poleceń.
-Takie opakowane elementy są następnie modelowane jako usługi wraz z odpowiadającymi im operacjami, a następnie przypisywane do FD. Znalezione obiekty danych również są uwzględniane w modelach danych oraz przypisywane do FD.
+W założeniu metody MatSOA analityk systemowy powinien zidentyfikować istotne systemy. Następnie te rozpoznane systemy są analizowane pod kątem przydatnych funkcjonalności. Często się zdarza, że nie wszystkie elementy dotychczasowych systemów mogą być wykorzystane bezpośrednio. Jeśli jest to usługa SOA wprowadza się wówczas odpowiednie modyfikacje do obecnych systemów. W innych wypadkach należy rozważyć czy jest szansa wykorzystania ich poprzez opakowującą je usługę (ang. \emph{wrapper}). Sposobów na używanie istniejących zasobów jest wiele: API, dostępne bazy danych, komponenty oprogramowania, które mogą być opakowane oraz wywołanie komendy z wiersza poleceń.
 
-\subsection*{Konsolidacja}
-Po analizie wymagań (\emph{top-down}) i identyfikacji istniejących systemów (\emph{bottom-up}) konieczna jest konsolidacja. Faza ta wykonywana jest przez architekta oprogramowania i przeprowadzana na typach obiektów danych i operacjach usług. Dla obiektów danych wszelkie redundancje powinny zostać wykryte i usunięte (na przykład występują dwa obiekty \emph{Adres} i różnią się jedynie polem kraj). Redukcji takowej można dokonać w oparciu o FD jeśli domeny funkcjonalne zostały powiązane z obiektami danych. Scalając typy obiektów danych należy kierować się zasadą, że obiekty już istniejące mają pierwszeństwo (tylko w wypadku, gdy występuje zbyt duża rozbieżność pomiędzy wymaganiem, a obecnym stanem można rozważyć zmianę istniejącego obiektu). W przypadku, gdy obiekty nie mogą zostać scalone należy utworzyć \emph{mediatora}.
+Takie opakowane elementy są następnie modelowane jako kandydaci usług wraz z odpowiadającymi im operacjami. Istotne jest, żeby analityk wybierał tylko te usługi, które są powiązane z ustalonymi wymaganiami funkcjonalnymi.
 
-Konsolidacja operacji usług jest także wykonywana przez FD oraz prowadzona przez klasy. Operacje, które są podobne powinny zostać połączone (np. \quotedblbase pobierzDaneKlienta\textquotedblright oraz \quotedblbase pobierzAdresKlienta\textquotedblright). Tym samym zapewniania jest reużywalność. Podobnie jak w przypadku obiektów danych, operacje wywodzące się z systemów już istniejących mają pierwszeństwo. Zmiana w obecnym systemie może zostać rozważona jeśli rozbieżność pomiędzy wymaganiami i aktualnym system jest zbyt wielka. Kiedy operacje są scalane, dane wejściowe i wyjściowe są dodawane do każdej operacji w oparciu o skonsolidowany model danych.
+Podobnie jak w przypadku etapu identyfikacji usług analizę obecnych systemów i zasobów można wykonywać w sposób iteracyjny. W każdym kroku powinno następować sprawdzanie czy utworzony model kandydatów usług spełnia wymagania niefunkcjonalne. Jeśli wykryte usługi naruszają istotnie takie zasady SOA jak \quotedblbase luźne powiązania\textquotedblright bądź \quotedblbase reużywalność\textquotedblright to wtedy rozważana jest ich modyfikacja.
 
+\subsection{Konsolidacja}
+Po wykryciu nowych usług metodą typu \emph{top-down} i identyfikacji usług istniejących systemów typu \emph{bottom-up} konieczna jest ich odpowiednia konsolidacja. Faza ta wykonywana jest przez architekta systemowego i może mieć charakter iteracyjny.
+
+Operacje wywodzące się z systemów już istniejących mają pierwszeństwo. Istotne jest dlatego tutaj rozważenie czy operacje w wykrytych poszczególnych kandydatach usług na podstawie analizy wymagań funkcjonalnych nie występują w dotychczasowych systemach. W trakcie konsolidacji ponownie należy wziąć pod uwagę wymagania niefunkcjonalne i jeśli wyniknie konieczność wykonać odpowiednie modyfikacje w systemie dotychczasowym.
+ 
+Zmiana w obecnym systemie może zostać rozważona jeśli rozbieżność pomiędzy wymaganiami i aktualnym systemem jest zbyt duża. 
+
+W wyniku konsolidacji tworzony jest model kandydatów usług uwzględniający rozszerzenie dotychczasowych elementów systemu o nowe funkcjonalności.
 
 \subsection*{Projektowanie usług}
 Po ustaleniu modelu operacji usług, poszczególne usługi mogą zostać zaprojektowane. Zazwyczaj usługa zawiera kilka operacji, dlatego powinny być odpowiednio pogrupowane. W tym celu architekt oprogramowania używa zasad specyficznych dla każdej klasy usług. Każda operacja klasy "interakcji z użytkownikiem" jest zazwyczaj reprezentowana przez pojedynczą usługę. Operacje zarządzania danymi są grupowane na podstawie podmiotów biznesowych.  Następnie tylko operacje wywodzące się z tego samego FD są rozpatrywana przy grupowaniu. 
@@ -833,7 +881,7 @@ W zaproponowanej metodzie MatSOA kolejnym proponowanym etapem jest wyodrębnieni
 
 \begin{figure}[h!tbp]
 \begin{centering}
-\includegraphics[width=10cm, height=8cm]{img/bank_fd.png}
+\includegraphics[width=12cm, height=9cm]{img/bank_fd.png}
 \caption[Model domeny funkcjonalnej dla banku FrostRes]{Model domeny funkcjonalnej dla banku FrostRes.}\label{FD_frostres}
 \end{centering}
 \end{figure}
