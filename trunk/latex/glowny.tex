@@ -767,25 +767,54 @@ Podobnie jak w przypadku etapu identyfikacji usług analizę obecnych systemów 
 \subsection{Konsolidacja}
 Po wykryciu nowych usług metodą typu \emph{top-down} i identyfikacji usług istniejących systemów typu \emph{bottom-up} konieczna jest ich odpowiednia konsolidacja. Faza ta wykonywana jest przez architekta systemowego i może mieć charakter iteracyjny.
 
-Operacje wywodzące się z systemów już istniejących mają pierwszeństwo. Istotne jest dlatego tutaj rozważenie czy operacje w wykrytych poszczególnych kandydatach usług na podstawie analizy wymagań funkcjonalnych nie występują w dotychczasowych systemach. W trakcie konsolidacji ponownie należy wziąć pod uwagę wymagania niefunkcjonalne i jeśli wyniknie konieczność wykonać odpowiednie modyfikacje w systemie dotychczasowym.
- 
-Zmiana w obecnym systemie może zostać rozważona jeśli rozbieżność pomiędzy wymaganiami i aktualnym systemem jest zbyt duża. 
+Operacje wywodzące się z systemów już istniejących mają pierwszeństwo. Istotne jest dlatego tutaj rozważenie czy operacje w wykrytych poszczególnych kandydatach usług na podstawie analizy wymagań funkcjonalnych nie występują w dotychczasowych systemach. W trakcie konsolidacji ponownie należy wziąć pod uwagę wymagania niefunkcjonalne i jeśli wyniknie konieczność wykonać odpowiednie modyfikacje w systemie dotychczasowym. Zmiana w obecnym systemie może zostać jedynie rozważona jeśli rozbieżność pomiędzy wymaganiami i aktualnym systemem jest zbyt duża. 
 
 W wyniku konsolidacji tworzony jest model kandydatów usług uwzględniający rozszerzenie dotychczasowych elementów systemu o nowe funkcjonalności.
 
-\subsection*{Projektowanie usług}
-Po ustaleniu modelu operacji usług, poszczególne usługi mogą zostać zaprojektowane. Zazwyczaj usługa zawiera kilka operacji, dlatego powinny być odpowiednio pogrupowane. W tym celu architekt oprogramowania używa zasad specyficznych dla każdej klasy usług. Każda operacja klasy "interakcji z użytkownikiem" jest zazwyczaj reprezentowana przez pojedynczą usługę. Operacje zarządzania danymi są grupowane na podstawie podmiotów biznesowych.  Następnie tylko operacje wywodzące się z tego samego FD są rozpatrywana przy grupowaniu. 
+\subsection{Specyfikacja usług}
+Po ustaleniu modeli kandydatów usług poszczególne usługi są specyfikowane. Określane są parametry wejściowe i wyjściowe oraz opisywany poszczególne kontrakty usług. Na tym etapie tworzony jest również model danych. Przebieg wywołań pomiędzy poszczególnymi interfejsami usług opisywany jest za pomocą diagramu sekwencji (każdy interfejs usługi przedstawiany zostaje jako osobny lifeline).
 
-Kiedy usługi są zaprojektowane, pryncypia które nie mogą być zagwarantowane podczas wcześniejszych kroków muszą być wprowadzane. Dla każdej usługi architekt oprogramowania musi rozważyć czy zaliczyć go do bezstanowych (ang. \emph{Stateless}), czy usługi są \quotedblbase luźno połączone\textquotedblright (ang. \emph{Loosely coupled}) oraz czy istnieja operacje typu \emph{rollback} do wprowadzania mechanizmów transakcyjnych. Do manipulowania usługami, architekt oprogramowania może wykorzystywać takie operacje jak  unifikacja (ang. \emph{Unification}), intersekcja (ang. \emph{Intersection}), dekompozycja (ang. \emph{Decomposition}), podzbioru (ang. \emph{Subset}) oraz substrakcji (ang. \emph{Substraction}). 
-Jeśli usługi powstaną zbyt rozbudowane należy podzielić je i wcześniejsze kroki wykonać ponownie. Ostatecznie usługi są wdrożone i przetestowane. 
+W efekcie specyfikacji usług tworzone są modele jak na rys. \ref{}
 
-\subsection*{Choreografia procesów}
-Po tym jak usługi zostaną zdefiniowane procesy muszą być przygotowane do działania przez programistów. Operacje usług, powinny być przypisane do każdej aktywności wspieranej przez usługę. Na tym etapie także mechanizmy przechwytywania wyjątków powinny być również uwzględnione na modelach procesów. Przepływ danych musi być zweryfikowany dla zapewnienia wykonywalności. Jeśli konieczne mediacje danych powinny zostać również zbudowane.
+//TODO: Dodać model przykładowej specyfikacji usług
 
-Ostatecznie wykorzystywane są narzędzia do przetłumaczenia języka modelowania BPMN na WS-BPEL. Interfejsy użytkowników, które były zaprojektowane wcześniej powinny być również wdrożone do specyfikacji procesów. Zazwyczaj te kroki są silnie zależne od infrastruktury pośredniczącej (ang. \emph{Middleware architecture}).
+\subsection{Projektowanie usług}
+Po ustaleniu modelu operacji usług, poszczególne usługi mogą zostać zaprojektowane. Celem tej fazy jest na podstawie utworzonej wcześniej specyfikacji usług przygotowanie odpowiednich komponentów usług (ang. \emph{Service Components}). 
+
+Do realizacji tych celów zostaną wykorzystane odpowiednie elementy języka SoaML (tab. \ref{tabela_service_projects_soaml}). Istotnym elemenetem są uczestnicy usługi (Participant).  Na podstawie wcześniej utworzonych modeli należy zdecydować, którzy uczestnicy będą wykorzystani i jak zostaną przyłączeni do funkcjonującego systemu. Element Participant zostanie wykorzystany do przedstawienia modelu komponentu, który będzie dostarczał (element Service) lub konsumował (element Request) poszczególne usługi. 
+
+Utworzone komponenty można łatwo integrować z pozostałymi częściami systemu. 
+
+\begin{table}[!htbp]
+\begin{center}
+\begin{small}
+\begin{supertabular}{|p{6cm}|p{7cm}|}\hline
+\textbf{Element projektu usługi} & \textbf{Element w języku SoaML}\\\hline
+Interfejs usługi (ang. \emph{Service interface}) &	ServiceInterface - klasa UML ze stereotypem  ServiceInterface  \\\hline
+Dostarczana operacja (ang. \emph{Provided operaton}) &	Operacja wewnątrz interfejsu realizowana przez element ServiceInterface \\\hline
+Realizowana operacja (ang. \emph{Realized operation}) &	Operacja, która jest połączona z elementem ServiceInterface poprzez użycie Usage Dependency z UML \\\hline
+Komponent usługi (ang. \emph{Service component}) &	Usage Dependency - Uczestnik - komponent UML nazywany Participant \\\hline
+Dostarczana usługa (ang. \emph{Provided service}) &	Usługa - port UML ze stereotypem Service  \\\hline
+Wymagana usługa (ang. \emph{Required service}) &	Zapytanie - port UML ze stereotypem Request \\\hline
+Wewnętrzne zachowanie (ang. \emph{Internal behaviour}) &	Aktywność UML, która jest dodawana jako OwnedBehaviour do elementu Participant \\\hline
+Port &	Element Port wykorzystywany przy tworzeniu dostarczanej usługi\\\hline
+Kanał usług &	Element ServiceChannel wykorzystywany przy tworzeniu połączeń pomiędzy konsumentami i producentami usług\\\hline
+\end{supertabular}
+\end{small}
+\end{center}
+ \caption{Projektowanie usług w odwzorowaniu na poszczególne elementy języka SoaML.}
+ \label{tabela_service_projects_soaml}
+\end{table}
+
+\subsection{Choreografia usług}
+Choreografia usług stanowi końcową fazę metody MatSOA. Tworzone są moduły SCA (ang. \emph{Service Component Architecture}), w których opisywany jest sposób komunikacji w systemie między komponentami. Poszczególne wywołania usług poddawane są choreografii z wykorzystaniem WS-BPEL. Wywołania usług definiowane są jako aktywności, a w przypadku wystąpienia błędów wyrzucane są odpowiednie wyjątki. Jeśli zachodzi potrzeba transformacji komunikatów do wymaganej formy przez producenta lub konsumenta można utworzyć odpowiednie mediacje. Przed wywołaniem usługi komunikat zostaje przetworzony wówczas do akceptowalnej formy.
+
+Przygotowane moduły SCA są wdrażane bezpośrednio na serwer gdzie definiowane są połączenia punktów końcowych do poszczególnych usług zewnętrznych.
 
 \subsection{Końcowy produkt}
-Celem zastosowanie metody MatSOA jest doprowadzenie do utworzenia systemu informatycznego opierającego swoje działanie na kooperacji usług. System utworzony zgodnie z paradygmatami MatSOA powinien charakteryzować się stosunkowo wysokim poziomem rozbudowy oraz wysokim poziomem ziarnistości.
+Celem zastosowania metody MatSOA jest doprowadzenie do utworzenia systemu informatycznego opierającego swoje działanie na kooperacji usług. System utworzony zgodnie z paradygmatami MatSOA powinien charakteryzować się dużą ziarnistością i wysokim poziomem skalowalności.
+
+Istotne jest, aby w trakcie identyfikacji oraz specyfikacji usług konfrontować modele z wymaganiami niefunkcjonalnymi z wyszczególnionymi atrybutami jakościowymi.
 
 \chapter{Weryfikacja koncepcji na przykładzie systemu bankowego}
 \section{Wstęp}
@@ -793,12 +822,12 @@ Systemy bankowe często charakteryzują się dużą złożonością i panuje w n
  
 W niniejszym rozdziale metoda MatSOA zostanie poddana weryfikacji pod względem przydatności do tworzenia tego typu systemów. Systemy bankowe to dziedzina bardzo szeroka dlatego zostanie przedstawiony projekt tylko niewielkiej części wyobrażonego systemu. Niemniej jednak na tym przykładzie zostaną zaprezentowane wszystkie fazy autorskiej metody.
 
-W oparciu o zasady \emph{Model Driven Development (MDD)} zostanie również przedstawiony proces implementacji zgodnie z utworzonymi modelami. Wdrożenie systemu wymaga również istotnych rozważeń związanych z konfiguracjami środowiska, na którym będzie funkcjonować. 
+W oparciu o zasady \emph{Model Driven Development (MDD)} zostanie również przedstawiony proces implementacji zgodnie z utworzonymi modelami. Wdrożenie systemu wymaga również istotnych rozważeń związanych z konfiguracjami środowiska, na którym będzie funkcjonować. Zostaną więc też przedstawione szczegóły techniczne dotyczące budowania systemu oraz jego instalacji na serwerach.
 
 Na zakończenie rozdziału zostaną opisane również testy jakim zostanie poddany system po utworzeniu.
 
 \section{Projektowanie systemu bankowego w oparciu o utworzoną koncepcję}
-Przykład wykorzystany w pracy będzie oparty na wymyślonej przez autora organizacji. Zostaną przedstawione i poddane rozważaniom jednakże wybrane modele mające na celu jak najlepszą prezentację poszczególnych faz metody MatSOA.
+Przykład wykorzystany w pracy będzie oparty na wymyślonej przez autora koncepcji organizacji. Zostaną przedstawione i poddane rozważaniom jednakże tylko wybrane modele mające na celu jak najlepszą prezentację poszczególnych faz metody MatSOA.
 
 \subsection{Opis sytuacji biznesowej}
 FrostRes stanowi niewielki bank krajowy. Ze względu na krótki pobyt na rynku pełni tylko podstawową liczbę usług związanych przede wszystkim z utrzymywaniem kont klientów i wykonywaniem podstawowych operacji finansowych. 
