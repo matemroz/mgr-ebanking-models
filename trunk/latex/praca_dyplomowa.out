@@ -61,11 +61,15 @@
 \BOOKMARK [1][-]{section.6.1}{Wstep}{chapter.6}% 61
 \BOOKMARK [1][-]{section.6.2}{Projektowanie systemu bankowego w oparciu o utworzona koncepcje}{chapter.6}% 62
 \BOOKMARK [2][-]{subsection.6.2.1}{Opis sytuacji biznesowej}{section.6.2}% 63
-\BOOKMARK [2][-]{subsection.6.2.2}{Analiza organizacji}{section.6.2}% 64
-\BOOKMARK [3][-]{subsubsection.6.2.2.1}{Przygotowanie Business Motivation Model \(BMM\)}{subsection.6.2.2}% 65
-\BOOKMARK [2][-]{subsection.6.2.3}{Wykrywanie us\233ug}{section.6.2}% 66
-\BOOKMARK [2][-]{subsection.6.2.4}{Proces wdrozenia}{section.6.2}% 67
-\BOOKMARK [2][-]{subsection.6.2.5}{Testy}{section.6.2}% 68
-\BOOKMARK [1][-]{section.6.3}{Cel systemu w odniesieniu do zaprojektowanej koncepcji}{chapter.6}% 69
-\BOOKMARK [0][-]{chapter.7}{Podsumowanie i wnioski}{}% 70
-\BOOKMARK [0][-]{chapter*.6}{Bibliografia}{}% 71
+\BOOKMARK [2][-]{subsection.6.2.2}{Analiza}{section.6.2}% 64
+\BOOKMARK [2][-]{subsection.6.2.3}{Wykrywanie us\233ug}{section.6.2}% 65
+\BOOKMARK [2][-]{subsection.6.2.4}{Wykrywanie us\233ug obecnych system\363w}{section.6.2}% 66
+\BOOKMARK [2][-]{subsection.6.2.5}{Konsolidacja}{section.6.2}% 67
+\BOOKMARK [2][-]{subsection.6.2.6}{Specyfikacja us\233ug}{section.6.2}% 68
+\BOOKMARK [2][-]{subsection.6.2.7}{Projektowanie us\233ug}{section.6.2}% 69
+\BOOKMARK [2][-]{subsection.6.2.8}{Choreografia us\233ug}{section.6.2}% 70
+\BOOKMARK [1][-]{section.6.3}{Proces wdrozenia}{chapter.6}% 71
+\BOOKMARK [1][-]{section.6.4}{Testy}{chapter.6}% 72
+\BOOKMARK [1][-]{section.6.5}{Cel systemu w odniesieniu do zaprojektowanej koncepcji}{chapter.6}% 73
+\BOOKMARK [0][-]{chapter.7}{Podsumowanie i wnioski}{}% 74
+\BOOKMARK [0][-]{chapter*.9}{Bibliografia}{}% 75
