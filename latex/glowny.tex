@@ -664,7 +664,7 @@ Faza analizy organizacji oraz wykrywania usług ma równoległy przebieg do anal
 
 \begin{figure}[h!tbp]
 \begin{centering}
-\includegraphics[width=14cm, height=7cm]{img/MetMatSOA_v2.png}
+\includegraphics[width=15cm, height=9cm]{img/MetMatSOA_v2.png}
 \caption[Fazy metody MatSOA.]{Fazy metody MatSOA.}\label{soam_lifecycle}
 \end{centering}
 \end{figure}
@@ -714,9 +714,11 @@ Analiza wymagań funkcjonalnych pozwala na zidentyfikowanie i opisanie pożądan
 Analiza wymagań funkcjonalnych przedstawiana jest za pomocą diagramów przypadków użycia.
 
 \subsection*{Wymagania niefunkcjonalne}
-W metodzie MatSOA na wymagania funkcjonalne składa się opis atrybutów jakościowych jakim ma podlegać tworzony system oraz model domeny. Zdarza się, że w niektórych metodach do wymagań niefunkcjonalnych zaliczana jest także analiza dotychczasowych systemów. W MatSOA ten etap jest zawarty w późniejszej fazie. 
+W metodzie MatSOA na wymagania niefunkcjonalne składa się opis atrybutów jakościowych jakim ma podlegać tworzony system, model domeny oraz wykrywanie dotychczasowych systemów. Zdarza się, że w niektórych metodach do wymagań niefunkcjonalnych zaliczana jest także analiza dotychczasowych systemów. W MatSOA ten etap jest zawarty w późniejszej fazie. 
 
-Model domeny przedstawia podmioty wchodzące w skład, w której działa dana organizacja lub przedsiębiorstwo. Przedstawia również relacje pomiędzy danymi podmiotami. Modelowana jest za pomocą diagramu klas UML.
+Model domeny przedstawia podmioty wchodzące w skład, w której działa dana organizacja lub przedsiębiorstwo. Przedstawia również relacje pomiędzy danymi podmiotami. Modelowana jest za pomocą diagramu przypadków użycia UML.
+
+Wykrywanie obecnych systemów jest bardzo ważnym etapem analizy. Należy określić, które z systemów dotychczas występujących w organizacji będą zależne od wprowadzanych nowych funkcjonalności.
 
 Do atrybutów jakościowych w przypadku MatSOA zalicza się przede wszystkim spełnianie podstawowych pryncypiów SOA. Są to przede wszystkim: luźne powiązania, autonomiczność, enkapsulacja oraz reużywalność usług.
 
@@ -756,7 +758,7 @@ Wykrywanie usług może mieć iteracyjny charakter. Już na tym etapie powinno s
 
 
 \subsection*{Analiza obecnych systemów i zasobów}
-Analiza istniejących systemów (ang. \emph{Legacy systems}) oraz zasobów stanowi bardzo istotny etap metody MatSOA. Umiejętne przeprowadzenie tej fazy często może znacznie zredukować koszty wprowadzania nowych funkcjonalności w systemach organizacji. Na tym etapie identyfikowane są elementy takie jak: istniejące aplikacje, standardy branżowe, modele oraz pozostałe zasoby niezbędne do realizacji usług. 
+Analiza istniejących systemów (ang. \emph{Legacy systems}) oraz zasobów stanowi bardzo istotny etap metody MatSOA. Wykonywyana jest równolegle do wykrywania nowych usług. Umiejętne przeprowadzenie tej fazy często może znacznie zredukować koszty wprowadzania nowych funkcjonalności w systemach organizacji. Na tym etapie identyfikowane są elementy takie jak: istniejące aplikacje, standardy branżowe, modele oraz pozostałe zasoby niezbędne do realizacji usług. 
 
 W założeniu metody MatSOA analityk systemowy powinien zidentyfikować istotne systemy. Następnie te rozpoznane systemy są analizowane pod kątem przydatnych funkcjonalności. Często się zdarza, że nie wszystkie elementy dotychczasowych systemów mogą być wykorzystane bezpośrednio. Jeśli jest to usługa SOA wprowadza się wówczas odpowiednie modyfikacje do obecnych systemów. W innych wypadkach należy rozważyć czy jest szansa wykorzystania ich poprzez opakowującą je usługę (ang. \emph{wrapper}). Sposobów na używanie istniejących zasobów jest wiele: API, dostępne bazy danych, komponenty oprogramowania, które mogą być opakowane oraz wywołanie komendy z wiersza poleceń.
 
@@ -843,9 +845,11 @@ Inna istotna zmiana związana jest z nową ustawą wprowadzoną przez rząd, kt�
 Ze względu na fakt, że w przyszłości planowane są kolejne modernizacje oraz rozszerzenia, system musi wykazywać się stosunkowo dużą skalowalnością. Istotne jest również, żeby stworzony system charakteryzował się wysokim poziomem ziarnistości oraz zapewniał jak największą reużywalność usług. 
 
 
-\subsection{Analiza organizacji}
-\subsubsection{Przygotowanie Business Motivation Model (BMM)}
-Budowa systemu dla FrostRes została rozpoczęta od przygotowania motywacyjnego modelu biznesu. Tworzenie BMM jest krokiem opcjonalnym metody MatSOA jednakże stanowi doskonały start do analizy organizacji. W zależności od stopnia złożoności sytuacji biznesowej może wykazywać się różnym poziomem szczegółowości. Modernizacja banku FrostRes nie stanowi zbyt złożonego problemu biznesowego, dlatego tworzony BMM będzie zawierał tylko najbardziej podstawowe elementy.
+\subsection{Analiza}
+Analizy zostanie przedstawiona w podziale na poszczególne etapy zgodne z metodą MatSOA. Rozpocznie się od opisania BMM, na podstawie którego zostanie utworzony uproszczony model procesu biznesowego. W kolejnych krokach zostaną przedstawione rozważania dotyczące wymagań funkcjonalnych i niefunkcjonalnych.
+
+\subsection*{Przygotowanie Business Motivation Model (BMM)}
+Budowa systemu dla FrostRes została rozpoczęta od przygotowania motywacyjnego modelu biznesu. Tworzenie BMM jest krokiem opcjonalnym metody MatSOA jednakże stanowi bardzo dobry wstęp dla analizy. W zależności od stopnia złożoności sytuacji biznesowej może wykazywać się różnym poziomem szczegółowości. Modernizacja banku FrostRes nie stanowi zbyt złożonego problemu biznesowego, dlatego tworzony BMM będzie zawierał tylko najbardziej podstawowe elementy.
 
 Przygotowanie BMM przedstawionego na rys. \ref{BMM_frostres} rozpoczęto od rozważenia środków (element \emph{<<Means>>}). Następnie określono misję (element \emph{<<Mission>>}), ustalono strategie (elementy \emph{<<Strategy>>}) oraz ułożono odpowiednie taktyki (elementy \emph{<<Tactic>>}) wdrażania biznesu. Na podstawie analizy powyższych elementów wyodrębniono proces biznesowy, który będzie realizował \quotedblbase Obsługę przelewu międzynarodowego\textquotedblright (element \emph{<<Business Process>>}). 
 
@@ -858,8 +862,9 @@ W BMM opisano również stan oczekiwany (element \emph{<<End>>}) przez bank Fros
 \end{centering}
 \end{figure}
 
-W następnym kroku wykryty wcześniej proces \emph{Obsługa przelewu międzynarodowego} (rys. \ref{proces_operacja_przeleu_miedzynarodowego} opisano z wykorzystaniem języka BPMN. Opiera się na usługach poddanych pewnego rodzaju \emph{choreografii}. Ma on charakter jedynie poglądowy. Na tym etapie nie jest zdefiniowany jeszcze przepływ danych pomiędzy poszczególnymi aktywnościami procesu. Tworzenie uproszczonej formy modelu procesu w początkowej fazie cyklu życia projektu SOA ma na celu jak najwcześniejsze wykrycie istotnych problemów związanych z logiką przebiegu wywoływania usług pomiędzy poszczególnymi podmiotami. Pozwala to także na ewentualne dostosowanie uczestnikom integracji wystawianych interfejsów. Poniżej został opisany przebieg procesu wraz z przepływem pomiędzy uczestniczącymi rolami.
+W następnym kroku wykryty wcześniej proces \emph{Obsługa przelewu międzynarodowego} (rys. \ref{proces_operacja_przeleu_miedzynarodowego}) opisano z wykorzystaniem języka BPMN. Opiera się na usługach poddanych pewnego rodzaju \emph{choreografii}. Ma on charakter jedynie poglądowy. Na tym etapie nie jest zdefiniowany jeszcze przepływ danych pomiędzy poszczególnymi aktywnościami procesu. Tworzenie uproszczonej formy modelu procesu w początkowej fazie cyklu życia projektu SOA ma na celu jak najwcześniejsze wykrycie istotnych problemów związanych z logiką przebiegu wywoływania usług pomiędzy poszczególnymi podmiotami. Pozwala to także na ewentualne dostosowanie uczestnikom integracji wystawianych interfejsów. Poniżej został opisany przebieg procesu wraz z przepływem pomiędzy uczestniczącymi rolami.
 
+//TODO: Zaaktualizować model procesu
 \begin{figure}[h!tbp]
 \begin{centering}
 \includegraphics[width=12.5cm,height=20cm]{img/proces_operacja_przeleu_miedzynarodowego.png}
@@ -867,6 +872,7 @@ W następnym kroku wykryty wcześniej proces \emph{Obsługa przelewu międzynaro
 \end{centering}
 \end{figure}
 
+//TODO: zaaktualizować scenariusz
 \begin{flushleft}
 1. Klient tworzy zlecenie przelewu międzynarodowego.\\
 2. Klient wysyła zlecenie przelewu międzynarodowego.\\
@@ -906,40 +912,79 @@ Po utworzeniu i opisaniu procesu biznesowego można przystąpić do jego dekompo
 \hspace{1ex}8. Rejestracja kwoty przelewu międzynarodowego w systemie rozliczeń.\\
 \end{flushleft}
 
-W zaproponowanej metodzie MatSOA kolejnym proponowanym etapem jest wyodrębnienie obszarów funkcjonalnych (ang. \emph{Functional domains}). W przypadku tworzonego systemu dla banku FrostRes można wyodrębnić kilka domen funkcjonalnych: marketing, kontrola przepływów finansowych, zarządzanie operacjami bankowymi oraz zarządzanie rozliczeniami. 
+\subsection*{Wymagania funkcjonalne}
+Ze względu na to, że modyfikacje systemu dla banku FrostRes są niewielkie opis wymagań funkcjonalnych nie będzie złożony. 
+
+Podstawowym wymaganiem funkcjonalnym, które wchodzi w skład modyfikacji dotychczasowego systemu jest obsługa przelewów międzynarodowych. Zlecenie przelewu międzynarodowego powinno być tworzone z poziomu formularza internetowego poprzez pracownika banku.
+
+Jeśli przelew wykona się poprawnie powinien być zwrócony odpowiedni komunikat świadczący o powodzeniu transakcji. W Przypadku błędów system powinien w odpowiedzi uwzględniać informację o błędach.
+
+\subsection*{Wymagania niefunkcjonalne}
+Na wymagania niefunkcjonalne składają się: model domeny, wykrycie obecnych systemów oraz atrybuty jakościowe.
+
+Model domeny został podzielony na poszczególnych aktorów oraz odpowiadające im obszary funkcjonalne. Tak jak przedstawia model z rys. \ref{model_domeny_funk} klient i bank będą przypisani do \quotedblbase Zarządzania operacjami bankowymi\textquotedblright. Wynika to z faktu, że zarówno klient jak i bank będą miały możliwość uruchomienia zlecenia przelewu międzynarodowego. Bank ponadto został przypisany do obszaru \quotedblbase Zarządzanie rozliczeniami\textquotedblright. Będzie miał możliwość rejestracji faktu wykonania transakcji przelewu w systemie. Bank i NBP ponadto będą miały możliwość \quotedblbase Kontroli przepływów finansowych\textquotedblright, która będzie polegać na wstępnej weryfikacji zlecenia przelewu ze strony banku, a później kolejnej w wykonaniu NBP.
 
 \begin{figure}[h!tbp]
 \begin{centering}
-\includegraphics[width=12cm, height=9cm]{img/bank_fd.png}
-\caption[Model domeny funkcjonalnej dla banku FrostRes]{Model domeny funkcjonalnej dla banku FrostRes.}\label{FD_frostres}
+\includegraphics[width=13cm, height=10cm]{img/model_domeny_funk.png}
+\caption[Model domeny funkcjonalnej dla banku FrostRes]{Model domeny funkcjonalnej dla banku FrostRes.}\label{model_domeny_funk}
 \end{centering}
 \end{figure}
 
+Dotychczas w banku znajdowało się kilka podsystemów wchodzących w skład jednego większego systemu: zarządzania kontami klientów, obsługa transakcji finansowych oraz zarządzanie rozliczeniami. W przypadku banku FrostRes istotne dla wprowadzonych modyfikacji są: zarzadzanie operacjami bankowymi oraz zarządzanie rozliczeniami. Wszystkie podsystemy są zgodne z pryncypiami SOA, więc nie będzie konieczne tworzenie usług obudowujących. W późniejszym etapie metody MatSOA zostaną wykryte usługi obecnych systemów.
+
+Do atrybutów jakościowych zalicza się przede wszystkim podstawowe zasady SOA. Stosowanie się do nich w przypadku banku FrostRes jest niebywale ważne, ponieważ w systemie planowane są częste zmiany. Musi charakteryzować się dlatego jak największą ziarnistością, reużywalnością oraz powinien być w jak największym stopniu skalowalny. 
+
 \subsection{Wykrywanie usług}
-W kolejnym etapie analizy wykonywane jest wykrywanie usług. W metodzie MatSOA można dokonać tego z wykorzystaniem domen funkcjonalnych oraz poddanego dekompozycji procesu biznesowego. Każdy element procesu biznesowego jest wówczas przypisywany do odpowiadającego mu obszaru funkcjonalnego. W przypadku banku FrostRes opisywane grupowanie można wykonać w następujący sposób:
+W kolejnym etapie analizy wykonywane jest wykrywanie usług. Identyfikując usługi rozpatrujemy domeny funkcjonalne oraz zależności pomiędzy nimi kierując się utworzonym wcześniej, uproszczonym modelem procesu biznesowego. 
 
-Zarządzanie operacjami bankowymi:
-\begin{itemize}
-\item{Utworzenie zlecenia przelewu międzynarodowego.}
-\item{Wysłanie zlecenia przelewu do banku.}
-\item{Przewalutowanie przelewu międzynarodowego.}
-\item{Wykonanie przelewu międzynarodowego.}
-\end{itemize}
+W pierwszym kroku wykrywania usług tworzymy wstępny model kandydatów usług jak na rys. \ref{service_candidates_init}.
 
-Zarządzanie rozliczeniami:
-\begin{itemize}
-\item{Rejestracja kwoty przelewu międzynarodowego w systemie rozliczeń.}
-\item{Rejestracja zlecenia przelewu.}
-\end{itemize}
+\begin{figure}[h!tbp]
+\begin{centering}
+\includegraphics[width=16cm, height=5cm]{img/service_candidates_init.png}
+\caption[Wykrywanie usług - wersja inicjalna]{Wykrywanie usług - wersja inicjalna}\label{service_candidates_init}
+\end{centering}
+\end{figure}
 
-Kontrolowanie przepływów finansowych.
-\begin{itemize}
-\item{Weryfikacja zlecenia przelewu międzynarodowego.}
-\item{Weryfikacja możliwości wykonania przelewu międzynarodowego.}
-\end{itemize}
+Na powyższym diagramie kandydatów usług można zauważyć, że do poszczególnych domen (Zarządzanie Rozliczeniami, Kontrola Przepływów Finansowych, Zarządzanie Operacjami Bankowymi) zostały przypisane odpowiednie operacje. 
+
+Inicjalny diagram kandydatów należy rozważyć pod kątem refaktoryzacji w celu spełniania wymagań niefunkcjonalnych. Na diagramie można zauważyć, że operacja \emph{Wysłanie Zlecenia Przelewu Miedzynarodowego} jest nadmiarowa (jest wewnętrzna i nie ma wpływu na przepływ pomiędzy poszczególnymi kandydatami usług). Ponadto na diagramie nie ma metody, która odpowiadałaby za uruchomienie obsługi przelewu międzynarodowego. 
+
+Na kolejnym diagramie (rys. \ref{service_candidates_refactored}) została dokonana refaktoryzacja inicjalnego modelu kandydatów usług. 
+
+\begin{figure}[h!tbp]
+\begin{centering}
+\includegraphics[width=16cm, height=8cm]{img/service_candidates_refactored.png}
+\caption[Wykrywanie usług - wersja po refaktoryzacji]{Wykrywanie usług - wersja po refaktoryzacji}\label{service_candidates_refactored}
+\end{centering}
+\end{figure}
+
+Została usunięta metoda nadmiarowa \emph{Wysłanie Zlecenia Przelewu Miedzynarodowego} oraz utworzony oddzielne Capability \emph{Obsluga Przelewow Miedzynarodowych} z metodą \emph{Inicjuj Zlecenie Przelewu Miedzynarodowego}.
+
+\subsection{Wykrywanie usług obecnych systemów}
+Na etapie analizy zostały wykryte dotychczasowe systemy, które występują w banku FrostRes: zarządzanie operacjami bankowymi oraz zarządzanie rozliczeniami. System banku dotychczas spełniał operacje związane z wykonywaniem przelewów krajowych oraz wpłatami i wypłatami pieniędzy z rachunka klienta. 
+
+\begin{figure}[h!tbp]
+\begin{centering}
+\includegraphics[width=16cm, height=8cm]{img/service_candidates_refactored.png}
+\caption[Wykrywanie usług - wersja po refaktoryzacji]{Wykrywanie usług - wersja po refaktoryzacji}\label{service_candidates_refactored}
+\end{centering}
+\end{figure}
 
 
-\subsection{Proces wdrożenia}
-\subsection{Testy}
+\subsection{Konsolidacja}
+
+\subsection{Specyfikacja usług}
+
+\subsection{Projektowanie usług}
+
+\subsection{Choreografia usług}
+
+\section{Proces wdrożenia}
+
+\section{Testy}
+
 \section{Cel systemu w odniesieniu do zaprojektowanej koncepcji}
+
 \chapter{Podsumowanie i wnioski}
