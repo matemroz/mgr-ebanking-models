@@ -53,16 +53,19 @@
 \BOOKMARK [2][-]{subsection.5.2.1}{Analiza}{section.5.2}% 53
 \BOOKMARK [2][-]{subsection.5.2.2}{Identyfikacja us\233ug}{section.5.2}% 54
 \BOOKMARK [2][-]{subsection.5.2.3}{Konsolidacja}{section.5.2}% 55
-\BOOKMARK [2][-]{subsection.5.2.4}{Koncowy produkt}{section.5.2}% 56
-\BOOKMARK [0][-]{chapter.6}{Weryfikacja koncepcji na przyk\233adzie systemu bankowego}{}% 57
-\BOOKMARK [1][-]{section.6.1}{Wstep}{chapter.6}% 58
-\BOOKMARK [1][-]{section.6.2}{Projektowanie systemu bankowego w oparciu o utworzona koncepcje}{chapter.6}% 59
-\BOOKMARK [2][-]{subsection.6.2.1}{Opis sytuacji biznesowej}{section.6.2}% 60
-\BOOKMARK [2][-]{subsection.6.2.2}{Analiza organizacji}{section.6.2}% 61
-\BOOKMARK [3][-]{subsubsection.6.2.2.1}{Przygotowanie Business Motivation Model \(BMM\)}{subsection.6.2.2}% 62
-\BOOKMARK [2][-]{subsection.6.2.3}{Wykrywanie us\233ug}{section.6.2}% 63
-\BOOKMARK [2][-]{subsection.6.2.4}{Proces wdrozenia}{section.6.2}% 64
-\BOOKMARK [2][-]{subsection.6.2.5}{Testy}{section.6.2}% 65
-\BOOKMARK [1][-]{section.6.3}{Cel systemu w odniesieniu do zaprojektowanej koncepcji}{chapter.6}% 66
-\BOOKMARK [0][-]{chapter.7}{Podsumowanie i wnioski}{}% 67
-\BOOKMARK [0][-]{chapter*.8}{Bibliografia}{}% 68
+\BOOKMARK [2][-]{subsection.5.2.4}{Specyfikacja us\233ug}{section.5.2}% 56
+\BOOKMARK [2][-]{subsection.5.2.5}{Projektowanie us\233ug}{section.5.2}% 57
+\BOOKMARK [2][-]{subsection.5.2.6}{Choreografia us\233ug}{section.5.2}% 58
+\BOOKMARK [2][-]{subsection.5.2.7}{Koncowy produkt}{section.5.2}% 59
+\BOOKMARK [0][-]{chapter.6}{Weryfikacja koncepcji na przyk\233adzie systemu bankowego}{}% 60
+\BOOKMARK [1][-]{section.6.1}{Wstep}{chapter.6}% 61
+\BOOKMARK [1][-]{section.6.2}{Projektowanie systemu bankowego w oparciu o utworzona koncepcje}{chapter.6}% 62
+\BOOKMARK [2][-]{subsection.6.2.1}{Opis sytuacji biznesowej}{section.6.2}% 63
+\BOOKMARK [2][-]{subsection.6.2.2}{Analiza organizacji}{section.6.2}% 64
+\BOOKMARK [3][-]{subsubsection.6.2.2.1}{Przygotowanie Business Motivation Model \(BMM\)}{subsection.6.2.2}% 65
+\BOOKMARK [2][-]{subsection.6.2.3}{Wykrywanie us\233ug}{section.6.2}% 66
+\BOOKMARK [2][-]{subsection.6.2.4}{Proces wdrozenia}{section.6.2}% 67
+\BOOKMARK [2][-]{subsection.6.2.5}{Testy}{section.6.2}% 68
+\BOOKMARK [1][-]{section.6.3}{Cel systemu w odniesieniu do zaprojektowanej koncepcji}{chapter.6}% 69
+\BOOKMARK [0][-]{chapter.7}{Podsumowanie i wnioski}{}% 70
+\BOOKMARK [0][-]{chapter*.6}{Bibliografia}{}% 71
