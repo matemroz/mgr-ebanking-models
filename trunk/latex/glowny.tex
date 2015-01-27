@@ -965,17 +965,28 @@ Została usunięta metoda nadmiarowa \emph{Wysłanie Zlecenia Przelewu Miedzynar
 \subsection{Wykrywanie usług obecnych systemów}
 Na etapie analizy zostały wykryte dotychczasowe systemy, które występują w banku FrostRes: zarządzanie operacjami bankowymi oraz zarządzanie rozliczeniami. System banku dotychczas spełniał operacje związane z wykonywaniem przelewów krajowych oraz wpłatami i wypłatami pieniędzy z rachunka klienta. 
 
+Na diagramie (rys. \ref{legacy_systems_service_refactored}) zostały przedstawione metody usług obecnych systemów już po wykonyanej refaktoryzacji.
+
 \begin{figure}[h!tbp]
 \begin{centering}
-\includegraphics[width=16cm, height=8cm]{img/service_candidates_refactored.png}
-\caption[Wykrywanie usług - wersja po refaktoryzacji]{Wykrywanie usług - wersja po refaktoryzacji}\label{service_candidates_refactored}
+\includegraphics[width=8.5cm, height=2cm]{img/legacy_systems_services_refactored.png}
+\caption[Wykrywanie usług obecnych systemów - wersja po refaktoryzacji]{Wykrywanie usług obecnych systemów - wersja po refaktoryzacji}\label{legacy_systems_service_refactored}
+\end{centering}
+\end{figure}
+
+\subsection{Konsolidacja usług}
+W poprzednich etapach wykryte usługi poddano konsolidacji (rys. \ref{services_consolidation}). Zauważono, że z usług systemów dotychczas występujących można uogólnić niektóre metody związane z przelewem międzynarodowym. W tym wypadku metodę \emph{Zlec Wykonanie Przelewu Miedzynarodowego} można zastąpić operację \emph{Zlec Wykonanie Przelewu}. Podobnie operację \emph{Zlec Rejestracje Kwoty Przelewu Miedzynarodowego} zastąpiono metodą \emph{Zlec Rejestracje Kwoty Przelewu}.
+
+\begin{figure}[h!tbp]
+\begin{centering}
+\includegraphics[width=16cm, height=7cm]{img/consolidation_services.png}
+\caption[Konsolidacja usług]{Konsolidacja usług}\label{services_consolidation}
 \end{centering}
 \end{figure}
 
 
-\subsection{Konsolidacja}
-
 \subsection{Specyfikacja usług}
+
 
 \subsection{Projektowanie usług}
 
