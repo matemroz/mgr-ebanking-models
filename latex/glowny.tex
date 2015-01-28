@@ -774,7 +774,7 @@ Operacje wywodzące się z systemów już istniejących mają pierwszeństwo. Is
 W wyniku konsolidacji tworzony jest model kandydatów usług uwzględniający rozszerzenie dotychczasowych elementów systemu o nowe funkcjonalności.
 
 \subsection{Specyfikacja usług}
-Po ustaleniu modeli kandydatów usług poszczególne usługi są specyfikowane. Określane są parametry wejściowe i wyjściowe oraz opisywany poszczególne kontrakty usług. Na tym etapie tworzony jest również model danych. Przebieg wywołań pomiędzy poszczególnymi interfejsami usług opisywany jest za pomocą diagramu sekwencji (każdy interfejs usługi przedstawiany zostaje jako osobny lifeline).
+Po ustaleniu modeli kandydatów usług poszczególne usługi są specyfikowane. Określane są parametry wejściowe i wyjściowe oraz opisywane poszczególne kontrakty usługowe. Na tym etapie tworzony jest również model danych. Przebieg wywołań pomiędzy poszczególnymi interfejsami usług opisywany jest za pomocą diagramu sekwencji (każdy interfejs usługi przedstawiany zostaje jako osobny lifeline).
 
 W efekcie specyfikacji usług tworzone są modele jak na rys. \ref{}
 
@@ -830,6 +830,8 @@ Na zakończenie rozdziału zostaną opisane również testy jakim zostanie podda
 
 \section{Projektowanie systemu bankowego w oparciu o utworzoną koncepcję}
 Przykład wykorzystany w pracy będzie oparty na wymyślonej przez autora koncepcji organizacji. Zostaną przedstawione i poddane rozważaniom jednakże tylko wybrane modele mające na celu jak najlepszą prezentację poszczególnych faz metody MatSOA.
+
+Modele w rozdziale zostały przygotowane z wykorzystaniem narzędzia firmy IBM - Rational Software Architect - w wersji 8.5 wraz z doinstalowanym dodatkiem do obsługi języka SoaML.
 
 \subsection{Opis sytuacji biznesowej}
 FrostRes stanowi niewielki bank krajowy. Ze względu na krótki pobyt na rynku pełni tylko podstawową liczbę usług związanych przede wszystkim z utrzymywaniem kont klientów i wykonywaniem podstawowych operacji finansowych. 
@@ -955,7 +957,7 @@ Na kolejnym diagramie (rys. \ref{service_candidates_refactored}) została dokona
 
 \begin{figure}[h!tbp]
 \begin{centering}
-\includegraphics[width=16cm, height=8cm]{img/service_candidates_refactored.png}
+\includegraphics[width=16cm, height=7cm]{img/service_candidates_refactored.png}
 \caption[Wykrywanie usług - wersja po refaktoryzacji]{Wykrywanie usług - wersja po refaktoryzacji}\label{service_candidates_refactored}
 \end{centering}
 \end{figure}
@@ -986,16 +988,44 @@ W poprzednich etapach wykryte usługi poddano konsolidacji (rys. \ref{services_c
 
 
 \subsection{Specyfikacja usług}
+Przetworzone usługi w wyniku konsolidacji zgodnie z metodą MatSOA poddano w kolejnym etapie specyfikacji. W tej fazie przygotowano model danych oraz ustalono argumenty wejściowe i wyjściowe dla poszczególnych operacji interfejsów (rys. \ref{services_specification}).
 
+\begin{figure}[h!tbp]
+\begin{centering}
+\includegraphics[width=16cm, height=9cm]{img/services_specification_model.png}
+\caption[Specyfikacja usług]{Specyfikacja usług}\label{services_specification}
+\end{centering}
+\end{figure}
+
+Wszystkie elementy \emph{<<Capability>>} zostały wykorzystane do utworzenia elementów \emph{<<ServiceInterface>>} przy pomocy połączenia typu \emph{<<Expose>>}. 
+
+W przypadku specyfikacji usług dla banku FrostRes przyporządkowano do każdego elementu \emph{<<Capability>>} jeden element \emph{<<ServiceInterface>>}. Stosowanie tej praktyki nie jest zawsze konieczne. Często zdarza się możliwość przypisania więcej niż jednego elementu \emph{<<Capability>>} do jednego elementu \emph{<<ServiceInterface>>}. 
+
+W celu bardziej szczegółowego wyspecyfikowania usług banku FrostRes przygotowano również opisy kontraktów usług oraz modele sekwencji pomiędzy poszczególnymi podmiotami w procesie. 
 
 \subsection{Projektowanie usług}
+Projektowanie usług rozpoczęto od utworzenia diagramu uczestników (ang. \emph{Participants diagram}) biorących udział w usługach. Zaznaczono na nim interfejsy dostarczane oraz wywoływane. Wyodrębniono takich uczestników jak: \emph{ZarzadcaOperacjiBankowych}, \emph{KontroloerPrzeplywowFinansowych}, \emph{ZarzadcaRozliczen}.
+
+Na podstawie diagramu uczestników oraz specyfikacji usług przygotowano diagram komponentów dla przelewów międzynarodowych (rys. \ref{operacja_przelewu_diagram_komponentow}). Komponent posiada jeden interfejs zewnętrzny \emph{ObslugaPrzelewuMiedzynarodowego}. Poszczególne interfejsy uczestników usługi (zarówno wywoływane jak i dostarczane) zostały połączone przy użyciu elementu \emph{<<ServiceChannel>>}.
+
+\begin{figure}[h!tbp]
+\begin{centering}
+\includegraphics[width=16cm, height=8.5cm]{img/przelew_miedzynarodowy_composite.png}
+\caption[Diagram komponentów dla usługi przelewu międzynarodowy]{Diagram komponentów dla usługi przelew międzynarodowy}\label{operacja_przelewu_diagram_komponentow}
+\end{centering}
+\end{figure}
 
 \subsection{Choreografia usług}
+Choreografia usług w formie procesu biznesowego BPEL została utworzona w narzędziu WebSphere Integration Developer. Przygotowanie procesu rozpoczęto od utworzenia diagramu asemblacji gdzie zaznaczone są usługi importowane do procesu (\emph{inbound}) oraz eksportowane (\emph{outbound}).
 
 \section{Proces wdrożenia}
+\TODO: opis serwera, na który będzie wdrażany system, opis procesu budowania aplikacji
 
 \section{Testy}
+\TODO: Opis jakim testom poddano utworzony system oraz wyniku
 
 \section{Cel systemu w odniesieniu do zaprojektowanej koncepcji}
+\TODO: Opisanie czy było możliwe utworzenie systemu opierając się na koncepcji metody. Czy dodano jakieś modyfikacje w tym celu itp.
 
 \chapter{Podsumowanie i wnioski}
+\TODO: Wyciągnięcie wniosków wraz z podsumowaniem
