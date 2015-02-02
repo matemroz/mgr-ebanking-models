@@ -831,7 +831,7 @@ Na zakończenie rozdziału zostaną opisane również testy jakim zostanie podda
 \section{Projektowanie systemu bankowego w oparciu o utworzoną koncepcję}
 Przykład wykorzystany w pracy będzie oparty na wymyślonej przez autora koncepcji organizacji. Zostaną przedstawione i poddane rozważaniom jednakże tylko wybrane modele mające na celu jak najlepszą prezentację poszczególnych faz metody MatSOA.
 
-Modele w rozdziale zostały przygotowane z wykorzystaniem narzędzia firmy IBM - Rational Software Architect - w wersji 8.5 wraz z doinstalowanym dodatkiem do obsługi języka SoaML.
+Modele w rozdziale zostały przygotowane z wykorzystaniem narzędzi Rational Software Architect w wersji 8.5 wraz z doinstalowanym dodatkiem do obsługi języka SoaML oraz WebSphere Integration Developer w wersji 7.0, w którym zdefiniowane połączenia pomiędzy komponentami i zaimplenetowano całość systemu.
 
 \subsection{Opis sytuacji biznesowej}
 FrostRes stanowi niewielki bank krajowy. Ze względu na krótki pobyt na rynku pełni tylko podstawową liczbę usług związanych przede wszystkim z utrzymywaniem kont klientów i wykonywaniem podstawowych operacji finansowych. 
@@ -1019,13 +1019,59 @@ Na podstawie diagramu uczestników oraz specyfikacji usług przygotowano diagram
 Choreografia usług w formie procesu biznesowego BPEL została utworzona w narzędziu WebSphere Integration Developer. Przygotowanie procesu rozpoczęto od utworzenia diagramu asemblacji gdzie zaznaczone są usługi importowane do procesu (\emph{inbound}) oraz eksportowane (\emph{outbound}).
 
 \section{Proces wdrożenia}
-\TODO: opis serwera, na który będzie wdrażany system, opis procesu budowania aplikacji
+Utworzone modele usług zostały poddane transformacie UML do SOA w narzędziu Rational Software Architect. Wygenerowane zostały opisy poszczególnych usług przy wykorzystaniu WSDL oraz zdefiniowano obiekty danych za pomocą XSD (ang \emph{XML Schema Definition}). 
+
+Wygenerowane elementy zostały następnie zaimportowane do narzędzia WebSphere Integration Developer. Utworzono w nim projekt typu \quotedblbase Rozwiązanie integracji\textquotedblright. W projekcie na diagramie asemblacji (ang. \emph{Assembly diagram}) przedstawiono komunikację pomiędzy poszczególnymi komponentami (\ref{komponenty_inbound_outbound}).  
+
+\begin{figure}[h!tbp]
+\begin{centering}
+\includegraphics[width=15cm, height=5.5cm]{img/komponenty_inbound_outbound.png}
+\caption[Diagram asemblacji dla przelewu międzynarodowego]{Diagram asemblacji dla przelewu międzynarodowego}\label{komponenty_inbound_outbound}
+\end{centering}
+\end{figure}
+
 
 \section{Testy}
-\TODO: Opis jakim testom poddano utworzony system oraz wyniku
+W celu weryfikacji poprawnego funkcjonowania, system dla banku FrostRes został poddany testom obejmujących kilka istotnych obszarów.
+
+Testy funkcjonalne rozpoczęto od sprawdzenia poszczególnych systemów czy udzielają pożądanych odpowiedzi. Owa weryfikacja opierało się na wykonaniu bezpośrednich zapytań SOAP do każdego z systemów przy wykorzystaniu narzędzia SoapUI. Po rozważeniu otrzymanych wyników stwierdzono, że systemy zewnętrzne udzielały oczekiwanych odpowiedzi.
+
+Po integracji z systemami wykonano test polegający na wykonaniu różnych zapytań (zmianie ulegały dane wejściowe) do usługi wystawianej przez system banku FrostRes związanej z przelewami międzynarodowymi. Stwierdzono, że wszystkie odpowiedzi są zgodne z założeniami.
+
+Nastąpiła również próba testów z poziomu interfejsu strony. Wypełniano formularz i sprawdzano czy interakcja ze strony systemu będzie poprawna (rys. \ref{test_funk_interfejs}). 
+
+\begin{figure}[h!tbp]
+\begin{centering}
+\includegraphics[width=8cm, height=9.5cm]{img/przelew_wypelniony_form.png}
+\caption[Testy z poziomu interfejsu - formularz przelewu międzynarodowego]{Testy z poziomu interfejsu - formularz przelewu międzynarodowego}\label{test_funk_interfejs}
+\end{centering}
+\end{figure}
+
+
+Testy niefunkcjonalne, którym został poddany system obejmowały głównie obszar związany z wydajnością systemu. Do przeprowadzenia testów wydajnościowych zastosowano narzędzie LoadUI. 
+
+Wyniki przeprowadzonych testów umieszczono w tab. \ref{tabela_stat_wyd}. Poszczególne czasy odpowiedzi na zapytania związane ze zleceniem przelewu międzynarodowego okazały się bardzo krótkie (średni czas odpowiedzi wyniósł 424,22). Ponadto w ciągu 10 sekund bank jest w stanie obsłużyć aż blisko 63 przelewy międzynarodowe. Stanowi to o wysokim poziomie wydajności systemu. Należy wziąć jednak pod uwagę, że uruchomiony system integrował się z aplikacjami zaślepiającymi docelowe systemy. W przypadku integracji z prawdziwymi systemami różnice w czasach odpowiedzi mogłyby wynikać z faktu obsługi komponentów przez różne architektury fizyczne oraz opóźnień w połączeniach sieciowych.
+
+\begin{table}[!htbp]
+\begin{center}
+\begin{small}
+\begin{supertabular}{|p{3cm}|p{3cm}|p{3cm}|p{4cm}|}\hline
+\textbf{Min. czas odp. [ms]} & \textbf{Max czas odp. [ms]} & \textbf{Śr. czas odp. [ms]} & \textbf{Ilość odp. w ciągu 10 s.}\\\hline
+215 &	998 & 424,22 & 63  \\\hline
+\end{supertabular}
+\end{small}
+\end{center}
+ \caption{Statystyki wydajnościowe systemu dla banku FrostRes.}
+ \label{tabela_stat_wyd}
+\end{table}
+
 
 \section{Cel systemu w odniesieniu do zaprojektowanej koncepcji}
-\TODO: Opisanie czy było możliwe utworzenie systemu opierając się na koncepcji metody. Czy dodano jakieś modyfikacje w tym celu itp.
+Zaprojektowana koncepcja umożliwiła utworzenie systemu zgodnego z paradygmatami SOA przy wykorzystaniu języka SoaML. Przykładowy system posiadał niezbyt skomplikowane wymagania funkcjonalne jednakże metodę MatSOA równie dobrze można by przełożyć na bardziej złożone systemy.
+
+Cel systemu został w pełni osiągnięty. Przede wszystkim charakteryzuje się bardzo wysokim stopniem skalowalności, ponieważ można go łatwo rozbudowywać poprzez dołączanie nowych komponentów. Ponadto pomiędzy poszczególnymi elementami systemu występują luźne powiązania. Każdy z komponentów może działać niezależnie od pozostałych.
+
+Inne zasady SOA takie jak reużywalność, interoperacyjność czy kontraktowość również zostały spełnione. Każdy komponent systemu może być wykorzystany w kontekście innego systemu. Zasada interoperacyjności została uwzględniona, ponieważ system banku FrostRes może z powodzeniem komunikować się z pozostałymi systemami (jak na przykład opisywany NBP). Ponadto pomiędzy usługami, a konsumentami widać wyraźnie zdefiniowane kontrakty (kontraktowość usług).
 
 \chapter{Podsumowanie i wnioski}
 \TODO: Wyciągnięcie wniosków wraz z podsumowaniem
