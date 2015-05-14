@@ -45,7 +45,7 @@
 \contentsline {subsection}{\numberline {4.4.1}Service-Oriented Design and Development Methodology by Papazoglou}{40}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Fazy metody}{41}{subsection.4.4.2}
 \contentsline {subsection}{\numberline {4.4.3}Zalety i wady metody Papazoglou}{43}{subsection.4.4.3}
-\contentsline {section}{\numberline {4.5}Metoda Thomasa Erl'a}{43}{section.4.5}
+\contentsline {section}{\numberline {4.5}Metoda Thomasa Erl'a}{44}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}Opis metody}{44}{subsection.4.5.1}
 \contentsline {subsection}{\numberline {4.5.2}Zalety i wady}{44}{subsection.4.5.2}
 \contentsline {chapter}{\numberline {5}Opracowanie metody projektowania system\IeC {\'o}w informatycznych o architekturze SOA}{46}{chapter.5}
@@ -74,6 +74,6 @@
 \contentsline {section}{\numberline {6.5}Cel systemu w odniesieniu do zaprojektowanej koncepcji}{71}{section.6.5}
 \contentsline {chapter}{\numberline {7}Podsumowanie i wnioski}{72}{chapter.7}
 \contentsline {section}{\numberline {7.1}MatSOA na tle innych metod projektowania architektury korporacyjnej}{72}{section.7.1}
-\contentsline {section}{\numberline {7.2}Rozw\IeC {\'o}j metod projektowania architektury korporacyjnej}{72}{section.7.2}
-\contentsline {section}{\numberline {7.3}Przysz\IeC {\l }o\IeC {\'s}\IeC {\'c} tworzenia system\IeC {\'o}w informatycznych w oparciu o paradygmaty SOA}{72}{section.7.3}
-\contentsline {chapter}{Bibliografia}{73}{chapter*.9}
+\contentsline {section}{\numberline {7.2}Rozw\IeC {\'o}j metod projektowania architektury korporacyjnej}{73}{section.7.2}
+\contentsline {section}{\numberline {7.3}Przysz\IeC {\l }o\IeC {\'s}\IeC {\'c} tworzenia system\IeC {\'o}w informatycznych w oparciu o paradygmaty SOA}{73}{section.7.3}
+\contentsline {chapter}{Bibliografia}{75}{chapter*.9}
