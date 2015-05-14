@@ -1,9 +1,15 @@
 \chapter{Wstęp}
-W ostatnich latach zarysowuje się coraz większa potrzeba wdrażania systemów informatycznych. Ta tendencja związana  jest przede wszystkim z usprawnianiem procesów biznesowych, ze wzrostem wydajności pracy, identyfikacją oraz minimalizacją błędów lub nieefektywnych działań w firmach. Występuje wiele ich rodzajów: CRM (ang. \emph{Customer Relationship Management}) - wspomagające zarządzanie relacjami z klientami, ERP (ang. \emph{Enterprise Resource Planning}) – wspomagające zarządzanie i planowanie zasobami firmy czy też BPM (ang. \emph{Business Process Managment}) – wspomagające zarządzanie procesami biznesowymi. 
+W ostatnich latach zarysowuje się coraz większa liczba organizacji decyduje się na wdrożenia systemów informatycznych. Ta tendencja związana jest przede wszystkim z usprawnianiem procesów biznesowych, ze wzrostem wydajności pracy, identyfikacją oraz minimalizacją błędów lub nieefektywnych działań w organizacjach.
+
+Zróżnicowane potrzeby organizacji doprowadziły w konsekwencji do powstania wielu rodzajów systemów informatycznych: CRM (ang. \emph{Customer Relationship Management}) - wspomagające zarządzanie relacjami z klientami, ERP (ang. \emph{Enterprise Resource Planning}) – wspomagające zarządzanie i planowanie zasobami firmy czy też BPM (ang. \emph{Business Process Managment}) – wspomagające zarządzanie procesami biznesowymi. 
 
 Wprowadzanie systemów informatycznych do organizacji może wywoływać różnorodne efekty: techniczne (bezpośrednio związane z zastosowaniem techniki komputerowej - zwiększenie szybkości i dokładności przetwarzania danych, wzrost szczegółowości oraz poprawa bezpieczeństwa dla informacji), ekonomiczne (związane pośrednio ze wzrostem efektywności i szybkości podejmowania decyzji), organizacyjne (związane przede wszystkim z usprawnieniami struktury organizacyjnej i procesów zachodzących w przedsiębiorstwie - podniesienie sprawności obiegu dokumentów, eliminacja zbędnej pracy administracyjnej, poprawa koordynacji zadań oraz eliminacja błędów), socjopsychologiczne (związane z rozszerzeniem zakresu komunikacji pomiędzy pracownikami, usprawnieniem systemu ocen pracowniczych oraz polepszeniem kultury organizacyjnej). \cite{EfektyZasSys}
 
-Utworzenie systemu informatycznego dla dużych firm i instytucji nie stanowi trywialnego zadania. Banki, uczelnie lub urzędy charakteryzują się często stosunkowo złożoną strukturą organizacyjną oraz panują w nich skomplikowane procesy wewnętrzne. Powstaje wówczas problem z formalnym opisem danej jednostki – niezbędnym do utworzenia funkcjonalnego systemu informatycznego. Bardzo istotnym elementem jest wówczas stosowanie odpowiedniej metody, która pozwoli na uporządkowane podejście do projektowania tego rodzaju systemów. 
+Utworzenie systemu informatycznego dla dużych firm i instytucji nie stanowi trywialnego zadania. Banki, uczelnie lub urzędy charakteryzują się często stosunkowo złożoną strukturą organizacyjną oraz panują w nich skomplikowane procesy wewnętrzne. Powstaje wówczas problem z formalnym opisem danej jednostki. Architektura korporacyjna pozwala opisać komponenty i struktury korporacji . Definiuje również wzajemne powiązania i relacje między poszczególnymi jej komponentami. 
+ 
+Odpowiednia definicja oraz wprowadzenie \emph{ładu korporacyjnego} w dużych organizacjach jest niebywale istotne dla wdrożenia funkcjonalnego systemu informatycznego. Bardzo istotnym elementem jest wówczas stosowanie odpowiedniej metody, która pozwoli na uporządkowane podejście do projektowania tego rodzaju systemów. 
+
+Architektura korporacyjna 
 
 \section{Cel pracy}
 Podstawowym celem pracy jest utworzenie metody projektowania architektury korporacyjnej opierającej się na wykorzystaniu języka SoaML. Dotychczas utworzono już podobne metody, jednakże żadna nie była w stanie w pełni sprostać wszystkim wymaganiom stawianym przez problematykę architektury korporacyjnej.
@@ -618,7 +624,6 @@ Metoda jest jednakże ciągle w fazie rozwoju i testów. Nie była wdrażana pro
 
 
 \section{Metoda Thomasa Erl'a}
-TODO: A Comparison of SOA Methodologies Analysis And Design Phases 
 
 \subsection{Opis metody}
 Metoda Thomasa Erl'a stanowi pierwszą metodologię SOA, która w pełni zasługiwała na komercyjne stosowanie. Stanowi przewodnik jak krok po kroku przejść dwie podstawowe fazy - analizy i projektowania. Opiera się na metodzie \emph{top-down}.
@@ -758,7 +763,7 @@ Wykrywanie usług może mieć iteracyjny charakter. Już na tym etapie powinno s
 
 
 \subsection*{Analiza obecnych systemów i zasobów}
-Analiza istniejących systemów (ang. \emph{Legacy systems}) oraz zasobów stanowi bardzo istotny etap metody MatSOA. Wykonywyana jest równolegle do wykrywania nowych usług. Umiejętne przeprowadzenie tej fazy często może znacznie zredukować koszty wprowadzania nowych funkcjonalności w systemach organizacji. Na tym etapie identyfikowane są elementy takie jak: istniejące aplikacje, standardy branżowe, modele oraz pozostałe zasoby niezbędne do realizacji usług. 
+Analiza istniejących systemów (ang. \emph{Legacy systems}) oraz zasobów stanowi bardzo istotny etap metody MatSOA. Wykonywana jest równolegle do wykrywania nowych usług. Umiejętne przeprowadzenie tej fazy często może znacznie zredukować koszty wprowadzania nowych funkcjonalności w systemach organizacji. Na tym etapie identyfikowane są elementy takie jak: istniejące aplikacje, standardy branżowe, modele oraz pozostałe zasoby niezbędne do realizacji usług. 
 
 W założeniu metody MatSOA analityk systemowy powinien zidentyfikować istotne systemy. Następnie te rozpoznane systemy są analizowane pod kątem przydatnych funkcjonalności. Często się zdarza, że nie wszystkie elementy dotychczasowych systemów mogą być wykorzystane bezpośrednio. Jeśli jest to usługa SOA wprowadza się wówczas odpowiednie modyfikacje do obecnych systemów. W innych wypadkach należy rozważyć czy jest szansa wykorzystania ich poprzez opakowującą je usługę (ang. \emph{wrapper}). Sposobów na używanie istniejących zasobów jest wiele: API, dostępne bazy danych, komponenty oprogramowania, które mogą być opakowane oraz wywołanie komendy z wiersza poleceń.
 
@@ -1074,15 +1079,46 @@ Cel systemu został w pełni osiągnięty. Przede wszystkim charakteryzuje się 
 Inne zasady SOA takie jak reużywalność, interoperacyjność czy kontraktowość również zostały spełnione. Każdy komponent systemu może być wykorzystany w kontekście innego systemu. Zasada interoperacyjności została uwzględniona, ponieważ system banku FrostRes może z powodzeniem komunikować się z pozostałymi systemami (jak na przykład opisywany NBP). Ponadto pomiędzy usługami, a konsumentami widać wyraźnie zdefiniowane kontrakty (kontraktowość usług).
 
 \chapter{Podsumowanie i wnioski}
-Rozdział ten podsumowuje badania nad metodą projektowania architektury korporacyjnej. 
+W poprzednich rozdziałach dokonano próby definicji terminu \quotedblbase architektura korporacyjna\textquotedblright, omówiono najpopularniejsze metody oraz przedstawiono autorską koncepcję projektowania architektury korporacyjnej. 
 
-Autorska metoda zostanie porównana do innych, obecnie występujących podejść. Nastąpi również próba oceny przydatności oraz możliwości wykorzystania metody w realnych projektach systemów informatycznych.
+Rozdział ten stanowi podsumowanie wcześniejszych badań. Autorska metoda zostanie porównana do innych, obecnie występujących rozwiązań. Nastąpi również próba oceny przydatności oraz możliwości wykorzystania metody w realnych projektach systemów informatycznych.
 
 Koniec rozdziału będzie obejmował rozważania dotyczące przyszłości tworzenia systemów informatycznych w oparciu o paradygmaty SOA.
 
 \section{MatSOA na tle innych metod projektowania architektury korporacyjnej}
+W rozdziale czwartym dokonano przeglądu kilku istniejących metod projektowania architektury korporacyjnej. Obecnie występuje o wiele więcej jednakże powszechnie wykorzystywana w praktyce jest tylko ich niewielka część.
 
+W tabeli (tab. \ref{tabela_methods_comparison}) przedstawiono zestawienie najpopularniejszych metod projektowania architektury korporacyjnej. Wyszczególniono również parametry i cechy charakterystyczne metod na podstawie których odbędzie się porównanie.
 
+Elementy, które wzięto pod uwagę w zestawieniu:
+\begin{itemize}
+\item{Strategia dostarczania - występują trzy spotykane strategie dostarczania architektury korporacyjnej. Zależą one od stopnia złożoności domeny biznesowej oraz poziomu oparcia się na istniejących elementach organizacji. Strategia \emph{top-down} oznacza tworzenie całości architektury korporacyjnej od początku. \emph{Bottom-up} oznacza z kolei wykorzystywanie istniejących elementów organizacji do utworzenia architektury korporacyjnej. \emph{Meet-in-the-middle} stanowi natomiast konsolidację obydwu podejść. }
+\item{Wykorzystanie w komercyjnych projektach - istotne jest potwierdzenie przydatności metody w praktyce. W oparciu o opinię przypadków \emph{proof-of-concept} metodyka może być również udoskonalana i poprawiana. Wiele przykładów udanego zastosowania metodyki świadczy o jej wysokim poziomie dojrzałości.}
+\item{Stopień oparcia się na Agile - wiele istniejących metodyk wymaga ścisłego przestrzegania narzucanych przez nie schematów. Nie jest to odpowiednie podejście, ponieważ zawsze istnieje ryzyko wprowadzania rozległych zmian. Parametr ten określa poziom w jakim metodyka jest w stanie przestrzegać zasad manifestu Agile.}
+\item{Wykorzystywane języki i techniki - metodyki korzystają z różnorodnych języków oraz technik w celu jak najlepszego przedstawienia zamysłów projektantów architektury korporacyjnej.}
+\item{Pokrycie wszystkich faz cyklu życia projektu - wiele z metodyk pokrywa wszystkie fazy życia projektu: planowanie, analizę i projektowanie, implementację, testowanie oraz wdrożenie. Jednakże niektóre opierają się jedynie na fazie analizy i projektowania.}
+\item{Prawnie zastrzeżony - nie wszystkie metodyki są powszechnie dostępne do użytkowania. Niektóre organizacje nie udostępniają wszystkich istotnych szczegółów specyfikacji, a niektóre udostępniają je tylko odpłatnie.}
+\item{Jakość specyfikacji - wiele z metodyk posiada niedokładne opisy co znaczenie utrudnia ich wdrażanie w poszczególnych projektach. W skali rosnącej 1-5 oceniono jakość oficjalnych specyfikacji poszczególnych metodyk. }
+\end{itemize}
+
+\begin{table}[!htbp]
+\begin{center}
+\begin{small}
+\begin{supertabular}{|p{4cm}|p{2cm}|p{2cm}|p{2.2cm}|p{2cm}|p{2cm}|}\hline
+\textbf{""} & \textbf{MatSOA} & \textbf{RUP4SOA} & \textbf{Papazoglou} & \textbf{T. Erl} & \textbf{SOMA}\\\hline
+Strategia dostarczania & Meet-in-the-middle & Meet-in-the-middle & Meet-in-the-middle & Top-down & Meet-in-the-middle\\\hline
+Wykorzystywano w komercyjnych projektach & N & T & N & T & T \\\hline
+Stopień oparcia się na Agile (skala 1-5 rosnąco) & 5 & 4 & 3 & 3 & 4 \\\hline
+Wykorzystywane języki i techniki & BPMN, SoaML & BPMN, UML, BPEL, WSDL, WS-BPEL & CBD, BPM, BPMN, WSDL, BPEL, UML & BPM, WSDL, WS-BPEL, WS-* specifications & BPMN, UML, BPEL, WSDL, WS-BPEL \\\hline
+Pokrycie wszystkich faz cyklu życia projektu (ang. lifecycle coverage) & T & T & T & N & T \\\hline\\hline
+Prawnie zastrzeżony & N & T & T & N & T \\\hline
+Jakość specyfikacji metodyki (skala 1-5 rosnąco) & 5 & 4 & 2 & 3 & 4 \\\hline
+\end{supertabular}
+\end{small}
+\end{center}
+ \caption{Mapowanie kandydatów usług na elementy języka SoaML.}
+ \label{tabela_methods_comparison}
+\end{table}
 
 \section{Rozwój metod projektowania architektury korporacyjnej}
 \section{Przyszłość tworzenia systemów informatycznych w oparciu o paradygmaty SOA}
