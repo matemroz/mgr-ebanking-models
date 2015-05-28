@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.5.10)  28 MAY 2015 00:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.5.10)  28 MAY 2015 22:18
 entering extended mode
 **praca_dyplomowa.tex
 (C:\Users\IBM_ADMIN\Documents\Studia\MGR2\trunk\latex\praca_dyplomowa.tex
@@ -1344,13 +1344,7 @@ Overfull \hbox (18.846pt too wide) in paragraph at lines 1141--1141
 []\OT4/cmr/bx/n/17.28 Rozwój me-tod pro-jek-to-wa-nia ar-chi-tek-tury kor-
  []
 
-[75]
-Overfull \hbox (2.25594pt too wide) in paragraph at lines 1149--1150
-[]\OT4/cmr/m/n/12 Oparcie na pa-ra-dyg-ma-tach SOA two-rzo-nych sys-te-mów in-f
-or-ma-tycz-nych w obec-
- []
-
-) [76]
+[75]) [76]
 LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 60.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\polski\ot4cmtt.fd"
@@ -1463,7 +1457,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 93.
 Here is how much of TeX's memory you used:
  8055 strings out of 493921
  116685 string characters out of 3148874
- 220647 words of memory out of 3000000
+ 220648 words of memory out of 3000000
  10956 multiletter control sequences out of 15000+200000
  17644 words of font info for 51 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -1482,7 +1476,7 @@ s/type1/public/pl/plr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/pl/plr8
 s/MiKTeX/fonts/type1/public/pl/plti10.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/pl/plti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/pl/pltt12.pfb>
 
-Output written on praca_dyplomowa.pdf (85 pages, 1661429 bytes).
+Output written on praca_dyplomowa.pdf (85 pages, 1661659 bytes).
 PDF statistics:
  1093 PDF objects out of 1200 (max. 8388607)
  233 named destinations out of 1000 (max. 500000)
