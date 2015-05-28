@@ -1078,7 +1078,7 @@ Cel systemu został w pełni osiągnięty. Przede wszystkim charakteryzuje się 
 Inne zasady SOA takie jak reużywalność, interoperacyjność czy kontraktowość również zostały spełnione. Każdy komponent systemu może być wykorzystany w kontekście innego systemu. Zasada interoperacyjności została uwzględniona, ponieważ system banku FrostRes może z powodzeniem komunikować się z pozostałymi systemami (jak na przykład opisywany NBP). Ponadto pomiędzy usługami, a konsumentami widać wyraźnie zdefiniowane kontrakty (kontraktowość usług).
 
 \chapter{Podsumowanie i wnioski}
-W poprzednich rozdziałach dokonano próby definicji terminu \quotedblbase architektura korporacyjna\textquotedblright, omówiono najpopularniejsze metody oraz przedstawiono autorską koncepcję projektowania architektury korporacyjnej. 
+W poprzednich rozdziałach dokonano próby definicji terminu \quotedblbase architektura korporacyjna\textquotedblright oraz omówiono najpopularniejsze związane z nią metody. Przedstawiono również autorską koncepcję prowadzącą do utworzenia architektury korporacyjnej w organizacji. 
 
 Rozdział ten stanowi podsumowanie wcześniejszych badań. Autorska metoda zostanie porównana do innych, obecnie występujących rozwiązań. Nastąpi również próba oceny przydatności oraz możliwości wykorzystania metody w realnych projektach systemów informatycznych.
 
@@ -1087,17 +1087,18 @@ Koniec rozdziału będzie obejmował rozważania dotyczące przyszłości tworze
 \section{MatSOA na tle innych metod projektowania architektury korporacyjnej}
 W rozdziale czwartym dokonano przeglądu kilku istniejących metod projektowania architektury korporacyjnej. Obecnie występuje o wiele więcej jednakże powszechnie wykorzystywana w praktyce jest tylko ich niewielka część.
 
-W tabeli (tab. \ref{tabela_methods_comparison}) przedstawiono zestawienie najpopularniejszych metod projektowania architektury korporacyjnej. Wyszczególniono również parametry i cechy charakterystyczne metod na podstawie których odbędzie się porównanie.
+W tabeli (tab. \ref{tabela_methods_comparison}) przedstawiono zestawienie najpopularniejszych metod projektowania architektury korporacyjnej. Wyszczególniono również parametry i cechy charakterystyczne na podstawie, których odbędzie się porównanie. Autor pracy dokonuje subiektywnej oceny w jakim stopniu każda z metod spełnia poszczególne atrybuty.
 
 Elementy, które wzięto pod uwagę w zestawieniu:
 \begin{itemize}
-\item{Strategia dostarczania - występują trzy spotykane strategie dostarczania architektury korporacyjnej. Zależą one od stopnia złożoności domeny biznesowej oraz poziomu oparcia się na istniejących elementach organizacji. Strategia \emph{top-down} oznacza tworzenie całości architektury korporacyjnej od początku. \emph{Bottom-up} oznacza z kolei wykorzystywanie istniejących elementów organizacji do utworzenia architektury korporacyjnej. \emph{Meet-in-the-middle} stanowi natomiast konsolidację obydwu podejść. }
-\item{Wykorzystanie w komercyjnych projektach - istotne jest potwierdzenie przydatności metody w praktyce. W oparciu o opinię przypadków \emph{proof-of-concept} metodyka może być również udoskonalana i poprawiana. Wiele przykładów udanego zastosowania metodyki świadczy o jej wysokim poziomie dojrzałości.}
-\item{Stopień oparcia się na Agile - wiele istniejących metodyk wymaga ścisłego przestrzegania narzucanych przez nie schematów. Nie jest to odpowiednie podejście, ponieważ zawsze istnieje ryzyko wprowadzania rozległych zmian. Parametr ten określa poziom w jakim metodyka jest w stanie przestrzegać zasad manifestu Agile.}
-\item{Wykorzystywane języki i techniki - metodyki korzystają z różnorodnych języków oraz technik w celu jak najlepszego przedstawienia zamysłów projektantów architektury korporacyjnej.}
-\item{Pokrycie wszystkich faz cyklu życia projektu - wiele z metodyk pokrywa wszystkie fazy życia projektu: planowanie, analizę i projektowanie, implementację, testowanie oraz wdrożenie. Jednakże niektóre opierają się jedynie na fazie analizy i projektowania.}
-\item{Prawnie zastrzeżony - nie wszystkie metodyki są powszechnie dostępne do użytkowania. Niektóre organizacje nie udostępniają wszystkich istotnych szczegółów specyfikacji, a niektóre udostępniają je tylko odpłatnie.}
-\item{Jakość specyfikacji - wiele z metodyk posiada niedokładne opisy co znaczenie utrudnia ich wdrażanie w poszczególnych projektach. W skali rosnącej 1-5 oceniono jakość oficjalnych specyfikacji poszczególnych metodyk. }
+\item{Strategia dostarczania (ang. \emph{Delivery strategy}) - występują trzy spotykane strategie dostarczania architektury korporacyjnej. Zależą one od stopnia złożoności domeny biznesowej oraz poziomu oparcia się na istniejących elementach organizacji. Strategia \emph{top-down} oznacza tworzenie całości architektury korporacyjnej od początku. \emph{Bottom-up} oznacza z kolei wykorzystywanie istniejących elementów organizacji do utworzenia architektury korporacyjnej. \emph{Meet-in-the-middle} stanowi natomiast konsolidację obydwu podejść. }
+\item{Wykorzystanie w komercyjnych projektach - istotne jest potwierdzenie przydatności metody w praktyce. W oparciu o opinię przypadków \emph{proof-of-concept} metoda może być również udoskonalana i poprawiana. Wiele przykładów udanego zastosowania metody świadczy o jej wysokim poziomie dojrzałości.}
+\item{Stopień oparcia się na Agile - wiele istniejących metod wymaga ścisłego przestrzegania narzucanych przez nie schematów. Nie jest to odpowiednie podejście, ponieważ zawsze istnieje ryzyko wprowadzania rozległych zmian. Parametr ten określa poziom w jakim metodyka jest w stanie przestrzegać zasad manifestu Agile.}
+\item{Wykorzystywane języki i techniki - metody korzystają z różnorodnych języków oraz technik w celu jak najlepszego przedstawienia zamysłów projektantów architektury korporacyjnej.}
+\item{Pokrycie typowych faz cyklu życia projektu - ta cecha oznacza w jakim stopniu metoda pokrywa wszystkie podstawowe fazy życia projektu: planowanie, analizę i projektowanie, implementację, testowanie oraz wdrożenie.}
+\item{Prawnie zastrzeżony - nie wszystkie metody są powszechnie dostępne do użytkowania. Niektóre organizacje nie udostępniają wszystkich istotnych szczegółów specyfikacji, a niektóre udostępniają je tylko odpłatnie.}
+\item{Jakość specyfikacji - wiele z metod posiada niedokładne opisy co znacznie utrudnia ich wdrażanie w poszczególnych projektach. W skali rosnącej 1-5 oceniono jakość oficjalnych specyfikacji poszczególnych metodyk. }
+\item{Poziom skalowalności, elastyczności oraz rozszerzalności - zbiór cech takich jak: skalowalność, elastyczność oraz rozszerzalność wskazuje w jakim stopniu metoda jest w stanie dostosować się do różnego rodzaju sytuacji projektowych. Skalowalność wskazuje na zdolność metody do przystosowywania się do różnych rozmiarów aplikacji lub punktów krytycznych. Elastyczność należy traktować jako poziom możliwości konfiguracji metody w trakcie jej używania. Z kolei poziom rozszerzalności oznacza jak duże są możliwości danej metody o rozbudowę o nowe elementy lub fazy. }
 \end{itemize}
 
 \begin{table}[!htbp]
@@ -1108,16 +1109,43 @@ Elementy, które wzięto pod uwagę w zestawieniu:
 Strategia dostarczania & Meet-in-the-middle & Meet-in-the-middle & Meet-in-the-middle & Top-down & Meet-in-the-middle\\\hline
 Wykorzystywano w komercyjnych projektach & N & T & N & T & T \\\hline
 Stopień oparcia się na Agile (skala 1-5 rosnąco) & 5 & 4 & 3 & 3 & 4 \\\hline
-Wykorzystywane języki i techniki & BPMN, SoaML & BPMN, UML, BPEL, WSDL, WS-BPEL & CBD, BPM, BPMN, WSDL, BPEL, UML & BPM, WSDL, WS-BPEL, WS-* specifications & BPMN, UML, BPEL, WSDL, WS-BPEL \\\hline
-Pokrycie wszystkich faz cyklu życia projektu (ang. lifecycle coverage) & T & T & T & N & T \\\hline\\hline
+Wykorzystywane języki i techniki & BPMN, SoaML, WSDL& BPMN, UML, BPEL, WSDL, WS-BPEL & CBD, BPM, BPMN, WSDL, BPEL, UML & BPM, WSDL, WS-BPEL, WS-* specifications & BPMN, UML, BPEL, WSDL, WS-BPEL \\\hline
+Pokrycie wszystkich faz cyklu życia projektu (ang. lifecycle coverage) & T & T & T & N & T \\\hline
 Prawnie zastrzeżony & N & T & T & N & T \\\hline
 Jakość specyfikacji metodyki (skala 1-5 rosnąco) & 5 & 4 & 2 & 3 & 4 \\\hline
+Poziom skalowalności, elastyczności oraz rozszerzalności (skala 1-5 rosnąco)  & 5 &4 & 2 & 2 & 4 \\\hline
+
 \end{supertabular}
 \end{small}
 \end{center}
  \caption{Mapowanie kandydatów usług na elementy języka SoaML.}
  \label{tabela_methods_comparison}
 \end{table}
+ 
+Na podstawie tabeli \ref{tabela_methods_comparison} można zauważyć, że większość omawianych metod opiera się na strategii dostarczania typu \emph{Meet-in-the-middle}. Jedynie metoda Thomasa Erl'a wykorzystuje podejście \emph{Top-down}.
+
+Nie wszystkie rozpatrywane metody powszechnie wykorzystywano w komercyjnych projektach. Sporą ilość metod (na przykład metodę Papazoglou) opracowano dotychczas jedynie w teorii i nie weryfikowano ich przydatności w praktyce. Najpopularniejsze metody takie jak RUP4SOA oraz SOMA ze względu na swoją dojrzałość mają najwięcej potwierdzonych przypadków użycia w komercyjnych projektach.
+
+Większość metod sugeruje podejście \emph{Agile} w tworzeniu architektury zorientowanej usługowo. Autor pracy uznał, że najwięcej cech \emph{Agile} miała MatSOA (ocena 5) oraz RUP4SOA i SOMA (oceny 4). Metody te charakteryzują się najbardziej elastycznym podejściem do stosowania schematów. Pozwalają w największym stopniu na dopasowywać się do specyfiki lub sytuacji projektowej.
+
+Analizowane metody wykorzystują różne języki i techniki do osiągnięcia swoich celów. Większość opiera się na BPMN oraz UML. Jedynie MatSOA do tworzenia modeli architektury zorientowanej usługowo wykorzystuje SoaML. Każda z metod do komunikacji między usługami wykorzystuje komunikację typu Web Service oraz korzysta z plików WSDL.
+
+Na podstawie zestawienia w tabeli można zauważyć, że jedynie metoda Thomasa Erl'a nie pokrywa wszystkich standardowych faz cyklu życia projektu. Spełnia ona tylko fazy analizy i projektowania.
+
+Z wybranych metod tylko metody MatSOA oraz Thomasa Erl'a nie są prawnie zastrzeżone. Reszta z metod (RUP4SOA, Papazoglou oraz SOMA) udostępniają prawa do swojej specyfikacji komercyjnie. 
+
+Nie wszystkie z metod są dobrze zdefiniowane i posiadają szczegółową specyfikację. Fakt ten stanowi istotny problem dla ich odpowiedniego używania w realnych projektach. Metoda Papazoglou została jak dotąd opisana jedynie w zwięzłym artykule naukowym. Dużo lepiej opisane są metody takie jak RUP4SOA, SOMA oraz MatSOA. 
+
+Metody poddane analizie cechują się różnym poziomem skalowalności, elastyczności oraz rozszerzalności. Autor ocenił, że tymi cechami najbardziej charakteryzują się metody MatSOA (ocena 5) oraz RUP4SOA i SOMA (oceny 4). Metody Papazoglou i Thomasa Erl'a wykazują konieczność trzymania się ściśle ustalonych założeń i zasad.
 
 \section{Rozwój metod projektowania architektury korporacyjnej}
+Mimo, że termin \quotedblbase architektura korporacyjna\textquotedblright znany jest już od kilkunastu lat, to rzadko stosuje się go w obecnych podejściach architektonicznych. Problem wynika przede wszystkim z niskiego poziomu dojrzałości większości organizacji.  Nie rozumieją potrzeby stosowania architektury korporacyjnej lub są nieprzygotowane do jej przyjęcia. \cite{SobArchKorpProg}
+
+Architektura korporacyjna stanowi jednak doskonały mechanizm prowadzący do transformacji organizacji w celu sprawnego wdrożenia przyjętej strategii biznesowej. Szereg korzyści takich jak: lepsze zrozumienie biznesu i potrzeb klienta, lepsze dopasowanie podejmowanych działań do wymagań biznesowych oraz zwiększenie interoperacyjności systemów, rodzi możliwości, że architekci coraz częściej będą opierać się na podejściu proponowanym przez architekturę korporacyjną. \cite{ArchKorpAdmPub} Stan ten może powodować z kolei rozwój metod projektowania architektury korporacyjnej. Istnieje obecnie wiele metod jednakże spora część z nich została opracowana wyłączenie w teorii i nie ma potwierdzenia w zastosowaniach praktycznych.
+
+Według autora pracy rozwój metod może mieć również ścisły związek z ewolucją tworzenia systemów informatycznych w architekturze zorientowanej usługowo.
+
 \section{Przyszłość tworzenia systemów informatycznych w oparciu o paradygmaty SOA}
+Oparcie na paradygmatach SOA tworzonych systemów informatycznych w obecnych czasach stanowi niebywale popularne rozwiązanie. Wiele organizacji decyduje się na stosowanie tego podejścia.
+
+SOA to przede wszystkim koncepcja, w której kładzie się silny nacisk na łączenie niezależnych usług co pozwala tworzyć łatwo skalowalne, wykazujące się dużą elastycznością systemy informatyczne. 
