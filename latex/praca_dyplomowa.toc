@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {2.6.5}Warstwy architektury SOA}{18}{subsection.2.6.5}
 \contentsline {subsection}{\numberline {2.6.6}Podstawowe zasady SOA}{19}{subsection.2.6.6}
 \contentsline {subsection}{\numberline {2.6.7}Korporacyjna szyna us\IeC {\l }ug - ESB}{21}{subsection.2.6.7}
-\contentsline {section}{\numberline {2.7}Adaptacja SOA w architekturze korporacyjnej}{22}{section.2.7}
+\contentsline {section}{\numberline {2.7}Adaptacja SOA w architekturze korporacyjnej}{21}{section.2.7}
 \contentsline {chapter}{\numberline {3}Przegl\IeC {\k a}d j\IeC {\k e}zyk\IeC {\'o}w do projektowania system\IeC {\'o}w informatycznych o architekturze SOA}{23}{chapter.3}
 \contentsline {section}{\numberline {3.1}Wst\IeC {\k e}p}{23}{section.3.1}
 \contentsline {section}{\numberline {3.2}SoaML}{24}{section.3.2}
@@ -27,7 +27,7 @@
 \contentsline {subsection}{\numberline {3.3.2}Modelowanie z wykorzystaniem ArchiMate}{29}{subsection.3.3.2}
 \contentsline {section}{\numberline {3.4}Inne j\IeC {\k e}zyki}{30}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}BPMN}{30}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}BPEL}{31}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.2}BPEL}{30}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}UML}{31}{subsection.3.4.3}
 \contentsline {subsection}{\numberline {3.4.4}IDEF}{32}{subsection.3.4.4}
 \contentsline {chapter}{\numberline {4}Metody projektowania rozwi\IeC {\k a}za\IeC {\'n} w architekturze us\IeC {\l }ugowej}{33}{chapter.4}
