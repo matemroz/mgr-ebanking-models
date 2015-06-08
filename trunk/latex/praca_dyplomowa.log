@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.5.10)  3 JUN 2015 01:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.5.10)  8 JUN 2015 07:02
 entering extended mode
 **praca_dyplomowa.tex
 (C:\Users\IBM_ADMIN\Documents\Studia\MGR2\trunk\latex\praca_dyplomowa.tex
@@ -763,7 +763,12 @@ File: ./img/zdjecie_legitymacja.jpg Graphic file (type jpg)
 Package pdftex.def Info: ./img/zdjecie_legitymacja.jpg used on input line 52.
 (pdftex.def)             Requested size: 113.81102pt x 143.85704pt.
 
-Overfull \vbox (21.72626pt too high) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+
+ []
+
+
+Overfull \vbox (57.12634pt too high) has occurred while \output is active []
 
 
 [1
@@ -817,7 +822,7 @@ e Ar-chi-tec-ture) nie-zb¦dna
 
 [6
 
-] [7] [8] [9] <img/ea.png, id=482, 456.95718pt x 533.74406pt>
+] [7] [8] [9] <img/ea.png, id=483, 456.95718pt x 533.74406pt>
 File: img/ea.png Graphic file (type png)
 
 <use img/ea.png>
@@ -836,7 +841,7 @@ Overfull \hbox (11.26964pt too wide) in paragraph at lines 143--144
 -tur¡ kor-po-ra-cyjn¡ mo»na
  []
 
-[12] [13] [14] <img/soa_arch.png, id=525, 715.92468pt x 535.2497pt>
+[12] [13] [14] <img/soa_arch.png, id=526, 715.92468pt x 535.2497pt>
 File: img/soa_arch.png Graphic file (type png)
 
 <use img/soa_arch.png>
@@ -848,7 +853,7 @@ Overfull \hbox (8.53766pt too wide) in paragraph at lines 189--190
  []
 
 [15] [16 <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex/img/soa_arch.png
->] <img/web_service.png, id=541, 539.76656pt x 219.82124pt>
+>] <img/web_service.png, id=542, 539.76656pt x 219.82124pt>
 File: img/web_service.png Graphic file (type png)
 
 <use img/web_service.png>
@@ -872,7 +877,7 @@ Rozdzia\l  3.
 [23
 
 ]
-<img/simple_interface_based_approach.png, id=593, 447.92343pt x 198.7425pt>
+<img/simple_interface_based_approach.png, id=594, 447.92343pt x 198.7425pt>
 File: img/simple_interface_based_approach.png Graphic file (type png)
 
 <use img/simple_interface_based_approach.png>
@@ -880,7 +885,7 @@ Package pdftex.def Info: img/simple_interface_based_approach.png used on input
 line 299.
 (pdftex.def)             Requested size: 312.9803pt x 138.87315pt.
 
-<img/service_interface_based_approach.png, id=597, 638.385pt x 446.41782pt>
+<img/service_interface_based_approach.png, id=598, 638.385pt x 446.41782pt>
 File: img/service_interface_based_approach.png Graphic file (type png)
 
 <use img/service_interface_based_approach.png>
@@ -888,7 +893,7 @@ Package pdftex.def Info: img/service_interface_based_approach.png used on input
  line 308.
 (pdftex.def)             Requested size: 312.9803pt x 218.86244pt.
 
-<img/service_contract_based_approach.png, id=601, 642.14906pt x 438.8897pt>
+<img/service_contract_based_approach.png, id=602, 642.14906pt x 438.8897pt>
 File: img/service_contract_based_approach.png Graphic file (type png)
 
 <use img/service_contract_based_approach.png>
@@ -897,7 +902,7 @@ line 316.
 (pdftex.def)             Requested size: 312.9803pt x 213.91936pt.
  [24] [25 <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex/img/simple_inte
 rface_based_approach.png> <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex
-/img/service_interface_based_approach.png>] <img/soaml_metamodel.png, id=619, 3
+/img/service_interface_based_approach.png>] <img/soaml_metamodel.png, id=620, 3
 86.19281pt x 524.71031pt>
 File: img/soaml_metamodel.png Graphic file (type png)
 
@@ -926,7 +931,7 @@ k-tu-rze usªu-go-wej. RUP4SOA
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [35]
-<img/soma_fractal_lifecycle.png, id=684, 704.6325pt x 551.81157pt>
+<img/soma_fractal_lifecycle.png, id=685, 704.6325pt x 551.81157pt>
 File: img/soma_fractal_lifecycle.png Graphic file (type png)
 
 <use img/soma_fractal_lifecycle.png>
@@ -940,7 +945,7 @@ Overfull \hbox (7.51537pt too wide) in paragraph at lines 583--584
  biz-ne-so-wych za-pro-po-no-wa-nego przez Paula
  []
 
-<img/papazoglou_metoda_fazy.png, id=722, 462.97969pt x 459.21562pt>
+<img/papazoglou_metoda_fazy.png, id=723, 462.97969pt x 459.21562pt>
 File: img/papazoglou_metoda_fazy.png Graphic file (type png)
 
 <use img/papazoglou_metoda_fazy.png>
@@ -956,7 +961,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [46
 
 ]
-<img/MetMatSOA_v2.png, id=760, 626.34pt x 332.74312pt>
+<img/MetMatSOA_v2.png, id=761, 626.34pt x 332.74312pt>
 File: img/MetMatSOA_v2.png Graphic file (type png)
 
 <use img/MetMatSOA_v2.png>
@@ -973,7 +978,7 @@ Overfull \hbox (8.45726pt too wide) in paragraph at lines 675--676
 z-pa-trzy¢ po-szcze-gólne aspekty
  []
 
-[47] <img/BMM_PL.png, id=769, 722.7pt x 536.0025pt>
+[47] <img/BMM_PL.png, id=770, 722.7pt x 536.0025pt>
 File: img/BMM_PL.png Graphic file (type png)
  <use img/BMM_PL.png>
 Package pdftex.def Info: img/BMM_PL.png used on input line 689.
@@ -981,7 +986,7 @@ Package pdftex.def Info: img/BMM_PL.png used on input line 689.
 
 [48 <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex/img/MetMatSOA_v2.png>
 ] [49 <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex/img/BMM_PL.png>]
-[50] <img/service_candidates.png, id=790, 348.55219pt x 203.25937pt>
+[50] <img/service_candidates.png, id=791, 348.55219pt x 203.25937pt>
 File: img/service_candidates.png Graphic file (type png)
 
 <use img/service_candidates.png>
@@ -997,12 +1002,30 @@ Overfull \hbox (5.52109pt too wide) in paragraph at lines 771--772
  []
 
 [53]
+Underfull \hbox (badness 1708) in paragraph at lines 792--792
+[]\OT4/cmr/m/n/10.95 Operacja, która jest po-ª¡-czona z ele-
+ []
 
-LaTeX Warning: Reference `' on page 54 undefined on input line 778.
+
+Underfull \hbox (badness 2980) in paragraph at lines 793--793
+[]\OT4/cmr/m/n/10.95 Komponent usªugi (ang. Se-rvice
+ []
 
 
-Underfull \hbox (badness 3019) in paragraph at lines 797--797
-[]\OT4/cmr/m/n/10.95 Komponent usªugi (ang. \OT4/cmr/m/it/10.95 Se-rvice
+Underfull \hbox (badness 7081) in paragraph at lines 796--796
+[]\OT4/cmr/m/n/10.95 emph<<OwnedBehaviour>> do ele-
+ []
+
+
+Underfull \hbox (badness 2469) in paragraph at lines 797--797
+[]\OT4/cmr/m/n/10.95 Element \OT4/cmr/m/it/10.95 <<Port>> \OT4/cmr/m/n/10.95 wy
+-ko-rzy-sty-wany przy
+ []
+
+
+Underfull \hbox (badness 2050) in paragraph at lines 798--798
+[]\OT4/cmr/m/n/10.95 Element \OT4/cmr/m/it/10.95 <<Se-rvi-ce-Chan-nel>> \OT4/cm
+r/m/n/10.95 wy-ko-rzy-sty-
  []
 
 [54] [55] [56]
@@ -1013,10 +1036,10 @@ Rozdzia\l  6.
 File: img/bmm_model_frostres.png Graphic file (type png)
 
 <use img/bmm_model_frostres.png>
-Package pdftex.def Info: img/bmm_model_frostres.png used on input line 861.
+Package pdftex.def Info: img/bmm_model_frostres.png used on input line 857.
 (pdftex.def)             Requested size: 455.23802pt x 341.43608pt.
 
-Overfull \hbox (36.98434pt too wide) in paragraph at lines 861--862
+Overfull \hbox (36.98434pt too wide) in paragraph at lines 857--858
  [][] 
  []
 
@@ -1026,11 +1049,11 @@ Overfull \hbox (36.98434pt too wide) in paragraph at lines 861--862
 File: img/proces_operacja_przeleu_miedzynarodowego.png Graphic file (type png)
  <use img/proces_operacja_przeleu_miedzynarodowego.png>
 Package pdftex.def Info: img/proces_operacja_przeleu_miedzynarodowego.png used 
-on input line 871.
+on input line 866.
 (pdftex.def)             Requested size: 355.66939pt x 569.04758pt.
 
 
-LaTeX Warning: Float too large for page by 4.3507pt on input line 874.
+LaTeX Warning: Float too large for page by 4.3507pt on input line 869.
 
 [59] [60 <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex/img/bmm_model_fr
 ostres.png>] [61 <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex/img/proc
@@ -1039,7 +1062,7 @@ es_operacja_przeleu_miedzynarodowego.png>] [62]
 File: img/model_domeny_funk.png Graphic file (type png)
 
 <use img/model_domeny_funk.png>
-Package pdftex.def Info: img/model_domeny_funk.png used on input line 930.
+Package pdftex.def Info: img/model_domeny_funk.png used on input line 924.
 (pdftex.def)             Requested size: 369.89485pt x 284.53009pt.
  [63 <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex/img/model_domeny_fun
 k.png>]
@@ -1047,74 +1070,76 @@ k.png>]
 File: img/service_candidates_init.png Graphic file (type png)
 
 <use img/service_candidates_init.png>
-Package pdftex.def Info: img/service_candidates_init.png used on input line 946
+Package pdftex.def Info: img/service_candidates_init.png used on input line 940
 .
 (pdftex.def)             Requested size: 455.24176pt x 142.26367pt.
 
-Overfull \hbox (36.98808pt too wide) in paragraph at lines 946--947
+Overfull \hbox (36.98808pt too wide) in paragraph at lines 940--941
+ [][] 
+ []
+
+<img/service_candidates_refactored.png, id=871, 637.63219pt x 245.41687pt>
+File: img/service_candidates_refactored.png Graphic file (type png)
+
+<use img/service_candidates_refactored.png>
+Package pdftex.def Info: img/service_candidates_refactored.png used on input li
+ne 953.
+(pdftex.def)             Requested size: 455.24196pt x 199.17603pt.
+
+Overfull \hbox (36.98828pt too wide) in paragraph at lines 953--954
  [][] 
  []
 
 [64 <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex/img/service_candidate
 s_init.png>]
-<img/service_candidates_refactored.png, id=876, 637.63219pt x 245.41687pt>
-File: img/service_candidates_refactored.png Graphic file (type png)
-
-<use img/service_candidates_refactored.png>
-Package pdftex.def Info: img/service_candidates_refactored.png used on input li
-ne 959.
-(pdftex.def)             Requested size: 455.24196pt x 199.17603pt.
-
-Overfull \hbox (36.98828pt too wide) in paragraph at lines 959--960
- [][] 
- []
-
-
-<img/legacy_systems_services_refactored.png, id=878, 338.01282pt x 68.50594pt>
+<img/legacy_systems_services_refactored.png, id=879, 338.01282pt x 68.50594pt>
 File: img/legacy_systems_services_refactored.png Graphic file (type png)
 
 <use img/legacy_systems_services_refactored.png>
 Package pdftex.def Info: img/legacy_systems_services_refactored.png used on inp
-ut line 973.
+ut line 967.
 (pdftex.def)             Requested size: 241.85268pt x 56.90695pt.
  [65 <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex/img/service_candidat
 es_refactored.png> <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex/img/le
-gacy_systems_services_refactored.png>] <img/consolidation_services.png, id=886,
+gacy_systems_services_refactored.png>] <img/consolidation_services.png, id=887,
  579.66562pt x 226.59656pt>
 File: img/consolidation_services.png Graphic file (type png)
 
 <use img/consolidation_services.png>
-Package pdftex.def Info: img/consolidation_services.png used on input line 983.
+Package pdftex.def Info: img/consolidation_services.png used on input line 977.
 
 (pdftex.def)             Requested size: 455.24194pt x 199.17046pt.
 
-Overfull \hbox (36.98827pt too wide) in paragraph at lines 983--984
+Overfull \hbox (36.98827pt too wide) in paragraph at lines 977--978
  [][] 
  []
 
-<img/services_specification_model.png, id=888, 604.50844pt x 329.73187pt>
+<img/services_specification_model.png, id=889, 604.50844pt x 329.73187pt>
 File: img/services_specification_model.png Graphic file (type png)
 
 <use img/services_specification_model.png>
 Package pdftex.def Info: img/services_specification_model.png used on input lin
-e 994.
+e 988.
 (pdftex.def)             Requested size: 455.24347pt x 256.08292pt.
 
-Overfull \hbox (36.98979pt too wide) in paragraph at lines 994--995
+Overfull \hbox (36.98979pt too wide) in paragraph at lines 988--989
  [][] 
  []
 
-[66 <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex/img/consolidation_ser
-vices.png>]
-<img/przelew_miedzynarodowy_composite.png, id=896, 632.3625pt x 309.40594pt>
+
+Underfull \vbox (badness 2197) has occurred while \output is active []
+
+ [66 <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex/img/consolidation_se
+rvices.png>] <img/przelew_miedzynarodowy_composite.png, id=896, 632.3625pt x 30
+9.40594pt>
 File: img/przelew_miedzynarodowy_composite.png Graphic file (type png)
 
 <use img/przelew_miedzynarodowy_composite.png>
 Package pdftex.def Info: img/przelew_miedzynarodowy_composite.png used on input
- line 1012.
+ line 1006.
 (pdftex.def)             Requested size: 455.25241pt x 241.85971pt.
 
-Overfull \hbox (36.99873pt too wide) in paragraph at lines 1012--1013
+Overfull \hbox (36.99873pt too wide) in paragraph at lines 1006--1007
  [][] 
  []
 
@@ -1128,10 +1153,10 @@ File: img/komponenty_inbound_outbound.png Graphic file (type png)
 
 <use img/komponenty_inbound_outbound.png>
 Package pdftex.def Info: img/komponenty_inbound_outbound.png used on input line
- 1027.
+ 1021.
 (pdftex.def)             Requested size: 426.7879pt x 156.49321pt.
 
-Overfull \hbox (8.53423pt too wide) in paragraph at lines 1027--1028
+Overfull \hbox (8.53423pt too wide) in paragraph at lines 1021--1022
  [][] 
  []
 
@@ -1141,16 +1166,16 @@ odowy_composite.png>]
 File: img/przelew_wypelniony_form.png Graphic file (type png)
 
 <use img/przelew_wypelniony_form.png>
-Package pdftex.def Info: img/przelew_wypelniony_form.png used on input line 104
-4.
+Package pdftex.def Info: img/przelew_wypelniony_form.png used on input line 103
+8.
 (pdftex.def)             Requested size: 227.62006pt x 270.31123pt.
 
-Underfull \hbox (badness 4429) in paragraph at lines 1058--1058
+Underfull \hbox (badness 4429) in paragraph at lines 1052--1052
 []\OT4/cmr/bx/n/10.95 ‘r. czas odp.
  []
 
 
-Overfull \hbox (1.6321pt too wide) in paragraph at lines 1057--1062
+Overfull \hbox (1.6321pt too wide) in paragraph at lines 1051--1056
  [] 
  []
 
@@ -1161,159 +1186,159 @@ Rozdzia\l  7.
 [72
 
 ]
-Overfull \hbox (0.13945pt too wide) in paragraph at lines 1090--1091
+Overfull \hbox (0.13945pt too wide) in paragraph at lines 1084--1085
 \OT4/cmr/m/n/12 dat-no-±ci me-tody w prak-tyce. W opar-ciu o opi-ni¦ przy-pad-k
 ów \OT4/cmr/m/it/12 proof-of-concept
  []
 
 
-Overfull \hbox (8.65439pt too wide) in paragraph at lines 1094--1095
+Overfull \hbox (8.65439pt too wide) in paragraph at lines 1088--1089
 \OT4/cmr/m/n/12 u»yt-ko-wa-nia. Nie-które or-ga-ni-za-cje nie udo-st¦p-niaj¡ ws
 zyst-kich istot-nych szcze-
  []
 
 
-Overfull \hbox (2.40662pt too wide) in paragraph at lines 1103--1103
+Overfull \hbox (2.40662pt too wide) in paragraph at lines 1097--1097
 []\OT4/cmr/bx/n/10.95 RUP4SOA| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1104--1104
+Underfull \hbox (badness 10000) in paragraph at lines 1098--1098
 []\OT4/cmr/m/n/10.95 Meet-in-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1104--1104
+Underfull \hbox (badness 10000) in paragraph at lines 1098--1098
 []\OT4/cmr/m/n/10.95 Meet-in-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1104--1104
+Underfull \hbox (badness 10000) in paragraph at lines 1098--1098
 []\OT4/cmr/m/n/10.95 Meet-in-the-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1104--1104
+Underfull \hbox (badness 10000) in paragraph at lines 1098--1098
 []\OT4/cmr/m/n/10.95 Meet-in-
  []
 
 
-Overfull \hbox (60.57527pt too wide) in paragraph at lines 1102--1104
+Overfull \hbox (60.57527pt too wide) in paragraph at lines 1096--1098
  [] 
  []
 
 
-Underfull \hbox (badness 6893) in paragraph at lines 1106--1106
+Underfull \hbox (badness 6893) in paragraph at lines 1100--1100
 \OT4/cmr/m/n/10.95 Agile (skala 1-5 ro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1107--1107
+Underfull \hbox (badness 10000) in paragraph at lines 1101--1101
 []\OT4/cmr/m/n/10.95 BPMN,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1107--1107
+Underfull \hbox (badness 10000) in paragraph at lines 1101--1101
 \OT4/cmr/m/n/10.95 So-aML,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1107--1107
+Underfull \hbox (badness 10000) in paragraph at lines 1101--1101
 []\OT4/cmr/m/n/10.95 BPMN,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1107--1107
+Underfull \hbox (badness 10000) in paragraph at lines 1101--1101
 \OT4/cmr/m/n/10.95 UML,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1107--1107
+Underfull \hbox (badness 10000) in paragraph at lines 1101--1101
 \OT4/cmr/m/n/10.95 BPEL,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1107--1107
+Underfull \hbox (badness 10000) in paragraph at lines 1101--1101
 \OT4/cmr/m/n/10.95 WSDL,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1107--1107
+Underfull \hbox (badness 10000) in paragraph at lines 1101--1101
 \OT4/cmr/m/n/10.95 BPMN,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1107--1107
+Underfull \hbox (badness 10000) in paragraph at lines 1101--1101
 \OT4/cmr/m/n/10.95 WSDL,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1107--1107
+Underfull \hbox (badness 10000) in paragraph at lines 1101--1101
 []\OT4/cmr/m/n/10.95 BPM,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1107--1107
+Underfull \hbox (badness 10000) in paragraph at lines 1101--1101
 \OT4/cmr/m/n/10.95 WSDL,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1107--1107
+Underfull \hbox (badness 10000) in paragraph at lines 1101--1101
 \OT4/cmr/m/n/10.95 WS-BPEL,
  []
 
 
-Underfull \hbox (badness 7116) in paragraph at lines 1107--1107
+Underfull \hbox (badness 7116) in paragraph at lines 1101--1101
 \OT4/cmr/m/n/10.95 WS-* spe-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1107--1107
+Underfull \hbox (badness 10000) in paragraph at lines 1101--1101
 []\OT4/cmr/m/n/10.95 BPMN,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1107--1107
+Underfull \hbox (badness 10000) in paragraph at lines 1101--1101
 \OT4/cmr/m/n/10.95 UML,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1107--1107
+Underfull \hbox (badness 10000) in paragraph at lines 1101--1101
 \OT4/cmr/m/n/10.95 BPEL,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1107--1107
+Underfull \hbox (badness 10000) in paragraph at lines 1101--1101
 \OT4/cmr/m/n/10.95 WSDL,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1108--1108
+Underfull \hbox (badness 10000) in paragraph at lines 1102--1102
 \OT4/cmr/m/n/10.95 cy-klu »y-cia pro-jektu
  []
 
 
-Underfull \hbox (badness 2671) in paragraph at lines 1110--1110
+Underfull \hbox (badness 2671) in paragraph at lines 1104--1104
 \OT4/cmr/m/n/10.95 to-dyki (skala 1-5 ro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1111--1111
+Underfull \hbox (badness 10000) in paragraph at lines 1105--1105
 []\OT4/cmr/m/n/10.95 Poziom ska-lo-wal-no-±ci,
  []
 
 
-Underfull \hbox (badness 1331) in paragraph at lines 1111--1111
+Underfull \hbox (badness 1331) in paragraph at lines 1105--1105
 \OT4/cmr/m/n/10.95 sze-rzal-no-±ci (skala 1-5
  []
 
 
-Overfull \hbox (60.57527pt too wide) in paragraph at lines 1104--1115
+Overfull \hbox (60.57527pt too wide) in paragraph at lines 1098--1109
  [] 
  []
 
 [73] [74]
-Overfull \hbox (18.846pt too wide) in paragraph at lines 1136--1136
+Overfull \hbox (18.846pt too wide) in paragraph at lines 1130--1130
 []\OT4/cmr/bx/n/17.28 Rozwój me-tod pro-jek-to-wa-nia ar-chi-tek-tury kor-
  []
 
@@ -1422,16 +1447,13 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 95.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 95.
 Package rerunfilecheck Info: File `praca_dyplomowa.out' has not changed.
 (rerunfilecheck)             Checksum: 573BC07F7EF6D49102D6D5AAA6FE4EF2;5869.
-
-LaTeX Warning: There were undefined references.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 95.
  ) 
 Here is how much of TeX's memory you used:
- 8058 strings out of 493921
- 116723 string characters out of 3148874
- 223024 words of memory out of 3000000
- 10956 multiletter control sequences out of 15000+200000
+ 8057 strings out of 493921
+ 116721 string characters out of 3148874
+ 222999 words of memory out of 3000000
+ 10955 multiletter control sequences out of 15000+200000
  17644 words of font info for 51 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  29i,12n,35p,1069b,447s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1449,7 +1471,7 @@ s/type1/public/pl/plr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/pl/plr8
 s/MiKTeX/fonts/type1/public/pl/plti10.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/pl/plti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/pl/pltt12.pfb>
 
-Output written on praca_dyplomowa.pdf (83 pages, 1661465 bytes).
+Output written on praca_dyplomowa.pdf (83 pages, 1658256 bytes).
 PDF statistics:
  1099 PDF objects out of 1200 (max. 8388607)
  236 named destinations out of 1000 (max. 500000)

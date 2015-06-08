@@ -657,7 +657,7 @@ MatSOA w odróżnieniu od wielu występujących metod uwzględnia również anal
 
 W celu dokładnego opisania metody zostaną przedstawione jej poszczególne fazy oraz związane z nią notacje modelowania. Będą opisane również możliwe narzędzia, które wspierają proces projektowania w oparciu o MatSOA.
 
-Metoda MatSOA składa się z sześciu głównych faz, których sekwencja została przedstawiona na rys. \ref{soam_lifecycle}. Wszystkie fazy zawierają szereg aktywności, z których każda ma przypisaną rolę wykonania oraz określone artefakty wejściowe i wyjściowe.
+Metoda MatSOA składa się z sześciu głównych faz, których sekwencja została przedstawiona na rys. \ref{soam_lifecycle}. Wszystkie fazy zawierają szereg aktywności, z których każda ma przypisaną rolę wykonania oraz określone artefakty wejściowe i wyjściowe. Istotne jest również, aby dostosowywać poszczególne fazy do specyfiki danego projektu. 
 
 Faza analizy organizacji oraz wykrywania usług ma równoległy przebieg do analizy obecnych systemów. Produkty wyjściowe powstałe w wyniku dwóch podejść analizy - \emph{top-down} oraz \emph{bottom-up} - są następnie konsolidowane. W kolejnym etapie projektowane są usługi, które z kolei są wykorzystywane do przygotowania procesów biznesowych.
 
@@ -775,14 +775,10 @@ W wyniku konsolidacji tworzony jest model kandydatów usług uwzględniający ro
 \subsection{Specyfikacja usług}
 Po ustaleniu modeli kandydatów usług poszczególne usługi są specyfikowane. Określane są parametry wejściowe i wyjściowe oraz opisywane poszczególne kontrakty usługowe. Na tym etapie tworzony jest również model danych. Przebieg wywołań pomiędzy poszczególnymi interfejsami usług opisywany jest za pomocą diagramu sekwencji. Z kolei każdy interfejs usługi przedstawiany zostaje jako osobna \quotedblbase Linia życia\textquotedblright (ang. Lifeline).
 
-W efekcie specyfikacji usług tworzone są modele jak na rys. \ref{}
-
-//TODO: Dodać model przykładowej specyfikacji usług
-
 \subsection{Projektowanie usług}
-Po ustaleniu modelu operacji usług, poszczególne usługi mogą zostać zaprojektowane. Celem tej fazy jest na podstawie utworzonej wcześniej specyfikacji usług przygotowanie odpowiednich komponentów usług (ang. \emph{Service Components}). 
+Po ustaleniu modelu operacji usług, poszczególne usługi mogą zostać zaprojektowane. Celem tej fazy jest na podstawie utworzonej wcześniej specyfikacji usług przygotowanie odpowiednich komponentów usług (ang. Service Components). 
 
-Do realizacji tych celów zostaną wykorzystane odpowiednie elementy języka SoaML (tab. \ref{tabela_service_projects_soaml}). Istotnym elemenetem są uczestnicy usługi (Participant).  Na podstawie wcześniej utworzonych modeli należy zdecydować, którzy uczestnicy będą wykorzystani i jak zostaną przyłączeni do funkcjonującego systemu. Element Participant zostanie wykorzystany do przedstawienia modelu komponentu, który będzie dostarczał (element Service) lub konsumował (element Request) poszczególne usługi. 
+Do realizacji tych celów zostaną wykorzystane odpowiednie elementy języka SoaML (tab. \ref{tabela_service_projects_soaml}). Istotnym elemenetem są uczestnicy usługi (\emph{<<Participant>>}).  Na podstawie wcześniej utworzonych modeli należy zdecydować, którzy uczestnicy będą wykorzystani i jak zostaną przyłączeni do funkcjonującego systemu. Element \emph{<<Participant>>} zostanie wykorzystany do przedstawienia modelu komponentu, który będzie dostarczał (element \emph{<<Service>>}) lub konsumował (element \emph{<<Request>>}) poszczególne usługi. 
 
 Utworzone komponenty można łatwo integrować z pozostałymi częściami systemu. 
 
@@ -791,15 +787,15 @@ Utworzone komponenty można łatwo integrować z pozostałymi częściami system
 \begin{small}
 \begin{supertabular}{|p{6cm}|p{7cm}|}\hline
 \textbf{Element projektu usługi} & \textbf{Element w języku SoaML}\\\hline
-Interfejs usługi (ang. \emph{Service interface}) &	ServiceInterface - klasa UML ze stereotypem  ServiceInterface  \\\hline
-Dostarczana operacja (ang. \emph{Provided operaton}) &	Operacja wewnątrz interfejsu realizowana przez element ServiceInterface \\\hline
-Realizowana operacja (ang. \emph{Realized operation}) &	Operacja, która jest połączona z elementem ServiceInterface poprzez użycie Usage Dependency z UML \\\hline
-Komponent usługi (ang. \emph{Service component}) &	Usage Dependency - Uczestnik - komponent UML nazywany Participant \\\hline
-Dostarczana usługa (ang. \emph{Provided service}) &	Usługa - port UML ze stereotypem Service  \\\hline
-Wymagana usługa (ang. \emph{Required service}) &	Zapytanie - port UML ze stereotypem Request \\\hline
-Wewnętrzne zachowanie (ang. \emph{Internal behaviour}) &	Aktywność UML, która jest dodawana jako OwnedBehaviour do elementu Participant \\\hline
-Port &	Element Port wykorzystywany przy tworzeniu dostarczanej usługi\\\hline
-Kanał usług &	Element ServiceChannel wykorzystywany przy tworzeniu połączeń pomiędzy konsumentami i producentami usług\\\hline
+Interfejs usługi (ang. Service interface) &	\emph{<<ServiceInterface>>} - klasa UML ze stereotypem  ServiceInterface  \\\hline
+Dostarczana operacja (ang. Provided operaton) &	Operacja wewnątrz interfejsu realizowana przez element \emph{<<ServiceInterface>>} \\\hline
+Realizowana operacja (ang. Realized operation) &	Operacja, która jest połączona z elementem \emph{<<ServiceInterface>>} poprzez użycie Usage Dependency z UML \\\hline
+Komponent usługi (ang. Service component) &	Usage Dependency - Uczestnik - komponent UML nazywany \emph{<<Participant>>} \\\hline
+Dostarczana usługa (ang. Provided service) &	Usługa - port UML ze stereotypem \emph{<<Service>>}  \\\hline
+Wymagana usługa (ang. Required service) &	Zapytanie - port UML ze stereotypem \emph{<<Request>>} \\\hline
+Wewnętrzne zachowanie (ang. Internal behaviour) &	Aktywność UML, która jest dodawana jako \\emph{<<OwnedBehaviour>>} do elementu \emph{<<Participant>>} \\\hline
+Port &	Element \emph{<<Port>>} wykorzystywany przy tworzeniu dostarczanej usługi\\\hline
+Kanał usług &	Element \emph{<<ServiceChannel>>} wykorzystywany przy tworzeniu połączeń pomiędzy konsumentami i producentami usług\\\hline
 \end{supertabular}
 \end{small}
 \end{center}
@@ -808,7 +804,7 @@ Kanał usług &	Element ServiceChannel wykorzystywany przy tworzeniu połączeń
 \end{table}
 
 \subsection{Choreografia usług}
-Choreografia usług stanowi końcową fazę metody MatSOA. Tworzone są moduły SCA (ang. \emph{Service Component Architecture}), w których opisywany jest sposób komunikacji w systemie między komponentami. Poszczególne wywołania usług poddawane są choreografii z wykorzystaniem WS-BPEL. Wywołania usług definiowane są jako aktywności, a w przypadku wystąpienia błędów wyrzucane są odpowiednie wyjątki. Jeśli zachodzi potrzeba transformacji komunikatów do wymaganej formy przez producenta lub konsumenta można utworzyć odpowiednie mediacje. Przed wywołaniem usługi komunikat zostaje przetworzony wówczas do akceptowalnej formy.
+Choreografia usług stanowi końcową fazę metody MatSOA. Tworzone są moduły SCA (ang. Service Component Architecture), w których opisywany jest sposób komunikacji w systemie między komponentami. Poszczególne wywołania usług poddawane są choreografii z wykorzystaniem WS-BPEL. Wywołania usług definiowane są jako aktywności, a w przypadku wystąpienia błędów wyrzucane są odpowiednie wyjątki. Jeśli zachodzi potrzeba transformacji komunikatów do wymaganej formy przez producenta lub konsumenta można utworzyć odpowiednie mediacje. Przed wywołaniem usługi komunikat zostaje przetworzony wówczas do akceptowalnej formy.
 
 Przygotowane moduły SCA są wdrażane bezpośrednio na serwer gdzie definiowane są połączenia punktów końcowych do poszczególnych usług zewnętrznych.
 
@@ -823,14 +819,14 @@ Systemy bankowe często charakteryzują się dużą złożonością i panuje w n
  
 W niniejszym rozdziale metoda MatSOA zostanie poddana weryfikacji pod względem przydatności do tworzenia tego typu systemów. Systemy bankowe to dziedzina bardzo szeroka dlatego zostanie przedstawiony projekt tylko niewielkiej części wyobrażonego systemu. Niemniej jednak na tym przykładzie zostaną zaprezentowane wszystkie fazy autorskiej metody.
 
-W oparciu o zasady \emph{Model Driven Development (MDD)} zostanie również przedstawiony proces implementacji zgodnie z utworzonymi modelami. Wdrożenie systemu wymaga również istotnych rozważeń związanych z konfiguracjami środowiska, na którym będzie funkcjonować. Zostaną więc też przedstawione szczegóły techniczne dotyczące budowania systemu oraz jego instalacji na serwerach.
+W oparciu o zasady Model Driven Development (MDD) zostanie również przedstawiony proces implementacji zgodnie z utworzonymi modelami. Wdrożenie systemu wymaga również istotnych rozważeń związanych z konfiguracjami środowiska, na którym będzie funkcjonować. Zostaną więc też przedstawione szczegóły techniczne dotyczące budowania systemu oraz jego instalacji na serwerach.
 
 Na zakończenie rozdziału zostaną opisane również testy jakim zostanie poddany system po utworzeniu.
 
 \section{Projektowanie systemu bankowego w oparciu o utworzoną koncepcję}
 Przykład wykorzystany w pracy będzie oparty na wymyślonej przez autora koncepcji organizacji. Zostaną przedstawione i poddane rozważaniom jednakże tylko wybrane modele mające na celu jak najlepszą prezentację poszczególnych faz metody MatSOA.
 
-Modele w rozdziale zostały przygotowane z wykorzystaniem narzędzi Rational Software Architect w wersji 8.5 wraz z doinstalowanym dodatkiem do obsługi języka SoaML oraz WebSphere Integration Developer w wersji 7.0, w którym zdefiniowane połączenia pomiędzy komponentami i zaimplenetowano całość systemu.
+Modele w rozdziale zostały przygotowane z wykorzystaniem narzędzi Rational Software Architect w wersji 8.5 wraz z doinstalowanym dodatkiem do obsługi języka SoaML oraz WebSphere Integration Developer w wersji 7.0, w którym zdefiniowano połączenia pomiędzy komponentami i zaimplenetowano całość systemu.
 
 \subsection{Opis sytuacji biznesowej}
 FrostRes stanowi niewielki bank krajowy. Ze względu na krótki pobyt na rynku pełni tylko podstawową liczbę usług związanych przede wszystkim z utrzymywaniem kont klientów i wykonywaniem podstawowych operacji finansowych. 
@@ -847,7 +843,7 @@ Ze względu na fakt, że w przyszłości planowane są kolejne modernizacje oraz
 
 
 \subsection{Analiza}
-Analizy zostanie przedstawiona w podziale na poszczególne etapy zgodne z metodą MatSOA. Rozpocznie się od opisania BMM, na podstawie którego zostanie utworzony uproszczony model procesu biznesowego. W kolejnych krokach zostaną przedstawione rozważania dotyczące wymagań funkcjonalnych i niefunkcjonalnych.
+Analiza zostanie przedstawiona w podziale na poszczególne etapy zgodne z metodą MatSOA. Rozpocznie się od opisania BMM, na podstawie którego zostanie utworzony uproszczony model procesu biznesowego. W kolejnych krokach zostaną przedstawione rozważania dotyczące wymagań funkcjonalnych i niefunkcjonalnych.
 
 \subsection*{Przygotowanie Business Motivation Model (BMM)}
 Budowa systemu dla FrostRes została rozpoczęta od przygotowania motywacyjnego modelu biznesu. Tworzenie BMM jest krokiem opcjonalnym metody MatSOA jednakże stanowi bardzo dobry wstęp dla analizy. W zależności od stopnia złożoności sytuacji biznesowej może wykazywać się różnym poziomem szczegółowości. Modernizacja banku FrostRes nie stanowi zbyt złożonego problemu biznesowego, dlatego tworzony BMM będzie zawierał tylko najbardziej podstawowe elementy.
@@ -863,9 +859,8 @@ W BMM opisano również stan oczekiwany (element \emph{<<End>>}) przez bank Fros
 \end{centering}
 \end{figure}
 
-W następnym kroku wykryty wcześniej proces \emph{Obsługa przelewu międzynarodowego} (rys. \ref{proces_operacja_przeleu_miedzynarodowego}) opisano z wykorzystaniem języka BPMN. Opiera się na usługach poddanych pewnego rodzaju \emph{choreografii}. Ma on charakter jedynie poglądowy. Na tym etapie nie jest zdefiniowany jeszcze przepływ danych pomiędzy poszczególnymi aktywnościami procesu. Tworzenie uproszczonej formy modelu procesu w początkowej fazie cyklu życia projektu SOA ma na celu jak najwcześniejsze wykrycie istotnych problemów związanych z logiką przebiegu wywoływania usług pomiędzy poszczególnymi podmiotami. Pozwala to także na ewentualne dostosowanie uczestnikom integracji wystawianych interfejsów. Poniżej został opisany przebieg procesu wraz z przepływem pomiędzy uczestniczącymi rolami.
+W następnym kroku wykryty wcześniej proces \quotedblbase Obsługa przelewu międzynarodowego\textquotedblright  (rys. \ref{proces_operacja_przeleu_miedzynarodowego}) opisano z wykorzystaniem języka BPMN. Opiera się na usługach poddanych pewnego rodzaju \quotedblbase choreografii\textquotedblright. Ma on charakter jedynie poglądowy. Na tym etapie nie jest zdefiniowany jeszcze przepływ danych pomiędzy poszczególnymi aktywnościami procesu. Tworzenie uproszczonej formy modelu procesu w początkowej fazie cyklu życia projektu SOA ma na celu jak najwcześniejsze wykrycie istotnych problemów związanych z logiką przebiegu wywoływania usług pomiędzy poszczególnymi podmiotami. Pozwala to także na ewentualne dostosowanie uczestnikom integracji wystawianych interfejsów. Poniżej został opisany przebieg procesu wraz z przepływem pomiędzy uczestniczącymi rolami.
 
-//TODO: Zaaktualizować model procesu
 \begin{figure}[h!tbp]
 \begin{centering}
 \includegraphics[width=12.5cm,height=20cm]{img/proces_operacja_przeleu_miedzynarodowego.png}
@@ -873,7 +868,6 @@ W następnym kroku wykryty wcześniej proces \emph{Obsługa przelewu międzynaro
 \end{centering}
 \end{figure}
 
-//TODO: zaaktualizować scenariusz
 \begin{flushleft}
 1. Klient tworzy zlecenie przelewu międzynarodowego.\\
 2. Klient wysyła zlecenie przelewu międzynarodowego.\\
@@ -923,7 +917,7 @@ Jeśli przelew wykona się poprawnie powinien być zwrócony odpowiedni komunika
 \subsection*{Wymagania niefunkcjonalne}
 Na wymagania niefunkcjonalne składają się: model domeny, wykrycie obecnych systemów oraz atrybuty jakościowe.
 
-Model domeny został podzielony na poszczególnych aktorów oraz odpowiadające im obszary funkcjonalne. Tak jak przedstawia model z rys. \ref{model_domeny_funk} klient i bank będą przypisani do \quotedblbase Zarządzania operacjami bankowymi\textquotedblright. Wynika to z faktu, że zarówno klient jak i bank będą miały możliwość uruchomienia zlecenia przelewu międzynarodowego. Bank ponadto został przypisany do obszaru \quotedblbase Zarządzanie rozliczeniami\textquotedblright. Będzie miał możliwość rejestracji faktu wykonania transakcji przelewu w systemie. Bank i NBP ponadto będą miały możliwość \quotedblbase Kontroli przepływów finansowych\textquotedblright, która będzie polegać na wstępnej weryfikacji zlecenia przelewu ze strony banku, a później kolejnej w wykonaniu NBP.
+Model domeny został podzielony na poszczególnych aktorów oraz odpowiadające im obszary funkcjonalne. Tak jak przedstawia model z rys. \ref{model_domeny_funk} klient i bank będą przypisani do \quotedblbase Zarządzania operacjami bankowymi\textquotedblright. Wynika to z faktu, że zarówno klient jak i bank będą mieli możliwość uruchomienia zlecenia przelewu międzynarodowego. Bank ponadto został przypisany do obszaru \quotedblbase Zarządzanie rozliczeniami\textquotedblright. Będzie miał możliwość rejestracji faktu wykonania transakcji przelewu w systemie. Bank i NBP ponadto będą miały możliwość \quotedblbase Kontroli przepływów finansowych\textquotedblright, która będzie polegać na wstępnej weryfikacji zlecenia przelewu ze strony banku, a później kolejnej w wykonaniu NBP.
 
 \begin{figure}[h!tbp]
 \begin{centering}
@@ -932,9 +926,9 @@ Model domeny został podzielony na poszczególnych aktorów oraz odpowiadające 
 \end{centering}
 \end{figure}
 
-Dotychczas w banku znajdowało się kilka podsystemów wchodzących w skład jednego większego systemu: zarządzania kontami klientów, obsługa transakcji finansowych oraz zarządzanie rozliczeniami. W przypadku banku FrostRes istotne dla wprowadzonych modyfikacji są: zarzadzanie operacjami bankowymi oraz zarządzanie rozliczeniami. Wszystkie podsystemy są zgodne z pryncypiami SOA, więc nie będzie konieczne tworzenie usług obudowujących. W późniejszym etapie metody MatSOA zostaną wykryte usługi obecnych systemów.
+Dotychczas w banku znajdowało się kilka podsystemów wchodzących w skład jednego większego systemu: zarządzania kontami klientów, obsługa transakcji finansowych oraz zarządzanie rozliczeniami. W przypadku banku FrostRes istotne dla wprowadzonych modyfikacji są: zarządzanie operacjami bankowymi oraz zarządzanie rozliczeniami. Wszystkie podsystemy są zgodne z pryncypiami SOA, więc nie będzie konieczne tworzenie usług obudowujących. W późniejszym etapie metody MatSOA zostaną wykryte usługi obecnych systemów.
 
-Do atrybutów jakościowych zalicza się przede wszystkim podstawowe zasady SOA. Stosowanie się do nich w przypadku banku FrostRes jest niebywale ważne, ponieważ w systemie planowane są częste zmiany. Musi charakteryzować się dlatego jak największą ziarnistością, reużywalnością oraz powinien być w jak największym stopniu skalowalny. 
+Do atrybutów jakościowych zalicza się przede wszystkim podstawowe zasady SOA. Stosowanie się do nich w przypadku banku FrostRes jest niebywale ważne, ponieważ w systemie planowane są częste zmiany. Musi charakteryzować się dlatego jak największą ziarnistością, reużywalnością oraz powinien być w jak najwyższym stopniu skalowalny. 
 
 \subsection{Wykrywanie usług}
 W kolejnym etapie analizy wykonywane jest wykrywanie usług. Identyfikując usługi rozpatrujemy domeny funkcjonalne oraz zależności pomiędzy nimi kierując się utworzonym wcześniej, uproszczonym modelem procesu biznesowego. 
@@ -1003,7 +997,7 @@ W przypadku specyfikacji usług dla banku FrostRes przyporządkowano do każdego
 W celu bardziej szczegółowego wyspecyfikowania usług banku FrostRes przygotowano również opisy kontraktów usług oraz modele sekwencji pomiędzy poszczególnymi podmiotami w procesie. 
 
 \subsection{Projektowanie usług}
-Projektowanie usług rozpoczęto od utworzenia diagramu uczestników (ang. \emph{Participants diagram}) biorących udział w usługach. Zaznaczono na nim interfejsy dostarczane oraz wywoływane. Wyodrębniono takich uczestników jak: \emph{ZarzadcaOperacjiBankowych}, \emph{KontroloerPrzeplywowFinansowych}, \emph{ZarzadcaRozliczen}.
+Projektowanie usług rozpoczęto od utworzenia diagramu uczestników (ang. Participants diagram) biorących udział w usługach. Zaznaczono na nim interfejsy dostarczane oraz wywoływane. Wyodrębniono takich uczestników jak: \emph{ZarzadcaOperacjiBankowych}, \emph{KontroloerPrzeplywowFinansowych}, \emph{ZarzadcaRozliczen}.
 
 Na podstawie diagramu uczestników oraz specyfikacji usług przygotowano diagram komponentów dla przelewów międzynarodowych (rys. \ref{operacja_przelewu_diagram_komponentow}). Komponent posiada jeden interfejs zewnętrzny \emph{ObslugaPrzelewuMiedzynarodowego}. Poszczególne interfejsy uczestników usługi (zarówno wywoływane jak i dostarczane) zostały połączone przy użyciu elementu \emph{<<ServiceChannel>>}.
 
@@ -1015,12 +1009,12 @@ Na podstawie diagramu uczestników oraz specyfikacji usług przygotowano diagram
 \end{figure}
 
 \subsection{Choreografia usług}
-Choreografia usług w formie procesu biznesowego BPEL została utworzona w narzędziu WebSphere Integration Developer. Przygotowanie procesu rozpoczęto od utworzenia diagramu asemblacji gdzie zaznaczone są usługi importowane do procesu (\emph{inbound}) oraz eksportowane (\emph{outbound}).
+Choreografia usług w formie procesu biznesowego BPEL została utworzona w narzędziu WebSphere Integration Developer. Przygotowanie procesu rozpoczęto od utworzenia diagramu asemblacji gdzie zaznaczone są usługi importowane do procesu (ang. Inbound) oraz eksportowane (ang. Outbound).
 
 \section{Proces wdrożenia}
-Utworzone modele usług zostały poddane transformacie UML do SOA w narzędziu Rational Software Architect. Wygenerowane zostały opisy poszczególnych usług przy wykorzystaniu WSDL oraz zdefiniowano obiekty danych za pomocą XSD (ang \emph{XML Schema Definition}). 
+Utworzone modele usług zostały poddane transformacie UML do SOA w narzędziu Rational Software Architect. Wygenerowane zostały opisy poszczególnych usług przy wykorzystaniu WSDL oraz zdefiniowano obiekty danych za pomocą XSD (ang. XML Schema Definition). 
 
-Wygenerowane elementy zostały następnie zaimportowane do narzędzia WebSphere Integration Developer. Utworzono w nim projekt typu \quotedblbase Rozwiązanie integracji\textquotedblright. W projekcie na diagramie asemblacji (ang. \emph{Assembly diagram}) przedstawiono komunikację pomiędzy poszczególnymi komponentami (\ref{komponenty_inbound_outbound}).  
+Wygenerowane elementy zostały następnie zaimportowane do narzędzia WebSphere Integration Developer. Utworzono w nim projekt typu \quotedblbase Rozwiązanie integracji\textquotedblright. W projekcie na diagramie asemblacji (ang. Assembly diagram) przedstawiono komunikację pomiędzy poszczególnymi komponentami (\ref{komponenty_inbound_outbound}).  
 
 \begin{figure}[h!tbp]
 \begin{centering}
@@ -1086,7 +1080,7 @@ W tabeli (tab. \ref{tabela_methods_comparison}) przedstawiono zestawienie najpop
 
 Elementy, które wzięto pod uwagę w zestawieniu:
 \begin{itemize}
-\item{Strategia dostarczania (ang. \emph{Delivery strategy}) - występują trzy spotykane strategie dostarczania architektury korporacyjnej. Zależą one od stopnia złożoności domeny biznesowej oraz poziomu oparcia się na istniejących elementach organizacji. Strategia \emph{top-down} oznacza tworzenie całości architektury korporacyjnej od początku. \emph{Bottom-up} oznacza z kolei wykorzystywanie istniejących elementów organizacji do utworzenia architektury korporacyjnej. \emph{Meet-in-the-middle} stanowi natomiast konsolidację obydwu podejść. }
+\item{Strategia dostarczania (ang. Delivery strategy) - występują trzy spotykane strategie dostarczania architektury korporacyjnej. Zależą one od stopnia złożoności domeny biznesowej oraz poziomu oparcia się na istniejących elementach organizacji. Strategia \emph{top-down} oznacza tworzenie całości architektury korporacyjnej od początku. \emph{Bottom-up} oznacza z kolei wykorzystywanie istniejących elementów organizacji do utworzenia architektury korporacyjnej. \emph{Meet-in-the-middle} stanowi natomiast konsolidację obydwu podejść. }
 \item{Wykorzystanie w komercyjnych projektach - istotne jest potwierdzenie przydatności metody w praktyce. W oparciu o opinię przypadków \emph{proof-of-concept} metoda może być również udoskonalana i poprawiana. Wiele przykładów udanego zastosowania metody świadczy o jej wysokim poziomie dojrzałości.}
 \item{Stopień oparcia się na Agile - wiele istniejących metod wymaga ścisłego przestrzegania narzucanych przez nie schematów. Nie jest to odpowiednie podejście, ponieważ zawsze istnieje ryzyko wprowadzania rozległych zmian. Parametr ten określa poziom w jakim metodyka jest w stanie przestrzegać zasad manifestu Agile.}
 \item{Wykorzystywane języki i techniki - metody korzystają z różnorodnych języków oraz technik w celu jak najlepszego przedstawienia zamysłów projektantów architektury korporacyjnej.}
@@ -1121,7 +1115,7 @@ Na podstawie tabeli \ref{tabela_methods_comparison} można zauważyć, że więk
 
 Nie wszystkie rozpatrywane metody powszechnie wykorzystywano w komercyjnych projektach. Sporą ilość metod (na przykład metodę Papazoglou) opracowano dotychczas jedynie w teorii i nie weryfikowano ich przydatności w praktyce. Najpopularniejsze metody takie jak RUP4SOA oraz SOMA ze względu na swoją dojrzałość mają najwięcej potwierdzonych przypadków użycia w komercyjnych projektach.
 
-Większość metod sugeruje podejście \emph{Agile} w tworzeniu architektury zorientowanej usługowo. Autor pracy uznał, że najwięcej cech \emph{Agile} miała MatSOA (ocena 5) oraz RUP4SOA i SOMA (oceny 4). Metody te charakteryzują się najbardziej elastycznym podejściem do stosowania schematów. Pozwalają w największym stopniu na dopasowywać się do specyfiki lub sytuacji projektowej.
+Większość metod sugeruje podejście Agile w tworzeniu architektury zorientowanej usługowo. Autor pracy uznał, że najwięcej cech Agile miała MatSOA (ocena 5) oraz RUP4SOA i SOMA (oceny 4). Metody te charakteryzują się najbardziej elastycznym podejściem do stosowania schematów. Pozwalają w największym stopniu na dopasowywać się do specyfiki lub sytuacji projektowej.
 
 Analizowane metody wykorzystują różne języki i techniki do osiągnięcia swoich celów. Większość opiera się na BPMN oraz UML. Jedynie MatSOA do tworzenia modeli architektury zorientowanej usługowo wykorzystuje SoaML. Każda z metod do komunikacji między usługami wykorzystuje komunikację typu Web Service oraz korzysta z plików WSDL.
 

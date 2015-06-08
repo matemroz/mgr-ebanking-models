@@ -65,7 +65,7 @@
 \contentsline {subsection}{\numberline {6.2.2}Analiza}{58}{subsection.6.2.2}
 \contentsline {subsection}{\numberline {6.2.3}Wykrywanie us\IeC {\l }ug}{64}{subsection.6.2.3}
 \contentsline {subsection}{\numberline {6.2.4}Wykrywanie us\IeC {\l }ug obecnych system\IeC {\'o}w}{65}{subsection.6.2.4}
-\contentsline {subsection}{\numberline {6.2.5}Konsolidacja us\IeC {\l }ug}{66}{subsection.6.2.5}
+\contentsline {subsection}{\numberline {6.2.5}Konsolidacja us\IeC {\l }ug}{65}{subsection.6.2.5}
 \contentsline {subsection}{\numberline {6.2.6}Specyfikacja us\IeC {\l }ug}{66}{subsection.6.2.6}
 \contentsline {subsection}{\numberline {6.2.7}Projektowanie us\IeC {\l }ug}{67}{subsection.6.2.7}
 \contentsline {subsection}{\numberline {6.2.8}Choreografia us\IeC {\l }ug}{67}{subsection.6.2.8}
