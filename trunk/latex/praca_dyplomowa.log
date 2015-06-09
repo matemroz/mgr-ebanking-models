@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.5.10)  8 JUN 2015 07:02
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.5.10)  8 JUN 2015 23:27
 entering extended mode
 **praca_dyplomowa.tex
 (C:\Users\IBM_ADMIN\Documents\Studia\MGR2\trunk\latex\praca_dyplomowa.tex
@@ -606,9 +606,8 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box31
 \enitdp@description=\count114
 )
-(C:\Users\IBM_ADMIN\Documents\Studia\MGR2\trunk\latex\prmag.sty
-Package `prmag' (ISEP PW Thesis) ver. 0.2 (Jan 2011)
-) (C:\Users\IBM_ADMIN\Documents\Studia\MGR2\trunk\latex\praca_dyplomowa.aux)
+(C:\Users\IBM_ADMIN\Documents\Studia\MGR2\trunk\latex\prmag.sty)
+(C:\Users\IBM_ADMIN\Documents\Studia\MGR2\trunk\latex\praca_dyplomowa.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
 LaTeX Font Info:    ... okay on input line 51.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
@@ -699,11 +698,11 @@ LaTeX Info: Redefining \nameref on input line 51.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: twoside 
 * h-part:(L,W,R)=(71.70166pt, 418.25368pt, 107.55254pt)
-* v-part:(T,H,B)=(101.40665pt, 672.50832pt, 71.13188pt)
+* v-part:(T,H,B)=(101.40665pt, 686.7347pt, 56.9055pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=418.25368pt
-* \textheight=672.50832pt
+* \textheight=686.7347pt
 * \oddsidemargin=-0.56833pt
 * \evensidemargin=35.28255pt
 * \topmargin=-7.86334pt
@@ -768,7 +767,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--52
  []
 
 
-Overfull \vbox (57.12634pt too high) has occurred while \output is active []
+Overfull \vbox (64.50133pt too high) has occurred while \output is active []
 
 
 [1
@@ -822,10 +821,15 @@ e Ar-chi-tec-ture) nie-zb¦dna
 
 [6
 
-] [7] [8] [9] <img/ea.png, id=483, 456.95718pt x 533.74406pt>
-File: img/ea.png Graphic file (type png)
+] [7] [8] [9]
+Overfull \hbox (5.71063pt too wide) in paragraph at lines 106--107
+[]\OT4/cmr/m/n/12 Architektura da-nych (ang. Data Ar-chi-tec-ture) - opi-suje g
+ªówne typy i ¹ró-
+ []
 
-<use img/ea.png>
+<img/ea.png, id=483, 456.95718pt x 533.74406pt>
+File: img/ea.png Graphic file (type png)
+ <use img/ea.png>
 Package pdftex.def Info: img/ea.png used on input line 115.
 (pdftex.def)             Requested size: 227.62204pt x 265.86963pt.
 
@@ -1450,10 +1454,10 @@ Package rerunfilecheck Info: File `praca_dyplomowa.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 95.
  ) 
 Here is how much of TeX's memory you used:
- 8057 strings out of 493921
- 116721 string characters out of 3148874
- 222999 words of memory out of 3000000
- 10955 multiletter control sequences out of 15000+200000
+ 8061 strings out of 493921
+ 116771 string characters out of 3148874
+ 223002 words of memory out of 3000000
+ 10959 multiletter control sequences out of 15000+200000
  17644 words of font info for 51 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  29i,12n,35p,1069b,447s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1471,7 +1475,7 @@ s/type1/public/pl/plr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/pl/plr8
 s/MiKTeX/fonts/type1/public/pl/plti10.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/pl/plti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/pl/pltt12.pfb>
 
-Output written on praca_dyplomowa.pdf (83 pages, 1658256 bytes).
+Output written on praca_dyplomowa.pdf (83 pages, 1658081 bytes).
 PDF statistics:
  1099 PDF objects out of 1200 (max. 8388607)
  236 named destinations out of 1000 (max. 500000)
