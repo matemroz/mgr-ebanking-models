@@ -6,17 +6,17 @@
 \contentsline {section}{\numberline {2.1}Wst\IeC {\k e}p}{6}{section.2.1}
 \contentsline {section}{\numberline {2.2}Definicje g\IeC {\l }\IeC {\'o}wnych poj\IeC {\k e}\IeC {\'c} zwi\IeC {\k a}zanych~z~architektur\IeC {\k a} korporacyjn\IeC {\k a}}{6}{section.2.2}
 \contentsline {section}{\numberline {2.3}Wprowadzenie do architektury korporacyjnej}{8}{section.2.3}
-\contentsline {section}{\numberline {2.4}Korzy\IeC {\'s}ci~z~wdro\IeC {\.z}enia architektury korporacyjnej}{11}{section.2.4}
-\contentsline {section}{\numberline {2.5}Podej\IeC {\'s}cie do budowy architektury korporacyjnej}{12}{section.2.5}
-\contentsline {section}{\numberline {2.6}SOA}{13}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Czym jest SOA?}{13}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Historia SOA}{14}{subsection.2.6.2}
+\contentsline {section}{\numberline {2.4}Korzy\IeC {\'s}ci~z~wdro\IeC {\.z}enia architektury korporacyjnej}{12}{section.2.4}
+\contentsline {section}{\numberline {2.5}Podej\IeC {\'s}cie do budowy architektury korporacyjnej}{13}{section.2.5}
+\contentsline {section}{\numberline {2.6}SOA}{14}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Czym jest SOA?}{14}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Historia SOA}{15}{subsection.2.6.2}
 \contentsline {subsection}{\numberline {2.6.3}Budowa SOA}{15}{subsection.2.6.3}
 \contentsline {subsection}{\numberline {2.6.4}Us\IeC {\l }uga sieciowa~w~SOA}{17}{subsection.2.6.4}
 \contentsline {subsection}{\numberline {2.6.5}Warstwy architektury SOA}{18}{subsection.2.6.5}
 \contentsline {subsection}{\numberline {2.6.6}Podstawowe zasady SOA}{19}{subsection.2.6.6}
 \contentsline {subsection}{\numberline {2.6.7}Korporacyjna szyna us\IeC {\l }ug - ESB}{21}{subsection.2.6.7}
-\contentsline {section}{\numberline {2.7}Adaptacja SOA~w~architekturze korporacyjnej}{21}{section.2.7}
+\contentsline {section}{\numberline {2.7}Adaptacja SOA~w~architekturze korporacyjnej}{22}{section.2.7}
 \contentsline {chapter}{\numberline {3}Przegl\IeC {\k a}d j\IeC {\k e}zyk\IeC {\'o}w do projektowania system\IeC {\'o}w informatycznych~o~architekturze SOA}{23}{chapter.3}
 \contentsline {section}{\numberline {3.1}Wst\IeC {\k e}p}{23}{section.3.1}
 \contentsline {section}{\numberline {3.2}SoaML}{24}{section.3.2}
