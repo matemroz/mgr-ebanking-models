@@ -112,7 +112,7 @@ The Open Group~w~swoim opracowaniu dotyczącym TOGAF (The Open Group Architectur
 
 \begin{figure}[h!tbp]
 \begin{centering}
-\includegraphics[width=10cm, height=12cm]{img/ea.png}
+\includegraphics[width=9cm]{img/ea.png}
 \caption[Umiejscowienie architektury~w~korporacji.]{Umiejscowienie architektury~w~korporacji \cite{SOMAArsIBMJour}.}\label{ea_arch}
 \end{centering}
 \end{figure}
@@ -188,13 +188,13 @@ Systemy opierające się na SOA składają się~z~zestawu aplikacji biznesowych 
 
 \begin{figure}[h!tbp]
 \begin{centering}
-\includegraphics[width=15cm]{img/soa_arch.png}
+\includegraphics[width=16cm, height=15cm]{img/soa_arch.png}
 \caption[Przykładowa architektura SOA.]{Przykładowa architektura SOA \cite{EXEntArchSOA}.}\label{PRZArchSOA}
 \end{centering}
 \end{figure}
 
 Komponenty te można traktować jako tzw. „czarne skrzynki”. Klient korzystający~z~usługi otrzymuje jedynie interfejs. Implementacja udostępnionych metod nie jest dla niego istotna.
-Rozwiązania stosowane~w~SOA pomagają zapanować nad złożonością systemu. Podstawowa budowa SOA opiera się~z~reguły na szynie ESB (ang. Enterprsie Service Bus) integrującej poszczególne usługi. ESB jest efektywnym środkiem komunikacji~w~SOA. Pomaga uwolnić się od sieci powiązań typu „każdy~z~każdym”. Odpowiada za przesyłanie komunikatów do odpowiednich komponentów. Rozbudowa systemu polega na dołączaniu nowych usług do szyny integracyjnej. 
+Rozwiązania stosowane~w~SOA pomagają zapanować nad złożonością systemu. Podstawowa budowa SOA opiera się~z~reguły na szynie ESB (ang. Enterprsie Service Bus) integrującej poszczególne usługi. ESB jest efektywnym środkiem komunikacji~w~SOA. Pomaga uwolnić się od sieci powiązań typu „każdy~z~każdym” (ang. Point to point). Odpowiada za przesyłanie komunikatów do odpowiednich komponentów. Rozbudowa systemu polega na dołączaniu nowych usług do szyny integracyjnej. 
 	
 Komunikaty zanim zostaną wysłane do punktu docelowego często poddawane są transformacjom~i~odpowiedniemu dostosowaniu za pomocą mediacji (ang. Mediations) na ESB. Przetworzony komunikat odpowiada formie jakiej oczekuje dostawca usługi.
 	
@@ -215,7 +215,7 @@ Każdy~z~komponentów jest odpowiedzialny za pełnienie swojej roli:
 
 \begin{figure}[h!tbp]
 \begin{centering}
-\includegraphics[width=11cm]{img/web_service.png}
+\includegraphics[width=13cm, height=7cm]{img/web_service.png}
 \caption[Usługa sieciowa~w~SOA (Web Service).]{Usługa sieciowa~w~SOA (Web Service). }\label{WSArchFunc}
 \end{centering}
 \end{figure}
@@ -226,34 +226,36 @@ W SOA można wyszczególnić dziewięć warstw architektury. Każda~z~nich skła
 Poszczególne warstwy~w~SOA to:
 \begin{itemize}
 \item{Warstwa aplikacji -~w~jej skład wchodzą wszystkie aplikacje działające~w~środowisku IT~i~mające na celu wspieranie działania przedsiębiorstwa. Do przykładów można zaliczyć: aplikacje Java Enterprise~lub~.NET, systemy transakcyjne, bazy danych oraz systemy ERP~i~CRM.}
-\item{Warstwa komponentów - obejmuje składniki oprogramowania realizujące konkretne operacje usług Odpowiada za fizyczną implementację usługi oraz jej opis dostarczając elementy zgodne~z~SCA (ang. \textit{Service Component Architecture}) oraz specyfikacją SDO (ang. \textit{Service Data Objects}).}
+\item{Warstwa komponentów - obejmuje składniki oprogramowania realizujące konkretne operacje usług. Odpowiada za fizyczną implementację usługi oraz jej opis. Dostarcza elementy zgodne~z~SCA (ang. \textit{Service Component Architecture}) oraz specyfikacją SDO (ang. \textit{Service Data Objects}).}
 \item{Warstwa usług - stanowi zbiór wszystkich usług zdefiniowanych za pomocą kontraktu pomiędzy dostawcą,~a~odbiorcą~o~sposobie dostarczenia usługi.}
 \item{Warstwa procesów biznesowych -~w~tej fazie tworzona jest kompozycja wielu usług realizujących konkretne biznesowe przypadku użycia. Proces biznesowy składa się~z~przepływów realizujących dany cel biznesowy organizacji~i~zagregowanych usług.}
 \item{Warstwa prezentacji - stanowi często wspólny interfejs dostępu do usług. Odpowiada za dostarczanie funkcji biznesowych dla klientów końcowych.}
-\item{Warstwa integracji - kluczowy element architektury SOA. Jej podstawową funkcją jest zlecenie klientom usług~i~dostarczanie ich przez dostawców. Przepływ operacji jaki jest wykonywany~w~tej warstwie to: odbiór zlecenia od klienta, dostarczenie go do dystrybutora,~a~następnie dostarczenie do klienta.}
-\item{Warstwa jakościowa - obejmuje monitorowanie procesów biznesowych odnoszących się do podstawowych wskaźników wydajności danej organizacji. Pełni obserwację pozostałych warstw~i~informuje~o~zdarzeniach niezgodnych~z~zakładanymi.}
+\item{Warstwa integracji - kluczowy element architektury SOA. Jej podstawową funkcją jest zlecanie klientom usług~i~dostarczanie ich przez dostawców. Przepływ operacji jaki jest wykonywany~w~tej warstwie to: odbiór zlecenia od klienta, dostarczenie go do dystrybutora,~a~następnie dostarczenie do klienta.}
+\item{Warstwa jakościowa - obejmuje monitorowanie procesów biznesowych odnoszących się do podstawowych wskaźników wydajności danej organizacji. Pełni rolę obserwatora dla pozostałych warstw~i~informuje~o~zdarzeniach niezgodnych~z~zakładanymi.}
 \item{Warstwa Business Intelligence - stanowi podstawę do budowania rozwiązań Business Intelligence umożliwiających modelowanie danych analitycznych~i~eksploracje.~W~tej warstwie włączane są kluczowe zagadnienia związane~z~obiegiem informacji~w~przedsiębiorstwach.}
 \item{Warstwa zarządzania - odnosi się do zarządzania wszystkimi elementami cyklu życiu SOA oraz warstw architektury (ze szczególnym naciskiem na warstwę jakościową). Wykorzystuje kluczowe wskaźniki wydajności~lub~efektywności (KPI) do egzekwowania wymagań jakościowych~i~funkcjonalnych wyspecyfikowanych przez przedsiębiorstwo \cite{PlatIntGor}.}
 \end{itemize}
 
 \subsection{Podstawowe zasady SOA}
-Systemy SOA mogą być bardzo różnorodne. SOA nie narzuca konkretnych technologii,~a~jej realizacja może odbywać się na wiele sposobów. Komunikacja między komponentami~w~SOA może wykorzystywać różne kanały komunikacji: WS, HTTP, HTTPS, LDAP, FTP, IMAP, JMS, RMI. Budowa systemu SOA może wykorzystywać szynę integracyjną ESB~lub~broker (można również łączyć wiele szyn ESB ze sobą~lub~łączyć broker’y~z~ESB). Mimo tej dużej dowolności istnieje zestaw zasad, na których powinien opierać się każdy system SOA.
+Systemy SOA mogą być bardzo różnorodne. SOA nie narzuca konkretnych technologii,~a~jej realizacja może odbywać się na wiele sposobów. Komunikacja między komponentami~w~SOA odbywa się głównie z wykorzystaniem WS (Web Service). Może jednak wykorzystywać też inne kanały komunikacji: HTTP, HTTPS, LDAP, FTP, IMAP, JMS oraz RMI. 
+
+Budowa systemu SOA może wykorzystywać szynę integracyjną ESB~lub~broker (można również łączyć wiele szyn ESB ze sobą~lub~łączyć broker’y~z~ESB). Mimo tej dużej dowolności istnieje zestaw zasad, na których powinien opierać się każdy system SOA.
 \begin{itemize}
 \item{luźne powiązania - powiązania odnoszą się do połączeń~lub~relacji między poszczególnymi elementami. Termin „luźne powiązania” (ang. Loose Coupling) stanowi jeden~z~fundamentów SOA \cite{SOAsdj102009}. Odwołuje się do sposobu~w~jaki komponenty SOA współpracują ze sobą.  Zasada „luźnych powiązań” promuje niezależną konstrukcję~i~ewolucję usług. Każdy~z~komponentów może pracować autonomicznie wykonując określone czynności. Pracując razem, wymieniają między sobą komunikaty~i~mogą realizować to co jest zwykle możliwe przez duże, monolityczne aplikacje. „Luźne powiązania” pozwalają również na łatwą dekompozycję komponentów~i~wykorzystywanie ich do innych celów.}
-\item{interoperacyjność (ang. Interoperability) - opiera się na współpracy pomiędzy systemami. Zapewnienie interoperacyjności jest kolejną bardzo istotną zasadą,~o~której należy pamiętać tworząc systemy SOA.~W~miarę rozwoju poszczególnych systemów (np. poprzez dodawanie nowych komponentów) problem integracji staje się coraz trudniejszy do rozwiązania. Należy już na etapie projektowania ograniczać do minimum oraz wybierać odpowiednie protokoły, które dany system będzie obsługiwał \cite{SOAsdj102009}.}
-\item{kompozycyjność - zasada kompozycyjności (ang. Composability) jest związana~z~zachowaniem odpowiednich relacji między komponentami. Systemy, które podążają za ta zasadą cechują się możliwością łączenia swoich komponentów~w~różne kombinacje~w~celu spełnienia postawionych wymagań. Umiejętność efektywnego komponowania usług~z~już istniejących elementów jest kluczowym wymogiem dla osiągnięcia niektórych~z~podstawowych celów przy tworzeniu systemów opierających się na architekturze zorientowanej na usługi.}
-\item{reużywalność - każda tworzona usługa powinna zachowywać zasadę reużywalności (ang. Reusability).  Opiera się ona na takim projektowaniu usług, aby była możliwość wielokrotnego jej wykorzystania do tworzenia kolejnych usług \cite{SOAsdj102009}.}
-\item{kontraktowość usług - każda usługa powinna mieć zdefiniowany kontrakt (ang. Service contract), który zawierany jest każdorazowo pomiędzy usługą,~a~jej konsumentem. Wyrażane są przez nie cele~i~możliwości danej usługi.~W~kontraktach znajdują się również opisy informacji oferowanych ~i~oczekiwanych przez usługi \cite{SOAinfoq10}.}
+\item{interoperacyjność (ang. Interoperability) - opiera się na współpracy pomiędzy systemami. Zapewnienie interoperacyjności jest kolejną bardzo istotną zasadą,~o~której należy pamiętać tworząc systemy SOA.~W~miarę rozwoju poszczególnych systemów (np. poprzez dodawanie nowych komponentów) problem integracji staje się coraz trudniejszy do rozwiązania. Należy już na etapie projektowania ograniczać do minimum wybór protokołów, które dany system będzie obsługiwał \cite{SOAsdj102009}.}
+\item{kompozycyjność - zasada kompozycyjności (ang. Composability) jest związana~z~zachowaniem odpowiednich relacji między komponentami. Systemy, które podążają za ta zasadą cechują się możliwością łączenia swoich komponentów~w~różne kombinacje~w~celu spełnienia postawionych wymagań. Umiejętność efektywnego komponowania usług~z~już istniejących elementów jest kluczowym wymogiem do osiągnięcia niektórych~z~podstawowych celów przy tworzeniu systemów opierających się na architekturze zorientowanej na usługi.}
+\item{reużywalność - każda tworzona usługa powinna zachowywać zasadę reużywalności (ang. Reusability).  Opiera się na takim projektowaniu usług, aby była możliwość wielokrotnego jej wykorzystania do tworzenia kolejnych usług \cite{SOAsdj102009}.}
+\item{kontraktowość usług - wszystkie usługi powinny mieć zdefiniowany kontrakt (ang. Service contract), który zawierany jest każdorazowo pomiędzy usługą,~a~jej konsumentem. Wyrażane są przez niego cele~i~możliwości danej usługi.~W~kontraktach znajdują się również opisy informacji oferowanych ~i~oczekiwanych przez usługi \cite{SOAinfoq10}.}
 \item{enkapsulacja - zasada enkapsulacji (ang. Encapsulation) zakłada, że kontrakty usług mogą zawierać jedynie niezbędne informacje~i~mogą udostępniać jedynie te informacje, które są~w~nich zdefiniowane. Zasada ta podkreśla potrzebę ukrycia przez usługi tak wielu informacji jak to tylko możliwe.}
-\item{autonomiczność usług - autonomia usługi (ang. Service autonomy) jest kolejnym paradygmatem projektowania systemów typu SOA. Termin ten odwołuje się do usług~o~podwyższonej niezależności od środowisk wykonawczych. Usługa powinna mieć możliwość podmiany środowiska wykonawczego~z~lekkiego prototypowego (ang. Lightweight prototype) do pełnowymiarowego (ang. Full-blown),~w~którym są już uruchomione inne usługi odwołujące do niej. Zgodnie~z~zasadą autonomii każda~z~usług może być wdrażana, wersjonowana~i~zarządzana niezależnie od innych \cite{SOAinfoq10}.}
-\item{wykrywalność usług - zasada wykrywalności usług (ang. Services discoverability) polega na tym, że usługi powinny być opisywane za pomocą meta danych~w~takich sposób, aby były efektywnie wyszukiwane, przetwarzane~i~interpretowane zarówno~w~czasie projektowania jak~i~wykonywania \cite{SOAinfoq10}.}
-\item{spójność~i~ziarnistość usług - interfejsy usług~w~systemach SOA powinny być tak zaprojektowane, aby wiązały tylko określony zbiór wymagań biznesowych. \cite{SOAsdj102009} Należy zadbać~o~optymalną ziarnistość interfejsów dla obsługiwanych typów~i~rozmiarów danych (ziarnistość danych wejściowych~i~wyjściowych), wartości biznesowej oraz funkcjonalności (domyślna~i~parametryzowana ziarnistość funkcjonalności).}
+\item{autonomiczność usług - autonomiczność usługi (ang. Service autonomy) jest kolejnym paradygmatem projektowania systemów typu SOA. Termin ten odwołuje się do usług~o~podwyższonej niezależności od środowisk wykonawczych. Usługa powinna mieć możliwość podmiany środowiska wykonawczego~z~lekkiego prototypowego (ang. Lightweight prototype) do pełnowymiarowego (ang. Full-blown),~w~którym są już uruchomione inne usługi odwołujące do niej. Zgodnie~z~zasadą autonomii każda~z~usług może być wdrażana, wersjonowana~i~zarządzana niezależnie od innych \cite{SOAinfoq10}.}
+\item{wykrywalność usług - zasada wykrywalności usług (ang. Services discoverability) polega na tym, że usługi powinny być opisywane za pomocą metadanych~w~takich sposób, aby były efektywnie wyszukiwane, przetwarzane~i~interpretowane zarówno~w~czasie projektowania jak~i~wykonywania \cite{SOAinfoq10}.}
+\item{spójność~i~ziarnistość usług - interfejsy usług~w~systemach SOA powinny być tak zaprojektowane, aby wiązały tylko określony zbiór wymagań biznesowych \cite{SOAsdj102009}. Należy zadbać~o~optymalną ziarnistość interfejsów dla obsługiwanych typów~i~rozmiarów danych (ziarnistość danych wejściowych~i~wyjściowych), wartości biznesowej oraz funkcjonalności (domyślna~i~parametryzowana ziarnistość funkcjonalności).}
 \item{bezstanowość usług - zasada bezstanowości usług (ang. Services statelessness) odwołuje się do minimalizacji użycia zasobów~i~ograniczania się do przechowywania,~i~przetwarzania tylko absolutnie niezbędnych informacji. Usługa nie może być~w~stanie przetrzymywać informacji~o~wcześniejszych żądaniach klienta. Każda~z~informacji powinna być odizolowana od innych. Skuteczne stosowanie zasady bezstanowości może znacząco zwiększyć wydajność rozwiązania oraz zmniejszyć współbieżne działanie usług \cite{SOAsdj102009}.}
 \item{enkapsulacja usług - enkapsulacja (ang. Encapsulation) stanowi jedną~z~podstawowych zasad poprawnego projektowania systemów typu SOA. Zapewnienie odpowiedniej hermetyzacji dla usług sprowadza się do ukrywania szczegółów konfiguracyjnych oraz implementacyjnych danej usługi.}
 \end{itemize}
 
 \subsection{Korporacyjna szyna usług - ESB}
-ESB (ang. Enterprise Service Bus) stanowi abstrakcyjną warstwę wymiany komunikatów.~W~systemie informatycznym wprowadza znaczną elastyczność, ponieważ pozwala na dynamiczne przyłączanie~i~odłączanie usług \cite{PlatIntGor}.
+ESB (ang. Enterprise Service Bus) stanowi abstrakcyjną warstwę wymiany komunikatów.~W~systemach informatycznych wprowadza znaczną elastyczność, ponieważ pozwala na dynamiczne przyłączanie~i~odłączanie usług \cite{PlatIntGor}.
 
 Głównym celem korporacyjnej szyny usług jest dostarczanie pewnego rodzaju wirtualizacji dla korporacyjnych zasobów pozwalając na rozwijanie logiki biznesowej niezależnie od infrastruktury~lub~sieci oraz bez potrzeby pisania dodatkowego kodu. Zasoby~w~ESB są modelowane jako usługi, które oferują jedną~lub~więcej operacji biznesowych \cite{IBMRBSoaPat}.
 
@@ -273,7 +275,7 @@ Architektura korporacyjna powinna dążyć do zapewnienia możliwie jak najwięk
 
 W rozwiązaniu tych problemów pomaga SOA, która opiera się na koncepcji usług, kontraktów, procesów oraz orkiestracji (ang. Orchestration). Wszystkie~z~wymienionych elementów są powiązane~z~domeną biznesową. Pozwalają na kompleksowe opisywanie krytycznych dla biznesu funkcjonalności. 
 
-Problem ze względu na swój zakres oraz ilość elementów branych pod uwagę do jego rozwiązania jest stosunkowo złożony. Konieczne jest dlatego oparcie się na odpowiedniej metodyce.~W~pracy zostanie przedstawione jak zaadaptować SOA~w~architekturze korporacyjnej~z~wykorzystaniem SoaML~z~wykorzystaniem opracowanej optymalnej metody.
+Problem ze względu na swój zakres oraz ilość elementów branych pod uwagę do jego rozwiązania jest stosunkowo złożony. Konieczne jest dlatego oparcie się na odpowiedniej metodyce.~W~pracy zostanie przedstawione jak zaadaptować SOA~w~architekturze korporacyjnej~z~wykorzystaniem SoaML~z~zastosowaniem opracowanej optymalnej metody.
 
 \chapter{Przegląd języków do projektowania systemów informatycznych~o~architekturze SOA}
 
@@ -1069,7 +1071,7 @@ Cel systemu został~w~pełni osiągnięty. Przede wszystkim charakteryzuje się 
 Inne zasady SOA takie jak reużywalność, interoperacyjność czy kontraktowość również zostały spełnione. Każdy komponent systemu może być wykorzystany~w~kontekście innego systemu. Zasada interoperacyjności została uwzględniona, ponieważ system banku FrostRes może~z~powodzeniem komunikować się~z~pozostałymi systemami (jak na przykład opisywany NBP). Ponadto pomiędzy usługami,~a~konsumentami widać wyraźnie zdefiniowane kontrakty (kontraktowość usług).
 
 \chapter{Podsumowanie~i~wnioski}
-W poprzednich rozdziałach dokonano próby definicji terminu \quotedblbase architektura korporacyjna\textquotedblright oraz omówiono najpopularniejsze związane~z~nią metody. Przedstawiono również autorską koncepcję prowadzącą do utworzenia architektury korporacyjnej~w~organizacji. 
+W poprzednich rozdziałach dokonano próby zdefiniowania \quotedblbase architektury korporacyjnej\textquotedblright oraz omówiono najpopularniejsze związane~z~nią metody. Przedstawiono również autorską koncepcję prowadzącą do utworzenia architektury korporacyjnej~w~organizacji. 
 
 Rozdział ten stanowi podsumowanie wcześniejszych badań. Autorska metoda zostanie porównana do innych, obecnie występujących rozwiązań. Nastąpi również próba oceny przydatności oraz możliwości wykorzystania metody~w~realnych projektach systemów informatycznych.
 
@@ -1083,13 +1085,13 @@ W tabeli (tab. \ref{tabela_methods_comparison}) przedstawiono zestawienie najpop
 Elementy, które wzięto pod uwagę~w~zestawieniu:
 \begin{itemize}
 \item{Strategia dostarczania (ang. Delivery strategy) - występują trzy spotykane strategie dostarczania architektury korporacyjnej. Zależą one od stopnia złożoności domeny biznesowej oraz poziomu oparcia się na istniejących elementach organizacji. Strategia \emph{top-down} oznacza tworzenie całości architektury korporacyjnej od początku. \emph{Bottom-up} oznacza~z~kolei wykorzystywanie istniejących elementów organizacji do utworzenia architektury korporacyjnej. \emph{Meet-in-the-middle} stanowi natomiast konsolidację obydwu podejść. }
-\item{Wykorzystanie~w~komercyjnych projektach - istotne jest potwierdzenie przydatności metody~w~praktyce.~W~oparciu~o~opinię przypadków \emph{proof-of-concept} metoda może być również udoskonalana~i~poprawiana. Wiele przykładów udanego zastosowania metody świadczy~o~jej wysokim poziomie dojrzałości.}
+\item{Wykorzystanie~w~komercyjnych projektach - istotne jest potwierdzenie przydatności metody~w~praktyce.~W~oparciu~o~opinię przypadków (ang. Proof-of-concept) metoda może być również udoskonalana~i~poprawiana. Wiele przykładów zastosowań metody zakończonych sukcesem świadczy~o~jej wysokim poziomie dojrzałości.}
 \item{Stopień oparcia się na Agile - wiele istniejących metod wymaga ścisłego przestrzegania narzucanych przez nie schematów. Nie jest to odpowiednie podejście, ponieważ zawsze istnieje ryzyko wprowadzania rozległych zmian. Parametr ten określa poziom~w~jakim metodyka jest~w~stanie przestrzegać zasad manifestu Agile.}
 \item{Wykorzystywane języki~i~techniki - metody korzystają~z~różnorodnych języków oraz technik~w~celu jak najlepszego przedstawienia zamysłów projektantów architektury korporacyjnej.}
 \item{Pokrycie typowych faz cyklu życia projektu - ta cecha oznacza~w~jakim stopniu metoda pokrywa wszystkie podstawowe fazy życia projektu: planowanie, analizę~i~projektowanie, implementację, testowanie oraz wdrożenie.}
 \item{Prawnie zastrzeżony - nie wszystkie metody są powszechnie dostępne do użytkowania. Niektóre organizacje nie udostępniają wszystkich istotnych szczegółów specyfikacji,~a~niektóre udostępniają je tylko odpłatnie.}
 \item{Jakość specyfikacji - wiele~z~metod posiada niedokładne opisy co znacznie utrudnia ich wdrażanie~w~poszczególnych projektach.~W~skali rosnącej 1-5 oceniono jakość oficjalnych specyfikacji poszczególnych metodyk. }
-\item{Poziom skalowalności, elastyczności oraz rozszerzalności - zbiór cech takich jak: skalowalność, elastyczność oraz rozszerzalność wskazuje~w~jakim stopniu metoda jest~w~stanie dostosować się do różnego rodzaju sytuacji projektowych. Skalowalność wskazuje na zdolność metody do przystosowywania się do różnych rozmiarów aplikacji~lub~punktów krytycznych. Elastyczność należy traktować jako poziom możliwości konfiguracji metody~w~trakcie jej używania.~Z~kolei poziom rozszerzalności oznacza jak duże są możliwości danej metody~o~rozbudowę~o~nowe elementy~lub~fazy. }
+\item{Poziom skalowalności, elastyczności oraz rozszerzalności - zbiór cech takich jak: skalowalność, elastyczność oraz rozszerzalność wskazuje~w~jakim stopniu metoda jest~w~stanie dostosować się do różnego rodzaju sytuacji projektowych. Skalowalność wskazuje na zdolność metody do przystosowywania się do różnych rozmiarów aplikacji~lub~punktów krytycznych. Elastyczność należy postrzegać jako poziom możliwości konfiguracji metody~w~trakcie jej używania.~Z~kolei poziom rozszerzalności oznacza jak duże są możliwości danej metody~o~rozbudowę~o~nowe elementy~lub~fazy. }
 \end{itemize}
 
 \begin{table}[!htbp]
@@ -1101,7 +1103,7 @@ Strategia dostarczania & Meet-in-the-middle & Meet-in-the-middle & Meet-in-the-m
 Wykorzystywano~w~komercyjnych projektach & N & T & N & T & T \\\hline
 Stopień oparcia się na Agile (skala 1-5 rosnąco) & 5 & 4 & 3 & 3 & 4 \\\hline
 Wykorzystywane języki~i~techniki & BPMN, SoaML, WSDL& BPMN, UML, BPEL, WSDL, WS-BPEL & CBD, BPM, BPMN, WSDL, BPEL, UML & BPM, WSDL, WS-BPEL, WS-* specifications & BPMN, UML, BPEL, WSDL, WS-BPEL \\\hline
-Pokrycie wszystkich faz cyklu życia projektu (ang. lifecycle coverage) & T & T & T & N & T \\\hline
+Pokrycie wszystkich faz cyklu życia projektu (ang. Lifecycle coverage) & T & T & T & N & T \\\hline
 Prawnie zastrzeżony & N & T & T & N & T \\\hline
 Jakość specyfikacji metodyki (skala 1-5 rosnąco) & 5 & 4 & 2 & 3 & 4 \\\hline
 Poziom skalowalności, elastyczności oraz rozszerzalności (skala 1-5 rosnąco)  & 5 &4 & 2 & 2 & 4 \\\hline
@@ -1115,13 +1117,13 @@ Poziom skalowalności, elastyczności oraz rozszerzalności (skala 1-5 rosnąco)
  
 Na podstawie tabeli \ref{tabela_methods_comparison} można zauważyć, że większość omawianych metod opiera się na strategii dostarczania typu \emph{Meet-in-the-middle}. Jedynie metoda Thomasa Erl'a wykorzystuje podejście \emph{Top-down}.
 
-Nie wszystkie rozpatrywane metody powszechnie wykorzystywano~w~komercyjnych projektach. Sporą ilość metod (na przykład metodę Papazoglou) opracowano dotychczas jedynie~w~teorii~i~nie weryfikowano ich przydatności~w~praktyce. Najpopularniejsze metody takie jak RUP4SOA oraz SOMA ze względu na swoją dojrzałość mają najwięcej potwierdzonych przypadków użycia~w~komercyjnych projektach.
+Nie wszystkie rozpatrywane metody powszechnie wykorzystywano~w~komercyjnych projektach. Sporą ilość metod (na przykład Papazoglou) opracowano dotychczas jedynie~w~teorii~i~nie weryfikowano ich przydatności~w~praktyce. Najpopularniejsze metody takie jak RUP4SOA oraz SOMA ze względu na swoją dojrzałość mają najwięcej potwierdzonych przypadków użycia~w~komercyjnych projektach.
 
-Większość metod sugeruje podejście Agile~w~tworzeniu architektury zorientowanej usługowo. Autor pracy uznał, że najwięcej cech Agile miała MatSOA (ocena 5) oraz RUP4SOA~i~SOMA (oceny 4). Metody te charakteryzują się najbardziej elastycznym podejściem do stosowania schematów. Pozwalają~w~największym stopniu na dopasowywać się do specyfiki~lub~sytuacji projektowej.
+Większość metod sugeruje podejście Agile~w~tworzeniu architektury zorientowanej usługowo. Autor pracy uznał, że najwięcej cech Agile miała MatSOA (ocena 5) oraz RUP4SOA~i~SOMA (oceny 4). Metody te charakteryzują się najbardziej elastycznym podejściem do stosowania schematów. Pozwalają~w~największym stopniu na dopasowywanie się do specyfiki~lub~sytuacji projektowej.
 
-Analizowane metody wykorzystują różne języki~i~techniki do osiągnięcia swoich celów. Większość opiera się na BPMN oraz UML. Jedynie MatSOA do tworzenia modeli architektury zorientowanej usługowo wykorzystuje SoaML. Każda~z~metod do komunikacji między usługami wykorzystuje komunikację typu Web Service oraz korzysta~z~plików WSDL.
+Analizowane metody wykorzystują różne języki~i~techniki do osiągnięcia swoich celów. Większość opiera się na BPMN oraz UML. Jedynie MatSOA do tworzenia modeli architektury zorientowanej usługowo wykorzystuje SoaML. Każda~z~metod do komunikacji między usługami wykorzystuje Web Service oraz używa plików WSDL.
 
-Na podstawie zestawienia~w~tabeli można zauważyć, że jedynie metoda Thomasa Erl'a nie pokrywa wszystkich standardowych faz cyklu życia projektu. Spełnia ona tylko fazy analizy~i~projektowania.
+Na podstawie zestawienia~w~tabeli \ref{tabela_methods_comparison} można zauważyć, że jedynie metoda Thomasa Erl'a nie pokrywa wszystkich standardowych faz cyklu życia projektu. Spełnia ona tylko fazy analizy~i~projektowania.
 
 Z wybranych metod tylko metody MatSOA oraz Thomasa Erl'a nie są prawnie zastrzeżone. Reszta~z~metod (RUP4SOA, Papazoglou oraz SOMA) udostępniają prawa do swojej specyfikacji komercyjnie. 
 
@@ -1130,9 +1132,9 @@ Nie wszystkie~z~metod są dobrze zdefiniowane~i~posiadają szczegółową specyf
 Metody poddane analizie cechują się różnym poziomem skalowalności, elastyczności oraz rozszerzalności. Autor ocenił, że tymi cechami najbardziej charakteryzują się metody MatSOA (ocena 5) oraz RUP4SOA~i~SOMA (oceny 4). Metody Papazoglou~i~Thomasa Erl'a wykazują konieczność trzymania się ściśle ustalonych założeń~i~zasad.
 
 \section{Rozwój metod projektowania architektury korporacyjnej}
-Mimo, że termin \quotedblbase architektura korporacyjna\textquotedblright znany jest już od kilkunastu lat, to rzadko stosuje się go~w~obecnych podejściach architektonicznych. Problem wynika przede wszystkim~z~niskiego poziomu dojrzałości większości organizacji.  Nie rozumieją potrzeby stosowania architektury korporacyjnej~lub~są nieprzygotowane do jej przyjęcia. \cite{SobArchKorpProg}
+Mimo, że termin \quotedblbase architektura korporacyjna\textquotedblright znany jest już od kilkunastu lat, to rzadko stosuje się go~w~obecnych podejściach architektonicznych. Problem wynika przede wszystkim~z~niskiego poziomu dojrzałości większości organizacji.  Nie rozumieją potrzeby stosowania architektury korporacyjnej~lub~są nieprzygotowane do jej przyjęcia \cite{SobArchKorpProg}. 
 
-Architektura korporacyjna stanowi jednak doskonały mechanizm prowadzący do transformacji organizacji~w~celu sprawnego wdrożenia przyjętej strategii biznesowej. Szereg korzyści takich jak: lepsze zrozumienie biznesu~i~potrzeb klienta, lepsze dopasowanie podejmowanych działań do wymagań biznesowych oraz zwiększenie interoperacyjności systemów, rodzi możliwości, że architekci coraz częściej będą opierać się na podejściu proponowanym przez architekturę korporacyjną. \cite{ArchKorpAdmPub} Stan ten może powodować~z~kolei rozwój metod projektowania architektury korporacyjnej. Istnieje obecnie wiele metod jednakże spora część~z~nich została opracowana wyłączenie~w~teorii~i~nie ma potwierdzenia~w~zastosowaniach praktycznych.
+Architektura korporacyjna stanowi jednak doskonały mechanizm prowadzący do transformacji organizacji~w~celu sprawnego wdrożenia przyjętej strategii biznesowej. Szereg korzyści takich jak: lepsze zrozumienie biznesu~i~potrzeb klienta, lepsze dopasowanie podejmowanych działań do wymagań biznesowych oraz zwiększenie interoperacyjności systemów, rodzi możliwości, że architekci coraz częściej będą opierać się na podejściu proponowanym przez architekturę korporacyjną \cite{ArchKorpAdmPub}. Stan ten może powodować~z~kolei rozwój metod projektowania architektury korporacyjnej. Istnieje obecnie wiele metod jednakże spora część~z~nich została opracowana wyłączenie~w~teorii~i~nie ma potwierdzenia~w~zastosowaniach praktycznych.
 
 Według autora pracy rozwój metod może mieć również ścisły związek~z~ewolucją tworzenia systemów informatycznych~w~architekturze zorientowanej usługowo.
 
