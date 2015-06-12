@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.5.10)  12 JUN 2015 02:27
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.5.10)  12 JUN 2015 03:41
 entering extended mode
 **praca_dyplomowa.tex
 (C:\Users\IBM_ADMIN\Documents\Studia\MGR2\trunk\latex\praca_dyplomowa.tex
@@ -807,7 +807,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.31 ...mberline {3.4.3}UML}{29}{subsection.3.4.3}
+l.31 ...mberline {3.4.3}UML}{31}{subsection.3.4.3}
                                                    [1
 
 ]
@@ -820,7 +820,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.67 ...h system\IeC {\'o}w}{63}{subsection.6.2.4}
+l.67 ...h system\IeC {\'o}w}{65}{subsection.6.2.4}
                                                    [2])
 \tf@toc=\write4
 
@@ -968,34 +968,10 @@ Overfull \hbox (22.30147pt too wide) in paragraph at lines 358--359
 apli-ka-cji, da-nych i tech-
  []
 
-[28]
-Overfull \hbox (23.82924pt too wide) in paragraph at lines 377--378
-\OT4/cmr/m/n/12 by¢ re-pre-zen-to-wani jako en-cje ak-to-rów biz-ne-so-wych (an
-g. Bu-si-ness ac-tors). Ka»dy z nich
- []
-
-
-Overfull \hbox (5.55582pt too wide) in paragraph at lines 377--378
-\OT4/cmr/m/n/12 po-wi-nien mie¢ przy-pi-san¡ co naj-mniej jedn¡ rol¦ biz-ne-sow
-¡ (ang. Bu-si-ness role) i by¢
- []
-
-[29] [30]
-Overfull \hbox (21.2244pt too wide) in paragraph at lines 413--414
-\OT4/cmr/m/n/12 dwa me-cha-ni-zmy umo»-li-wia-j¡ce ukry-cie jego szcze-gó-ªów: 
-nie-prze-zro-czy-ste (ang.Opaque
- []
-
-
+[28] [29] [30]
 Overfull \hbox (7.71074pt too wide) in paragraph at lines 415--416
 []\OT4/cmr/m/n/12 Z ko-lei pro-ces wy-ko-ny-walny w peªni spe-cy-fi-kuje opis, 
 który mo»na umie-±ci¢ w ±ro-
- []
-
-
-Overfull \hbox (20.29883pt too wide) in paragraph at lines 430--431
-\OT4/cmr/m/n/12 nie z woj-sko-wo-±ci¡. Obec-nie IDEF ma bar-dzo sze-ro-kie za-s
-to-so-wa-nia i wy-st¦-puje w wielu
  []
 
 [31] [32]
@@ -1032,9 +1008,9 @@ Underfull \vbox (badness 1275) has occurred while \output is active []
  [37]
 [38 <C:/Users/IBM_ADMIN/Documents/Studia/MGR2/trunk/latex/img/soma_fractal_life
 cycle.png>]
-Overfull \hbox (6.60233pt too wide) in paragraph at lines 545--546
-\OT4/cmr/m/n/12 wych oraz ob-sza-rów funk-cjo-nal-nych umo»-li-wia usta-le-nie 
-kom-po-zy-cji usªug z in-
+Overfull \hbox (12.14671pt too wide) in paragraph at lines 545--546
+\OT4/cmr/m/n/12 wych oraz ob-sza-rów funk-cjo-nal-nych. Umo»-li-wia usta-le-nie
+ kom-po-zy-cji usªug z in-
  []
 
 [39]
@@ -1044,18 +1020,12 @@ a-sad¡ ÿtop-down" w mo-
  []
 
 
-Underfull \vbox (badness 5417) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [40]
 Overfull \hbox (4.3461pt too wide) in paragraph at lines 593--594
 \OT4/cmr/m/n/12 sto-wa-nie oraz trans-for-ma-cja pro-ce-sów biz-ne-so-wych w ko
 m-po-zy-towe apli-ka-cje. W ten
- []
-
-
-Overfull \hbox (7.51537pt too wide) in paragraph at lines 596--597
-\OT4/cmr/m/it/12 de-ve-lop-ment \OT4/cmr/m/n/12 oraz mo-de-lo-wa-nia pro-ce-sów
- biz-ne-so-wych za-pro-po-no-wa-nego przez Paula
  []
 
 <img/papazoglou_metoda_fazy.png, id=723, 462.97969pt x 459.21562pt>
@@ -1142,8 +1112,9 @@ Underfull \hbox (badness 2980) in paragraph at lines 806--806
  []
 
 
-Underfull \hbox (badness 7081) in paragraph at lines 809--809
-[]\OT4/cmr/m/n/10.95 emph<<OwnedBehaviour>> do ele-
+Underfull \hbox (badness 5939) in paragraph at lines 809--809
+\OT4/cmr/m/n/10.95 jako \OT4/cmr/m/it/10.95 <<Owned-Be-ha-viour>> \OT4/cmr/m/n/
+10.95 do ele-mentu
  []
 
 
@@ -1610,19 +1581,16 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 97.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 97.
 Package rerunfilecheck Info: File `praca_dyplomowa.out' has not changed.
 (rerunfilecheck)             Checksum: 573BC07F7EF6D49102D6D5AAA6FE4EF2;5869.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 97.
  ) 
 Here is how much of TeX's memory you used:
  8061 strings out of 493921
  116771 string characters out of 3148874
- 223837 words of memory out of 3000000
+ 223834 words of memory out of 3000000
  10959 multiletter control sequences out of 15000+200000
  17644 words of font info for 51 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,12n,35p,1070b,447s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,12n,35p,1075b,447s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/pl/pltt.enc}{C:/Program Files/MiKTeX
 /fonts/enc/dvips/pl/plrm.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/pl/plmi.e
 nc}{C:/Program Files/MiKTeX/fonts/enc/dvips/pl/plms.enc}{C:/Program Files/MiKTe
@@ -1637,7 +1605,7 @@ s/type1/public/pl/plr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/pl/plr8
 s/MiKTeX/fonts/type1/public/pl/plti10.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/pl/plti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/pl/pltt12.pfb>
 
-Output written on praca_dyplomowa.pdf (83 pages, 1658348 bytes).
+Output written on praca_dyplomowa.pdf (83 pages, 1657535 bytes).
 PDF statistics:
  1100 PDF objects out of 1200 (max. 8388607)
  236 named destinations out of 1000 (max. 500000)
