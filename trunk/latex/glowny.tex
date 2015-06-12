@@ -1,11 +1,11 @@
 \chapter{Wstęp}
-W ostatnich latach zarysowuje się coraz większa liczba organizacji, która decyduje się na wdrożenia systemów informatycznych. Ta tendencja związana jest przede wszystkim~z~usprawnianiem procesów biznesowych, ze wzrostem wydajności pracy, identyfikacją~oraz~minimalizacją błędów~lub~nieefektywnych działań~w~organizacjach.
+W ostatnich latach coraz więcej organizacji decyduje się na wdrożenia systemów informatycznych. Ta tendencja związana jest przede wszystkim~z~usprawnianiem procesów biznesowych, ze wzrostem wydajności pracy, identyfikacją~oraz~minimalizacją błędów~lub~nieefektywnych działań~w~organizacjach.
 
 Zróżnicowane potrzeby organizacji doprowadziły do powstania wielu rodzajów systemów informatycznych: CRM (ang. Customer Relationship Management) - wspomagające zarządzanie relacjami~z~klientami, ERP (ang. Enterprise Resource Planning) – wspomagające zarządzanie~i~planowanie zasobów przedsiębiorstwa czy też BPM (ang. Business Process Management) – wspomagające zarządzanie procesami biznesowymi. 
 
 Wprowadzanie systemów informatycznych do organizacji może wywoływać różnorodne efekty: techniczne (bezpośrednio związane~z~zastosowaniem techniki komputerowej - zwiększenie szybkości~i~dokładności przetwarzania danych, wzrost szczegółowości~oraz~poprawa bezpieczeństwa~dla~informacji), ekonomiczne (związane pośrednio~ze~wzrostem efektywności~i~szybkości podejmowania decyzji), organizacyjne (związane przede wszystkim~z~ usprawnieniami struktury organizacyjnej~i~procesów zachodzących~w~przedsiębiorstwie - podniesienie sprawności obiegu dokumentów, eliminacja zbędnej pracy administracyjnej, poprawa koordynacji zadań oraz eliminacja błędów), socjopsychologiczne (związane~z~rozszerzeniem zakresu komunikacji pomiędzy pracownikami, usprawnieniem systemu ocen pracowniczych~oraz~polepszeniem kultury organizacyjnej) \cite{EfektyZasSys}.
 
-Utworzenie systemu informatycznego~dla~dużych firm~lub~instytucji nie stanowi trywialnego zadania. Banki, uczelnie~lub~urzędy charakteryzują się często stosunkowo złożoną strukturą organizacyjną oraz panują~w~nich skomplikowane procesy wewnętrzne. Powstaje wówczas problem~z~formalnym opisem danej jednostki. Architektura korporacyjna pozwala opisać komponenty~i~struktury korporacji. Definiuje również wzajemne powiązania~i~relacje między poszczególnymi jej komponentami. 
+Utworzenie systemu informatycznego~dla~dużych firm~lub~instytucji nie stanowi łatwego zadania. Banki, uczelnie~lub~urzędy charakteryzują się często stosunkowo złożoną strukturą organizacyjną oraz panują~w~nich skomplikowane procesy wewnętrzne. Powstaje wówczas problem~z~formalnym opisem danej jednostki. Architektura korporacyjna pozwala opisać komponenty~i~struktury korporacji. Definiuje również wzajemne powiązania~i~relacje między poszczególnymi jej komponentami. 
  
 Odpowiednia definicja oraz wprowadzenie \quotedblbase ładu korporacyjnego\textquotedblright~w~dużych organizacjach są niebywale istotne~dla~wdrożenia funkcjonalnego systemu informatycznego. Bardzo istotnym elementem jest wówczas zastosowanie odpowiedniej metody, która pozwoli~na~uporządkowane podejście do projektowania tego rodzaju systemów.
 
@@ -30,12 +30,12 @@ Oprócz założenia głównego dla pracy (utworzenie metody projektowania archit
 \section{Wstęp}
 Żyjemy~w~coraz szybciej zmieniającym się świecie. Dynamika ta powoduje, że współczesne organizacje muszą charakteryzować się coraz większą elastycznością. Jednocześnie poziom złożoności panujących~w~nich procesów biznesowych jak również skala działania organizacji znacznie rosną \cite{SobArchKorpDobrPr}.
 
-Do innych problemów zalicza się również niejednorodność procesów biznesowych~w~poszczególnych jednostkach. Może wywoływać to trudności~w~stosowaniu wspólnych procedur postępowania~w~ramach całej organizacji. Rozwój~i~utrzymywanie zbyt wielu platform, gdy systemy tworzone były~w~różnych technologiach może prowadzić również do trudności we współdziałaniu tychże systemów.
+Do innych problemów zalicza się również niejednorodność procesów biznesowych~w~poszczególnych jednostkach. Może wywoływać to trudności~w~stosowaniu wspólnych procedur postępowania~w~ramach całej organizacji. Rozwój~i~utrzymywanie zbyt wielu platform, gdy systemy tworzone były~w~różnych technologiach, może prowadzić również do trudności we współdziałaniu tychże systemów.
 
-Rozdział będzie zawierał definicję terminu \quotedblbase architektura korporacyjna\textquotedblright oraz wyjaśnienie najważniejszych elementów~z~nim związanych. Podejmowane będą również rozważania nad tematyką \quotedblbase architektury zorientowanej na usługi\textquotedblright oraz to jak ją zaadaptować do architektury korporacyjnej.
+Rozdział będzie zawierał definicję terminu \quotedblbase architektura korporacyjna\textquotedblright oraz wyjaśnienie najważniejszych elementów~z~nim związanych. Podejmowane będą również rozważania nad tematyką \quotedblbase architektury zorientowanej na usługi\textquotedblright oraz nad sposobem zaadaptowania jej do architektury korporacyjnej.
 
 \section{Definicje głównych pojęć związanych~z~architekturą korporacyjną}
-Projektując architekturę korporacyjną (ang. Enterprise Architecture) niezbędna jest doskonała znajomość terminów~z~nią powiązanych.~W~tej sekcji zostanie dokonany przegląd oraz próba zdefiniowania głównych pojęć odnoszących się do architektury korporacyjnej.
+Projektowanie architektury korporacyjnej (ang. Enterprise Architecture) wymaga doskonałej znajomości terminów~z~nią powiązanych.~W~tej sekcji zostanie dokonany przegląd oraz próba zdefiniowania głównych pojęć odnoszących się do architektury korporacyjnej.
 
 Słowo \quotedblbase architektura\textquotedblright~w~nawiązaniu do systemów stanowi zbiór podstawowych decyzji związanych~z~określonym rozwiązaniem programistycznym  - zaprojektowanym~z~reguły tak, aby móc spełnić wszelkie atrybuty jakościowe (wymagania architektoniczne) danego projektu. Architektura tego typu zawiera przede wszystkim atrybuty, zdefiniowane współdziałania (zachowania~i~interakcje) umożliwiające spełnienie atrybutów jakościowych oraz główne komponenty.  Może być wyrażona na więcej niż jednym poziomie abstrakcji, gdzie liczba poziomów zależy od rozmiaru~i~złożoności projektu. 
 
@@ -48,7 +48,7 @@ Twórcy standardu uzupełniają powyższą definicję~o~następujące komentarze
 \item{Architektura opisywana jest zawsze~w~pewnym kontekście. Zrozumienie podstawowych właściwości systemu wiąże się~z~odniesieniem do jego otoczenia, środowiska~i~interesariuszy.}
 \end{itemize}
 
-Kolejnym kluczowym terminem jest \quotedblbase korporacja\textquotedblright (ang. Enterprise). Pojęcie korporacja rozpatrywane jest najczęściej~w~kontekście całej jednostki organizacyjnej. Przyjmowane są różne jego różne definicje:
+Kolejnym kluczowym terminem jest \quotedblbase korporacja\textquotedblright (ang. Enterprise). Pojęcie korporacja rozpatrywane jest najczęściej~w~kontekście całej jednostki organizacyjnej. Przyjmowane są różne definicje:
 \begin{itemize}
 \item{Zbiór aktywności~z~aktorami~w~określonej dziedzinie, których łączy wspólny cel.}
 \item{Zorganizowany zbiór zasobów, które uczestniczą~w~wykonywaniu określonych procesów.}
@@ -105,14 +105,14 @@ The Open Group~w~swoim opracowaniu dotyczącym TOGAF (The Open Group Architectur
 \item{Architektura biznesowa (ang. Business Architecture) - opisuje strategię biznesową~i~sposoby zarządzania organizacją, jej strukturę organizacyjną oraz główne procesy biznesowe,~a~także relacje pomiędzy tymi elementami.}
 \item{Architektura danych (ang. Data Architecture) - opisuje główne typy~i~źródła danych niezbędnych do funkcjonowania organizacji.}
 \item{Architektura aplikacji (ang. Applications Architecture) - opisuje poszczególne aplikacje, ich rozlokowanie, wzajemne współdziałanie oraz relacje między tymi aplikacjami,~a~głównymi procesami biznesowymi~w~organizacji.}
-\item{Architektura techniczna (ang. Technology Architecture) - opisuje komponenty infrastruktury technicznej, która stanowi podstawę funkcjonowania aplikacji (obejmuje ona m. in. systemy operacyjne, systemy zarządzania bazami danych, serwery aplikacyjne, sprzęt komputerowy oraz infrastrukturę komunikacyjną).}
+\item{Architektura techniczna (ang. Technology Architecture) - opisuje komponenty infrastruktury technicznej, która stanowi podstawę funkcjonowania aplikacji (obejmuje ona m.in. systemy operacyjne, systemy zarządzania bazami danych, serwery aplikacyjne, sprzęt komputerowy oraz infrastrukturę komunikacyjną).}
 \end{itemize}
 }
 \end{itemize}
 
 \begin{figure}[h!tbp]
 \begin{centering}
-\includegraphics[width=9cm]{img/ea.png}
+\includegraphics[width=8cm]{img/ea.png}
 \caption[Umiejscowienie architektury~w~korporacji.]{Umiejscowienie architektury~w~korporacji \cite{SOMAArsIBMJour}.}\label{ea_arch}
 \end{centering}
 \end{figure}
@@ -123,7 +123,7 @@ Jednym~z~elementów, które różnicują te dwa pojęcia jest cel opracowania ar
 
 Architektura korporacyjna stanowi szersze pojęcie pod względem zakresu opracowania architektury. Pojęcie to obejmuje organizację jako całość, natomiast architektura korporacyjna IT skupia się jedynie na obszarze IT danej jednostki. 
 
-Istotnym elementem,~o~którym należy wspomnieć prowadząc rozważania na temat architektury korporacyjnej jest pojęcie \quotedblbase ładu architektonicznego \textquotedblright (ang. Enterprise architecture governance). 
+Istotnym elementem,~o~którym należy wspomnieć, prowadząc rozważania na temat architektury korporacyjnej, jest pojęcie \quotedblbase ładu architektonicznego \textquotedblright (ang. Enterprise architecture governance). 
 
 Ład architektoniczny stanowi przede wszystkim mechanizm dostarczający struktury, za pomocą której jest ustanawiany zbiór celów tworzenia architektury korporacyjnej oraz środków, poprzez które możliwe jest ich osiąganie~i~monitorowanie wydajności realizacji. 
 
@@ -132,30 +132,30 @@ Jego podstawowym celem~w~odniesieniu do systemów informatycznych jest zapewnien
 Dobrze wprowadzony ład architektoniczny uważa się, że zapewni niezbędną dla organizacji elastyczność architektury korporacyjnej.
 
 \section{Korzyści~z~wdrożenia architektury korporacyjnej}
-Budowy architektury korporacyjnej nie powinno rozpatrywać się jedynie jako działania~z~obszaru informatyki, ale jako całościowego przedsięwzięcia~z~pogranicza zarządzania, jak~i~informatyki. Opracowanie architektury korporacyjnej nie należy rozważać jako cel sam~w~sobie, ale jako stan pośredni postrzegany jako narzędzie pomocnicze do wykonania określonych działań wewnątrz organizacji. Takie podejście może przynieść organizacji szereg korzyści
+Budowy architektury korporacyjnej nie powinno rozpatrywać się jedynie jako działania~z~obszaru informatyki, lecz jako całościowe przedsięwzięcie~z~pogranicza zarządzania, jak~i~informatyki. Opracowania architektury korporacyjnej nie należy rozważać jako cel sam~w~sobie, ale stan pośredni uznawany za narzędzie pomocnicze do wykonania określonych działań wewnątrz organizacji. Takie podejście może przynieść organizacji szereg korzyści:
 \begin{itemize}
 \item{lepsze dopasowanie realizowanych rozwiązań informatycznych do potrzeb strategicznych danej organizacji,}
 \item{zapewnienie większej interoperacyjności systemów informatycznych,}
 \item{wykorzystywanie tych samych komponentów może spowodować znaczne obniżenie kosztów działań~w~zakresie wprowadzania architektury korporacyjnej,}
 \item{możliwość szybszego podejmowania spójnych decyzji~w~zakresie tworzenia systemów informatycznych,}
-\item{efektywniejsze koordynowanie~z~perspektywy dziań długoterminowych modyfikacji~i~rozbudowy poszczególnych systemów informatycznych,}
+\item{efektywniejsze koordynowanie~z~perspektywy działań długoterminowych modyfikacji~i~rozbudowy poszczególnych systemów informatycznych,}
 \item{ułatwienie zarządzania finansami przeznaczonymi na cele IT,}
 \item{ułatwienie wdrożenia SOA,}
 \item{automatyzacja, optymalizacja~i~przejrzystość procesów biznesowych - zdefiniowana architektura korporacyjna pozwala zidentyfikować wszystkie procesy, gdzie możliwa jest automatyzacja oraz wyeliminować dublujące się czynności pomiędzy procesami,}
-\item{ograniczenie ryzyka operacyjnego - wdrażając architekturą korporacyjną można znacznie zmniejszyć ryzyko operacyjne, zarówno poprzez automatyzację procesów, jak~i~lepszą kontrolę operacji.}
+\item{ograniczenie ryzyka operacyjnego - wdrażając architekturą korporacyjną, można znacznie zmniejszyć ryzyko operacyjne, zarówno poprzez automatyzację procesów, jak~i~lepszą kontrolę operacji.}
 \end{itemize}
 
 Nie każda organizacja musi stosować sformalizowane podejście do zarządzania architekturą korporacyjną. Dużo zależy od złożoności organizacji - rozpatrywanej~w~ujęciu systemowym. Istotna jest również zmienność organizacji wynikająca na przykład ze zmienności otoczenia. Im organizacja jest bardziej złożona~i~im bardziej podlega zmianom, tym stosowanie architektury korporacyjnej jest bardziej uzasadnione \cite{ArchKorpSob}.
 
 \section{Podejście do budowy architektury korporacyjnej}
-Budowa architektury korporacyjnej nie stanowi zadania trywialnego. Bardzo istotnym czynnikiem wpływającym na sukces jej wdrożenia w danej organizacji jest odpowiedni projekt~i~podjęcie odpowiednich decyzji architektonicznych. 
+Budowa architektury korporacyjnej nie stanowi łatwego zadania. Bardzo istotnym czynnikiem wpływającym na sukces jej wdrożenia w danej organizacji jest odpowiedni projekt~i~podjęcie właściwych decyzji architektonicznych. 
 
-Projektując architekturę korporacyjną należy rozważyć dwa główne problemy. Pierwszy dotyczy celu jej opracowywania. Przede wszystkim czy architektura korporacyjna ma mieć zastosowanie jako narzędzie wspierające określone przedsięwzięcie transformacyjne, czy też być na stałe wbudowana~w~ramy organizacji. Drugi problem związany jest~z~określeniem zakresu prac nad architekturą korporacyjną. Należy określić poszczególne wymiary: horyzont czasowy, zakres geograficzny organizacji oraz poziom szczegółowości~w~poszczególnych domenach. 
+Projektując architekturę korporacyjną, należy rozważyć dwa główne problemy. Pierwszy dotyczy celu jej opracowywania. Przede wszystkim czy architektura korporacyjna ma mieć zastosowanie jako narzędzie wspierające określone przedsięwzięcie transformacyjne, czy też być na stałe wbudowana~w~ramy organizacji. Drugi problem związany jest~z~określeniem zakresu prac nad architekturą korporacyjną. Należy określić poszczególne wymiary: horyzont czasowy, zakres geograficzny organizacji oraz poziom szczegółowości~w~poszczególnych domenach. 
 
-Opracowując architekturę korporacyjną można skorzystać~z~jednej dwóch ścieżek:
+Opracowując architekturę korporacyjną, można skorzystać~z~jednej dwóch ścieżek:
 \begin{itemize}
 \item{wychodząca od architektury dla stanu bazowego - polega na opracowaniu najpierw architektury dla stanu bazowego \quotedblbase jak jest\textquotedblright (ang. As-is) bezpośrednio~w~czterech domenach architektonicznych: aplikacji, danych, biznesowej~i~technicznej.~W~kolejnym kroku analizowane są luki we wszystkich wymienionych domenach oraz przygotowywany jest plan przejścia (ang. Roadmap) pomiędzy stanem bazowym~i~docelowym. Do zalet tego podejścia można zaliczyć prostotę od strony zarządczej (można zidentyfikować~i~dobrze opisać poszczególne etapy prac). Wadę stanowi natomiast ryzyko zbyt dużego skupienia się na architekturze bazowej~i~wykonywania analiz na zbyt wysokim poziomie szczegółowości.}
-\item{wychodząca od architektury biznesowej - opiera się na wykonaniu czterech kroków.~W~trzech pierwszych dla stanu bazowego \quotedblbase jak jest\textquotedblright, jak~i~dla stanu docelowego \quotedblbase jak będzie\textquotedblright (ang. To-be) opracowywane są kolejno architektury: biznesowa, danych~i~aplikacji oraz techniczna.~W~każdym~z~wymienionych kroków jest dokonywana również analiza luk. Mając opracowane architektury dla poszczególnych domen przygotowywana jest zbiorcza analiza luk oraz plan przejścia pomiędzy stanem bazowym~i~docelowym. Zaletą tej ścieżki jest dostarczenie na najwcześniejszym możliwym etapie kluczowego elementu architektury korporacyjnej - architektury biznesowej. Stanowi to dobrą podstawę dla opracowywania kolejnych rodzajów architektur. Do wad tego podejścia zaliczyć można ryzyko~z~częstym występowaniem niskiego poziomu rozwinięcia części biznesowej organizacji \cite{ArchKorpSob}.}
+\item{wychodząca od architektury biznesowej - opiera się na wykonaniu czterech kroków.~W~trzech pierwszych dla stanu bazowego \quotedblbase jak jest\textquotedblright, jak~i~dla stanu docelowego \quotedblbase jak będzie\textquotedblright (ang. To-be) opracowywane są kolejno architektury: biznesowa, danych~i~aplikacji oraz techniczna.~W~każdym~z~wymienionych kroków jest dokonywana również analiza luk. Mając opracowane architektury dla poszczególnych domen przygotowuje się zbiorczą analizę luk oraz plan przejścia pomiędzy stanem bazowym~i~docelowym. Zaletą tej ścieżki jest dostarczenie na najwcześniejszym możliwym etapie kluczowego elementu architektury korporacyjnej - architektury biznesowej. Stanowi to dobrą podstawę dla opracowywania kolejnych rodzajów architektur. Do wad tego podejścia zaliczyć można ryzyko~z~częstym występowaniem niskiego poziomu rozwinięcia części biznesowej organizacji \cite{ArchKorpSob}.}
 \end{itemize}
 
 \section{SOA}
@@ -170,12 +170,12 @@ Istnieje również manifest SOA, który głosi, że orientacja na usługi kszta�
 
 SOA sama~w~sobie nie jest jednakże żadną konkretną architekturą. Nie można jej traktować jako produkt~lub~tylko zbiór określonych rozwiązań technologicznych. SOA to przede wszystkim sposób myślenia – strategia, której naturalna realizacja jest reprezentowana przez usługi \cite{SOAsdj102009,SOAwJBBC}. SOA stanowi pewnego rodzaju paradygmat, który prowadzi do określonej architektury \cite{SOAsdj102009}. Reprezentuje przesunięcie~w~inżynierii oprogramowania~i~podnosi poziom abstrakcji, grupując wspólne działanie procesów biznesowych~i~wystawiając to jako usługę \cite{CompSOAMet}.
 	
-Mianem usługi~w~SOA określa się zbiór funkcjonalności pewnej aplikacji, który jest udostępniany jako interfejs \cite{SOAawidptas}. Organizacja OASIS (Organization for the Advancement of Structured Information Standards) definiuje usługę~w~SOA jako mechanizm udostępniający jedną~lub~więcej funkcji, do których dostęp jest zapewniany przez zalecany interfejs~i~wykonywany zgodnie~z~ograniczeniami~i~politykami określanymi przez opis usługi (ang. \emph{A mechanism to enable access to one or more capabilities, where the access is provided using~a~prescribed interface and is exercised consistent with constraints and policies as specified by the service description}). Operacje, zdefiniowane~w~interfejsie dostarczają funkcji biznesowych operując na obiektach biznesowych. Ponadto owe usługi są dostępne poprzez sieć.
+Mianem usługi~w~SOA określa się zbiór funkcjonalności pewnej aplikacji, który jest udostępniany jako interfejs \cite{SOAawidptas}. Organizacja OASIS (Organization for the Advancement of Structured Information Standards) definiuje usługę~w~SOA jako mechanizm udostępniający jedną~lub~więcej funkcji, do których dostęp jest zapewniany przez zalecany interfejs~i~wykonywany zgodnie~z~ograniczeniami~i~politykami określanymi przez opis usługi (ang. \emph{A mechanism to enable access to one or more capabilities, where the access is provided using~a~prescribed interface and is exercised consistent with constraints and policies as specified by the service description}). Operacje, zdefiniowane~w~interfejsie, dostarczają funkcji biznesowych poprzez wykorzystanie obiektów biznesowych. Ponadto te usługi są dostępne poprzez sieć.
 
 \subsection{Historia SOA}
 Przez ostatnie dekady tworzenie oprogramowania opierało się na kilku różnorodnych metodach. Jednym~z~ich podstawowych celów było radzenie sobie~z~coraz bardziej złożonym procesem wytwarzania oprogramowania.~W~ramach walki ze złożonością opracowano gruboziarniste konstrukcje takie jak funkcje, klasy~i~komponenty. Można myśleć~o~nich jak~o~\quotedblbase czarnych skrzynkach\textquotedblright (ang. Black boxes). 
 
-Te \quotedblbase czarne skrzynki\textquotedblright ukrywają swoje implementacje poprzez dostarczanie kontrolowanego dostępu do ich funkcjonalności poprzez interfejs.~W~pewnym momencie dostrzeżono, że ilość czarnych skrzynek jest zbyt duża. Problem ten rozwiązano grupując poszczególne \quotedblbase czarne skrzynki\textquotedblright~w~komponenty \cite{SteveMichSOA}. 
+Te \quotedblbase czarne skrzynki\textquotedblright ukrywają swoje implementacje poprzez dostarczanie kontrolowanego dostępu do ich funkcjonalności poprzez interfejs.~W~pewnym momencie dostrzeżono, że ilość czarnych skrzynek jest zbyt duża. Problem ten rozwiązano, grupując poszczególne \quotedblbase czarne skrzynki\textquotedblright~w~komponenty \cite{SteveMichSOA}. 
 
 Określenia \quotedblbase SOA\textquotedblright ~lub~\quotedblbase Architektura zorientowana na usługi\textquotedblright zostały po raz pierwszy wykorzystane~w~pracy naukowej analityka~z~firmy Garnter Yefim V. Natis~w~dniu 12 kwietnia 1996 roku. Wcześniej~w~1994 roku Alexander Pasik stworzył istotne podstawy do zdefiniowania SOA. 
 
@@ -184,7 +184,7 @@ Przełomowym momentem~w~historii powstawania SOA było utworzenie usług typu We
 \subsection{Budowa SOA}
 SOA wprowadza nowe podejście do budowy~i~zarządzania infrastrukturą informatyczną. Adaptacja SOA wiąże się~z~reguły ze zmianami~w~wielu obszarach funkcjonowania firmy. Ściśle wiąże się~z~panującymi~w~niej procesami biznesowymi~i~wymaga odpowiedniego dostosowania.
 
-Systemy opierające się na SOA składają się~z~zestawu aplikacji biznesowych (rys. \ref{PRZArchSOA}) pogrupowanych~w~niezależne komponenty, które komunikują się ze sobą wymieniając usługi \cite{SOAwJBBC}. 
+Systemy opierające się na SOA składają się~z~zestawu aplikacji biznesowych (rys. \ref{PRZArchSOA}) pogrupowanych~w~niezależne komponenty, które komunikują się ze sobą, wymieniając usługi \cite{SOAwJBBC}. 
 
 \begin{figure}[h!tbp]
 \begin{centering}
@@ -196,15 +196,15 @@ Systemy opierające się na SOA składają się~z~zestawu aplikacji biznesowych 
 Komponenty te można traktować jako tzw. „czarne skrzynki”. Klient korzystający~z~usługi otrzymuje jedynie interfejs. Implementacja udostępnionych metod nie jest dla niego istotna.
 Rozwiązania stosowane~w~SOA pomagają zapanować nad złożonością systemu. Podstawowa budowa SOA opiera się~z~reguły na szynie ESB (ang. Enterprsie Service Bus) integrującej poszczególne usługi. ESB jest efektywnym środkiem komunikacji~w~SOA. Pomaga uwolnić się od sieci powiązań typu „każdy~z~każdym” (ang. Point to point). Odpowiada za przesyłanie komunikatów do odpowiednich komponentów. Rozbudowa systemu polega na dołączaniu nowych usług do szyny integracyjnej. 
 	
-Komunikaty zanim zostaną wysłane do punktu docelowego często poddawane są transformacjom~i~odpowiedniemu dostosowaniu za pomocą mediacji (ang. Mediations) na ESB. Przetworzony komunikat odpowiada formie jakiej oczekuje dostawca usługi.
+Komunikaty, zanim zostaną wysłane do punktu docelowego, często poddawane są transformacjom~i~odpowiedniemu dostosowaniu za pomocą mediacji (ang. Mediations) na ESB. Przetworzony komunikat odpowiada formie jakiej oczekuje dostawca usługi.
 	
-Rejestr SOA (ang. SOA registry) stanowi centralny punkt informacyjny na temat sposobu dostępu, definicji, reguł, bezpieczeństwa~i~innych danych wymaganych do wykorzystania usług udostępnionych~w~danym środowisku SOA. Zawiera informacje gdzie poszczególne komponenty SOA są umieszczone. Na jego podstawie ESB potrafi prawidłowo przekierowywać żądanie usługi~i~ewentualną odpowiedź,~a~aplikacje~i~usługi korzystające~z~usług składowych potrafią skonstruować jej prawidłowe wywołanie.
+Rejestr SOA (ang. SOA registry) stanowi centralny punkt informacyjny o sposobach dostępu, definicjach, regułach, bezpieczeństwie~i~innych danych wymaganych do wykorzystania usług udostępnionych~w~danym środowisku SOA. Zawiera informacje, gdzie poszczególne komponenty SOA są umieszczone. Na jego podstawie ESB potrafi prawidłowo przekierowywać żądanie usługi~i~ewentualną odpowiedź,~a~aplikacje~i~usługi korzystające~z~usług składowych potrafią skonstruować jej prawidłowe wywołanie.
 	
 Istotnym elementem~w~systemach typu SOA jest repozytorium (ang. SOA repository). Stanowi ono centralny „magazyn” dla elementów składowych usług takich jak: kod źródłowy, zestawy instalacyjne, specyfikacja itp. Repozytorium usług jest tworzone~i~wykorzystywane głównie na etapie projektowania usług.
 
 \subsection{Usługa sieciowa~w~SOA}
 Usługa sieciowa~w~SOA (ang. Web Service) stanowi usługę świadczoną przez sieć – na przykład Internet. Składnik oprogramowania niezależny od platformy sprzętowej oraz implementacji. Może być zdefiniowana za pomocą języka opisu usług – na przykład bazującym na XML WSDL (ang. Web Service Definition Language), publikowana~i~wyszukiwana~w~rejestrze (np. UDDI) oraz wywoływana zdalnie przez opisujący ją interfejs. 
-Z reguły Web Service opiera się na konstrukcji uwzględniającej trzy typy komponentów (rys. \ref{WSArchFunc}): klienta usługi (ang. Service requestor), dostawcę usługi (ang. Service provider) oraz rejestr usług (ang. Service registry)~lub~broker usług (ang. Service broker).  Transport danych~w~przypadku Web Service~z~reguły opiera się na HTTP~lub~HTTPS~z~wykorzystaniem SOAP.
+Z reguły Web Service opiera się na konstrukcji uwzględniającej trzy typy komponentów (rys. \ref{WSArchFunc}): klienta usługi (ang. Service requestor), dostawcę usługi (ang. Service provider) oraz rejestr usług (ang. Service registry)~lub~broker usług (ang. Service broker).  Transport danych~w~przypadku Web Service zazwyczaj opiera się na HTTP~lub~HTTPS~z~wykorzystaniem SOAP.
 
 Każdy~z~komponentów jest odpowiedzialny za pełnienie swojej roli:
 \begin{itemize}
@@ -225,15 +225,15 @@ W SOA można wyszczególnić dziewięć warstw architektury. Każda~z~nich skła
 
 Poszczególne warstwy~w~SOA to:
 \begin{itemize}
-\item{Warstwa aplikacji -~w~jej skład wchodzą wszystkie aplikacje działające~w~środowisku IT~i~mające na celu wspieranie działania przedsiębiorstwa. Do przykładów można zaliczyć: aplikacje Java Enterprise~lub~.NET, systemy transakcyjne, bazy danych oraz systemy ERP~i~CRM.}
+\item{Warstwa aplikacji -~w~jej skład wchodzą wszystkie aplikacje działające~w~środowisku IT~i~mające na celu wspieranie działania przedsiębiorstwa. Przykładami mogą być: aplikacje Java Enterprise~lub~.NET, systemy transakcyjne, bazy danych oraz systemy ERP~i~CRM.}
 \item{Warstwa komponentów - obejmuje składniki oprogramowania realizujące konkretne operacje usług. Odpowiada za fizyczną implementację usługi oraz jej opis. Dostarcza elementy zgodne~z~SCA (ang. \textit{Service Component Architecture}) oraz specyfikacją SDO (ang. \textit{Service Data Objects}).}
 \item{Warstwa usług - stanowi zbiór wszystkich usług zdefiniowanych za pomocą kontraktu pomiędzy dostawcą,~a~odbiorcą~o~sposobie dostarczenia usługi.}
-\item{Warstwa procesów biznesowych -~w~tej fazie tworzona jest kompozycja wielu usług realizujących konkretne biznesowe przypadku użycia. Proces biznesowy składa się~z~przepływów realizujących dany cel biznesowy organizacji~i~zagregowanych usług.}
+\item{Warstwa procesów biznesowych -~w~tej fazie tworzona jest kompozycja wielu usług realizujących konkretne biznesowe przypadki użycia. Proces biznesowy składa się~z~przepływów realizujących dany cel biznesowy organizacji~i~zagregowanych usług.}
 \item{Warstwa prezentacji - stanowi często wspólny interfejs dostępu do usług. Odpowiada za dostarczanie funkcji biznesowych dla klientów końcowych.}
 \item{Warstwa integracji - kluczowy element architektury SOA. Jej podstawową funkcją jest zlecanie klientom usług~i~dostarczanie ich przez dostawców. Przepływ operacji jaki jest wykonywany~w~tej warstwie to: odbiór zlecenia od klienta, dostarczenie go do dystrybutora,~a~następnie dostarczenie do klienta.}
 \item{Warstwa jakościowa - obejmuje monitorowanie procesów biznesowych odnoszących się do podstawowych wskaźników wydajności danej organizacji. Pełni rolę obserwatora dla pozostałych warstw~i~informuje~o~zdarzeniach niezgodnych~z~zakładanymi.}
-\item{Warstwa Business Intelligence - stanowi podstawę do budowania rozwiązań Business Intelligence umożliwiających modelowanie danych analitycznych~i~eksploracje.~W~tej warstwie włączane są kluczowe zagadnienia związane~z~obiegiem informacji~w~przedsiębiorstwach.}
-\item{Warstwa zarządzania - odnosi się do zarządzania wszystkimi elementami cyklu życiu SOA oraz warstw architektury (ze szczególnym naciskiem na warstwę jakościową). Wykorzystuje kluczowe wskaźniki wydajności~lub~efektywności (KPI) do egzekwowania wymagań jakościowych~i~funkcjonalnych wyspecyfikowanych przez przedsiębiorstwo \cite{PlatIntGor}.}
+\item{Warstwa business intelligence - stanowi podstawę do budowania rozwiązań Business Intelligence umożliwiających modelowanie danych analitycznych~i~eksploracje.~W~tej warstwie włączane są kluczowe zagadnienia związane~z~obiegiem informacji~w~przedsiębiorstwach.}
+\item{Warstwa zarządzania - odnosi się do zarządzania wszystkimi elementami cyklu życia SOA oraz warstw architektury (ze szczególnym naciskiem na warstwę jakościową). Wykorzystuje kluczowe wskaźniki wydajności~lub~efektywności (KPI) do egzekwowania wymagań jakościowych~i~funkcjonalnych wyspecyfikowanych przez przedsiębiorstwo \cite{PlatIntGor}.}
 \end{itemize}
 
 \subsection{Podstawowe zasady SOA}
@@ -241,13 +241,13 @@ Systemy SOA mogą być bardzo różnorodne. SOA nie narzuca konkretnych technolo
 
 Budowa systemu SOA może wykorzystywać szynę integracyjną ESB~lub~broker (można również łączyć wiele szyn ESB ze sobą~lub~łączyć broker’y~z~ESB). Mimo tej dużej dowolności istnieje zestaw zasad, na których powinien opierać się każdy system SOA.
 \begin{itemize}
-\item{luźne powiązania - powiązania odnoszą się do połączeń~lub~relacji między poszczególnymi elementami. Termin „luźne powiązania” (ang. Loose Coupling) stanowi jeden~z~fundamentów SOA \cite{SOAsdj102009}. Odwołuje się do sposobu~w~jaki komponenty SOA współpracują ze sobą.  Zasada „luźnych powiązań” promuje niezależną konstrukcję~i~ewolucję usług. Każdy~z~komponentów może pracować autonomicznie wykonując określone czynności. Pracując razem, wymieniają między sobą komunikaty~i~mogą realizować to co jest zwykle możliwe przez duże, monolityczne aplikacje. „Luźne powiązania” pozwalają również na łatwą dekompozycję komponentów~i~wykorzystywanie ich do innych celów.}
-\item{interoperacyjność (ang. Interoperability) - opiera się na współpracy pomiędzy systemami. Zapewnienie interoperacyjności jest kolejną bardzo istotną zasadą,~o~której należy pamiętać tworząc systemy SOA.~W~miarę rozwoju poszczególnych systemów (np. poprzez dodawanie nowych komponentów) problem integracji staje się coraz trudniejszy do rozwiązania. Należy już na etapie projektowania ograniczać do minimum wybór protokołów, które dany system będzie obsługiwał \cite{SOAsdj102009}.}
-\item{kompozycyjność - zasada kompozycyjności (ang. Composability) jest związana~z~zachowaniem odpowiednich relacji między komponentami. Systemy, które podążają za ta zasadą cechują się możliwością łączenia swoich komponentów~w~różne kombinacje~w~celu spełnienia postawionych wymagań. Umiejętność efektywnego komponowania usług~z~już istniejących elementów jest kluczowym wymogiem do osiągnięcia niektórych~z~podstawowych celów przy tworzeniu systemów opierających się na architekturze zorientowanej na usługi.}
+\item{luźne powiązania - powiązania odnoszą się do połączeń~lub~relacji między poszczególnymi elementami. Termin „luźne powiązania” (ang. Loose Coupling) stanowi jeden~z~fundamentów SOA \cite{SOAsdj102009}. Odwołuje się do sposobu~w~jaki komponenty SOA współpracują ze sobą.  Zasada „luźnych powiązań” promuje niezależną konstrukcję~i~ewolucję usług. Każdy~z~komponentów może pracować autonomicznie, wykonując określone czynności. Pracując razem, wymieniają między sobą komunikaty~i~mogą realizować to co jest zwykle możliwe przez duże, monolityczne aplikacje. „Luźne powiązania” pozwalają również na łatwą dekompozycję komponentów~i~wykorzystywanie ich do innych celów.}
+\item{interoperacyjność (ang. Interoperability) - opiera się na współpracy pomiędzy systemami. Zapewnienie interoperacyjności jest kolejną bardzo istotną zasadą,~o~której należy pamiętać, tworząc systemy SOA.~W~miarę rozwoju poszczególnych systemów (np. poprzez dodawanie nowych komponentów) problem integracji staje się coraz trudniejszy do rozwiązania. Należy już na etapie projektowania ograniczać do minimum wybór protokołów, które dany system będzie obsługiwał \cite{SOAsdj102009}.}
+\item{kompozycyjność - zasada kompozycyjności (ang. Composability) jest związana~z~zachowaniem odpowiednich relacji między komponentami. Systemy, które podążają za tą zasadą, cechują się możliwością łączenia swoich komponentów~w~różne kombinacje~w~celu spełnienia postawionych wymagań. Umiejętność efektywnego komponowania usług~z~już istniejących elementów jest kluczowym wymogiem do osiągnięcia niektórych~z~podstawowych celów przy tworzeniu systemów opierających się na architekturze zorientowanej na usługi.}
 \item{reużywalność - każda tworzona usługa powinna zachowywać zasadę reużywalności (ang. Reusability).  Opiera się na takim projektowaniu usług, aby była możliwość wielokrotnego jej wykorzystania do tworzenia kolejnych usług \cite{SOAsdj102009}.}
 \item{kontraktowość usług - wszystkie usługi powinny mieć zdefiniowany kontrakt (ang. Service contract), który zawierany jest każdorazowo pomiędzy usługą,~a~jej konsumentem. Wyrażane są przez niego cele~i~możliwości danej usługi.~W~kontraktach znajdują się również opisy informacji oferowanych ~i~oczekiwanych przez usługi \cite{SOAinfoq10}.}
 \item{enkapsulacja - zasada enkapsulacji (ang. Encapsulation) zakłada, że kontrakty usług mogą zawierać jedynie niezbędne informacje~i~mogą udostępniać jedynie te informacje, które są~w~nich zdefiniowane. Zasada ta podkreśla potrzebę ukrycia przez usługi tak wielu informacji jak to tylko możliwe.}
-\item{autonomiczność usług - autonomiczność usługi (ang. Service autonomy) jest kolejnym paradygmatem projektowania systemów typu SOA. Termin ten odwołuje się do usług~o~podwyższonej niezależności od środowisk wykonawczych. Usługa powinna mieć możliwość podmiany środowiska wykonawczego~z~lekkiego prototypowego (ang. Lightweight prototype) do pełnowymiarowego (ang. Full-blown),~w~którym są już uruchomione inne usługi odwołujące do niej. Zgodnie~z~zasadą autonomii każda~z~usług może być wdrażana, wersjonowana~i~zarządzana niezależnie od innych \cite{SOAinfoq10}.}
+\item{autonomiczność usług - autonomiczność usługi (ang. Service autonomy) jest kolejnym paradygmatem projektowania systemów typu SOA. Termin ten odwołuje się do usług~o~podwyższonej niezależności wobec środowisk wykonawczych. Usługa powinna mieć możliwość podmiany środowiska wykonawczego~z~lekkiego prototypowego (ang. Lightweight prototype) do pełnowymiarowego (ang. Full-blown),~w~którym są już uruchomione inne usługi odwołujące do niej. Zgodnie~z~zasadą autonomii każda~z~usług może być wdrażana, wersjonowana~i~zarządzana niezależnie od innych \cite{SOAinfoq10}.}
 \item{wykrywalność usług - zasada wykrywalności usług (ang. Services discoverability) polega na tym, że usługi powinny być opisywane za pomocą metadanych~w~takich sposób, aby były efektywnie wyszukiwane, przetwarzane~i~interpretowane zarówno~w~czasie projektowania jak~i~wykonywania \cite{SOAinfoq10}.}
 \item{spójność~i~ziarnistość usług - interfejsy usług~w~systemach SOA powinny być tak zaprojektowane, aby wiązały tylko określony zbiór wymagań biznesowych \cite{SOAsdj102009}. Należy zadbać~o~optymalną ziarnistość interfejsów dla obsługiwanych typów~i~rozmiarów danych (ziarnistość danych wejściowych~i~wyjściowych), wartości biznesowej oraz funkcjonalności (domyślna~i~parametryzowana ziarnistość funkcjonalności).}
 \item{bezstanowość usług - zasada bezstanowości usług (ang. Services statelessness) odwołuje się do minimalizacji użycia zasobów~i~ograniczania się do przechowywania,~i~przetwarzania tylko absolutnie niezbędnych informacji. Usługa nie może być~w~stanie przetrzymywać informacji~o~wcześniejszych żądaniach klienta. Każda~z~informacji powinna być odizolowana od innych. Skuteczne stosowanie zasady bezstanowości może znacząco zwiększyć wydajność rozwiązania oraz zmniejszyć współbieżne działanie usług \cite{SOAsdj102009}.}
@@ -257,16 +257,16 @@ Budowa systemu SOA może wykorzystywać szynę integracyjną ESB~lub~broker (mo�
 \subsection{Korporacyjna szyna usług - ESB}
 ESB (ang. Enterprise Service Bus) stanowi abstrakcyjną warstwę wymiany komunikatów.~W~systemach informatycznych wprowadza znaczną elastyczność, ponieważ pozwala na dynamiczne przyłączanie~i~odłączanie usług \cite{PlatIntGor}.
 
-Głównym celem korporacyjnej szyny usług jest dostarczanie pewnego rodzaju wirtualizacji dla korporacyjnych zasobów pozwalając na rozwijanie logiki biznesowej niezależnie od infrastruktury~lub~sieci oraz bez potrzeby pisania dodatkowego kodu. Zasoby~w~ESB są modelowane jako usługi, które oferują jedną~lub~więcej operacji biznesowych \cite{IBMRBSoaPat}.
+Głównym celem korporacyjnej szyny usług jest dostarczanie pewnego rodzaju wirtualizacji dla korporacyjnych zasobów, pozwalając na rozwijanie logiki biznesowej niezależnie od infrastruktury~lub~sieci oraz bez potrzeby pisania dodatkowego kodu. Zasoby~w~ESB są modelowane jako usługi, które oferują jedną~lub~więcej operacji biznesowych \cite{IBMRBSoaPat}.
 
-Dobra praktyka projektowania architektury systemu zapewnia, że wszystkie połączenia między aplikacjami będą realizowane~z~wykorzystaniem szyny \cite{PlatIntGor}. Pełne sprostanie różnorodności wzorców integracji jakie oferuje SOA wymaga utrzymywania przez ESB trzech głównych paradygmatów integracji aplikacji korporacyjnych:
+Dobra praktyka projektowania architektury systemu zapewnia, że wszystkie połączenia między aplikacjami będą realizowane~z~wykorzystaniem szyny \cite{PlatIntGor}. Pełne sprostanie różnorodności wzorców integracji, jakie oferuje SOA, wymaga utrzymywania przez ESB trzech głównych paradygmatów integracji aplikacji korporacyjnych:
 \begin{itemize}
 \item{Architektura zorientowana na usługi - rozproszone aplikacje zbudowane są~z~ziarnistych usług wieleokrotnego użytku~z~dobrze zdefiniowanymi, opublikowanymi~i~zgodnymi ze standardami interfejsami.}
 \item{Architektura zorientowana na komunikaty (ang. Message-driven architecture) - aplikacje wysyłają komunikaty między sobą.}
 \item{Architektura zorientowana na zdarzenia (ang. Event-driven architecture) - aplikacje generują~i~konsumują usługi niezależnie od pozostałych \cite{IBMRBSoaPat}.} 
 \end{itemize}
 
-Stosowanie szyny integracyjnej wiąże się~z~wieloma zaletami. Przede wszystkim powoduje zmniejszenie kosztów dzięki szybkiemu~i~elastycznemu rozwiązaniu integracji eliminującym połączenia typu \quotedblbase Point-to-point\textquotedblright. ESB umożliwia również rozwój obecnych środowisk bez wpływu na obecne co pozwala na łatwe rozszerzanie systemu~o~nowe funkcjonalności \cite{IBMRBSoaPat}.
+Stosowanie szyny integracyjnej wiąże się~z~wieloma zaletami. Przede wszystkim powoduje zmniejszenie kosztów dzięki szybkiemu~i~elastycznemu rozwiązaniu integracji eliminującym połączenia typu \quotedblbase Point-to-point\textquotedblright. ESB umożliwia również rozwój obecnych środowisk bez wpływu na obecne, co pozwala na łatwe rozszerzanie systemu~o~nowe funkcjonalności \cite{IBMRBSoaPat}.
 
 \section{Adaptacja SOA~w~architekturze korporacyjnej}
 Termin \quotedblbase Enterprise SOA\textquotedblright zyskał bardzo dużą popularność~w~ostatnich czasach. Wywodzi się~z~bardzo szerokiego zakresu. Posiada duże możliwości do łączenia elementów technologii~z~biznesem, jak~i~specyfikowania operacji poszczególnej usługi oferowanej pomiędzy systemami. Stanowi to również jedną~z~największych zalet SOA \cite{EntSOACoryCanSoaML}. 
@@ -275,7 +275,7 @@ Architektura korporacyjna powinna dążyć do zapewnienia możliwie jak najwięk
 
 W rozwiązaniu tych problemów pomaga SOA, która opiera się na koncepcji usług, kontraktów, procesów oraz orkiestracji (ang. Orchestration). Wszystkie~z~wymienionych elementów są powiązane~z~domeną biznesową. Pozwalają na kompleksowe opisywanie krytycznych dla biznesu funkcjonalności. 
 
-Problem ze względu na swój zakres oraz ilość elementów branych pod uwagę do jego rozwiązania jest stosunkowo złożony. Konieczne jest dlatego oparcie się na odpowiedniej metodyce.~W~pracy zostanie przedstawione jak zaadaptować SOA~w~architekturze korporacyjnej~z~wykorzystaniem SoaML~z~zastosowaniem opracowanej optymalnej metody.
+Problem ze względu na swój zakres oraz liczbę elementów branych pod uwagę do jego rozwiązania jest stosunkowo złożony. Konieczne jest dlatego oparcie się na odpowiedniej metodyce.~W~pracy zostanie przedstawione jak zaadaptować SOA~w~architekturze korporacyjnej~z~wykorzystaniem SoaML~z~zastosowaniem opracowanej optymalnej metody.
 
 \chapter{Przegląd języków do projektowania systemów informatycznych~o~architekturze SOA}
 
@@ -287,7 +287,7 @@ Typy modeli tworzonych~w~ramach architektury korporacyjnej można podzielić na 
 \item{Abstrakcja organizacji, opisująca strukturę~i~działanie poszczególnych elementów składowych (zarówno na płaszczyźnie technicznej, jak~i~biznesowej). Taki opis pozwala na planowanie rozwoju organizacji, wspomaga jej transformację.}
 \end{itemize}
 
-Opracowana architektura powinna być zrozumiała dla odbiorcy, tak aby na jej podstawie można było podjąć decyzje związane~z~funkcjonowaniem organizacji~lub~wdrożyć określone rozwiązania informatyczne. Istotne jest całościowe rozważenie organizacji - zarówno pod kątem pełnionych funkcji jak~i~jej struktury \cite{ArchKorpSob}.
+Opracowana architektura powinna być zrozumiała dla odbiorcy, tak aby na jej podstawie można było podjąć decyzje związane~z~funkcjonowaniem organizacji~lub~wdrożyć określone rozwiązania informatyczne. Istotne jest całościowe rozważenie organizacji - zarówno pod kątem pełnionych funkcji jak~i~jej struktury~\cite{ArchKorpSob}.
 
 W niniejszym rozdziale zostaną omówione języki wykorzystywane do modelowania architektury korporacyjnej. Przy wykorzystaniu SoaML~lub~ArchiMate można~w~pełni zamodelować architekturę korporacyjną. Inne jęzki jak: BPEL, BPMN, czy UML, mogą wspierać proces projektowania jedynie~w~poszczególnych domenach.
 
@@ -297,11 +297,11 @@ SoaML (The Service oriented architecture Modeling Language) stanowi język wyspe
 
 SoaML definiuje trzy różne podejścia dla specyfikowania usług: 
 \begin{itemize}
-\item{Proste interfejsy (Simple interfaces) - prosty interfejs, który opiera się na jednokierunkowej interakcji dostarczanej przez uczestnika interakcji jako interfejs UML (rys. \ref{simple_interface_based_approach}). Uczestnik otrzymuje operacje na swój port~i~może dostarczyć rezultaty dla wywołującego zapytanie. Ten rodzaj jednokierunkowej interakcji może być stosowany dla anonimowych inicjatorów interakcji. Uczestnik interakcji nie ma informacji~o~inicjatorze ani~o~ porządku usług. Jednokierunkowe usługi są najczęściej określane jako \quotedblbase RPC style Web Services\textquotedblright. Prosty interfejs wykorzystywany jako port usługi może opcjonalnie stanowić element \emph{<<ServiceInterface>>} \cite{SOAMLOMG}.
+\item{Proste interfejsy (ang. Simple interfaces) - prosty interfejs, który opiera się na jednokierunkowej interakcji dostarczanej przez uczestnika interakcji jako interfejs UML (rys. \ref{simple_interface_based_approach}). Uczestnik otrzymuje operacje na swój port~i~może dostarczyć rezultaty dla wywołującego zapytanie. Ten rodzaj jednokierunkowej interakcji może być stosowany dla anonimowych inicjatorów interakcji. Uczestnik interakcji nie ma informacji~o~inicjatorze ani~o~ porządku usług. Jednokierunkowe usługi są najczęściej określane jako \quotedblbase RPC style Web Services\textquotedblright. Prosty interfejs wykorzystywany jako port usługi może opcjonalnie stanowić element \emph{<<ServiceInterface>>} \cite{SOAMLOMG}.
 \begin{figure}[h!tbp]
 \begin{centering}
 \includegraphics[width=11cm]{img/simple_interface_based_approach.png}
-\caption[Specyfikacja usługi \quotedblbase Ship Status\textquotedblright wykorzystując podejście \quotedblbase prostego interfejsu\textquotedblright. Zawiera prosty interfejs dostawcy usługi, jego operacje, typy wiadomości~i~odpowiedni port uczestnika interakcji.]{Specyfikacja usługi \emph{Ship Status} wykorzystując podejście \quotedblbase prostego interfejsu\textquotedblright. Zawiera prosty interfejs dostawcy usługi, jego operacje, typy wiadomości~i~odpowiedni port uczestnika interakcji \cite{SoaMLErvBase}.}\label{simple_interface_based_approach}
+\caption[Specyfikacja usługi \quotedblbase ShipStatus\textquotedblright wykorzystując podejście \quotedblbase prostego interfejsu\textquotedblright. Zawiera prosty interfejs dostawcy usługi, jego operacje, typy wiadomości~i~odpowiedni port uczestnika interakcji.]{Specyfikacja usługi \quotedblbase ShipStatus\textquotedblright wykorzystując podejście \quotedblbase prostego interfejsu\textquotedblright. Zawiera prosty interfejs dostawcy usługi, jego operacje, typy wiadomości~i~odpowiedni port uczestnika interakcji \cite{SoaMLErvBase}.}\label{simple_interface_based_approach}
 \end{centering}
 \end{figure}
 } 
@@ -318,7 +318,7 @@ SoaML definiuje trzy różne podejścia dla specyfikowania usług:
 \begin{figure}[h!tbp]
 \begin{centering}
 \includegraphics[width=11cm]{img/service_contract_based_approach.png}
-\caption[Specyfikacja usługi \emph{Ship Status} wykorzystując podejście oparte na \quotedblbase kontrakcie usługi\textquotedblright. ]{Specyfikacja usługi \quotedblbase Ship Status\textquotedblright wykorzystując podejście oparte na \quotedblbase kontrakcie usługi\textquotedblright \cite{SoaMLErvBase}.}\label{service_contract_based_approach}
+\caption[Specyfikacja usługi \quotedblbase ShipStatus\textquotedblright wykorzystując podejście oparte na \quotedblbase kontrakcie usługi\textquotedblright. ]{Specyfikacja usługi \quotedblbase ShipStatus\textquotedblright wykorzystując podejście oparte na \quotedblbase kontrakcie usługi\textquotedblright \cite{SoaMLErvBase}.}\label{service_contract_based_approach}
 \end{centering}
 \end{figure}
 }
@@ -343,7 +343,7 @@ SoaML charakteryzuje się dodatkowymi abstrakcjami \cite{PlatIntGor}~i~rozszerza
 \item{Kontrakty usług (ang. Service contracts) - wykorzystywane do opisywania wzorców interakcji między encjami usług. Umowa~o~świadczenie usług jest używana do modelowania porozumienia między dwiema~lub~większą ilością stron. Każda~z~usług~z~kontraktu posiada interfejs, który reprezentuje ją jako dostawcę bądź konsumenta. Oznaczone są stereotypami \emph{<<ServiceContract>>}}
 \item{Usługi architektur (ang. Services architecture) - wyższy element widoku prezentujący zbiór elementów SOA. Oznaczany stereotypem \emph{<<ServicesArchitecture>>}.}
 \item{Dane usług (ang. Service data) - wykorzystywane do opisywania komunikatów dla usług~i~ich załączników. Element \quotedblbase Typ wiadomości\textquotedblright (ang. Message Type) jest używany do specyfikowania informacji wymienianych pomiędzy konsumentami usług~i~dostawcami. Określa rodzaj komunikatu. Oznaczany jest na diagramach jako stereotyp \emph{<<MessageType>>}. Załączniki są oznaczane jako stereotyp \emph{<<Attachment>>.}}
-\item{Funkcjonalność (ang. \emph{Capabilities}) - kolejny zdefiniowany element SoaML. Na diagramach klas określa funkcjonalność~lub~zasoby jakie oferują uczestnicy architektury. Przedstawiany jest~w~postaci komponentu ze stereotypem \emph{<<Capabilitiy>>} \cite{SoaMLErvBase}.}
+\item{Funkcjonalność (ang. Capabilities) - kolejny zdefiniowany element SoaML. Na diagramach klas określa funkcjonalność~lub~zasoby jakie oferują uczestnicy architektury. Przedstawiany jest~w~postaci komponentu ze stereotypem \emph{<<Capabilitiy>>} \cite{SoaMLErvBase}.}
 \end{itemize} 
 
 
@@ -351,30 +351,30 @@ SoaML charakteryzuje się dodatkowymi abstrakcjami \cite{PlatIntGor}~i~rozszerza
 \subsection{Czym jest ArchiMate?}
 ArchiMate stanowi otwarty~i~niezależny język modelowania dla architektur korporacyjnych. Zapewnia instrumenty, aby umożliwić architektom przedsiębiorstwa opis, analizę~i~wizualizację relacji między domenami biznesu~w~jednoznaczny sposób. Pozwala ponadto na opisywanie procesów biznesowych, struktur organizacyjnych, przepływów informacji, systemów informatycznych oraz technicznej infrastruktury.
 
-ArchiMate to techniczny standard The Open Group. Jest wspierany przez różne narzędzia informatyczne do modelowania architektury korporacyjnej jak na przykład: Enterprise Architect, BizzDesign Architect, ARIS~lub~Microsoft Visio \cite{OpenGrArch}.
+ArchiMate to techniczny standard The Open Group. Jest wspierany przez różne narzędzia informatyczne do modelowania architektury korporacyjnej: Enterprise Architect, BizzDesign Architect, ARIS~lub~Microsoft Visio \cite{OpenGrArch}.
 
 ArchiMate bazuje na dwóch podstawowych założeniach:
 \begin{itemize}
-\item{podejściu warstwowym - związanym~z~warstwą biznesową, aplikacji, danych~i~techniczną;}
+\item{podejściu warstwowym - związanym~z~warstwą biznesową, aplikacji, danych~i~techniczną,}
 \item{podejściu zorientowanym na usługi - usługi zewnętrzne są udostępniane przez warstwę niższą~i~wykorzystywane przez warstwę wyższą (na przykład warstwa aplikacji udostępnia usługi wykorzystywane~w~ramach warstwy biznesowej). ArchiMate wprowadza ponadto pojęcie usług wewnętrznych, które są wykorzystywane~w~ramach określonej warstwy.}
 \end{itemize}
 
-Komunikacja pomiędzy warstwami: biznesową, aplikacyjną~i~technologiczną stanowi jedną~z~największych zalet ArchiMate.
+Dobra komunikacja pomiędzy warstwami: biznesową, aplikacyjną~i~technologiczną stanowi jedną~z~największych zalet języka ArchiMate.
 
-W warstwie biznesowej (ang. Business layer) zawarte są usługi świadczone klientom zewnętrznym oraz produkty. Są one realizowane przez przez procesy biznesowe~i~związanych~z~nimi aktorów biznesowych.
+W warstwie biznesowej (ang. Business layer) zawarte są usługi świadczone klientom zewnętrznym oraz produkty. Są realizowane przez przez procesy biznesowe~i~związanych~z~nimi aktorów biznesowych.
 
 Warstwa aplikacji (ang. Application layer) wspiera warstwę biznesową poprzez usługi aplikacyjne, które są realizowane przez poszczególne komponenty aplikacyjne.
 
-Warstwa technologiczna (ang. Technology layer) odzwierciedla usługi infrastrukturalne (na przykład usługi komunikacyjne), niezbędne do działania aplikacji.
+Warstwa technologiczna (ang. Technology layer) odzwierciedla usługi infrastrukturalne (na przykład usługi komunikacyjne) niezbędne do działania aplikacji.
 
-Od wersji 2.0 możliwości języka ArchiMate zostały rozbudowane poprzez zdefiniowanie części centralnej oraz rozszerzeń związanych~z~motywacją, implementacją~i~konfiguracją \cite{ArchKorpSob}.
+Od wersji 2.0 możliwości języka ArchiMate zostały rozbudowane poprzez zdefiniowanie części centralnej oraz rozszerzeń związanych~z~ implementacją~i~konfiguracją \cite{ArchKorpSob}.
 
 \subsection{Modelowanie~z~wykorzystaniem ArchiMate}
 Jednym~z~najbardziej popularnych podejść do modelowania architektury korporacyjnej~z~wykorzystaniem ArchiMate jest oparcie się na metodzie top-down. 
 
-W początkowym etapie powinno zdefiniować się warstwę biznesową. Zalecane jest dlatego utworzenie najpierw \quotedblbase Business Model Canvas\textquotedblright. Stanowi on szablon dla dokumentowania nowych~lub~istniejących modeli biznesowych.~W~efekcie zostaje utworzony diagram złożony~z~bloków opisujących różne istotne elementy organizacji. Stanowi on szkic strategii, który ma zostać wdrożony~w~ramach struktur, procesów~i~organizacji. Składają się na niego takie elementy jak: segmenty klientów, propozycje wartości, kanały, relacje~z~klientami, strumienie przychodów, kluczowe zasoby, działania, partnerzy oraz struktura kosztów. 
+W początkowym etapie powinno zdefiniować się warstwę biznesową. Zalecane jest dlatego utworzenie w pierwszej kolejności \quotedblbase Business Model Canvas\textquotedblright. Stanowi on szablon dla dokumentowania nowych~lub~istniejących modeli biznesowych.~W~efekcie zostaje utworzony diagram złożony~z~bloków opisujących różne istotne elementy organizacji. Stanowi on szkic strategii, który ma zostać wdrożony~w~ramach struktur, procesów~i~organizacji. Składają się na niego takie elementy jak: segmenty klientów, propozycje wartości, kanały, relacje~z~klientami, strumienie przychodów, kluczowe zasoby, działania, partnerzy oraz struktura kosztów. 
 
-Następnie powinno zidentyfikować się przepływy pomiędzy różnymi encjami \quotedblbase Business Model Canvas\textquotedblright oraz dokonać mapowania ogólnego modelu biznesu jako usług powiązanych.~W~ArchiMate, na najwyższym poziomie, organizacja~i~odpowiadający jej model biznesowy może być reprezentowany jako pojedyncza usługa biznesowa (ang. Business Service). Segmenty klientów~i~kluczowi partnerzy mogą być reprezentowani jako encje aktorów biznesowych (ang. Business actors). Każdy~z~nich powinien mieć przypisaną co najmniej jedną rolę biznesową (ang. Business role)~i~być połączonym~z~usługą organizacji przez biznesowe relacje interfejsu (ang. Business interface relationships).
+Następnie powinno zidentyfikować się przepływy pomiędzy różnymi encjami \quotedblbase Business Model Canvas\textquotedblright oraz dokonać mapowania ogólnego modelu biznesu jako usług powiązanych.~W~ArchiMate, na najwyższym poziomie abstrakcji, organizacja~i~odpowiadający jej model biznesowy mogą być reprezentowane jako pojedyncza usługa biznesowa (ang. Business Service). Segmenty klientów~i~kluczowi partnerzy mogą być reprezentowani jako encje aktorów biznesowych (ang. Business actors). Każdy~z~nich powinien mieć przypisaną co najmniej jedną rolę biznesową (ang. Business role)~oraz~połączenie~z~usługą organizacji przez biznesowe relacje interfejsu (ang. Business interface relationships).
 
 W kolejnym kroku rozwijane są szczegóły ogólnego modelu biznesowego. Następuje przejście~z~\quotedblbase Business Model Canvas\textquotedblright na \quotedblbase Enterprise Canvas\textquotedblright. 
 
@@ -386,14 +386,14 @@ BPMN (ang. Business Process Modelling Notation) stanowi standard modelowania pro
 
 Nie jest to język, który pozwoli na pełne zamodelowanie SOA~lub~architektury korporacyjnej. Można go wykorzystać jednak do modelowania fragmentów dotyczących procesów biznesowych.
 
-Definiuje diagramy nazywane diagramami procesu biznesowego - zaprojektowane tak, żeby~z~jednej strony były łatwe do zrozumienia, a~z~drugiej pozwalały na modelowanie również złożonych procesów. Składa się ze skończonego~i~jednoznacznie zdefiniowanego zbioru elementów graficznych. Pozwalają na tworzenie łatwo zrozumiałych  modeli procesów biznesowych.
+Definiuje diagramy procesów biznesowych - zaprojektowane tak, żeby~z~jednej strony były łatwe do zrozumienia, a~z~drugiej pozwalały na modelowanie również złożonych procesów. Składa się ze skończonego~i~jednoznacznie zdefiniowanego zbioru elementów graficznych. Pozwalają na tworzenie łatwo zrozumiałych  modeli procesów biznesowych.
 
 Elementarne typy obiektów BPMN stanowią: 
 \begin{itemize}
 \item{obiekty przepływu (ang. Flow objects) - stanowią je elementy odnoszące się do zdarzeń, czynności~lub~obiektów decyzyjnych,}
 \item{obiekty łączące (ang. Connecting objects) - do tej grupy zaliczyć można sekwencje elementów, komunikaty,} 
-\item{tory przepływu (ang. \emph{Swimlanes}),}
-\item{artefakty (ang. \emph{Artifact}).}
+\item{tory przepływu (ang. Swimlanes),}
+\item{artefakty (ang. Artifact).}
 \end{itemize}
 
 BPMN może być wykorzystywany do modelowania:
@@ -406,38 +406,45 @@ BPMN może być wykorzystywany do modelowania:
 \subsection{BPEL}
 BPEL (Business Process Execution Language) stanowi język pozwalający na definiowanie~i~wykonywanie procesów biznesowych. Został opracowany przez konsorcjum OASIS.
 
-Podobnie jak BPMN pozwala na modelowanie jedynie fragmentu architektury korporacyjnej związanej~z~procesami biznesowymi. Jest postrzegany jako procesowe rozszerzenie standardów zdefiniowanych dla usług sieciowych, które pozwalają na współpracę między aplikacjami~w~środowiskach heterogenicznych. Opiera się na takich standardach jak SOAP, WSDL oraz Universal Description, Discovery and Integraton (UDDI). 
+Podobnie jak BPMN umożliwia modelowanie jedynie fragmentu architektury korporacyjnej związanej~z~procesami biznesowymi. Jest postrzegany jako procesowe rozszerzenie standardów zdefiniowanych dla usług sieciowych, które pozwalają na współpracę między aplikacjami~w~środowiskach heterogenicznych. Opiera się na takich standardach jak SOAP, WSDL oraz Universal Description, Discovery and Integraton (UDDI). 
 
 W BPEL można opisywać procesy na dwa sposoby - abstrakcyjny~lub~wykonywalny.
 
-Proces abstrakcyjny jest określony tylko częściowo. Musi być otwarcie zadeklarowany jako abstrakcyjny~i~nie powinien być wykonywalny. Ponadto  udostępnia dwa mechanizmy umożliwiające ukrycie jego szczegółów: nieprzezroczyste (ang.Opaque tokens) oraz pominięcie (ang. Omission).
+Proces abstrakcyjny jest określony tylko częściowo. Musi być otwarcie zadeklarowany jako abstrakcyjny~i~nie powinien być wykonywalny. Ponadto  udostępnia dwa mechanizmy umożliwiające ukrycie jego szczegółów: nieprzezroczyste (ang. Opaque tokens) oraz pominięcie (ang. Omission).
 
-Z kolei proces wykonywalny~w~pełni specyfikuje opis, który można umieścić~w~środowisku wykonawczym. Musi być~w~pełni zdefiniowany wyłącznie na podstawie usług sieciowych oraz danych przedstawionych~w~języku XML. Konstrukcje procesu wykonywalnego powinny być dostępne dla procesu abstrakcyjnego. 
+Z kolei proces wykonywalny~w~pełni specyfikuje opis, który można umieścić~w~środowisku wykonawczym. Musi być zdefiniowany wyłącznie na podstawie usług sieciowych oraz danych przedstawionych~w~języku XML. Konstrukcje procesu wykonywalnego powinny być dostępne dla procesu abstrakcyjnego. 
 
-Istnieją również rozszerzenia języka BPEL. Jednym~z~nich jest BPEL4WS, który nie uwzględnia człowieka~w~procesie biznesowym. Przeciwieństwo stanowi zaś BPEL4People,~w~którym człowiek stanowi część procesu biznesowego. Innym przykładem jest jeszcze BPELJ, który umożliwia zastąpienie usług sieciowych małymi aplikacjami napisanymi na podstawie języka Java \cite{PlatIntGor}. 
+Istnieją również rozszerzenia języka BPEL. Jednym~z~nich jest BPEL4WS, który nie uwzględnia człowieka~w~procesie biznesowym. Przeciwieństwo stanowi zaś BPEL4People,~w~którym człowiek stanowi integralną część procesu biznesowego. Innym przykładem jest oparty na języku Java BPELJ, który umożliwia zastąpienie usług sieciowych szeregiem niewielkich aplikacji. \cite{PlatIntGor}. 
 
 \subsection{UML}
-UML (Unified Modeling Language) jest jednym~z~najpowszechniejszych graficznych języków wykorzystywanych do modelowania architektury korporacyjnej. Został stworzony~w~1994 roku~i~rozwijany jest~w~ramach OMG (Object Management Group). 
+UML (Unified Modeling Language) jest jednym~z~najpowszechniejszych graficznych języków wykorzystywanych do modelowania architektury korporacyjnej. Został stworzony~w~1994 roku~i~jest rozwijany przez OMG (Object Management Group). 
 
-Przy wykorzystaniu elementów języka UML można wizualizować, specyfikować oraz budować systemy informatyczne. Stosowanie UML pozwala~w~graficzny sposób odwzorować zarówno behawioralne jak~i~strukturalne spojrzenia na system.
+Przy wykorzystaniu elementów języka UML można wizualizować, specyfikować oraz budować systemy informatyczne. Stosowanie UML pozwala~w~graficzny sposób odwzorować zarówno behawioralne jak~i~strukturalne spojrzenie na system.
 
-Modelowanie systemów~z~wykorzystaniem UML umożliwia jednoczesne dokumentowanie całości systemu~w~zrozumiały dla całego zespołu sposób \cite{PlatIntGor}. UML służy głównie do modelowania systemów informatycznych,~w~tym również uwzględniających aspekty architektoniczne. 
+Modelowanie systemów~z~wykorzystaniem UML umożliwia jednoczesne dokumentowanie całości systemu~w~zrozumiały dla całego zespołu sposób \cite{PlatIntGor}. Służy głównie do modelowania systemów informatycznych,~w~tym również uwzględniających aspekty architektoniczne. 
 
-UML znajduje coraz częściej zastosowanie~w~inżynierii systemów, do  modelowania procesów biznesowych~lub~reprezentacji struktur organizacyjnych.~W~tym celu bardzo często wykorzystywane są możliwości jego rozszerzenia - na przykład za pomocą profili. Istotą ich stosowania jest fakt, że dodajemy możliwość używania konkretnych znaczeń~w~stosunku do istniejących elementów modelu.
+UML znajduje coraz częściej zastosowanie~w~inżynierii systemów informatycznych, w  modelowaniu procesów biznesowych~oraz~reprezentacji struktur organizacyjnych.~W~tym celu bardzo często wykorzystywane są możliwości jego rozszerzania - na przykład za pomocą profili. Istotę ich stosowania stanowi fakt, że dodajemy możliwość używania konkretnych znaczeń~w~stosunku do istniejących elementów modelu.
 
 
 \subsection{IDEF}
-Języki IDEF (Integrated DEFinition Methods) stanowią rodzinę języków wykorzystywaną do analizy biznesowej~i~modelowania. Pierwotnie wiązane były głównie~z~wojskowością.  Obecnie IDEF ma bardzo szerokie zastosowania~i~występuje~w~wielu odmianach.
+Języki IDEF (Integrated DEFinition Methods) stanowią rodzinę języków wykorzystywaną do analizy biznesowej~i~modelowania. Pierwotnie wiązane były głównie~z~wojskowością.  Obecnie IDEF ma bardzo wiele zastosowań~i~występuje~w~wielu odmianach.
 
 IDEF0 są wykorzystywane do modelowania funkcji. Pozwalają na modelowanie decyzji, działań~i~czynności. Zarówno na poziomie systemu informatycznego, jak~i~całej organizacji. Celem opracowania IDEF0 było utworzenie języka pozwalającego na ułatwienie analizy systemów~i~organizacji,~a~także poprawienie komunikacji pomiędzy analitykami biznesowymi,~i~klientami. 
 
-IDEF3 pozwala na modelowanie procesów biznesowych. Przystosowany jest również do prezentowania behawioralnych aspektów planowanych~lub~działających systemów. 
+IDEF3 pozwala na modelowanie procesów biznesowych. Przystosowany jest również do prezentowania behawioralnych aspektów. 
 
-IDEFIX został utworzony~z~kolei~z~przeznaczeniem modelowania danych. Dostarcza semantycznych konstrukcji, które pozwalają na modelowanie konceptualnych schematów dla struktur danych używanych na poziomie całej organizacji.
+IDEFIX został utworzony~z~kolei~z~przeznaczeniem do modelowania danych. Dostarcza semantycznych konstrukcji, które pozwalają na modelowanie konceptualnych schematów dla struktur danych używanych na poziomie całej organizacji.
 
 \chapter{Metody projektowania rozwiązań~w~architekturze usługowej}
 
 \section{Wstęp}
+W projektowaniu rozwiązań~w~architekturze usługowej niezbędne jest posługiwanie się odpowiednimi metodami. 
+
+Na rynku istnieje obecnie wiele metod~o~różnej charakterystyce. Posiadają inne fazy, przebiegi oraz stopnie dojrzałości. 
+
+Wiele~z~metod wciąż jest słabo udokumentowana. Nie wszystkie posiadają również powszechnie dostępną specyfikację, a wykorzystanie sporej części z nich wiąże się~z~poniesieniem kosztów finansowych.
+
+Niniejszy rozdział będzie stanowił przegląd metod projektowania rozwiązań w architekturze usługowej. Zostaną rozważone takie metody jak: RUP4SOA, SOMA, metoda Papazoglou oraz metoda Thomasa Erl'a. 
 
 \section{RUP4SOA}
 \subsection{Czym jest RUP?}
@@ -492,7 +499,9 @@ Do wad metody można zaliczyć fakt, że nie specyfikuje wielu elementów istotn
 
 \section{SOMA}
 \subsection{Czym jest SOMA?}
-SOMA (ang. Service-Oriented Modeling and Architecture) stanowi kolejną metodę projektowania systemów~w~architekturze usługowej. Metoda cyklu rozwoju oprogramowania definiująca kluczowe techniki~i~opisująca poszczególne role~w~projekcie SOA oraz struktury podziału pracy (WBS - ang. Work Breakdown Structure). WBS obejmuje zadania związane~z~wejściowymi~i~wyjściowymi produktami pracy, normatywnymi wskazówkami do szczegółowej analizy, projektowaniem, implementacją~i~wdrażaniem usług oraz komponentów potrzebnych do budowy wydajnego, reużywalnego środowiska \cite{PlatIntGor}.
+SOMA (ang. Service-Oriented Modeling and Architecture) stanowi kolejną metodę projektowania systemów~w~architekturze usługowej. Metoda cyklu rozwoju oprogramowania definiująca kluczowe techniki~i~opisująca poszczególne role~w~projekcie SOA oraz struktury podziału pracy (WBS - ang. Work Breakdown Structure). 
+
+WBS obejmuje zadania związane~z~wejściowymi~i~wyjściowymi produktami pracy, normatywnymi wskazówkami do szczegółowej analizy, projektowaniem, implementacją~i~wdrażaniem usług oraz komponentów potrzebnych do budowy wydajnego, reużywalnego środowiska \cite{PlatIntGor}.
 
 SOMA została utworzona przez firmę IBM.~W~swoim podejściu metoda wykorzystuje wiele elementów~z~Worldwide Project Management Method (jedna~z~metod zarządzania projektami). \cite{SOMAArsIBMJour}
 
@@ -514,7 +523,7 @@ Można również mówić~o~fraktalnej charakterystyce metody. Każda kolejna  it
 
 \begin{figure}[h!tbp]
 \begin{centering}
-\includegraphics[width=14cm, height=12cm]{img/soma_fractal_lifecycle.png}
+\includegraphics[width=16cm, height=13.5cm]{img/soma_fractal_lifecycle.png}
 \caption[Fraktalne podejście do budowy systemów - fazy metody SOMA.]{Fraktalne podejście do budowy systemów - fazy metody SOMA \cite{SOMAArsIBMJour}.}\label{soma_fractal_lifecycle}
 \end{centering}
 \end{figure}
@@ -525,7 +534,7 @@ W fazie modelowania biznesowego~i~transformacji działalność organizacji jest 
 
 Realizacje SOA mają hybrydową naturę~i~z reguły obejmują wiele typów rozwiązań.~W~fazie zarządzania rozwiązaniem inicjowany jest projekt oraz wybierany odpowiedni scenariusz realizacji. Występuje kilka możliwych scenariuszy: wytwarzania oprogramowania (ang. Custom development), integracji pakietów aplikacji (ang. Package application integration). Na tym etapie tworzona jest również konfiguracja metody~w~celu dostosowania jej do potrzeb danego projektu. Ponadto zdefiniowaniu podlegają: zadania, role oraz produkty \cite{SOMAArsIBMJour}.
 
-Faza identyfikacji związana jest~z~identyfikacją trzech elementarnych dla SOA konstrukcji: usług, komponentów oraz usług  \cite{PlatIntGor}. Do zadań tego etapu należy: dekompozycja obszarów biznesowych (Domain Decomposition), modelowanie usług~w~kontekście celów biznesowych (Goal-Service Modeling) oraz analiza istniejących zasobów IT (Existing Assets Analysis) \cite{SOMAibmRosSuda}. Do produktów końcowych tej fazy zalicza się listę kandydujących usług do realizacji oraz powiązań między nimi \cite{PlatIntGor}.
+Faza identyfikacji związana jest~z~identyfikacją trzech elementarnych dla SOA konstrukcji: usług, komponentów oraz przepływów \cite{PlatIntGor}. Do zadań tego etapu należy: dekompozycja obszarów biznesowych (Domain Decomposition), modelowanie usług~w~kontekście celów biznesowych (Goal-Service Modeling) oraz analiza istniejących zasobów IT (Existing Assets Analysis) \cite{SOMAibmRosSuda}. Do produktów końcowych tej fazy zalicza się listę kandydujących usług do realizacji oraz powiązań między nimi \cite{PlatIntGor}.
 
 Podczas specyfikacji usług projektowane jest rozwiązanie. Powstaje projekt podstawowy oraz niektóre elementy projektu szczegółowego. Analizowane są zasoby IT pod kątem zależności ze zidentyfikowanymi usługami~w~poprzedniej fazie, przepływami oraz zdarzeniami. Metoda dostarcza gotowe szablony, wzorce oraz techniki wykorzystywane~w~celu określenia usług, przepływów~i~komponentów. 
 
@@ -1039,7 +1048,7 @@ Nastąpiła również próba testów~z~poziomu interfejsu użytkownika. Wypełni
 
 \begin{figure}[h!tbp]
 \begin{centering}
-\includegraphics[width=8cm, height=9.5cm]{img/przelew_wypelniony_form.png}
+\includegraphics[width=11cm, height=13cm]{img/przelew_wypelniony_form.png}
 \caption[Testy~z~poziomu interfejsu - formularz przelewu międzynarodowego]{Testy~z~poziomu interfejsu - formularz przelewu międzynarodowego}\label{test_funk_interfejs}
 \end{centering}
 \end{figure}
@@ -1078,20 +1087,20 @@ Rozdział ten stanowi podsumowanie wcześniejszych badań. Autorska metoda zosta
 Koniec rozdziału będzie obejmował rozważania dotyczące przyszłości tworzenia systemów informatycznych~w~oparciu~o~paradygmaty SOA.
 
 \section{MatSOA na tle innych metod projektowania architektury korporacyjnej}
-W rozdziale czwartym dokonano przeglądu kilku istniejących metod projektowania architektury korporacyjnej. Obecnie występuje~o~wiele więcej jednakże powszechnie wykorzystywana~w~praktyce jest tylko ich niewielka część.
+W rozdziale czwartym dokonano przeglądu kilku istniejących metod projektowania architektury korporacyjnej. Obecnie występuje~o~wiele więcej, jednakże powszechnie wykorzystywana~w~praktyce jest tylko ich niewielka część.
 
-W tabeli (tab. \ref{tabela_methods_comparison}) przedstawiono zestawienie najpopularniejszych metod projektowania architektury korporacyjnej. Wyszczególniono również parametry~i~cechy charakterystyczne na podstawie, których odbędzie się porównanie. Autor pracy dokonuje subiektywnej oceny~w~jakim stopniu każda~z~metod spełnia poszczególne atrybuty.
+W tabeli (tab. \ref{tabela_methods_comparison}) przedstawiono zestawienie najpopularniejszych metod projektowania architektury korporacyjnej. Wyszczególniono również parametry~i~cechy charakterystyczne, na podstawie których odbędzie się porównanie. Autor pracy dokonuje subiektywnej oceny,~w~jakim stopniu każda~z~metod spełnia poszczególne atrybuty.
 
 Elementy, które wzięto pod uwagę~w~zestawieniu:
 \begin{itemize}
 \item{Strategia dostarczania (ang. Delivery strategy) - występują trzy spotykane strategie dostarczania architektury korporacyjnej. Zależą one od stopnia złożoności domeny biznesowej oraz poziomu oparcia się na istniejących elementach organizacji. Strategia \emph{top-down} oznacza tworzenie całości architektury korporacyjnej od początku. \emph{Bottom-up} oznacza~z~kolei wykorzystywanie istniejących elementów organizacji do utworzenia architektury korporacyjnej. \emph{Meet-in-the-middle} stanowi natomiast konsolidację obydwu podejść. }
 \item{Wykorzystanie~w~komercyjnych projektach - istotne jest potwierdzenie przydatności metody~w~praktyce.~W~oparciu~o~opinię przypadków (ang. Proof-of-concept) metoda może być również udoskonalana~i~poprawiana. Wiele przykładów zastosowań metody zakończonych sukcesem świadczy~o~jej wysokim poziomie dojrzałości.}
-\item{Stopień oparcia się na Agile - wiele istniejących metod wymaga ścisłego przestrzegania narzucanych przez nie schematów. Nie jest to odpowiednie podejście, ponieważ zawsze istnieje ryzyko wprowadzania rozległych zmian. Parametr ten określa poziom~w~jakim metodyka jest~w~stanie przestrzegać zasad manifestu Agile.}
+\item{Stopień oparcia się na Agile - wiele istniejących metod wymaga ścisłego przestrzegania narzucanych przez nie schematów. Nie jest to odpowiednie podejście, ponieważ zawsze istnieje ryzyko wprowadzania rozległych zmian. Parametr ten określa poziom,~w~jakim metodyka jest~w~stanie przestrzegać zasad manifestu Agile.}
 \item{Wykorzystywane języki~i~techniki - metody korzystają~z~różnorodnych języków oraz technik~w~celu jak najlepszego przedstawienia zamysłów projektantów architektury korporacyjnej.}
-\item{Pokrycie typowych faz cyklu życia projektu - ta cecha oznacza~w~jakim stopniu metoda pokrywa wszystkie podstawowe fazy życia projektu: planowanie, analizę~i~projektowanie, implementację, testowanie oraz wdrożenie.}
+\item{Pokrycie typowych faz cyklu życia projektu - ta cecha oznacza,~w~jakim stopniu metoda pokrywa wszystkie podstawowe fazy życia projektu: planowanie, analizę~i~projektowanie, implementację, testowanie oraz wdrożenie.}
 \item{Prawnie zastrzeżony - nie wszystkie metody są powszechnie dostępne do użytkowania. Niektóre organizacje nie udostępniają wszystkich istotnych szczegółów specyfikacji,~a~niektóre udostępniają je tylko odpłatnie.}
-\item{Jakość specyfikacji - wiele~z~metod posiada niedokładne opisy co znacznie utrudnia ich wdrażanie~w~poszczególnych projektach.~W~skali rosnącej 1-5 oceniono jakość oficjalnych specyfikacji poszczególnych metodyk. }
-\item{Poziom skalowalności, elastyczności oraz rozszerzalności - zbiór cech takich jak: skalowalność, elastyczność oraz rozszerzalność wskazuje~w~jakim stopniu metoda jest~w~stanie dostosować się do różnego rodzaju sytuacji projektowych. Skalowalność wskazuje na zdolność metody do przystosowywania się do różnych rozmiarów aplikacji~lub~punktów krytycznych. Elastyczność należy postrzegać jako poziom możliwości konfiguracji metody~w~trakcie jej używania.~Z~kolei poziom rozszerzalności oznacza jak duże są możliwości danej metody~o~rozbudowę~o~nowe elementy~lub~fazy. }
+\item{Jakość specyfikacji - wiele~z~metod posiada niedokładne opisy, co znacznie utrudnia ich wdrażanie~w~poszczególnych projektach.~W~skali rosnącej 1-5 oceniono jakość oficjalnych specyfikacji poszczególnych metodyk. }
+\item{Poziom skalowalności, elastyczności oraz rozszerzalności - zbiór cech takich jak: skalowalność, elastyczność oraz rozszerzalność wskazuje,~w~jakim stopniu metoda jest~w~stanie dostosować się do różnego rodzaju sytuacji projektowych. Skalowalność wskazuje na zdolność metody do przystosowywania się do różnych rozmiarów aplikacji~lub~punktów krytycznych. Elastyczność należy postrzegać jako poziom możliwości konfiguracji metody~w~trakcie jej używania.~Z~kolei poziom rozszerzalności oznacza, jak duże są możliwości danej metody~w~przypadku rozbudowy~o~nowe elementy~lub~fazy. }
 \end{itemize}
 
 \begin{table}[!htbp]
@@ -1117,7 +1126,7 @@ Poziom skalowalności, elastyczności oraz rozszerzalności (skala 1-5 rosnąco)
  
 Na podstawie tabeli \ref{tabela_methods_comparison} można zauważyć, że większość omawianych metod opiera się na strategii dostarczania typu \emph{Meet-in-the-middle}. Jedynie metoda Thomasa Erl'a wykorzystuje podejście \emph{Top-down}.
 
-Nie wszystkie rozpatrywane metody powszechnie wykorzystywano~w~komercyjnych projektach. Sporą ilość metod (na przykład Papazoglou) opracowano dotychczas jedynie~w~teorii~i~nie weryfikowano ich przydatności~w~praktyce. Najpopularniejsze metody takie jak RUP4SOA oraz SOMA ze względu na swoją dojrzałość mają najwięcej potwierdzonych przypadków użycia~w~komercyjnych projektach.
+Nie wszystkie rozpatrywane metody powszechnie wykorzystywano~w~komercyjnych projektach. Wiele metod (na przykład Papazoglou) opracowano dotychczas jedynie~w~teorii~i~nie weryfikowano ich przydatności~w~praktyce. Najpopularniejsze metody takie jak RUP4SOA oraz SOMA ze względu na swoją dojrzałość mają najwięcej potwierdzonych przypadków użycia~w~komercyjnych projektach.
 
 Większość metod sugeruje podejście Agile~w~tworzeniu architektury zorientowanej usługowo. Autor pracy uznał, że najwięcej cech Agile miała MatSOA (ocena 5) oraz RUP4SOA~i~SOMA (oceny 4). Metody te charakteryzują się najbardziej elastycznym podejściem do stosowania schematów. Pozwalają~w~największym stopniu na dopasowywanie się do specyfiki~lub~sytuacji projektowej.
 
@@ -1125,22 +1134,22 @@ Analizowane metody wykorzystują różne języki~i~techniki do osiągnięcia swo
 
 Na podstawie zestawienia~w~tabeli \ref{tabela_methods_comparison} można zauważyć, że jedynie metoda Thomasa Erl'a nie pokrywa wszystkich standardowych faz cyklu życia projektu. Spełnia ona tylko fazy analizy~i~projektowania.
 
-Z wybranych metod tylko metody MatSOA oraz Thomasa Erl'a nie są prawnie zastrzeżone. Reszta~z~metod (RUP4SOA, Papazoglou oraz SOMA) udostępniają prawa do swojej specyfikacji komercyjnie. 
+Z wybranych metod tylko metody MatSOA oraz Thomasa Erl'a nie są prawnie zastrzeżone. Reszta~z~metod (RUP4SOA, Papazoglou oraz SOMA) udostępnia prawa do swojej specyfikacji komercyjnie. 
 
 Nie wszystkie~z~metod są dobrze zdefiniowane~i~posiadają szczegółową specyfikację. Fakt ten stanowi istotny problem dla ich odpowiedniego używania~w~realnych projektach. Metoda Papazoglou została jak dotąd opisana jedynie~w~zwięzłym artykule naukowym. Dużo lepiej opisane są metody takie jak RUP4SOA, SOMA oraz MatSOA. 
 
 Metody poddane analizie cechują się różnym poziomem skalowalności, elastyczności oraz rozszerzalności. Autor ocenił, że tymi cechami najbardziej charakteryzują się metody MatSOA (ocena 5) oraz RUP4SOA~i~SOMA (oceny 4). Metody Papazoglou~i~Thomasa Erl'a wykazują konieczność trzymania się ściśle ustalonych założeń~i~zasad.
 
 \section{Rozwój metod projektowania architektury korporacyjnej}
-Mimo, że termin \quotedblbase architektura korporacyjna\textquotedblright znany jest już od kilkunastu lat, to rzadko stosuje się go~w~obecnych podejściach architektonicznych. Problem wynika przede wszystkim~z~niskiego poziomu dojrzałości większości organizacji.  Nie rozumieją potrzeby stosowania architektury korporacyjnej~lub~są nieprzygotowane do jej przyjęcia \cite{SobArchKorpProg}. 
+Mimo że termin \quotedblbase architektura korporacyjna\textquotedblright znany jest już od kilkunastu lat, to rzadko stosuje się go~w~obecnych podejściach architektonicznych. Problem wynika przede wszystkim~z~niskiego poziomu dojrzałości większości organizacji.  Nie rozumieją potrzeby stosowania architektury korporacyjnej~lub~są nieprzygotowane do jej przyjęcia \cite{SobArchKorpProg}. 
 
-Architektura korporacyjna stanowi jednak doskonały mechanizm prowadzący do transformacji organizacji~w~celu sprawnego wdrożenia przyjętej strategii biznesowej. Szereg korzyści takich jak: lepsze zrozumienie biznesu~i~potrzeb klienta, lepsze dopasowanie podejmowanych działań do wymagań biznesowych oraz zwiększenie interoperacyjności systemów, rodzi możliwości, że architekci coraz częściej będą opierać się na podejściu proponowanym przez architekturę korporacyjną \cite{ArchKorpAdmPub}. Stan ten może powodować~z~kolei rozwój metod projektowania architektury korporacyjnej. Istnieje obecnie wiele metod jednakże spora część~z~nich została opracowana wyłączenie~w~teorii~i~nie ma potwierdzenia~w~zastosowaniach praktycznych.
+Architektura korporacyjna stanowi jednak doskonały mechanizm prowadzący do transformacji organizacji~w~celu sprawnego wdrożenia przyjętej strategii biznesowej. Szereg korzyści takich jak: lepsze zrozumienie biznesu~i~potrzeb klienta, lepsze dopasowanie podejmowanych działań do wymagań biznesowych oraz zwiększenie interoperacyjności systemów, rodzi możliwości, że architekci coraz częściej będą opierać się na podejściu proponowanym przez architekturę korporacyjną \cite{ArchKorpAdmPub}. Stan ten może powodować~z~kolei rozwój metod projektowania architektury korporacyjnej. Istnieje obecnie wiele metod, jednakże spora część~z~nich została opracowana wyłączenie~w~teorii~i~nie ma potwierdzenia~w~zastosowaniach praktycznych.
 
 Według autora pracy rozwój metod może mieć również ścisły związek~z~ewolucją tworzenia systemów informatycznych~w~architekturze zorientowanej usługowo.
 
 \section{Przyszłość tworzenia systemów informatycznych~w~oparciu~o~paradygmaty SOA}
 Bardzo wiele współczesnych systemów informatycznych opiera się na paradygmatach SOA. Podstawową zaletą tego podejścia jest koncepcja kreowania rozwiązań~w~oparciu~o~łączenie niezależnych usług. Taka filozofia pozwala tworzyć łatwo skalowalne, wykazujące się dużą elastycznością systemy informatyczne. 
 
-Wymagania biznesowe~w~wielu organizacjach~z~biegiem lat ulegają zmianie. Istotne jest dlatego tworzenie systemów, które będą umożliwiały łatwą modyfikację~lub~rozbudowę~o~nowe funkcjonalności. Rozwiązania bazujące na paradygmatach SOA uwzględniają~w~doskonały sposób możliwość takich zmian. Uważa się dlatego, że tego typu systemu będą coraz bardziej popularne~w~przyszłości.
+Wymagania biznesowe~w~wielu organizacjach~z~biegiem lat ulegają zmianie. Istotne jest dlatego tworzenie systemów, które będą umożliwiały łatwą modyfikację~lub~rozbudowę~o~nowe funkcjonalności. Rozwiązania bazujące na paradygmatach SOA uwzględniają~w~doskonały sposób możliwość takich zmian. Uważa się więc, że tego typu systemy będą coraz bardziej popularne~w~przyszłości.
 
  
